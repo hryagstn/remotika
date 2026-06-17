@@ -1,10 +1,12 @@
 # Remotika 🇮🇩 🚀
 
-> **Temukan perusahaan global yang secara aktif mempekerjakan developer remote Indonesia — 100% terverifikasi melalui keanggotaan organisasi GitHub, bukan sekadar klaim sepihak.**
+> **Direktori perusahaan global yang terbukti mempekerjakan developer remote dari Indonesia — 100% terverifikasi melalui data keanggotaan GitHub secara real-time.**
+>
+> 🌐 **Website Resmi:** [remotika.vercel.app](https://remotika.vercel.app)
 
-Remotika adalah direktori pengembang bertenaga tinggi dan hemat biaya yang dibangun untuk memecahkan kesenjangan informasi nyata: membantu developer dan freelancer Indonesia mengidentifikasi perusahaan asing dengan anggaran tinggi yang *sudah memiliki* rekam jejak terbukti dalam mempekerjakan talenta dari Indonesia.
+Remotika hadir untuk menjembatani kesenjangan informasi bagi developer dan freelancer lokal. Platform ini membantu Anda menemukan perusahaan teknologi luar negeri yang memiliki rekam jejak nyata dalam mempekerjakan talenta dari Indonesia.
 
-Berbeda dengan direktori lain yang mengandalkan teks profil buatan sendiri yang mudah dipalsukan, Remotika menggunakan **pendekatan berbasis organisasi**: memindai keanggotaan organisasi GitHub publik dari perusahaan target, mencocokkan lokasi anggota dengan kata kunci Indonesia yang ditargetkan, dan mengklasifikasikannya ke dalam tingkat verifikasi yang jelas.
+Berbeda dari direktori lowongan kerja biasa yang mengandalkan klaim sepihak atau profil buatan, Remotika menggunakan **pendekatan berbasis organisasi (GitHub-first)**. Sistem kami memindai keanggotaan organisasi GitHub publik milik perusahaan target, memverifikasi lokasi pengembang berdasarkan kata kunci geografis Indonesia, lalu mengelompokkannya ke dalam tingkat kepercayaan (*verification tier*) yang jelas dan transparan.
 
 ---
 
