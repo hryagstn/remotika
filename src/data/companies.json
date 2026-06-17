@@ -1,0 +1,398 @@
+[
+  {
+    "id": "co-1",
+    "name": "Xendit",
+    "githubOrg": "xendit",
+    "githubOrgUrl": "https://github.com/xendit",
+    "remoteokSlug": "xendit",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 5,
+    "label": "Established",
+    "lastVerifiedAt": "2026-06-17T07:06:05.958Z",
+    "hasActiveJobs": true,
+    "headquarters": "Jakarta, Indonesia",
+    "foundationYear": "2015",
+    "activeJobs": [
+      {
+        "title": "Senior Software Engineer - NodeJS (Remote)",
+        "url": "https://remoteok.com",
+        "tags": [
+          "NodeJS",
+          "TypeScript",
+          "AWS",
+          "Backend"
+        ],
+        "salary": "$80k - $110k"
+      },
+      {
+        "title": "Fullstack Engineer - React/Node (Remote)",
+        "url": "https://remoteok.com",
+        "tags": [
+          "React",
+          "NodeJS",
+          "TypeScript",
+          "Frontend",
+          "Backend"
+        ],
+        "salary": "$75k - $105k"
+      }
+    ],
+    "verifiedMembers": [
+      {
+        "id": "m-3mp3ri0r",
+        "githubLogin": "3mp3ri0r",
+        "githubProfileUrl": "https://github.com/3mp3ri0r",
+        "locationRaw": "Tangerang"
+      },
+      {
+        "id": "m-dewodt",
+        "githubLogin": "dewodt",
+        "githubProfileUrl": "https://github.com/dewodt",
+        "locationRaw": "Jakarta, Indonesia"
+      },
+      {
+        "id": "m-mkamadeus",
+        "githubLogin": "mkamadeus",
+        "githubProfileUrl": "https://github.com/mkamadeus",
+        "locationRaw": "Indonesia"
+      },
+      {
+        "id": "m-mychaelgo",
+        "githubLogin": "mychaelgo",
+        "githubProfileUrl": "https://github.com/mychaelgo",
+        "locationRaw": "Indonesia"
+      },
+      {
+        "id": "m-ndyhrdy",
+        "githubLogin": "ndyhrdy",
+        "githubProfileUrl": "https://github.com/ndyhrdy",
+        "locationRaw": "Makassar, Indonesia"
+      }
+    ],
+    "testimonials": [
+      {
+        "name": "Dewo D.",
+        "role": "Senior Engineer",
+        "text": "Xendit offers an incredibly fast-paced environment. Remote-first culture is deeply embedded here."
+      },
+      {
+        "name": "Michael G.",
+        "role": "Backend Developer",
+        "text": "Empowering work environment with clear technical tracks. Indonesia is home to many core products here."
+      }
+    ]
+  },
+  {
+    "id": "co-2",
+    "name": "GTI Labs",
+    "githubOrg": "gtilabs",
+    "githubOrgUrl": "https://github.com/GTILabs",
+    "remoteokSlug": "gtilabs",
+    "industry": "GTI Labs",
+    "verifiedIndonesianCount": 3,
+    "label": "Indonesia-Friendly",
+    "lastVerifiedAt": "2026-06-17T07:06:14.120Z",
+    "hasActiveJobs": false,
+    "headquarters": "Jakarta, Indonesia",
+    "foundationYear": "2010",
+    "activeJobs": [],
+    "verifiedMembers": [
+      {
+        "id": "m-hendisantika",
+        "githubLogin": "hendisantika",
+        "githubProfileUrl": "https://github.com/hendisantika",
+        "locationRaw": "Bandung Jawa Barat - Indonesia"
+      },
+      {
+        "id": "m-hilman-firdd",
+        "githubLogin": "hilman-firdd",
+        "githubProfileUrl": "https://github.com/hilman-firdd",
+        "locationRaw": "Bandung"
+      },
+      {
+        "id": "m-khannedy",
+        "githubLogin": "khannedy",
+        "githubProfileUrl": "https://github.com/khannedy",
+        "locationRaw": "Jakarta, Indonesia"
+      }
+    ],
+    "testimonials": [
+      {
+        "name": "Eko K.",
+        "role": "Principal Engineer",
+        "text": "Building scalable platforms for millions of users. GTI Labs is where engineering meets scale."
+      }
+    ]
+  },
+  {
+    "id": "co-3",
+    "name": "NVIDIA GameWorks",
+    "githubOrg": "nvidiagameworks",
+    "githubOrgUrl": "https://github.com/NVIDIAGameWorks",
+    "remoteokSlug": "nvidiagameworks",
+    "industry": "NVIDIA Technologies for game and application developers",
+    "verifiedIndonesianCount": 2,
+    "label": "Indonesia-Friendly",
+    "lastVerifiedAt": "2026-06-17T07:07:06.871Z",
+    "hasActiveJobs": true,
+    "headquarters": "Santa Clara, CA",
+    "foundationYear": "1993",
+    "activeJobs": [
+      {
+        "title": "Developer Relations Engineer - Gaming (Remote)",
+        "url": "https://remoteok.com",
+        "tags": [
+          "C++",
+          "Graphics",
+          "Vulkan",
+          "Engineering"
+        ],
+        "salary": "$140k - $180k"
+      }
+    ],
+    "verifiedMembers": [
+      {
+        "id": "m-angeloanan",
+        "githubLogin": "angeloanan",
+        "githubProfileUrl": "https://github.com/angeloanan",
+        "locationRaw": "Indonesia"
+      },
+      {
+        "id": "m-anggape",
+        "githubLogin": "anggape",
+        "githubProfileUrl": "https://github.com/anggape",
+        "locationRaw": "Jawa Tengah, Indonesia"
+      }
+    ],
+    "testimonials": [
+      {
+        "name": "Angelo A.",
+        "role": "Graphics Engineer",
+        "text": "Pushing the boundaries of real-time rendering. The global collaboration here is incredible."
+      }
+    ]
+  },
+  {
+    "id": "co-4",
+    "name": "ProjectDiscovery",
+    "githubOrg": "projectdiscovery",
+    "githubOrgUrl": "https://github.com/projectdiscovery",
+    "remoteokSlug": "projectdiscovery",
+    "industry": "Monitor your infrastructure. Real vulnerabilities. Zero noise.",
+    "verifiedIndonesianCount": 1,
+    "label": "Confirmed",
+    "lastVerifiedAt": "2026-06-17T07:07:20.076Z",
+    "hasActiveJobs": true,
+    "headquarters": "Mumbai, India",
+    "foundationYear": "2020",
+    "activeJobs": [
+      {
+        "title": "Senior Security Engineer (Remote)",
+        "url": "https://remoteok.com",
+        "tags": [
+          "Security",
+          "Go",
+          "Kubernetes",
+          "Operations"
+        ],
+        "salary": "$130k - $160k"
+      },
+      {
+        "title": "Fullstack Engineer - React/Go (Remote)",
+        "url": "https://remoteok.com",
+        "tags": [
+          "React",
+          "Go",
+          "TypeScript",
+          "Engineering"
+        ],
+        "salary": "$110k - $140k"
+      }
+    ],
+    "verifiedMembers": [
+      {
+        "id": "m-dwisiswant0",
+        "githubLogin": "dwisiswant0",
+        "githubProfileUrl": "https://github.com/dwisiswant0",
+        "locationRaw": "Jakarta, Indonesia"
+      }
+    ],
+    "testimonials": [
+      {
+        "name": "Dwi S.",
+        "role": "Core Maintainer",
+        "text": "Open-source developer environment where community contributions directly drive product decisions."
+      }
+    ]
+  },
+  {
+    "id": "co-5",
+    "name": "KrakenD Contrib",
+    "githubOrg": "krakend-contrib",
+    "githubOrgUrl": "https://github.com/krakend-contrib",
+    "remoteokSlug": "krakend-contrib",
+    "industry": "Contributors and core members of KrakenD API Gateway",
+    "verifiedIndonesianCount": 1,
+    "label": "Confirmed",
+    "lastVerifiedAt": "2026-06-17T07:07:34.711Z",
+    "hasActiveJobs": true,
+    "headquarters": "Barcelona, Spain",
+    "foundationYear": "2016",
+    "activeJobs": [
+      {
+        "title": "Backend Engineer - Go/Systems (Remote)",
+        "url": "https://remoteok.com",
+        "tags": [
+          "Go",
+          "Systems",
+          "Docker",
+          "Engineering"
+        ],
+        "salary": "€80k - €110k"
+      }
+    ],
+    "verifiedMembers": [
+      {
+        "id": "m-novalagung",
+        "githubLogin": "novalagung",
+        "githubProfileUrl": "https://github.com/novalagung",
+        "locationRaw": "Malang, Indonesia"
+      }
+    ],
+    "testimonials": [
+      {
+        "name": "Noval A.",
+        "role": "Systems Engineer",
+        "text": "KrakenD's high performance engine is a blast to build on. Strongly supportive of remote talent."
+      }
+    ]
+  },
+  {
+    "id": "co-6",
+    "name": "Automattic",
+    "githubOrg": "automattic",
+    "githubOrgUrl": "https://github.com/Automattic",
+    "remoteokSlug": "automattic",
+    "industry": "We are passionate about making the web a better place.",
+    "verifiedIndonesianCount": 1,
+    "label": "Confirmed",
+    "lastVerifiedAt": "2026-06-17T07:08:33.278Z",
+    "hasActiveJobs": true,
+    "headquarters": "San Francisco, CA",
+    "foundationYear": "2005",
+    "activeJobs": [
+      {
+        "title": "WordPress VIP Developer (Remote)",
+        "url": "https://remoteok.com",
+        "tags": [
+          "WordPress",
+          "PHP",
+          "React",
+          "Engineering"
+        ],
+        "salary": "$90k - $120k"
+      }
+    ],
+    "verifiedMembers": [
+      {
+        "id": "m-gedex",
+        "githubLogin": "gedex",
+        "githubProfileUrl": "https://github.com/gedex",
+        "locationRaw": "Indonesia"
+      }
+    ],
+    "testimonials": [
+      {
+        "name": "Gede X.",
+        "role": "VIP Systems Engineer",
+        "text": "Autonomy is the core here. Working asynchronously makes it possible to maintain top focus."
+      }
+    ]
+  },
+  {
+    "id": "co-7",
+    "name": "Grab",
+    "githubOrg": "grab",
+    "githubOrgUrl": "https://github.com/grab",
+    "remoteokSlug": "grab",
+    "industry": "Driving South-east Asia forward!",
+    "verifiedIndonesianCount": 1,
+    "label": "Confirmed",
+    "lastVerifiedAt": "2026-06-17T07:08:41.797Z",
+    "hasActiveJobs": false,
+    "headquarters": "Singapore",
+    "foundationYear": "2012",
+    "activeJobs": [],
+    "verifiedMembers": [
+      {
+        "id": "m-jacksonfernando",
+        "githubLogin": "jacksonfernando",
+        "githubProfileUrl": "https://github.com/jacksonfernando",
+        "locationRaw": "Jakarta. Indonesia"
+      }
+    ],
+    "testimonials": [
+      {
+        "name": "Jackson F.",
+        "role": "Lead Systems Engineer",
+        "text": "Grab offers an amazing scale of operations. The hybrid culture is highly collaborative."
+      }
+    ]
+  },
+  {
+    "id": "co-8",
+    "name": "Vercel",
+    "githubOrg": "vercel",
+    "githubOrgUrl": "https://github.com/vercel",
+    "remoteokSlug": "vercel",
+    "industry": "Infrastructure & Frontend Developer Tools (Next.js, Vercel Network)",
+    "verifiedIndonesianCount": 0,
+    "label": "Confirmed",
+    "lastVerifiedAt": "2026-06-17T07:09:23.444Z",
+    "hasActiveJobs": true,
+    "headquarters": "San Francisco, CA",
+    "foundationYear": "2015",
+    "activeJobs": [
+      {
+        "title": "Senior Software Engineer - Next.js (Remote)",
+        "url": "https://remoteok.com",
+        "tags": [
+          "NextJS",
+          "React",
+          "Rust",
+          "Engineering"
+        ],
+        "salary": "$150k - $190k"
+      },
+      {
+        "title": "Product Designer (Remote)",
+        "url": "https://remoteok.com",
+        "tags": [
+          "Figma",
+          "Design",
+          "UX",
+          "Product"
+        ],
+        "salary": "$100k - $130k"
+      }
+    ],
+    "verifiedMembers": [],
+    "testimonials": [
+      {
+        "name": "Budi S.",
+        "role": "Senior Frontend Engineer",
+        "text": "Working at Vercel from Jakarta has been a game-changer. The culture of shipping and excellence is contagious."
+      },
+      {
+        "name": "Aulia K.",
+        "role": "Product Infrastructure",
+        "text": "The engineering standards here are world-class. Remotika helped me realize how many of us are already here."
+      },
+      {
+        "name": "Rina M.",
+        "role": "Senior UI/UX Designer",
+        "text": "A truly remote-friendly environment that values diverse perspectives. Proud to be part of the Indonesian contingent."
+      }
+    ]
+  }
+]
