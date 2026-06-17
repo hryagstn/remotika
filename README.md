@@ -1,115 +1,118 @@
 # Remotika 🇮🇩 🚀
 
-> **Find global companies that actively hire Indonesian remote developers — 100% verified via GitHub organization memberships, not self-reported.**
+> **Temukan perusahaan global yang secara aktif mempekerjakan developer remote Indonesia — 100% terverifikasi melalui keanggotaan organisasi GitHub, bukan sekadar klaim sepihak.**
 
-Remotika is a zero-cost, hyper-scalable developer directory tool built to solve a real information gap: helping Indonesian developers and freelancers identify foreign, high-budget companies that *already* have a proven track record of hiring Indonesian talent.
+Remotika adalah direktori pengembang bertenaga tinggi dan hemat biaya yang dibangun untuk memecahkan kesenjangan informasi nyata: membantu developer dan freelancer Indonesia mengidentifikasi perusahaan asing dengan anggaran tinggi yang *sudah memiliki* rekam jejak terbukti dalam mempekerjakan talenta dari Indonesia.
 
-Instead of relying on self-reported and easily faked profile text, Remotika uses an **organization-first approach**: it verifies public GitHub organization memberships of target companies, matches member locations against targeted Indonesian keywords, and lists them with clear classification levels.
+Berbeda dengan direktori lain yang mengandalkan teks profil buatan sendiri yang mudah dipalsukan, Remotika menggunakan **pendekatan berbasis organisasi**: memindai keanggotaan organisasi GitHub publik dari perusahaan target, mencocokkan lokasi anggota dengan kata kunci Indonesia yang ditargetkan, dan mengklasifikasikannya ke dalam tingkat verifikasi yang jelas.
 
 ---
 
-## 🛠️ Tech Stack & Architecture (Alternative 1)
+## 🛠️ Stack Teknologi & Arsitektur
 
-This project is built using a modern, zero-maintenance **Git-as-a-Database (Stasis JSON)** architecture:
+Proyek ini dibangun menggunakan arsitektur modern **Git-as-a-Database (Stasis JSON)** yang bebas perawatan:
 - **Frontend & Server Actions:** [Next.js 16 (App Router)](https://nextjs.org/) + [React 19](https://react.dev/) + [Tailwind CSS v4](https://tailwindcss.com/)
-- **Database:** Static JSON file at `src/data/companies.json` serving all filter/search states instantaneously with sub-millisecond response times. No PostgreSQL, no Supabase, completely free of inactive sleep cycles!
-- **Data Pipeline:** Single Node/TypeScript script (`scripts/pipeline.ts`) that runs via **GitHub Actions** on a monthly cron schedule, fetches verified data, updates `companies.json`, and auto-commits the changes back to git.
+- **Database:** Berkas JSON statis di [companies.json](file:///c:/Laragon/www/remotika/src/data/companies.json) yang melayani seluruh pencarian dan filter secara instan dengan waktu respons sub-milidetik. Tanpa PostgreSQL, tanpa database eksternal yang lambat, sepenuhnya bebas biaya operasional!
+- **Pipa Data (Data Pipeline):** Skrip Node/TypeScript tunggal di [pipeline.ts](file:///c:/Laragon/www/remotika/scripts/pipeline.ts) yang berjalan secara otomatis melalui **GitHub Actions** pada jadwal harian/bulanan untuk mengambil data terverifikasi, memperbarui `companies.json`, dan mengirimkan (*auto-commit*) perubahan tersebut kembali ke repositori Git.
 
 ---
 
-## 📊 Verification Thresholds & Labeling
+## 📊 Klasifikasi & Label Verifikasi
 
-We classify companies based on the number of verified Indonesian public organization members found:
+Kami mengklasifikasikan tingkat keramahan perusahaan terhadap talenta Indonesia berdasarkan jumlah anggota publik terverifikasi yang kami temukan:
 
-| Verified Indonesian Members | Label | Meaning |
+| Anggota Indonesia Terverifikasi | Label | Arti |
 | :--- | :--- | :--- |
-| **1 developer** | 🔵 **Confirmed** | Proven precedent, remote infrastructure is established |
-| **2–4 developers** | 🟢 **Indonesia-Friendly** | Demonstrable remote-hiring pattern in place |
-| **5–9 developers** | 🟢 **Established** | Deeply comfortable hiring and working with Indonesian talent |
-| **10+ developers** | ⭐ **Top Pick** | Indonesia is a core part of their global talent sourcing strategy |
+| **1 developer** | 🔵 **Confirmed** | Memiliki preseden yang terbukti; infrastruktur kerja remote telah terbentuk |
+| **2–4 developer** | 🟢 **Indonesia-Friendly** | Pola perekrutan kerja remote yang mapan dan berulang |
+| **5–9 developer** | 🟣 **Established** | Sangat nyaman mempekerjakan dan bekerja sama dengan talenta Indonesia |
+| **10+ developer** | 👑 **Top Pick** | Indonesia merupakan bagian inti dari strategi perekrutan talenta global mereka |
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Memulai (Panduan Lokal)
 
-### 1. Prerequisites
-- **Node.js** (v20+ recommended)
-- **GitHub Personal Access Token (PAT):** Required for running the data pipeline script locally to avoid GitHub API rate-limiting.
+### 1. Prasyarat
+- **Node.js** (versi 20 atau lebih baru direkomendasikan)
+- **GitHub Personal Access Token (PAT):** Diperlukan untuk menjalankan skrip pipa data secara lokal guna menghindari batas laju panggilan (*rate-limiting*) API GitHub.
 
-### 2. Installation
-Clone the repository and install dependencies:
+### 2. Instalasi
+Salin repositori dan instal dependensi:
 ```bash
-git clone git@github.com:hryagstn/remotika.git
+git clone git@github.com-hryagstn:hryagstn/remotika.git
 cd remotika
 npm install
 ```
 
-### 3. Environment Setup
-Create a `.env` file in the root directory:
+### 3. Konfigurasi Lingkungan (Environment Setup)
+Buat berkas `.env` di direktori akar:
 ```env
-GITHUB_TOKEN=your_github_personal_access_token
+GITHUB_TOKEN=token_personal_access_github_anda
+NEXT_PUBLIC_GITHUB_REPO=https://github.com/hryagstn/remotika
 ```
 
-### 4. Running the App Locally
-Start the Next.js development server:
+### 4. Menjalankan Aplikasi Secara Lokal
+Jalankan server pengembangan Next.js:
 ```bash
 npm run dev
 ```
-Open [http://localhost:3000](http://localhost:3000) to view the dark-glassmorphic dashboard.
+Buka [http://localhost:3000](http://localhost:3000) untuk melihat dasbor Remotika Anda.
 
 ---
 
-## 📡 Running the Data Pipeline
+## 📡 Menjalankan Pipa Data (Pipeline)
 
-To scan GitHub organizations and update the local database:
+Untuk memindai organisasi GitHub dan memperbarui database lokal secara manual:
 ```bash
 npm run pipeline
 ```
 
-### How the Pipeline Works:
-1. Loads the existing `src/data/companies.json` file.
-2. Compiles a unique queue of organizations (existing list + seed list).
-3. Connects securely to the GitHub API via your `GITHUB_TOKEN`.
-4. Fetch organization details and lists up to 100 public members.
-5. Scans member profiles for location markers matching Indonesia (`jakarta`, `bandung`, `surabaya`, etc.).
-6. Updates coordinates, labels, and member list, preserving existing active jobs and remoteok custom configurations.
-7. Saves the updated data structures back to `src/data/companies.json` with clean indentations.
+### Cara Kerja Pipeline:
+1. Memuat basis data pengembang yang ada dari berkas [companies.json](file:///c:/Laragon/www/remotika/src/data/companies.json).
+2. Menyusun daftar unik organisasi yang akan diperiksa (gabungan daftar saat ini, daftar seed bawaan, dan daftar komunitas).
+3. Terhubung secara aman ke API GitHub menggunakan token `GITHUB_TOKEN` Anda.
+4. **Saringan A (Anggota Publik):** Memindai lokasi profil publik anggota organisasi apakah mengandung kata kunci Indonesia (`jakarta`, `bandung`, `surabaya`, `indonesia`, dll.).
+5. **Saringan B (Asosiasi PR):** Memeriksa kontributor utama yang memiliki asosiasi sebagai `MEMBER` atau `OWNER` pada pull request aktif.
+6. **Saringan C (Domain Email Komit):** Memindai riwayat komit terbaru dan memverifikasi domain email penulis yang cocok dengan situs web resmi perusahaan.
+7. Memperbarui jumlah anggota terverifikasi dan memperkaya data dengan lowongan kerja aktif dari RemoteOK API.
+8. Menyimpan hasil penyaringan kembali ke dalam [companies.json](file:///c:/Laragon/www/remotika/src/data/companies.json).
 
 ---
 
-## 🤖 Automated Updates (GitHub Actions)
+## 🤖 Pembaruan Otomatis (GitHub Actions)
 
-We have configured a fully automated monthly pipeline in `.github/workflows/pipeline.yml`:
-- **Schedule:** Triggers automatically on the **1st of every month** (`0 0 1 * *`) or can be triggered manually from the "Actions" tab.
-- **Auto-Commit:** The action securely runs the pipeline, updates `src/data/companies.json`, and commits/pushes the changes back to `main`.
-- **Zero-Config Redeploy:** If hosted on **Vercel** or **Netlify**, the push back to `main` automatically triggers a zero-downtime production redeployment.
+Proyek ini dilengkapi dengan alur kerja otomatis di [.github/workflows/update-database.yml](file:///c:/Laragon/www/remotika/.github/workflows/update-database.yml):
+- **Jadwal (Schedule):** Berjalan secara otomatis **setiap hari** pukul 00:00 UTC (07:00 WIB) untuk menjaga keakuratan lowongan kerja dan status verifikasi talenta.
+- **Auto-Commit:** GitHub Actions akan menjalankan skrip pipeline secara mandiri, memperbarui berkas `companies.json`, dan melakukan komit/push otomatis ke cabang `main` jika ada perubahan data terverifikasi.
+- **Auto-Deploy Vercel:** Jika Anda menghubungkan repositori GitHub Anda ke **Vercel**, setiap push otomatis ini akan memicu pembangunan ulang produksi (*production build*) secara instan tanpa mengganggu layanan.
 
----
-
-## 💡 How to Suggest a Company
-
-Community contributions drive this directory forward!
-1. When a user fills out the **"Suggest a Company"** form on the dashboard, Remotika uses a Next.js Server Action to compile a pre-filled GitHub Issue URL template.
-2. The user is redirected to the repository's **New Issue** page.
-3. Once they click submit, a human review is triggered.
-4. An admin can then add the organization to the pipeline seeds or merge it directly, fueling a viral community loop!
+> [!IMPORTANT]
+> **Hak Akses Write:** Agar pembaruan database otomatis ini berjalan lancar di GitHub Actions, buka tab **Settings > Actions > General** di repositori GitHub Anda, gulir ke bagian **Workflow permissions**, lalu pilih opsi **"Read and write permissions"** dan klik **Save**.
 
 ---
 
-## 🤝 Contributing
+## 💡 Cara Menyarankan Perusahaan
 
-We welcome community members to add new seed companies, improve location matching keywords, or enhance the dashboard UI!
-
-1. Fork this repository.
-2. Create a feature branch: `git checkout -b feature/amazing-feature`.
-3. Commit your changes: `git commit -m 'feat: add amazing feature'`.
-4. Push to the branch: `git push origin feature/amazing-feature`.
-5. Open a Pull Request.
+Remotika didorong sepenuhnya oleh kontribusi komunitas:
+1. Saat pengguna mengisi formulir **"Sarankan Perusahaan"** di dasbor web, sistem akan mengarahkan mereka ke template pembuatan Issue Baru di GitHub Anda secara dinamis.
+2. Setiap kali ada organisasi baru yang disarankan dan disetujui, skrip pipa data otomatis akan memprosesnya di siklus pemindaian berikutnya.
 
 ---
 
-## 📄 License
+## 🤝 Kontribusi
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Kami sangat menyambut kontribusi dari komunitas Indonesia! Anda dapat menambahkan nama organisasi GitHub perusahaan, memperbarui filter kata kunci lokasi, atau meningkatkan desain antarmuka.
 
-*Handcrafted with ❤️ for the Indonesian developer community by [hryagstn](https://github.com/hryagstn).*
+1. Lakukan Fork pada repositori ini.
+2. Buat cabang fitur baru: `git checkout -b fitur/fitur-keren`.
+3. Komit perubahan Anda: `git commit -m 'feat: menambahkan fitur keren'`.
+4. Push ke cabang tersebut: `git push origin fitur/fitur-keren`.
+5. Buka Pull Request.
+
+---
+
+## 📄 Lisensi
+
+Proyek ini dilisensikan di bawah Lisensi MIT - lihat berkas [LICENSE](file:///c:/Laragon/www/remotika/LICENSE) untuk detail selengkapnya.
+
+*Dibuat dengan ❤️ untuk komunitas teknologi Indonesia oleh [hryagstn](https://github.com/hryagstn).*

@@ -102,7 +102,29 @@ const DEFAULT_SEED_ORGS = [
   "slackhq",
   "discord",
   "zoom",
-  "teams"
+  "teams",
+  "gojek",
+  "traveloka",
+  "tokopedia",
+  "bukalapak",
+  "midtrans",
+  "fazz",
+  "finantier",
+  "ayoconnect",
+  "halodoc",
+  "efishery",
+  "vidio",
+  "kumparan",
+  "canonical",
+  "doist",
+  "buffer",
+  "toptal",
+  "elastic",
+  "polkadot",
+  "paritytech",
+  "stellar",
+  "ripple",
+  "chainlink"
 ];
 
 interface ActiveJob {
