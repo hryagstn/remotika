@@ -592,7 +592,7 @@ async function main() {
 
   // 5. Save updated list back to JSON
   const finalCompaniesList = Array.from(updatedCompaniesMap.values())
-    .filter(c => c.verifiedIndonesianCount > 0 || companies.some(ex => ex.id === c.id));
+    .filter(c => c.verifiedIndonesianCount > 0);
 
   // Sort by verified count descending
   finalCompaniesList.sort((a, b) => b.verifiedIndonesianCount - a.verifiedIndonesianCount);
