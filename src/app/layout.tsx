@@ -15,13 +15,13 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Remotika | Companies Hiring Verified Indonesian Remote Talents",
-  description: "Identify global, foreign tech companies proven to hire Indonesian developers. Highly-accurate data verified directly via GitHub organization memberships.",
-  keywords: ["remote work", "indonesian developers", "remote jobs indonesia", "verified companies", "github org memberships", "freelancer indonesia"],
+  title: "Remotika | Temukan Perusahaan Remote Terverifikasi",
+  description: "Temukan perusahaan teknologi asing yang terbukti mempekerjakan developer dari Indonesia. Data akurat 100% yang diverifikasi langsung dari keanggotaan organisasi GitHub.",
+  keywords: ["kerja remote", "developer indonesia", "lowongan remote indonesia", "perusahaan terverifikasi", "keanggotaan github", "freelancer indonesia"],
   authors: [{ name: "Remotika Team" }],
   openGraph: {
-    title: "Remotika - Verified Remote Companies for Indonesian Talent",
-    description: "Identify global, foreign tech companies proven to hire Indonesian developers. No self-reported claims, verified via GitHub organization memberships.",
+    title: "Remotika - Perusahaan Remote Terverifikasi untuk Talenta Indonesia",
+    description: "Temukan perusahaan teknologi asing yang terbukti mempekerjakan developer dari Indonesia. Tanpa klaim sepihak, diverifikasi langsung via organisasi GitHub.",
     type: "website",
   },
 };

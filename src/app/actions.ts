@@ -74,7 +74,7 @@ export async function submitSuggestion(
 ): Promise<{ success: boolean; message: string; redirectUrl?: string }> {
   const orgClean = githubOrg.trim().toLowerCase();
   if (!orgClean) {
-    return { success: false, message: "GitHub organization name is required" };
+    return { success: false, message: "Nama organisasi GitHub wajib diisi" };
   }
 
   // Build a pre-filled GitHub issue template URL for suggesting companies
