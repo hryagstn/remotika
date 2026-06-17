@@ -1,5 +1,143 @@
 [
   {
+    "id": "co-9",
+    "name": "Traveloka",
+    "githubOrg": "traveloka",
+    "githubOrgUrl": "https://github.com/traveloka",
+    "remoteokSlug": "traveloka",
+    "industry": "Empowering Discovery",
+    "verifiedIndonesianCount": 11,
+    "label": "Top Pick",
+    "lastVerifiedAt": "2026-06-17T09:13:53.468Z",
+    "hasActiveJobs": false,
+    "activeJobs": [],
+    "verifiedMembers": [
+      {
+        "id": "m-arsi-alhafis",
+        "githubLogin": "arsi-alhafis",
+        "githubProfileUrl": "https://github.com/arsi-alhafis",
+        "locationRaw": "Jakarta"
+      },
+      {
+        "id": "m-gilangardya",
+        "githubLogin": "gilangardya",
+        "githubProfileUrl": "https://github.com/gilangardya",
+        "locationRaw": "Jakarta, Indonesia"
+      },
+      {
+        "id": "m-haritsrm",
+        "githubLogin": "haritsrm",
+        "githubProfileUrl": "https://github.com/haritsrm",
+        "locationRaw": "Tangerang, Banten"
+      },
+      {
+        "id": "m-hellowin",
+        "githubLogin": "hellowin",
+        "githubProfileUrl": "https://github.com/hellowin",
+        "locationRaw": "Malang, Indonesia"
+      },
+      {
+        "id": "m-imamhidayat92",
+        "githubLogin": "imamhidayat92",
+        "githubProfileUrl": "https://github.com/imamhidayat92",
+        "locationRaw": "Jakarta"
+      },
+      {
+        "id": "m-khaeransori",
+        "githubLogin": "khaeransori",
+        "githubProfileUrl": "https://github.com/khaeransori",
+        "locationRaw": "Jakarta"
+      },
+      {
+        "id": "m-kharismarizqii",
+        "githubLogin": "kharismarizqii",
+        "githubProfileUrl": "https://github.com/kharismarizqii",
+        "locationRaw": "Indonesia"
+      },
+      {
+        "id": "m-lan666as",
+        "githubLogin": "lan666as",
+        "githubProfileUrl": "https://github.com/lan666as",
+        "locationRaw": "Jakarta Metropolitan Area, ID"
+      },
+      {
+        "id": "m-leejhlouis",
+        "githubLogin": "leejhlouis",
+        "githubProfileUrl": "https://github.com/leejhlouis",
+        "locationRaw": "Jakarta, Indonesia"
+      },
+      {
+        "id": "m-Rahandi",
+        "githubLogin": "Rahandi",
+        "githubProfileUrl": "https://github.com/Rahandi",
+        "locationRaw": "South Tangerang"
+      },
+      {
+        "id": "m-salvianreynaldi",
+        "githubLogin": "salvianreynaldi",
+        "githubProfileUrl": "https://github.com/salvianreynaldi",
+        "locationRaw": "Jakarta"
+      }
+    ]
+  },
+  {
+    "id": "co-11",
+    "name": "eFishery",
+    "githubOrg": "efishery",
+    "githubOrgUrl": "https://github.com/eFishery",
+    "remoteokSlug": "efishery",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 7,
+    "label": "Established",
+    "lastVerifiedAt": "2026-06-17T09:14:39.758Z",
+    "hasActiveJobs": false,
+    "activeJobs": [],
+    "verifiedMembers": [
+      {
+        "id": "m-afrianjunior",
+        "githubLogin": "afrianjunior",
+        "githubProfileUrl": "https://github.com/afrianjunior",
+        "locationRaw": "Bandung, Indonesia"
+      },
+      {
+        "id": "m-ans-4175",
+        "githubLogin": "ans-4175",
+        "githubProfileUrl": "https://github.com/ans-4175",
+        "locationRaw": "Bandung"
+      },
+      {
+        "id": "m-arifinoid",
+        "githubLogin": "arifinoid",
+        "githubProfileUrl": "https://github.com/arifinoid",
+        "locationRaw": "Jakarta, Indonesia"
+      },
+      {
+        "id": "m-haryanapnx",
+        "githubLogin": "haryanapnx",
+        "githubProfileUrl": "https://github.com/haryanapnx",
+        "locationRaw": "Bandung, Indonesia"
+      },
+      {
+        "id": "m-iqbalmuhyiddin",
+        "githubLogin": "iqbalmuhyiddin",
+        "githubProfileUrl": "https://github.com/iqbalmuhyiddin",
+        "locationRaw": "Bandung"
+      },
+      {
+        "id": "m-lilsatya",
+        "githubLogin": "lilsatya",
+        "githubProfileUrl": "https://github.com/lilsatya",
+        "locationRaw": "Bandung, Indonesia"
+      },
+      {
+        "id": "m-yogacp",
+        "githubLogin": "yogacp",
+        "githubProfileUrl": "https://github.com/yogacp",
+        "locationRaw": "Bandung, West Java, Indonesia"
+      }
+    ]
+  },
+  {
     "id": "co-1",
     "name": "Xendit",
     "githubOrg": "xendit",
@@ -8,7 +146,7 @@
     "industry": "Tech & Development Services",
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-06-17T07:06:05.958Z",
+    "lastVerifiedAt": "2026-06-17T08:45:34.924Z",
     "hasActiveJobs": true,
     "headquarters": "Jakarta, Indonesia",
     "foundationYear": "2015",
@@ -83,6 +221,45 @@
     ]
   },
   {
+    "id": "co-8",
+    "name": "Gojek",
+    "githubOrg": "gojek",
+    "githubOrgUrl": "https://github.com/gojek",
+    "remoteokSlug": "gojek",
+    "industry": "SuperApp from Southeast Asia",
+    "verifiedIndonesianCount": 4,
+    "label": "Indonesia-Friendly",
+    "lastVerifiedAt": "2026-06-17T09:13:43.946Z",
+    "hasActiveJobs": false,
+    "activeJobs": [],
+    "verifiedMembers": [
+      {
+        "id": "m-akhy",
+        "githubLogin": "akhy",
+        "githubProfileUrl": "https://github.com/akhy",
+        "locationRaw": "Yogyakarta, Indonesia"
+      },
+      {
+        "id": "m-baskarap",
+        "githubLogin": "baskarap",
+        "githubProfileUrl": "https://github.com/baskarap",
+        "locationRaw": "Indonesia"
+      },
+      {
+        "id": "m-sudhanshuraheja",
+        "githubLogin": "sudhanshuraheja",
+        "githubProfileUrl": "https://github.com/sudhanshuraheja",
+        "locationRaw": "Jakarta"
+      },
+      {
+        "id": "m-walbertus",
+        "githubLogin": "walbertus",
+        "githubProfileUrl": "https://github.com/walbertus",
+        "locationRaw": "Indonesia"
+      }
+    ]
+  },
+  {
     "id": "co-2",
     "name": "GTI Labs",
     "githubOrg": "gtilabs",
@@ -91,7 +268,7 @@
     "industry": "GTI Labs",
     "verifiedIndonesianCount": 3,
     "label": "Indonesia-Friendly",
-    "lastVerifiedAt": "2026-06-17T07:06:14.120Z",
+    "lastVerifiedAt": "2026-06-17T08:45:43.834Z",
     "hasActiveJobs": false,
     "headquarters": "Jakarta, Indonesia",
     "foundationYear": "2010",
@@ -125,6 +302,39 @@
     ]
   },
   {
+    "id": "co-12",
+    "name": "Kumparan",
+    "githubOrg": "kumparan",
+    "githubOrgUrl": "https://github.com/kumparan",
+    "remoteokSlug": "kumparan",
+    "industry": "Redefined News Platform",
+    "verifiedIndonesianCount": 3,
+    "label": "Indonesia-Friendly",
+    "lastVerifiedAt": "2026-06-17T09:14:51.574Z",
+    "hasActiveJobs": false,
+    "activeJobs": [],
+    "verifiedMembers": [
+      {
+        "id": "m-atjhoendz",
+        "githubLogin": "atjhoendz",
+        "githubProfileUrl": "https://github.com/atjhoendz",
+        "locationRaw": "Cirebon,Indonesia"
+      },
+      {
+        "id": "m-renopp",
+        "githubLogin": "renopp",
+        "githubProfileUrl": "https://github.com/renopp",
+        "locationRaw": "Depok - Indonesia"
+      },
+      {
+        "id": "m-rizalibnu",
+        "githubLogin": "rizalibnu",
+        "githubProfileUrl": "https://github.com/rizalibnu",
+        "locationRaw": "Purwokerto, Indonesia"
+      }
+    ]
+  },
+  {
     "id": "co-3",
     "name": "NVIDIA GameWorks",
     "githubOrg": "nvidiagameworks",
@@ -133,7 +343,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 2,
     "label": "Indonesia-Friendly",
-    "lastVerifiedAt": "2026-06-17T07:07:06.871Z",
+    "lastVerifiedAt": "2026-06-17T08:46:41.820Z",
     "hasActiveJobs": true,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -181,7 +391,7 @@
     "industry": "Monitor your infrastructure. Real vulnerabilities. Zero noise.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-06-17T07:07:20.076Z",
+    "lastVerifiedAt": "2026-06-17T08:46:55.189Z",
     "hasActiveJobs": true,
     "headquarters": "Mumbai, India",
     "foundationYear": "2020",
@@ -234,7 +444,7 @@
     "industry": "Contributors and core members of KrakenD API Gateway",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-06-17T07:07:34.711Z",
+    "lastVerifiedAt": "2026-06-17T08:47:11.264Z",
     "hasActiveJobs": true,
     "headquarters": "Barcelona, Spain",
     "foundationYear": "2016",
@@ -276,7 +486,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-06-17T07:08:33.278Z",
+    "lastVerifiedAt": "2026-06-17T08:48:13.187Z",
     "hasActiveJobs": true,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -318,7 +528,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-06-17T07:08:41.797Z",
+    "lastVerifiedAt": "2026-06-17T08:48:22.039Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -336,6 +546,27 @@
         "name": "Jackson F.",
         "role": "Lead Systems Engineer",
         "text": "Grab offers an amazing scale of operations. The hybrid culture is highly collaborative."
+      }
+    ]
+  },
+  {
+    "id": "co-10",
+    "name": "Bukalapak",
+    "githubOrg": "bukalapak",
+    "githubOrgUrl": "https://github.com/bukalapak",
+    "remoteokSlug": "bukalapak",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 1,
+    "label": "Confirmed",
+    "lastVerifiedAt": "2026-06-17T09:14:10.271Z",
+    "hasActiveJobs": false,
+    "activeJobs": [],
+    "verifiedMembers": [
+      {
+        "id": "m-faris-id",
+        "githubLogin": "faris-id",
+        "githubProfileUrl": "https://github.com/faris-id",
+        "locationRaw": "Indonesia"
       }
     ]
   }

@@ -270,6 +270,95 @@ async function fetchRemoteJobs() {
   }
 }
 
+async function fetchRemotiveJobs() {
+  console.log("\n[Pipeline] Fetching active remote jobs from Remotive API...");
+  try {
+    const res = await fetch("https://remotive.com/api/remote-jobs?category=software-dev", {
+      headers: { "User-Agent": "Remotika-Pipeline/1.0" }
+    });
+    if (!res.ok) {
+      console.log("  ⚠️  Failed to fetch from Remotive API. Skipping job enrichment.");
+      return;
+    }
+    const data = await res.json();
+    if (data && Array.isArray(data.jobs)) {
+      console.log(`  Fetched ${data.jobs.length} jobs from Remotive API. Filtering...`);
+      let count = 0;
+      for (const job of data.jobs) {
+        if (!job.company_name || !job.title || !job.url) continue;
+        
+        // Filter jobs by location: must contain worldwide, indonesia, anywhere, apac, or asia
+        const location = (job.candidate_required_location || "").toLowerCase();
+        const isTargetLocation = ["worldwide", "indonesia", "anywhere", "apac", "asia"].some(loc => location.includes(loc));
+        if (!isTargetLocation) continue;
+
+        const companyKey = job.company_name.toLowerCase().trim();
+        const activeJob: ActiveJob = {
+          title: job.title,
+          url: job.url,
+          tags: Array.isArray(job.tags) ? job.tags : [],
+          salary: job.salary || undefined
+        };
+        if (!companyJobsMap.has(companyKey)) {
+          companyJobsMap.set(companyKey, []);
+        }
+        companyJobsMap.get(companyKey)!.push(activeJob);
+        count++;
+      }
+      console.log(`  Processed ${count} location-matched jobs from Remotive.`);
+    }
+  } catch (err: any) {
+    console.error("  ❌ Error fetching from Remotive API:", err.message);
+  }
+}
+
+function guessGithubOrgs(companyName: string): string[] {
+  const cleanName = companyName.toLowerCase().trim();
+  
+  // 1. Remove anything inside parentheses
+  let baseName = cleanName.replace(/\([^)]*\)/g, "").trim();
+  
+  // 2. Remove common legal suffixes
+  const suffixes = [
+    /\binc\.?\b/g,
+    /\bltd\.?\b/g,
+    /\bllc\.?\b/g,
+    /\bcorp\.?\b/g,
+    /\bco\.?\b/g,
+    /\bgmbh\b/g,
+    /\bs\.?a\.?\b/g,
+    /\bs\.?r\.?o\.?\b/g,
+    /\bsoftware\b/g,
+    /\btechnologies\b/g,
+    /\btech\b/g,
+    /\bsolutions\b/g
+  ];
+  for (const suffix of suffixes) {
+    baseName = baseName.replace(suffix, "").trim();
+  }
+
+  // Remove multiple spaces and keep only alphanumeric, spaces, and hyphens
+  baseName = baseName.replace(/[^a-z0-9\s-]/g, "").trim().replace(/\s+/g, " ");
+
+  if (!baseName) return [];
+
+  const candidates: string[] = [];
+  
+  // Variant 1: space removed
+  const spaceRemoved = baseName.replace(/\s+/g, "");
+  if (spaceRemoved && spaceRemoved.length > 2) {
+    candidates.push(spaceRemoved);
+  }
+
+  // Variant 2: hyphenated
+  const hyphenated = baseName.replace(/\s+/g, "-");
+  if (hyphenated && hyphenated !== spaceRemoved && hyphenated.length > 2) {
+    candidates.push(hyphenated);
+  }
+
+  return candidates;
+}
+
 async function fetchCommunitySeeds(): Promise<string[]> {
   console.log("\n[Pipeline] Ingesting community seeds from raw Markdown lists...");
   const urls = [
@@ -525,33 +614,74 @@ async function main() {
 
   console.log("=== STARTING REMOTIKA MULTI-LAYERED PIPELINE ===");
 
-  // 1. Fetch remote jobs from RemoteOK API first
+  // 1. Fetch remote jobs from RemoteOK and Remotive APIs
   await fetchRemoteJobs();
+  await fetchRemotiveJobs();
 
   // 2. Load current companies.json database
   const companies = loadCompanies();
   console.log(`Loaded ${companies.length} existing companies from JSON database.`);
 
-  // 3. Collate orgs to process (existing + seeds + community seeds)
+  // 3. Collate all known organizations (existing + seeds + community seeds)
+  const knownOrgs = new Set<string>();
+  companies.forEach(c => {
+    if (c.githubOrg) {
+      knownOrgs.add(c.githubOrg.toLowerCase().trim());
+    }
+  });
+
+  DEFAULT_SEED_ORGS.forEach(org => {
+    knownOrgs.add(org.toLowerCase().trim());
+  });
+
+  let communitySeeds: string[] = [];
+  try {
+    communitySeeds = await fetchCommunitySeeds();
+    communitySeeds.forEach(org => {
+      knownOrgs.add(org.toLowerCase().trim());
+    });
+  } catch (err: any) {
+    console.error("  ❌ Error combining community seeds:", err.message);
+  }
+
+  // 4. Guess new organizations from active job listings
+  const newCandidates = new Set<string>();
+  for (const companyKey of companyJobsMap.keys()) {
+    const guesses = guessGithubOrgs(companyKey);
+    for (const guess of guesses) {
+      if (!knownOrgs.has(guess) && !newCandidates.has(guess)) {
+        newCandidates.add(guess);
+      }
+    }
+  }
+
+  console.log(`\n[Pipeline] Guessed ${newCandidates.size} new potential GitHub organization names from jobs.`);
+  
+  // Limit new guesses to a safe maximum to avoid GitHub API rate limiting
+  const MAX_NEW_GUESSES = 15;
+  const selectedNewGuesses = Array.from(newCandidates).slice(0, MAX_NEW_GUESSES);
+  console.log(`  Selected top ${selectedNewGuesses.length} new guesses to inspect:`, selectedNewGuesses);
+
+  // 5. Combine everything into the processing queue
   const orgsToProcess = new Set<string>();
+  
+  // Always process existing companies to update their jobs/members
   companies.forEach(c => {
     if (c.githubOrg) {
       orgsToProcess.add(c.githubOrg.toLowerCase().trim());
     }
   });
 
+  // Add default seeds, community seeds, and our new guesses
   DEFAULT_SEED_ORGS.forEach(org => {
     orgsToProcess.add(org.toLowerCase().trim());
   });
-
-  try {
-    const communitySeeds = await fetchCommunitySeeds();
-    communitySeeds.forEach(org => {
-      orgsToProcess.add(org.toLowerCase().trim());
-    });
-  } catch (err: any) {
-    console.error("  ❌ Error combining community seeds:", err.message);
-  }
+  communitySeeds.forEach(org => {
+    orgsToProcess.add(org.toLowerCase().trim());
+  });
+  selectedNewGuesses.forEach(org => {
+    orgsToProcess.add(org.toLowerCase().trim());
+  });
 
   const orgList = Array.from(orgsToProcess);
   console.log(`Queue loaded with ${orgList.length} unique organizations to inspect.`);
