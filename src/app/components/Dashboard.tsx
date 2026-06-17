@@ -449,7 +449,7 @@ export default function Dashboard({ initialCompanies }: DashboardProps) {
                               </div>
                               <div className="flex justify-between items-center mt-1 text-[9px] text-white/40">
                                 <span className="line-clamp-1">{job.tags.join(", ")}</span>
-                                {job.salary && <span className="text-white/60 font-semibold">{job.salary}</span>}
+                                {job.salary && <span className="text-white/60 font-semibold">{job.salary} / tahun</span>}
                               </div>
                             </a>
                           ))}

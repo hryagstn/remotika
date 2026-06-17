@@ -313,7 +313,7 @@ export default async function CompanyProfilePage({ params }: PageProps) {
                           {job.salary && (
                             <>
                               <span className="text-white/20 select-none">•</span>
-                              <span className="text-brand-accent text-[11px] font-bold">{job.salary}</span>
+                              <span className="text-brand-accent text-[11px] font-bold">{job.salary} / tahun</span>
                             </>
                           )}
                         </div>
