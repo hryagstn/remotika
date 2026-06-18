@@ -84,66 +84,6 @@
     }
   },
   {
-    "id": "co-11",
-    "name": "eFishery",
-    "githubOrg": "efishery",
-    "githubOrgUrl": "https://github.com/eFishery",
-    "remoteokSlug": "efishery",
-    "industry": "Tech & Development Services",
-    "verifiedIndonesianCount": 7,
-    "label": "Established",
-    "lastVerifiedAt": "2026-06-18T02:29:55.750Z",
-    "hasActiveJobs": false,
-    "activeJobs": [],
-    "verifiedMembers": [
-      {
-        "id": "m-afrianjunior",
-        "githubLogin": "afrianjunior",
-        "githubProfileUrl": "https://github.com/afrianjunior",
-        "locationRaw": "Bandung, Indonesia"
-      },
-      {
-        "id": "m-ans-4175",
-        "githubLogin": "ans-4175",
-        "githubProfileUrl": "https://github.com/ans-4175",
-        "locationRaw": "Bandung"
-      },
-      {
-        "id": "m-arifinoid",
-        "githubLogin": "arifinoid",
-        "githubProfileUrl": "https://github.com/arifinoid",
-        "locationRaw": "Jakarta, Indonesia"
-      },
-      {
-        "id": "m-haryanapnx",
-        "githubLogin": "haryanapnx",
-        "githubProfileUrl": "https://github.com/haryanapnx",
-        "locationRaw": "Bandung, Indonesia"
-      },
-      {
-        "id": "m-iqbalmuhyiddin",
-        "githubLogin": "iqbalmuhyiddin",
-        "githubProfileUrl": "https://github.com/iqbalmuhyiddin",
-        "locationRaw": "Bandung"
-      },
-      {
-        "id": "m-lilsatya",
-        "githubLogin": "lilsatya",
-        "githubProfileUrl": "https://github.com/lilsatya",
-        "locationRaw": "Bandung, Indonesia"
-      },
-      {
-        "id": "m-yogacp",
-        "githubLogin": "yogacp",
-        "githubProfileUrl": "https://github.com/yogacp",
-        "locationRaw": "Bandung, West Java, Indonesia"
-      }
-    ],
-    "jobSources": {
-      "careerPageUrl": "https://efishery.com/en/career/"
-    }
-  },
-  {
     "id": "co-1",
     "name": "Xendit",
     "githubOrg": "xendit",

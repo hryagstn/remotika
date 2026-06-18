@@ -118,7 +118,7 @@ const DEFAULT_SEED_ORGS = [
   "finantier",
   "ayoconnect",
   "halodoc",
-  "efishery",
+
   "vidio",
   "kumparan",
   "canonical",
@@ -362,9 +362,7 @@ const COMPANY_JOB_SOURCES: Record<string, JobSources> = {
   "krakend-contrib": {
     careerPageUrl: "https://www.krakend.io/careers/"
   },
-  "efishery": {
-    careerPageUrl: "https://efishery.com/en/career/"
-  },
+
   "bukalapak": {
     careerPageUrl: "https://careers.bukalapak.com/"
   },
