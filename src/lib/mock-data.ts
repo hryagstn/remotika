@@ -40,13 +40,13 @@ export const MOCK_COMPANIES: MockCompany[] = [
     activeJobs: [
       {
         title: "Senior Security Engineer (Remote)",
-        url: "https://remoteok.com",
+        url: "https://remoteok.com/companies/projectdiscovery",
         tags: ["Security", "Go", "Kubernetes"],
         salary: "$130k - $160k"
       },
       {
         title: "Fullstack Engineer - React/Go (Remote)",
-        url: "https://remoteok.com",
+        url: "https://remoteok.com/companies/projectdiscovery",
         tags: ["React", "Go", "TypeScript"],
         salary: "$110k - $140k"
       }
@@ -100,7 +100,7 @@ export const MOCK_COMPANIES: MockCompany[] = [
     activeJobs: [
       {
         title: "Backend Engineer - Go/Systems (Remote)",
-        url: "https://remoteok.com",
+        url: "https://remoteok.com/companies/krakend",
         tags: ["Go", "Systems", "Docker"],
         salary: "€80k - €110k"
       }
@@ -160,13 +160,13 @@ export const MOCK_COMPANIES: MockCompany[] = [
     activeJobs: [
       {
         title: "Senior frontend Developer (Remote APAC)",
-        url: "https://remoteok.com",
+        url: "https://remoteok.com/companies/canva",
         tags: ["React", "TypeScript", "CSS"],
         salary: "$120k - $150k"
       },
       {
         title: "Product Designer - Growth (Remote)",
-        url: "https://remoteok.com",
+        url: "https://remoteok.com/companies/canva",
         tags: ["Figma", "Design", "UX"],
         salary: "$100k - $130k"
       }
@@ -193,7 +193,7 @@ export const MOCK_COMPANIES: MockCompany[] = [
     activeJobs: [
       {
         title: "Staff Systems Engineer - Distribution (Remote)",
-        url: "https://remoteok.com",
+        url: "https://remoteok.com/companies/gitlab",
         tags: ["Go", "Ruby", "Kubernetes"],
         salary: "$150k - $190k"
       }
@@ -220,7 +220,7 @@ export const MOCK_COMPANIES: MockCompany[] = [
     activeJobs: [
       {
         title: "Senior Software Engineer - NodeJS (Remote)",
-        url: "https://remoteok.com",
+        url: "https://remoteok.com/companies/xendit",
         tags: ["NodeJS", "TypeScript", "AWS"],
         salary: "$80k - $110k"
       }

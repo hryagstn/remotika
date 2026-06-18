@@ -34,8 +34,27 @@ export interface CompanyData {
   }>;
 }
 
-// Read and cast static companies JSON database
-const companiesData: CompanyData[] = companiesDataRaw as CompanyData[];
+// Read and cast static companies JSON database, resolving any generic RemoteOK homepage links to company pages
+const companiesData: CompanyData[] = (companiesDataRaw as CompanyData[]).map((c) => {
+  if (c.activeJobs && c.activeJobs.length > 0) {
+    return {
+      ...c,
+      activeJobs: c.activeJobs.map((job) => {
+        if (
+          (job.url === "https://remoteok.com" || job.url === "https://remoteok.com/") &&
+          c.remoteokSlug
+        ) {
+          return {
+            ...job,
+            url: `https://remoteok.com/companies/${c.remoteokSlug}`,
+          };
+        }
+        return job;
+      }),
+    };
+  }
+  return c;
+});
 
 export async function getCompanies(
   search: string = "",
