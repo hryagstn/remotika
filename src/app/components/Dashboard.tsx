@@ -459,6 +459,22 @@ export default function Dashboard({ initialCompanies }: DashboardProps) {
                         </div>
                       </div>
                     )}
+
+                    {/* Career Page Link (when no active jobs from API) */}
+                    {(!c.hasActiveJobs || !c.activeJobs || c.activeJobs.length === 0) && c.jobSources?.careerPageUrl && (
+                      <div className="border-t border-white/5 pt-3.5">
+                        <a
+                          href={c.jobSources.careerPageUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center gap-2 p-2 rounded-lg bg-brand-primary/5 hover:bg-brand-primary/10 border border-brand-primary/10 hover:border-brand-primary/20 transition-all group"
+                        >
+                          <Briefcase className="w-3.5 h-3.5 text-brand-primary/60 group-hover:text-brand-primary transition-colors" />
+                          <span className="text-[10px] font-semibold text-white/60 group-hover:text-white/80 transition-colors">Lihat Halaman Karir</span>
+                          <ExternalLink className="w-2.5 h-2.5 text-white/30 group-hover:text-brand-primary ml-auto transition-colors" />
+                        </a>
+                      </div>
+                    )}
                   </div>
 
                   {/* Card Actions Footer */}

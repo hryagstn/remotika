@@ -23,6 +23,11 @@ export interface MockCompany {
     salary?: string;
   }>;
   verifiedMembers: MockMember[];
+  jobSources?: {
+    greenhouse?: string;
+    workday?: { subdomain: string; sitePath: string };
+    careerPageUrl?: string;
+  };
 }
 
 export const MOCK_COMPANIES: MockCompany[] = [

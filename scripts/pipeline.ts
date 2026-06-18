@@ -147,6 +147,15 @@ interface VerifiedMember {
   locationRaw: string | null;
 }
 
+interface JobSources {
+  greenhouse?: string;       // Greenhouse board slug
+  workday?: {                // Workday config
+    subdomain: string;
+    sitePath: string;
+  };
+  careerPageUrl?: string;    // Fallback career page link
+}
+
 interface CompanyData {
   id: string;
   name: string;
@@ -163,6 +172,7 @@ interface CompanyData {
   headquarters?: string;
   foundationYear?: string;
   testimonials?: Array<{ name: string; role: string; text: string }>;
+  jobSources?: JobSources;
 }
 
 // User location search cache to save GitHub API quota
@@ -315,6 +325,129 @@ async function fetchRemotiveJobs() {
     }
   } catch (err: any) {
     console.error("  ❌ Error fetching from Remotive API:", err.message);
+  }
+}
+
+// ─── Per-Company ATS Sources Configuration ───────────────────────────────────
+const COMPANY_JOB_SOURCES: Record<string, JobSources> = {
+  "xendit": {
+    greenhouse: "xendit",
+    careerPageUrl: "https://www.xendit.co/en/careers"
+  },
+  "gitlab": {
+    greenhouse: "gitlab",
+    careerPageUrl: "https://about.gitlab.com/jobs/all-jobs/"
+  },
+  "nvidiagameworks": {
+    workday: { subdomain: "nvidia", sitePath: "NVIDIAExternalCareerSite" },
+    careerPageUrl: "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite"
+  },
+  "automattic": {
+    careerPageUrl: "https://automattic.com/work-with-us/"
+  },
+  "grab": {
+    careerPageUrl: "https://grab.careers/"
+  },
+  "gojek": {
+    careerPageUrl: "https://www.gotocompany.com/careers"
+  },
+  "gtilabs": {
+    careerPageUrl: "https://www.gotocompany.com/careers"
+  },
+  "traveloka": {
+    careerPageUrl: "https://www.traveloka.com/en-id/careers"
+  },
+  "projectdiscovery": {
+    careerPageUrl: "https://projectdiscovery.io/about#careers"
+  },
+  "krakend-contrib": {
+    careerPageUrl: "https://www.krakend.io/careers/"
+  },
+  "efishery": {
+    careerPageUrl: "https://efishery.com/en/career/"
+  },
+  "bukalapak": {
+    careerPageUrl: "https://careers.bukalapak.com/"
+  },
+  "kumparan": {
+    careerPageUrl: "https://kumparan.com/"
+  },
+};
+
+// ─── Greenhouse Jobs API ─────────────────────────────────────────────────────
+const LOCATION_KEYWORDS_REMOTE = ["remote", "anywhere", "worldwide", "global"];
+const LOCATION_KEYWORDS_APAC = ["indonesia", "jakarta", "apac", "asia", "singapore", "southeast asia"];
+
+function isRelevantLocation(locationName: string): boolean {
+  const loc = locationName.toLowerCase();
+  return [...LOCATION_KEYWORDS_REMOTE, ...LOCATION_KEYWORDS_APAC].some(k => loc.includes(k));
+}
+
+async function fetchGreenhouseJobs(boardSlug: string): Promise<ActiveJob[]> {
+  try {
+    const res = await fetch(`https://boards-api.greenhouse.io/v1/boards/${boardSlug}/jobs`, {
+      headers: { "User-Agent": "Remotika-Pipeline/1.0" }
+    });
+    if (!res.ok) return [];
+    const data = await res.json();
+    const jobs: ActiveJob[] = [];
+    if (data && Array.isArray(data.jobs)) {
+      for (const job of data.jobs) {
+        if (!job.title || !job.absolute_url) continue;
+        const location = job.location?.name || "";
+        // Include if location is relevant OR if no location info (assume remote-friendly)
+        if (location && !isRelevantLocation(location)) continue;
+        jobs.push({
+          title: job.title,
+          url: job.absolute_url,
+          tags: job.departments?.map((d: any) => d.name).filter(Boolean) || [],
+          salary: undefined
+        });
+      }
+    }
+    return jobs;
+  } catch (err: any) {
+    console.error(`    ❌ Greenhouse API error for ${boardSlug}:`, err.message);
+    return [];
+  }
+}
+
+// ─── Workday Jobs API ────────────────────────────────────────────────────────
+async function fetchWorkdayJobs(config: { subdomain: string; sitePath: string }): Promise<ActiveJob[]> {
+  try {
+    const url = `https://${config.subdomain}.wd5.myworkdayjobs.com/wday/cxs/${config.subdomain}/${config.sitePath}/jobs`;
+    const res = await fetch(url, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "User-Agent": "Remotika-Pipeline/1.0"
+      },
+      body: JSON.stringify({
+        limit: 20,
+        offset: 0,
+        appliedFacets: {},
+        searchText: "remote indonesia"
+      })
+    });
+    if (!res.ok) return [];
+    const data = await res.json();
+    const jobs: ActiveJob[] = [];
+    if (data && Array.isArray(data.jobPostings)) {
+      for (const job of data.jobPostings) {
+        if (!job.title) continue;
+        const jobUrl = `https://${config.subdomain}.wd5.myworkdayjobs.com/en-US/${config.sitePath}${job.externalPath || ""}`;
+        jobs.push({
+          title: job.title,
+          url: jobUrl,
+          tags: job.locationsText ? [job.locationsText] : [],
+          salary: undefined
+        });
+      }
+    }
+    return jobs;
+  } catch (err: any) {
+    console.error(`    ❌ Workday API error for ${config.subdomain}:`, err.message);
+    return [];
   }
 }
 
@@ -704,37 +837,76 @@ async function main() {
   for (const org of orgList) {
     const updatedCompany = await processOrg(org, Array.from(updatedCompaniesMap.values()));
     if (updatedCompany) {
-      // Enrich with active jobs if matches RemoteOK/Remotive fetched list
+      // ── Job Enrichment: multi-source strategy ──
       const cleanNameKey = updatedCompany.name.toLowerCase().trim();
       const cleanSlugKey = updatedCompany.githubOrg.toLowerCase().trim();
       const remoteokKey = updatedCompany.remoteokSlug?.toLowerCase().trim();
+      const orgKey = org.toLowerCase().trim();
+
+      // Determine jobSources config for this org
+      const jobSourcesConfig = COMPANY_JOB_SOURCES[orgKey] || COMPANY_JOB_SOURCES[cleanSlugKey];
       
-      // Try exact match first, then remoteokSlug, then partial matching
-      let matchedJobs = companyJobsMap.get(cleanNameKey) 
+      // Attach jobSources config to company data
+      if (jobSourcesConfig) {
+        updatedCompany.jobSources = jobSourcesConfig;
+      }
+
+      let allJobs: ActiveJob[] = [];
+
+      // Source 1: RemoteOK/Remotive global feed match
+      let feedJobs = companyJobsMap.get(cleanNameKey) 
         || companyJobsMap.get(cleanSlugKey)
         || (remoteokKey ? companyJobsMap.get(remoteokKey) : undefined);
       
-      // Partial match: check if any companyJobsMap key contains or is contained by our company name/slug
-      if (!matchedJobs) {
+      if (!feedJobs) {
         for (const [apiCompanyName, jobs] of companyJobsMap.entries()) {
           if (
             cleanNameKey.includes(apiCompanyName) || apiCompanyName.includes(cleanNameKey) ||
             cleanSlugKey.includes(apiCompanyName) || apiCompanyName.includes(cleanSlugKey) ||
             (remoteokKey && (remoteokKey.includes(apiCompanyName) || apiCompanyName.includes(remoteokKey)))
           ) {
-            matchedJobs = jobs;
-            console.log(`  🔗 Partial match: "${apiCompanyName}" matched to ${updatedCompany.name}`);
+            feedJobs = jobs;
+            console.log(`  🔗 Feed partial match: "${apiCompanyName}" → ${updatedCompany.name}`);
             break;
           }
         }
       }
+      if (feedJobs) allJobs.push(...feedJobs);
 
-      if (matchedJobs && matchedJobs.length > 0) {
-        updatedCompany.activeJobs = matchedJobs;
+      // Source 2: Greenhouse API (per-company)
+      if (jobSourcesConfig?.greenhouse) {
+        console.log(`  🌿 Fetching Greenhouse jobs for ${updatedCompany.name} (${jobSourcesConfig.greenhouse})...`);
+        const ghJobs = await fetchGreenhouseJobs(jobSourcesConfig.greenhouse);
+        if (ghJobs.length > 0) {
+          console.log(`    Found ${ghJobs.length} relevant jobs from Greenhouse.`);
+          allJobs.push(...ghJobs);
+        }
+      }
+
+      // Source 3: Workday API (per-company)
+      if (jobSourcesConfig?.workday) {
+        console.log(`  🏢 Fetching Workday jobs for ${updatedCompany.name} (${jobSourcesConfig.workday.subdomain})...`);
+        const wdJobs = await fetchWorkdayJobs(jobSourcesConfig.workday);
+        if (wdJobs.length > 0) {
+          console.log(`    Found ${wdJobs.length} relevant jobs from Workday.`);
+          allJobs.push(...wdJobs);
+        }
+      }
+
+      // Deduplicate by title (case-insensitive)
+      const seenTitles = new Set<string>();
+      const deduped = allJobs.filter(j => {
+        const key = j.title.toLowerCase().trim();
+        if (seenTitles.has(key)) return false;
+        seenTitles.add(key);
+        return true;
+      });
+
+      if (deduped.length > 0) {
+        updatedCompany.activeJobs = deduped;
         updatedCompany.hasActiveJobs = true;
-        console.log(`  💼 Enriched ${updatedCompany.name} with ${matchedJobs.length} active jobs.`);
+        console.log(`  💼 Enriched ${updatedCompany.name} with ${deduped.length} active jobs (deduplicated).`);
       } else {
-        // No active jobs found in current API data — clear to keep data in sync
         updatedCompany.activeJobs = [];
         updatedCompany.hasActiveJobs = false;
       }

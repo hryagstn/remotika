@@ -32,6 +32,11 @@ export interface CompanyData {
     role: string;
     text: string;
   }>;
+  jobSources?: {
+    greenhouse?: string;
+    workday?: { subdomain: string; sitePath: string };
+    careerPageUrl?: string;
+  };
 }
 
 // Read and cast static companies JSON database

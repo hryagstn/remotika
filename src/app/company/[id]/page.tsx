@@ -325,10 +325,22 @@ export default async function CompanyProfilePage({ params }: PageProps) {
                     </a>
                   ))
                 ) : (
-                  <div className="bg-bg-surface border border-border-faint p-8 text-center rounded-2xl space-y-2 text-xs">
+                  <div className="bg-bg-surface border border-border-faint p-8 text-center rounded-2xl space-y-3 text-xs">
                     <Briefcase className="w-8 h-8 text-white/20 mx-auto" />
-                    <p className="text-text-secondary font-semibold">Tidak ada lowongan aktif</p>
-                    <p className="text-text-muted">Saat ini tidak ada lowongan kerja developer yang terdaftar untuk perusahaan ini.</p>
+                    <p className="text-text-secondary font-semibold">Tidak ada lowongan aktif dari API</p>
+                    <p className="text-text-muted">Saat ini tidak ada lowongan remote yang cocok dari feed otomatis kami.</p>
+                    {company.jobSources?.careerPageUrl && (
+                      <a
+                        href={company.jobSources.careerPageUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 mt-3 px-5 py-2.5 bg-brand-primary/10 hover:bg-brand-primary/20 text-brand-primary border border-brand-primary/20 hover:border-brand-primary/40 rounded-xl font-semibold text-xs transition-all hover:-translate-y-0.5"
+                      >
+                        <Globe className="w-3.5 h-3.5" />
+                        Lihat Halaman Karir {company.name}
+                        <ExternalLink className="w-3 h-3" />
+                      </a>
+                    )}
                   </div>
                 )}
               </div>
