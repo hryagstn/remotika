@@ -339,7 +339,6 @@ const COMPANY_JOB_SOURCES: Record<string, JobSources> = {
     careerPageUrl: "https://about.gitlab.com/jobs/all-jobs/"
   },
   "nvidiagameworks": {
-    workday: { subdomain: "nvidia", sitePath: "NVIDIAExternalCareerSite" },
     careerPageUrl: "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite"
   },
   "automattic": {
