@@ -78,7 +78,10 @@
         "githubProfileUrl": "https://github.com/salvianreynaldi",
         "locationRaw": "Jakarta"
       }
-    ]
+    ],
+    "jobSources": {
+      "careerPageUrl": "https://www.traveloka.com/en-id/careers"
+    }
   },
   {
     "id": "co-11",
@@ -135,7 +138,10 @@
         "githubProfileUrl": "https://github.com/yogacp",
         "locationRaw": "Bandung, West Java, Indonesia"
       }
-    ]
+    ],
+    "jobSources": {
+      "careerPageUrl": "https://efishery.com/en/career/"
+    }
   },
   {
     "id": "co-1",
@@ -147,10 +153,71 @@
     "verifiedIndonesianCount": 5,
     "label": "Established",
     "lastVerifiedAt": "2026-06-18T02:30:01.795Z",
-    "hasActiveJobs": false,
+    "hasActiveJobs": true,
     "headquarters": "Jakarta, Indonesia",
     "foundationYear": "2015",
-    "activeJobs": [],
+    "activeJobs": [
+      {
+        "title": "Account Manager (Enterprise) - Indonesia",
+        "url": "https://www.xendit.co/en/careers/job-application/?gh_jid=7767806003",
+        "tags": []
+      },
+      {
+        "title": "Banking Experiments Business Director",
+        "url": "https://www.xendit.co/en/careers/job-application/?gh_jid=7733314003",
+        "tags": []
+      },
+      {
+        "title": "Customer Experience Generalist (Daylight)",
+        "url": "https://www.xendit.co/en/careers/job-application/?gh_jid=7698002003",
+        "tags": []
+      },
+      {
+        "title": "Financial Operations - Cross-Border Ops Lead",
+        "url": "https://www.xendit.co/en/careers/job-application/?gh_jid=7650615003",
+        "tags": []
+      },
+      {
+        "title": "Head of Treasury",
+        "url": "https://www.xendit.co/en/careers/job-application/?gh_jid=7653356003",
+        "tags": []
+      },
+      {
+        "title": "Internal Audit Manager (PT Syaftraco)",
+        "url": "https://www.xendit.co/en/careers/job-application/?gh_jid=7616656003",
+        "tags": []
+      },
+      {
+        "title": "Product Manager - User & Accounts",
+        "url": "https://www.xendit.co/en/careers/job-application/?gh_jid=7545780003",
+        "tags": []
+      },
+      {
+        "title": "Risk Operations Analyst",
+        "url": "https://www.xendit.co/en/careers/job-application/?gh_jid=7657149003",
+        "tags": []
+      },
+      {
+        "title": "Senior Implementations Manager",
+        "url": "https://www.xendit.co/en/careers/job-application/?gh_jid=7731774003",
+        "tags": []
+      },
+      {
+        "title": "Senior Manager, Customer Success",
+        "url": "https://www.xendit.co/en/careers/job-application/?gh_jid=7731779003",
+        "tags": []
+      },
+      {
+        "title": "Solution Engineering",
+        "url": "https://www.xendit.co/en/careers/job-application/?gh_jid=7719174003",
+        "tags": []
+      },
+      {
+        "title": "Tax Manager",
+        "url": "https://www.xendit.co/en/careers/job-application/?gh_jid=7723165003",
+        "tags": []
+      }
+    ],
     "verifiedMembers": [
       {
         "id": "m-3mp3ri0r",
@@ -194,7 +261,11 @@
         "role": "Backend Developer",
         "text": "Empowering work environment with clear technical tracks. Indonesia is home to many core products here."
       }
-    ]
+    ],
+    "jobSources": {
+      "greenhouse": "xendit",
+      "careerPageUrl": "https://www.xendit.co/en/careers"
+    }
   },
   {
     "id": "co-8",
@@ -233,7 +304,10 @@
         "githubProfileUrl": "https://github.com/walbertus",
         "locationRaw": "Indonesia"
       }
-    ]
+    ],
+    "jobSources": {
+      "careerPageUrl": "https://www.gotocompany.com/careers"
+    }
   },
   {
     "id": "co-2",
@@ -275,7 +349,10 @@
         "role": "Principal Engineer",
         "text": "Building scalable platforms for millions of users. GTI Labs is where engineering meets scale."
       }
-    ]
+    ],
+    "jobSources": {
+      "careerPageUrl": "https://www.gotocompany.com/careers"
+    }
   },
   {
     "id": "co-12",
@@ -308,7 +385,10 @@
         "githubProfileUrl": "https://github.com/rizalibnu",
         "locationRaw": "Purwokerto, Indonesia"
       }
-    ]
+    ],
+    "jobSources": {
+      "careerPageUrl": "https://kumparan.com/"
+    }
   },
   {
     "id": "co-3",
@@ -344,7 +424,10 @@
         "role": "Graphics Engineer",
         "text": "Pushing the boundaries of real-time rendering. The global collaboration here is incredible."
       }
-    ]
+    ],
+    "jobSources": {
+      "careerPageUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite"
+    }
   },
   {
     "id": "co-4",
@@ -374,7 +457,10 @@
         "role": "Core Maintainer",
         "text": "Open-source developer environment where community contributions directly drive product decisions."
       }
-    ]
+    ],
+    "jobSources": {
+      "careerPageUrl": "https://projectdiscovery.io/about#careers"
+    }
   },
   {
     "id": "co-5",
@@ -404,7 +490,10 @@
         "role": "Systems Engineer",
         "text": "KrakenD's high performance engine is a blast to build on. Strongly supportive of remote talent."
       }
-    ]
+    ],
+    "jobSources": {
+      "careerPageUrl": "https://www.krakend.io/careers/"
+    }
   },
   {
     "id": "co-6",
@@ -434,7 +523,10 @@
         "role": "VIP Systems Engineer",
         "text": "Autonomy is the core here. Working asynchronously makes it possible to maintain top focus."
       }
-    ]
+    ],
+    "jobSources": {
+      "careerPageUrl": "https://automattic.com/work-with-us/"
+    }
   },
   {
     "id": "co-7",
@@ -464,7 +556,10 @@
         "role": "Lead Systems Engineer",
         "text": "Grab offers an amazing scale of operations. The hybrid culture is highly collaborative."
       }
-    ]
+    ],
+    "jobSources": {
+      "careerPageUrl": "https://grab.careers/"
+    }
   },
   {
     "id": "co-10",
@@ -485,6 +580,9 @@
         "githubProfileUrl": "https://github.com/faris-id",
         "locationRaw": "Indonesia"
       }
-    ]
+    ],
+    "jobSources": {
+      "careerPageUrl": "https://careers.bukalapak.com/"
+    }
   }
 ]
