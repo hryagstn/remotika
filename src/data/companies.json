@@ -147,34 +147,10 @@
     "verifiedIndonesianCount": 5,
     "label": "Established",
     "lastVerifiedAt": "2026-06-18T02:30:01.795Z",
-    "hasActiveJobs": true,
+    "hasActiveJobs": false,
     "headquarters": "Jakarta, Indonesia",
     "foundationYear": "2015",
-    "activeJobs": [
-      {
-        "title": "Senior Software Engineer - NodeJS (Remote)",
-        "url": "https://remoteok.com/companies/xendit",
-        "tags": [
-          "NodeJS",
-          "TypeScript",
-          "AWS",
-          "Backend"
-        ],
-        "salary": "$80k - $110k"
-      },
-      {
-        "title": "Fullstack Engineer - React/Node (Remote)",
-        "url": "https://remoteok.com/companies/xendit",
-        "tags": [
-          "React",
-          "NodeJS",
-          "TypeScript",
-          "Frontend",
-          "Backend"
-        ],
-        "salary": "$75k - $105k"
-      }
-    ],
+    "activeJobs": [],
     "verifiedMembers": [
       {
         "id": "m-3mp3ri0r",
@@ -264,7 +240,7 @@
     "name": "GTI Labs",
     "githubOrg": "gtilabs",
     "githubOrgUrl": "https://github.com/GTILabs",
-    "remoteokSlug": "gtilabs",
+    "remoteokSlug": "gojek",
     "industry": "GTI Labs",
     "verifiedIndonesianCount": 3,
     "label": "Indonesia-Friendly",
@@ -339,27 +315,15 @@
     "name": "NVIDIA GameWorks",
     "githubOrg": "nvidiagameworks",
     "githubOrgUrl": "https://github.com/NVIDIAGameWorks",
-    "remoteokSlug": "nvidiagameworks",
+    "remoteokSlug": "nvidia",
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 2,
     "label": "Indonesia-Friendly",
     "lastVerifiedAt": "2026-06-18T02:30:44.054Z",
-    "hasActiveJobs": true,
+    "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
-    "activeJobs": [
-      {
-        "title": "Developer Relations Engineer - Gaming (Remote)",
-        "url": "https://remoteok.com/companies/nvidiagameworks",
-        "tags": [
-          "C++",
-          "Graphics",
-          "Vulkan",
-          "Engineering"
-        ],
-        "salary": "$140k - $180k"
-      }
-    ],
+    "activeJobs": [],
     "verifiedMembers": [
       {
         "id": "m-angeloanan",
@@ -392,33 +356,10 @@
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
     "lastVerifiedAt": "2026-06-18T02:30:50.966Z",
-    "hasActiveJobs": true,
+    "hasActiveJobs": false,
     "headquarters": "Mumbai, India",
     "foundationYear": "2020",
-    "activeJobs": [
-      {
-        "title": "Senior Security Engineer (Remote)",
-        "url": "https://remoteok.com/companies/projectdiscovery",
-        "tags": [
-          "Security",
-          "Go",
-          "Kubernetes",
-          "Operations"
-        ],
-        "salary": "$130k - $160k"
-      },
-      {
-        "title": "Fullstack Engineer - React/Go (Remote)",
-        "url": "https://remoteok.com/companies/projectdiscovery",
-        "tags": [
-          "React",
-          "Go",
-          "TypeScript",
-          "Engineering"
-        ],
-        "salary": "$110k - $140k"
-      }
-    ],
+    "activeJobs": [],
     "verifiedMembers": [
       {
         "id": "m-dwisiswant0",
@@ -440,27 +381,15 @@
     "name": "KrakenD Contrib",
     "githubOrg": "krakend-contrib",
     "githubOrgUrl": "https://github.com/krakend-contrib",
-    "remoteokSlug": "krakend-contrib",
+    "remoteokSlug": "krakend",
     "industry": "Contributors and core members of KrakenD API Gateway",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
     "lastVerifiedAt": "2026-06-18T02:30:57.715Z",
-    "hasActiveJobs": true,
+    "hasActiveJobs": false,
     "headquarters": "Barcelona, Spain",
     "foundationYear": "2016",
-    "activeJobs": [
-      {
-        "title": "Backend Engineer - Go/Systems (Remote)",
-        "url": "https://remoteok.com/companies/krakend-contrib",
-        "tags": [
-          "Go",
-          "Systems",
-          "Docker",
-          "Engineering"
-        ],
-        "salary": "€80k - €110k"
-      }
-    ],
+    "activeJobs": [],
     "verifiedMembers": [
       {
         "id": "m-novalagung",
@@ -487,22 +416,10 @@
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
     "lastVerifiedAt": "2026-06-18T02:31:21.826Z",
-    "hasActiveJobs": true,
+    "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
-    "activeJobs": [
-      {
-        "title": "WordPress VIP Developer (Remote)",
-        "url": "https://remoteok.com/companies/automattic",
-        "tags": [
-          "WordPress",
-          "PHP",
-          "React",
-          "Engineering"
-        ],
-        "salary": "$90k - $120k"
-      }
-    ],
+    "activeJobs": [],
     "verifiedMembers": [
       {
         "id": "m-gedex",

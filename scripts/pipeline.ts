@@ -12,6 +12,12 @@ const INDONESIA_KEYWORDS = [
   "malang", "bekasi", "bogor", "banten", "solok", "padang"
 ];
 
+const REMOTEOK_SLUG_OVERRIDES: Record<string, string> = {
+  "nvidiagameworks": "nvidia",
+  "krakend-contrib": "krakend",
+  "gtilabs": "gojek",
+};
+
 // Expanded seed list containing top global remote tech companies
 const DEFAULT_SEED_ORGS = [
   "projectdiscovery",
@@ -554,6 +560,7 @@ async function processOrg(orgLogin: string, existingCompanies: CompanyData[]): P
           ...existingCompany,
           name: orgName,
           githubOrgUrl: orgUrl,
+          remoteokSlug: REMOTEOK_SLUG_OVERRIDES[orgLogin.toLowerCase()] || existingCompany.remoteokSlug || orgLogin.toLowerCase(),
           industry: description.substring(0, 255),
           verifiedIndonesianCount: foundIndonesianMembers.length,
           label: label,
@@ -574,7 +581,7 @@ async function processOrg(orgLogin: string, existingCompanies: CompanyData[]): P
           name: orgName,
           githubOrg: orgLogin.toLowerCase(),
           githubOrgUrl: orgUrl,
-          remoteokSlug: orgLogin.toLowerCase(),
+          remoteokSlug: REMOTEOK_SLUG_OVERRIDES[orgLogin.toLowerCase()] || orgLogin.toLowerCase(),
           industry: description.substring(0, 255),
           verifiedIndonesianCount: foundIndonesianMembers.length,
           label: label,
@@ -697,21 +704,39 @@ async function main() {
   for (const org of orgList) {
     const updatedCompany = await processOrg(org, Array.from(updatedCompaniesMap.values()));
     if (updatedCompany) {
-      // Enrich with active jobs if matches RemoteOK fetched list
+      // Enrich with active jobs if matches RemoteOK/Remotive fetched list
       const cleanNameKey = updatedCompany.name.toLowerCase().trim();
       const cleanSlugKey = updatedCompany.githubOrg.toLowerCase().trim();
+      const remoteokKey = updatedCompany.remoteokSlug?.toLowerCase().trim();
       
-      const matchedJobs = companyJobsMap.get(cleanNameKey) || companyJobsMap.get(cleanSlugKey);
+      // Try exact match first, then remoteokSlug, then partial matching
+      let matchedJobs = companyJobsMap.get(cleanNameKey) 
+        || companyJobsMap.get(cleanSlugKey)
+        || (remoteokKey ? companyJobsMap.get(remoteokKey) : undefined);
+      
+      // Partial match: check if any companyJobsMap key contains or is contained by our company name/slug
+      if (!matchedJobs) {
+        for (const [apiCompanyName, jobs] of companyJobsMap.entries()) {
+          if (
+            cleanNameKey.includes(apiCompanyName) || apiCompanyName.includes(cleanNameKey) ||
+            cleanSlugKey.includes(apiCompanyName) || apiCompanyName.includes(cleanSlugKey) ||
+            (remoteokKey && (remoteokKey.includes(apiCompanyName) || apiCompanyName.includes(remoteokKey)))
+          ) {
+            matchedJobs = jobs;
+            console.log(`  🔗 Partial match: "${apiCompanyName}" matched to ${updatedCompany.name}`);
+            break;
+          }
+        }
+      }
+
       if (matchedJobs && matchedJobs.length > 0) {
         updatedCompany.activeJobs = matchedJobs;
         updatedCompany.hasActiveJobs = true;
         console.log(`  💼 Enriched ${updatedCompany.name} with ${matchedJobs.length} active jobs.`);
       } else {
-        // Retain existing mock/custom jobs if RemoteOK didn't return anything to prevent deleting data
-        if (!updatedCompany.activeJobs || updatedCompany.activeJobs.length === 0) {
-          updatedCompany.activeJobs = [];
-          updatedCompany.hasActiveJobs = false;
-        }
+        // No active jobs found in current API data — clear to keep data in sync
+        updatedCompany.activeJobs = [];
+        updatedCompany.hasActiveJobs = false;
       }
       
       updatedCompaniesMap.set(org.toLowerCase(), updatedCompany);
