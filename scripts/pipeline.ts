@@ -18,6 +18,12 @@ const REMOTEOK_SLUG_OVERRIDES: Record<string, string> = {
   "gtilabs": "gojek",
 };
 
+// Organizations known to be defunct, shut down, or involved in legal issues.
+// These will be automatically skipped during pipeline runs and removed from the database.
+const BLOCKLISTED_ORGS: Set<string> = new Set([
+  "efishery",    // Shut down, fraud scandal, website offline
+]);
+
 // Expanded seed list containing top global remote tech companies
 const DEFAULT_SEED_ORGS = [
   "projectdiscovery",
@@ -118,7 +124,6 @@ const DEFAULT_SEED_ORGS = [
   "finantier",
   "ayoconnect",
   "halodoc",
-
   "vidio",
   "kumparan",
   "canonical",
@@ -248,6 +253,32 @@ async function checkUserIndonesian(username: string): Promise<{ isIndo: boolean;
     console.error(`    ❌ Error fetching profile for user ${username}:`, err.message);
   }
   return null;
+}
+
+// Liveness check: verify that a company's website is still accessible
+async function checkWebsiteLiveness(url: string | null, orgLogin: string): Promise<boolean> {
+  if (!url) return true; // No website to check — skip validation
+  try {
+    const fullUrl = url.startsWith("http") ? url : `https://${url}`;
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 8000);
+    const res = await fetch(fullUrl, {
+      method: "HEAD",
+      headers: { "User-Agent": "Remotika-Pipeline/1.0" },
+      redirect: "follow",
+      signal: controller.signal
+    });
+    clearTimeout(timeout);
+    if (res.ok || res.status === 403 || res.status === 405) {
+      // 403/405 = site is alive but blocks HEAD — still counts as "live"
+      return true;
+    }
+    console.log(`  ⚠️  Website ${fullUrl} returned HTTP ${res.status} for ${orgLogin}`);
+    return false;
+  } catch (err: any) {
+    console.log(`  ⚠️  Website unreachable for ${orgLogin}: ${err.message}`);
+    return false;
+  }
 }
 
 async function fetchRemoteJobs() {
@@ -559,6 +590,12 @@ function saveCompanies(companies: CompanyData[]) {
 }
 
 async function processOrg(orgLogin: string, existingCompanies: CompanyData[]): Promise<CompanyData | null> {
+  // Blocklist check — skip known defunct organizations
+  if (BLOCKLISTED_ORGS.has(orgLogin.toLowerCase())) {
+    console.log(`\n[Pipeline] ⛔ Skipping blocklisted organization: ${orgLogin}`);
+    return null;
+  }
+
   console.log(`\n[Pipeline] Processing GitHub Organization: ${orgLogin}`);
 
   try {
@@ -720,7 +757,17 @@ async function processOrg(orgLogin: string, existingCompanies: CompanyData[]): P
           activeJobs: [],
           verifiedMembers: foundIndonesianMembers
         };
-        console.log(`  ✨ Created brand new entry for ${orgName} with ID ${newId}.`);
+        console.log(`  ✨ Candidate new entry for ${orgName} (ID ${newId}). Running liveness check...`);
+        
+        // Liveness check: verify website is still accessible before adding
+        const websiteUrl = orgData.blog || orgData.html_url;
+        const isAlive = await checkWebsiteLiveness(websiteUrl, orgLogin);
+        if (!isAlive) {
+          console.log(`  ⛔ REJECTED: ${orgName} — website is unreachable. Company may be defunct.`);
+          return null;
+        }
+        
+        console.log(`  ✅ Liveness check passed for ${orgName}.`);
         return brandNew;
       }
     } else {
@@ -914,9 +961,10 @@ async function main() {
     await new Promise(r => setTimeout(r, 1000));
   }
 
-  // 5. Save updated list back to JSON
+  // 5. Save updated list back to JSON (filter defunct + zero-member companies)
   const finalCompaniesList = Array.from(updatedCompaniesMap.values())
-    .filter(c => c.verifiedIndonesianCount > 0);
+    .filter(c => c.verifiedIndonesianCount > 0)
+    .filter(c => !BLOCKLISTED_ORGS.has(c.githubOrg.toLowerCase()));
 
   // Sort by verified count descending
   finalCompaniesList.sort((a, b) => b.verifiedIndonesianCount - a.verifiedIndonesianCount);
