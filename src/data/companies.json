@@ -8,7 +8,7 @@
     "industry": "Empowering Discovery",
     "verifiedIndonesianCount": 11,
     "label": "Top Pick",
-    "lastVerifiedAt": "2026-06-18T02:29:49.930Z",
+    "lastVerifiedAt": "2026-06-19T02:46:34.393Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -92,69 +92,69 @@
     "industry": "Tech & Development Services",
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-06-18T02:30:01.795Z",
+    "lastVerifiedAt": "2026-06-19T02:46:41.934Z",
     "hasActiveJobs": true,
     "headquarters": "Jakarta, Indonesia",
     "foundationYear": "2015",
     "activeJobs": [
       {
-        "title": "Account Manager (Enterprise) - Indonesia",
-        "url": "https://www.xendit.co/en/careers/job-application/?gh_jid=7767806003",
-        "tags": []
-      },
-      {
         "title": "Banking Experiments Business Director",
-        "url": "https://www.xendit.co/en/careers/job-application/?gh_jid=7733314003",
+        "url": "https://job-boards.greenhouse.io/xendit/jobs/7733314003",
         "tags": []
       },
       {
         "title": "Customer Experience Generalist (Daylight)",
-        "url": "https://www.xendit.co/en/careers/job-application/?gh_jid=7698002003",
+        "url": "https://job-boards.greenhouse.io/xendit/jobs/7698002003",
         "tags": []
       },
       {
         "title": "Financial Operations - Cross-Border Ops Lead",
-        "url": "https://www.xendit.co/en/careers/job-application/?gh_jid=7650615003",
+        "url": "https://job-boards.greenhouse.io/xendit/jobs/7650615003",
         "tags": []
       },
       {
         "title": "Head of Treasury",
-        "url": "https://www.xendit.co/en/careers/job-application/?gh_jid=7653356003",
+        "url": "https://job-boards.greenhouse.io/xendit/jobs/7653356003",
         "tags": []
       },
       {
         "title": "Internal Audit Manager (PT Syaftraco)",
-        "url": "https://www.xendit.co/en/careers/job-application/?gh_jid=7616656003",
+        "url": "https://job-boards.greenhouse.io/xendit/jobs/7616656003",
+        "tags": []
+      },
+      {
+        "title": "IT GRC",
+        "url": "https://job-boards.greenhouse.io/xendit/jobs/7731687003",
         "tags": []
       },
       {
         "title": "Product Manager - User & Accounts",
-        "url": "https://www.xendit.co/en/careers/job-application/?gh_jid=7545780003",
+        "url": "https://job-boards.greenhouse.io/xendit/jobs/7545780003",
         "tags": []
       },
       {
         "title": "Risk Operations Analyst",
-        "url": "https://www.xendit.co/en/careers/job-application/?gh_jid=7657149003",
+        "url": "https://job-boards.greenhouse.io/xendit/jobs/7657149003",
         "tags": []
       },
       {
         "title": "Senior Implementations Manager",
-        "url": "https://www.xendit.co/en/careers/job-application/?gh_jid=7731774003",
+        "url": "https://job-boards.greenhouse.io/xendit/jobs/7731774003",
         "tags": []
       },
       {
         "title": "Senior Manager, Customer Success",
-        "url": "https://www.xendit.co/en/careers/job-application/?gh_jid=7731779003",
+        "url": "https://job-boards.greenhouse.io/xendit/jobs/7731779003",
         "tags": []
       },
       {
         "title": "Solution Engineering",
-        "url": "https://www.xendit.co/en/careers/job-application/?gh_jid=7719174003",
+        "url": "https://job-boards.greenhouse.io/xendit/jobs/7719174003",
         "tags": []
       },
       {
         "title": "Tax Manager",
-        "url": "https://www.xendit.co/en/careers/job-application/?gh_jid=7723165003",
+        "url": "https://job-boards.greenhouse.io/xendit/jobs/7723165003",
         "tags": []
       }
     ],
@@ -216,7 +216,7 @@
     "industry": "SuperApp from Southeast Asia",
     "verifiedIndonesianCount": 4,
     "label": "Indonesia-Friendly",
-    "lastVerifiedAt": "2026-06-18T02:30:09.164Z",
+    "lastVerifiedAt": "2026-06-19T02:46:51.060Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -258,7 +258,7 @@
     "industry": "GTI Labs",
     "verifiedIndonesianCount": 3,
     "label": "Indonesia-Friendly",
-    "lastVerifiedAt": "2026-06-18T02:30:14.205Z",
+    "lastVerifiedAt": "2026-06-19T02:46:57.420Z",
     "hasActiveJobs": false,
     "headquarters": "Jakarta, Indonesia",
     "foundationYear": "2010",
@@ -303,7 +303,7 @@
     "industry": "Redefined News Platform",
     "verifiedIndonesianCount": 3,
     "label": "Indonesia-Friendly",
-    "lastVerifiedAt": "2026-06-18T02:30:20.555Z",
+    "lastVerifiedAt": "2026-06-19T02:47:04.580Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -339,7 +339,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 2,
     "label": "Indonesia-Friendly",
-    "lastVerifiedAt": "2026-06-18T02:30:44.054Z",
+    "lastVerifiedAt": "2026-06-19T02:47:37.267Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -378,7 +378,7 @@
     "industry": "Monitor your infrastructure. Real vulnerabilities. Zero noise.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-06-18T02:30:50.966Z",
+    "lastVerifiedAt": "2026-06-19T02:47:45.766Z",
     "hasActiveJobs": false,
     "headquarters": "Mumbai, India",
     "foundationYear": "2020",
@@ -411,7 +411,7 @@
     "industry": "Contributors and core members of KrakenD API Gateway",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-06-18T02:30:57.715Z",
+    "lastVerifiedAt": "2026-06-19T02:47:55.238Z",
     "hasActiveJobs": false,
     "headquarters": "Barcelona, Spain",
     "foundationYear": "2016",
@@ -444,7 +444,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-06-18T02:31:21.826Z",
+    "lastVerifiedAt": "2026-06-19T02:48:28.900Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -477,7 +477,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-06-18T02:31:26.691Z",
+    "lastVerifiedAt": "2026-06-19T02:48:34.995Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -510,7 +510,7 @@
     "industry": "Tech & Development Services",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-06-18T02:31:31.687Z",
+    "lastVerifiedAt": "2026-06-19T02:48:41.042Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
