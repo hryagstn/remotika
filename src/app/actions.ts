@@ -7,6 +7,8 @@ export interface CompanyData {
   name: string;
   githubOrg: string;
   githubOrgUrl: string;
+  gitlabOrg?: string;
+  gitlabOrgUrl?: string;
   remoteokSlug: string | null;
   industry: string;
   verifiedIndonesianCount: number;
@@ -25,6 +27,7 @@ export interface CompanyData {
     githubLogin: string;
     githubProfileUrl: string;
     locationRaw: string | null;
+    provider?: "github" | "gitlab" | string;
   }>;
   headquarters?: string;
   foundationYear?: string;

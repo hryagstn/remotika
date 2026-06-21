@@ -22,6 +22,16 @@ const GithubIcon = ({ className = "w-4 h-4" }: { className?: string }) => (
   </svg>
 );
 
+const GitlabIcon = ({ className = "w-4 h-4" }: { className?: string }) => (
+  <svg 
+    className={className} 
+    viewBox="0 0 24 24" 
+    fill="currentColor"
+  >
+    <path d="M23.355 10.584l-2.31-7.11a.76.76 0 0 0-.27-.37.78.76 0 0 0-.46-.14.77.77 0 0 0-.46.14.75.75 0 0 0-.27.37l-2.31 7.11H6.735l-2.31-7.11a.76.76 0 0 0-.27-.37.78.76 0 0 0-.46-.14.77.77 0 0 0-.46.14.75.75 0 0 0-.27.37L.645 10.584a1.05 1.05 0 0 0 .38 1.17l10.97 7.98 10.98-7.98a1.05 1.05 0 0 0 .38-1.17z"/>
+  </svg>
+);
+
 const TelegramIcon = ({ className = "w-4 h-4" }: { className?: string }) => (
   <svg 
     className={className} 
@@ -35,6 +45,7 @@ const TelegramIcon = ({ className = "w-4 h-4" }: { className?: string }) => (
 type Outcome = "idle" | "verifying" | "verified" | "already_verified" | "not_eligible" | "not_public_member" | "error";
 
 export default function SuggestYourselfPage() {
+  const [provider, setProvider] = useState<"github" | "gitlab">("github");
   const [githubUsername, setGithubUsername] = useState("");
   const [companyName, setCompanyName] = useState("");
   const [orgSlug, setOrgSlug] = useState("");
@@ -53,16 +64,17 @@ export default function SuggestYourselfPage() {
     setErrorDetails("");
 
     try {
-      const res = await fetch("/api/verify-self", {
+      const endpoint = provider === "github" ? "/api/verify-self" : "/api/verify-self-gitlab";
+      const payload = provider === "github" 
+        ? { githubUsername, companyName, orgSlug }
+        : { gitlabUsername: githubUsername, groupSlug: orgSlug, companyName };
+
+      const res = await fetch(endpoint, {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
         },
-        body: JSON.stringify({
-          githubUsername,
-          companyName,
-          orgSlug
-        })
+        body: JSON.stringify(payload)
       });
 
       const data = await res.json();
@@ -178,12 +190,41 @@ export default function SuggestYourselfPage() {
 
           {outcome === "idle" && (
             <form onSubmit={handleSubmit} className="space-y-6">
+              
+              {/* Provider Selector */}
+              <div className="flex p-1 rounded-xl bg-white/5 border border-white/10 max-w-xs mx-auto mb-2">
+                <button
+                  type="button"
+                  onClick={() => setProvider("github")}
+                  className={`flex-1 flex items-center justify-center space-x-2 py-2 text-xs font-bold rounded-lg transition-all cursor-pointer ${
+                    provider === "github"
+                      ? "bg-gradient-to-r from-brand-primary to-brand-secondary text-white shadow-lg shadow-brand-primary/15"
+                      : "text-white/60 hover:text-white"
+                  }`}
+                >
+                  <GithubIcon className="w-4 h-4" />
+                  <span>GitHub</span>
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setProvider("gitlab")}
+                  className={`flex-1 flex items-center justify-center space-x-2 py-2 text-xs font-bold rounded-lg transition-all cursor-pointer ${
+                    provider === "gitlab"
+                      ? "bg-gradient-to-r from-brand-primary to-brand-secondary text-white shadow-lg shadow-brand-primary/15"
+                      : "text-white/60 hover:text-white"
+                  }`}
+                >
+                  <GitlabIcon className="w-4 h-4" />
+                  <span>GitLab</span>
+                </button>
+              </div>
+
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 
-                {/* GitHub Username */}
+                {/* Platform Username */}
                 <div className="space-y-2">
                   <label className="text-[11px] font-bold text-white/50 uppercase tracking-wider block">
-                    GitHub Username Anda
+                    {provider === "github" ? "GitHub Username Anda" : "GitLab Username Anda"}
                   </label>
                   <div className="relative">
                     <input
@@ -199,20 +240,20 @@ export default function SuggestYourselfPage() {
                     </div>
                   </div>
                   <p className="text-[10px] text-white/40 leading-relaxed font-sans">
-                    Username GitHub pribadi Anda (misal: @john_doe).
+                    {provider === "github" ? "Username GitHub pribadi Anda (misal: @john_doe)." : "Username GitLab pribadi Anda (misal: @john_doe)."}
                   </p>
                 </div>
 
-                {/* Organization Slug */}
+                {/* Organization/Group Slug */}
                 <div className="space-y-2">
                   <label className="text-[11px] font-bold text-white/50 uppercase tracking-wider block">
-                    GitHub Org Slug Perusahaan
+                    {provider === "github" ? "GitHub Org Slug Perusahaan" : "GitLab Group Slug Perusahaan"}
                   </label>
                   <div className="relative">
                     <input
                       type="text"
                       required
-                      placeholder="e.g. automattic"
+                      placeholder={provider === "github" ? "e.g. automattic" : "e.g. gitlab-org"}
                       value={orgSlug}
                       onChange={(e) => setOrgSlug(e.target.value)}
                       className="w-full bg-[#080d24] border border-white/10 hover:border-white/20 focus:border-brand-primary rounded-xl pl-10 pr-4 py-3 text-sm text-white outline-none transition-all font-sans"
@@ -222,7 +263,9 @@ export default function SuggestYourselfPage() {
                     </div>
                   </div>
                   <p className="text-[10px] text-white/40 leading-relaxed font-sans">
-                    Slug dari organisasi GitHub tempat Anda bekerja (e.g. `automattic`).
+                    {provider === "github" 
+                      ? "Slug dari organisasi GitHub tempat Anda bekerja (e.g. `automattic`)." 
+                      : "Slug dari group GitLab tempat Anda bekerja (e.g. `gitlab-org`)."}
                   </p>
                 </div>
               </div>
@@ -406,7 +449,7 @@ export default function SuggestYourselfPage() {
           </h2>
           
           <p className="text-xs text-white/70 leading-relaxed font-inter">
-            Proses ini murni dijalankan langsung ke API publik GitHub secara real-time. Remotika <strong className="font-bold text-white">tidak pernah menyimpan</strong> password atau menanyakan kredensial apa pun dari akun GitHub Anda. Kami hanya mengecek status visibilitas keanggotaan publik organisasi Anda beserta isian kota pada akun publik Anda secara transparan.
+            Proses ini murni dijalankan langsung ke API publik GitHub dan GitLab secara real-time. Remotika <strong className="font-bold text-white">tidak pernah menyimpan</strong> password atau menanyakan kredensial apa pun dari akun Anda. Kami hanya mengecek status visibilitas keanggotaan publik organisasi/grup Anda beserta isian kota pada akun publik Anda secara transparan.
           </p>
         </section>
 

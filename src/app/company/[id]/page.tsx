@@ -45,6 +45,16 @@ const TelegramIcon = ({ className = "w-4 h-4" }: { className?: string }) => (
   </svg>
 );
 
+const GitlabIcon = ({ className = "w-4 h-4" }: { className?: string }) => (
+  <svg 
+    className={className} 
+    viewBox="0 0 24 24" 
+    fill="currentColor"
+  >
+    <path d="M23.355 10.584l-2.31-7.11a.76.76 0 0 0-.27-.37.78.76 0 0 0-.46-.14.77.77 0 0 0-.46.14.75.75 0 0 0-.27.37l-2.31 7.11H6.735l-2.31-7.11a.76.76 0 0 0-.27-.37.78.76 0 0 0-.46-.14.77.77 0 0 0-.46.14.75.75 0 0 0-.27.37L.645 10.584a1.05 1.05 0 0 0 .38 1.17l10.97 7.98 10.98-7.98a1.05 1.05 0 0 0 .38-1.17z"/>
+  </svg>
+);
+
 export async function generateStaticParams() {
   const companies = await getCompanies();
   const params: { id: string }[] = [];
@@ -219,15 +229,28 @@ export default async function CompanyProfilePage({ params }: PageProps) {
                   <Globe className="w-4 h-4" />
                 </a>
               )}
-              <a 
-                href={company.githubOrgUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 glass-panel rounded-xl flex items-center justify-center hover:bg-white/10 text-text-secondary hover:text-white transition-all border border-border-default shadow-sm"
-                title="Lihat Organisasi GitHub"
-              >
-                <GithubIcon className="w-4 h-4" />
-              </a>
+              {company.githubOrg && !company.githubOrgUrl?.includes("gitlab.com") && (
+                <a 
+                  href={company.githubOrgUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 glass-panel rounded-xl flex items-center justify-center hover:bg-white/10 text-text-secondary hover:text-white transition-all border border-border-default shadow-sm"
+                  title="Lihat Organisasi GitHub"
+                >
+                  <GithubIcon className="w-4 h-4" />
+                </a>
+              )}
+              {company.gitlabOrg && (
+                <a 
+                  href={company.gitlabOrgUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 glass-panel rounded-xl flex items-center justify-center hover:bg-white/10 text-text-secondary hover:text-white transition-all border border-border-default shadow-sm"
+                  title="Lihat Group GitLab"
+                >
+                  <GitlabIcon className="w-4 h-4" />
+                </a>
+              )}
             </div>
           </div>
         </header>
@@ -284,8 +307,19 @@ export default async function CompanyProfilePage({ params }: PageProps) {
                     <div className="w-12 h-12 rounded-xl bg-bg-elevated border border-border-faint flex items-center justify-center text-text-primary font-bold shadow-inner font-outfit group-hover:bg-brand-primary/10 transition-colors">
                       {memberInitials(member.githubLogin)}
                     </div>
-                    <div className="min-w-0">
-                      <h4 className="text-text-primary font-semibold truncate group-hover:text-brand-primary transition-colors text-sm">{member.githubLogin}</h4>
+                    <div className="min-w-0 flex-1">
+                      <div className="flex items-center gap-1.5 min-w-0">
+                        <h4 className="text-text-primary font-semibold truncate group-hover:text-brand-primary transition-colors text-sm">{member.githubLogin}</h4>
+                        {member.provider === "gitlab" ? (
+                          <span className="shrink-0 text-[#FC6D26]" title="Verified via GitLab">
+                            <GitlabIcon className="w-3.5 h-3.5" />
+                          </span>
+                        ) : (
+                          <span className="shrink-0 text-white/50" title="Verified via GitHub">
+                            <GithubIcon className="w-3.5 h-3.5" />
+                          </span>
+                        )}
+                      </div>
                       <p className="text-text-muted font-body-sm text-xs flex items-center gap-1 mt-0.5">
                         <MapPin className="w-3.5 h-3.5 text-brand-primary shrink-0" />
                         <span className="truncate">{member.locationRaw || "Indonesia"}</span>
