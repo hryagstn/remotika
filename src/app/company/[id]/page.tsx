@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import { getCompanies } from "../../actions";
 import BadgeEmbed from "./BadgeEmbed";
+import ShareCompany from "./ShareCompany";
 
 interface PageProps {
   params: Promise<{ id: string }>;
@@ -31,6 +32,16 @@ const GithubIcon = ({ className = "w-5 h-5" }: { className?: string }) => (
   >
     <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
     <path d="M9 18c-4.51 2-5-2-7-2" />
+  </svg>
+);
+
+const TelegramIcon = ({ className = "w-4 h-4" }: { className?: string }) => (
+  <svg 
+    className={className} 
+    viewBox="0 0 24 24" 
+    fill="currentColor"
+  >
+    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.69-.88-.58-1.38-.94-2.23-1.5-.99-.64-.35-.99.22-1.57.15-.15 2.7-2.48 2.75-2.6.01-.01.01-.07-.02-.09s-.08-.01-.11 0c-.05.01-.84.34-2.38 1.14-.23.12-.43.18-.62.17-.2-.01-.6-.12-.89-.22-.36-.12-.65-.18-.62-.39.01-.11.23-.22.64-.34 2.5-1.09 4.17-1.8 5.01-2.14.79-.31 1.63-.44 2.18-.44.12 0 .39.03.56.12.14.07.28.18.32.32.06.19.07.41.05.59z"/>
   </svg>
 );
 
@@ -117,7 +128,7 @@ export default async function CompanyProfilePage({ params }: PageProps) {
               <img src="/logo.png" alt="Remotika Logo" className="w-9 h-9 object-contain rounded-xl shadow-lg shadow-brand-primary/20" />
               <div>
                 <span className="text-lg font-bold tracking-tight text-white font-outfit">Remotika</span>
-                <span className="hidden sm:inline-block ml-2 text-xs px-2 py-0.5 rounded-full bg-white/5 border border-white/10 text-white/50">v1.3</span>
+                <span className="hidden sm:inline-block ml-2 text-xs px-2 py-0.5 rounded-full bg-white/5 border border-white/10 text-white/50">v1.4</span>
               </div>
             </Link>
             <Link href="/" className="text-xs font-semibold text-white/60 hover:text-white hover:bg-white/5 px-3 py-1.5 rounded-lg border border-transparent hover:border-white/5 transition-all">
@@ -134,6 +145,16 @@ export default async function CompanyProfilePage({ params }: PageProps) {
             </Link>
           </div>
           <div className="flex items-center space-x-3">
+            {/* Telegram Channel Link (Placeholder, to be updated by Harry) */}
+            <a 
+              href="https://t.me/REPLACE_ME" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="px-4 py-2 text-xs font-semibold rounded-xl bg-[#0088cc]/10 hover:bg-[#0088cc]/20 text-[#0088cc] hover:text-[#0088cc]/90 border border-[#0088cc]/20 hover:border-[#0088cc]/35 transition-all flex items-center space-x-1.5 cursor-pointer"
+            >
+              <TelegramIcon className="w-3.5 h-3.5" />
+              <span>Telegram</span>
+            </a>
             <a 
               href={process.env.NEXT_PUBLIC_GITHUB_REPO || "https://github.com/hryagstn/remotika"} 
               target="_blank" 
@@ -361,6 +382,14 @@ export default async function CompanyProfilePage({ params }: PageProps) {
             
             {/* Embed Badge */}
             <BadgeEmbed githubOrg={company.githubOrg} />
+
+            {/* Share Company Component */}
+            <ShareCompany 
+              companyName={company.name} 
+              companyId={company.id} 
+              verifiedCount={company.verifiedIndonesianCount} 
+              hasActiveJobs={company.hasActiveJobs} 
+            />
 
             {/* Company Metadata */}
             <div className="bg-bg-surface border border-border-faint p-6 rounded-2xl space-y-6 shadow-sm">

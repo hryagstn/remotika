@@ -214,6 +214,7 @@ interface CompanyData {
   verifiedIndonesianCount: number;
   label: string;
   lastVerifiedAt: string | null;
+  verifiedAt?: string;
   hasActiveJobs: boolean;
   activeJobs?: ActiveJob[];
   verifiedMembers: VerifiedMember[];
@@ -976,6 +977,7 @@ async function processOrg(orgLogin: string, existingCompanies: CompanyData[]): P
           verifiedIndonesianCount: foundIndonesianMembers.length,
           label: label,
           lastVerifiedAt: lastVerifiedAt,
+          verifiedAt: existingCompany.verifiedAt || existingCompany.lastVerifiedAt || lastVerifiedAt,
           verifiedMembers: foundIndonesianMembers
         };
         console.log(`  🔄 Updated existing entry for ${orgName}.`);
@@ -997,6 +999,7 @@ async function processOrg(orgLogin: string, existingCompanies: CompanyData[]): P
           verifiedIndonesianCount: foundIndonesianMembers.length,
           label: label,
           lastVerifiedAt: lastVerifiedAt,
+          verifiedAt: lastVerifiedAt,
           hasActiveJobs: false,
           activeJobs: [],
           verifiedMembers: foundIndonesianMembers
@@ -1022,6 +1025,7 @@ async function processOrg(orgLogin: string, existingCompanies: CompanyData[]): P
           verifiedIndonesianCount: 0,
           label: "Confirmed",
           lastVerifiedAt: new Date().toISOString(),
+          verifiedAt: existingCompany.verifiedAt || existingCompany.lastVerifiedAt || undefined,
           verifiedMembers: []
         };
         return updated;
@@ -1241,6 +1245,9 @@ async function main() {
 
   saveCompanies(finalCompaniesList);
 
+  // Notify Telegram channel for any new active-job companies
+  await notifyNewVerifiedCompanies(companies, finalCompaniesList);
+
   // Save updated user location cache to disk
   saveUserLocationCache();
 
@@ -1255,6 +1262,56 @@ async function main() {
   }
 
   console.log("\n=== PIPELINE RUN COMPLETE ===");
+}
+
+async function notifyNewVerifiedCompanies(initialCompanies: CompanyData[], finalCompanies: CompanyData[]) {
+  const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
+  const TELEGRAM_CHANNEL_ID = process.env.TELEGRAM_CHANNEL_ID;
+
+  if (!TELEGRAM_BOT_TOKEN || !TELEGRAM_CHANNEL_ID) {
+    console.log("\n[Telegram] TELEGRAM_BOT_TOKEN or TELEGRAM_CHANNEL_ID environment variables are not set. Skipping notifications.");
+    return;
+  }
+
+  const initialOrgSet = new Set(initialCompanies.map(c => c.githubOrg.toLowerCase().trim()));
+  const newActiveJobCompanies = finalCompanies.filter(c => {
+    return !initialOrgSet.has(c.githubOrg.toLowerCase().trim()) && c.hasActiveJobs;
+  });
+
+  if (newActiveJobCompanies.length === 0) {
+    console.log("\n[Telegram] No new verified companies with active jobs found in this run. No notifications to send.");
+    return;
+  }
+
+  console.log(`\n[Telegram] Found ${newActiveJobCompanies.length} new verified company/companies with active jobs. Sending notifications...`);
+
+  for (const company of newActiveJobCompanies) {
+    const messageText = `🆕 *New verified company on Remotika*\n\n*${company.name}* just got verified — ${company.verifiedIndonesianCount} Indonesian team member${company.verifiedIndonesianCount > 1 ? "s" : ""} confirmed via GitHub, and they're actively hiring remote.\n\nCheck it out: https://remotika.vercel.app/company/${company.id}`;
+    
+    try {
+      console.log(`  [Telegram] Sending notification for ${company.name} (ID: ${company.id})...`);
+      const res = await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          chat_id: TELEGRAM_CHANNEL_ID,
+          text: messageText,
+          parse_mode: "Markdown"
+        })
+      });
+
+      if (!res.ok) {
+        const errorText = await res.text();
+        console.error(`  ❌ [Telegram] Failed to send notification for ${company.name}: ${res.statusText} - ${errorText}`);
+      } else {
+        console.log(`  ✅ [Telegram] Notification sent successfully for ${company.name}.`);
+      }
+    } catch (err: any) {
+      console.error(`  ❌ [Telegram] Error sending message for ${company.name}:`, err.message);
+    }
+  }
 }
 
 main().catch(err => {

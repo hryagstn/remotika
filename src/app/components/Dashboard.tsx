@@ -35,6 +35,16 @@ const Github = ({ className = "w-4 h-4" }: { className?: string }) => (
     <path d="M9 18c-4.51 2-5-2-7-2" />
   </svg>
 );
+
+const TelegramIcon = ({ className = "w-4 h-4" }: { className?: string }) => (
+  <svg 
+    className={className} 
+    viewBox="0 0 24 24" 
+    fill="currentColor"
+  >
+    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.69-.88-.58-1.38-.94-2.23-1.5-.99-.64-.35-.99.22-1.57.15-.15 2.7-2.48 2.75-2.6.01-.01.01-.07-.02-.09s-.08-.01-.11 0c-.05.01-.84.34-2.38 1.14-.23.12-.43.18-.62.17-.2-.01-.6-.12-.89-.22-.36-.12-.65-.18-.62-.39.01-.11.23-.22.64-.34 2.5-1.09 4.17-1.8 5.01-2.14.79-.31 1.63-.44 2.18-.44.12 0 .39.03.56.12.14.07.28.18.32.32.06.19.07.41.05.59z"/>
+  </svg>
+);
 import { CompanyData, submitSuggestion } from "../actions";
 
 interface DashboardProps {
@@ -47,6 +57,7 @@ export default function Dashboard({ initialCompanies }: DashboardProps) {
   const [labelFilter, setLabelFilter] = useState("All");
   const [categoryFilter, setCategoryFilter] = useState("All Roles");
   const [hasJobsOnly, setHasJobsOnly] = useState(false);
+  const [sortBy, setSortBy] = useState<"members" | "verified">("members");
   
   // Modal states
   const [isSuggestOpen, setIsSuggestOpen] = useState(false);
@@ -124,6 +135,13 @@ export default function Dashboard({ initialCompanies }: DashboardProps) {
     })();
 
     return matchesSearch && matchesLabel && matchesJobs && matchesCategory;
+  }).sort((a, b) => {
+    if (sortBy === "verified") {
+      const dateA = a.verifiedAt || a.lastVerifiedAt || "";
+      const dateB = b.verifiedAt || b.lastVerifiedAt || "";
+      return new Date(dateB).getTime() - new Date(dateA).getTime();
+    }
+    return b.verifiedIndonesianCount - a.verifiedIndonesianCount;
   });
 
   const handleExportCSV = () => {
@@ -207,7 +225,7 @@ export default function Dashboard({ initialCompanies }: DashboardProps) {
               <img src="/logo.png" alt="Remotika Logo" className="w-9 h-9 object-contain rounded-xl shadow-lg shadow-brand-primary/20" />
               <div>
                 <span className="text-lg font-bold tracking-tight text-white font-outfit">Remotika</span>
-                <span className="hidden sm:inline-block ml-2 text-xs px-2 py-0.5 rounded-full bg-white/5 border border-white/10 text-white/50">v1.3</span>
+                <span className="hidden sm:inline-block ml-2 text-xs px-2 py-0.5 rounded-full bg-white/5 border border-white/10 text-white/50">v1.4</span>
               </div>
             </Link>
             <Link href="/" className="text-xs font-semibold text-white bg-white/5 border border-white/10 px-3 py-1.5 rounded-lg transition-all">
@@ -232,6 +250,16 @@ export default function Dashboard({ initialCompanies }: DashboardProps) {
               <Plus className="w-3.5 h-3.5" />
               <span>Sarankan Perusahaan</span>
             </button>
+            {/* Telegram Channel Link (Placeholder, to be updated by Harry) */}
+            <a 
+              href="https://t.me/REPLACE_ME" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="px-4 py-2 text-xs font-semibold rounded-xl bg-[#0088cc]/10 hover:bg-[#0088cc]/20 text-[#0088cc] hover:text-[#0088cc]/90 border border-[#0088cc]/20 hover:border-[#0088cc]/35 transition-all flex items-center space-x-1.5 cursor-pointer"
+            >
+              <TelegramIcon className="w-3.5 h-3.5" />
+              <span>Telegram</span>
+            </a>
             <a 
               href={process.env.NEXT_PUBLIC_GITHUB_REPO || "https://github.com/hryagstn/remotika"} 
               target="_blank" 
@@ -301,8 +329,23 @@ export default function Dashboard({ initialCompanies }: DashboardProps) {
               )}
             </div>
 
-            {/* Filter Toggle & CSV Button */}
+            {/* Filter Toggle, Sort Select & CSV Button */}
             <div className="flex flex-wrap items-center gap-3 w-full md:w-auto justify-end">
+              {/* Sort Select */}
+              <div className="relative">
+                <select
+                  value={sortBy}
+                  onChange={(e) => setSortBy(e.target.value as "members" | "verified")}
+                  className="appearance-none bg-[#080d24] border border-white/10 hover:border-white/20 focus:border-brand-primary rounded-xl pl-3.5 pr-8 py-2.5 text-xs text-white/80 focus:text-white font-semibold outline-none transition-all cursor-pointer"
+                >
+                  <option value="members">Urutan: Anggota Terbanyak</option>
+                  <option value="verified">Urutan: Baru Terverifikasi</option>
+                </select>
+                <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2.5 text-white/40">
+                  <ChevronDown className="w-3.5 h-3.5" />
+                </div>
+              </div>
+
               <label className="flex items-center space-x-2 text-xs font-semibold text-white/70 cursor-pointer select-none border border-white/10 px-3 py-2.5 rounded-xl bg-[#080d24] hover:bg-white/5 transition-all">
                 <input
                   type="checkbox"

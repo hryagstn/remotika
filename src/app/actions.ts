@@ -12,6 +12,7 @@ export interface CompanyData {
   verifiedIndonesianCount: number;
   label: string;
   lastVerifiedAt: string | null;
+  verifiedAt?: string;
   hasActiveJobs: boolean;
   activeJobs?: Array<{
     title: string;
