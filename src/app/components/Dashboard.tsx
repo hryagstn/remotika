@@ -250,9 +250,9 @@ export default function Dashboard({ initialCompanies }: DashboardProps) {
               <Plus className="w-3.5 h-3.5" />
               <span>Sarankan Perusahaan</span>
             </button>
-            {/* Telegram Channel Link (Placeholder, to be updated by Harry) */}
+            {/* Telegram Channel Link */}
             <a 
-              href="https://t.me/REPLACE_ME" 
+              href="https://t.me/remotika_updates" 
               target="_blank" 
               rel="noopener noreferrer"
               className="px-4 py-2 text-xs font-semibold rounded-xl bg-[#0088cc]/10 hover:bg-[#0088cc]/20 text-[#0088cc] hover:text-[#0088cc]/90 border border-[#0088cc]/20 hover:border-[#0088cc]/35 transition-all flex items-center space-x-1.5 cursor-pointer"
