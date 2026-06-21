@@ -85,7 +85,7 @@ export async function POST(request: NextRequest) {
         outcome: "not_public_member",
         message: `@${cleanUsername} tidak terdeteksi sebagai anggota publik dari organisasi GitHub @${cleanOrgSlug}.\n\nJika Anda adalah anggota organisasi tersebut, Anda wajib mengubah visibilitas keanggotaan Anda di profil GitHub menjadi 'Public'.`,
         helpUrl: "https://docs.github.com/en/organizations/managing-membership-in-your-organization/publicizing-or-hiding-organization-membership"
-      });
+      }, { status: 400 });
     }
 
     if (memberRes.status !== 204) {
@@ -116,7 +116,7 @@ export async function POST(request: NextRequest) {
         success: false,
         outcome: "not_eligible",
         message: `Keanggotaan organisasi GitHub terkonfirmasi, namun lokasi di profil GitHub Anda (${userLocation || "tidak diset"}) tidak terdeteksi berlokasi di Indonesia.\n\nPastikan lokasi di profil publik GitHub Anda mengandung kata kunci Indonesia atau nama kota di Indonesia.`
-      });
+      }, { status: 400 });
     }
 
     // 5. Step C: Success! Update dataset (Immediate GitHub Commit or File Write)

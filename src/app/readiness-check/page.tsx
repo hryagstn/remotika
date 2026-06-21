@@ -959,7 +959,7 @@ Assess your own readiness: https://remotika.vercel.app/readiness-check`;
                 <div className="space-y-0.5">
                   <h4 className="text-xs font-bold text-white">Tempel & Posting</h4>
                   <p className="text-[11px] text-white/60 leading-relaxed">
-                    Di halaman LinkedIn, klik kolom postingan, lalu tekan **Paste (Ctrl/Cmd + V)** untuk menempel teks dan **unggah** gambar infografis yang tadi terunduh.
+                    Di halaman LinkedIn, klik kolom postingan, lalu tekan <strong className="font-bold text-white">Paste (Ctrl/Cmd + V)</strong> untuk menempel teks dan <strong className="font-bold text-white">unggah</strong> gambar infografis yang tadi terunduh.
                   </p>
                 </div>
               </div>

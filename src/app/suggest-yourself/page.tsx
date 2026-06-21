@@ -12,7 +12,8 @@ import {
   Sparkles, 
   ShieldAlert, 
   Loader2,
-  Lock
+  Lock,
+  ShieldCheck
 } from "lucide-react";
 
 const GithubIcon = ({ className = "w-4 h-4" }: { className?: string }) => (
@@ -400,12 +401,12 @@ export default function SuggestYourselfPage() {
           <div className="absolute top-0 right-0 w-24 h-24 bg-brand-primary/5 rounded-full blur-xl" />
           
           <h2 className="text-sm font-bold font-outfit text-white flex items-center space-x-2">
-            <CheckCircle className="w-4 h-4 text-brand-primary animate-pulse" />
+            <ShieldCheck className="w-4 h-4 text-emerald-400 animate-pulse" />
             <span>Bagaimana Proses Keamanan Berjalan?</span>
           </h2>
           
           <p className="text-xs text-white/70 leading-relaxed font-inter">
-            Proses ini murni dijalankan langsung ke API publik GitHub secara real-time. Remotika **tidak pernah menyimpan** password atau menanyakan kredensial apa pun dari akun GitHub Anda. Kami hanya mengecek status visibilitas keanggotaan publik organisasi Anda beserta isian kota pada akun publik Anda secara transparan.
+            Proses ini murni dijalankan langsung ke API publik GitHub secara real-time. Remotika <strong className="font-bold text-white">tidak pernah menyimpan</strong> password atau menanyakan kredensial apa pun dari akun GitHub Anda. Kami hanya mengecek status visibilitas keanggotaan publik organisasi Anda beserta isian kota pada akun publik Anda secara transparan.
           </p>
         </section>
 

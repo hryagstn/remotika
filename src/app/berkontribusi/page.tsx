@@ -546,14 +546,18 @@ export default function BerkontribusiPage() {
                 <Globe className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
                 <div>
                   <h4 className="font-bold text-white">Dukungan CORS</h4>
-                  <p className="text-white/60">Header `Access-Control-Allow-Origin: *` aktif secara default untuk mendukung panggilan langsung dari klien/sisi browser.</p>
+                  <p className="text-white/60">
+                    Header <code className="text-emerald-400 font-mono text-[10px] bg-white/5 px-1.5 py-0.5 rounded border border-white/5">Access-Control-Allow-Origin: *</code> aktif secara default untuk mendukung panggilan langsung dari klien/sisi browser.
+                  </p>
                 </div>
               </div>
               <div className="flex items-start space-x-3 text-xs leading-relaxed">
                 <AlertCircle className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
                 <div>
                   <h4 className="font-bold text-white">Batasan Throttling (Rate Limit)</h4>
-                  <p className="text-white/60">Maksimum **60 permintaan per menit per alamat IP**. Permintaan berlebih akan mengembalikan kode status `429 Too Many Requests`.</p>
+                  <p className="text-white/60">
+                    Maksimum <strong className="font-bold text-white">60 permintaan per menit per alamat IP</strong>. Permintaan berlebih akan mengembalikan kode status <code className="text-amber-400 font-mono text-[10px] bg-white/5 px-1.5 py-0.5 rounded border border-white/5">429 Too Many Requests</code>.
+                  </p>
                 </div>
               </div>
             </div>
