@@ -17,7 +17,8 @@ import {
   Activity,
   Award,
   BookOpen,
-  Send
+  Send,
+  X
 } from "lucide-react";
 import { readinessQuestions, ReadinessQuestion } from "../../data/readiness-questions";
 
@@ -37,20 +38,14 @@ const GithubIcon = ({ className = "w-4 h-4" }: { className?: string }) => (
   </svg>
 );
 
-// Custom SVG LinkedIn Icon
+// Custom SVG LinkedIn Icon (Official Solid design matching web)
 const LinkedinIcon = ({ className = "w-4 h-4" }: { className?: string }) => (
   <svg 
     className={className} 
     viewBox="0 0 24 24" 
-    fill="none" 
-    stroke="currentColor" 
-    strokeWidth="2" 
-    strokeLinecap="round" 
-    strokeLinejoin="round"
+    fill="currentColor"
   >
-    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-    <rect x="2" y="9" width="4" height="12" />
-    <circle cx="4" cy="4" r="2" />
+    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
   </svg>
 );
 
@@ -92,6 +87,7 @@ export default function ReadinessCheckPage() {
   const [showErrors, setShowShowErrors] = useState(false);
   const [isDownloading, setIsDownloading] = useState(false);
   const [isSharing, setIsSharing] = useState(false);
+  const [isShareGuideOpen, setIsShareGuideOpen] = useState(false);
   const [copied, setCopied] = useState(false);
   const [captionLang, setCaptionLang] = useState<"id" | "en">("id");
   const [hasSavedResult, setHasSavedResult] = useState(false);
@@ -277,11 +273,14 @@ export default function ReadinessCheckPage() {
       console.error("Gagal mengunduh gambar:", err);
     }
 
-    // 3. Open LinkedIn feed with compose overlay active
-    setTimeout(() => {
-      window.open("https://www.linkedin.com/feed/?shareActive=true", "_blank");
-      setIsSharing(false);
-    }, 1200);
+    // 3. Show share guide modal
+    setIsShareGuideOpen(true);
+    setIsSharing(false);
+  };
+
+  const handleProceedToLinkedin = () => {
+    window.open("https://www.linkedin.com/feed/?shareActive=true", "_blank");
+    setIsShareGuideOpen(false);
   };
 
   // Pre-filled LinkedIn Captions
@@ -745,7 +744,7 @@ Assess your own readiness: https://remotika.vercel.app/readiness-check`;
                     ) : (
                       <>
                         <LinkedinIcon className="w-4 h-4" />
-                        <span>Satu-Klik Bagikan ke LinkedIn</span>
+                        <span>Bagikan ke LinkedIn</span>
                       </>
                     )}
                   </button>
@@ -889,6 +888,73 @@ Assess your own readiness: https://remotika.vercel.app/readiness-check`;
         )}
 
       </main>
+
+      {/* LinkedIn Share Guide Modal */}
+      {isShareGuideOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-fade-in">
+          <div className="glass-panel w-full max-w-md rounded-2xl border border-white/10 shadow-2xl p-6 relative space-y-5">
+            <button 
+              onClick={() => setIsShareGuideOpen(false)}
+              className="absolute right-4 top-4 p-1 rounded-lg text-white/40 hover:text-white hover:bg-white/5 transition-all"
+            >
+              <X className="w-5 h-5" />
+            </button>
+
+            <div className="space-y-2 text-center pt-2">
+              <div className="w-12 h-12 rounded-full bg-[#0077b5]/10 border border-[#0077b5]/20 flex items-center justify-center text-[#0077b5] mx-auto animate-pulse">
+                <LinkedinIcon className="w-6 h-6" />
+              </div>
+              <h2 className="text-xl font-bold font-outfit text-white">Panduan Berbagi ke LinkedIn</h2>
+              <p className="text-xs text-white/50 leading-relaxed">
+                Ikuti langkah mudah berikut agar postingan Anda tampil sempurna dengan infografis hasil tes:
+              </p>
+            </div>
+
+            <div className="space-y-4 pt-2">
+              {/* Step 1 */}
+              <div className="flex items-start space-x-3.5 p-3.5 rounded-xl bg-white/5 border border-white/5">
+                <span className="w-6 h-6 rounded-lg bg-teal-500/10 border border-teal-500/20 text-teal-400 flex items-center justify-center text-xs font-bold font-mono shrink-0">1</span>
+                <div className="space-y-0.5">
+                  <h4 className="text-xs font-bold text-white">Gambar Infografis Terunduh</h4>
+                  <p className="text-[11px] text-white/60 leading-relaxed">
+                    Kartu skor infografis otomatis terunduh di folder download Anda (bernama <code className="text-teal-400 font-mono text-[10px] bg-white/5 px-1 py-0.5 rounded">remotika-readiness-check.png</code>).
+                  </p>
+                </div>
+              </div>
+
+              {/* Step 2 */}
+              <div className="flex items-start space-x-3.5 p-3.5 rounded-xl bg-white/5 border border-white/5">
+                <span className="w-6 h-6 rounded-lg bg-blue-500/10 border border-blue-500/20 text-blue-400 flex items-center justify-center text-xs font-bold font-mono shrink-0">2</span>
+                <div className="space-y-0.5">
+                  <h4 className="text-xs font-bold text-white">Caption Otomatis Tersalin</h4>
+                  <p className="text-[11px] text-white/60 leading-relaxed">
+                    Teks deskripsi kustom dwi-bahasa (Bahasa Indonesia/Inggris) sudah disalin ke clipboard Anda.
+                  </p>
+                </div>
+              </div>
+
+              {/* Step 3 */}
+              <div className="flex items-start space-x-3.5 p-3.5 rounded-xl bg-white/5 border border-white/5">
+                <span className="w-6 h-6 rounded-lg bg-purple-500/10 border border-purple-500/20 text-purple-400 flex items-center justify-center text-xs font-bold font-mono shrink-0">3</span>
+                <div className="space-y-0.5">
+                  <h4 className="text-xs font-bold text-white">Tempel & Posting</h4>
+                  <p className="text-[11px] text-white/60 leading-relaxed">
+                    Di halaman LinkedIn, klik kolom postingan, lalu tekan **Paste (Ctrl/Cmd + V)** untuk menempel teks dan **unggah** gambar infografis yang tadi terunduh.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <button
+              onClick={handleProceedToLinkedin}
+              className="w-full py-3 rounded-xl bg-gradient-to-r from-[#0077b5] to-[#00a0dc] text-sm font-semibold text-white shadow-lg shadow-[#0077b5]/20 hover:opacity-95 active:scale-98 transition-all flex items-center justify-center space-x-2 cursor-pointer"
+            >
+              <LinkedinIcon className="w-4 h-4" />
+              <span>Buka LinkedIn & Buat Postingan</span>
+            </button>
+          </div>
+        </div>
+      )}
 
       {/* Footer */}
       <footer className="mt-auto border-t border-border-faint glass-panel py-6 text-center text-xs text-white/40">
