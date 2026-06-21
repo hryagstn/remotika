@@ -47,9 +47,17 @@ export default function CaraKerjaPage() {
                 <span className="hidden sm:inline-block ml-2 text-xs px-2 py-0.5 rounded-full bg-white/5 border border-white/10 text-white/50">v1.2</span>
               </div>
             </Link>
-            <Link href="/" className="text-xs font-semibold text-white/60 hover:text-white hover:bg-white/5 px-3 py-1.5 rounded-lg border border-transparent hover:border-white/5 transition-all flex items-center space-x-1.5">
-              <ArrowLeft className="w-3.5 h-3.5" />
-              <span>Kembali ke Dashboard</span>
+            <Link href="/" className="text-xs font-semibold text-white/60 hover:text-white hover:bg-white/5 px-3 py-1.5 rounded-lg border border-transparent hover:border-white/5 transition-all">
+              Beranda
+            </Link>
+            <Link href="/cara-kerja" className="text-xs font-semibold text-white bg-white/5 border border-white/10 px-3 py-1.5 rounded-lg transition-all">
+              Cara Kerja
+            </Link>
+            <Link href="/readiness-check" className="text-xs font-semibold text-white/60 hover:text-white hover:bg-white/5 px-3 py-1.5 rounded-lg border border-transparent hover:border-white/5 transition-all">
+              Cek Kesiapan
+            </Link>
+            <Link href="/berkontribusi" className="text-xs font-semibold text-white/60 hover:text-white hover:bg-white/5 px-3 py-1.5 rounded-lg border border-transparent hover:border-white/5 transition-all">
+              Berkontribusi
             </Link>
           </div>
           <div className="flex items-center space-x-3">
@@ -168,7 +176,7 @@ export default function CaraKerjaPage() {
               <div className="space-y-1">
                 <h3 className="text-base font-bold text-white">GitHub API (Verifikasi & Validasi)</h3>
                 <p className="text-xs text-white/60 leading-relaxed">
-                  Menjadi fondasi utama untuk memindai organisasi, mengambil informasi publik pengembang, dan memproses metadata komit/PR. Token API kami bekerja memproses data secara terjadwal untuk menjaga keaslian statistik anggota di dashboard.
+                  Menjadi fondasi utama untuk memindai organisasi, mengambil informasi publik pengembang, dan memproses metadata komit/PR. Token API kami bekerja memproses data secara terjadwal untuk menjaga keaslian statistik anggota di Beranda.
                 </p>
               </div>
             </div>
@@ -226,14 +234,14 @@ export default function CaraKerjaPage() {
           </div>
         </section>
 
-        {/* CTA Back to Dashboard */}
+        {/* CTA Back to Beranda */}
         <section className="text-center py-4">
           <Link 
             href="/"
             className="px-6 py-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 text-white text-sm font-semibold transition-all inline-flex items-center space-x-2 active:scale-95"
           >
             <ArrowLeft className="w-4 h-4" />
-            <span>Kembali ke Halaman Dashboard</span>
+            <span>Kembali ke Halaman Beranda</span>
           </Link>
         </section>
       </main>
