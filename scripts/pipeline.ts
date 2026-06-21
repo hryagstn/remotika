@@ -177,6 +177,14 @@ const DEFAULT_SEED_ORGS = [
   "wistia"
 ];
 
+const DEFAULT_GITLAB_SEED_GROUPS = [
+  "gitlab-org",
+  "gnome",
+  "debian",
+  "videolan",
+  "inkscape"
+];
+
 interface ActiveJob {
   title: string;
   url: string;
@@ -189,6 +197,7 @@ interface VerifiedMember {
   githubLogin: string;
   githubProfileUrl: string;
   locationRaw: string | null;
+  provider?: "github" | "gitlab" | string;
 }
 
 interface JobSources {
@@ -205,6 +214,8 @@ interface CompanyData {
   name: string;
   githubOrg: string;
   githubOrgUrl: string;
+  gitlabOrg?: string;
+  gitlabOrgUrl?: string;
   remoteokSlug: string | null;
   industry: string;
   verifiedIndonesianCount: number;
@@ -740,6 +751,154 @@ function saveFlaggedForReview(flagged: Record<string, any>) {
   }
 }
 
+const GITLAB_ACCESS_TOKEN = process.env.GITLAB_ACCESS_TOKEN;
+
+async function fetchGitlab(url: string) {
+  const headers: Record<string, string> = {
+    "User-Agent": "Remotika-Pipeline/1.0"
+  };
+  if (GITLAB_ACCESS_TOKEN) {
+    headers["PRIVATE-TOKEN"] = GITLAB_ACCESS_TOKEN;
+  }
+  const res = await fetch(url, { headers });
+  if (res.status === 404) return null;
+  if (!res.ok) {
+    const text = await res.text();
+    throw new Error(`GitLab API Error (${res.status}): ${text}`);
+  }
+  return res.json();
+}
+
+async function checkGitlabUserIndonesian(userId: number, username: string): Promise<{ isIndo: boolean; profile: any } | null> {
+  const cacheKey = `gl-${username.toLowerCase()}`;
+  if (userLocationCache.has(cacheKey)) {
+    return userLocationCache.get(cacheKey)!;
+  }
+  try {
+    const profile = await fetchGitlab(`https://gitlab.com/api/v4/users/${userId}`);
+    if (profile) {
+      const isIndo = isLocationIndonesian(profile.location);
+      const result = { isIndo, profile };
+      userLocationCache.set(cacheKey, result);
+      return result;
+    }
+  } catch (err: any) {
+    console.error(`    ❌ Error fetching GitLab profile for user ${username}:`, err.message);
+  }
+  return null;
+}
+
+async function processGitlabGroup(groupSlug: string, existingCompanies: CompanyData[]): Promise<CompanyData | null> {
+  const groupSlugLower = groupSlug.toLowerCase().trim();
+
+  if (BLOCKLISTED_ORGS.has(groupSlugLower)) {
+    console.log(`\n[Pipeline] ⛔ Skipping blocklisted GitLab group: ${groupSlug}`);
+    return null;
+  }
+
+  if (EXCLUDED_SET.has(groupSlugLower)) {
+    console.log(`\n[Pipeline] ⛔ Skipping manual exclude-listed Indonesian GitLab group: ${groupSlug}`);
+    return null;
+  }
+
+  console.log(`\n[Pipeline] Processing GitLab Group: ${groupSlug}`);
+
+  try {
+    const groupData = await fetchGitlab(`https://gitlab.com/api/v4/groups/${groupSlugLower}`);
+    if (!groupData) {
+      console.log(`  ⚠️  Group '${groupSlug}' not found on GitLab. Skipping.`);
+      return null;
+    }
+
+    const groupName = groupData.name || groupData.path;
+    const groupUrl = groupData.web_url;
+    const description = groupData.description || "Tech & Development Services";
+
+    const foundIndonesianMembers: VerifiedMember[] = [];
+    const verifiedLogins = new Set<string>();
+
+    const existingCompany = existingCompanies.find(
+      c => (c.gitlabOrg && c.gitlabOrg.toLowerCase() === groupSlugLower) ||
+           (c.githubOrg && c.githubOrg.toLowerCase() === groupSlugLower && c.githubOrgUrl.includes("gitlab.com"))
+    );
+
+    const existingMembersMap = new Map<string, string>(); // login -> id
+    if (existingCompany) {
+      existingCompany.verifiedMembers.forEach(m => {
+        existingMembersMap.set(m.githubLogin.toLowerCase(), m.id);
+      });
+    }
+
+    const addVerifiedMember = (login: string, profileUrl: string, location: string | null, userId: number) => {
+      const loginLower = login.toLowerCase();
+      if (verifiedLogins.has(loginLower)) return;
+      verifiedLogins.add(loginLower);
+
+      const existingId = existingMembersMap.get(loginLower);
+      const memberId = existingId || `gl-${userId}`;
+
+      foundIndonesianMembers.push({
+        id: memberId,
+        githubLogin: login,
+        githubProfileUrl: profileUrl,
+        locationRaw: location,
+        provider: "gitlab"
+      });
+      console.log(`    ✅ Match (GitLab): ${login} is verified in "${location || "Indonesia"}"`);
+    };
+
+    console.log(`  Fetching public members for GitLab group ${groupSlug}...`);
+    const members = await fetchGitlab(`https://gitlab.com/api/v4/groups/${groupSlugLower}/members/all`);
+    if (Array.isArray(members)) {
+      console.log(`    Found ${members.length} members. Checking profile locations...`);
+      for (const member of members) {
+        const check = await checkGitlabUserIndonesian(member.id, member.username);
+        if (check && check.isIndo) {
+          addVerifiedMember(member.username, check.profile.web_url, check.profile.location, member.id);
+        }
+        await new Promise(r => setTimeout(r, 100)); // Polite delay
+      }
+    }
+
+    if (foundIndonesianMembers.length === 0) {
+      console.log(`  ℹ️ No Indonesian public members found for ${groupSlugLower}. Skipping.`);
+      return null;
+    }
+
+    const numericIds = existingCompanies
+      .map(c => parseInt(c.id.replace("co-", "")))
+      .filter(id => !isNaN(id));
+    const nextNumericId = numericIds.length > 0 ? Math.max(...numericIds) + 1 : 1;
+    const companyId = existingCompany ? existingCompany.id : `co-${nextNumericId}`;
+
+    const companyData: CompanyData = {
+      id: companyId,
+      name: groupName,
+      githubOrg: groupSlug, // compatibility fallback
+      githubOrgUrl: groupUrl, // compatibility fallback
+      gitlabOrg: groupSlug,
+      gitlabOrgUrl: groupUrl,
+      remoteokSlug: existingCompany?.remoteokSlug || null,
+      industry: description,
+      verifiedIndonesianCount: foundIndonesianMembers.length,
+      label: getEmployeeLabel(foundIndonesianMembers.length),
+      lastVerifiedAt: new Date().toISOString(),
+      verifiedAt: existingCompany?.verifiedAt || new Date().toISOString(),
+      hasActiveJobs: existingCompany?.hasActiveJobs || false,
+      activeJobs: existingCompany?.activeJobs || [],
+      verifiedMembers: foundIndonesianMembers,
+      headquarters: "Global Remote",
+      testimonials: existingCompany?.testimonials || []
+    };
+
+    return companyData;
+
+  } catch (err: any) {
+    console.error(`  ❌ Error processing GitLab group ${groupSlug}:`, err.message);
+    return null;
+  }
+}
+
 async function processOrg(orgLogin: string, existingCompanies: CompanyData[]): Promise<CompanyData | null> {
   const orgLoginLower = orgLogin.toLowerCase().trim();
 
@@ -1072,7 +1231,7 @@ async function main() {
   console.log(`  Selected top ${selectedNewGuesses.length} new guesses to inspect:`, selectedNewGuesses);
 
   // 5. Combine everything into the processing queue
-  const orgsToProcess = new Set<string>();
+  const queueMap = new Map<string, { type: "github" | "gitlab"; slug: string }>();
   
   // Load flagged-for-review set to avoid re-inspecting flagged organizations
   const flagged = loadFlaggedForReview();
@@ -1085,10 +1244,19 @@ async function main() {
 
   // Always process existing companies to update their jobs/members, unless excluded or flagged
   companies.forEach(c => {
-    if (c.githubOrg) {
-      const cleanOrg = c.githubOrg.toLowerCase().trim();
-      if (shouldInspect(cleanOrg)) {
-        orgsToProcess.add(cleanOrg);
+    if (c.gitlabOrg) {
+      const cleanSlug = c.gitlabOrg.toLowerCase().trim();
+      if (shouldInspect(cleanSlug)) {
+        queueMap.set(`gitlab:${cleanSlug}`, { type: "gitlab", slug: cleanSlug });
+      }
+    } else if (c.githubOrg) {
+      const cleanSlug = c.githubOrg.toLowerCase().trim();
+      if (shouldInspect(cleanSlug)) {
+        if (c.githubOrgUrl?.includes("gitlab.com")) {
+          queueMap.set(`gitlab:${cleanSlug}`, { type: "gitlab", slug: cleanSlug });
+        } else {
+          queueMap.set(`github:${cleanSlug}`, { type: "github", slug: cleanSlug });
+        }
       }
     }
   });
@@ -1097,24 +1265,30 @@ async function main() {
   DEFAULT_SEED_ORGS.forEach(org => {
     const cleanOrg = org.toLowerCase().trim();
     if (shouldInspect(cleanOrg)) {
-      orgsToProcess.add(cleanOrg);
+      queueMap.set(`github:${cleanOrg}`, { type: "github", slug: cleanOrg });
+    }
+  });
+  DEFAULT_GITLAB_SEED_GROUPS.forEach(group => {
+    const cleanGroup = group.toLowerCase().trim();
+    if (shouldInspect(cleanGroup)) {
+      queueMap.set(`gitlab:${cleanGroup}`, { type: "gitlab", slug: cleanGroup });
     }
   });
   communitySeeds.forEach(org => {
     const cleanOrg = org.toLowerCase().trim();
     if (shouldInspect(cleanOrg)) {
-      orgsToProcess.add(cleanOrg);
+      queueMap.set(`github:${cleanOrg}`, { type: "github", slug: cleanOrg });
     }
   });
   selectedNewGuesses.forEach(org => {
     const cleanOrg = org.toLowerCase().trim();
     if (shouldInspect(cleanOrg)) {
-      orgsToProcess.add(cleanOrg);
+      queueMap.set(`github:${cleanOrg}`, { type: "github", slug: cleanOrg });
     }
   });
 
-  const orgList = Array.from(orgsToProcess);
-  console.log(`Queue loaded with ${orgList.length} unique organizations to inspect.`);
+  const queueList = Array.from(queueMap.values());
+  console.log(`Queue loaded with ${queueList.length} unique platform groups/organizations to inspect.`);
 
   const updatedCompaniesMap = new Map<string, CompanyData>();
   
@@ -1124,14 +1298,20 @@ async function main() {
   });
 
   // 4. Process each organization in the queue
-  for (const org of orgList) {
-    const updatedCompany = await processOrg(org, Array.from(updatedCompaniesMap.values()));
+  for (const item of queueList) {
+    let updatedCompany: CompanyData | null = null;
+    if (item.type === "gitlab") {
+      updatedCompany = await processGitlabGroup(item.slug, Array.from(updatedCompaniesMap.values()));
+    } else {
+      updatedCompany = await processOrg(item.slug, Array.from(updatedCompaniesMap.values()));
+    }
+    
     if (updatedCompany) {
       // ── Job Enrichment: multi-source strategy ──
       const cleanNameKey = updatedCompany.name.toLowerCase().trim();
       const cleanSlugKey = updatedCompany.githubOrg.toLowerCase().trim();
       const remoteokKey = updatedCompany.remoteokSlug?.toLowerCase().trim();
-      const orgKey = org.toLowerCase().trim();
+      const orgKey = item.slug.toLowerCase().trim();
 
       // Determine jobSources config for this org
       const jobSourcesConfig = COMPANY_JOB_SOURCES[orgKey] || COMPANY_JOB_SOURCES[cleanSlugKey];
@@ -1201,7 +1381,7 @@ async function main() {
         updatedCompany.hasActiveJobs = false;
       }
       
-      updatedCompaniesMap.set(org.toLowerCase(), updatedCompany);
+      updatedCompaniesMap.set(item.slug.toLowerCase(), updatedCompany);
     }
     // Polite delay between organizations
     await new Promise(r => setTimeout(r, 1000));
