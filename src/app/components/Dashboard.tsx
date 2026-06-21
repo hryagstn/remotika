@@ -17,7 +17,8 @@ import {
   X,
   Mail,
   Building,
-  Plus
+  Plus,
+  Sparkles
 } from "lucide-react";
 
 // Inline Custom SVG for GitHub logo (resolves missing brand icons in some lucide-react versions)
@@ -243,6 +244,13 @@ export default function Dashboard({ initialCompanies }: DashboardProps) {
           </div>
 
           <div className="flex items-center space-x-3">
+            <Link
+              href="/suggest-yourself"
+              className="px-4 py-2 text-xs font-bold rounded-xl bg-brand-primary/10 hover:bg-brand-primary/20 text-brand-primary border border-brand-primary/20 hover:border-brand-primary/35 transition-all flex items-center space-x-1.5 cursor-pointer"
+            >
+              <Sparkles className="w-3.5 h-3.5" />
+              <span>Verifikasi Mandiri</span>
+            </Link>
             <button
               onClick={() => setIsSuggestOpen(true)}
               className="px-4 py-2 text-xs font-semibold rounded-xl bg-gradient-to-r from-brand-primary to-brand-secondary text-white hover:opacity-90 active:scale-95 transition-all shadow-md shadow-brand-primary/25 flex items-center space-x-1.5"

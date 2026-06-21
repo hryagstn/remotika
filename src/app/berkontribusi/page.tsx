@@ -416,6 +416,125 @@ export default function BerkontribusiPage() {
           </div>
         </section>
 
+        {/* Dokumentasi API Publik */}
+        <section className="space-y-6">
+          <div className="text-center md:text-left space-y-2">
+            <h2 className="text-2xl font-bold font-outfit text-white flex items-center justify-center md:justify-start space-x-2">
+              <Database className="w-5 h-5 text-brand-primary" />
+              <span>Dokumentasi API Publik (Read-Only)</span>
+            </h2>
+            <p className="text-sm text-white/50">
+              Gunakan API publik kami yang transparan untuk mengonsumsi data direktori Remotika secara programmatic:
+            </p>
+          </div>
+
+          <div className="glass-panel p-6 rounded-2xl border border-white/5 space-y-6">
+            
+            {/* HTTP Method + Endpoint */}
+            <div className="flex flex-col sm:flex-row sm:items-center gap-3 bg-[#090d16] p-4 rounded-xl border border-white/5 font-mono text-xs">
+              <span className="px-2.5 py-1 bg-emerald-500/10 text-emerald-400 font-bold border border-emerald-500/20 rounded-md inline-block w-fit">
+                GET
+              </span>
+              <span className="text-brand-accent select-all font-semibold">
+                https://remotika.vercel.app/api/v1/companies
+              </span>
+            </div>
+
+            {/* Query Parameters Table */}
+            <div className="space-y-3">
+              <h3 className="text-sm font-bold text-white font-outfit">Query Parameters (Opsional)</h3>
+              <div className="overflow-x-auto">
+                <table className="w-full text-xs font-sans text-left border-collapse">
+                  <thead>
+                    <tr className="border-b border-white/10 text-white/40">
+                      <th className="py-2.5 font-bold uppercase tracking-wider">Parameter</th>
+                      <th className="py-2.5 font-bold uppercase tracking-wider">Tipe</th>
+                      <th className="py-2.5 font-bold uppercase tracking-wider">Deskripsi</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-white/5 text-white/80">
+                    <tr>
+                      <td className="py-3 font-mono text-brand-secondary">hasActiveJobs</td>
+                      <td className="py-3 text-white/50 font-mono">boolean</td>
+                      <td className="py-3">Filter status perekrutan aktif (`true` atau `false`).</td>
+                    </tr>
+                    <tr>
+                      <td className="py-3 font-mono text-brand-secondary">label</td>
+                      <td className="py-3 text-white/50 font-mono">string</td>
+                      <td className="py-3">Filter tingkatan verifikasi (`top-pick`, `established`, `indonesia-friendly`, `confirmed`).</td>
+                    </tr>
+                    <tr>
+                      <td className="py-3 font-mono text-brand-secondary">minVerifiedCount</td>
+                      <td className="py-3 text-white/50 font-mono">number</td>
+                      <td className="py-3">Filter jumlah minimum talenta Indonesia yang terverifikasi.</td>
+                    </tr>
+                    <tr>
+                      <td className="py-3 font-mono text-brand-secondary">industry</td>
+                      <td className="py-3 text-white/50 font-mono">string</td>
+                      <td className="py-3">Pencarian parsial nama industri (e.g. `technology`).</td>
+                    </tr>
+                    <tr>
+                      <td className="py-3 font-mono text-brand-secondary">limit</td>
+                      <td className="py-3 text-white/50 font-mono">number</td>
+                      <td className="py-3">Batasan jumlah data yang dikembalikan (Default: `50`, Max: `200`).</td>
+                    </tr>
+                    <tr>
+                      <td className="py-3 font-mono text-brand-secondary">offset</td>
+                      <td className="py-3 text-white/50 font-mono">number</td>
+                      <td className="py-3">Offset pemotongan data untuk paginasi (Default: `0`).</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            {/* Example JSON Response */}
+            <div className="space-y-2">
+              <h3 className="text-sm font-bold text-white font-outfit">Contoh Respons JSON (200 OK)</h3>
+              <pre className="bg-[#090d16] p-4 rounded-xl border border-white/5 font-mono text-[11px] text-brand-accent overflow-x-auto max-h-72 leading-relaxed">
+{`{
+  "data": [
+    {
+      "name": "Automattic",
+      "githubOrg": "automattic",
+      "githubOrgUrl": "https://github.com/automattic",
+      "label": "confirmed",
+      "verifiedIndonesianCount": 1,
+      "hasActiveJobs": false,
+      "verifiedAt": "2026-06-15T00:00:00Z",
+      "profileUrl": "https://remotika.vercel.app/company/automattic"
+    }
+  ],
+  "meta": {
+    "total": 5,
+    "limit": 50,
+    "offset": 0
+  }
+}`}
+              </pre>
+            </div>
+
+            {/* Key details: CORS & Rate Limit */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2 border-t border-white/5">
+              <div className="flex items-start space-x-3 text-xs leading-relaxed">
+                <Globe className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+                <div>
+                  <h4 className="font-bold text-white">Dukungan CORS</h4>
+                  <p className="text-white/60">Header `Access-Control-Allow-Origin: *` aktif secara default untuk mendukung panggilan langsung dari klien/sisi browser.</p>
+                </div>
+              </div>
+              <div className="flex items-start space-x-3 text-xs leading-relaxed">
+                <AlertCircle className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
+                <div>
+                  <h4 className="font-bold text-white">Batasan Throttling (Rate Limit)</h4>
+                  <p className="text-white/60">Maksimum **60 permintaan per menit per alamat IP**. Permintaan berlebih akan mengembalikan kode status `429 Too Many Requests`.</p>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </section>
+
         {/* Lisensi Proyek */}
         <section className="glass-panel p-8 rounded-3xl border border-white/5 space-y-4 relative overflow-hidden">
           <div className="absolute top-0 right-0 w-32 h-32 bg-brand-primary/5 rounded-full blur-2xl" />
