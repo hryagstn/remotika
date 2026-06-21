@@ -91,6 +91,7 @@ export default function ReadinessCheckPage() {
   const [answers, setAnswers] = useState<Record<string, number>>({});
   const [showErrors, setShowShowErrors] = useState(false);
   const [isDownloading, setIsDownloading] = useState(false);
+  const [isSharing, setIsSharing] = useState(false);
   const [copied, setCopied] = useState(false);
   const [captionLang, setCaptionLang] = useState<"id" | "en">("id");
   const [hasSavedResult, setHasSavedResult] = useState(false);
@@ -238,6 +239,49 @@ export default function ReadinessCheckPage() {
     } finally {
       setIsDownloading(false);
     }
+  };
+
+  const handleOneClickShare = async () => {
+    if (!savedResultData) return;
+    setIsSharing(true);
+    
+    // 1. Copy prefilled caption
+    const textToCopy = captionLang === "id" ? linkedinCaptionId : linkedinCaptionEn;
+    try {
+      await navigator.clipboard.writeText(textToCopy);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 3000);
+    } catch (err) {
+      console.error("Gagal menyalin teks ke clipboard:", err);
+    }
+
+    // 2. Download image
+    try {
+      const { technical, communication, lifestyle } = savedResultData.scores;
+      const url = `/api/readiness-og?technical=${technical}&communication=${communication}&lifestyle=${lifestyle}`;
+      
+      const response = await fetch(url);
+      if (!response.ok) throw new Error("Network response was not OK");
+      
+      const blob = await response.blob();
+      const blobUrl = URL.createObjectURL(blob);
+      
+      const link = document.createElement("a");
+      link.href = blobUrl;
+      link.download = `remotika-readiness-check.png`;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      URL.revokeObjectURL(blobUrl);
+    } catch (err) {
+      console.error("Gagal mengunduh gambar:", err);
+    }
+
+    // 3. Open LinkedIn feed with compose overlay active
+    setTimeout(() => {
+      window.open("https://www.linkedin.com/feed/?shareActive=true", "_blank");
+      setIsSharing(false);
+    }, 1200);
   };
 
   // Pre-filled LinkedIn Captions
@@ -680,39 +724,54 @@ Assess your own readiness: https://remotika.vercel.app/readiness-check`;
                 <div className="space-y-3">
                   <div className="flex items-center space-x-2 text-brand-primary">
                     <Award className="w-5 h-5 text-brand-accent animate-pulse" />
-                    <h3 className="font-bold text-white font-outfit">Sertifikasi Refleksi Anda Siap</h3>
+                    <h3 className="font-bold text-white font-outfit">Bagikan Hasil Refleksi Anda</h3>
                   </div>
                   <p className="text-xs sm:text-sm text-white/70 leading-relaxed font-inter">
-                    Unduh kartu infografis modern yang dirancang khusus untuk feed LinkedIn Anda. Gunakan template caption di bawah untuk menceritakan proses introspeksi diri Anda tanpa kesan menyombongkan skor numerik.
+                    Gunakan fitur <strong>Satu-Klik Bagikan</strong> untuk mengunduh infografis skor, menyalin caption rekomendasi ke clipboard, dan membuka LinkedIn secara instan dalam sekali klik.
                   </p>
                 </div>
 
                 <div className="pt-2 space-y-3">
                   <button
-                    onClick={downloadOgImage}
-                    disabled={isDownloading}
-                    className="w-full px-5 py-3 text-xs font-bold rounded-xl bg-gradient-to-r from-teal-500 to-emerald-600 text-slate-950 hover:opacity-90 active:scale-95 transition-all shadow-md shadow-teal-500/10 flex items-center justify-center space-x-2 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
+                    onClick={handleOneClickShare}
+                    disabled={isSharing || isDownloading}
+                    className="w-full px-5 py-3 text-xs font-bold rounded-xl bg-gradient-to-r from-[#0077b5] to-[#00a0dc] text-white hover:opacity-95 active:scale-95 transition-all shadow-md shadow-[#0077b5]/20 flex items-center justify-center space-x-2 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
                   >
-                    {isDownloading ? (
+                    {isSharing ? (
                       <>
-                        <div className="w-4 h-4 border-2 border-slate-950 border-t-transparent rounded-full animate-spin" />
-                        <span>Mempersiapkan Gambar...</span>
+                        <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
+                        <span>Menyiapkan Sharing...</span>
                       </>
                     ) : (
                       <>
-                        <Download className="w-4 h-4" />
-                        <span>Unduh Infografis LinkedIn</span>
+                        <LinkedinIcon className="w-4 h-4" />
+                        <span>Satu-Klik Bagikan ke LinkedIn</span>
                       </>
                     )}
                   </button>
 
-                  <button
-                    onClick={handleStartNew}
-                    className="w-full px-5 py-3 text-xs font-bold rounded-xl border border-white/10 text-white/80 hover:bg-white/5 active:scale-95 transition-all flex items-center justify-center space-x-2 cursor-pointer"
-                  >
-                    <RotateCcw className="w-4 h-4 text-white/50" />
-                    <span>Ulangi Evaluasi Mandiri</span>
-                  </button>
+                  <div className="grid grid-cols-2 gap-3">
+                    <button
+                      onClick={downloadOgImage}
+                      disabled={isDownloading || isSharing}
+                      className="px-4 py-2.5 text-xs font-bold rounded-xl border border-white/10 text-white/80 hover:bg-white/5 active:scale-95 transition-all flex items-center justify-center space-x-1.5 cursor-pointer disabled:opacity-50"
+                    >
+                      {isDownloading ? (
+                        <div className="w-3.5 h-3.5 border-2 border-white border-t-transparent rounded-full animate-spin" />
+                      ) : (
+                        <Download className="w-3.5 h-3.5 text-white/50" />
+                      )}
+                      <span>Unduh Gambar</span>
+                    </button>
+
+                    <button
+                      onClick={handleStartNew}
+                      className="px-4 py-2.5 text-xs font-bold rounded-xl border border-white/10 text-white/80 hover:bg-white/5 active:scale-95 transition-all flex items-center justify-center space-x-1.5 cursor-pointer"
+                    >
+                      <RotateCcw className="w-3.5 h-3.5 text-white/50" />
+                      <span>Ulangi Tes</span>
+                    </button>
+                  </div>
                 </div>
               </div>
 
