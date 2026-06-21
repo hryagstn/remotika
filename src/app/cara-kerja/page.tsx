@@ -44,11 +44,11 @@ export default function CaraKerjaPage() {
               <img src="/logo.png" alt="Remotika Logo" className="w-9 h-9 object-contain rounded-xl shadow-lg shadow-brand-primary/20" />
               <div>
                 <span className="text-lg font-bold tracking-tight text-white font-outfit">Remotika</span>
-                <span className="hidden sm:inline-block ml-2 text-xs px-2 py-0.5 rounded-full bg-white/5 border border-white/10 text-white/50">v1.2</span>
+                <span className="hidden sm:inline-block ml-2 text-xs px-2 py-0.5 rounded-full bg-white/5 border border-white/10 text-white/50">v1.3</span>
               </div>
             </Link>
             <Link href="/" className="text-xs font-semibold text-white/60 hover:text-white hover:bg-white/5 px-3 py-1.5 rounded-lg border border-transparent hover:border-white/5 transition-all">
-              Beranda
+              Direktori
             </Link>
             <Link href="/cara-kerja" className="text-xs font-semibold text-white bg-white/5 border border-white/10 px-3 py-1.5 rounded-lg transition-all">
               Cara Kerja
@@ -176,7 +176,7 @@ export default function CaraKerjaPage() {
               <div className="space-y-1">
                 <h3 className="text-base font-bold text-white">GitHub API (Verifikasi & Validasi)</h3>
                 <p className="text-xs text-white/60 leading-relaxed">
-                  Menjadi fondasi utama untuk memindai organisasi, mengambil informasi publik pengembang, dan memproses metadata komit/PR. Token API kami bekerja memproses data secara terjadwal untuk menjaga keaslian statistik anggota di Beranda.
+                  Menjadi fondasi utama untuk memindai organisasi, mengambil informasi publik pengembang, dan memproses metadata komit/PR. Token API kami bekerja memproses data secara terjadwal untuk menjaga keaslian statistik anggota di Direktori.
                 </p>
               </div>
             </div>
@@ -234,14 +234,14 @@ export default function CaraKerjaPage() {
           </div>
         </section>
 
-        {/* CTA Back to Beranda */}
+        {/* CTA Back to Direktori */}
         <section className="text-center py-4">
           <Link 
             href="/"
             className="px-6 py-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 text-white text-sm font-semibold transition-all inline-flex items-center space-x-2 active:scale-95"
           >
             <ArrowLeft className="w-4 h-4" />
-            <span>Kembali ke Halaman Beranda</span>
+            <span>Kembali ke Halaman Direktori</span>
           </Link>
         </section>
       </main>

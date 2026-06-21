@@ -1,0 +1,98 @@
+{
+  "projectdiscovery": {
+    "githubOrg": "projectdiscovery",
+    "name": "ProjectDiscovery",
+    "location": null,
+    "reason": "Explicitly blocklisted/known community/OSS organization: projectdiscovery",
+    "flaggedAt": "2026-06-21T08:02:25.973Z",
+    "verifiedIndonesianCount": 1
+  },
+  "krakend-contrib": {
+    "githubOrg": "krakend-contrib",
+    "name": "KrakenD Contrib",
+    "location": null,
+    "reason": "Explicitly blocklisted/known community/OSS organization: krakend-contrib",
+    "flaggedAt": "2026-06-21T08:02:41.637Z",
+    "verifiedIndonesianCount": 1
+  },
+  "gitlab": {
+    "githubOrg": "gitlab",
+    "name": "GitLab, Inc.",
+    "location": null,
+    "reason": "Organization has no associated company website/blog URL in GitHub profile",
+    "flaggedAt": "2026-06-21T08:41:47.126Z",
+    "verifiedIndonesianCount": 0
+  },
+  "render-oss": {
+    "githubOrg": "render-oss",
+    "name": "Render OSS",
+    "location": "United States of America",
+    "reason": "Organization slug contains keyword \"oss\"",
+    "flaggedAt": "2026-06-21T08:56:45.172Z",
+    "verifiedIndonesianCount": 0
+  },
+  "postmark": {
+    "githubOrg": "postmark",
+    "name": "Postmark",
+    "location": null,
+    "reason": "Organization has no associated company website/blog URL in GitHub profile",
+    "flaggedAt": "2026-06-21T08:59:23.786Z",
+    "verifiedIndonesianCount": 0
+  },
+  "kraken": {
+    "githubOrg": "kraken",
+    "name": "kraken",
+    "location": null,
+    "reason": "Organization has no associated company website/blog URL in GitHub profile",
+    "flaggedAt": "2026-06-21T09:00:10.892Z",
+    "verifiedIndonesianCount": 0
+  },
+  "opensea": {
+    "githubOrg": "opensea",
+    "name": "opensea",
+    "location": null,
+    "reason": "Organization has no associated company website/blog URL in GitHub profile",
+    "flaggedAt": "2026-06-21T09:00:24.159Z",
+    "verifiedIndonesianCount": 0
+  },
+  "polkadot": {
+    "githubOrg": "polkadot",
+    "name": "PolkaDot",
+    "location": null,
+    "reason": "Organization has no associated company website/blog URL in GitHub profile",
+    "flaggedAt": "2026-06-21T09:08:52.943Z",
+    "verifiedIndonesianCount": 0
+  },
+  "notion": {
+    "githubOrg": "notion",
+    "name": "Trove",
+    "location": "Ann Arbor, MI",
+    "reason": "Organization has no associated company website/blog URL in GitHub profile",
+    "flaggedAt": "2026-06-21T09:15:39.375Z",
+    "verifiedIndonesianCount": 0
+  },
+  "cambridgespark": {
+    "githubOrg": "cambridgespark",
+    "name": "cambridgespark",
+    "location": null,
+    "reason": "Organization has no associated company website/blog URL in GitHub profile",
+    "flaggedAt": "2026-06-21T09:21:15.521Z",
+    "verifiedIndonesianCount": 0
+  },
+  "maxretail": {
+    "githubOrg": "maxretail",
+    "name": "MaxRetail",
+    "location": null,
+    "reason": "Organization has no associated company website/blog URL in GitHub profile",
+    "flaggedAt": "2026-06-21T09:21:34.869Z",
+    "verifiedIndonesianCount": 0
+  },
+  "ateneodemanilauniversity": {
+    "githubOrg": "ateneodemanilauniversity",
+    "name": "Ateneo De Manila University",
+    "location": null,
+    "reason": "Organization has no associated company website/blog URL in GitHub profile",
+    "flaggedAt": "2026-06-21T09:21:39.048Z",
+    "verifiedIndonesianCount": 0
+  }
+}

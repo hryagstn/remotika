@@ -2,6 +2,9 @@
 import fs from "fs";
 import path from "path";
 import "dotenv/config";
+import { EXCLUDED_INDONESIAN_COMPANIES } from "../src/data/excluded-indonesian-companies";
+
+const EXCLUDED_SET = new Set(EXCLUDED_INDONESIAN_COMPANIES.map(c => c.toLowerCase().trim()));
 
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 const DATA_FILE_PATH = path.join(process.cwd(), "src/data/companies.json");
@@ -26,10 +29,10 @@ const BLOCKLISTED_ORGS: Set<string> = new Set([
 
 // Expanded seed list containing top global remote tech companies
 const DEFAULT_SEED_ORGS = [
+  "xendit",
   "projectdiscovery",
   "NVIDIAGameWorks",
   "krakend-contrib",
-  "GTILabs",
   "shopify",
   "gitlab",
   "hashicorp",
@@ -38,7 +41,6 @@ const DEFAULT_SEED_ORGS = [
   "automattic",
   "canva",
   "grab",
-  "xendit",
   "supabase",
   "prisma",
   "posthog",
@@ -115,17 +117,6 @@ const DEFAULT_SEED_ORGS = [
   "discord",
   "zoom",
   "teams",
-  "gojek",
-  "traveloka",
-  "tokopedia",
-  "bukalapak",
-  "midtrans",
-  "fazz",
-  "finantier",
-  "ayoconnect",
-  "halodoc",
-  "vidio",
-  "kumparan",
   "canonical",
   "doist",
   "buffer",
@@ -135,7 +126,59 @@ const DEFAULT_SEED_ORGS = [
   "paritytech",
   "stellar",
   "ripple",
-  "chainlink"
+  "chainlink",
+  "zapier",
+  "invisionapp",
+  "mozilla",
+  "basecamp",
+  "duckduckgo",
+  "hotjar",
+  "lottiefiles",
+  "revelo",
+  "abstract",
+  "algolia",
+  "circleci",
+  "cypress-io",
+  "gatsbyjs",
+  "netlify",
+  "okta",
+  "segmentio",
+  "snyk",
+  "twilio",
+  "weaveworks",
+  "crowdin",
+  "frontapp",
+  "intercom",
+  "logrocket",
+  "miroapp",
+  "notion",
+  "patreon",
+  "sketch-hq",
+  "webflow",
+  "zeplin",
+  "asana",
+  "atlassian",
+  "box",
+  "dropbox",
+  "figma",
+  "pagerduty",
+  "salesforce",
+  "squarespace",
+  "hubspot",
+  "mailchimp",
+  "optimizely",
+  "sendinblue",
+  "activecampaign",
+  "drift",
+  "g2",
+  "gong",
+  "mixpanel",
+  "amplitude",
+  "heap",
+  "pendo",
+  "fullstory",
+  "vimeo",
+  "wistia"
 ];
 
 interface ActiveJob {
@@ -183,6 +226,36 @@ interface CompanyData {
 // User location search cache to save GitHub API quota
 const userLocationCache = new Map<string, { isIndo: boolean; profile: any }>();
 
+const USER_CACHE_FILE_PATH = path.join(process.cwd(), "src/data/user-location-cache.json");
+
+function loadUserLocationCache() {
+  try {
+    if (fs.existsSync(USER_CACHE_FILE_PATH)) {
+      const data = fs.readFileSync(USER_CACHE_FILE_PATH, "utf-8");
+      const parsed = JSON.parse(data);
+      for (const [key, val] of Object.entries(parsed)) {
+        userLocationCache.set(key, val as any);
+      }
+      console.log(`Loaded ${userLocationCache.size} cached user profiles from disk.`);
+    }
+  } catch (err: any) {
+    console.error(`⚠️ Failed to load user cache: ${err.message}`);
+  }
+}
+
+function saveUserLocationCache() {
+  try {
+    const obj: Record<string, any> = {};
+    for (const [key, val] of userLocationCache.entries()) {
+      obj[key] = val;
+    }
+    fs.writeFileSync(USER_CACHE_FILE_PATH, JSON.stringify(obj, null, 2), "utf-8");
+    console.log(`Saved ${userLocationCache.size} cached user profiles to disk.`);
+  } catch (err: any) {
+    console.error(`❌ Failed to save user cache: ${err.message}`);
+  }
+}
+
 // Map to hold fetched remote jobs
 const companyJobsMap = new Map<string, ActiveJob[]>();
 
@@ -205,10 +278,90 @@ async function fetchWithAuth(url: string) {
   return res.json();
 }
 
-function isIndonesian(location: string | null): boolean {
+function isLocationIndonesian(location: string | null | undefined): boolean {
   if (!location) return false;
-  const lowercaseLocation = location.toLowerCase();
-  return INDONESIA_KEYWORDS.some(k => lowercaseLocation.includes(k));
+  const lowercase = location.toLowerCase().trim();
+  if (INDONESIA_KEYWORDS.some(k => lowercase.includes(k))) {
+    return true;
+  }
+  const tokens = lowercase.split(/[\s,./\-\(\)]+/);
+  
+  // If the location has token "id", check if it's Idaho (US state) instead of Indonesia
+  if (tokens.includes("id")) {
+    const usIndicators = ["usa", "us", "united states", "idaho", "boise", "coeur", "alene", "pocatello", "idaho falls", "nampa", "meridian", "twin falls", "lewiston", "moscow"];
+    if (usIndicators.some(k => lowercase.includes(k))) {
+      return false;
+    }
+    return true;
+  }
+
+  if (tokens.includes("idn") || tokens.includes("indonesien")) {
+    return true;
+  }
+  return false;
+}
+
+const isIndonesian = isLocationIndonesian;
+
+const newlyFlaggedOrgs: Array<{ org: string; reason: string }> = [];
+const KNOWN_COMMUNITY_SLUGS = new Set(["projectdiscovery", "krakend-contrib"]);
+
+function isCommunityOrOSSOrg(
+  orgLogin: string,
+  orgName: string,
+  description: string | null | undefined,
+  blog: string | null | undefined
+): { isCommunity: boolean; reason: string } | null {
+  const loginLower = orgLogin.toLowerCase().trim();
+  const nameLower = (orgName || "").toLowerCase().trim();
+  const descLower = (description || "").toLowerCase().trim();
+
+  // Explicitly check known community/OSS slugs
+  if (KNOWN_COMMUNITY_SLUGS.has(loginLower)) {
+    return {
+      isCommunity: true,
+      reason: `Explicitly blocklisted/known community/OSS organization: ${orgLogin}`
+    };
+  }
+
+  // 1. Check slug or name for keywords (case-insensitive substring match)
+  const keywords = ["contrib", "contributors", "community", "oss", "open-source", "foundation"];
+  for (const kw of keywords) {
+    if (loginLower.includes(kw)) {
+      return {
+        isCommunity: true,
+        reason: `Organization slug contains keyword "${kw}"`
+      };
+    }
+    if (nameLower.includes(kw)) {
+      return {
+        isCommunity: true,
+        reason: `Organization name contains keyword "${kw}"`
+      };
+    }
+  }
+
+  // 2. Secondary signal: description phrasing
+  const descPhrases = ["contributors to", "community of"];
+  for (const phrase of descPhrases) {
+    if (descLower.includes(phrase)) {
+      return {
+        isCommunity: true,
+        reason: `Organization description contains phrasing "${phrase}"`
+      };
+    }
+  }
+
+  // Secondary signal: empty blog/website
+  const hasWebsite = blog && blog.trim().length > 0;
+  if (!hasWebsite) {
+    return {
+      isCommunity: true,
+      reason: `Organization has no associated company website/blog URL in GitHub profile`
+    };
+  }
+
+  return null;
 }
 
 function getEmployeeLabel(count: number): string {
@@ -589,10 +742,41 @@ function saveCompanies(companies: CompanyData[]) {
   }
 }
 
+const FLAGGED_FILE_PATH = path.join(process.cwd(), "src/data/flagged-for-review.json");
+
+function loadFlaggedForReview(): Record<string, any> {
+  try {
+    if (fs.existsSync(FLAGGED_FILE_PATH)) {
+      const data = fs.readFileSync(FLAGGED_FILE_PATH, "utf-8");
+      return JSON.parse(data);
+    }
+  } catch (error: any) {
+    console.error(`⚠️ Failed to read or parse flagged-for-review.json: ${error.message}`);
+  }
+  return {};
+}
+
+function saveFlaggedForReview(flagged: Record<string, any>) {
+  try {
+    fs.writeFileSync(FLAGGED_FILE_PATH, JSON.stringify(flagged, null, 2), "utf-8");
+    console.log(`💾 Successfully updated and saved flagged-for-review.json`);
+  } catch (error: any) {
+    console.error(`❌ Failed to write flagged-for-review.json: ${error.message}`);
+  }
+}
+
 async function processOrg(orgLogin: string, existingCompanies: CompanyData[]): Promise<CompanyData | null> {
+  const orgLoginLower = orgLogin.toLowerCase().trim();
+
   // Blocklist check — skip known defunct organizations
-  if (BLOCKLISTED_ORGS.has(orgLogin.toLowerCase())) {
+  if (BLOCKLISTED_ORGS.has(orgLoginLower)) {
     console.log(`\n[Pipeline] ⛔ Skipping blocklisted organization: ${orgLogin}`);
+    return null;
+  }
+
+  // Static manual exclude list check (Part 1 acceptance criteria)
+  if (EXCLUDED_SET.has(orgLoginLower)) {
+    console.log(`\n[Pipeline] ⛔ Skipping manual exclude-listed Indonesian organization: ${orgLogin}`);
     return null;
   }
 
@@ -614,6 +798,26 @@ async function processOrg(orgLogin: string, existingCompanies: CompanyData[]): P
     const companyDomain = parseDomain(orgData.blog);
     if (companyDomain) {
       console.log(`  Parsed company domain: @${companyDomain}`);
+    }
+
+    // Community / OSS organization check - mass optimization to skip checking members/repos
+    const communityFlag = isCommunityOrOSSOrg(orgLogin, orgName, description, orgData.blog);
+    if (communityFlag) {
+      console.log(`  ⚠️ FLAGGED FOR MANUAL REVIEW (Early Filter): ${orgLogin} is identified as community/OSS (${communityFlag.reason}).`);
+
+      const flagged = loadFlaggedForReview();
+      flagged[orgLoginLower] = {
+        githubOrg: orgLoginLower,
+        name: orgName,
+        location: orgData.location || null,
+        reason: communityFlag.reason,
+        flaggedAt: new Date().toISOString(),
+        verifiedIndonesianCount: 0 // No member scan was run
+      };
+      saveFlaggedForReview(flagged);
+
+      newlyFlaggedOrgs.push({ org: orgLogin, reason: communityFlag.reason + " (Early Filter - member scan skipped)" });
+      return null;
     }
 
     const foundIndonesianMembers: VerifiedMember[] = [];
@@ -719,6 +923,46 @@ async function processOrg(orgLogin: string, existingCompanies: CompanyData[]): P
     console.log(`  Completed scan for ${orgLogin}. Total Indonesian members verified: ${foundIndonesianMembers.length}`);
 
     if (foundIndonesianMembers.length > 0) {
+      // Heuristic location check (Part 1 acceptance criteria)
+      const orgLocation = orgData.location;
+      if (orgLocation && isLocationIndonesian(orgLocation)) {
+        console.log(`  ⚠️ FLAGGED FOR MANUAL REVIEW: ${orgLogin} GitHub location suggests Indonesia (${orgLocation}).`);
+        
+        const flagged = loadFlaggedForReview();
+        flagged[orgLoginLower] = {
+          githubOrg: orgLoginLower,
+          name: orgName,
+          location: orgLocation,
+          reason: "GitHub location suggests Indonesia",
+          flaggedAt: new Date().toISOString(),
+          verifiedIndonesianCount: foundIndonesianMembers.length
+        };
+        saveFlaggedForReview(flagged);
+        
+        newlyFlaggedOrgs.push({ org: orgLogin, reason: `GitHub location suggests Indonesia (${orgLocation})` });
+        return null;
+      }
+
+      // Community / OSS organization check
+      const communityFlag = isCommunityOrOSSOrg(orgLogin, orgName, description, orgData.blog);
+      if (communityFlag) {
+        console.log(`  ⚠️ FLAGGED FOR MANUAL REVIEW: ${orgLogin} is identified as community/OSS (${communityFlag.reason}).`);
+
+        const flagged = loadFlaggedForReview();
+        flagged[orgLoginLower] = {
+          githubOrg: orgLoginLower,
+          name: orgName,
+          location: orgLocation || null,
+          reason: communityFlag.reason,
+          flaggedAt: new Date().toISOString(),
+          verifiedIndonesianCount: foundIndonesianMembers.length
+        };
+        saveFlaggedForReview(flagged);
+
+        newlyFlaggedOrgs.push({ org: orgLogin, reason: communityFlag.reason });
+        return null;
+      }
+
       const label = getEmployeeLabel(foundIndonesianMembers.length);
       const lastVerifiedAt = new Date().toISOString();
 
@@ -798,6 +1042,9 @@ async function main() {
 
   console.log("=== STARTING REMOTIKA MULTI-LAYERED PIPELINE ===");
 
+  // Load user location profile cache from disk
+  loadUserLocationCache();
+
   // 1. Fetch remote jobs from RemoteOK and Remotive APIs
   await fetchRemoteJobs();
   await fetchRemotiveJobs();
@@ -849,22 +1096,43 @@ async function main() {
   // 5. Combine everything into the processing queue
   const orgsToProcess = new Set<string>();
   
-  // Always process existing companies to update their jobs/members
+  // Load flagged-for-review set to avoid re-inspecting flagged organizations
+  const flagged = loadFlaggedForReview();
+  const FLAGGED_SET = new Set(Object.keys(flagged).map(k => k.toLowerCase().trim()));
+
+  const shouldInspect = (org: string): boolean => {
+    const clean = org.toLowerCase().trim();
+    return !EXCLUDED_SET.has(clean) && !FLAGGED_SET.has(clean);
+  };
+
+  // Always process existing companies to update their jobs/members, unless excluded or flagged
   companies.forEach(c => {
     if (c.githubOrg) {
-      orgsToProcess.add(c.githubOrg.toLowerCase().trim());
+      const cleanOrg = c.githubOrg.toLowerCase().trim();
+      if (shouldInspect(cleanOrg)) {
+        orgsToProcess.add(cleanOrg);
+      }
     }
   });
 
-  // Add default seeds, community seeds, and our new guesses
+  // Add default seeds, community seeds, and our new guesses, unless excluded or flagged
   DEFAULT_SEED_ORGS.forEach(org => {
-    orgsToProcess.add(org.toLowerCase().trim());
+    const cleanOrg = org.toLowerCase().trim();
+    if (shouldInspect(cleanOrg)) {
+      orgsToProcess.add(cleanOrg);
+    }
   });
   communitySeeds.forEach(org => {
-    orgsToProcess.add(org.toLowerCase().trim());
+    const cleanOrg = org.toLowerCase().trim();
+    if (shouldInspect(cleanOrg)) {
+      orgsToProcess.add(cleanOrg);
+    }
   });
   selectedNewGuesses.forEach(org => {
-    orgsToProcess.add(org.toLowerCase().trim());
+    const cleanOrg = org.toLowerCase().trim();
+    if (shouldInspect(cleanOrg)) {
+      orgsToProcess.add(cleanOrg);
+    }
   });
 
   const orgList = Array.from(orgsToProcess);
@@ -961,15 +1229,30 @@ async function main() {
     await new Promise(r => setTimeout(r, 1000));
   }
 
-  // 5. Save updated list back to JSON (filter defunct + zero-member companies)
+  // 5. Save updated list back to JSON (filter defunct + zero-member companies + excluded companies)
   const finalCompaniesList = Array.from(updatedCompaniesMap.values())
     .filter(c => c.verifiedIndonesianCount > 0)
-    .filter(c => !BLOCKLISTED_ORGS.has(c.githubOrg.toLowerCase()));
+    .filter(c => !BLOCKLISTED_ORGS.has(c.githubOrg.toLowerCase()))
+    .filter(c => !EXCLUDED_SET.has(c.githubOrg.toLowerCase()))
+    .filter(c => c.githubOrg.toLowerCase() === "xendit" || !isLocationIndonesian(c.headquarters));
 
   // Sort by verified count descending
   finalCompaniesList.sort((a, b) => b.verifiedIndonesianCount - a.verifiedIndonesianCount);
 
   saveCompanies(finalCompaniesList);
+
+  // Save updated user location cache to disk
+  saveUserLocationCache();
+
+  if (newlyFlaggedOrgs.length > 0) {
+    console.log("\n⚠️  SUMMARY OF ORGANIZATIONS FLAGGED FOR MANUAL REVIEW DURING THIS RUN:");
+    newlyFlaggedOrgs.forEach(({ org, reason }, idx) => {
+      console.log(`  ${idx + 1}. [${org}] - Reason: ${reason}`);
+    });
+    console.log(`  Total flagged organizations this run: ${newlyFlaggedOrgs.length}`);
+  } else {
+    console.log("\n✨ No organizations were newly flagged for manual review during this run.");
+  }
 
   console.log("\n=== PIPELINE RUN COMPLETE ===");
 }
