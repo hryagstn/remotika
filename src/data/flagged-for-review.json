@@ -94,5 +94,13 @@
     "reason": "Organization has no associated company website/blog URL in GitHub profile",
     "flaggedAt": "2026-06-21T09:21:39.048Z",
     "verifiedIndonesianCount": 0
+  },
+  "twine": {
+    "githubOrg": "twine",
+    "name": "twine",
+    "location": null,
+    "reason": "Organization has no associated company website/blog URL in GitHub profile",
+    "flaggedAt": "2026-06-21T14:26:54.254Z",
+    "verifiedIndonesianCount": 0
   }
 }

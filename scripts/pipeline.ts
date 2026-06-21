@@ -182,7 +182,25 @@ const DEFAULT_GITLAB_SEED_GROUPS = [
   "gnome",
   "debian",
   "videolan",
-  "inkscape"
+  "inkscape",
+  "fdroid",
+  "gimp",
+  "openrgb",
+  "veloren",
+  "meltano",
+  "baserow",
+  "chatwoot",
+  "redox-os",
+  "lineageos",
+  "kicad",
+  "postmarketOS",
+  "manjaro",
+  "scylladb",
+  "cryptopp",
+  "coq",
+  "wireshark",
+  "gstreamer",
+  "wine"
 ];
 
 interface ActiveJob {
@@ -271,19 +289,32 @@ async function fetchWithAuth(url: string) {
   if (!GITHUB_TOKEN) {
     throw new Error("GITHUB_TOKEN is not configured in the environment.");
   }
-  const res = await fetch(url, {
-    headers: {
-      Authorization: `Bearer ${GITHUB_TOKEN}`,
-      Accept: "application/vnd.github+json",
-      "User-Agent": "Remotika-Pipeline/1.0"
-    },
-  });
-  if (res.status === 404) return null;
-  if (!res.ok) {
-    const text = await res.text();
-    throw new Error(`GitHub API Error (${res.status}): ${text}`);
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), 12000); // 12 second timeout
+  try {
+    const res = await fetch(url, {
+      headers: {
+        Authorization: `Bearer ${GITHUB_TOKEN}`,
+        Accept: "application/vnd.github+json",
+        "User-Agent": "Remotika-Pipeline/1.0"
+      },
+      signal: controller.signal
+    });
+    clearTimeout(timeout);
+    if (res.status === 404) return null;
+    if (!res.ok) {
+      const text = await res.text();
+      throw new Error(`GitHub API Error (${res.status}): ${text}`);
+    }
+    return res.json();
+  } catch (err: any) {
+    clearTimeout(timeout);
+    if (err.name === "AbortError") {
+      console.warn(`    ⚠️ Request to ${url} timed out (12s). Skipping.`);
+      return null;
+    }
+    throw err;
   }
-  return res.json();
 }
 
 
@@ -753,20 +784,36 @@ function saveFlaggedForReview(flagged: Record<string, any>) {
 
 const GITLAB_ACCESS_TOKEN = process.env.GITLAB_ACCESS_TOKEN;
 
-async function fetchGitlab(url: string) {
+async function fetchGitlab(url: string, useToken = true): Promise<any> {
   const headers: Record<string, string> = {
     "User-Agent": "Remotika-Pipeline/1.0"
   };
-  if (GITLAB_ACCESS_TOKEN) {
+  if (GITLAB_ACCESS_TOKEN && useToken) {
     headers["PRIVATE-TOKEN"] = GITLAB_ACCESS_TOKEN;
   }
-  const res = await fetch(url, { headers });
-  if (res.status === 404) return null;
-  if (!res.ok) {
-    const text = await res.text();
-    throw new Error(`GitLab API Error (${res.status}): ${text}`);
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), 12000); // 12 second timeout
+  try {
+    const res = await fetch(url, { headers, signal: controller.signal });
+    clearTimeout(timeout);
+    if (res.status === 404) return null;
+    if (!res.ok) {
+      const text = await res.text();
+      if (res.status === 403 && useToken && (text.includes("insufficient_granular_scope") || text.includes("scope"))) {
+        console.warn(`    ⚠️ GitLab API 403 scope error for ${url}. Retrying anonymously...`);
+        return fetchGitlab(url, false);
+      }
+      throw new Error(`GitLab API Error (${res.status}): ${text}`);
+    }
+    return res.json();
+  } catch (err: any) {
+    clearTimeout(timeout);
+    if (err.name === "AbortError") {
+      console.warn(`    ⚠️ Request to GitLab ${url} timed out (12s). Skipping.`);
+      return null;
+    }
+    throw err;
   }
-  return res.json();
 }
 
 async function checkGitlabUserIndonesian(userId: number, username: string): Promise<{ isIndo: boolean; profile: any } | null> {

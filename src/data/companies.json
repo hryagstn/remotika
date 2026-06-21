@@ -8,7 +8,7 @@
     "industry": "Tech & Development Services",
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-06-21T09:23:25.281Z",
+    "lastVerifiedAt": "2026-06-21T13:51:00.210Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -65,11 +65,6 @@
         "title": "Solution Engineering",
         "url": "https://job-boards.greenhouse.io/xendit/jobs/7719174003",
         "tags": []
-      },
-      {
-        "title": "Tax Manager",
-        "url": "https://job-boards.greenhouse.io/xendit/jobs/7723165003",
-        "tags": []
       }
     ],
     "verifiedMembers": [
@@ -107,7 +102,8 @@
     "jobSources": {
       "greenhouse": "xendit",
       "careerPageUrl": "https://www.xendit.co/en/careers"
-    }
+    },
+    "verifiedAt": "2026-06-21T09:23:25.281Z"
   },
   {
     "id": "co-3",
@@ -118,7 +114,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 2,
     "label": "Indonesia-Friendly",
-    "lastVerifiedAt": "2026-06-21T09:22:41.598Z",
+    "lastVerifiedAt": "2026-06-21T13:51:19.260Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -146,7 +142,8 @@
     ],
     "jobSources": {
       "careerPageUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite"
-    }
+    },
+    "verifiedAt": "2026-06-21T09:22:41.598Z"
   },
   {
     "id": "co-6",
@@ -157,7 +154,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-06-21T09:23:00.135Z",
+    "lastVerifiedAt": "2026-06-21T13:51:37.896Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -179,7 +176,8 @@
     ],
     "jobSources": {
       "careerPageUrl": "https://automattic.com/work-with-us/"
-    }
+    },
+    "verifiedAt": "2026-06-21T09:23:00.135Z"
   },
   {
     "id": "co-7",
@@ -190,7 +188,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-06-21T09:23:07.503Z",
+    "lastVerifiedAt": "2026-06-21T13:51:45.811Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -212,7 +210,8 @@
     ],
     "jobSources": {
       "careerPageUrl": "https://grab.careers/"
-    }
+    },
+    "verifiedAt": "2026-06-21T09:23:07.503Z"
   },
   {
     "id": "co-8",
@@ -223,7 +222,7 @@
     "industry": "Tech & Development Services",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-06-21T09:23:16.817Z",
+    "lastVerifiedAt": "2026-06-21T13:51:54.897Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -233,6 +232,7 @@
         "githubProfileUrl": "https://github.com/wijayantoap",
         "locationRaw": "Indonesia"
       }
-    ]
+    ],
+    "verifiedAt": "2026-06-21T09:23:16.817Z"
   }
 ]
