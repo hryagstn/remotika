@@ -416,7 +416,7 @@ export default function SuggestYourselfPage() {
             className="px-6 py-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 text-white text-sm font-semibold transition-all inline-flex items-center space-x-2 active:scale-95"
           >
             <ArrowLeft className="w-4 h-4" />
-            <span>Kembali ke Halaman Utama</span>
+            <span>Kembali ke Halaman Direktori</span>
           </Link>
         </div>
 

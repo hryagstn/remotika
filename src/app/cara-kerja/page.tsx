@@ -41,6 +41,26 @@ const TelegramIcon = ({ className = "w-4 h-4" }: { className?: string }) => (
 export const metadata = {
   title: "Cara Kerja | Remotika",
   description: "Pelajari bagaimana Remotika melakukan verifikasi perusahaan remote menggunakan API GitHub, RemoteOK, dan Remotive secara transparan.",
+  openGraph: {
+    title: "Cara Kerja | Remotika",
+    description: "Pelajari proses deteksi otomatis, saringan kontributor, dan validasi email komit kami untuk melacak perusahaan global yang ramah talenta Indonesia.",
+    url: "/cara-kerja",
+    type: "website",
+    images: [
+      {
+        url: "/og-directory.png",
+        width: 1200,
+        height: 630,
+        alt: "Remotika - Alur Verifikasi Otomatis"
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Cara Kerja | Remotika",
+    description: "Bagaimana alur verifikasi otomatis kami mengidentifikasi perusahaan ramah developer Indonesia.",
+    images: ["/og-directory.png"]
+  }
 };
 
 export default function CaraKerjaPage() {

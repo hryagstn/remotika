@@ -16,13 +16,14 @@ const LinkedinIcon = ({ className = "w-4 h-4" }: { className?: string }) => (
 interface ShareCompanyProps {
   companyName: string;
   companyId: string;
+  companySlug: string;
   verifiedCount: number;
   hasActiveJobs: boolean;
 }
 
-export default function ShareCompany({ companyName, companyId, verifiedCount, hasActiveJobs }: ShareCompanyProps) {
+export default function ShareCompany({ companyName, companyId, companySlug, verifiedCount, hasActiveJobs }: ShareCompanyProps) {
   const [caption, setCaption] = useState(
-    `${companyName} has verified Indonesian engineers on their team — and they're actively hiring remote talent right now.\n\nNot a guess. Verified via public GitHub organization membership.\n\nCheck the role and the verification: https://remotika.vercel.app/company/${companyId}`
+    `${companyName} memiliki developer asal Indonesia terverifikasi di tim mereka — dan saat ini mereka sedang membuka lowongan remote global aktif!\n\nBukan sekadar tebakan, tetapi terverifikasi langsung secara akurat melalui keanggotaan organisasi publik GitHub.\n\nLihat detail peran dan pembuktian verifikasinya di sini: https://remotika.vercel.app/company/${companySlug}`
   );
   const [isDownloading, setIsDownloading] = useState(false);
   const [isSharing, setIsSharing] = useState(false);
@@ -33,7 +34,7 @@ export default function ShareCompany({ companyName, companyId, verifiedCount, ha
   const downloadOgImage = async () => {
     setIsDownloading(true);
     try {
-      const url = `/api/company-og?slug=${companyId}`;
+      const url = `/api/company-og?slug=${companySlug}`;
       const response = await fetch(url);
       if (!response.ok) throw new Error("Failed to fetch image");
       
@@ -42,7 +43,7 @@ export default function ShareCompany({ companyName, companyId, verifiedCount, ha
       
       const link = document.createElement("a");
       link.href = blobUrl;
-      link.download = `remotika-share-${companyId}.png`;
+      link.download = `remotika-share-${companySlug}.png`;
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
@@ -113,23 +114,9 @@ export default function ShareCompany({ companyName, companyId, verifiedCount, ha
           ) : (
             <>
               <LinkedinIcon className="w-4 h-4" />
-              <span>Salin Caption & Unduh Gambar</span>
+              <span>Bagikan ke LinkedIn</span>
             </>
           )}
-        </button>
-
-        {/* Supplementary download only button */}
-        <button
-          onClick={downloadOgImage}
-          disabled={isDownloading || isSharing}
-          className="w-full px-4 py-2 text-xs font-semibold rounded-xl border border-white/10 text-white/70 hover:bg-white/5 hover:text-white transition-all flex items-center justify-center space-x-1.5 cursor-pointer disabled:opacity-50"
-        >
-          {isDownloading ? (
-            <div className="w-3.5 h-3.5 border-2 border-white/10 border-t-transparent rounded-full animate-spin" />
-          ) : (
-            <Download className="w-3.5 h-3.5" />
-          )}
-          <span>Unduh Gambar Saja</span>
         </button>
       </div>
     </div>

@@ -36,8 +36,10 @@ export async function GET(request: NextRequest) {
     const { searchParams } = new URL(request.url);
     const slug = searchParams.get("slug") || "";
 
-    // Find the company by ID
-    const company = (companies as Company[]).find((c) => c.id === slug);
+    // Find the company by ID or GitHub Org Slug
+    const company = (companies as Company[]).find(
+      (c) => c.id.toLowerCase() === slug.toLowerCase() || c.githubOrg.toLowerCase() === slug.toLowerCase()
+    );
 
     if (!company) {
       return new Response("Company not found", { status: 404 });
@@ -250,7 +252,7 @@ export async function GET(request: NextRequest) {
                 See open roles and proof of verification at:
               </span>
               <span style={{ fontSize: "18px", color: "#2dd4bf", fontWeight: 700, marginTop: "4px" }}>
-                remotika.vercel.app/company/{company.id}
+                remotika.vercel.app/company/{company.githubOrg.toLowerCase() || company.id}
               </span>
             </div>
           </div>

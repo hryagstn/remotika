@@ -47,15 +47,24 @@ const TelegramIcon = ({ className = "w-4 h-4" }: { className?: string }) => (
 
 export async function generateStaticParams() {
   const companies = await getCompanies();
-  return companies.map((c) => ({
-    id: c.id,
-  }));
+  const params: { id: string }[] = [];
+  companies.forEach((c) => {
+    if (c.id) {
+      params.push({ id: c.id });
+    }
+    if (c.githubOrg) {
+      params.push({ id: c.githubOrg.toLowerCase() });
+    }
+  });
+  return params;
 }
 
 export async function generateMetadata({ params }: PageProps) {
   const { id } = await params;
   const companies = await getCompanies();
-  const company = companies.find((c) => c.id === id);
+  const company = companies.find(
+    (c) => c.id.toLowerCase() === id.toLowerCase() || c.githubOrg.toLowerCase() === id.toLowerCase()
+  );
 
   if (!company) {
     return {
@@ -78,7 +87,9 @@ export async function generateMetadata({ params }: PageProps) {
 export default async function CompanyProfilePage({ params }: PageProps) {
   const { id } = await params;
   const companies = await getCompanies();
-  const company = companies.find((c) => c.id === id);
+  const company = companies.find(
+    (c) => c.id.toLowerCase() === id.toLowerCase() || c.githubOrg.toLowerCase() === id.toLowerCase()
+  );
 
   if (!company) {
     notFound();
@@ -387,6 +398,7 @@ export default async function CompanyProfilePage({ params }: PageProps) {
             <ShareCompany 
               companyName={company.name} 
               companyId={company.id} 
+              companySlug={company.githubOrg.toLowerCase() || company.id}
               verifiedCount={company.verifiedIndonesianCount} 
               hasActiveJobs={company.hasActiveJobs} 
             />

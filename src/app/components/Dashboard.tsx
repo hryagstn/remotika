@@ -244,20 +244,24 @@ export default function Dashboard({ initialCompanies }: DashboardProps) {
           </div>
 
           <div className="flex items-center space-x-3">
-            <Link
-              href="/suggest-yourself"
-              className="px-4 py-2 text-xs font-bold rounded-xl bg-brand-primary/10 hover:bg-brand-primary/20 text-brand-primary border border-brand-primary/20 hover:border-brand-primary/35 transition-all flex items-center space-x-1.5 cursor-pointer"
-            >
-              <Sparkles className="w-3.5 h-3.5" />
-              <span>Verifikasi Mandiri</span>
-            </Link>
-            <button
-              onClick={() => setIsSuggestOpen(true)}
-              className="px-4 py-2 text-xs font-semibold rounded-xl bg-gradient-to-r from-brand-primary to-brand-secondary text-white hover:opacity-90 active:scale-95 transition-all shadow-md shadow-brand-primary/25 flex items-center space-x-1.5"
-            >
-              <Plus className="w-3.5 h-3.5" />
-              <span>Sarankan Perusahaan</span>
-            </button>
+            {/* Grouped Header Buttons */}
+            <div className="inline-flex items-center rounded-xl bg-white/5 border border-white/10 p-0.5 shadow-md shadow-brand-primary/5">
+              <Link
+                href="/suggest-yourself"
+                className="px-3.5 py-1.5 text-xs font-bold text-brand-primary hover:bg-white/5 rounded-lg transition-all flex items-center space-x-1.5 cursor-pointer"
+              >
+                <Sparkles className="w-3.5 h-3.5" />
+                <span>Verifikasi Mandiri</span>
+              </Link>
+              <div className="h-4 w-px bg-white/10 mx-0.5" />
+              <button
+                onClick={() => setIsSuggestOpen(true)}
+                className="px-3.5 py-1.5 text-xs font-semibold text-white/90 hover:text-white hover:bg-white/5 rounded-lg transition-all flex items-center space-x-1.5 cursor-pointer"
+              >
+                <Plus className="w-3.5 h-3.5" />
+                <span>Sarankan Perusahaan</span>
+              </button>
+            </div>
             {/* Telegram Channel Link */}
             <a 
               href="https://t.me/remotika_updates" 
@@ -448,13 +452,13 @@ export default function Dashboard({ initialCompanies }: DashboardProps) {
                     <div className="flex items-start justify-between">
                       <div className="flex items-center space-x-3.5">
                         {/* Company Logo Initials fallback (Flat tier color as per Stitch spec) */}
-                        <Link href={`/company/${c.id}`}>
+                        <Link href={`/company/${c.githubOrg.toLowerCase() || c.id}`}>
                           <div className={`w-12 h-12 rounded-xl flex items-center justify-center font-bold text-lg text-white shadow-inner ${getTierFlatColor(c.label)}`}>
                             {c.name.substring(0, 2).toUpperCase()}
                           </div>
                         </Link>
                         <div>
-                          <Link href={`/company/${c.id}`} className="group/title">
+                          <Link href={`/company/${c.githubOrg.toLowerCase() || c.id}`} className="group/title">
                             <h3 className="font-bold text-white text-base font-outfit flex items-center gap-1.5 hover:text-brand-primary transition-colors">
                               {c.name}
                             </h3>

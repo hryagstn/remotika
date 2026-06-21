@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import ShareApiLink from "./ShareApiLink";
 import { 
   ArrowLeft,
   CheckCircle,
@@ -59,6 +60,26 @@ const ForkIcon = ({ className = "w-4 h-4" }: { className?: string }) => (
 export const metadata = {
   title: "Panduan Kontribusi | Remotika",
   description: "Pelajari bagaimana Anda dapat berkontribusi dalam mengembangkan Remotika dan memperkuat ekosistem kerja remote pengembang Indonesia.",
+  openGraph: {
+    title: "Panduan Kontribusi | Remotika",
+    description: "Bantu kembangkan direktori Remotika, laporkan isu data, kirimkan saran perusahaan, atau gunakan API publik kami untuk mengonsumsi data secara programmatic.",
+    url: "/berkontribusi",
+    type: "website",
+    images: [
+      {
+        url: "/og-directory.png",
+        width: 1200,
+        height: 630,
+        alt: "Remotika - Berkontribusi Bersama Komunitas"
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Panduan Kontribusi | Remotika",
+    description: "Cara ikut berpartisipasi dan berkontribusi memperkuat direktori karir remote Indonesia.",
+    images: ["/og-directory.png"]
+  }
 };
 
 const TelegramIcon = ({ className = "w-4 h-4" }: { className?: string }) => (
@@ -418,14 +439,19 @@ export default function BerkontribusiPage() {
 
         {/* Dokumentasi API Publik */}
         <section className="space-y-6">
-          <div className="text-center md:text-left space-y-2">
-            <h2 className="text-2xl font-bold font-outfit text-white flex items-center justify-center md:justify-start space-x-2">
-              <Database className="w-5 h-5 text-brand-primary" />
-              <span>Dokumentasi API Publik (Read-Only)</span>
-            </h2>
-            <p className="text-sm text-white/50">
-              Gunakan API publik kami yang transparan untuk mengonsumsi data direktori Remotika secara programmatic:
-            </p>
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <div className="text-center md:text-left space-y-2">
+              <h2 id="api-docs" className="text-2xl font-bold font-outfit text-white flex items-center justify-center md:justify-start space-x-2 scroll-mt-24">
+                <Database className="w-5 h-5 text-brand-primary" />
+                <span>Dokumentasi API Publik (Read-Only)</span>
+              </h2>
+              <p className="text-sm text-white/50">
+                Gunakan API publik kami yang transparan untuk mengonsumsi data direktori Remotika secara programmatic:
+              </p>
+            </div>
+            <div className="flex justify-center shrink-0">
+              <ShareApiLink />
+            </div>
           </div>
 
           <div className="glass-panel p-6 rounded-2xl border border-white/5 space-y-6">
