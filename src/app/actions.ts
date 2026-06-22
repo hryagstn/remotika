@@ -41,6 +41,10 @@ export interface CompanyData {
     workday?: { subdomain: string; sitePath: string };
     careerPageUrl?: string;
   };
+  status?: "verified" | "watchlist";
+  source?: "github-scan" | "remoteok" | "community";
+  watchlistReason?: "no-org-found" | "org-found-zero-match";
+  website?: string;
 }
 
 // Read and cast static companies JSON database

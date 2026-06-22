@@ -177,32 +177,6 @@ const DEFAULT_SEED_ORGS = [
   "wistia"
 ];
 
-const DEFAULT_GITLAB_SEED_GROUPS = [
-  "gitlab-org",
-  "gnome",
-  "debian",
-  "videolan",
-  "inkscape",
-  "fdroid",
-  "gimp",
-  "openrgb",
-  "veloren",
-  "meltano",
-  "baserow",
-  "chatwoot",
-  "redox-os",
-  "lineageos",
-  "kicad",
-  "postmarketOS",
-  "manjaro",
-  "scylladb",
-  "cryptopp",
-  "coq",
-  "wireshark",
-  "gstreamer",
-  "wine"
-];
-
 interface ActiveJob {
   title: string;
   url: string;
@@ -247,6 +221,10 @@ interface CompanyData {
   foundationYear?: string;
   testimonials?: Array<{ name: string; role: string; text: string }>;
   jobSources?: JobSources;
+  status?: "verified" | "watchlist";
+  source?: "github-scan" | "remoteok" | "community";
+  watchlistReason?: "no-org-found" | "org-found-zero-match";
+  website?: string;
 }
 
 // User location search cache to save GitHub API quota
@@ -451,41 +429,203 @@ async function checkWebsiteLiveness(url: string | null, orgLogin: string): Promi
   }
 }
 
-async function fetchRemoteJobs() {
-  console.log("\n[Pipeline] Fetching active remote jobs from RemoteOK API...");
+function extractWebsiteFromDescription(companyName: string, description: string): string {
+  const cleanName = companyName.toLowerCase().trim();
+  
+  // Try to find URLs in the description
+  const urlRegex = /https?:\/\/(?:www\.)?([-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6})\b[-a-zA-Z0-9()@:%_\+.~#?&//=]*/gi;
+  let match;
+  const foundDomains = new Set<string>();
+  
+  const ignoredDomains = new Set([
+    "remoteok.com", "remoteok.io", "github.com", "twitter.com", "linkedin.com",
+    "facebook.com", "instagram.com", "youtube.com", "medium.com", "google.com",
+    "apple.com", "microsoft.com", "slack.com", "zoom.us", "job-applicant-privacy",
+    "privacy-policy", "terms-of-service", "remotive.com", "remotive.io"
+  ]);
+
+  while ((match = urlRegex.exec(description)) !== null) {
+    const domain = match[1].toLowerCase().trim();
+    if (!ignoredDomains.has(domain) && !domain.includes("remoteok") && !domain.includes("github") && domain.includes(".")) {
+      foundDomains.add(domain);
+    }
+  }
+
+  if (foundDomains.size > 0) {
+    return Array.from(foundDomains)[0];
+  }
+
+  // Fallback: guess from company name
+  const slug = cleanName
+    .replace(/[^\w\s-]/g, "")
+    .replace(/[\s_-]+/g, "")
+    .trim();
+  return `${slug}.com`;
+}
+
+async function resolveGithubOrg(companyName: string, website: string | null): Promise<string | null> {
+  const slug = companyName
+    .toLowerCase()
+    .trim()
+    .replace(/[^\w\s-]/g, "")
+    .replace(/[\s_-]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+  
+  if (!slug) return null;
+
+  console.log(`  [resolveGithubOrg] Trying direct slug: "${slug}"`);
+  try {
+    const orgData = await fetchWithAuth(`https://api.github.com/orgs/${slug}`);
+    if (orgData && orgData.login) {
+      console.log(`    ✅ Direct slug resolved: ${orgData.login}`);
+      return orgData.login;
+    }
+  } catch (err: any) {
+    console.log(`    ℹ️ Direct slug "${slug}" failed: ${err.message}`);
+  }
+
+  // Fallback: search orgs
+  console.log(`  [resolveGithubOrg] Falling back to search for "${companyName}"`);
+  try {
+    const searchResults = await fetchWithAuth(`https://api.github.com/search/users?q=type:org+${encodeURIComponent(companyName)}`);
+    if (searchResults && Array.isArray(searchResults.items) && searchResults.items.length > 0) {
+      const topMatch = searchResults.items[0].login;
+      console.log(`    ✅ GitHub Search resolved: ${topMatch}`);
+      return topMatch;
+    }
+  } catch (err: any) {
+    console.error(`    ❌ Search failed for "${companyName}":`, err.message);
+  }
+
+  return null;
+}
+
+interface RemoteOkCandidate {
+  name: string;
+  website: string;
+  remoteokSlug: string;
+  jobs: ActiveJob[];
+}
+
+async function harvestRemoteOkCandidates(existingCompanies: CompanyData[]): Promise<RemoteOkCandidate[]> {
+  console.log("\n[Pipeline] Harvesting candidate companies from RemoteOK API...");
+  const candidatesMap = new Map<string, RemoteOkCandidate>();
+
   try {
     const res = await fetch("https://remoteok.com/api", {
       headers: { "User-Agent": "Remotika-Pipeline/1.0" }
     });
     if (!res.ok) {
-      console.log("  ⚠️  Failed to fetch from RemoteOK API. Skipping job enrichment.");
-      return;
+      console.log("  ⚠️ Failed to fetch RemoteOK API for candidate harvesting.");
+      return [];
     }
     const data = await res.json();
-    if (Array.isArray(data)) {
-      // Skip the first item as it is the legal info block
-      const jobs = data.slice(1);
-      console.log(`  Fetched ${jobs.length} remote jobs. Parsing and matching...`);
-      for (const job of jobs) {
-        if (!job.company || !job.position || !job.url) continue;
-        const companyKey = job.company.toLowerCase().trim();
-        const activeJob: ActiveJob = {
-          title: job.position,
-          url: job.url,
-          tags: Array.isArray(job.tags) ? job.tags : [],
-          salary: job.salary || undefined
-        };
-        if (!companyJobsMap.has(companyKey)) {
-          companyJobsMap.set(companyKey, []);
-        }
-        companyJobsMap.get(companyKey)!.push(activeJob);
+    if (!Array.isArray(data)) return [];
+
+    const jobs = data.slice(1); // skip legal header
+    
+    // Build set of existing domains for deduping
+    const existingDomains = new Set<string>();
+    existingCompanies.forEach(c => {
+      if (c.website) {
+        existingDomains.add(c.website.toLowerCase().trim());
       }
-      console.log(`  Jobs mapped to ${companyJobsMap.size} unique companies.`);
+      const parsedDom = parseDomain(c.githubOrgUrl) || parseDomain(c.jobSources?.careerPageUrl || null);
+      if (parsedDom) {
+        existingDomains.add(parsedDom.toLowerCase().trim());
+      }
+    });
+
+    for (const job of jobs) {
+      if (!job.company || !job.url) continue;
+
+      const companyName = job.company.trim();
+      const companyKey = companyName.toLowerCase();
+
+      // Check exclude list
+      if (EXCLUDED_SET.has(companyKey)) {
+        continue;
+      }
+
+      // Extract website
+      const website = extractWebsiteFromDescription(companyName, job.description || "");
+      const domain = parseDomain(website);
+
+      // Dedup against existing domains
+      if (domain && existingDomains.has(domain)) {
+        continue;
+      }
+
+      const activeJob: ActiveJob = {
+        title: job.position,
+        url: job.url,
+        tags: Array.isArray(job.tags) ? job.tags : [],
+        salary: job.salary || undefined
+      };
+
+      // Populate companyJobsMap for job enrichment of existing/verified companies
+      if (!companyJobsMap.has(companyKey)) {
+        companyJobsMap.set(companyKey, []);
+      }
+      companyJobsMap.get(companyKey)!.push(activeJob);
+
+      const existingCandidate = candidatesMap.get(companyKey);
+      if (existingCandidate) {
+        existingCandidate.jobs.push(activeJob);
+      } else {
+        candidatesMap.set(companyKey, {
+          name: companyName,
+          website: website,
+          remoteokSlug: job.slug ? job.slug.split("-").slice(1).join("-") : companyKey,
+          jobs: [activeJob]
+        });
+      }
     }
   } catch (err: any) {
-    console.error("  ❌ Error fetching remote jobs:", err.message);
+    console.error("  ❌ Error harvesting RemoteOK candidates:", err.message);
   }
+
+  console.log(`  Harvested ${candidatesMap.size} unique candidate companies from RemoteOK.`);
+  return Array.from(candidatesMap.values());
 }
+
+const createWatchlistEntry = (
+  name: string,
+  githubOrg: string | null,
+  website: string,
+  remoteokSlug: string,
+  reason: "no-org-found" | "org-found-zero-match",
+  jobs: ActiveJob[],
+  existingCompanies: CompanyData[]
+): CompanyData => {
+  const numericIds = existingCompanies
+    .map(c => parseInt(c.id.replace("co-", "")))
+    .filter(id => !isNaN(id));
+  const nextNumericId = numericIds.length > 0 ? Math.max(...numericIds) + 1 : 1;
+  const companyId = `co-${nextNumericId}`;
+
+  return {
+    id: companyId,
+    name: name,
+    githubOrg: githubOrg || "",
+    githubOrgUrl: githubOrg ? `https://github.com/${githubOrg}` : "",
+    remoteokSlug: remoteokSlug,
+    industry: "Tech & Development Services",
+    verifiedIndonesianCount: 0,
+    label: "Watchlist",
+    lastVerifiedAt: new Date().toISOString(),
+    verifiedAt: undefined,
+    hasActiveJobs: jobs.length > 0,
+    activeJobs: jobs,
+    verifiedMembers: [],
+    headquarters: "Global Remote",
+    status: "watchlist",
+    source: "remoteok",
+    watchlistReason: reason,
+    website: website
+  };
+};
+
 
 async function fetchRemotiveJobs() {
   console.log("\n[Pipeline] Fetching active remote jobs from Remotive API...");
@@ -782,169 +922,6 @@ function saveFlaggedForReview(flagged: Record<string, any>) {
   }
 }
 
-const GITLAB_ACCESS_TOKEN = process.env.GITLAB_ACCESS_TOKEN;
-
-async function fetchGitlab(url: string, useToken = true): Promise<any> {
-  const headers: Record<string, string> = {
-    "User-Agent": "Remotika-Pipeline/1.0"
-  };
-  if (GITLAB_ACCESS_TOKEN && useToken) {
-    headers["PRIVATE-TOKEN"] = GITLAB_ACCESS_TOKEN;
-  }
-  const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), 12000); // 12 second timeout
-  try {
-    const res = await fetch(url, { headers, signal: controller.signal });
-    clearTimeout(timeout);
-    if (res.status === 404) return null;
-    if (!res.ok) {
-      const text = await res.text();
-      if (res.status === 403 && useToken && (text.includes("insufficient_granular_scope") || text.includes("scope"))) {
-        console.warn(`    ⚠️ GitLab API 403 scope error for ${url}. Retrying anonymously...`);
-        return fetchGitlab(url, false);
-      }
-      throw new Error(`GitLab API Error (${res.status}): ${text}`);
-    }
-    return res.json();
-  } catch (err: any) {
-    clearTimeout(timeout);
-    if (err.name === "AbortError") {
-      console.warn(`    ⚠️ Request to GitLab ${url} timed out (12s). Skipping.`);
-      return null;
-    }
-    throw err;
-  }
-}
-
-async function checkGitlabUserIndonesian(userId: number, username: string): Promise<{ isIndo: boolean; profile: any } | null> {
-  const cacheKey = `gl-${username.toLowerCase()}`;
-  if (userLocationCache.has(cacheKey)) {
-    return userLocationCache.get(cacheKey)!;
-  }
-  try {
-    const profile = await fetchGitlab(`https://gitlab.com/api/v4/users/${userId}`);
-    if (profile) {
-      const isIndo = isLocationIndonesian(profile.location);
-      const result = { isIndo, profile };
-      userLocationCache.set(cacheKey, result);
-      return result;
-    }
-  } catch (err: any) {
-    console.error(`    ❌ Error fetching GitLab profile for user ${username}:`, err.message);
-  }
-  return null;
-}
-
-async function processGitlabGroup(groupSlug: string, existingCompanies: CompanyData[]): Promise<CompanyData | null> {
-  const groupSlugLower = groupSlug.toLowerCase().trim();
-
-  if (BLOCKLISTED_ORGS.has(groupSlugLower)) {
-    console.log(`\n[Pipeline] ⛔ Skipping blocklisted GitLab group: ${groupSlug}`);
-    return null;
-  }
-
-  if (EXCLUDED_SET.has(groupSlugLower)) {
-    console.log(`\n[Pipeline] ⛔ Skipping manual exclude-listed Indonesian GitLab group: ${groupSlug}`);
-    return null;
-  }
-
-  console.log(`\n[Pipeline] Processing GitLab Group: ${groupSlug}`);
-
-  try {
-    const groupData = await fetchGitlab(`https://gitlab.com/api/v4/groups/${groupSlugLower}`);
-    if (!groupData) {
-      console.log(`  ⚠️  Group '${groupSlug}' not found on GitLab. Skipping.`);
-      return null;
-    }
-
-    const groupName = groupData.name || groupData.path;
-    const groupUrl = groupData.web_url;
-    const description = groupData.description || "Tech & Development Services";
-
-    const foundIndonesianMembers: VerifiedMember[] = [];
-    const verifiedLogins = new Set<string>();
-
-    const existingCompany = existingCompanies.find(
-      c => (c.gitlabOrg && c.gitlabOrg.toLowerCase() === groupSlugLower) ||
-           (c.githubOrg && c.githubOrg.toLowerCase() === groupSlugLower && c.githubOrgUrl.includes("gitlab.com"))
-    );
-
-    const existingMembersMap = new Map<string, string>(); // login -> id
-    if (existingCompany) {
-      existingCompany.verifiedMembers.forEach(m => {
-        existingMembersMap.set(m.githubLogin.toLowerCase(), m.id);
-      });
-    }
-
-    const addVerifiedMember = (login: string, profileUrl: string, location: string | null, userId: number) => {
-      const loginLower = login.toLowerCase();
-      if (verifiedLogins.has(loginLower)) return;
-      verifiedLogins.add(loginLower);
-
-      const existingId = existingMembersMap.get(loginLower);
-      const memberId = existingId || `gl-${userId}`;
-
-      foundIndonesianMembers.push({
-        id: memberId,
-        githubLogin: login,
-        githubProfileUrl: profileUrl,
-        locationRaw: location,
-        provider: "gitlab"
-      });
-      console.log(`    ✅ Match (GitLab): ${login} is verified in "${location || "Indonesia"}"`);
-    };
-
-    console.log(`  Fetching public members for GitLab group ${groupSlug}...`);
-    const members = await fetchGitlab(`https://gitlab.com/api/v4/groups/${groupSlugLower}/members/all`);
-    if (Array.isArray(members)) {
-      console.log(`    Found ${members.length} members. Checking profile locations...`);
-      for (const member of members) {
-        const check = await checkGitlabUserIndonesian(member.id, member.username);
-        if (check && check.isIndo) {
-          addVerifiedMember(member.username, check.profile.web_url, check.profile.location, member.id);
-        }
-        await new Promise(r => setTimeout(r, 100)); // Polite delay
-      }
-    }
-
-    if (foundIndonesianMembers.length === 0) {
-      console.log(`  ℹ️ No Indonesian public members found for ${groupSlugLower}. Skipping.`);
-      return null;
-    }
-
-    const numericIds = existingCompanies
-      .map(c => parseInt(c.id.replace("co-", "")))
-      .filter(id => !isNaN(id));
-    const nextNumericId = numericIds.length > 0 ? Math.max(...numericIds) + 1 : 1;
-    const companyId = existingCompany ? existingCompany.id : `co-${nextNumericId}`;
-
-    const companyData: CompanyData = {
-      id: companyId,
-      name: groupName,
-      githubOrg: groupSlug, // compatibility fallback
-      githubOrgUrl: groupUrl, // compatibility fallback
-      gitlabOrg: groupSlug,
-      gitlabOrgUrl: groupUrl,
-      remoteokSlug: existingCompany?.remoteokSlug || null,
-      industry: description,
-      verifiedIndonesianCount: foundIndonesianMembers.length,
-      label: getEmployeeLabel(foundIndonesianMembers.length),
-      lastVerifiedAt: new Date().toISOString(),
-      verifiedAt: existingCompany?.verifiedAt || new Date().toISOString(),
-      hasActiveJobs: existingCompany?.hasActiveJobs || false,
-      activeJobs: existingCompany?.activeJobs || [],
-      verifiedMembers: foundIndonesianMembers,
-      headquarters: "Global Remote",
-      testimonials: existingCompany?.testimonials || []
-    };
-
-    return companyData;
-
-  } catch (err: any) {
-    console.error(`  ❌ Error processing GitLab group ${groupSlug}:`, err.message);
-    return null;
-  }
-}
 
 async function processOrg(orgLogin: string, existingCompanies: CompanyData[]): Promise<CompanyData | null> {
   const orgLoginLower = orgLogin.toLowerCase().trim();
@@ -1229,13 +1206,13 @@ async function main() {
   // Load user location profile cache from disk
   loadUserLocationCache();
 
-  // 1. Fetch remote jobs from RemoteOK and Remotive APIs
-  await fetchRemoteJobs();
-  await fetchRemotiveJobs();
-
-  // 2. Load current companies.json database
+  // 1. Load current companies.json database
   const companies = loadCompanies();
   console.log(`Loaded ${companies.length} existing companies from JSON database.`);
+
+  // 2. Fetch remote jobs from RemoteOK and Remotive APIs
+  const remoteokCandidates = await harvestRemoteOkCandidates(companies);
+  await fetchRemotiveJobs();
 
   // 3. Collate all known organizations (existing + seeds + community seeds)
   const knownOrgs = new Set<string>();
@@ -1278,7 +1255,7 @@ async function main() {
   console.log(`  Selected top ${selectedNewGuesses.length} new guesses to inspect:`, selectedNewGuesses);
 
   // 5. Combine everything into the processing queue
-  const queueMap = new Map<string, { type: "github" | "gitlab"; slug: string }>();
+  const queueMap = new Map<string, { type: "github"; slug: string }>();
   
   // Load flagged-for-review set to avoid re-inspecting flagged organizations
   const flagged = loadFlaggedForReview();
@@ -1291,19 +1268,10 @@ async function main() {
 
   // Always process existing companies to update their jobs/members, unless excluded or flagged
   companies.forEach(c => {
-    if (c.gitlabOrg) {
-      const cleanSlug = c.gitlabOrg.toLowerCase().trim();
-      if (shouldInspect(cleanSlug)) {
-        queueMap.set(`gitlab:${cleanSlug}`, { type: "gitlab", slug: cleanSlug });
-      }
-    } else if (c.githubOrg) {
+    if (c.githubOrg) {
       const cleanSlug = c.githubOrg.toLowerCase().trim();
       if (shouldInspect(cleanSlug)) {
-        if (c.githubOrgUrl?.includes("gitlab.com")) {
-          queueMap.set(`gitlab:${cleanSlug}`, { type: "gitlab", slug: cleanSlug });
-        } else {
-          queueMap.set(`github:${cleanSlug}`, { type: "github", slug: cleanSlug });
-        }
+        queueMap.set(`github:${cleanSlug}`, { type: "github", slug: cleanSlug });
       }
     }
   });
@@ -1313,12 +1281,6 @@ async function main() {
     const cleanOrg = org.toLowerCase().trim();
     if (shouldInspect(cleanOrg)) {
       queueMap.set(`github:${cleanOrg}`, { type: "github", slug: cleanOrg });
-    }
-  });
-  DEFAULT_GITLAB_SEED_GROUPS.forEach(group => {
-    const cleanGroup = group.toLowerCase().trim();
-    if (shouldInspect(cleanGroup)) {
-      queueMap.set(`gitlab:${cleanGroup}`, { type: "gitlab", slug: cleanGroup });
     }
   });
   communitySeeds.forEach(org => {
@@ -1346,12 +1308,7 @@ async function main() {
 
   // 4. Process each organization in the queue
   for (const item of queueList) {
-    let updatedCompany: CompanyData | null = null;
-    if (item.type === "gitlab") {
-      updatedCompany = await processGitlabGroup(item.slug, Array.from(updatedCompaniesMap.values()));
-    } else {
-      updatedCompany = await processOrg(item.slug, Array.from(updatedCompaniesMap.values()));
-    }
+    const updatedCompany = await processOrg(item.slug, Array.from(updatedCompaniesMap.values()));
     
     if (updatedCompany) {
       // ── Job Enrichment: multi-source strategy ──
@@ -1434,12 +1391,91 @@ async function main() {
     await new Promise(r => setTimeout(r, 1000));
   }
 
+  // 4.5 Process RemoteOK Candidate discovery and watchlist sorting
+  console.log("\n[Pipeline] Processing harvested RemoteOK candidates...");
+  for (const candidate of remoteokCandidates) {
+    const candidateDomain = parseDomain(candidate.website);
+    
+    // Check if domain is already in updatedCompaniesMap values
+    const currentCompanies = Array.from(updatedCompaniesMap.values());
+    const domainExists = currentCompanies.some(c => {
+      if (c.website && parseDomain(c.website) === candidateDomain) return true;
+      const parsedDom = parseDomain(c.githubOrgUrl) || parseDomain(c.jobSources?.careerPageUrl || null);
+      return parsedDom === candidateDomain;
+    });
+
+    if (domainExists) {
+      console.log(`  ⏭️ Candidate "${candidate.name}" domain (${candidateDomain}) already exists. Skipping.`);
+      continue;
+    }
+
+    // Try to resolve organization on GitHub
+    const resolvedOrg = await resolveGithubOrg(candidate.name, candidate.website);
+    
+    if (resolvedOrg) {
+      const resolvedOrgKey = resolvedOrg.toLowerCase().trim();
+      if (updatedCompaniesMap.has(resolvedOrgKey)) {
+        console.log(`  ⏭️ Resolved GitHub org "${resolvedOrg}" is already in processed map. Skipping.`);
+        continue;
+      }
+
+      // Run verification scan (Saringan A/B/C) on the resolved GitHub org
+      console.log(`  🔍 Scanning resolved org "${resolvedOrg}" for "${candidate.name}"...`);
+      const scannedCompany = await processOrg(resolvedOrg, currentCompanies);
+      
+      if (scannedCompany) {
+        // Passed Saringan A/B/C!
+        scannedCompany.status = "verified";
+        scannedCompany.source = "remoteok";
+        scannedCompany.website = candidate.website;
+        
+        // Enrich with candidate jobs from RemoteOK
+        scannedCompany.activeJobs = candidate.jobs;
+        scannedCompany.hasActiveJobs = candidate.jobs.length > 0;
+        
+        updatedCompaniesMap.set(resolvedOrgKey, scannedCompany);
+        console.log(`    ✅ Candidate "${candidate.name}" successfully verified as "${scannedCompany.name}"!`);
+      } else {
+        // 0 matches (or early filter, or blocked). Add as watchlist entry
+        console.log(`    ℹ️ Candidate "${candidate.name}" resolved to org "${resolvedOrg}" but failed verification scan (0 Indonesian members). Placing on watchlist.`);
+        const watchlistEntry = createWatchlistEntry(
+          candidate.name,
+          resolvedOrg,
+          candidate.website,
+          candidate.remoteokSlug,
+          "org-found-zero-match",
+          candidate.jobs,
+          currentCompanies
+        );
+        updatedCompaniesMap.set(resolvedOrgKey, watchlistEntry);
+      }
+    } else {
+      // Org not found on GitHub. Add as watchlist entry
+      console.log(`    ℹ️ Candidate "${candidate.name}" could not be resolved to a GitHub org. Placing on watchlist.`);
+      const watchlistEntry = createWatchlistEntry(
+        candidate.name,
+        null,
+        candidate.website,
+        candidate.remoteokSlug,
+        "no-org-found",
+        candidate.jobs,
+        currentCompanies
+      );
+      // Use remoteokSlug/companyKey as key in map
+      const dummyKey = `wl-${candidate.remoteokSlug.toLowerCase()}`;
+      updatedCompaniesMap.set(dummyKey, watchlistEntry);
+    }
+
+    // Delay between calls to be polite
+    await new Promise(r => setTimeout(r, 1000));
+  }
+
   // 5. Save updated list back to JSON (filter defunct + zero-member companies + excluded companies)
   const finalCompaniesList = Array.from(updatedCompaniesMap.values())
-    .filter(c => c.verifiedIndonesianCount > 0)
-    .filter(c => !BLOCKLISTED_ORGS.has(c.githubOrg.toLowerCase()))
-    .filter(c => !EXCLUDED_SET.has(c.githubOrg.toLowerCase()))
-    .filter(c => c.githubOrg.toLowerCase() === "xendit" || !isLocationIndonesian(c.headquarters));
+    .filter(c => c.status === "watchlist" || c.verifiedIndonesianCount > 0)
+    .filter(c => !c.githubOrg || !BLOCKLISTED_ORGS.has(c.githubOrg.toLowerCase()))
+    .filter(c => !c.githubOrg || !EXCLUDED_SET.has(c.githubOrg.toLowerCase()))
+    .filter(c => !c.githubOrg || c.githubOrg.toLowerCase() === "xendit" || !isLocationIndonesian(c.headquarters));
 
   // Sort by verified count descending
   finalCompaniesList.sort((a, b) => b.verifiedIndonesianCount - a.verifiedIndonesianCount);

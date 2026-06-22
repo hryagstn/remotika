@@ -18,7 +18,8 @@ import {
   Mail,
   Building,
   Plus,
-  Sparkles
+  Sparkles,
+  Menu
 } from "lucide-react";
 
 // Inline Custom SVG for GitHub logo (resolves missing brand icons in some lucide-react versions)
@@ -59,6 +60,8 @@ export default function Dashboard({ initialCompanies }: DashboardProps) {
   const [categoryFilter, setCategoryFilter] = useState("All Roles");
   const [hasJobsOnly, setHasJobsOnly] = useState(false);
   const [sortBy, setSortBy] = useState<"members" | "verified">("members");
+  const [showWatchlist, setShowWatchlist] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   
   // Modal states
   const [isSuggestOpen, setIsSuggestOpen] = useState(false);
@@ -135,7 +138,9 @@ export default function Dashboard({ initialCompanies }: DashboardProps) {
       return industryMatches || jobsMatch;
     })();
 
-    return matchesSearch && matchesLabel && matchesJobs && matchesCategory;
+    const matchesWatchlist = showWatchlist || c.status !== "watchlist";
+
+    return matchesSearch && matchesLabel && matchesJobs && matchesCategory && matchesWatchlist;
   }).sort((a, b) => {
     if (sortBy === "verified") {
       const dateA = a.verifiedAt || a.lastVerifiedAt || "";
@@ -229,21 +234,25 @@ export default function Dashboard({ initialCompanies }: DashboardProps) {
                 <span className="hidden sm:inline-block ml-2 text-xs px-2 py-0.5 rounded-full bg-white/5 border border-white/10 text-white/50">v1.4</span>
               </div>
             </Link>
-            <Link href="/" className="text-xs font-semibold text-white bg-white/5 border border-white/10 px-3 py-1.5 rounded-lg transition-all">
-              Direktori
-            </Link>
-            <Link href="/cara-kerja" className="text-xs font-semibold text-white/60 hover:text-white hover:bg-white/5 px-3 py-1.5 rounded-lg border border-transparent hover:border-white/5 transition-all">
-              Cara Kerja
-            </Link>
-            <Link href="/readiness-check" className="text-xs font-semibold text-white/60 hover:text-white hover:bg-white/5 px-3 py-1.5 rounded-lg border border-transparent hover:border-white/5 transition-all">
-              Cek Kesiapan
-            </Link>
-            <Link href="/berkontribusi" className="text-xs font-semibold text-white/60 hover:text-white hover:bg-white/5 px-3 py-1.5 rounded-lg border border-transparent hover:border-white/5 transition-all">
-              Berkontribusi
-            </Link>
+            {/* Desktop Navigation Links */}
+            <div className="hidden md:flex items-center space-x-2">
+              <Link href="/" className="text-xs font-semibold text-white bg-white/5 border border-white/10 px-3 py-1.5 rounded-lg transition-all">
+                Direktori
+              </Link>
+              <Link href="/cara-kerja" className="text-xs font-semibold text-white/60 hover:text-white hover:bg-white/5 px-3 py-1.5 rounded-lg border border-transparent hover:border-white/5 transition-all">
+                Cara Kerja
+              </Link>
+              <Link href="/readiness-check" className="text-xs font-semibold text-white/60 hover:text-white hover:bg-white/5 px-3 py-1.5 rounded-lg border border-transparent hover:border-white/5 transition-all">
+                Cek Kesiapan
+              </Link>
+              <Link href="/berkontribusi" className="text-xs font-semibold text-white/60 hover:text-white hover:bg-white/5 px-3 py-1.5 rounded-lg border border-transparent hover:border-white/5 transition-all">
+                Berkontribusi
+              </Link>
+            </div>
           </div>
 
-          <div className="flex items-center space-x-3">
+          {/* Desktop Right Actions */}
+          <div className="hidden md:flex items-center space-x-3">
             {/* Grouped Header Buttons */}
             <div className="inline-flex items-center rounded-xl bg-white/5 border border-white/10 p-0.5 shadow-md shadow-brand-primary/5">
               <Link
@@ -281,7 +290,100 @@ export default function Dashboard({ initialCompanies }: DashboardProps) {
               <Github className="w-4 h-4" />
             </a>
           </div>
+
+          {/* Mobile Menu Button (Hamburger) */}
+          <div className="flex md:hidden">
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="p-2 rounded-xl bg-white/5 border border-white/10 text-white/85 hover:text-white transition-colors"
+            >
+              {isMobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+            </button>
+          </div>
         </div>
+
+        {/* Mobile Navigation Drawer */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden border-t border-border-faint bg-bg-surface/98 backdrop-blur-lg animate-fade-in">
+            <div className="px-4 pt-3 pb-6 space-y-4">
+              <div className="flex flex-col space-y-2">
+                <Link
+                  href="/"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="px-3 py-2 rounded-xl text-xs font-semibold text-white bg-white/5 border border-white/10 text-center"
+                >
+                  Direktori
+                </Link>
+                <Link
+                  href="/cara-kerja"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="px-3 py-2 rounded-xl text-xs font-semibold text-white/70 hover:text-white hover:bg-white/5 text-center"
+                >
+                  Cara Kerja
+                </Link>
+                <Link
+                  href="/readiness-check"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="px-3 py-2 rounded-xl text-xs font-semibold text-white/70 hover:text-white hover:bg-white/5 text-center"
+                >
+                  Cek Kesiapan
+                </Link>
+                <Link
+                  href="/berkontribusi"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="px-3 py-2 rounded-xl text-xs font-semibold text-white/70 hover:text-white hover:bg-white/5 text-center"
+                >
+                  Berkontribusi
+                </Link>
+              </div>
+
+              <div className="h-px bg-white/5 my-2" />
+
+              <div className="flex flex-col space-y-2">
+                <Link
+                  href="/suggest-yourself"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="w-full py-2.5 rounded-xl text-xs font-bold text-center bg-brand-primary text-white shadow-lg shadow-brand-primary/20 flex items-center justify-center space-x-2"
+                >
+                  <Sparkles className="w-4 h-4" />
+                  <span>Verifikasi Mandiri</span>
+                </Link>
+                
+                <button
+                  onClick={() => {
+                    setIsMobileMenuOpen(false);
+                    setIsSuggestOpen(true);
+                  }}
+                  className="w-full py-2.5 rounded-xl text-xs font-semibold text-center bg-white/5 border border-white/10 text-white hover:bg-white/10 flex items-center justify-center space-x-2"
+                >
+                  <Plus className="w-4 h-4" />
+                  <span>Sarankan Perusahaan</span>
+                </button>
+
+                <div className="grid grid-cols-2 gap-2 pt-1">
+                  <a
+                    href="https://t.me/remotika_updates"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="py-2 rounded-xl text-xs font-semibold text-center bg-[#0088cc]/10 text-[#0088cc] border border-[#0088cc]/20 flex items-center justify-center space-x-1.5"
+                  >
+                    <TelegramIcon className="w-3.5 h-3.5" />
+                    <span>Telegram</span>
+                  </a>
+                  <a
+                    href={process.env.NEXT_PUBLIC_GITHUB_REPO || "https://github.com/hryagstn/remotika"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="py-2 rounded-xl text-xs font-semibold text-center bg-white/5 text-white/70 border border-white/5 flex items-center justify-center space-x-1.5"
+                  >
+                    <Github className="w-3.5 h-3.5" />
+                    <span>GitHub</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
       </header>
 
       {/* Main Container */}
@@ -371,6 +473,19 @@ export default function Dashboard({ initialCompanies }: DashboardProps) {
                 </span>
               </label>
 
+              <label className="flex items-center space-x-2 text-xs font-semibold text-white/70 cursor-pointer select-none border border-white/10 px-3 py-2.5 rounded-xl bg-[#080d24] hover:bg-white/5 transition-all">
+                <input
+                  type="checkbox"
+                  checked={showWatchlist}
+                  onChange={(e) => setShowWatchlist(e.target.checked)}
+                  className="rounded border-white/10 text-brand-primary focus:ring-brand-primary bg-[#080d24] h-4 w-4 transition-all"
+                />
+                <span className="flex items-center space-x-1.5">
+                  <Building className="w-3.5 h-3.5 text-brand-accent" />
+                  <span>Tampilkan juga watchlist</span>
+                </span>
+              </label>
+
               <button
                 onClick={handleExportCSV}
                 className="px-4 py-2.5 rounded-xl border border-white/10 hover:border-white/20 bg-[#080d24] hover:bg-white/5 text-white/80 hover:text-white text-xs font-semibold flex items-center space-x-1.5 transition-all"
@@ -435,58 +550,80 @@ export default function Dashboard({ initialCompanies }: DashboardProps) {
         </div>
 
         {/* Company Card Grid */}
-        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {filteredCompanies.length > 0 ? (
             filteredCompanies.map((c) => {
               const isExpanded = expandedCard === c.id;
-              
+              const isWatchlist = c.status === "watchlist";
+              const hasGithub = c.githubOrg && c.githubOrg.trim() !== "";
+              const companyLink = isWatchlist
+                ? (c.githubOrgUrl || c.activeJobs?.[0]?.url || "#")
+                : `/company/${c.githubOrg.toLowerCase() || c.id}`;
+
               return (
                 <div 
                   key={c.id} 
                   className={`relative bg-bg-surface border rounded-2xl hover:scale-[1.01] hover:border-white/20 transition-all duration-300 flex flex-col justify-between overflow-hidden shadow-lg hover:shadow-2xl ${
-                    c.label === "Top Pick" ? "border-amber-500/20 hover:border-amber-500/40" : "border-border-faint"
+                    isWatchlist 
+                      ? "border-dashed border-white/20 opacity-80 hover:opacity-100" 
+                      : c.label === "Top Pick" 
+                        ? "border-amber-500/20 hover:border-amber-500/40" 
+                        : "border-border-faint"
                   }`}
                 >
-                  <div className="p-6 space-y-4">
+                  <div className="p-5 sm:p-6 space-y-4">
                     {/* Card Header */}
-                    <div className="flex items-start justify-between">
-                      <div className="flex items-center space-x-3.5">
+                    <div className="flex items-start justify-between gap-3">
+                      <div className="flex items-center space-x-3">
                         {/* Company Logo Initials fallback (Flat tier color as per Stitch spec) */}
-                        <Link href={`/company/${c.githubOrg.toLowerCase() || c.id}`}>
-                          <div className={`w-12 h-12 rounded-xl flex items-center justify-center font-bold text-lg text-white shadow-inner ${getTierFlatColor(c.label)}`}>
+                        <Link href={companyLink}>
+                          <div className={`w-12 h-12 rounded-xl flex items-center justify-center font-bold text-lg text-white shadow-inner shrink-0 ${isWatchlist ? "bg-gray-800 text-white/70" : getTierFlatColor(c.label)}`}>
                             {c.name.substring(0, 2).toUpperCase()}
                           </div>
                         </Link>
                         <div>
-                          <Link href={`/company/${c.githubOrg.toLowerCase() || c.id}`} className="group/title">
-                            <h3 className="font-bold text-white text-base font-outfit flex items-center gap-1.5 hover:text-brand-primary transition-colors">
+                          <Link href={companyLink} className="group/title">
+                            <h3 className="font-bold text-white text-sm sm:text-base font-outfit flex items-center gap-1.5 hover:text-brand-primary transition-colors line-clamp-1">
                               {c.name}
                             </h3>
                           </Link>
-                          <span className="text-xs text-white/40">@{c.githubOrg}</span>
+                          <span className="text-xs text-white/40 block truncate max-w-[150px]">
+                            {hasGithub ? `@${c.githubOrg}` : "No GitHub Org"}
+                          </span>
                         </div>
                       </div>
 
                       {/* GitHub Link */}
-                      <a 
-                        href={c.githubOrgUrl} 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        className="p-1.5 rounded-lg bg-white/5 text-white/40 hover:text-white hover:bg-white/10 transition-all"
-                      >
-                        <ExternalLink className="w-3.5 h-3.5" />
-                      </a>
+                      {hasGithub && (
+                        <a 
+                          href={c.githubOrgUrl} 
+                          target="_blank" 
+                          rel="noopener noreferrer" 
+                          className="p-1.5 rounded-lg bg-white/5 text-white/40 hover:text-white hover:bg-white/10 transition-all shrink-0"
+                        >
+                          <ExternalLink className="w-3.5 h-3.5" />
+                        </a>
+                      )}
                     </div>
 
-                    {/* Verified Level Badge */}
-                    <div className="flex flex-wrap items-center gap-2">
-                      <span className={`text-[10px] uppercase tracking-wider px-2 py-0.5 rounded-full font-bold border ${getLabelStyles(c.label)}`}>
-                        {c.label}
-                      </span>
-                      <span className="bg-white/5 border border-white/5 text-white/70 text-xs font-semibold px-2 py-0.5 rounded-full flex items-center gap-1">
-                        <Users className="w-3 h-3 text-brand-primary" />
-                        <span>{c.verifiedIndonesianCount} Anggota Terverifikasi</span>
-                      </span>
+                    {/* Verified Level Badge vs Watchlist Badge */}
+                    <div className="flex flex-wrap items-center gap-1.5">
+                      {isWatchlist ? (
+                        <span className="text-[9px] uppercase tracking-wider px-2 py-0.5 rounded-full font-bold border border-white/10 text-white/50 border-dashed bg-white/5">
+                          Belum Terverifikasi
+                        </span>
+                      ) : (
+                        <>
+                          <span className={`text-[9px] uppercase tracking-wider px-2 py-0.5 rounded-full font-bold border flex items-center gap-0.5 ${getLabelStyles(c.label)}`}>
+                            <span className="font-sans">✓</span>
+                            <span>{c.label}</span>
+                          </span>
+                          <span className="bg-white/5 border border-white/5 text-white/70 text-[10px] font-semibold px-2 py-0.5 rounded-full flex items-center gap-1">
+                            <Users className="w-3 h-3 text-brand-primary" />
+                            <span>{c.verifiedIndonesianCount} Anggota</span>
+                          </span>
+                        </>
+                      )}
                     </div>
 
                     {/* Industry */}
@@ -494,10 +631,39 @@ export default function Dashboard({ initialCompanies }: DashboardProps) {
                       {c.industry}
                     </p>
 
+                    {/* Watchlist CTA Box */}
+                    {isWatchlist && (
+                      <div className="p-3.5 rounded-xl bg-white/5 border border-white/5 text-[11px] text-white/60 leading-relaxed space-y-2">
+                        <p>Kerja di sini? Bantu verifikasi — pastikan lokasi profil GitHub-mu menyebutkan kota Indonesia.</p>
+                        {hasGithub ? (
+                          <a
+                            href={c.githubOrgUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1 font-bold text-brand-primary hover:text-brand-secondary transition-colors"
+                          >
+                            <span>Verifikasi via GitHub Org</span>
+                            <ExternalLink className="w-2.5 h-2.5" />
+                          </a>
+                        ) : (
+                          <button
+                            onClick={() => {
+                              setSuggestOrg(c.name);
+                              setIsSuggestOpen(true);
+                            }}
+                            className="inline-flex items-center gap-1 font-bold text-brand-primary hover:text-brand-secondary transition-colors text-left focus:outline-none"
+                          >
+                            <span>Hubungkan GitHub Org</span>
+                            <Plus className="w-2.5 h-2.5" />
+                          </button>
+                        )}
+                      </div>
+                    )}
+
                     {/* Active Jobs Section */}
                     {c.hasActiveJobs && c.activeJobs && c.activeJobs.length > 0 && (
                       <div className="border-t border-white/5 pt-3.5 space-y-2">
-                        <span className="text-[10px] font-bold uppercase tracking-wider text-brand-secondary flex items-center gap-1">
+                        <span className="text-[9px] font-bold uppercase tracking-wider text-brand-secondary flex items-center gap-1">
                           <Briefcase className="w-3 h-3" />
                           <span>Lowongan Kerja Remote Aktif ({c.activeJobs.length})</span>
                         </span>
@@ -542,33 +708,40 @@ export default function Dashboard({ initialCompanies }: DashboardProps) {
                   </div>
 
                   {/* Card Actions Footer */}
-                  <div className="px-6 pb-5 pt-2 border-t border-white/5 bg-black/10 flex items-center justify-between text-[11px]">
-                    <button
-                      onClick={() => setExpandedCard(isExpanded ? null : c.id)}
-                      className="text-white/50 hover:text-white flex items-center space-x-1 font-semibold transition-colors"
-                    >
-                      {isExpanded ? (
-                        <>
-                          <ChevronUp className="w-3.5 h-3.5" />
-                          <span>Sembunyikan Anggota</span>
-                        </>
-                      ) : (
-                        <>
-                          <ChevronDown className="w-3.5 h-3.5" />
-                          <span>Lihat {c.verifiedMembers.length} Anggota</span>
-                        </>
-                      )}
-                    </button>
+                  {isWatchlist ? (
+                    <div className="px-5 sm:px-6 pb-5 pt-3 border-t border-white/5 bg-black/10 flex items-center justify-between text-[11px] text-white/40">
+                      <span>Sumber: {c.source || "RemoteOK"}</span>
+                      <span className="text-[9px] font-bold text-brand-accent/80 uppercase tracking-wider">Watchlist</span>
+                    </div>
+                  ) : (
+                    <div className="px-5 sm:px-6 pb-5 pt-2 border-t border-white/5 bg-black/10 flex items-center justify-between text-[11px]">
+                      <button
+                        onClick={() => setExpandedCard(isExpanded ? null : c.id)}
+                        className="text-white/50 hover:text-white flex items-center space-x-1 font-semibold transition-colors focus:outline-none"
+                      >
+                        {isExpanded ? (
+                          <>
+                            <ChevronUp className="w-3.5 h-3.5" />
+                            <span>Sembunyikan Anggota</span>
+                          </>
+                        ) : (
+                          <>
+                            <ChevronDown className="w-3.5 h-3.5" />
+                            <span>Lihat {c.verifiedMembers.length} Anggota</span>
+                          </>
+                        )}
+                      </button>
 
-                    <button
-                      onClick={() => setActiveBadgeOrg(c.githubOrg)}
-                      className="text-white/40 hover:text-white flex items-center space-x-1 transition-colors"
-                      title="Ambil kode badge embed"
-                    >
-                      <Code className="w-3.5 h-3.5" />
-                      <span>Ambil Badge</span>
-                    </button>
-                  </div>
+                      <button
+                        onClick={() => setActiveBadgeOrg(c.githubOrg)}
+                        className="text-white/40 hover:text-white flex items-center space-x-1 transition-colors focus:outline-none"
+                        title="Ambil kode badge embed"
+                      >
+                        <Code className="w-3.5 h-3.5" />
+                        <span>Ambil Badge</span>
+                      </button>
+                    </div>
+                  )}
 
                   {/* Expandable member list drawer as absolute overlay to prevent changing card height */}
                   {isExpanded && (
