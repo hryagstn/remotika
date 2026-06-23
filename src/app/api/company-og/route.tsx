@@ -31,14 +31,20 @@ const getTierColor = (label: string): string => {
   }
 };
 
+const slugify = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+
 export async function GET(request: NextRequest) {
   try {
     const { searchParams } = new URL(request.url);
     const slug = searchParams.get("slug") || "";
+    const decodedSlug = decodeURIComponent(slug).toLowerCase();
 
-    // Find the company by ID or GitHub Org Slug
+    // Find the company by ID, GitHub Org Slug, or slugified name
     const company = (companies as Company[]).find(
-      (c) => c.id.toLowerCase() === slug.toLowerCase() || c.githubOrg.toLowerCase() === slug.toLowerCase()
+      (c) =>
+        c.id.toLowerCase() === decodedSlug ||
+        c.githubOrg.toLowerCase() === decodedSlug ||
+        (c.githubOrg === "" && slugify(c.name) === decodedSlug)
     );
 
     if (!company) {
@@ -264,7 +270,7 @@ export async function GET(request: NextRequest) {
                 See open roles and proof of verification at:
               </span>
               <span style={{ fontSize: "18px", color: "#2dd4bf", fontWeight: 700, marginTop: "4px" }}>
-                remotika.vercel.app/company/{company.githubOrg.toLowerCase() || company.id}
+                remotika.vercel.app/company/{company.githubOrg.toLowerCase() || slugify(company.name) || company.id}
               </span>
             </div>
           </div>

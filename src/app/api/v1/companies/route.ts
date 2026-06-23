@@ -4,6 +4,8 @@ import companiesDataRaw from "@/data/companies.json";
 
 const companiesData = companiesDataRaw as unknown as CompanyData[];
 
+const slugify = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+
 export const runtime = "nodejs";
 
 // Lightweight IP-based rate limiting in memory
@@ -123,7 +125,7 @@ export async function GET(request: NextRequest) {
       verifiedIndonesianCount: c.verifiedIndonesianCount,
       hasActiveJobs: c.hasActiveJobs,
       verifiedAt: c.verifiedAt || c.lastVerifiedAt || new Date().toISOString(),
-      profileUrl: `https://remotika.vercel.app/company/${c.id}`
+      profileUrl: `https://remotika.vercel.app/company/${c.githubOrg?.toLowerCase() || slugify(c.name) || c.id}`
     }));
 
     const response = NextResponse.json({

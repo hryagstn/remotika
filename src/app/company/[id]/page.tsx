@@ -17,6 +17,8 @@ import { getCompanies } from "../../actions";
 import BadgeEmbed from "./BadgeEmbed";
 import ShareCompany from "./ShareCompany";
 
+const slugify = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+
 interface PageProps {
   params: Promise<{ id: string }>;
 }
@@ -65,6 +67,11 @@ export async function generateStaticParams() {
     }
     if (c.githubOrg) {
       params.push({ id: c.githubOrg.toLowerCase() });
+    } else {
+      const slug = slugify(c.name);
+      if (slug) {
+        params.push({ id: slug });
+      }
     }
   });
   return params;
@@ -73,8 +80,12 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: PageProps) {
   const { id } = await params;
   const companies = await getCompanies();
+  const decodedId = decodeURIComponent(id).toLowerCase();
   const company = companies.find(
-    (c) => c.id.toLowerCase() === id.toLowerCase() || c.githubOrg.toLowerCase() === id.toLowerCase()
+    (c) =>
+      c.id.toLowerCase() === decodedId ||
+      c.githubOrg.toLowerCase() === decodedId ||
+      (c.githubOrg === "" && slugify(c.name) === decodedId)
   );
 
   if (!company) {
@@ -98,8 +109,12 @@ export async function generateMetadata({ params }: PageProps) {
 export default async function CompanyProfilePage({ params }: PageProps) {
   const { id } = await params;
   const companies = await getCompanies();
+  const decodedId = decodeURIComponent(id).toLowerCase();
   const company = companies.find(
-    (c) => c.id.toLowerCase() === id.toLowerCase() || c.githubOrg.toLowerCase() === id.toLowerCase()
+    (c) =>
+      c.id.toLowerCase() === decodedId ||
+      c.githubOrg.toLowerCase() === decodedId ||
+      (c.githubOrg === "" && slugify(c.name) === decodedId)
   );
 
   if (!company) {
@@ -499,13 +514,15 @@ export default async function CompanyProfilePage({ params }: PageProps) {
             )}
 
             {/* Share Company Component */}
-            <ShareCompany 
-              companyName={company.name} 
-              companyId={company.id} 
-              companySlug={company.githubOrg.toLowerCase() || company.id}
-              verifiedCount={company.verifiedIndonesianCount} 
-              hasActiveJobs={company.hasActiveJobs} 
-            />
+            {company.hasActiveJobs && (
+              <ShareCompany 
+                companyName={company.name} 
+                companyId={company.id} 
+                companySlug={company.githubOrg.toLowerCase() || slugify(company.name) || company.id}
+                verifiedCount={company.verifiedIndonesianCount} 
+                hasActiveJobs={company.hasActiveJobs} 
+              />
+            )}
 
             {/* Company Metadata */}
             <div className="bg-bg-surface border border-border-faint p-6 rounded-2xl space-y-6 shadow-sm">
