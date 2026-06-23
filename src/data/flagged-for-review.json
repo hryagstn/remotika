@@ -84,7 +84,7 @@
     "name": "MaxRetail",
     "location": null,
     "reason": "Organization has no associated company website/blog URL in GitHub profile",
-    "flaggedAt": "2026-06-21T09:21:34.869Z",
+    "flaggedAt": "2026-06-22T23:00:07.478Z",
     "verifiedIndonesianCount": 0
   },
   "ateneodemanilauniversity": {
@@ -92,7 +92,7 @@
     "name": "Ateneo De Manila University",
     "location": null,
     "reason": "Organization has no associated company website/blog URL in GitHub profile",
-    "flaggedAt": "2026-06-21T09:21:39.048Z",
+    "flaggedAt": "2026-06-22T23:00:18.336Z",
     "verifiedIndonesianCount": 0
   },
   "twine": {
@@ -100,7 +100,111 @@
     "name": "twine",
     "location": null,
     "reason": "Organization has no associated company website/blog URL in GitHub profile",
-    "flaggedAt": "2026-06-21T14:26:54.254Z",
+    "flaggedAt": "2026-06-22T22:58:56.359Z",
+    "verifiedIndonesianCount": 0
+  },
+  "edirq-re": {
+    "githubOrg": "edirq-re",
+    "name": "Edirq-RE",
+    "location": null,
+    "reason": "Organization has no associated company website/blog URL in GitHub profile",
+    "flaggedAt": "2026-06-22T22:58:27.936Z",
+    "verifiedIndonesianCount": 0
+  },
+  "etn-corp": {
+    "githubOrg": "etn-corp",
+    "name": "etn-corp",
+    "location": null,
+    "reason": "Organization has no associated company website/blog URL in GitHub profile",
+    "flaggedAt": "2026-06-22T22:59:17.598Z",
+    "verifiedIndonesianCount": 0
+  },
+  "thirdwayrecruitment": {
+    "githubOrg": "thirdwayrecruitment",
+    "name": "Montresor Legal",
+    "location": null,
+    "reason": "Organization has no associated company website/blog URL in GitHub profile",
+    "flaggedAt": "2026-06-22T22:59:40.842Z",
+    "verifiedIndonesianCount": 0
+  },
+  "zirtual2": {
+    "githubOrg": "zirtual2",
+    "name": "zirtual2",
+    "location": null,
+    "reason": "Organization has no associated company website/blog URL in GitHub profile",
+    "flaggedAt": "2026-06-22T23:02:02.061Z",
+    "verifiedIndonesianCount": 0
+  },
+  "nexistech-oaxaca": {
+    "githubOrg": "nexistech-oaxaca",
+    "name": "NexisTech Oaxaca",
+    "location": "Mexico",
+    "reason": "Organization has no associated company website/blog URL in GitHub profile",
+    "flaggedAt": "2026-06-22T23:02:20.587Z",
+    "verifiedIndonesianCount": 0
+  },
+  "banco-bv": {
+    "githubOrg": "banco-bv",
+    "name": "Banco-BV",
+    "location": null,
+    "reason": "Organization has no associated company website/blog URL in GitHub profile",
+    "flaggedAt": "2026-06-22T23:02:42.600Z",
+    "verifiedIndonesianCount": 0
+  },
+  "chaostrack": {
+    "githubOrg": "chaostrack",
+    "name": "ChaosTrack",
+    "location": "United States of America",
+    "reason": "Organization has no associated company website/blog URL in GitHub profile",
+    "flaggedAt": "2026-06-22T23:03:12.324Z",
+    "verifiedIndonesianCount": 0
+  },
+  "velsera-sanofi": {
+    "githubOrg": "velsera-sanofi",
+    "name": "Velsera-Sanofi",
+    "location": null,
+    "reason": "Organization has no associated company website/blog URL in GitHub profile",
+    "flaggedAt": "2026-06-22T23:03:15.796Z",
+    "verifiedIndonesianCount": 0
+  },
+  "recseekers": {
+    "githubOrg": "recseekers",
+    "name": "RECSEEKERS",
+    "location": null,
+    "reason": "Organization has no associated company website/blog URL in GitHub profile",
+    "flaggedAt": "2026-06-22T23:03:24.498Z",
+    "verifiedIndonesianCount": 0
+  },
+  "creative-fabrica": {
+    "githubOrg": "creative-fabrica",
+    "name": "Creative Fabrica",
+    "location": null,
+    "reason": "Organization has no associated company website/blog URL in GitHub profile",
+    "flaggedAt": "2026-06-22T23:03:31.542Z",
+    "verifiedIndonesianCount": 0
+  },
+  "johnson-controls": {
+    "githubOrg": "johnson-controls",
+    "name": "Johnson Controls",
+    "location": null,
+    "reason": "Organization has no associated company website/blog URL in GitHub profile",
+    "flaggedAt": "2026-06-22T23:03:34.006Z",
+    "verifiedIndonesianCount": 0
+  },
+  "karbonhq": {
+    "githubOrg": "karbonhq",
+    "name": "KarbonHQ",
+    "location": null,
+    "reason": "Organization has no associated company website/blog URL in GitHub profile",
+    "flaggedAt": "2026-06-22T23:03:48.249Z",
+    "verifiedIndonesianCount": 0
+  },
+  "kiergroup": {
+    "githubOrg": "kiergroup",
+    "name": "Kier Group",
+    "location": "United Kingdom",
+    "reason": "Organization has no associated company website/blog URL in GitHub profile",
+    "flaggedAt": "2026-06-22T23:04:00.645Z",
     "verifiedIndonesianCount": 0
   }
 }

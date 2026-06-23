@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useTransition } from "react";
+import React, { useState, useTransition, useEffect } from "react";
 import Link from "next/link";
 import { 
   Search, 
@@ -59,9 +59,14 @@ export default function Dashboard({ initialCompanies }: DashboardProps) {
   const [labelFilter, setLabelFilter] = useState("All");
   const [categoryFilter, setCategoryFilter] = useState("All Roles");
   const [hasJobsOnly, setHasJobsOnly] = useState(false);
-  const [sortBy, setSortBy] = useState<"members" | "verified">("members");
-  const [showWatchlist, setShowWatchlist] = useState(false);
+  const [sortBy, setSortBy] = useState<"members" | "verified" | "name" | "jobs">("members");
+  const [hideWatchlist, setHideWatchlist] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
   
   // Modal states
   const [isSuggestOpen, setIsSuggestOpen] = useState(false);
@@ -75,17 +80,18 @@ export default function Dashboard({ initialCompanies }: DashboardProps) {
 
   // Find the latest verification date to show database fresh status
   const lastUpdated = React.useMemo(() => {
+    if (!mounted) return "Sedang memuat...";
     const dates = companies
       .map(c => c.lastVerifiedAt ? new Date(c.lastVerifiedAt).getTime() : 0)
       .filter(t => t > 0);
-    if (dates.length === 0) return "Recently";
+    if (dates.length === 0) return "Baru-baru ini";
     const maxTime = Math.max(...dates);
     return new Date(maxTime).toLocaleDateString("id-ID", {
       day: "numeric",
       month: "long",
       year: "numeric"
     });
-  }, [companies]);
+  }, [companies, mounted]);
 
   // Filter list on client-side dynamically for immediate feedback!
   const filteredCompanies = companies.filter((c) => {
@@ -138,14 +144,25 @@ export default function Dashboard({ initialCompanies }: DashboardProps) {
       return industryMatches || jobsMatch;
     })();
 
-    const matchesWatchlist = showWatchlist || c.status !== "watchlist";
+    const matchesWatchlist = !hideWatchlist || c.status !== "watchlist";
 
     return matchesSearch && matchesLabel && matchesJobs && matchesCategory && matchesWatchlist;
   }).sort((a, b) => {
+    if (sortBy === "name") {
+      return a.name.localeCompare(b.name, "id", { sensitivity: "base" });
+    }
     if (sortBy === "verified") {
       const dateA = a.verifiedAt || a.lastVerifiedAt || "";
       const dateB = b.verifiedAt || b.lastVerifiedAt || "";
       return new Date(dateB).getTime() - new Date(dateA).getTime();
+    }
+    if (sortBy === "jobs") {
+      const countA = a.activeJobs ? a.activeJobs.length : 0;
+      const countB = b.activeJobs ? b.activeJobs.length : 0;
+      if (countA !== countB) {
+        return countB - countA;
+      }
+      return b.verifiedIndonesianCount - a.verifiedIndonesianCount;
     }
     return b.verifiedIndonesianCount - a.verifiedIndonesianCount;
   });
@@ -449,11 +466,13 @@ export default function Dashboard({ initialCompanies }: DashboardProps) {
               <div className="relative">
                 <select
                   value={sortBy}
-                  onChange={(e) => setSortBy(e.target.value as "members" | "verified")}
+                  onChange={(e) => setSortBy(e.target.value as "members" | "verified" | "name" | "jobs")}
                   className="appearance-none bg-[#080d24] border border-white/10 hover:border-white/20 focus:border-brand-primary rounded-xl pl-3.5 pr-8 py-2.5 text-xs text-white/80 focus:text-white font-semibold outline-none transition-all cursor-pointer"
                 >
                   <option value="members">Urutan: Anggota Terbanyak</option>
+                  <option value="jobs">Urutan: Loker Terbanyak</option>
                   <option value="verified">Urutan: Baru Terverifikasi</option>
+                  <option value="name">Urutan: Nama (A-Z)</option>
                 </select>
                 <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2.5 text-white/40">
                   <ChevronDown className="w-3.5 h-3.5" />
@@ -476,13 +495,13 @@ export default function Dashboard({ initialCompanies }: DashboardProps) {
               <label className="flex items-center space-x-2 text-xs font-semibold text-white/70 cursor-pointer select-none border border-white/10 px-3 py-2.5 rounded-xl bg-[#080d24] hover:bg-white/5 transition-all">
                 <input
                   type="checkbox"
-                  checked={showWatchlist}
-                  onChange={(e) => setShowWatchlist(e.target.checked)}
+                  checked={hideWatchlist}
+                  onChange={(e) => setHideWatchlist(e.target.checked)}
                   className="rounded border-white/10 text-brand-primary focus:ring-brand-primary bg-[#080d24] h-4 w-4 transition-all"
                 />
                 <span className="flex items-center space-x-1.5">
                   <Building className="w-3.5 h-3.5 text-brand-accent" />
-                  <span>Tampilkan juga watchlist</span>
+                  <span>Sembunyikan watchlist (unverified)</span>
                 </span>
               </label>
 
@@ -822,7 +841,7 @@ export default function Dashboard({ initialCompanies }: DashboardProps) {
             Data diverifikasi secara dinamis dengan memindai riwayat aktivitas organisasi publik di GitHub. Dukung open-source. Kirimkan saran Anda dan bergabunglah dalam revolusi teknologi Indonesia.
           </p>
           <div className="text-[10px] text-white/20">
-            © {new Date().getFullYear()} Remotika. Hak Cipta Dilindungi Undang-Undang.
+            © 2026 Remotika. Hak Cipta Dilindungi Undang-Undang.
           </div>
         </div>
       </footer>

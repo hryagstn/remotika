@@ -76,15 +76,16 @@ npm run pipeline
 4. **Saringan A (Anggota Publik):** Memindai lokasi profil publik anggota organisasi apakah mengandung kata kunci Indonesia (`jakarta`, `bandung`, `surabaya`, `indonesia`, dll.).
 5. **Saringan B (Asosiasi PR):** Memeriksa kontributor utama yang memiliki asosiasi sebagai `MEMBER` atau `OWNER` pada pull request aktif.
 6. **Saringan C (Domain Email Komit):** Memindai riwayat komit terbaru dan memverifikasi domain email penulis yang cocok dengan situs web resmi perusahaan.
-7. Memperbarui jumlah anggota terverifikasi dan memperkaya data dengan lowongan kerja aktif dari RemoteOK API.
-8. Menyimpan hasil penyaringan kembali ke dalam [companies.json](file:///c:/Laragon/www/remotika/src/data/companies.json).
+7. Memperbarui jumlah anggota terverifikasi dan memperkaya data dengan lowongan kerja aktif dari **RemoteOK API**, **Remotive API**, serta integrasi langsung API Applicant Tracking System (ATS) perusahaan seperti **Greenhouse API** dan **Workday API**.
+8. **Pembersihan Data Otomatis:** Melakukan penyembuhan Mojibake (*on-the-fly Mojibake healing*), decoding entitas HTML (seperti mengonversi `&amp;` menjadi `&`), serta deteksi otomatis dan penerjemahan tulisan non-latin (contoh: Mandarin, Arab) ke bahasa Inggris demi menjaga keseragaman format data di direktori.
+9. Menyimpan hasil penyaringan kembali ke dalam [companies.json](file:///c:/Laragon/www/remotika/src/data/companies.json).
 
 ---
 
 ## 🤖 Pembaruan Otomatis (GitHub Actions)
 
 Proyek ini dilengkapi dengan alur kerja otomatis di [.github/workflows/update-database.yml](file:///c:/Laragon/www/remotika/.github/workflows/update-database.yml):
-- **Jadwal (Schedule):** Berjalan secara otomatis **setiap hari** pukul 00:00 UTC (07:00 WIB) untuk menjaga keakuratan lowongan kerja dan status verifikasi talenta.
+- **Jadwal (Schedule):** Berjalan secara otomatis **setiap hari** pukul 17:00 UTC (00:00 WIB / Tengah Malam) untuk menjaga keakuratan lowongan kerja dan status verifikasi talenta.
 - **Auto-Commit:** GitHub Actions akan menjalankan skrip pipeline secara mandiri, memperbarui berkas `companies.json`, dan melakukan komit/push otomatis ke cabang `main` jika ada perubahan data terverifikasi.
 - **Auto-Deploy Vercel:** Jika Anda menghubungkan repositori GitHub Anda ke **Vercel**, setiap push otomatis ini akan memicu pembangunan ulang produksi (*production build*) secara instan tanpa mengganggu layanan.
 

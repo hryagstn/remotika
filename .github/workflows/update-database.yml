@@ -2,7 +2,7 @@ name: Scheduled Database Update
 
 on:
   schedule:
-    - cron: '0 0 * * *' # Berjalan setiap hari pukul 00:00 UTC (07:00 WIB)
+    - cron: '0 17 * * *' # Berjalan setiap hari pukul 17:00 UTC (00:00 WIB / Tengah Malam)
   workflow_dispatch: # Memungkinkan dijalankan secara manual dari tab Actions di GitHub
 
 jobs:

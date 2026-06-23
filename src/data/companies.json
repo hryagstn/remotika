@@ -8,7 +8,7 @@
     "industry": "Tech & Development Services",
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-06-22T02:33:41.497Z",
+    "lastVerifiedAt": "2026-06-22T22:28:05.885Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -114,7 +114,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 2,
     "label": "Indonesia-Friendly",
-    "lastVerifiedAt": "2026-06-22T02:33:57.554Z",
+    "lastVerifiedAt": "2026-06-22T22:28:27.361Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -154,7 +154,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-06-22T02:34:12.935Z",
+    "lastVerifiedAt": "2026-06-22T22:28:50.208Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -188,7 +188,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-06-22T02:34:18.933Z",
+    "lastVerifiedAt": "2026-06-22T22:28:59.242Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -222,7 +222,7 @@
     "industry": "Tech & Development Services",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-06-22T02:34:25.952Z",
+    "lastVerifiedAt": "2026-06-22T22:29:11.629Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -234,5 +234,3466 @@
       }
     ],
     "verifiedAt": "2026-06-21T09:23:16.817Z"
+  },
+  {
+    "id": "co-10",
+    "name": "Omada.ai",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "outside-sales-representative-omada-ai-1133826",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T22:58:23.945Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Outside Sales Representative",
+        "url": "https://remoteOK.com/remote-jobs/remote-outside-sales-representative-omada-ai-1133826",
+        "tags": [
+          "hr",
+          "teaching",
+          "game dev",
+          "marketing",
+          "exec",
+          "ads",
+          "sales"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "omada.ai"
+  },
+  {
+    "id": "co-11",
+    "name": "Edirq",
+    "githubOrg": "Edirq-RE",
+    "githubOrgUrl": "https://github.com/Edirq-RE",
+    "remoteokSlug": "operations-roles-edirq-1133825",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T22:58:27.940Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Operations Roles",
+        "url": "https://remoteOK.com/remote-jobs/remote-operations-roles-edirq-1133825",
+        "tags": [
+          "teaching",
+          "finance",
+          "c",
+          "exec",
+          "golang",
+          "engineer",
+          "recruiter",
+          "game dev",
+          "infosec",
+          "ops"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "edirq.com"
+  },
+  {
+    "id": "co-12",
+    "name": "Volkswagen (China)",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "Volkswagen (China)",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T22:58:28.942Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "New Media Operations Online",
+        "url": "https://remoteOK.com/remote-jobs/",
+        "tags": [
+          "virtual assistant",
+          "education",
+          "customer support",
+          "marketing",
+          "video",
+          "microsoft",
+          "exec",
+          "ops",
+          "excel",
+          "data entry",
+          "admin"
+        ]
+      },
+      {
+        "title": "Remote Online New Media Operations",
+        "url": "https://remoteOK.com/remote-jobs/",
+        "tags": [
+          "virtual assistant",
+          "education",
+          "customer support",
+          "marketing",
+          "video",
+          "microsoft",
+          "exec",
+          "ops",
+          "excel",
+          "data entry",
+          "admin"
+        ]
+      },
+      {
+        "title": "New Media Operations (Online)",
+        "url": "https://remoteOK.com/remote-jobs/",
+        "tags": []
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "edirq.com"
+  },
+  {
+    "id": "co-13",
+    "name": "Cardiovascular Associates of America - CVAUSA",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "research-and-quality-assistant-cardiovascular-associates-of-america-cvausa-1133812",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T22:58:31.336Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Research and Quality Assistant",
+        "url": "https://remoteOK.com/remote-jobs/remote-research-and-quality-assistant-cardiovascular-associates-of-america-cvausa-1133812",
+        "tags": [
+          "design",
+          "video",
+          "exec",
+          "content writing",
+          "digital nomad",
+          "virtual assistant",
+          "quality assurance"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "cardiovascularassociatesofamericacvausa.com"
+  },
+  {
+    "id": "co-14",
+    "name": "Steward",
+    "githubOrg": "OpenSourceOrg",
+    "githubOrgUrl": "https://github.com/OpenSourceOrg",
+    "remoteokSlug": "members-dont-join-for-dollar-value-steward-1133822",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T22:58:44.019Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Members Don't Join for Dollar Value",
+        "url": "https://remoteOK.com/remote-jobs/remote-members-dont-join-for-dollar-value-steward-1133822",
+        "tags": [
+          "teaching",
+          "finance",
+          "c",
+          "exec",
+          "golang",
+          "engineer",
+          "recruiter"
+        ]
+      },
+      {
+        "title": "Differentiating Membership Offers",
+        "url": "https://remoteOK.com/remote-jobs/remote-differentiating-membership-offers-steward-1133823",
+        "tags": [
+          "teaching",
+          "finance",
+          "c",
+          "exec",
+          "golang",
+          "engineer",
+          "recruiter",
+          "game dev"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "steward.com"
+  },
+  {
+    "id": "co-15",
+    "name": "Houseink Studio",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "freelance-designer-houseink-studio-1133817",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T22:58:46.170Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Freelance Designer",
+        "url": "https://remoteOK.com/remote-jobs/remote-freelance-designer-houseink-studio-1133817",
+        "tags": [
+          "design",
+          "designer",
+          "testing",
+          "finance",
+          "marketing",
+          "excel",
+          "ads",
+          "ecommerce",
+          "part time",
+          "digital nomad"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "houseinkstudio.com"
+  },
+  {
+    "id": "co-16",
+    "name": "bdManagedIT",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "director-of-operations-msp-service-delivery-bdmanagedit-1133848",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T22:58:48.110Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Director of Operations MSP Service Delivery",
+        "url": "https://remoteOK.com/remote-jobs/remote-director-of-operations-msp-service-delivery-bdmanagedit-1133848",
+        "tags": [
+          "design",
+          "coordinator",
+          "exec",
+          "web dev",
+          "speech",
+          "content writing",
+          "marketing",
+          "stats",
+          "full time",
+          "digital nomad",
+          "analyst",
+          "data science",
+          "testing",
+          "hr",
+          "teaching",
+          "sys admin",
+          "part time",
+          "education",
+          "architecture",
+          "technical",
+          "customer support",
+          "travel",
+          "finance",
+          "ops",
+          "recruiter"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "bdmanagedit.com"
+  },
+  {
+    "id": "co-17",
+    "name": "Mississippi Army National Guard Biloxi Office",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "transport-mississippi-army-national-guard-biloxi-office-1133802",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T22:58:50.253Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "TRANSPORT",
+        "url": "https://remoteOK.com/remote-jobs/remote-transport-mississippi-army-national-guard-biloxi-office-1133802",
+        "tags": [
+          "exec",
+          "ops"
+        ]
+      },
+      {
+        "title": "CYBER",
+        "url": "https://remoteOK.com/remote-jobs/remote-cyber-mississippi-army-national-guard-biloxi-office-1133824",
+        "tags": [
+          "teaching",
+          "finance",
+          "c",
+          "exec",
+          "golang",
+          "engineer",
+          "recruiter",
+          "game dev",
+          "infosec",
+          "ops"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "mississippiarmynationalguardbiloxioffice.com"
+  },
+  {
+    "id": "co-18",
+    "name": "NeuLife Rehabilitation",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "chro-neulife-rehabilitation-1133813",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T22:58:52.656Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "CHRO",
+        "url": "https://remoteOK.com/remote-jobs/remote-chro-neulife-rehabilitation-1133813",
+        "tags": [
+          "design",
+          "video",
+          "exec",
+          "content writing",
+          "digital nomad",
+          "virtual assistant",
+          "quality assurance",
+          "hr",
+          "customer support",
+          "marketing",
+          "travel",
+          "payroll",
+          "finance",
+          "senior",
+          "ops",
+          "stats",
+          "medical",
+          "recruiter",
+          "full time"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "neuliferehabilitation.com"
+  },
+  {
+    "id": "co-19",
+    "name": "Viajes Marchante",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "agente-de-viajes-online-viajes-marchante-1133749",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T22:58:54.577Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Agente de Viajes Online",
+        "url": "https://remoteOK.com/remote-jobs/remote-agente-de-viajes-online-viajes-marchante-1133749",
+        "tags": []
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "viajesmarchante.com"
+  },
+  {
+    "id": "co-20",
+    "name": "Twine",
+    "githubOrg": "twine",
+    "githubOrgUrl": "https://github.com/twine",
+    "remoteokSlug": "social-media-manager-fashion-brand-twine-1133748",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T22:58:56.360Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Social Media Manager Fashion Brand",
+        "url": "https://remoteOK.com/remote-jobs/remote-social-media-manager-fashion-brand-twine-1133748",
+        "tags": [
+          "exec",
+          "social media"
+        ]
+      },
+      {
+        "title": "Content Creator UGC",
+        "url": "https://remoteOK.com/remote-jobs/remote-content-creator-ugc-twine-1133744",
+        "tags": [
+          "content writing"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "twine.com"
+  },
+  {
+    "id": "co-21",
+    "name": "Valpak of Southeastern Wisconsin",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "corporate-valpak-of-southeastern-wisconsin-1133840",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T22:58:58.345Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Corporate",
+        "url": "https://remoteOK.com/remote-jobs/remote-corporate-valpak-of-southeastern-wisconsin-1133840",
+        "tags": [
+          "education",
+          "customer support",
+          "marketing",
+          "exec",
+          "accounting",
+          "finance",
+          "ops",
+          "legal",
+          "sales"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "valpakofsoutheasternwisconsin.com"
+  },
+  {
+    "id": "co-22",
+    "name": "OWL Services",
+    "githubOrg": "OWL-Services-LLC",
+    "githubOrgUrl": "https://github.com/OWL-Services-LLC",
+    "remoteokSlug": "data-analyst-data-warehouse-analytics-and-bi-owl-services-1133828",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T22:59:09.413Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Data Analyst Data Warehouse Analytics and BI",
+        "url": "https://remoteOK.com/remote-jobs/remote-data-analyst-data-warehouse-analytics-and-bi-owl-services-1133828",
+        "tags": [
+          "analyst",
+          "design",
+          "sys admin",
+          "infosec",
+          "education",
+          "dev",
+          "testing",
+          "finance",
+          "cloud",
+          "exec",
+          "data science",
+          "ops",
+          "stats",
+          "sales",
+          "medical",
+          "engineer",
+          "digital nomad"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "owlservices.com"
+  },
+  {
+    "id": "co-23",
+    "name": "Agency MJ",
+    "githubOrg": "MJHAGENCY",
+    "githubOrgUrl": "https://github.com/MJHAGENCY",
+    "remoteokSlug": "retoucher-agency-mj-1133811",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T22:59:12.887Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Retoucher",
+        "url": "https://remoteOK.com/remote-jobs/remote-retoucher-agency-mj-1133811",
+        "tags": [
+          "design",
+          "video",
+          "exec",
+          "content writing",
+          "digital nomad"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "agencymj.com"
+  },
+  {
+    "id": "co-24",
+    "name": "Ross Stores, Inc.",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "assistant-store-manager-ross-stores-inc-1133775",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T22:59:15.046Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Assistant Store Manager",
+        "url": "https://remoteOK.com/remote-jobs/remote-assistant-store-manager-ross-stores-inc-1133775",
+        "tags": [
+          "sys admin",
+          "technical",
+          "supervisor",
+          "customer support",
+          "testing",
+          "exec",
+          "medical",
+          "engineer",
+          "recruiter",
+          "marketing",
+          "education",
+          "senior",
+          "ops",
+          "accounting",
+          "dev",
+          "junior",
+          "excel",
+          "digital nomad",
+          "consulting",
+          "finance",
+          "data entry",
+          "design",
+          "web dev",
+          "video",
+          "c",
+          "virtual assistant",
+          "speech",
+          "microsoft",
+          "sales",
+          "front end",
+          "backend",
+          "game dev",
+          "full stack",
+          "devops",
+          "laravel",
+          "cloud",
+          "php",
+          "typescript",
+          "golang",
+          "full time",
+          "payroll",
+          "part time",
+          "vfx",
+          "designer",
+          "travel",
+          "music",
+          "internship",
+          "saas",
+          "salesforce",
+          "content writing",
+          "legal",
+          "teaching"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "rossstoresinc.com"
+  },
+  {
+    "id": "co-25",
+    "name": "Eaton",
+    "githubOrg": "etn-corp",
+    "githubOrgUrl": "https://github.com/etn-corp",
+    "remoteokSlug": "manufacturing-operator-i-eaton-1133763",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T22:59:17.598Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Manufacturing Operator I",
+        "url": "https://remoteOK.com/remote-jobs/remote-manufacturing-operator-i-eaton-1133763",
+        "tags": [
+          "sys admin",
+          "technical",
+          "supervisor",
+          "customer support",
+          "testing",
+          "exec",
+          "medical",
+          "engineer",
+          "recruiter",
+          "marketing",
+          "education",
+          "senior",
+          "ops",
+          "accounting",
+          "dev",
+          "junior",
+          "excel",
+          "digital nomad",
+          "consulting",
+          "finance",
+          "data entry",
+          "design",
+          "web dev",
+          "video",
+          "c",
+          "virtual assistant",
+          "speech",
+          "microsoft",
+          "sales",
+          "front end",
+          "backend",
+          "game dev",
+          "full stack",
+          "devops",
+          "laravel",
+          "cloud",
+          "php",
+          "typescript",
+          "golang",
+          "full time",
+          "payroll"
+        ]
+      },
+      {
+        "title": "Manufacturing Manager",
+        "url": "https://remoteOK.com/remote-jobs/remote-manufacturing-manager-eaton-1133779",
+        "tags": [
+          "sys admin",
+          "technical",
+          "supervisor",
+          "customer support",
+          "testing",
+          "exec",
+          "medical",
+          "engineer",
+          "recruiter",
+          "marketing",
+          "education",
+          "senior",
+          "ops",
+          "accounting",
+          "dev",
+          "junior",
+          "excel",
+          "digital nomad",
+          "consulting",
+          "finance",
+          "data entry",
+          "design",
+          "web dev",
+          "video",
+          "c",
+          "virtual assistant",
+          "speech",
+          "microsoft",
+          "sales",
+          "front end",
+          "backend",
+          "game dev",
+          "full stack",
+          "devops",
+          "laravel",
+          "cloud",
+          "php",
+          "typescript",
+          "golang",
+          "full time",
+          "payroll",
+          "part time",
+          "vfx",
+          "designer",
+          "travel",
+          "music",
+          "internship",
+          "saas",
+          "salesforce",
+          "content writing",
+          "legal",
+          "teaching",
+          "hr",
+          "ecommerce",
+          "coordinator"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "eaton.com"
+  },
+  {
+    "id": "co-26",
+    "name": "Haystack",
+    "githubOrg": "haystack",
+    "githubOrgUrl": "https://github.com/haystack",
+    "remoteokSlug": "scrum-master-haystack-1133814",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T22:59:27.949Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Scrum Master",
+        "url": "https://remoteOK.com/remote-jobs/remote-scrum-master-haystack-1133814",
+        "tags": [
+          "design",
+          "video",
+          "exec",
+          "content writing",
+          "digital nomad",
+          "virtual assistant",
+          "quality assurance",
+          "hr",
+          "customer support",
+          "marketing",
+          "travel",
+          "payroll",
+          "finance",
+          "senior",
+          "ops",
+          "stats",
+          "medical",
+          "recruiter",
+          "full time",
+          "scrum",
+          "jira",
+          "infosec",
+          "teaching",
+          "technical",
+          "engineer"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "haystack.com"
+  },
+  {
+    "id": "co-27",
+    "name": "Talentoma",
+    "githubOrg": "talentomatic",
+    "githubOrgUrl": "https://github.com/talentomatic",
+    "remoteokSlug": "project-scheduling-assistant-talentoma-1133856",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T22:59:31.570Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Project Scheduling Assistant",
+        "url": "https://remoteOK.com/remote-jobs/remote-project-scheduling-assistant-talentoma-1133856",
+        "tags": [
+          "virtual assistant",
+          "exec",
+          "customer support",
+          "dev",
+          "ops",
+          "digital nomad",
+          "education",
+          "marketing"
+        ]
+      },
+      {
+        "title": "Project Assistant",
+        "url": "https://remoteOK.com/remote-jobs/remote-project-assistant-talentoma-1133838",
+        "tags": [
+          "analyst",
+          "design",
+          "sys admin",
+          "infosec",
+          "education",
+          "dev",
+          "testing",
+          "finance",
+          "cloud",
+          "exec",
+          "data science",
+          "ops",
+          "stats",
+          "sales",
+          "medical",
+          "engineer",
+          "digital nomad",
+          "hr",
+          "customer support",
+          "marketing",
+          "part time",
+          "data entry",
+          "virtual assistant",
+          "coordinator",
+          "travel",
+          "recruiter",
+          "junior",
+          "amazon"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "talentoma.com"
+  },
+  {
+    "id": "co-28",
+    "name": "Cambridge Spark",
+    "githubOrg": "cambridgespark-dev",
+    "githubOrgUrl": "https://github.com/cambridgespark-dev",
+    "remoteokSlug": "product-manager-cambridge-spark-1133737",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T22:59:37.494Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Product Manager",
+        "url": "https://remoteOK.com/remote-jobs/remote-product-manager-cambridge-spark-1133737",
+        "tags": [
+          "exec",
+          "social media",
+          "sys admin",
+          "infosec",
+          "technical",
+          "customer support",
+          "testing",
+          "marketing",
+          "dev",
+          "scheme",
+          "microsoft",
+          "senior",
+          "recruiter",
+          "digital nomad",
+          "legal",
+          "product manager",
+          "travel"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "cambridgespark.com"
+  },
+  {
+    "id": "co-29",
+    "name": "Montresor Legal",
+    "githubOrg": "ThirdWayRecruitment",
+    "githubOrgUrl": "https://github.com/ThirdWayRecruitment",
+    "remoteokSlug": "document-review-paralegals-fully-project-montresor-legal-1133736",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T22:59:40.843Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Document Review Paralegals Fully Project",
+        "url": "https://remoteOK.com/remote-jobs/remote-document-review-paralegals-fully-project-montresor-legal-1133736",
+        "tags": [
+          "exec",
+          "social media",
+          "sys admin",
+          "infosec",
+          "technical",
+          "customer support",
+          "testing",
+          "marketing",
+          "dev",
+          "scheme",
+          "microsoft",
+          "senior",
+          "recruiter",
+          "digital nomad",
+          "legal"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "montresorlegal.com"
+  },
+  {
+    "id": "co-30",
+    "name": "Parisa Wang",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "social-media-manager-luxury-fashion-tiktok-instagram-parisa-wang-1133734",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T22:59:42.799Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Social Media Manager â Luxury Fashion TikTok & Instagram",
+        "url": "https://remoteOK.com/remote-jobs/remote-social-media-manager-luxury-fashion-tiktok-instagram-parisa-wang-1133734",
+        "tags": [
+          "exec",
+          "social media"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "parisawang.com"
+  },
+  {
+    "id": "co-31",
+    "name": "Ucademy",
+    "githubOrg": "UcademyTech",
+    "githubOrgUrl": "https://github.com/UcademyTech",
+    "remoteokSlug": "preparador-a-de-oposiciones-de-magisterio-ucademy-1133849",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T22:59:51.767Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Preparador a de Oposiciones de Magisterio",
+        "url": "https://remoteOK.com/remote-jobs/remote-preparador-a-de-oposiciones-de-magisterio-ucademy-1133849",
+        "tags": []
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "ucademy.com"
+  },
+  {
+    "id": "co-32",
+    "name": "SANY America",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "office-assistant-sany-america-1133855",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T22:59:53.759Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Office Assistant",
+        "url": "https://remoteOK.com/remote-jobs/remote-office-assistant-sany-america-1133855",
+        "tags": [
+          "virtual assistant",
+          "exec",
+          "customer support",
+          "dev",
+          "ops",
+          "digital nomad"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "sanyamerica.com"
+  },
+  {
+    "id": "co-33",
+    "name": "OCT Consulting, LLC",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "certified-cmmc-assessor-oct-consulting-llc-1133730",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T22:59:55.573Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Certified CMMC Assessor",
+        "url": "https://remoteOK.com/remote-jobs/remote-certified-cmmc-assessor-oct-consulting-llc-1133730",
+        "tags": [
+          "consulting",
+          "infosec",
+          "customer support",
+          "testing",
+          "marketing",
+          "dev",
+          "travel",
+          "education",
+          "exec",
+          "ops",
+          "full time",
+          "part time",
+          "digital nomad"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "octconsultingllc.com"
+  },
+  {
+    "id": "co-34",
+    "name": "AltaML",
+    "githubOrg": "altaml",
+    "githubOrgUrl": "https://github.com/altaml",
+    "remoteokSlug": "growth-product-manager-altaml-1133729",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T23:00:04.401Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Growth Product Manager",
+        "url": "https://remoteOK.com/remote-jobs/remote-growth-product-manager-altaml-1133729",
+        "tags": [
+          "product manager",
+          "marketing",
+          "exec",
+          "design",
+          "saas",
+          "technical",
+          "writer",
+          "customer support",
+          "travel",
+          "education",
+          "ops",
+          "sales",
+          "engineer",
+          "digital nomad"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "altaml.com"
+  },
+  {
+    "id": "co-35",
+    "name": "Max Retail",
+    "githubOrg": "maxretail",
+    "githubOrgUrl": "https://github.com/maxretail",
+    "remoteokSlug": "customer-support-associate-max-retail-1133728",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T23:00:07.479Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Customer Support Associate",
+        "url": "https://remoteOK.com/remote-jobs/remote-customer-support-associate-max-retail-1133728",
+        "tags": [
+          "customer support",
+          "exec",
+          "ops"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "maxretail.com"
+  },
+  {
+    "id": "co-36",
+    "name": "RG&T Solutions",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "no-experience-rgampt-solutions-1133829",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T23:00:10.128Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "No Experience",
+        "url": "https://remoteOK.com/remote-jobs/remote-no-experience-rgampt-solutions-1133829",
+        "tags": [
+          "analyst",
+          "design",
+          "sys admin",
+          "infosec",
+          "education",
+          "dev",
+          "testing",
+          "finance",
+          "cloud",
+          "exec",
+          "data science",
+          "ops",
+          "stats",
+          "sales",
+          "medical",
+          "engineer",
+          "digital nomad",
+          "hr",
+          "customer support",
+          "marketing",
+          "part time"
+        ]
+      },
+      {
+        "title": "Data Entry Clerk",
+        "url": "https://remoteOK.com/remote-jobs/remote-data-entry-clerk-rgampt-solutions-1133830",
+        "tags": [
+          "analyst",
+          "design",
+          "sys admin",
+          "infosec",
+          "education",
+          "dev",
+          "testing",
+          "finance",
+          "cloud",
+          "exec",
+          "data science",
+          "ops",
+          "stats",
+          "sales",
+          "medical",
+          "engineer",
+          "digital nomad",
+          "hr",
+          "customer support",
+          "marketing",
+          "part time",
+          "data entry"
+        ]
+      },
+      {
+        "title": "Product Tester",
+        "url": "https://remoteOK.com/remote-jobs/remote-product-tester-rgampt-solutions-1133847",
+        "tags": [
+          "design",
+          "coordinator",
+          "exec",
+          "web dev",
+          "speech",
+          "content writing",
+          "marketing",
+          "stats",
+          "full time",
+          "digital nomad",
+          "analyst",
+          "data science",
+          "testing",
+          "hr",
+          "teaching",
+          "sys admin",
+          "part time"
+        ]
+      },
+      {
+        "title": "Administrative Assistant Research Panel",
+        "url": "https://remoteOK.com/remote-jobs/remote-administrative-assistant-research-panel-rgampt-solutions-1133835",
+        "tags": [
+          "analyst",
+          "design",
+          "sys admin",
+          "infosec",
+          "education",
+          "dev",
+          "testing",
+          "finance",
+          "cloud",
+          "exec",
+          "data science",
+          "ops",
+          "stats",
+          "sales",
+          "medical",
+          "engineer",
+          "digital nomad",
+          "hr",
+          "customer support",
+          "marketing",
+          "part time",
+          "data entry",
+          "virtual assistant",
+          "coordinator",
+          "travel",
+          "recruiter",
+          "junior"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "rgamptsolutions.com"
+  },
+  {
+    "id": "co-37",
+    "name": "Vive Social + PR",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "content-creator-vive-social-pr-1133820",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T23:00:12.079Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Content Creator",
+        "url": "https://remoteOK.com/remote-jobs/remote-content-creator-vive-social-pr-1133820",
+        "tags": [
+          "exec",
+          "content writing"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "vivesocialpr.com"
+  },
+  {
+    "id": "co-38",
+    "name": "Dexterra",
+    "githubOrg": "DexterraGroup",
+    "githubOrgUrl": "https://github.com/DexterraGroup",
+    "remoteokSlug": "cleaner-dexterra-1133726",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T23:00:15.970Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Cleaner",
+        "url": "https://remoteOK.com/remote-jobs/remote-cleaner-dexterra-1133726",
+        "tags": [
+          "hr",
+          "recruiter",
+          "non tech",
+          "education",
+          "medical",
+          "supervisor",
+          "exec",
+          "full time",
+          "part time"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "dexterra.com"
+  },
+  {
+    "id": "co-39",
+    "name": "Ateneo de Manila University",
+    "githubOrg": "ateneodemanilauniversity",
+    "githubOrgUrl": "https://github.com/ateneodemanilauniversity",
+    "remoteokSlug": "general-virtual-assistant-ateneo-de-manila-university-1133731",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T23:00:18.337Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "General Virtual Assistant",
+        "url": "https://remoteOK.com/remote-jobs/remote-general-virtual-assistant-ateneo-de-manila-university-1133731",
+        "tags": [
+          "virtual assistant",
+          "customer support",
+          "microsoft",
+          "ops",
+          "excel",
+          "non tech"
+        ]
+      },
+      {
+        "title": "Live Chat Support",
+        "url": "https://remoteOK.com/remote-jobs/remote-live-chat-support-ateneo-de-manila-university-1133741",
+        "tags": [
+          "accounting",
+          "finance",
+          "cloud",
+          "microsoft",
+          "exec",
+          "sys admin",
+          "customer support",
+          "dev",
+          "digital nomad"
+        ]
+      },
+      {
+        "title": "Bookkeeper",
+        "url": "https://remoteOK.com/remote-jobs/remote-bookkeeper-ateneo-de-manila-university-1133740",
+        "tags": [
+          "accounting",
+          "finance",
+          "cloud",
+          "microsoft",
+          "exec"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "ateneodemanilauniversity.com"
+  },
+  {
+    "id": "co-40",
+    "name": "Think Academy U.S",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "language-arts-teacher-think-academy-u-s-1133816",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T23:00:20.776Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Language Arts Teacher",
+        "url": "https://remoteOK.com/remote-jobs/remote-language-arts-teacher-think-academy-u-s-1133816",
+        "tags": [
+          "design",
+          "video",
+          "exec",
+          "content writing",
+          "digital nomad",
+          "virtual assistant",
+          "quality assurance",
+          "hr",
+          "customer support",
+          "marketing",
+          "travel",
+          "payroll",
+          "finance",
+          "senior",
+          "ops",
+          "stats",
+          "medical",
+          "recruiter",
+          "full time",
+          "scrum",
+          "jira",
+          "infosec",
+          "teaching",
+          "technical",
+          "engineer",
+          "microsoft",
+          "education",
+          "part time"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "thethinkacademy.com"
+  },
+  {
+    "id": "co-41",
+    "name": "AppleOne Employment Services",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "tax-manager-appleone-employment-services-1133756",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T23:00:22.725Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Tax Manager",
+        "url": "https://remoteOK.com/remote-jobs/remote-tax-manager-appleone-employment-services-1133756",
+        "tags": [
+          "sys admin",
+          "technical",
+          "supervisor",
+          "customer support",
+          "testing",
+          "exec",
+          "medical",
+          "engineer",
+          "recruiter",
+          "marketing",
+          "education",
+          "senior",
+          "ops",
+          "accounting",
+          "dev",
+          "junior",
+          "excel",
+          "digital nomad",
+          "consulting",
+          "finance"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "appleoneemploymentservices.com"
+  },
+  {
+    "id": "co-42",
+    "name": "Empassion Health",
+    "githubOrg": "empassion-health",
+    "githubOrgUrl": "https://github.com/empassion-health",
+    "remoteokSlug": "care-coordinator-empassion-health-1133721",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T23:00:32.204Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Care Coordinator",
+        "url": "https://remoteOK.com/remote-jobs/remote-care-coordinator-empassion-health-1133721",
+        "tags": [
+          "exec",
+          "design",
+          "architecture",
+          "recruiter",
+          "strategy",
+          "customer support",
+          "c",
+          "full time",
+          "digital nomad",
+          "dev",
+          "speech",
+          "coordinator",
+          "medical"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "empassionhealth.com"
+  },
+  {
+    "id": "co-43",
+    "name": "Coralisle Group Ltd.",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "pharmacy-technician-coralisle-group-ltd-1133739",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T23:00:34.778Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Pharmacy Technician",
+        "url": "https://remoteOK.com/remote-jobs/remote-pharmacy-technician-coralisle-group-ltd-1133739",
+        "tags": [
+          "c sharp",
+          "sys admin",
+          "technical",
+          "customer support",
+          "marketing",
+          "travel",
+          "quality assurance",
+          "javascript",
+          "c",
+          "css",
+          "html",
+          "exec",
+          "ops",
+          "dev",
+          "finance",
+          "microsoft",
+          "medical",
+          "digital nomad"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "coralislegroupltd.com"
+  },
+  {
+    "id": "co-44",
+    "name": "Collate",
+    "githubOrg": "collate",
+    "githubOrgUrl": "https://github.com/collate",
+    "remoteokSlug": "all-other-roles-collate-1133733",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T23:00:40.844Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "All Other Roles",
+        "url": "https://remoteOK.com/remote-jobs/remote-all-other-roles-collate-1133733",
+        "tags": [
+          "customer support",
+          "recruiter",
+          "non tech"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "collate.com"
+  },
+  {
+    "id": "co-45",
+    "name": "Helic & Co",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "junior-human-resources-assistant-helic-co-1133714",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T23:00:43.009Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Junior Human Resources Assistant",
+        "url": "https://remoteOK.com/remote-jobs/remote-junior-human-resources-assistant-helic-co-1133714",
+        "tags": [
+          "exec",
+          "design",
+          "education",
+          "marketing",
+          "content writing",
+          "stats",
+          "social media",
+          "digital nomad",
+          "ops",
+          "virtual assistant",
+          "coordinator",
+          "customer support",
+          "excel",
+          "sales",
+          "junior",
+          "hr"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "helicco.com"
+  },
+  {
+    "id": "co-46",
+    "name": "Robots & Pencils",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "director-of-operations-robots-pencils-1133712",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T23:00:44.929Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Director of Operations",
+        "url": "https://remoteOK.com/remote-jobs/remote-director-of-operations-robots-pencils-1133712",
+        "tags": [
+          "exec",
+          "design",
+          "education",
+          "marketing",
+          "content writing",
+          "stats",
+          "social media",
+          "digital nomad",
+          "ops"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "robotspencils.com"
+  },
+  {
+    "id": "co-47",
+    "name": "CREW Resources Worldwide",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "register-now-crew-resources-worldwide-1133803",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T23:00:47.105Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Register Now",
+        "url": "https://remoteOK.com/remote-jobs/remote-register-now-crew-resources-worldwide-1133803",
+        "tags": [
+          "exec",
+          "ops"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "crewresourcesworldwide.com"
+  },
+  {
+    "id": "co-48",
+    "name": "City of New Westminster",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "building-official-3-inspections-city-of-new-westminster-1133724",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T23:00:49.011Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Building Official 3 Inspections",
+        "url": "https://remoteOK.com/remote-jobs/remote-building-official-3-inspections-city-of-new-westminster-1133724",
+        "tags": [
+          "hr",
+          "recruiter",
+          "non tech"
+        ]
+      },
+      {
+        "title": "Election Officials",
+        "url": "https://remoteOK.com/remote-jobs/remote-election-officials-city-of-new-westminster-1133723",
+        "tags": [
+          "hr",
+          "recruiter",
+          "non tech"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "cityofnewwestminster.com"
+  },
+  {
+    "id": "co-49",
+    "name": "Wing",
+    "githubOrg": "winglang",
+    "githubOrgUrl": "https://github.com/winglang",
+    "remoteokSlug": "director-of-communications-wing-1133719",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T23:00:59.398Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Director of Communications",
+        "url": "https://remoteOK.com/remote-jobs/remote-director-of-communications-wing-1133719",
+        "tags": [
+          "exec",
+          "design",
+          "architecture",
+          "recruiter",
+          "strategy",
+          "customer support",
+          "c",
+          "full time",
+          "digital nomad"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "wing.com"
+  },
+  {
+    "id": "co-50",
+    "name": "OnlineJobs.PH",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "fast-hire-for-va-receptionist-onlinejobs-ph-1133720",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T23:01:01.813Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Fast Hire for VA Receptionist",
+        "url": "https://remoteOK.com/remote-jobs/remote-fast-hire-for-va-receptionist-onlinejobs-ph-1133720",
+        "tags": [
+          "exec",
+          "design",
+          "architecture",
+          "recruiter",
+          "strategy",
+          "customer support",
+          "c",
+          "full time",
+          "digital nomad",
+          "dev",
+          "speech"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "onlinejobsph.com"
+  },
+  {
+    "id": "co-51",
+    "name": "Dart",
+    "githubOrg": "dart-lang",
+    "githubOrgUrl": "https://github.com/dart-lang",
+    "remoteokSlug": "project-systems-specialist-dart-1133738",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T23:01:34.736Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Project Systems Specialist",
+        "url": "https://remoteOK.com/remote-jobs/remote-project-systems-specialist-dart-1133738",
+        "tags": [
+          "c sharp",
+          "sys admin",
+          "technical",
+          "customer support",
+          "marketing",
+          "travel",
+          "quality assurance",
+          "javascript",
+          "c",
+          "css",
+          "html",
+          "exec",
+          "ops"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "dart.com"
+  },
+  {
+    "id": "co-52",
+    "name": "Rotaract Club of University of Ruhuna",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "social-media-manager-rotaract-club-of-university-of-ruhuna-1133711",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T23:01:36.873Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Social Media Manager",
+        "url": "https://remoteOK.com/remote-jobs/remote-social-media-manager-rotaract-club-of-university-of-ruhuna-1133711",
+        "tags": [
+          "exec",
+          "design",
+          "education",
+          "marketing",
+          "content writing",
+          "stats",
+          "social media",
+          "digital nomad"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "rotaractclubofuniversityofruhuna.com"
+  },
+  {
+    "id": "co-53",
+    "name": "Destination Careers",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "online-online-appointment-setter-booking-hotels-entry-level-destination-careers-1133882",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T23:01:38.812Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Online Online Appointment Setter Booking Hotels Entry Level",
+        "url": "https://remoteOK.com/remote-jobs/remote-online-online-appointment-setter-booking-hotels-entry-level-destination-careers-1133882",
+        "tags": [
+          "hr",
+          "consulting",
+          "analyst",
+          "data science",
+          "excel",
+          "non tech",
+          "virtual assistant",
+          "education",
+          "customer support",
+          "marketing",
+          "travel",
+          "sales",
+          "recruiter"
+        ]
+      },
+      {
+        "title": "Online Booking & Scheduling Coordinator",
+        "url": "https://remoteOK.com/remote-jobs/remote-online-booking-amp-scheduling-coordinator-destination-careers-1133833",
+        "tags": [
+          "analyst",
+          "design",
+          "sys admin",
+          "infosec",
+          "education",
+          "dev",
+          "testing",
+          "finance",
+          "cloud",
+          "exec",
+          "data science",
+          "ops",
+          "stats",
+          "sales",
+          "medical",
+          "engineer",
+          "digital nomad",
+          "hr",
+          "customer support",
+          "marketing",
+          "part time",
+          "data entry",
+          "virtual assistant",
+          "coordinator",
+          "travel",
+          "recruiter"
+        ]
+      },
+      {
+        "title": "Online Vacation Planning Assistant Entry Level",
+        "url": "https://remoteOK.com/remote-jobs/remote-online-vacation-planning-assistant-entry-level-destination-careers-1133836",
+        "tags": [
+          "analyst",
+          "design",
+          "sys admin",
+          "infosec",
+          "education",
+          "dev",
+          "testing",
+          "finance",
+          "cloud",
+          "exec",
+          "data science",
+          "ops",
+          "stats",
+          "sales",
+          "medical",
+          "engineer",
+          "digital nomad",
+          "hr",
+          "customer support",
+          "marketing",
+          "part time",
+          "data entry",
+          "virtual assistant",
+          "coordinator",
+          "travel",
+          "recruiter",
+          "junior"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "destinationcareers.com"
+  },
+  {
+    "id": "co-54",
+    "name": "Pashet",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "influencer-pashet-1133708",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T23:01:40.695Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Influencer",
+        "url": "https://remoteOK.com/remote-jobs/remote-influencer-pashet-1133708",
+        "tags": [
+          "sys admin",
+          "supervisor",
+          "customer support",
+          "finance",
+          "exec",
+          "ops",
+          "social media",
+          "infosec",
+          "technical",
+          "microsoft",
+          "engineer",
+          "linux"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "pashet.com"
+  },
+  {
+    "id": "co-55",
+    "name": "Raksha Elite Solutions (Raksha Prime)",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "sales-raksha-elite-solutions-raksha-prime-1133810",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T23:01:43.480Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Sales",
+        "url": "https://remoteOK.com/remote-jobs/remote-sales-raksha-elite-solutions-raksha-prime-1133810",
+        "tags": [
+          "technical",
+          "customer support",
+          "travel",
+          "education",
+          "exec",
+          "sales",
+          "engineer"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "rakshaelitesolutionsrakshaprime.com"
+  },
+  {
+    "id": "co-56",
+    "name": "Ministry of Housing, Communities and Local Government",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "hr-business-partner-ministry-of-housing-communities-and-local-government-1133896",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T23:01:45.874Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "HR Business Partner",
+        "url": "https://remoteOK.com/remote-jobs/remote-hr-business-partner-ministry-of-housing-communities-and-local-government-1133896",
+        "tags": [
+          "design",
+          "designer",
+          "testing",
+          "finance",
+          "marketing",
+          "excel",
+          "ads",
+          "full time",
+          "digital nomad",
+          "video",
+          "exec",
+          "content writing",
+          "golang",
+          "art direction",
+          "part time",
+          "hr",
+          "infosec",
+          "consulting",
+          "technical",
+          "customer support",
+          "dev",
+          "c",
+          "scheme",
+          "senior",
+          "ops",
+          "recruiter"
+        ]
+      },
+      {
+        "title": "Strategy and Engagement Officer",
+        "url": "https://remoteOK.com/remote-jobs/remote-strategy-and-engagement-officer-ministry-of-housing-communities-and-local-government-1133735",
+        "tags": [
+          "exec",
+          "social media",
+          "sys admin",
+          "infosec",
+          "technical",
+          "customer support",
+          "testing",
+          "marketing",
+          "dev",
+          "scheme",
+          "microsoft",
+          "senior",
+          "recruiter",
+          "digital nomad"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "ministryofhousingcommunitiesandlocalgovernment.com"
+  },
+  {
+    "id": "co-57",
+    "name": "Brooklyn Cured",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "marketing-assistant-brooklyn-cured-1133713",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T23:01:47.949Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Marketing Assistant",
+        "url": "https://remoteOK.com/remote-jobs/remote-marketing-assistant-brooklyn-cured-1133713",
+        "tags": [
+          "exec",
+          "design",
+          "education",
+          "marketing",
+          "content writing",
+          "stats",
+          "social media",
+          "digital nomad",
+          "ops",
+          "virtual assistant",
+          "coordinator",
+          "customer support",
+          "excel",
+          "sales"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "brooklyncured.com"
+  },
+  {
+    "id": "co-58",
+    "name": "CHANEL",
+    "githubOrg": "Quddi-Tech",
+    "githubOrgUrl": "https://github.com/Quddi-Tech",
+    "remoteokSlug": "fashion-product-merchandising-manager-italy-market-chanel-1133806",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T23:01:57.050Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "FASHION PRODUCT MERCHANDISING MANAGER Italy Market",
+        "url": "https://remoteOK.com/remote-jobs/remote-fashion-product-merchandising-manager-italy-market-chanel-1133806",
+        "tags": [
+          "exec",
+          "customer support",
+          "marketing",
+          "sales",
+          "medical"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "chanel.com"
+  },
+  {
+    "id": "co-59",
+    "name": "Ellipsis Academy",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "be-a-part-of-ellipsis-academy-coaching-team-ellipsis-academy-1133805",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T23:01:59.189Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Be a part of Ellipsis Academy coaching team",
+        "url": "https://remoteOK.com/remote-jobs/remote-be-a-part-of-ellipsis-academy-coaching-team-ellipsis-academy-1133805",
+        "tags": [
+          "exec",
+          "ops",
+          "math"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "ellipsisacademy.com"
+  },
+  {
+    "id": "co-60",
+    "name": "Zirtual",
+    "githubOrg": "zirtual2",
+    "githubOrgUrl": "https://github.com/zirtual2",
+    "remoteokSlug": "executive-assistant-france-zirtual-1133698",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T23:02:02.062Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Executive Assistant France",
+        "url": "https://remoteOK.com/remote-jobs/remote-executive-assistant-france-zirtual-1133698",
+        "tags": [
+          "virtual assistant",
+          "exec"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "zirtual.com"
+  },
+  {
+    "id": "co-61",
+    "name": "TUS Media",
+    "githubOrg": "LIT-IDM",
+    "githubOrgUrl": "https://github.com/LIT-IDM",
+    "remoteokSlug": "ninera-y-tutor-a-de-repaso-tus-media-1133827",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T23:02:12.188Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "NiÃ±era y tutor a de repaso",
+        "url": "https://remoteOK.com/remote-jobs/remote-ninera-y-tutor-a-de-repaso-tus-media-1133827",
+        "tags": [
+          "teaching"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "tusmedia.com"
+  },
+  {
+    "id": "co-62",
+    "name": "KMA Legal Recruitment",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "employment-lawyer-fully-kma-legal-recruitment-1133697",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T23:02:14.346Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Employment Lawyer Fully",
+        "url": "https://remoteOK.com/remote-jobs/remote-employment-lawyer-fully-kma-legal-recruitment-1133697",
+        "tags": [
+          "legal",
+          "recruiter",
+          "non tech"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "kmalegalrecruitment.com"
+  },
+  {
+    "id": "co-63",
+    "name": "Recruitlytixs HR",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "entry-level-administrative-assistant-recruitlytixs-hr-1133743",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T23:02:16.296Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Entry Level Administrative Assistant",
+        "url": "https://remoteOK.com/remote-jobs/remote-entry-level-administrative-assistant-recruitlytixs-hr-1133743",
+        "tags": [
+          "hr",
+          "virtual assistant",
+          "education",
+          "customer support",
+          "marketing",
+          "video",
+          "microsoft",
+          "exec",
+          "ops",
+          "excel"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "recruitlytixshr.com"
+  },
+  {
+    "id": "co-64",
+    "name": "Work Force Nexus",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "junior-graphic-designer-work-force-nexus-1133696",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T23:02:18.229Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Junior Graphic Designer",
+        "url": "https://remoteOK.com/remote-jobs/remote-junior-graphic-designer-work-force-nexus-1133696",
+        "tags": [
+          "designer",
+          "junior"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "workforcenexus.com"
+  },
+  {
+    "id": "co-65",
+    "name": "Nexist",
+    "githubOrg": "NexisTech-Oaxaca",
+    "githubOrgUrl": "https://github.com/NexisTech-Oaxaca",
+    "remoteokSlug": "executive-admin-assistant-nexist-1133695",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T23:02:20.588Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Executive & Admin Assistant",
+        "url": "https://remoteOK.com/remote-jobs/remote-executive-admin-assistant-nexist-1133695",
+        "tags": [
+          "virtual assistant",
+          "admin",
+          "exec"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "nexist.com"
+  },
+  {
+    "id": "co-66",
+    "name": "Tu Empleo RD",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "auxiliar-de-despacho-de-almacen-santiago-tu-empleo-rd-1133809",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T23:02:22.545Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Auxiliar de Despacho de Almacen Santiago",
+        "url": "https://remoteOK.com/remote-jobs/remote-auxiliar-de-despacho-de-almacen-santiago-tu-empleo-rd-1133809",
+        "tags": [
+          "microsoft",
+          "excel",
+          "non tech"
+        ]
+      },
+      {
+        "title": "Asistente Administrativa",
+        "url": "https://remoteOK.com/remote-jobs/remote-asistente-administrativa-tu-empleo-rd-1133818",
+        "tags": [
+          "microsoft",
+          "excel",
+          "non tech"
+        ]
+      },
+      {
+        "title": "Buscando una Asistente de Contabilidad",
+        "url": "https://remoteOK.com/remote-jobs/remote-buscando-una-asistente-de-contabilidad-tu-empleo-rd-1133808",
+        "tags": [
+          "microsoft",
+          "excel",
+          "non tech"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "tuempleord.com"
+  },
+  {
+    "id": "co-67",
+    "name": "Leadenhall Search & Selection",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "corporate-commercial-paralegal-fully-leadenhall-search-selection-1133693",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T23:02:24.347Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Corporate Commercial Paralegal Fully",
+        "url": "https://remoteOK.com/remote-jobs/remote-corporate-commercial-paralegal-fully-leadenhall-search-selection-1133693",
+        "tags": []
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "leadenhallsearchselection.com"
+  },
+  {
+    "id": "co-68",
+    "name": "Elevate Teams",
+    "githubOrg": "0no-co",
+    "githubOrgUrl": "https://github.com/0no-co",
+    "remoteokSlug": "administracao-virtual-segunda-a-sexta-usd-5-hr-remoto-elevate-teams-1133692",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T23:02:36.696Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "AdministraÃ§Ã£o Virtual Segunda a Sexta USD $5 hr Remoto",
+        "url": "https://remoteOK.com/remote-jobs/remote-administracao-virtual-segunda-a-sexta-usd-5-hr-remoto-elevate-teams-1133692",
+        "tags": [
+          "hr"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "elevateteams.com"
+  },
+  {
+    "id": "co-69",
+    "name": "KÄsper",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "coordenador-de-marketing-criativo-kasper-1133691",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T23:02:38.820Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Coordenador de Marketing Criativo",
+        "url": "https://remoteOK.com/remote-jobs/remote-coordenador-de-marketing-criativo-kasper-1133691",
+        "tags": [
+          "marketing",
+          "non tech"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "ksper.com"
+  },
+  {
+    "id": "co-70",
+    "name": "Shopper.com.br",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "analista-de-relacionamento-com-o-cliente-jr-remoto-shopper-com-br-1133690",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T23:02:40.665Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Analista de Relacionamento com o Cliente Jr Remoto",
+        "url": "https://remoteOK.com/remote-jobs/remote-analista-de-relacionamento-com-o-cliente-jr-remoto-shopper-com-br-1133690",
+        "tags": []
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "shoppercombr.com"
+  },
+  {
+    "id": "co-71",
+    "name": "Banco BV",
+    "githubOrg": "Banco-BV",
+    "githubOrgUrl": "https://github.com/Banco-BV",
+    "remoteokSlug": "analista-de-software-senior-banco-bv-1133689",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T23:02:42.602Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Analista de Software SÃªnior",
+        "url": "https://remoteOK.com/remote-jobs/remote-analista-de-software-senior-banco-bv-1133689",
+        "tags": [
+          "dev",
+          "design",
+          "docker",
+          "java",
+          "cloud",
+          "exec",
+          "excel",
+          "digital nomad"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "bancobv.com"
+  },
+  {
+    "id": "co-72",
+    "name": "Pathway Communications",
+    "githubOrg": "Pathway-Connectivity",
+    "githubOrgUrl": "https://github.com/Pathway-Connectivity",
+    "remoteokSlug": "desktop-support-technician-pathway-communications-1133710",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T23:02:49.256Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Desktop Support Technician",
+        "url": "https://remoteOK.com/remote-jobs/remote-desktop-support-technician-pathway-communications-1133710",
+        "tags": [
+          "jira",
+          "sys admin",
+          "infosec",
+          "education",
+          "technical",
+          "customer support",
+          "dev",
+          "cloud",
+          "mobile",
+          "exec",
+          "full time",
+          "digital nomad"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "pathwaycommunications.com"
+  },
+  {
+    "id": "co-73",
+    "name": "Julie Vos",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "wholesale-experience-amp-events-associate-julie-vos-1133815",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T23:02:51.202Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Wholesale Experience & Events Associate",
+        "url": "https://remoteOK.com/remote-jobs/remote-wholesale-experience-amp-events-associate-julie-vos-1133815",
+        "tags": [
+          "design",
+          "video",
+          "exec",
+          "content writing",
+          "digital nomad",
+          "virtual assistant",
+          "quality assurance",
+          "hr",
+          "customer support",
+          "marketing",
+          "travel",
+          "payroll",
+          "finance",
+          "senior",
+          "ops",
+          "stats",
+          "medical",
+          "recruiter",
+          "full time",
+          "scrum",
+          "jira",
+          "infosec",
+          "teaching",
+          "technical",
+          "engineer",
+          "microsoft"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "julievos.com"
+  },
+  {
+    "id": "co-74",
+    "name": "TEST",
+    "githubOrg": "testcontainers",
+    "githubOrgUrl": "https://github.com/testcontainers",
+    "remoteokSlug": "test-job-ad-2-test-1133716",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T23:03:10.346Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "TEST JOB AD 2",
+        "url": "https://remoteOK.com/remote-jobs/remote-test-job-ad-2-test-1133716",
+        "tags": [
+          "testing",
+          "education",
+          "non tech"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "test.com"
+  },
+  {
+    "id": "co-75",
+    "name": "ChaosTrack",
+    "githubOrg": "Chaostrack",
+    "githubOrgUrl": "https://github.com/Chaostrack",
+    "remoteokSlug": "executive-assistant-chaostrack-1133683",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T23:03:12.325Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Executive Assistant",
+        "url": "https://remoteOK.com/remote-jobs/remote-executive-assistant-chaostrack-1133683",
+        "tags": [
+          "data entry",
+          "virtual assistant",
+          "customer support",
+          "non tech",
+          "exec"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "chaostrack.com"
+  },
+  {
+    "id": "co-76",
+    "name": "Velsera",
+    "githubOrg": "Velsera-Sanofi",
+    "githubOrgUrl": "https://github.com/Velsera-Sanofi",
+    "remoteokSlug": "customer-support-specialist-velsera-1133682",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T23:03:15.798Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Customer Support Specialist",
+        "url": "https://remoteOK.com/remote-jobs/remote-customer-support-specialist-velsera-1133682",
+        "tags": [
+          "data entry",
+          "virtual assistant",
+          "customer support",
+          "non tech"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "velsera.com"
+  },
+  {
+    "id": "co-77",
+    "name": "Sundayy",
+    "githubOrg": "Sundayy-HQ",
+    "githubOrgUrl": "https://github.com/Sundayy-HQ",
+    "remoteokSlug": "data-entry-clerk-virtual-assistant-sundayy-1133681",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T23:03:20.482Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Data Entry Clerk Virtual Assistant",
+        "url": "https://remoteOK.com/remote-jobs/remote-data-entry-clerk-virtual-assistant-sundayy-1133681",
+        "tags": [
+          "data entry",
+          "virtual assistant"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "sundayy.com"
+  },
+  {
+    "id": "co-78",
+    "name": "The Narrative Refinery",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "social-media-content-editor-the-narrative-refinery-1133747",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T23:03:22.540Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Social Media Content Editor",
+        "url": "https://remoteOK.com/remote-jobs/remote-social-media-content-editor-the-narrative-refinery-1133747",
+        "tags": [
+          "design",
+          "designer",
+          "dev",
+          "speech",
+          "video",
+          "exec",
+          "content writing",
+          "golang",
+          "ads",
+          "social media",
+          "part time",
+          "digital nomad"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "thenarrativerefinery.com"
+  },
+  {
+    "id": "co-79",
+    "name": "RECSEEKERS",
+    "githubOrg": "RECSEEKERS",
+    "githubOrgUrl": "https://github.com/RECSEEKERS",
+    "remoteokSlug": "operations-administrator-recseekers-1133675",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T23:03:24.500Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Operations Administrator",
+        "url": "https://remoteOK.com/remote-jobs/remote-operations-administrator-recseekers-1133675",
+        "tags": [
+          "hr",
+          "virtual assistant",
+          "medical",
+          "customer support",
+          "amazon",
+          "dev",
+          "speech",
+          "math",
+          "content writing",
+          "excel",
+          "recruiter",
+          "full time",
+          "non tech",
+          "digital nomad",
+          "education",
+          "exec",
+          "legal",
+          "web3",
+          "crypto",
+          "blockchain",
+          "design",
+          "marketing",
+          "finance",
+          "video",
+          "ops",
+          "social media",
+          "admin"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "recseekers.com"
+  },
+  {
+    "id": "co-80",
+    "name": "Atlantic Health Strategiesâ¢",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "hr-administrative-assistant-atlantic-health-strategiestm-1133671",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T23:03:26.491Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "HR Administrative Assistant",
+        "url": "https://remoteOK.com/remote-jobs/remote-hr-administrative-assistant-atlantic-health-strategiestm-1133671",
+        "tags": [
+          "hr",
+          "virtual assistant",
+          "medical"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "atlantichealthstrategies.com"
+  },
+  {
+    "id": "co-81",
+    "name": "Pinnacle Home Care",
+    "githubOrg": "Pinnacle-Home-Care",
+    "githubOrgUrl": "https://github.com/Pinnacle-Home-Care",
+    "remoteokSlug": "documentation-specialist-pinnacle-home-care-1133694",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T23:03:29.507Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Documentation Specialist",
+        "url": "https://remoteOK.com/remote-jobs/remote-documentation-specialist-pinnacle-home-care-1133694",
+        "tags": [
+          "sys admin",
+          "customer support",
+          "dev",
+          "marketing",
+          "travel",
+          "education",
+          "exec",
+          "medical",
+          "digital nomad"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "pinnaclehomecare.com"
+  },
+  {
+    "id": "co-82",
+    "name": "Creative Fabrica",
+    "githubOrg": "Creative-Fabrica",
+    "githubOrgUrl": "https://github.com/Creative-Fabrica",
+    "remoteokSlug": "senior-backend-engineer-studio-ai-creative-fabrica-1133667",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T23:03:31.543Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Senior Backend Engineer Studio AI",
+        "url": "https://remoteOK.com/remote-jobs/remote-senior-backend-engineer-studio-ai-creative-fabrica-1133667",
+        "tags": [
+          "golang",
+          "technical",
+          "dev",
+          "senior",
+          "engineer",
+          "backend",
+          "digital nomad"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "creativefabrica.com"
+  },
+  {
+    "id": "co-83",
+    "name": "Johnson Controls",
+    "githubOrg": "johnson-controls",
+    "githubOrgUrl": "https://github.com/johnson-controls",
+    "remoteokSlug": "customer-solutions-technician-johnson-controls-1133699",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T23:03:34.008Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Customer Solutions Technician",
+        "url": "https://remoteOK.com/remote-jobs/remote-customer-solutions-technician-johnson-controls-1133699",
+        "tags": [
+          "recruiter",
+          "exec"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "johnsoncontrols.com"
+  },
+  {
+    "id": "co-84",
+    "name": "Swoon",
+    "githubOrg": "SwoonEditions",
+    "githubOrgUrl": "https://github.com/SwoonEditions",
+    "remoteokSlug": "graphic-designer-swoon-1133676",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T23:03:43.519Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Graphic Designer",
+        "url": "https://remoteOK.com/remote-jobs/remote-graphic-designer-swoon-1133676",
+        "tags": [
+          "hr",
+          "virtual assistant",
+          "medical",
+          "customer support",
+          "amazon",
+          "dev",
+          "speech",
+          "math",
+          "content writing",
+          "excel",
+          "recruiter",
+          "full time",
+          "non tech",
+          "digital nomad",
+          "education",
+          "exec",
+          "legal",
+          "web3",
+          "crypto",
+          "blockchain",
+          "design",
+          "marketing",
+          "finance",
+          "video",
+          "ops",
+          "social media",
+          "admin",
+          "designer",
+          "photoshop",
+          "sales",
+          "ads",
+          "illustrator"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "swoon.com"
+  },
+  {
+    "id": "co-85",
+    "name": "Kinisla",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "sales-director-dairy-ingredients-kinisla-1133684",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T23:03:45.635Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Sales Director Dairy Ingredients",
+        "url": "https://remoteOK.com/remote-jobs/remote-sales-director-dairy-ingredients-kinisla-1133684",
+        "tags": [
+          "data entry",
+          "virtual assistant",
+          "customer support",
+          "non tech",
+          "exec",
+          "education",
+          "technical",
+          "marketing",
+          "travel",
+          "adult",
+          "video",
+          "senior",
+          "ops",
+          "sales",
+          "recruiter"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "kinisla.com"
+  },
+  {
+    "id": "co-86",
+    "name": "Karbon",
+    "githubOrg": "karbonhq",
+    "githubOrgUrl": "https://github.com/karbonhq",
+    "remoteokSlug": "vp-strategic-customer-programs-karbon-1133685",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T23:03:48.251Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "VP Strategic Customer Programs",
+        "url": "https://remoteOK.com/remote-jobs/remote-vp-strategic-customer-programs-karbon-1133685",
+        "tags": [
+          "data entry",
+          "virtual assistant",
+          "customer support",
+          "non tech",
+          "exec",
+          "education",
+          "technical",
+          "marketing",
+          "travel",
+          "adult",
+          "video",
+          "senior",
+          "ops",
+          "sales",
+          "recruiter",
+          "saas",
+          "dev",
+          "accounting",
+          "cloud",
+          "golang",
+          "medical",
+          "engineer",
+          "digital nomad"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "karbon.com"
+  },
+  {
+    "id": "co-87",
+    "name": "Mast-JÃ¤germeister US, Inc.",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "vp-gm-east-amp-control-mast-jagermeister-us-inc-1133678",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T23:03:50.201Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "VP GM East & Control",
+        "url": "https://remoteOK.com/remote-jobs/remote-vp-gm-east-amp-control-mast-jagermeister-us-inc-1133678",
+        "tags": [
+          "hr",
+          "virtual assistant",
+          "medical",
+          "customer support",
+          "amazon",
+          "dev",
+          "speech",
+          "math",
+          "content writing",
+          "excel",
+          "recruiter",
+          "full time",
+          "non tech",
+          "digital nomad",
+          "education",
+          "exec",
+          "legal",
+          "web3",
+          "crypto",
+          "blockchain",
+          "design",
+          "marketing",
+          "finance",
+          "video",
+          "ops",
+          "social media",
+          "admin",
+          "designer",
+          "photoshop",
+          "sales",
+          "ads",
+          "illustrator",
+          "vfx",
+          "consulting",
+          "technical",
+          "junior",
+          "salesforce",
+          "travel"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "mastjgermeisterusinc.com"
+  },
+  {
+    "id": "co-88",
+    "name": "PedidosYa",
+    "githubOrg": "pedidosya",
+    "githubOrgUrl": "https://github.com/pedidosya",
+    "remoteokSlug": "crm-sr-analyst-pedidosya-1133781",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T23:03:55.416Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "CRM Sr Analyst",
+        "url": "https://remoteOK.com/remote-jobs/remote-crm-sr-analyst-pedidosya-1133781",
+        "tags": [
+          "sys admin",
+          "technical",
+          "supervisor",
+          "customer support",
+          "testing",
+          "exec",
+          "medical",
+          "engineer",
+          "recruiter",
+          "marketing",
+          "education",
+          "senior",
+          "ops",
+          "accounting",
+          "dev",
+          "junior",
+          "excel",
+          "digital nomad",
+          "consulting",
+          "finance",
+          "data entry",
+          "design",
+          "web dev",
+          "video",
+          "c",
+          "virtual assistant",
+          "speech",
+          "microsoft",
+          "sales",
+          "front end",
+          "backend",
+          "game dev",
+          "full stack",
+          "devops",
+          "laravel",
+          "cloud",
+          "php",
+          "typescript",
+          "golang",
+          "full time",
+          "payroll",
+          "part time",
+          "vfx",
+          "designer",
+          "travel",
+          "music",
+          "internship",
+          "saas",
+          "salesforce",
+          "content writing",
+          "legal",
+          "teaching",
+          "hr",
+          "ecommerce",
+          "coordinator",
+          "analyst",
+          "python"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "pedidosya.com"
+  },
+  {
+    "id": "co-89",
+    "name": "Blackstone Talent Group",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "scrum-master-blackstone-talent-group-1133679",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T23:03:58.073Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Scrum Master",
+        "url": "https://remoteOK.com/remote-jobs/remote-scrum-master-blackstone-talent-group-1133679",
+        "tags": [
+          "hr",
+          "virtual assistant",
+          "medical",
+          "customer support",
+          "amazon",
+          "dev",
+          "speech",
+          "math",
+          "content writing",
+          "excel",
+          "recruiter",
+          "full time",
+          "non tech",
+          "digital nomad",
+          "education",
+          "exec",
+          "legal",
+          "web3",
+          "crypto",
+          "blockchain",
+          "design",
+          "marketing",
+          "finance",
+          "video",
+          "ops",
+          "social media",
+          "admin",
+          "designer",
+          "photoshop",
+          "sales",
+          "ads",
+          "illustrator",
+          "vfx",
+          "consulting",
+          "technical",
+          "junior",
+          "salesforce",
+          "travel",
+          "scrum",
+          "jira",
+          "senior"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "blackstonetalentgroup.com"
+  },
+  {
+    "id": "co-90",
+    "name": "Kier Group",
+    "githubOrg": "KierGroup",
+    "githubOrgUrl": "https://github.com/KierGroup",
+    "remoteokSlug": "agent-kier-group-1133662",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T23:04:00.646Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Agent",
+        "url": "https://remoteOK.com/remote-jobs/remote-agent-kier-group-1133662",
+        "tags": []
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "kiergroup.com"
+  },
+  {
+    "id": "co-91",
+    "name": "Aljazira Bank",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "call-center-agent-quality-aljazira-bank-1133706",
+    "industry": "Tech & Development Services",
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-22T23:04:02.694Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Call Center Agent Quality",
+        "url": "https://remoteOK.com/remote-jobs/remote-call-center-agent-quality-aljazira-bank-1133706",
+        "tags": [
+          "sys admin",
+          "supervisor",
+          "customer support",
+          "finance",
+          "exec",
+          "ops",
+          "social media"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "aljazirabank.com"
   }
 ]

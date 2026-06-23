@@ -9,7 +9,12 @@ import {
   ShieldCheck,
   Database,
   Layers,
-  Globe
+  Globe,
+  Settings,
+  AlertCircle,
+  Sparkles,
+  Clock,
+  Lock
 } from "lucide-react";
 
 // Inline Custom SVG for GitHub logo
@@ -132,6 +137,57 @@ export default function CaraKerjaPage() {
           </p>
         </section>
 
+        {/* Stack Teknologi & Arsitektur */}
+        <section className="space-y-8">
+          <div className="text-center md:text-left space-y-2">
+            <h2 className="text-2xl font-bold font-outfit text-white flex items-center justify-center md:justify-start space-x-2">
+              <Database className="w-5 h-5 text-brand-primary" />
+              <span>Stack Teknologi & Arsitektur</span>
+            </h2>
+            <p className="text-sm text-white/50">
+              Proyek ini dibangun menggunakan arsitektur modern <strong>Git-as-a-Database (Stasis JSON)</strong> yang tangguh, instan, dan bebas biaya pemeliharaan.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="glass-panel p-6 rounded-2xl border border-white/5 space-y-4 hover:border-white/10 transition-all flex flex-col justify-between">
+              <div className="space-y-4">
+                <div className="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400">
+                  <Globe className="w-5 h-5" />
+                </div>
+                <h3 className="text-base font-bold text-white font-outfit">Frontend & UI</h3>
+                <p className="text-xs text-white/60 leading-relaxed font-inter">
+                  Menggunakan <strong>Next.js 16 (App Router)</strong>, <strong>React 19</strong>, dan <strong>Tailwind CSS v4</strong> untuk menyajikan antarmuka premium, super cepat, adaptif di perangkat mobile, dan ramah SEO.
+                </p>
+              </div>
+            </div>
+
+            <div className="glass-panel p-6 rounded-2xl border border-white/5 space-y-4 hover:border-white/10 transition-all flex flex-col justify-between">
+              <div className="space-y-4">
+                <div className="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400">
+                  <Database className="w-5 h-5" />
+                </div>
+                <h3 className="text-base font-bold text-white font-outfit">Stasis JSON Database</h3>
+                <p className="text-xs text-white/60 leading-relaxed font-inter">
+                  Seluruh data disimpan dalam berkas statis JSON di <code>companies.json</code>. Pencarian dan filter berjalan langsung di sisi klien dengan waktu respons sub-milidetik tanpa latensi koneksi database SQL tradisional.
+                </p>
+              </div>
+            </div>
+
+            <div className="glass-panel p-6 rounded-2xl border border-white/5 space-y-4 hover:border-white/10 transition-all flex flex-col justify-between">
+              <div className="space-y-4">
+                <div className="w-10 h-10 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400">
+                  <Settings className="w-5 h-5" />
+                </div>
+                <h3 className="text-base font-bold text-white font-outfit">Data Pipeline</h3>
+                <p className="text-xs text-white/60 leading-relaxed font-inter">
+                  Skrip Node/TypeScript di <code>scripts/pipeline.ts</code> secara otomatis mengambil lowongan kerja aktif (RemoteOK/Remotive), memindai organisasi GitHub secara real-time, dan melakukan komit otomatis kembali ke repositori Git.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Tiga Saringan Utama */}
         <section className="space-y-8">
           <div className="text-center md:text-left space-y-2">
@@ -195,6 +251,157 @@ export default function CaraKerjaPage() {
           </div>
         </section>
 
+        {/* Pembersihan Data & Penerjemahan Otomatis */}
+        <section className="space-y-8 animate-fade-in">
+          <div className="text-center md:text-left space-y-2">
+            <h2 className="text-2xl font-bold font-outfit text-white flex items-center justify-center md:justify-start space-x-2">
+              <Sparkles className="w-5 h-5 text-brand-primary animate-pulse" />
+              <span>🧼 Pemulihan Mojibake & Terjemahan Otomatis</span>
+            </h2>
+            <p className="text-sm text-white/50">
+              Menjamin standardisasi dan kualitas data tingkat tinggi pada direktori Remotika dengan fitur pemulihan karakter otomatis:
+            </p>
+          </div>
+
+          <div className="glass-panel p-8 rounded-3xl border border-white/5 space-y-6 relative overflow-hidden">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-xs text-white/70 leading-relaxed font-inter">
+              <div className="p-5 rounded-xl bg-[#090d16] border border-white/5 space-y-2">
+                <h4 className="font-bold text-white text-sm">Penyembuhan Mojibake (Auto-Healing)</h4>
+                <p className="text-white/50 text-[11px] leading-relaxed">
+                  Pipa data secara cerdas mendeteksi dan memperbaiki kerusakan encoding teks (mojibake) yang sering terjadi di API eksternal (seperti <code>å¤§ä¼æ±½è½¦ï¼ä¸­å½ï¼</code> menjadi <code>Volkswagen (China)</code>, atau <code>Ø¨ÙÙ Ø§ÙØ¬Ø²Ø±Ø©</code> menjadi <code>Aljazira Bank</code>).
+                </p>
+              </div>
+
+              <div className="p-5 rounded-xl bg-[#090d16] border border-white/5 space-y-2">
+                <h4 className="font-bold text-white text-sm">Penerjemahan Bahasa Non-Latin</h4>
+                <p className="text-white/50 text-[11px] leading-relaxed">
+                  Semua tulisan dalam aksara non-latin (seperti Mandarin, Cyrillic, Arab, dll.) yang diperoleh dari profil perusahaan atau deskripsi lowongan kerja dideteksi secara dinamis dan diterjemahkan langsung ke bahasa Inggris secara real-time demi menjaga keseragaman Direktori.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Klasifikasi & Label Verifikasi */}
+        <section className="space-y-8 animate-fade-in">
+          <div className="text-center md:text-left space-y-2">
+            <h2 className="text-2xl font-bold font-outfit text-white flex items-center justify-center md:justify-start space-x-2">
+              <Sparkles className="w-5 h-5 text-brand-secondary animate-pulse" />
+              <span>Klasifikasi & Label Verifikasi (Tiers)</span>
+            </h2>
+            <p className="text-sm text-white/50">
+              Kami mengelompokkan tingkat keramahan perusahaan global terhadap pengembang Indonesia berdasarkan jumlah talenta lokal publik terverifikasi yang berhasil dideteksi:
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <div className="glass-panel p-6 rounded-2xl border border-white/5 space-y-3 hover:border-white/10 transition-all flex flex-col justify-between">
+              <div className="space-y-2">
+                <span className="inline-block text-[10px] font-bold px-2 py-0.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 font-mono">
+                  🔵 Confirmed
+                </span>
+                <h3 className="text-base font-bold text-white font-outfit">1 Developer</h3>
+                <p className="text-xs text-white/60 leading-relaxed font-inter">
+                  Memiliki preseden nyata; infrastruktur dan kebijakan kerja remote untuk talenta Indonesia telah terbentuk.
+                </p>
+              </div>
+            </div>
+
+            <div className="glass-panel p-6 rounded-2xl border border-white/5 space-y-3 hover:border-white/10 transition-all flex flex-col justify-between">
+              <div className="space-y-2">
+                <span className="inline-block text-[10px] font-bold px-2 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 font-mono">
+                  🟢 Indonesia-Friendly
+                </span>
+                <h3 className="text-base font-bold text-white font-outfit">2–4 Developer</h3>
+                <p className="text-xs text-white/60 leading-relaxed font-inter">
+                  Memiliki pola perekrutan kerja remote yang mapan dan berulang bagi pengembang asal Indonesia.
+                </p>
+              </div>
+            </div>
+
+            <div className="glass-panel p-6 rounded-2xl border border-white/5 space-y-3 hover:border-white/10 transition-all flex flex-col justify-between">
+              <div className="space-y-2">
+                <span className="inline-block text-[10px] font-bold px-2 py-0.5 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 font-mono">
+                  🟣 Established
+                </span>
+                <h3 className="text-base font-bold text-white font-outfit">5–9 Developer</h3>
+                <p className="text-xs text-white/60 leading-relaxed font-inter">
+                  Sangat nyaman mempekerjakan, berkolaborasi, dan memahami dinamika kerja sama dengan talenta Indonesia.
+                </p>
+              </div>
+            </div>
+
+            <div className="glass-panel p-6 rounded-2xl border border-white/5 space-y-3 hover:border-white/10 transition-all flex flex-col justify-between">
+              <div className="space-y-2">
+                <span className="inline-block text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 font-mono">
+                  👑 Top Pick
+                </span>
+                <h3 className="text-base font-bold text-white font-outfit">10+ Developer</h3>
+                <p className="text-xs text-white/60 leading-relaxed font-inter">
+                  Indonesia merupakan bagian inti dan pilar utama dari strategi perekrutan talenta global mereka.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Otomatisasi Pipeline via GitHub Actions */}
+        <section className="space-y-8 animate-fade-in">
+          <div className="text-center md:text-left space-y-2">
+            <h2 className="text-2xl font-bold font-outfit text-white flex items-center justify-center md:justify-start space-x-2">
+              <Clock className="w-5 h-5 text-brand-primary" />
+              <span>Pembaruan Otomatis via GitHub Actions</span>
+            </h2>
+            <p className="text-sm text-white/50">
+              Sistem database kami didesain menggunakan arsitektur modern <strong>Git-as-a-Database (Stasis JSON)</strong> yang mandiri tanpa server database eksternal:
+            </p>
+          </div>
+
+          <div className="glass-panel p-8 rounded-3xl border border-white/5 space-y-6 relative overflow-hidden">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-xs text-white/70 leading-relaxed font-inter">
+              <div className="p-4 rounded-xl bg-[#090d16] border border-white/5 space-y-2">
+                <div className="flex items-center space-x-2 text-white font-semibold">
+                  <Clock className="w-4 h-4 text-brand-primary" />
+                  <span>Jadwal Harian (Cron)</span>
+                </div>
+                <p className="text-white/50 text-[11px] leading-relaxed">
+                  Skrip pipeline berjalan otomatis setiap hari pukul 17:00 UTC (00:00 WIB / Tengah Malam) untuk menyegarkan lowongan dan memindai verifikasi baru.
+                </p>
+              </div>
+
+              <div className="p-4 rounded-xl bg-[#090d16] border border-white/5 space-y-2">
+                <div className="flex items-center space-x-2 text-white font-semibold">
+                  <CheckCircle className="w-4 h-4 text-emerald-400" />
+                  <span>Komit Otomatis (Auto-Commit)</span>
+                </div>
+                <p className="text-white/50 text-[11px] leading-relaxed">
+                  GitHub Actions akan menyimpan langsung hasil pemindaian terbaru ke dalam berkas `companies.json` dan melakukan push otomatis ke cabang utama.
+                </p>
+              </div>
+
+              <div className="p-4 rounded-xl bg-[#090d16] border border-white/5 space-y-2">
+                <div className="flex items-center space-x-2 text-white font-semibold">
+                  <Globe className="w-4 h-4 text-brand-secondary" />
+                  <span>Auto-Deploy (Vercel)</span>
+                </div>
+                <p className="text-white/50 text-[11px] leading-relaxed">
+                  Setiap push otomatis akan langsung dideteksi oleh Vercel, memicu pembangunan ulang produksi secara instan tanpa menghentikan layanan.
+                </p>
+              </div>
+            </div>
+
+            <div className="p-4 rounded-xl bg-amber-500/10 border border-amber-500/20 text-xs text-amber-400 flex items-start space-x-3">
+              <AlertCircle className="w-5 h-5 shrink-0 mt-0.5" />
+              <div className="space-y-1">
+                <h4 className="font-bold text-white uppercase tracking-wider text-[11px]">Penting: Hak Akses Write Workflow</h4>
+                <p className="text-white/70 text-[11px] leading-relaxed">
+                  Agar proses auto-commit GitHub Actions berjalan lancar tanpa kendala, buka tab <strong>Settings &gt; Actions &gt; General</strong> pada repositori GitHub Anda, gulir ke bagian <strong>Workflow permissions</strong>, centang opsi <strong>"Read and write permissions"</strong>, lalu simpan perubahan.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Sumber API Terintegrasi */}
         <section className="space-y-8">
           <div className="text-center md:text-left space-y-2">
@@ -243,6 +450,32 @@ export default function CaraKerjaPage() {
                 <h3 className="text-base font-bold text-white">Remotive API (Perluasan Lowongan Software Dev)</h3>
                 <p className="text-xs text-white/60 leading-relaxed">
                   Menyediakan tambahan daftar lowongan pekerjaan terarah pada kategori pengembangan perangkat lunak (<em>software development</em>). Kami hanya mengambil pekerjaan dengan syarat lokasi "worldwide", "anywhere", "indonesia", atau wilayah Asia (APAC) untuk menjamin relevansi lamaran.
+                </p>
+              </div>
+            </div>
+
+            {/* Greenhouse API */}
+            <div className="glass-panel p-6 rounded-2xl border border-white/5 flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-6">
+              <div className="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 shrink-0">
+                <Settings className="w-6 h-6" />
+              </div>
+              <div className="space-y-1">
+                <h3 className="text-base font-bold text-white">Greenhouse API (Integrasi Langsung ATS Perusahaan)</h3>
+                <p className="text-xs text-white/60 leading-relaxed">
+                  Digunakan untuk menarik lowongan kerja aktif secara langsung dari papan lowongan internal perusahaan yang menggunakan Greenhouse ATS (seperti Xendit dan GitLab). Sistem memindai lokasi spesifik dan menyaring posisi berbasis remote/regional Asia Tenggara secara real-time.
+                </p>
+              </div>
+            </div>
+
+            {/* Workday API */}
+            <div className="glass-panel p-6 rounded-2xl border border-white/5 flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-6">
+              <div className="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 shrink-0">
+                <Database className="w-6 h-6" />
+              </div>
+              <div className="space-y-1">
+                <h3 className="text-base font-bold text-white">Workday API (Ekstraksi Lowongan Korporasi)</h3>
+                <p className="text-xs text-white/60 leading-relaxed">
+                  Menghubungkan pipeline data langsung ke sistem Workday (WD5) milik korporasi global tertentu. Melalui request POST terstruktur, sistem dapat mengunduh daftar pekerjaan terbaru dan mengintegrasikannya langsung ke dalam direktori Remotika secara harian.
                 </p>
               </div>
             </div>

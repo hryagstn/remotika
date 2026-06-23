@@ -500,6 +500,70 @@ async function resolveGithubOrg(companyName: string, website: string | null): Pr
   return null;
 }
 
+function decodeHtmlEntities(str: string): string {
+  if (!str) return str;
+  return str
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&#039;/g, "'");
+}
+
+function fixMojibake(str: string): string {
+  if (!str) return str;
+  
+  // Clean HTML entities first
+  str = decodeHtmlEntities(str);
+  
+  const hasMojibakePattern = /[\u00c0-\u00ff]/.test(str);
+  if (!hasMojibakePattern) return str;
+
+  try {
+    const bytes = new Uint8Array(str.length);
+    for (let i = 0; i < str.length; i++) {
+      const code = str.charCodeAt(i);
+      if (code > 255) {
+        return str; // Not pure ISO-8859-1 mojibake
+      }
+      bytes[i] = code;
+    }
+    const decoded = new TextDecoder("utf-8", { fatal: true }).decode(bytes);
+    return decodeHtmlEntities(decoded);
+  } catch (e) {
+    return str;
+  }
+}
+
+async function translateText(text: string, targetLanguage: string = "en"): Promise<string> {
+  if (!text) return text;
+  
+  // Detect if the string contains any non-Latin / non-ASCII text
+  const hasNonLatin = /[^\u0000-\u024F\u2000-\u206F]/.test(text);
+  if (!hasNonLatin) return text;
+
+  try {
+    const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=${targetLanguage}&dt=t&q=${encodeURIComponent(text)}`;
+    const res = await fetch(url, {
+      headers: { "User-Agent": "Remotika-Pipeline/1.0" }
+    });
+    if (!res.ok) return text;
+    const data = await res.json();
+    if (Array.isArray(data) && Array.isArray(data[0])) {
+      const translatedParts = data[0].map((item: any) => item[0]).filter(Boolean);
+      const result = translatedParts.join("").trim();
+      if (result) {
+        console.log(`    🌐 Translated non-Latin text: "${text}" -> "${result}"`);
+        return result;
+      }
+    }
+  } catch (err: any) {
+    console.warn(`    ⚠️ Translation failed for "${text}": ${err.message}`);
+  }
+  return text;
+}
+
 interface RemoteOkCandidate {
   name: string;
   website: string;
@@ -539,7 +603,8 @@ async function harvestRemoteOkCandidates(existingCompanies: CompanyData[]): Prom
     for (const job of jobs) {
       if (!job.company || !job.url) continue;
 
-      const companyName = job.company.trim();
+      let companyName = fixMojibake(job.company.trim());
+      companyName = await translateText(companyName);
       const companyKey = companyName.toLowerCase();
 
       // Check exclude list
@@ -557,9 +622,9 @@ async function harvestRemoteOkCandidates(existingCompanies: CompanyData[]): Prom
       }
 
       const activeJob: ActiveJob = {
-        title: job.position,
+        title: await translateText(fixMojibake(job.position)),
         url: job.url,
-        tags: Array.isArray(job.tags) ? job.tags : [],
+        tags: Array.isArray(job.tags) ? await Promise.all(job.tags.map(async (t: string) => await translateText(fixMojibake(t)))) : [],
         salary: job.salary || undefined
       };
 
@@ -576,7 +641,7 @@ async function harvestRemoteOkCandidates(existingCompanies: CompanyData[]): Prom
         candidatesMap.set(companyKey, {
           name: companyName,
           website: website,
-          remoteokSlug: job.slug ? job.slug.split("-").slice(1).join("-") : companyKey,
+          remoteokSlug: job.slug ? fixMojibake(job.slug.split("-").slice(1).join("-")) : companyKey,
           jobs: [activeJob]
         });
       }
