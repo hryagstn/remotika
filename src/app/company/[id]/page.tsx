@@ -113,6 +113,8 @@ export default async function CompanyProfilePage({ params }: PageProps) {
         return "bg-purple-500/10 text-purple-400 border-purple-500/30";
       case "Indonesia-Friendly":
         return "bg-teal-500/10 text-teal-400 border-teal-500/30";
+      case "Watchlist":
+        return "bg-white/5 text-white/60 border-white/10";
       default:
         return "bg-blue-500/10 text-blue-400 border-blue-500/30";
     }
@@ -126,6 +128,8 @@ export default async function CompanyProfilePage({ params }: PageProps) {
         return "bg-purple-600";
       case "Indonesia-Friendly":
         return "bg-teal-600";
+      case "Watchlist":
+        return "bg-gray-800";
       default:
         return "bg-blue-600";
     }
@@ -295,39 +299,73 @@ export default async function CompanyProfilePage({ params }: PageProps) {
                 </span>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {company.verifiedMembers.map((member) => (
-                  <a 
-                    key={member.id}
-                    href={member.githubProfileUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-bg-surface border border-border-faint p-4 rounded-2xl flex items-center gap-4 hover:-translate-y-0.5 hover:border-white/10 transition-all group shadow-sm"
-                  >
-                    <div className="w-12 h-12 rounded-xl bg-bg-elevated border border-border-faint flex items-center justify-center text-text-primary font-bold shadow-inner font-outfit group-hover:bg-brand-primary/10 transition-colors">
-                      {memberInitials(member.githubLogin)}
-                    </div>
-                    <div className="min-w-0 flex-1">
-                      <div className="flex items-center gap-1.5 min-w-0">
-                        <h4 className="text-text-primary font-semibold truncate group-hover:text-brand-primary transition-colors text-sm">{member.githubLogin}</h4>
-                        {member.provider === "gitlab" ? (
-                          <span className="shrink-0 text-[#FC6D26]" title="Verified via GitLab">
-                            <GitlabIcon className="w-3.5 h-3.5" />
-                          </span>
-                        ) : (
-                          <span className="shrink-0 text-white/50" title="Verified via GitHub">
-                            <GithubIcon className="w-3.5 h-3.5" />
-                          </span>
-                        )}
+              {company.verifiedMembers.length > 0 ? (
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  {company.verifiedMembers.map((member) => (
+                    <a 
+                      key={member.id}
+                      href={member.githubProfileUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-bg-surface border border-border-faint p-4 rounded-2xl flex items-center gap-4 hover:-translate-y-0.5 hover:border-white/10 transition-all group shadow-sm"
+                    >
+                      <div className="w-12 h-12 rounded-xl bg-bg-elevated border border-border-faint flex items-center justify-center text-text-primary font-bold shadow-inner font-outfit group-hover:bg-brand-primary/10 transition-colors">
+                        {memberInitials(member.githubLogin)}
                       </div>
-                      <p className="text-text-muted font-body-sm text-xs flex items-center gap-1 mt-0.5">
-                        <MapPin className="w-3.5 h-3.5 text-brand-primary shrink-0" />
-                        <span className="truncate">{member.locationRaw || "Indonesia"}</span>
-                      </p>
-                    </div>
-                  </a>
-                ))}
-              </div>
+                      <div className="min-w-0 flex-1">
+                        <div className="flex items-center gap-1.5 min-w-0">
+                          <h4 className="text-text-primary font-semibold truncate group-hover:text-brand-primary transition-colors text-sm">{member.githubLogin}</h4>
+                          {member.provider === "gitlab" ? (
+                            <span className="shrink-0 text-[#FC6D26]" title="Verified via GitLab">
+                              <GitlabIcon className="w-3.5 h-3.5" />
+                            </span>
+                          ) : (
+                            <span className="shrink-0 text-white/50" title="Verified via GitHub">
+                              <GithubIcon className="w-3.5 h-3.5" />
+                            </span>
+                          )}
+                        </div>
+                        <p className="text-text-muted font-body-sm text-xs flex items-center gap-1 mt-0.5">
+                          <MapPin className="w-3.5 h-3.5 text-brand-primary shrink-0" />
+                          <span className="truncate">{member.locationRaw || "Indonesia"}</span>
+                        </p>
+                      </div>
+                    </a>
+                  ))}
+                </div>
+              ) : (
+                <div className="glass-panel p-8 rounded-3xl border border-white/5 space-y-5 text-center max-w-xl mx-auto">
+                  <div className="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-white/40 mx-auto">
+                    <Users className="w-5 h-5 animate-pulse" />
+                  </div>
+                  <div className="space-y-1.5">
+                    <h3 className="font-bold text-white font-outfit text-base">Belum Ada Anggota Terverifikasi</h3>
+                    <p className="text-xs text-white/50 leading-relaxed max-w-md mx-auto">
+                      Sistem verifikasi otomatis belum mendeteksi adanya pengembang Indonesia yang terdaftar secara publik di dalam organisasi ini.
+                    </p>
+                  </div>
+                  <div className="p-5 rounded-2xl bg-[#090d16] border border-white/5 text-[11px] text-white/60 leading-relaxed space-y-2.5 max-w-md mx-auto text-left">
+                    <p className="font-semibold text-white">Kerja di sini? Bantu verifikasi organisasi ini:</p>
+                    <ul className="list-disc list-inside space-y-1 text-white/50">
+                      <li>Pastikan lokasi pada profil GitHub/GitLab Anda diatur ke kota/provinsi di Indonesia.</li>
+                      <li>Atur visibilitas keanggotaan organisasi GitHub Anda menjadi <strong>Public</strong>.</li>
+                    </ul>
+                    {company.githubOrg && (
+                      <div className="pt-2.5 text-center border-t border-white/5 mt-2">
+                        <a
+                          href={company.githubOrgUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-1.5 font-bold text-brand-primary hover:text-brand-secondary transition-colors text-xs"
+                        >
+                          <span>Kunjungi Organisasi GitHub</span>
+                          <ExternalLink className="w-3 h-3" />
+                        </a>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              )}
             </section>
 
             {/* Testimonials Section */}

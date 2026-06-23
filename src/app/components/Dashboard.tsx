@@ -575,9 +575,7 @@ export default function Dashboard({ initialCompanies }: DashboardProps) {
               const isExpanded = expandedCard === c.id;
               const isWatchlist = c.status === "watchlist";
               const hasGithub = c.githubOrg && c.githubOrg.trim() !== "";
-              const companyLink = isWatchlist
-                ? (c.githubOrgUrl || c.activeJobs?.[0]?.url || "#")
-                : `/company/${c.githubOrg.toLowerCase() || c.id}`;
+              const companyLink = `/company/${c.githubOrg?.toLowerCase() || c.id}`;
 
               return (
                 <div 
