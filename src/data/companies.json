@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-06-23T06:41:35.685Z",
+    "lastVerifiedAt": "2026-06-23T19:11:17.378Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -114,7 +114,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 2,
     "label": "Indonesia-Friendly",
-    "lastVerifiedAt": "2026-06-23T06:41:54.776Z",
+    "lastVerifiedAt": "2026-06-23T19:11:33.572Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -154,7 +154,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-06-23T06:42:13.582Z",
+    "lastVerifiedAt": "2026-06-23T19:11:49.421Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -188,7 +188,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-06-23T06:42:21.984Z",
+    "lastVerifiedAt": "2026-06-23T19:11:55.510Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -222,7 +222,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-06-23T06:42:32.423Z",
+    "lastVerifiedAt": "2026-06-23T19:12:02.680Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -347,7 +347,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-06-23T06:42:39.675Z",
+    "lastVerifiedAt": "2026-06-23T19:12:08.343Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -377,65 +377,6 @@
     "watchlistReason": "org-found-zero-match",
     "website": "empassionhealth.com",
     "verifiedAt": "2026-06-23T06:16:16.138Z"
-  },
-  {
-    "id": "co-104",
-    "name": "ChaosTrack",
-    "githubOrg": "Chaostrack",
-    "githubOrgUrl": "https://github.com/Chaostrack",
-    "remoteokSlug": "executive-assistant-chaostrack-1133683",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-06-23T06:16:17.947Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Executive Assistant",
-        "url": "https://remoteOK.com/remote-jobs/remote-executive-assistant-chaostrack-1133683",
-        "tags": [
-          "data entry",
-          "virtual assistant",
-          "customer support",
-          "non tech",
-          "exec"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "org-found-zero-match",
-    "website": "chaostrack.com"
-  },
-  {
-    "id": "co-105",
-    "name": "Sundayy",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "data-entry-clerk-virtual-assistant-sundayy-1133681",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-06-23T06:16:19.341Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Data Entry Clerk Virtual Assistant",
-        "url": "https://remoteOK.com/remote-jobs/remote-data-entry-clerk-virtual-assistant-sundayy-1133681",
-        "tags": [
-          "data entry",
-          "virtual assistant"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "sundayy.com"
   },
   {
     "id": "co-106",
@@ -528,5 +469,201 @@
     "source": "remoteok",
     "watchlistReason": "no-org-found",
     "website": "buffalogames.com"
+  },
+  {
+    "id": "co-108",
+    "name": "Rescale",
+    "githubOrg": "rescale",
+    "githubOrgUrl": "https://github.com/rescale",
+    "remoteokSlug": "hpc-engineer-services-rescale-1133885",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-23T19:28:32.174Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "HPC Engineer Services",
+        "url": "https://remoteOK.com/remote-jobs/remote-hpc-engineer-services-rescale-1133885",
+        "tags": [
+          "design",
+          "sys admin",
+          "python",
+          "technical",
+          "customer support",
+          "dev",
+          "cloud",
+          "exec",
+          "legal",
+          "sales",
+          "engineer",
+          "linux",
+          "digital nomad"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "rescale.com"
+  },
+  {
+    "id": "co-109",
+    "name": "PiXL",
+    "githubOrg": "pixl",
+    "githubOrgUrl": "https://github.com/pixl",
+    "remoteokSlug": "events-co-ordinator-pixl-1133884",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-23T19:28:33.678Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Events Co ordinator",
+        "url": "https://remoteOK.com/remote-jobs/remote-events-co-ordinator-pixl-1133884",
+        "tags": []
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "pixl.com"
+  },
+  {
+    "id": "co-110",
+    "name": "Orchestrate Consulting Group",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "administrative-assistant-orchestrate-consulting-group-1133881",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-23T19:28:34.897Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Administrative Assistant",
+        "url": "https://remoteOK.com/remote-jobs/remote-administrative-assistant-orchestrate-consulting-group-1133881",
+        "tags": [
+          "hr",
+          "consulting",
+          "analyst",
+          "data science",
+          "excel",
+          "non tech",
+          "virtual assistant"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "orchestrateconsultinggroup.com"
+  },
+  {
+    "id": "co-111",
+    "name": "YO HR Consultancy",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "data-analyst-yo-hr-consultancy-1133880",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-23T19:28:36.105Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Data Analyst",
+        "url": "https://remoteOK.com/remote-jobs/remote-data-analyst-yo-hr-consultancy-1133880",
+        "tags": [
+          "hr",
+          "consulting",
+          "analyst",
+          "data science",
+          "excel",
+          "non tech"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "yohrconsultancy.com"
+  },
+  {
+    "id": "co-112",
+    "name": "CoTrain",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "executive-assistant-fully-cotrain-1133854",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-23T19:28:37.329Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Executive Assistant Fully",
+        "url": "https://remoteOK.com/remote-jobs/remote-executive-assistant-fully-cotrain-1133854",
+        "tags": [
+          "virtual assistant",
+          "exec"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "cotrain.com"
+  },
+  {
+    "id": "co-113",
+    "name": "Hunt St",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "digital-marketing-manager-hunt-st-1133850",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-23T19:28:38.599Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Digital Marketing Manager",
+        "url": "https://remoteOK.com/remote-jobs/remote-digital-marketing-manager-hunt-st-1133850",
+        "tags": [
+          "exec",
+          "design",
+          "technical",
+          "customer support",
+          "seo",
+          "ads",
+          "admin",
+          "content writing",
+          "ops",
+          "marketing",
+          "stats",
+          "legal",
+          "digital nomad"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "huntst.com"
   }
 ]
