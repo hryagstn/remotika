@@ -61,9 +61,8 @@ function SuggestYourselfForm() {
   const searchParams = useSearchParams();
   const initialCompany = searchParams.get("company") || "";
   const initialOrg = searchParams.get("org") || "";
-  const initialProvider = (searchParams.get("provider") as "github" | "gitlab") || "github";
 
-  const [provider, setProvider] = useState<"github" | "gitlab">(initialProvider);
+  const provider = "github";
   const [githubUsername, setGithubUsername] = useState("");
   const [companyName, setCompanyName] = useState(initialCompany);
   const [orgSlug, setOrgSlug] = useState(initialOrg);
@@ -210,33 +209,7 @@ function SuggestYourselfForm() {
           {outcome === "idle" && (
             <form onSubmit={handleSubmit} className="space-y-6">
               
-              {/* Provider Selector */}
-              <div className="flex p-1 rounded-xl bg-white/5 border border-white/10 max-w-xs mx-auto mb-2">
-                <button
-                  type="button"
-                  onClick={() => setProvider("github")}
-                  className={`flex-1 flex items-center justify-center space-x-2 py-2 text-xs font-bold rounded-lg transition-all cursor-pointer ${
-                    provider === "github"
-                      ? "bg-gradient-to-r from-brand-primary to-brand-secondary text-white shadow-lg shadow-brand-primary/15"
-                      : "text-white/60 hover:text-white"
-                  }`}
-                >
-                  <GithubIcon className="w-4 h-4" />
-                  <span>GitHub</span>
-                </button>
-                <button
-                  type="button"
-                  onClick={() => setProvider("gitlab")}
-                  className={`flex-1 flex items-center justify-center space-x-2 py-2 text-xs font-bold rounded-lg transition-all cursor-pointer ${
-                    provider === "gitlab"
-                      ? "bg-gradient-to-r from-brand-primary to-brand-secondary text-white shadow-lg shadow-brand-primary/15"
-                      : "text-white/60 hover:text-white"
-                  }`}
-                >
-                  <GitlabIcon className="w-4 h-4" />
-                  <span>GitLab</span>
-                </button>
-              </div>
+
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 
@@ -468,7 +441,7 @@ function SuggestYourselfForm() {
           </h2>
           
           <p className="text-xs text-white/70 leading-relaxed font-inter">
-            Proses ini murni dijalankan langsung ke API publik GitHub dan GitLab secara real-time. Remotika <strong className="font-bold text-white">tidak pernah menyimpan</strong> password atau menanyakan kredensial apa pun dari akun Anda. Kami hanya mengecek status visibilitas keanggotaan publik organisasi/grup Anda beserta isian kota pada akun publik Anda secara transparan.
+            Proses ini murni dijalankan langsung ke API publik GitHub secara real-time. Remotika <strong className="font-bold text-white">tidak pernah menyimpan</strong> password atau menanyakan kredensial apa pun dari akun Anda. Kami hanya mengecek status visibilitas keanggotaan publik organisasi Anda beserta isian kota pada akun publik Anda secara transparan.
           </p>
         </section>
 

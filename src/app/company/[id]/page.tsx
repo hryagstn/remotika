@@ -363,7 +363,7 @@ export default async function CompanyProfilePage({ params }: PageProps) {
                   <div className="p-5 rounded-2xl bg-[#090d16] border border-white/5 text-[11px] text-white/60 leading-relaxed space-y-2.5 max-w-md mx-auto text-left">
                     <p className="font-semibold text-white">Kerja di sini? Bantu verifikasi organisasi ini:</p>
                     <ul className="list-disc list-inside space-y-1 text-white/50">
-                      <li>Pastikan lokasi pada profil GitHub/GitLab Anda diatur ke kota/provinsi di Indonesia.</li>
+                      <li>Pastikan lokasi pada profil GitHub Anda diatur ke kota/provinsi di Indonesia.</li>
                       <li>Atur visibilitas keanggotaan organisasi GitHub Anda menjadi <strong>Public</strong>.</li>
                     </ul>
                     {company.githubOrg && (
@@ -499,7 +499,7 @@ export default async function CompanyProfilePage({ params }: PageProps) {
                     Lakukan verifikasi mandiri secara instan untuk menambahkan <strong>{company.name}</strong> ke dalam direktori terverifikasi.
                   </p>
                   <Link
-                    href={`/suggest-yourself?company=${encodeURIComponent(company.name)}&org=${encodeURIComponent(company.githubOrg || company.gitlabOrg || "")}&provider=${company.gitlabOrg ? "gitlab" : "github"}`}
+                    href={`/suggest-yourself?company=${encodeURIComponent(company.name)}&org=${encodeURIComponent(company.githubOrg || "")}`}
                     className="w-full mt-2 py-2 px-4 rounded-lg bg-gradient-to-r from-brand-primary to-brand-secondary text-white text-xs font-bold transition-all shadow-md shadow-brand-primary/20 flex items-center justify-center space-x-1.5 hover:opacity-95 cursor-pointer"
                   >
                     <Sparkles className="w-3.5 h-3.5" />
@@ -508,7 +508,7 @@ export default async function CompanyProfilePage({ params }: PageProps) {
                 </div>
 
                 <div className="text-[10px] text-white/40 leading-relaxed font-sans pt-1">
-                  💡 Lokasi pada profil publik GitHub/GitLab Anda harus diset ke kota/provinsi di Indonesia, dan keanggotaan organisasi Anda harus diatur ke publik.
+                  💡 Lokasi pada profil publik GitHub Anda harus diset ke kota/provinsi di Indonesia, dan keanggotaan organisasi Anda harus diatur ke publik.
                 </div>
               </div>
             )}
