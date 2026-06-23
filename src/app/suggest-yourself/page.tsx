@@ -33,6 +33,7 @@ const GitlabIcon = ({ className = "w-4 h-4" }: { className?: string }) => (
   </svg>
 );
 
+
 const TelegramIcon = ({ className = "w-4 h-4" }: { className?: string }) => (
   <svg 
     className={className} 
@@ -62,7 +63,7 @@ function SuggestYourselfForm() {
   const initialCompany = searchParams.get("company") || "";
   const initialOrg = searchParams.get("org") || "";
 
-  const provider = "github";
+  const [provider, setProvider] = useState<"github" | "gitlab">("github");
   const [githubUsername, setGithubUsername] = useState("");
   const [companyName, setCompanyName] = useState(initialCompany);
   const [orgSlug, setOrgSlug] = useState(initialOrg);
@@ -82,6 +83,7 @@ function SuggestYourselfForm() {
 
     try {
       const endpoint = provider === "github" ? "/api/verify-self" : "/api/verify-self-gitlab";
+
       const payload = provider === "github" 
         ? { githubUsername, companyName, orgSlug }
         : { gitlabUsername: githubUsername, groupSlug: orgSlug, companyName };
@@ -208,6 +210,34 @@ function SuggestYourselfForm() {
 
           {outcome === "idle" && (
             <form onSubmit={handleSubmit} className="space-y-6">
+              
+              {/* Provider Selector Tabs */}
+              <div className="flex p-1 rounded-2xl bg-white/5 border border-white/5 space-x-1">
+                <button
+                  type="button"
+                  onClick={() => { setProvider("github"); resetForm(); }}
+                  className={`flex-1 flex items-center justify-center space-x-2 py-2.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
+                    provider === "github"
+                      ? "bg-brand-primary text-white shadow-md shadow-brand-primary/20"
+                      : "text-white/60 hover:text-white hover:bg-white/5"
+                  }`}
+                >
+                  <GithubIcon className="w-4 h-4" />
+                  <span>GitHub</span>
+                </button>
+                <button
+                  type="button"
+                  onClick={() => { setProvider("gitlab"); resetForm(); }}
+                  className={`flex-1 flex items-center justify-center space-x-2 py-2.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
+                    provider === "gitlab"
+                      ? "bg-brand-primary text-white shadow-md shadow-brand-primary/20"
+                      : "text-white/60 hover:text-white hover:bg-white/5"
+                  }`}
+                >
+                  <GitlabIcon className="w-4 h-4" />
+                  <span>GitLab</span>
+                </button>
+              </div>
               
 
 

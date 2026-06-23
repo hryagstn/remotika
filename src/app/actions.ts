@@ -10,7 +10,7 @@ export interface CompanyData {
   gitlabOrg?: string;
   gitlabOrgUrl?: string;
   remoteokSlug: string | null;
-  industry: string;
+  industry: string | null;
   verifiedIndonesianCount: number;
   label: string;
   lastVerifiedAt: string | null;
@@ -21,6 +21,7 @@ export interface CompanyData {
     url: string;
     tags: string[];
     salary?: string;
+    location?: string;
   }>;
   verifiedMembers: Array<{
     id: string;
@@ -63,7 +64,7 @@ export async function getCompanies(
       (c) =>
         c.name.toLowerCase().includes(searchClean) ||
         c.githubOrg.toLowerCase().includes(searchClean) ||
-        c.industry.toLowerCase().includes(searchClean)
+        (c.industry && c.industry.toLowerCase().includes(searchClean))
     );
   }
 

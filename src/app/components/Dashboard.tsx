@@ -101,7 +101,7 @@ export default function Dashboard({ initialCompanies }: DashboardProps) {
     const matchesSearch = !query || 
       c.name.toLowerCase().includes(query) ||
       c.githubOrg.toLowerCase().includes(query) ||
-      c.industry.toLowerCase().includes(query);
+      (c.industry && c.industry.toLowerCase().includes(query));
     
     const matchesLabel = labelFilter === "All" || c.label === labelFilter;
     const matchesJobs = !hasJobsOnly || c.hasActiveJobs;
@@ -109,7 +109,7 @@ export default function Dashboard({ initialCompanies }: DashboardProps) {
     const matchesCategory = categoryFilter === "All Roles" || (() => {
       const cat = categoryFilter.toLowerCase();
       // Check if industry contains category keyword or synonyms
-      const indLower = c.industry.toLowerCase();
+      const indLower = (c.industry || "").toLowerCase();
       const industryMatches = indLower.includes(cat) || 
         (cat === "engineering" && (indLower.includes("tech") || indLower.includes("development") || indLower.includes("software") || indLower.includes("systems") || indLower.includes("infrastructure") || indLower.includes("devsecops"))) ||
         (cat === "design" && (indLower.includes("design") || indLower.includes("graphics") || indLower.includes("collaboration") || indLower.includes("creative"))) ||
@@ -177,7 +177,7 @@ export default function Dashboard({ initialCompanies }: DashboardProps) {
       c.githubOrgUrl,
       c.verifiedIndonesianCount,
       c.label,
-      `"${c.industry.replace(/"/g, '""')}"`,
+      `"${(c.industry || "").replace(/"/g, '""')}"`,
       c.lastVerifiedAt ? new Date(c.lastVerifiedAt).toLocaleDateString() : 'N/A'
     ]);
     const csvContent = "data:text/csv;charset=utf-8," 
@@ -646,9 +646,11 @@ export default function Dashboard({ initialCompanies }: DashboardProps) {
                     </div>
 
                     {/* Industry */}
-                    <p className="text-xs text-white/60 line-clamp-2 leading-relaxed">
-                      {c.industry}
-                    </p>
+                    {c.industry && (
+                      <p className="text-xs text-white/60 line-clamp-2 leading-relaxed">
+                        {c.industry}
+                      </p>
+                    )}
 
                     {/* Watchlist CTA Box */}
                     {isWatchlist && (

@@ -97,7 +97,7 @@ export async function generateMetadata({ params }: PageProps) {
 
   return {
     title: `${company.name} | Profil Perusahaan Remotika`,
-    description: `Verifikasi talenta remote Indonesia dan lowongan aktif di ${company.name} pada Remotika. ${company.industry}`,
+    description: `Verifikasi talenta remote Indonesia dan lowongan aktif di ${company.name} pada Remotika. ${company.industry || ""}`,
     openGraph: {
       title: `${company.name} - Lowongan Remote Terverifikasi untuk Talenta Indonesia`,
       description: `Lihat anggota GitHub publik dari Indonesia yang bekerja di ${company.name}.`,
@@ -230,9 +230,11 @@ export default async function CompanyProfilePage({ params }: PageProps) {
                     {company.label}
                   </span>
                 </div>
-                <p className="max-w-2xl text-text-secondary font-body-base text-sm sm:text-base leading-relaxed">
-                  {company.industry}
-                </p>
+                {company.industry && (
+                  <p className="max-w-2xl text-text-secondary font-body-base text-sm sm:text-base leading-relaxed">
+                    {company.industry}
+                  </p>
+                )}
               </div>
             </div>
 

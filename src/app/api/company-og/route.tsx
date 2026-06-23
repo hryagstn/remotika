@@ -10,7 +10,7 @@ interface Company {
   githubOrg: string;
   githubOrgUrl: string;
   remoteokSlug: string | null;
-  industry: string;
+  industry: string | null;
   verifiedIndonesianCount: number;
   label: string;
   lastVerifiedAt: string | null;

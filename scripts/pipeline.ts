@@ -182,6 +182,7 @@ interface ActiveJob {
   url: string;
   tags: string[];
   salary?: string;
+  location?: string;
 }
 
 interface VerifiedMember {
@@ -209,7 +210,7 @@ interface CompanyData {
   gitlabOrg?: string;
   gitlabOrgUrl?: string;
   remoteokSlug: string | null;
-  industry: string;
+  industry: string | null;
   verifiedIndonesianCount: number;
   label: string;
   lastVerifiedAt: string | null;
@@ -463,7 +464,48 @@ function extractWebsiteFromDescription(companyName: string, description: string)
   return `${slug}.com`;
 }
 
-async function resolveGithubOrg(companyName: string, website: string | null): Promise<string | null> {
+export function isSignificantMatch(companyName: string, orgName: string | null, orgLogin: string): boolean {
+  const normalize = (str: string): string => {
+    return str
+      .toLowerCase()
+      .replace(/[^\w\s-]/g, "") // Keep alphanumeric, spaces, hyphens
+      .replace(/[\s_-]+/g, " ") // Normalize spaces/underscores/hyphens to space
+      .trim();
+  };
+
+  const normCompany = normalize(companyName);
+  const normLogin = normalize(orgLogin);
+  const normName = orgName ? normalize(orgName) : "";
+
+  const suffixes = ["ltd", "inc", "llc", "corp", "co", "gmbh", "software", "tech", "technologies", "solutions"];
+  const stripSuffixes = (str: string): string => {
+    let parts = str.split(" ");
+    return parts.filter(p => !suffixes.includes(p)).join(" ");
+  };
+
+  const strippedCompany = stripSuffixes(normCompany);
+  const strippedName = normName ? stripSuffixes(normName) : "";
+  const strippedLogin = stripSuffixes(normLogin);
+
+  if (!strippedCompany) return false;
+
+  if (strippedCompany === strippedName || strippedCompany === strippedLogin) {
+    return true;
+  }
+
+  // Check if one contains the other, but make sure they are not too short to avoid false positives
+  if (strippedName && (strippedName.includes(strippedCompany) || strippedCompany.includes(strippedName))) {
+    return true;
+  }
+
+  if (strippedLogin.includes(strippedCompany) || strippedCompany.includes(strippedLogin)) {
+    return true;
+  }
+
+  return false;
+}
+
+export async function resolveGithubOrg(companyName: string, website: string | null): Promise<string | null> {
   const slug = companyName
     .toLowerCase()
     .trim()
@@ -477,24 +519,15 @@ async function resolveGithubOrg(companyName: string, website: string | null): Pr
   try {
     const orgData = await fetchWithAuth(`https://api.github.com/orgs/${slug}`);
     if (orgData && orgData.login) {
-      console.log(`    ✅ Direct slug resolved: ${orgData.login}`);
-      return orgData.login;
+      if (isSignificantMatch(companyName, orgData.name, orgData.login)) {
+        console.log(`    ✅ Direct slug resolved and verified: ${orgData.login}`);
+        return orgData.login;
+      } else {
+        console.log(`    ❌ Direct slug resolved (${orgData.login}) but failed similarity check. Org Name: "${orgData.name}", Company: "${companyName}"`);
+      }
     }
   } catch (err: any) {
     console.log(`    ℹ️ Direct slug "${slug}" failed: ${err.message}`);
-  }
-
-  // Fallback: search orgs
-  console.log(`  [resolveGithubOrg] Falling back to search for "${companyName}"`);
-  try {
-    const searchResults = await fetchWithAuth(`https://api.github.com/search/users?q=type:org+${encodeURIComponent(companyName)}`);
-    if (searchResults && Array.isArray(searchResults.items) && searchResults.items.length > 0) {
-      const topMatch = searchResults.items[0].login;
-      console.log(`    ✅ GitHub Search resolved: ${topMatch}`);
-      return topMatch;
-    }
-  } catch (err: any) {
-    console.error(`    ❌ Search failed for "${companyName}":`, err.message);
   }
 
   return null;
@@ -539,9 +572,10 @@ function fixMojibake(str: string): string {
 async function translateText(text: string, targetLanguage: string = "en"): Promise<string> {
   if (!text) return text;
   
-  // Detect if the string contains any non-Latin / non-ASCII text
-  const hasNonLatin = /[^\u0000-\u024F\u2000-\u206F]/.test(text);
-  if (!hasNonLatin) return text;
+  const FOREIGN_WORD_REGEX = /\b(de|en|para|del|el|la|los|las|con|por|un|una|desarrollador|programador|analista|gerente|director|sênior|diseñador|desenvolvedor|für|und|mit|von|im|das|der|die|du|et|pour|dans|avec|sur|un|une)\b/i;
+  
+  const needsTranslation = /[^\u0000-\u007F]/.test(text) || FOREIGN_WORD_REGEX.test(text);
+  if (!needsTranslation) return text;
 
   try {
     const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=${targetLanguage}&dt=t&q=${encodeURIComponent(text)}`;
@@ -554,7 +588,7 @@ async function translateText(text: string, targetLanguage: string = "en"): Promi
       const translatedParts = data[0].map((item: any) => item[0]).filter(Boolean);
       const result = translatedParts.join("").trim();
       if (result) {
-        console.log(`    🌐 Translated non-Latin text: "${text}" -> "${result}"`);
+        console.log(`    🌐 Translated text: "${text}" -> "${result}"`);
         return result;
       }
     }
@@ -607,25 +641,58 @@ async function harvestRemoteOkCandidates(existingCompanies: CompanyData[]): Prom
       companyName = await translateText(companyName);
       const companyKey = companyName.toLowerCase();
 
+      // Skip if company name contains "test" (case-insensitive)
+      if (companyKey.includes("test")) {
+        continue;
+      }
+
+      // Check RemoteOK job location eligibility: must be worldwide/global/anywhere (or empty)
+      const jobLocation = (job.location || "").toLowerCase().trim();
+      const isWorldwide = jobLocation === "" || ["worldwide", "global", "anywhere"].some(loc => jobLocation.includes(loc));
+      if (!isWorldwide) {
+        continue;
+      }
+
+      // Blocklist check for government or military keywords
+      const ELIGIBILITY_BLOCKLIST = [
+        "government", "military", "army", "navy", "defense", "national guard", 
+        "police", "senate", "parliament", "embassy", "consulate", "municipal", 
+        "city of", "department of", "ministry of"
+      ];
+      const containsBlockedWord = ELIGIBILITY_BLOCKLIST.some(word => companyKey.includes(word));
+      if (containsBlockedWord) {
+        continue;
+      }
+
       // Check exclude list
       if (EXCLUDED_SET.has(companyKey)) {
         continue;
       }
 
+      const jobPosition = await translateText(fixMojibake(job.position || ""));
+      const jobPositionLower = jobPosition.toLowerCase();
+
+      // Skip if job title contains "test" (case-insensitive)
+      if (jobPositionLower.includes("test")) {
+        continue;
+      }
+
+      // Filter by tags
+      const jobTags = Array.isArray(job.tags) 
+        ? await Promise.all(job.tags.map(async (t: string) => await translateText(fixMojibake(t)))) 
+        : [];
+
+
       // Extract website
       const website = extractWebsiteFromDescription(companyName, job.description || "");
       const domain = parseDomain(website);
 
-      // Dedup against existing domains
-      if (domain && existingDomains.has(domain)) {
-        continue;
-      }
-
       const activeJob: ActiveJob = {
-        title: await translateText(fixMojibake(job.position)),
+        title: jobPosition,
         url: job.url,
-        tags: Array.isArray(job.tags) ? await Promise.all(job.tags.map(async (t: string) => await translateText(fixMojibake(t)))) : [],
-        salary: job.salary || undefined
+        tags: jobTags,
+        salary: job.salary || undefined,
+        location: job.location || undefined
       };
 
       // Populate companyJobsMap for job enrichment of existing/verified companies
@@ -633,6 +700,11 @@ async function harvestRemoteOkCandidates(existingCompanies: CompanyData[]): Prom
         companyJobsMap.set(companyKey, []);
       }
       companyJobsMap.get(companyKey)!.push(activeJob);
+
+      // Dedup against existing domains for candidate discovery
+      if (domain && existingDomains.has(domain)) {
+        continue;
+      }
 
       const existingCandidate = candidatesMap.get(companyKey);
       if (existingCandidate) {
@@ -675,7 +747,7 @@ const createWatchlistEntry = (
     githubOrg: githubOrg || "",
     githubOrgUrl: githubOrg ? `https://github.com/${githubOrg}` : "",
     remoteokSlug: remoteokSlug,
-    industry: "Tech & Development Services",
+    industry: null,
     verifiedIndonesianCount: 0,
     label: "Watchlist",
     lastVerifiedAt: new Date().toISOString(),
@@ -714,11 +786,16 @@ async function fetchRemotiveJobs() {
         const isTargetLocation = ["worldwide", "indonesia", "anywhere", "apac", "asia"].some(loc => location.includes(loc));
         if (!isTargetLocation) continue;
 
+        const jobPosition = await translateText(fixMojibake(job.title || ""));
+        const jobTags = Array.isArray(job.tags)
+          ? await Promise.all(job.tags.map(async (t: string) => await translateText(fixMojibake(t))))
+          : [];
+
         const companyKey = job.company_name.toLowerCase().trim();
         const activeJob: ActiveJob = {
-          title: job.title,
+          title: jobPosition,
           url: job.url,
-          tags: Array.isArray(job.tags) ? job.tags : [],
+          tags: jobTags,
           salary: job.salary || undefined
         };
         if (!companyJobsMap.has(companyKey)) {
@@ -1015,7 +1092,7 @@ async function processOrg(orgLogin: string, existingCompanies: CompanyData[]): P
 
     const orgName = orgData.name || orgData.login;
     const orgUrl = orgData.html_url;
-    const description = orgData.description || "Tech & Development Services";
+    const description = orgData.description || null;
     
     // Parse official company website domain for Saringan C
     const companyDomain = parseDomain(orgData.blog);
@@ -1195,7 +1272,7 @@ async function processOrg(orgLogin: string, existingCompanies: CompanyData[]): P
           name: orgName,
           githubOrgUrl: orgUrl,
           remoteokSlug: REMOTEOK_SLUG_OVERRIDES[orgLogin.toLowerCase()] || existingCompany.remoteokSlug || orgLogin.toLowerCase(),
-          industry: description.substring(0, 255),
+          industry: description ? description.substring(0, 255) : null,
           verifiedIndonesianCount: foundIndonesianMembers.length,
           label: label,
           lastVerifiedAt: lastVerifiedAt,
@@ -1217,7 +1294,7 @@ async function processOrg(orgLogin: string, existingCompanies: CompanyData[]): P
           githubOrg: orgLogin.toLowerCase(),
           githubOrgUrl: orgUrl,
           remoteokSlug: REMOTEOK_SLUG_OVERRIDES[orgLogin.toLowerCase()] || orgLogin.toLowerCase(),
-          industry: description.substring(0, 255),
+          industry: description ? description.substring(0, 255) : null,
           verifiedIndonesianCount: foundIndonesianMembers.length,
           label: label,
           lastVerifiedAt: lastVerifiedAt,
@@ -1368,7 +1445,12 @@ async function main() {
   
   // Populate map with existing companies
   companies.forEach(c => {
-    updatedCompaniesMap.set(c.githubOrg.toLowerCase(), c);
+    if (c.githubOrg) {
+      updatedCompaniesMap.set(c.githubOrg.toLowerCase(), c);
+    } else {
+      const key = c.remoteokSlug ? `wl-${c.remoteokSlug.toLowerCase()}` : `wl-${c.name.toLowerCase()}`;
+      updatedCompaniesMap.set(key, c);
+    }
   });
 
   // 4. Process each organization in the queue
@@ -1535,9 +1617,53 @@ async function main() {
     await new Promise(r => setTimeout(r, 1000));
   }
 
+  // 4.7 Update active jobs for all watchlist companies in the database
+  console.log("\n[Pipeline] Updating active jobs for watchlist companies...");
+  for (const company of updatedCompaniesMap.values()) {
+    if (company.status === "watchlist") {
+      const cleanNameKey = company.name.toLowerCase().trim();
+      const cleanSlugKey = company.githubOrg ? company.githubOrg.toLowerCase().trim() : "";
+      const remoteokKey = company.remoteokSlug?.toLowerCase().trim();
+
+      let feedJobs = companyJobsMap.get(cleanNameKey) 
+        || (cleanSlugKey ? companyJobsMap.get(cleanSlugKey) : undefined)
+        || (remoteokKey ? companyJobsMap.get(remoteokKey) : undefined);
+
+      if (!feedJobs) {
+        for (const [apiCompanyName, jobs] of companyJobsMap.entries()) {
+          if (
+            cleanNameKey.includes(apiCompanyName) || apiCompanyName.includes(cleanNameKey) ||
+            (cleanSlugKey && (cleanSlugKey.includes(apiCompanyName) || apiCompanyName.includes(cleanSlugKey))) ||
+            (remoteokKey && (remoteokKey.includes(apiCompanyName) || apiCompanyName.includes(remoteokKey)))
+          ) {
+            feedJobs = jobs;
+            console.log(`  🔗 Watchlist feed match: "${apiCompanyName}" → ${company.name}`);
+            break;
+          }
+        }
+      }
+
+      if (feedJobs) {
+        // Deduplicate by title
+        const seenTitles = new Set<string>();
+        const deduped = feedJobs.filter(j => {
+          const key = j.title.toLowerCase().trim();
+          if (seenTitles.has(key)) return false;
+          seenTitles.add(key);
+          return true;
+        });
+        company.activeJobs = deduped;
+        company.hasActiveJobs = deduped.length > 0;
+      } else {
+        company.activeJobs = [];
+        company.hasActiveJobs = false;
+      }
+    }
+  }
+
   // 5. Save updated list back to JSON (filter defunct + zero-member companies + excluded companies)
   const finalCompaniesList = Array.from(updatedCompaniesMap.values())
-    .filter(c => c.status === "watchlist" || c.verifiedIndonesianCount > 0)
+    .filter(c => c.status === "watchlist" ? c.hasActiveJobs : c.verifiedIndonesianCount > 0)
     .filter(c => !c.githubOrg || !BLOCKLISTED_ORGS.has(c.githubOrg.toLowerCase()))
     .filter(c => !c.githubOrg || !EXCLUDED_SET.has(c.githubOrg.toLowerCase()))
     .filter(c => !c.githubOrg || c.githubOrg.toLowerCase() === "xendit" || !isLocationIndonesian(c.headquarters));
