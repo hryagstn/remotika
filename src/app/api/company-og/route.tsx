@@ -207,11 +207,23 @@ export async function GET(request: NextRequest) {
                   lineHeight: 1.4,
                 }}
               >
-                Is remote hiring — and they have{" "}
-                <span style={{ color: "#2dd4bf", fontWeight: 700 }}>
-                  {verifiedCount} verified Indonesian
-                </span>{" "}
-                team member{verifiedCount > 1 ? "s" : ""}!
+                {verifiedCount > 0 ? (
+                  <>
+                    Is remote hiring — and they have{" "}
+                    <span style={{ color: "#2dd4bf", fontWeight: 700 }}>
+                      {verifiedCount} verified Indonesian
+                    </span>{" "}
+                    team member{verifiedCount > 1 ? "s" : ""}!
+                  </>
+                ) : (
+                  <>
+                    Is remote hiring — want to be their{" "}
+                    <span style={{ color: "#2dd4bf", fontWeight: 700 }}>
+                      first verified Indonesian
+                    </span>{" "}
+                    team member?
+                  </>
+                )}
               </span>
             </div>
           </div>
@@ -263,8 +275,9 @@ export async function GET(request: NextRequest) {
         height: 627,
       }
     );
-  } catch (error: any) {
+  } catch (error: unknown) {
+    const errorMessage = error instanceof Error ? error.message : String(error);
     console.error("Failed to generate company OG image:", error);
-    return new Response(`Failed to generate image: ${error.message}`, { status: 500 });
+    return new Response(`Failed to generate image: ${errorMessage}`, { status: 500 });
   }
 }

@@ -10,7 +10,8 @@ import {
   Briefcase, 
   Users, 
   ExternalLink,
-  Quote
+  Quote,
+  Sparkles
 } from "lucide-react";
 import { getCompanies } from "../../actions";
 import BadgeEmbed from "./BadgeEmbed";
@@ -380,7 +381,7 @@ export default async function CompanyProfilePage({ params }: PageProps) {
                     >
                       <Quote className="text-brand-primary opacity-10 absolute top-4 right-4 w-12 h-12" />
                       <p className="text-text-secondary text-xs sm:text-sm italic relative z-10 leading-relaxed mb-6 font-medium">
-                        "{test.text}"
+                        &quot;{test.text}&quot;
                       </p>
                       <div className="flex items-center gap-3">
                         <div className="w-10 h-10 rounded-xl bg-bg-elevated flex items-center justify-center text-text-primary font-bold text-xs">
@@ -463,8 +464,39 @@ export default async function CompanyProfilePage({ params }: PageProps) {
           {/* Right Column (Sidebar - 1/3) */}
           <div className="space-y-6">
             
-            {/* Embed Badge */}
-            <BadgeEmbed githubOrg={company.githubOrg} />
+            {/* Embed Badge vs Manual Verification Invitation */}
+            {company.verifiedIndonesianCount > 0 ? (
+              <BadgeEmbed githubOrg={company.githubOrg} />
+            ) : (
+              <div className="glass-panel p-6 rounded-xl border border-brand-primary/20 space-y-4">
+                <h3 className="font-title-md text-title-md text-text-primary flex items-center gap-2 font-bold font-outfit">
+                  <span className="text-brand-primary">🛡️</span>
+                  <span>Belum Terverifikasi</span>
+                </h3>
+                
+                <p className="text-text-muted text-xs leading-relaxed">
+                  Belum ada anggota tim dari Indonesia yang terverifikasi bekerja di <strong>{company.name}</strong> melalui sistem otomatis kami.
+                </p>
+
+                <div className="p-4 rounded-xl bg-[#090d16] border border-white/5 space-y-3 text-xs text-white/70">
+                  <p className="font-semibold text-white">Bekerja secara remote di sini?</p>
+                  <p className="text-text-muted leading-relaxed">
+                    Lakukan verifikasi mandiri secara instan untuk menambahkan <strong>{company.name}</strong> ke dalam direktori terverifikasi.
+                  </p>
+                  <Link
+                    href={`/suggest-yourself?company=${encodeURIComponent(company.name)}&org=${encodeURIComponent(company.githubOrg || company.gitlabOrg || "")}&provider=${company.gitlabOrg ? "gitlab" : "github"}`}
+                    className="w-full mt-2 py-2 px-4 rounded-lg bg-gradient-to-r from-brand-primary to-brand-secondary text-white text-xs font-bold transition-all shadow-md shadow-brand-primary/20 flex items-center justify-center space-x-1.5 hover:opacity-95 cursor-pointer"
+                  >
+                    <Sparkles className="w-3.5 h-3.5" />
+                    <span>Verifikasi Mandiri Sekarang</span>
+                  </Link>
+                </div>
+
+                <div className="text-[10px] text-white/40 leading-relaxed font-sans pt-1">
+                  💡 Lokasi pada profil publik GitHub/GitLab Anda harus diset ke kota/provinsi di Indonesia, dan keanggotaan organisasi Anda harus diatur ke publik.
+                </div>
+              </div>
+            )}
 
             {/* Share Company Component */}
             <ShareCompany 

@@ -1,7 +1,8 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, Suspense } from "react";
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import { 
   ArrowLeft, 
   CheckCircle, 
@@ -45,10 +46,27 @@ const TelegramIcon = ({ className = "w-4 h-4" }: { className?: string }) => (
 type Outcome = "idle" | "verifying" | "verified" | "already_verified" | "not_eligible" | "not_public_member" | "error";
 
 export default function SuggestYourselfPage() {
-  const [provider, setProvider] = useState<"github" | "gitlab">("github");
+  return (
+    <Suspense fallback={
+      <div className="relative min-h-screen bg-bg-base overflow-hidden flex flex-col items-center justify-center">
+        <Loader2 className="w-12 h-12 text-brand-primary animate-spin" />
+      </div>
+    }>
+      <SuggestYourselfForm />
+    </Suspense>
+  );
+}
+
+function SuggestYourselfForm() {
+  const searchParams = useSearchParams();
+  const initialCompany = searchParams.get("company") || "";
+  const initialOrg = searchParams.get("org") || "";
+  const initialProvider = (searchParams.get("provider") as "github" | "gitlab") || "github";
+
+  const [provider, setProvider] = useState<"github" | "gitlab">(initialProvider);
   const [githubUsername, setGithubUsername] = useState("");
-  const [companyName, setCompanyName] = useState("");
-  const [orgSlug, setOrgSlug] = useState("");
+  const [companyName, setCompanyName] = useState(initialCompany);
+  const [orgSlug, setOrgSlug] = useState(initialOrg);
   
   const [outcome, setOutcome] = useState<Outcome>("idle");
   const [message, setMessage] = useState("");
@@ -100,10 +118,11 @@ export default function SuggestYourselfPage() {
           setErrorDetails(data.error);
         }
       }
-    } catch (err: any) {
+    } catch (err: unknown) {
+      const errorMessage = err instanceof Error ? err.message : String(err);
       setOutcome("error");
       setMessage("Terjadi gangguan koneksi jaringan.");
-      setErrorDetails(err.message);
+      setErrorDetails(errorMessage);
     }
   };
 
@@ -362,7 +381,7 @@ export default function SuggestYourselfPage() {
                   {message}
                 </p>
                 <p className="text-[10px] text-amber-400/80 leading-relaxed font-sans pt-2 bg-amber-500/5 px-4 py-2 rounded-xl inline-block border border-amber-500/10">
-                  💡 Tips: Edit profil publik GitHub Anda, tambahkan kota seperti 'Jakarta', 'Bandung', atau kata kunci 'Indonesia', simpan, lalu coba ajukan kembali.
+                  💡 Tips: Edit profil publik GitHub Anda, tambahkan kota seperti &apos;Jakarta&apos;, &apos;Bandung&apos;, atau kata kunci &apos;Indonesia&apos;, simpan, lalu coba ajukan kembali.
                 </p>
               </div>
               <div className="pt-4">

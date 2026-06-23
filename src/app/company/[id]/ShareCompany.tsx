@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import { Download, Check, Copy, Share2, ExternalLink } from "lucide-react";
 
 const LinkedinIcon = ({ className = "w-4 h-4" }: { className?: string }) => (
   <svg 
@@ -22,12 +21,19 @@ interface ShareCompanyProps {
 }
 
 export default function ShareCompany({ companyName, companyId, companySlug, verifiedCount, hasActiveJobs }: ShareCompanyProps) {
-  const [caption, setCaption] = useState(
-    `${companyName} memiliki developer asal Indonesia terverifikasi di tim mereka — dan saat ini mereka sedang membuka lowongan remote global aktif!\n\nBukan sekadar tebakan, tetapi terverifikasi langsung secara akurat melalui keanggotaan organisasi publik GitHub.\n\nLihat detail peran dan pembuktian verifikasinya di sini: https://remotika.vercel.app/company/${companySlug}`
-  );
+  const defaultCaption = verifiedCount > 0
+    ? `${companyName} memiliki developer asal Indonesia terverifikasi di tim mereka — dan saat ini mereka sedang membuka lowongan remote global aktif!\n\nBukan sekadar tebakan, tetapi terverifikasi langsung secara akurat melalui keanggotaan organisasi publik GitHub.\n\nLihat detail peran dan pembuktian verifikasinya di sini: https://remotika.vercel.app/company/${companySlug}`
+    : `${companyName} sedang membuka lowongan remote global aktif! Apakah kamu akan menjadi developer asal Indonesia pertama yang terverifikasi di tim mereka?\n\nCek detail peran dan cara verifikasi keanggotaan organisasi di sini: https://remotika.vercel.app/company/${companySlug}`;
+
+  const [caption, setCaption] = useState(defaultCaption);
   const [isDownloading, setIsDownloading] = useState(false);
   const [isSharing, setIsSharing] = useState(false);
-  const [copied, setCopied] = useState(false);
+
+  const [prevCompanyId, setPrevCompanyId] = useState(companyId);
+  if (companyId !== prevCompanyId) {
+    setPrevCompanyId(companyId);
+    setCaption(defaultCaption);
+  }
 
   if (!hasActiveJobs) return null;
 
@@ -61,8 +67,6 @@ export default function ShareCompany({ companyName, companyId, companySlug, veri
     try {
       // 1. Copy caption to clipboard
       await navigator.clipboard.writeText(caption);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 3000);
 
       // 2. Trigger image download
       await downloadOgImage();
@@ -85,7 +89,15 @@ export default function ShareCompany({ companyName, companyId, companySlug, veri
       </h3>
 
       <p className="text-text-muted text-xs leading-relaxed">
-        Bantu talenta Indonesia lainnya mengetahui bahwa <strong>{companyName}</strong> memiliki tim Indonesia terverifikasi dan sedang membuka lowongan remote aktif!
+        {verifiedCount > 0 ? (
+          <>
+            Bantu talenta Indonesia lainnya mengetahui bahwa <strong>{companyName}</strong> memiliki tim Indonesia terverifikasi dan sedang membuka lowongan remote aktif!
+          </>
+        ) : (
+          <>
+            Bantu talenta Indonesia lainnya mengetahui bahwa <strong>{companyName}</strong> sedang membuka lowongan remote aktif dan jadilah yang pertama terverifikasi!
+          </>
+        )}
       </p>
 
       {/* Editable Textarea for LinkedIn Caption */}
