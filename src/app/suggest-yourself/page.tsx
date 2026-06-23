@@ -384,7 +384,7 @@ function SuggestYourselfForm() {
                   {message}
                 </p>
                 <p className="text-[10px] text-amber-400/80 leading-relaxed font-sans pt-2 bg-amber-500/5 px-4 py-2 rounded-xl inline-block border border-amber-500/10">
-                  💡 Tips: Edit profil publik GitHub Anda, tambahkan kota seperti &apos;Jakarta&apos;, &apos;Bandung&apos;, atau kata kunci &apos;Indonesia&apos;, simpan, lalu coba ajukan kembali.
+                  💡 Tips: Edit profil publik {provider === "github" ? "GitHub" : "GitLab"} Anda, tambahkan kota seperti &apos;Jakarta&apos;, &apos;Bandung&apos;, atau kata kunci &apos;Indonesia&apos;, simpan, lalu coba ajukan kembali.
                 </p>
               </div>
               <div className="pt-4">
@@ -471,7 +471,7 @@ function SuggestYourselfForm() {
           </h2>
           
           <p className="text-xs text-white/70 leading-relaxed font-inter">
-            Proses ini murni dijalankan langsung ke API publik GitHub secara real-time. Remotika <strong className="font-bold text-white">tidak pernah menyimpan</strong> password atau menanyakan kredensial apa pun dari akun Anda. Kami hanya mengecek status visibilitas keanggotaan publik organisasi Anda beserta isian kota pada akun publik Anda secara transparan.
+            Proses ini murni dijalankan langsung ke API publik {provider === "github" ? "GitHub" : "GitLab"} secara real-time. Remotika <strong className="font-bold text-white">tidak pernah menyimpan</strong> password atau menanyakan kredensial apa pun dari akun Anda. Kami hanya mengecek status visibilitas keanggotaan publik {provider === "github" ? "organisasi Anda" : "group Anda"} beserta isian kota pada akun publik Anda secara transparan.
           </p>
         </section>
 
