@@ -8,14 +8,9 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-06-23T19:11:17.378Z",
+    "lastVerifiedAt": "2026-06-24T18:55:07.669Z",
     "hasActiveJobs": true,
     "activeJobs": [
-      {
-        "title": "Banking Experiments Business Director",
-        "url": "https://job-boards.greenhouse.io/xendit/jobs/7733314003",
-        "tags": []
-      },
       {
         "title": "Customer Experience Generalist (Daylight)",
         "url": "https://job-boards.greenhouse.io/xendit/jobs/7698002003",
@@ -114,7 +109,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 2,
     "label": "Indonesia-Friendly",
-    "lastVerifiedAt": "2026-06-23T19:11:33.572Z",
+    "lastVerifiedAt": "2026-06-24T18:55:23.055Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -154,7 +149,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-06-23T19:11:49.421Z",
+    "lastVerifiedAt": "2026-06-24T18:55:38.034Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -188,7 +183,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-06-23T19:11:55.510Z",
+    "lastVerifiedAt": "2026-06-24T18:55:43.470Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -222,7 +217,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-06-23T19:12:02.680Z",
+    "lastVerifiedAt": "2026-06-24T18:55:49.612Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -267,116 +262,6 @@
     "source": "remoteok",
     "watchlistReason": "no-org-found",
     "website": "cardiovascularassociatesofamericacvausa.com"
-  },
-  {
-    "id": "co-101",
-    "name": "Twine",
-    "githubOrg": "twine",
-    "githubOrgUrl": "https://github.com/twine",
-    "remoteokSlug": "content-creator-ugc-twine-1133744",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-06-23T06:16:06.936Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Content Creator UGC",
-        "url": "https://remoteOK.com/remote-jobs/remote-content-creator-ugc-twine-1133744",
-        "tags": [
-          "content writing"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "org-found-zero-match",
-    "website": "twine.com"
-  },
-  {
-    "id": "co-102",
-    "name": "Cambridge Spark",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "product-manager-cambridge-spark-1133737",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-06-23T06:16:08.376Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Product Manager",
-        "url": "https://remoteOK.com/remote-jobs/remote-product-manager-cambridge-spark-1133737",
-        "tags": [
-          "exec",
-          "social media",
-          "sys admin",
-          "infosec",
-          "technical",
-          "customer support",
-          "testing",
-          "marketing",
-          "dev",
-          "scheme",
-          "microsoft",
-          "senior",
-          "recruiter",
-          "digital nomad",
-          "legal",
-          "product manager",
-          "travel"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "cambridgespark.com"
-  },
-  {
-    "id": "co-103",
-    "name": "Empassion Health",
-    "githubOrg": "empassion-health",
-    "githubOrgUrl": "https://github.com/empassion-health",
-    "remoteokSlug": "care-coordinator-empassion-health-1133721",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Confirmed",
-    "lastVerifiedAt": "2026-06-23T19:12:08.343Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Care Coordinator",
-        "url": "https://remoteOK.com/remote-jobs/remote-care-coordinator-empassion-health-1133721",
-        "tags": [
-          "exec",
-          "design",
-          "architecture",
-          "recruiter",
-          "strategy",
-          "customer support",
-          "c",
-          "full time",
-          "digital nomad",
-          "dev",
-          "speech",
-          "coordinator",
-          "medical"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "org-found-zero-match",
-    "website": "empassionhealth.com",
-    "verifiedAt": "2026-06-23T06:16:16.138Z"
   },
   {
     "id": "co-106",
@@ -665,5 +550,251 @@
     "source": "remoteok",
     "watchlistReason": "no-org-found",
     "website": "huntst.com"
+  },
+  {
+    "id": "co-114",
+    "name": "BitPay",
+    "githubOrg": "bitpay",
+    "githubOrgUrl": "https://github.com/bitpay",
+    "remoteokSlug": "senior-backend-software-developer-bitpay-1133985",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-24T19:10:46.807Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Senior Backend Software Developer",
+        "url": "https://remoteOK.com/remote-jobs/remote-senior-backend-software-developer-bitpay-1133985",
+        "tags": [
+          "dev",
+          "backend",
+          "javascript",
+          "crypto",
+          "mongo",
+          "node"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "bitpay.com"
+  },
+  {
+    "id": "co-115",
+    "name": "StratifyIQ",
+    "githubOrg": "StratifyIQ",
+    "githubOrgUrl": "https://github.com/StratifyIQ",
+    "remoteokSlug": "canva-design-specialist-real-estate-stratifyiq-1133978",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-24T19:10:48.145Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Canva Design Specialist Real Estate",
+        "url": "https://remoteOK.com/remote-jobs/remote-canva-design-specialist-real-estate-stratifyiq-1133978",
+        "tags": [
+          "exec",
+          "crypto",
+          "customer support",
+          "finance",
+          "ops",
+          "medical",
+          "analyst",
+          "sys admin",
+          "dev",
+          "scrum",
+          "excel",
+          "digital nomad",
+          "design",
+          "marketing"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "stratifyiq.com"
+  },
+  {
+    "id": "co-116",
+    "name": "JazzUpCo",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "marketing-assistant-fully-jazzupco-1133973",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-24T19:10:49.261Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Marketing Assistant Fully",
+        "url": "https://remoteOK.com/remote-jobs/remote-marketing-assistant-fully-jazzupco-1133973",
+        "tags": [
+          "virtual assistant",
+          "marketing",
+          "non tech"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "jazzupco.com"
+  },
+  {
+    "id": "co-117",
+    "name": "RESOLUTE HR CONSULTING",
+    "githubOrg": "Resolute-HR-Consulting",
+    "githubOrgUrl": "https://github.com/Resolute-HR-Consulting",
+    "remoteokSlug": "marketing-coordinator-resolute-hr-consulting-1133917",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-24T19:10:50.609Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Marketing Coordinator",
+        "url": "https://remoteOK.com/remote-jobs/remote-marketing-coordinator-resolute-hr-consulting-1133917",
+        "tags": [
+          "marketing"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "resolutehrconsulting.com"
+  },
+  {
+    "id": "co-118",
+    "name": "NOPE",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "head-of-public-understanding-nope-1133914",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-24T19:10:51.740Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Head of Public Understanding",
+        "url": "https://remoteOK.com/remote-jobs/remote-head-of-public-understanding-nope-1133914",
+        "tags": [
+          "marketing",
+          "communications",
+          "content writing",
+          "ai",
+          "part time"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "nope.net"
+  },
+  {
+    "id": "co-119",
+    "name": "bina",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "family-success-specialist-bina-1133911",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-24T19:10:52.869Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Family Success Specialist",
+        "url": "https://remoteOK.com/remote-jobs/remote-family-success-specialist-bina-1133911",
+        "tags": []
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "bina.com"
+  },
+  {
+    "id": "co-120",
+    "name": "Premera Blue Cross",
+    "githubOrg": "Premera-Blue-Cross",
+    "githubOrgUrl": "https://github.com/Premera-Blue-Cross",
+    "remoteokSlug": "customer-service-representative-premera-blue-cross-1133903",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-24T19:10:54.203Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Customer Service Representative",
+        "url": "https://remoteOK.com/remote-jobs/remote-customer-service-representative-premera-blue-cross-1133903",
+        "tags": []
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "premerabluecross.com"
+  },
+  {
+    "id": "co-121",
+    "name": "Aretum",
+    "githubOrg": "Aretum",
+    "githubOrgUrl": "https://github.com/Aretum",
+    "remoteokSlug": "capital-planning-investment-control-business-analyst-lead-aretum-1133900",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-24T19:10:55.539Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Capital Planning Investment Control Business Analyst Lead",
+        "url": "https://remoteOK.com/remote-jobs/remote-capital-planning-investment-control-business-analyst-lead-aretum-1133900",
+        "tags": [
+          "analyst",
+          "hr",
+          "infosec",
+          "education",
+          "consulting",
+          "customer support",
+          "marketing",
+          "travel",
+          "exec",
+          "finance",
+          "medical"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "aretum.com"
   }
 ]
