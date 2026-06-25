@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-06-24T18:55:07.669Z",
+    "lastVerifiedAt": "2026-06-25T19:08:54.058Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -34,6 +34,11 @@
       {
         "title": "IT GRC",
         "url": "https://job-boards.greenhouse.io/xendit/jobs/7731687003",
+        "tags": []
+      },
+      {
+        "title": "Product Manager – Risk Products",
+        "url": "https://job-boards.greenhouse.io/xendit/jobs/7784608003",
         "tags": []
       },
       {
@@ -109,7 +114,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 2,
     "label": "Indonesia-Friendly",
-    "lastVerifiedAt": "2026-06-24T18:55:23.055Z",
+    "lastVerifiedAt": "2026-06-25T19:09:09.336Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -149,7 +154,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-06-24T18:55:38.034Z",
+    "lastVerifiedAt": "2026-06-25T19:09:24.624Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -183,7 +188,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-06-24T18:55:43.470Z",
+    "lastVerifiedAt": "2026-06-25T19:09:30.095Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -217,7 +222,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-06-24T18:55:49.612Z",
+    "lastVerifiedAt": "2026-06-25T19:09:36.456Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -231,327 +236,6 @@
     "verifiedAt": "2026-06-21T09:23:16.817Z"
   },
   {
-    "id": "co-100",
-    "name": "Cardiovascular Associates of America - CVAUSA",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "research-and-quality-assistant-cardiovascular-associates-of-america-cvausa-1133812",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-06-23T06:16:04.977Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Research and Quality Assistant",
-        "url": "https://remoteOK.com/remote-jobs/remote-research-and-quality-assistant-cardiovascular-associates-of-america-cvausa-1133812",
-        "tags": [
-          "design",
-          "video",
-          "exec",
-          "content writing",
-          "digital nomad",
-          "virtual assistant",
-          "quality assurance"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "cardiovascularassociatesofamericacvausa.com"
-  },
-  {
-    "id": "co-106",
-    "name": "iConsultera",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "data-analyst-iconsultera-1133846",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-06-23T07:05:23.212Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Data Analyst",
-        "url": "https://remoteOK.com/remote-jobs/remote-data-analyst-iconsultera-1133846",
-        "tags": [
-          "design",
-          "coordinator",
-          "exec",
-          "web dev",
-          "speech",
-          "content writing",
-          "marketing",
-          "stats",
-          "full time",
-          "digital nomad",
-          "analyst",
-          "data science"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "iconsultera.com"
-  },
-  {
-    "id": "co-107",
-    "name": "Buffalo Games",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "amazon-forecasting-analyst-buffalo-games-1133837",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-06-23T07:05:25.088Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Amazon Forecasting Analyst",
-        "url": "https://remoteOK.com/remote-jobs/remote-amazon-forecasting-analyst-buffalo-games-1133837",
-        "tags": [
-          "analyst",
-          "design",
-          "sys admin",
-          "infosec",
-          "education",
-          "dev",
-          "testing",
-          "finance",
-          "cloud",
-          "exec",
-          "data science",
-          "ops",
-          "stats",
-          "sales",
-          "medical",
-          "engineer",
-          "digital nomad",
-          "hr",
-          "customer support",
-          "marketing",
-          "part time",
-          "data entry",
-          "virtual assistant",
-          "coordinator",
-          "travel",
-          "recruiter",
-          "junior",
-          "amazon"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "buffalogames.com"
-  },
-  {
-    "id": "co-108",
-    "name": "Rescale",
-    "githubOrg": "rescale",
-    "githubOrgUrl": "https://github.com/rescale",
-    "remoteokSlug": "hpc-engineer-services-rescale-1133885",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-06-23T19:28:32.174Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "HPC Engineer Services",
-        "url": "https://remoteOK.com/remote-jobs/remote-hpc-engineer-services-rescale-1133885",
-        "tags": [
-          "design",
-          "sys admin",
-          "python",
-          "technical",
-          "customer support",
-          "dev",
-          "cloud",
-          "exec",
-          "legal",
-          "sales",
-          "engineer",
-          "linux",
-          "digital nomad"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "org-found-zero-match",
-    "website": "rescale.com"
-  },
-  {
-    "id": "co-109",
-    "name": "PiXL",
-    "githubOrg": "pixl",
-    "githubOrgUrl": "https://github.com/pixl",
-    "remoteokSlug": "events-co-ordinator-pixl-1133884",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-06-23T19:28:33.678Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Events Co ordinator",
-        "url": "https://remoteOK.com/remote-jobs/remote-events-co-ordinator-pixl-1133884",
-        "tags": []
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "org-found-zero-match",
-    "website": "pixl.com"
-  },
-  {
-    "id": "co-110",
-    "name": "Orchestrate Consulting Group",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "administrative-assistant-orchestrate-consulting-group-1133881",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-06-23T19:28:34.897Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Administrative Assistant",
-        "url": "https://remoteOK.com/remote-jobs/remote-administrative-assistant-orchestrate-consulting-group-1133881",
-        "tags": [
-          "hr",
-          "consulting",
-          "analyst",
-          "data science",
-          "excel",
-          "non tech",
-          "virtual assistant"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "orchestrateconsultinggroup.com"
-  },
-  {
-    "id": "co-111",
-    "name": "YO HR Consultancy",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "data-analyst-yo-hr-consultancy-1133880",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-06-23T19:28:36.105Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Data Analyst",
-        "url": "https://remoteOK.com/remote-jobs/remote-data-analyst-yo-hr-consultancy-1133880",
-        "tags": [
-          "hr",
-          "consulting",
-          "analyst",
-          "data science",
-          "excel",
-          "non tech"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "yohrconsultancy.com"
-  },
-  {
-    "id": "co-112",
-    "name": "CoTrain",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "executive-assistant-fully-cotrain-1133854",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-06-23T19:28:37.329Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Executive Assistant Fully",
-        "url": "https://remoteOK.com/remote-jobs/remote-executive-assistant-fully-cotrain-1133854",
-        "tags": [
-          "virtual assistant",
-          "exec"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "cotrain.com"
-  },
-  {
-    "id": "co-113",
-    "name": "Hunt St",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "digital-marketing-manager-hunt-st-1133850",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-06-23T19:28:38.599Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Digital Marketing Manager",
-        "url": "https://remoteOK.com/remote-jobs/remote-digital-marketing-manager-hunt-st-1133850",
-        "tags": [
-          "exec",
-          "design",
-          "technical",
-          "customer support",
-          "seo",
-          "ads",
-          "admin",
-          "content writing",
-          "ops",
-          "marketing",
-          "stats",
-          "legal",
-          "digital nomad"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "huntst.com"
-  },
-  {
     "id": "co-114",
     "name": "BitPay",
     "githubOrg": "bitpay",
@@ -559,8 +243,8 @@
     "remoteokSlug": "senior-backend-software-developer-bitpay-1133985",
     "industry": null,
     "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-06-24T19:10:46.807Z",
+    "label": "Confirmed",
+    "lastVerifiedAt": "2026-06-25T19:09:44.789Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -581,7 +265,8 @@
     "status": "watchlist",
     "source": "remoteok",
     "watchlistReason": "org-found-zero-match",
-    "website": "bitpay.com"
+    "website": "bitpay.com",
+    "verifiedAt": "2026-06-24T19:10:46.807Z"
   },
   {
     "id": "co-115",
@@ -796,5 +481,242 @@
     "source": "remoteok",
     "watchlistReason": "org-found-zero-match",
     "website": "aretum.com"
+  },
+  {
+    "id": "co-122",
+    "name": "ButterflyMX",
+    "githubOrg": "butterflymx",
+    "githubOrgUrl": "https://github.com/butterflymx",
+    "remoteokSlug": "principal-product-manager-acquisition-products-butterflymx-1134023",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-25T19:24:37.182Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Principal Product Manager Acquisition Products",
+        "url": "https://remoteOK.com/remote-jobs/remote-principal-product-manager-acquisition-products-butterflymx-1134023",
+        "tags": [
+          "product manager",
+          "exec",
+          "design",
+          "infosec",
+          "testing",
+          "ops",
+          "legal",
+          "golang",
+          "medical",
+          "recruiter",
+          "engineer",
+          "digital nomad"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "butterflymx.com"
+  },
+  {
+    "id": "co-123",
+    "name": "Lemon.io",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "senior-devops-engineer-lemon-io-1134015",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-25T19:24:38.317Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Senior DevOps Engineer",
+        "url": "https://remoteOK.com/remote-jobs/remote-senior-devops-engineer-lemon-io-1134015",
+        "tags": [
+          "dev",
+          "devops",
+          "engineer",
+          "kubernetes",
+          "aws",
+          "gcp",
+          "python",
+          "sql",
+          "senior",
+          "full time"
+        ]
+      },
+      {
+        "title": "Senior Data Scientist",
+        "url": "https://remotive.com/remote-jobs/data/senior-data-scientist-2090982",
+        "tags": [
+          "android",
+          "AWS",
+          "azure",
+          "C++",
+          "data science",
+          "golang",
+          "ios",
+          "java",
+          "javascript",
+          "node.js",
+          "php",
+          "python",
+          "react",
+          "shopify",
+          "blockchain",
+          "AI/ML",
+          "rust",
+          "unity",
+          "spring",
+          "data analysis",
+          "solidity",
+          "flask",
+          "angular ",
+          "GCP",
+          "Symfony",
+          "startup",
+          "NumPy",
+          "marketplace"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "lemon.io"
+  },
+  {
+    "id": "co-124",
+    "name": "EverAI",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "mid-senior-ai-cinematic-video-editor-everai-1134014",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-25T19:24:39.446Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Mid Senior AI Cinematic Video Editor",
+        "url": "https://remoteOK.com/remote-jobs/remote-mid-senior-ai-cinematic-video-editor-everai-1134014",
+        "tags": [
+          "design",
+          "ai",
+          "other",
+          "art direction"
+        ]
+      },
+      {
+        "title": "Mid/Senior AI Cinematic Video Editor",
+        "url": "https://remotive.com/remote-jobs/artificial-intelligence/mid-senior-ai-cinematic-video-editor-2090887",
+        "tags": [
+          "excel",
+          "video",
+          "AI/ML",
+          "customer acquisition",
+          "graphic design",
+          "video production",
+          "after effects",
+          "editing",
+          "SOLID",
+          "REST",
+          "insurance"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "docs.google.com"
+  },
+  {
+    "id": "co-125",
+    "name": "Mavida Health",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "human-resources-specialist-mavida-health-1134013",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-25T19:24:40.578Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Human Resources Specialist",
+        "url": "https://remoteOK.com/remote-jobs/remote-human-resources-specialist-mavida-health-1134013",
+        "tags": [
+          "medical",
+          "hr",
+          "full time"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "mavidahealth.com"
+  },
+  {
+    "id": "co-126",
+    "name": "Hey Jane",
+    "githubOrg": "hey-jane",
+    "githubOrgUrl": "https://github.com/hey-jane",
+    "remoteokSlug": "patient-care-advocate-hey-jane-1134012",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-25T19:24:41.945Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Patient Care Advocate",
+        "url": "https://remoteOK.com/remote-jobs/remote-patient-care-advocate-hey-jane-1134012",
+        "tags": []
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "heyjane.com"
+  },
+  {
+    "id": "co-127",
+    "name": "Pickle",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "bookkeeper-pickle-1133991",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-25T19:24:43.090Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Bookkeeper",
+        "url": "https://remoteOK.com/remote-jobs/remote-bookkeeper-pickle-1133991",
+        "tags": [
+          "finance",
+          "non tech"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "pickle.com"
   }
 ]
