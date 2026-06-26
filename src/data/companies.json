@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-06-25T19:08:54.058Z",
+    "lastVerifiedAt": "2026-06-26T18:56:54.696Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -44,11 +44,6 @@
       {
         "title": "Product Manager - User & Accounts",
         "url": "https://job-boards.greenhouse.io/xendit/jobs/7545780003",
-        "tags": []
-      },
-      {
-        "title": "Risk Operations Analyst",
-        "url": "https://job-boards.greenhouse.io/xendit/jobs/7657149003",
         "tags": []
       },
       {
@@ -114,7 +109,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 2,
     "label": "Indonesia-Friendly",
-    "lastVerifiedAt": "2026-06-25T19:09:09.336Z",
+    "lastVerifiedAt": "2026-06-26T18:57:11.840Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -154,7 +149,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-06-25T19:09:24.624Z",
+    "lastVerifiedAt": "2026-06-26T18:57:27.326Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -188,7 +183,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-06-25T19:09:30.095Z",
+    "lastVerifiedAt": "2026-06-26T18:57:32.761Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -222,7 +217,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-06-25T19:09:36.456Z",
+    "lastVerifiedAt": "2026-06-26T18:57:39.401Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -244,7 +239,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-06-25T19:09:44.789Z",
+    "lastVerifiedAt": "2026-06-26T18:57:45.799Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -365,124 +360,6 @@
     "website": "resolutehrconsulting.com"
   },
   {
-    "id": "co-118",
-    "name": "NOPE",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "head-of-public-understanding-nope-1133914",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-06-24T19:10:51.740Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Head of Public Understanding",
-        "url": "https://remoteOK.com/remote-jobs/remote-head-of-public-understanding-nope-1133914",
-        "tags": [
-          "marketing",
-          "communications",
-          "content writing",
-          "ai",
-          "part time"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "nope.net"
-  },
-  {
-    "id": "co-119",
-    "name": "bina",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "family-success-specialist-bina-1133911",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-06-24T19:10:52.869Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Family Success Specialist",
-        "url": "https://remoteOK.com/remote-jobs/remote-family-success-specialist-bina-1133911",
-        "tags": []
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "bina.com"
-  },
-  {
-    "id": "co-120",
-    "name": "Premera Blue Cross",
-    "githubOrg": "Premera-Blue-Cross",
-    "githubOrgUrl": "https://github.com/Premera-Blue-Cross",
-    "remoteokSlug": "customer-service-representative-premera-blue-cross-1133903",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-06-24T19:10:54.203Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Customer Service Representative",
-        "url": "https://remoteOK.com/remote-jobs/remote-customer-service-representative-premera-blue-cross-1133903",
-        "tags": []
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "org-found-zero-match",
-    "website": "premerabluecross.com"
-  },
-  {
-    "id": "co-121",
-    "name": "Aretum",
-    "githubOrg": "Aretum",
-    "githubOrgUrl": "https://github.com/Aretum",
-    "remoteokSlug": "capital-planning-investment-control-business-analyst-lead-aretum-1133900",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-06-24T19:10:55.539Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Capital Planning Investment Control Business Analyst Lead",
-        "url": "https://remoteOK.com/remote-jobs/remote-capital-planning-investment-control-business-analyst-lead-aretum-1133900",
-        "tags": [
-          "analyst",
-          "hr",
-          "infosec",
-          "education",
-          "consulting",
-          "customer support",
-          "marketing",
-          "travel",
-          "exec",
-          "finance",
-          "medical"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "org-found-zero-match",
-    "website": "aretum.com"
-  },
-  {
     "id": "co-122",
     "name": "ButterflyMX",
     "githubOrg": "butterflymx",
@@ -546,6 +423,58 @@
           "sql",
           "senior",
           "full time"
+        ]
+      },
+      {
+        "title": "Senior Product Manager",
+        "url": "https://remotive.com/remote-jobs/product/senior-product-manager-2090984",
+        "tags": [
+          ".Net",
+          "android",
+          "azure",
+          "C",
+          "C#",
+          "C++",
+          "data science",
+          "golang",
+          "ios",
+          "java",
+          "javascript",
+          "node.js",
+          "php",
+          "python",
+          "react",
+          "ruby/rails",
+          "scala",
+          "shopify",
+          "UI/UX",
+          "wordpress",
+          "blockchain",
+          "AI/ML",
+          "Figma",
+          "automation",
+          "project management",
+          "react native",
+          "product strategy",
+          "rust",
+          "product management",
+          "unity",
+          "electron",
+          "spring",
+          "laravel",
+          "Ethereum",
+          "graphic design",
+          "mixpanel",
+          "Typescript ",
+          "angular ",
+          "SDLC",
+          "data engineering",
+          "Site Reliability",
+          "Symfony",
+          "startup",
+          "marketplace",
+          "next.js",
+          "flutter"
         ]
       },
       {
@@ -614,7 +543,7 @@
       },
       {
         "title": "Mid/Senior AI Cinematic Video Editor",
-        "url": "https://remotive.com/remote-jobs/artificial-intelligence/mid-senior-ai-cinematic-video-editor-2090887",
+        "url": "https://remotive.com/remote-jobs/all-others/mid-senior-ai-cinematic-video-editor-2091035",
         "tags": [
           "excel",
           "video",
@@ -627,7 +556,8 @@
           "SOLID",
           "REST",
           "insurance"
-        ]
+        ],
+        "salary": "$30k - $100k"
       }
     ],
     "verifiedMembers": [],
@@ -718,5 +648,35 @@
     "source": "remoteok",
     "watchlistReason": "no-org-found",
     "website": "pickle.com"
+  },
+  {
+    "id": "co-128",
+    "name": "Angel City VA Recruitment",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "medical-scribe-female-angel-city-va-recruitment-1134048",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-06-26T19:13:41.785Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Medical Scribe Female",
+        "url": "https://remoteOK.com/remote-jobs/remote-medical-scribe-female-angel-city-va-recruitment-1134048",
+        "tags": [
+          "exec",
+          "finance",
+          "web dev",
+          "recruiter"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "angelcityvarecruitment.com"
   }
 ]
