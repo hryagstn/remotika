@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-06-26T18:56:54.696Z",
+    "lastVerifiedAt": "2026-06-27T18:10:35.879Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -109,7 +109,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 2,
     "label": "Indonesia-Friendly",
-    "lastVerifiedAt": "2026-06-26T18:57:11.840Z",
+    "lastVerifiedAt": "2026-06-27T18:10:51.231Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -149,7 +149,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-06-26T18:57:27.326Z",
+    "lastVerifiedAt": "2026-06-27T18:11:06.046Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -183,7 +183,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-06-26T18:57:32.761Z",
+    "lastVerifiedAt": "2026-06-27T18:11:11.245Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -217,7 +217,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-06-26T18:57:39.401Z",
+    "lastVerifiedAt": "2026-06-27T18:11:17.379Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -229,135 +229,6 @@
       }
     ],
     "verifiedAt": "2026-06-21T09:23:16.817Z"
-  },
-  {
-    "id": "co-114",
-    "name": "BitPay",
-    "githubOrg": "bitpay",
-    "githubOrgUrl": "https://github.com/bitpay",
-    "remoteokSlug": "senior-backend-software-developer-bitpay-1133985",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Confirmed",
-    "lastVerifiedAt": "2026-06-26T18:57:45.799Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Senior Backend Software Developer",
-        "url": "https://remoteOK.com/remote-jobs/remote-senior-backend-software-developer-bitpay-1133985",
-        "tags": [
-          "dev",
-          "backend",
-          "javascript",
-          "crypto",
-          "mongo",
-          "node"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "org-found-zero-match",
-    "website": "bitpay.com",
-    "verifiedAt": "2026-06-24T19:10:46.807Z"
-  },
-  {
-    "id": "co-115",
-    "name": "StratifyIQ",
-    "githubOrg": "StratifyIQ",
-    "githubOrgUrl": "https://github.com/StratifyIQ",
-    "remoteokSlug": "canva-design-specialist-real-estate-stratifyiq-1133978",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-06-24T19:10:48.145Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Canva Design Specialist Real Estate",
-        "url": "https://remoteOK.com/remote-jobs/remote-canva-design-specialist-real-estate-stratifyiq-1133978",
-        "tags": [
-          "exec",
-          "crypto",
-          "customer support",
-          "finance",
-          "ops",
-          "medical",
-          "analyst",
-          "sys admin",
-          "dev",
-          "scrum",
-          "excel",
-          "digital nomad",
-          "design",
-          "marketing"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "org-found-zero-match",
-    "website": "stratifyiq.com"
-  },
-  {
-    "id": "co-116",
-    "name": "JazzUpCo",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "marketing-assistant-fully-jazzupco-1133973",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-06-24T19:10:49.261Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Marketing Assistant Fully",
-        "url": "https://remoteOK.com/remote-jobs/remote-marketing-assistant-fully-jazzupco-1133973",
-        "tags": [
-          "virtual assistant",
-          "marketing",
-          "non tech"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "jazzupco.com"
-  },
-  {
-    "id": "co-117",
-    "name": "RESOLUTE HR CONSULTING",
-    "githubOrg": "Resolute-HR-Consulting",
-    "githubOrgUrl": "https://github.com/Resolute-HR-Consulting",
-    "remoteokSlug": "marketing-coordinator-resolute-hr-consulting-1133917",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-06-24T19:10:50.609Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Marketing Coordinator",
-        "url": "https://remoteOK.com/remote-jobs/remote-marketing-coordinator-resolute-hr-consulting-1133917",
-        "tags": [
-          "marketing"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "org-found-zero-match",
-    "website": "resolutehrconsulting.com"
   },
   {
     "id": "co-122",
