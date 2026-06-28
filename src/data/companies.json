@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-06-27T18:10:35.879Z",
+    "lastVerifiedAt": "2026-06-28T18:10:14.345Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -109,7 +109,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 2,
     "label": "Indonesia-Friendly",
-    "lastVerifiedAt": "2026-06-27T18:10:51.231Z",
+    "lastVerifiedAt": "2026-06-28T18:10:29.728Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -149,7 +149,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-06-27T18:11:06.046Z",
+    "lastVerifiedAt": "2026-06-28T18:10:44.352Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -183,7 +183,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-06-27T18:11:11.245Z",
+    "lastVerifiedAt": "2026-06-28T18:10:49.475Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -217,7 +217,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-06-27T18:11:17.379Z",
+    "lastVerifiedAt": "2026-06-28T18:10:55.850Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -231,44 +231,6 @@
     "verifiedAt": "2026-06-21T09:23:16.817Z"
   },
   {
-    "id": "co-122",
-    "name": "ButterflyMX",
-    "githubOrg": "butterflymx",
-    "githubOrgUrl": "https://github.com/butterflymx",
-    "remoteokSlug": "principal-product-manager-acquisition-products-butterflymx-1134023",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-06-25T19:24:37.182Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Principal Product Manager Acquisition Products",
-        "url": "https://remoteOK.com/remote-jobs/remote-principal-product-manager-acquisition-products-butterflymx-1134023",
-        "tags": [
-          "product manager",
-          "exec",
-          "design",
-          "infosec",
-          "testing",
-          "ops",
-          "legal",
-          "golang",
-          "medical",
-          "recruiter",
-          "engineer",
-          "digital nomad"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "org-found-zero-match",
-    "website": "butterflymx.com"
-  },
-  {
     "id": "co-123",
     "name": "Lemon.io",
     "githubOrg": "",
@@ -280,22 +242,6 @@
     "lastVerifiedAt": "2026-06-25T19:24:38.317Z",
     "hasActiveJobs": true,
     "activeJobs": [
-      {
-        "title": "Senior DevOps Engineer",
-        "url": "https://remoteOK.com/remote-jobs/remote-senior-devops-engineer-lemon-io-1134015",
-        "tags": [
-          "dev",
-          "devops",
-          "engineer",
-          "kubernetes",
-          "aws",
-          "gcp",
-          "python",
-          "sql",
-          "senior",
-          "full time"
-        ]
-      },
       {
         "title": "Senior Product Manager",
         "url": "https://remotive.com/remote-jobs/product/senior-product-manager-2090984",
@@ -403,16 +349,6 @@
     "hasActiveJobs": true,
     "activeJobs": [
       {
-        "title": "Mid Senior AI Cinematic Video Editor",
-        "url": "https://remoteOK.com/remote-jobs/remote-mid-senior-ai-cinematic-video-editor-everai-1134014",
-        "tags": [
-          "design",
-          "ai",
-          "other",
-          "art direction"
-        ]
-      },
-      {
         "title": "Mid/Senior AI Cinematic Video Editor",
         "url": "https://remotive.com/remote-jobs/all-others/mid-senior-ai-cinematic-video-editor-2091035",
         "tags": [
@@ -437,88 +373,6 @@
     "source": "remoteok",
     "watchlistReason": "no-org-found",
     "website": "docs.google.com"
-  },
-  {
-    "id": "co-125",
-    "name": "Mavida Health",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "human-resources-specialist-mavida-health-1134013",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-06-25T19:24:40.578Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Human Resources Specialist",
-        "url": "https://remoteOK.com/remote-jobs/remote-human-resources-specialist-mavida-health-1134013",
-        "tags": [
-          "medical",
-          "hr",
-          "full time"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "mavidahealth.com"
-  },
-  {
-    "id": "co-126",
-    "name": "Hey Jane",
-    "githubOrg": "hey-jane",
-    "githubOrgUrl": "https://github.com/hey-jane",
-    "remoteokSlug": "patient-care-advocate-hey-jane-1134012",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-06-25T19:24:41.945Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Patient Care Advocate",
-        "url": "https://remoteOK.com/remote-jobs/remote-patient-care-advocate-hey-jane-1134012",
-        "tags": []
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "org-found-zero-match",
-    "website": "heyjane.com"
-  },
-  {
-    "id": "co-127",
-    "name": "Pickle",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "bookkeeper-pickle-1133991",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-06-25T19:24:43.090Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Bookkeeper",
-        "url": "https://remoteOK.com/remote-jobs/remote-bookkeeper-pickle-1133991",
-        "tags": [
-          "finance",
-          "non tech"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "pickle.com"
   },
   {
     "id": "co-128",
