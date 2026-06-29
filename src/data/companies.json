@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-06-28T18:10:14.345Z",
+    "lastVerifiedAt": "2026-06-29T19:07:40.301Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -54,6 +54,11 @@
       {
         "title": "Senior Manager, Customer Success",
         "url": "https://job-boards.greenhouse.io/xendit/jobs/7731779003",
+        "tags": []
+      },
+      {
+        "title": "Senior Total Rewards Manager",
+        "url": "https://job-boards.greenhouse.io/xendit/jobs/7788512003",
         "tags": []
       },
       {
@@ -109,7 +114,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 2,
     "label": "Indonesia-Friendly",
-    "lastVerifiedAt": "2026-06-28T18:10:29.728Z",
+    "lastVerifiedAt": "2026-06-29T19:07:56.745Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -149,7 +154,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-06-28T18:10:44.352Z",
+    "lastVerifiedAt": "2026-06-29T19:08:13.736Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -183,7 +188,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-06-28T18:10:49.475Z",
+    "lastVerifiedAt": "2026-06-29T19:08:19.726Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -217,7 +222,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-06-28T18:10:55.850Z",
+    "lastVerifiedAt": "2026-06-29T19:08:26.883Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -373,35 +378,5 @@
     "source": "remoteok",
     "watchlistReason": "no-org-found",
     "website": "docs.google.com"
-  },
-  {
-    "id": "co-128",
-    "name": "Angel City VA Recruitment",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "medical-scribe-female-angel-city-va-recruitment-1134048",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-06-26T19:13:41.785Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Medical Scribe Female",
-        "url": "https://remoteOK.com/remote-jobs/remote-medical-scribe-female-angel-city-va-recruitment-1134048",
-        "tags": [
-          "exec",
-          "finance",
-          "web dev",
-          "recruiter"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "angelcityvarecruitment.com"
   }
 ]
