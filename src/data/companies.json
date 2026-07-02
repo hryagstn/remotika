@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-07-01T19:02:17.402Z",
+    "lastVerifiedAt": "2026-07-02T18:40:18.361Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -112,20 +112,14 @@
     "githubOrgUrl": "https://github.com/NVIDIAGameWorks",
     "remoteokSlug": "nvidia",
     "industry": "NVIDIA Technologies for game and application developers",
-    "verifiedIndonesianCount": 2,
-    "label": "Indonesia-Friendly",
-    "lastVerifiedAt": "2026-07-01T19:02:40.052Z",
+    "verifiedIndonesianCount": 1,
+    "label": "Confirmed",
+    "lastVerifiedAt": "2026-07-02T18:40:34.694Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
     "activeJobs": [],
     "verifiedMembers": [
-      {
-        "id": "m-angeloanan",
-        "githubLogin": "angeloanan",
-        "githubProfileUrl": "https://github.com/angeloanan",
-        "locationRaw": "Indonesia"
-      },
       {
         "id": "m-anggape",
         "githubLogin": "anggape",
@@ -154,7 +148,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-01T19:02:56.175Z",
+    "lastVerifiedAt": "2026-07-02T18:40:51.009Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -188,7 +182,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-01T19:03:02.609Z",
+    "lastVerifiedAt": "2026-07-02T18:40:56.315Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -222,7 +216,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-01T19:03:09.734Z",
+    "lastVerifiedAt": "2026-07-02T18:41:03.073Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -409,5 +403,43 @@
     "source": "remoteok",
     "watchlistReason": "no-org-found",
     "website": "hirewithreef.com"
+  },
+  {
+    "id": "co-126",
+    "name": "ATOM PARTNERS LIMITED",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "junior-crypto-trader-atom-partners-limited-1134351",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-07-02T18:56:44.068Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Junior Crypto Trader",
+        "url": "https://remoteOK.com/remote-jobs/remote-junior-crypto-trader-atom-partners-limited-1134351",
+        "tags": [
+          "other",
+          "crypto",
+          "finance",
+          "web3",
+          "bitcoin",
+          "blockchain",
+          "junior",
+          "part time",
+          "education",
+          "analyst",
+          "ethereum",
+          "sales"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "atompartnerslimited.com"
   }
 ]
