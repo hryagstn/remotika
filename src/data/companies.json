@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-07-02T18:40:18.361Z",
+    "lastVerifiedAt": "2026-07-03T18:17:20.417Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -114,7 +114,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-02T18:40:34.694Z",
+    "lastVerifiedAt": "2026-07-03T18:17:36.575Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -148,7 +148,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-02T18:40:51.009Z",
+    "lastVerifiedAt": "2026-07-03T18:17:52.814Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -182,7 +182,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-02T18:40:56.315Z",
+    "lastVerifiedAt": "2026-07-03T18:17:57.840Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -216,7 +216,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-02T18:41:03.073Z",
+    "lastVerifiedAt": "2026-07-03T18:18:04.465Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -241,6 +241,20 @@
     "lastVerifiedAt": "2026-06-25T19:24:38.317Z",
     "hasActiveJobs": true,
     "activeJobs": [
+      {
+        "title": "Senior AI Engineer Architect",
+        "url": "https://remoteOK.com/remote-jobs/remote-senior-ai-engineer-architect-lemon-io-1134396",
+        "tags": [
+          "dev",
+          "engineer",
+          "senior",
+          "full time",
+          "ai",
+          "architecture",
+          "python",
+          "sql"
+        ]
+      },
       {
         "title": "Senior Product Manager",
         "url": "https://remotive.com/remote-jobs/product/senior-product-manager-2090984",
@@ -441,5 +455,36 @@
     "source": "remoteok",
     "watchlistReason": "no-org-found",
     "website": "atompartnerslimited.com"
+  },
+  {
+    "id": "co-127",
+    "name": "Better Futures Multi Academy Trust",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "full-stack-developer-first-uk-better-futures-multi-academy-trust-1134395",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-07-03T18:33:34.238Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Full Stack Developer first UK",
+        "url": "https://remoteOK.com/remote-jobs/remote-full-stack-developer-first-uk-better-futures-multi-academy-trust-1134395",
+        "tags": [
+          "dev",
+          "ruby",
+          "full stack",
+          "react native",
+          "mobile"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "betterfuturesmultiacademytrust.com"
   }
 ]
