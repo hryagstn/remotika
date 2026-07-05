@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-07-04T18:07:06.124Z",
+    "lastVerifiedAt": "2026-07-05T18:10:07.145Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -114,7 +114,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-04T18:07:21.228Z",
+    "lastVerifiedAt": "2026-07-05T18:10:23.133Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -148,7 +148,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-04T18:07:35.769Z",
+    "lastVerifiedAt": "2026-07-05T18:10:37.742Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -182,7 +182,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-04T18:07:40.284Z",
+    "lastVerifiedAt": "2026-07-05T18:10:42.777Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -216,7 +216,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-04T18:07:46.376Z",
+    "lastVerifiedAt": "2026-07-05T18:10:49.483Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -434,37 +434,6 @@
     "source": "remoteok",
     "watchlistReason": "no-org-found",
     "website": "docs.google.com"
-  },
-  {
-    "id": "co-125",
-    "name": "Hire with Reef",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "vehicle-repair-assessor-philippines-hire-with-reef-1134253",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-07-01T19:19:07.114Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Vehicle Repair Assessor Philippines",
-        "url": "https://remoteOK.com/remote-jobs/remote-vehicle-repair-assessor-philippines-hire-with-reef-1134253",
-        "tags": [
-          "mobile",
-          "ops",
-          "sales",
-          "full time",
-          "non tech"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "hirewithreef.com"
   },
   {
     "id": "co-126",
