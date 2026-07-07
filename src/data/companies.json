@@ -8,14 +8,9 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-07-06T19:00:40.123Z",
+    "lastVerifiedAt": "2026-07-07T19:06:25.396Z",
     "hasActiveJobs": true,
     "activeJobs": [
-      {
-        "title": "Customer Experience Generalist (Daylight)",
-        "url": "https://job-boards.greenhouse.io/xendit/jobs/7698002003",
-        "tags": []
-      },
       {
         "title": "Financial Operations - Cross-Border Ops Lead",
         "url": "https://job-boards.greenhouse.io/xendit/jobs/7650615003",
@@ -34,6 +29,11 @@
       {
         "title": "IT GRC",
         "url": "https://job-boards.greenhouse.io/xendit/jobs/7731687003",
+        "tags": []
+      },
+      {
+        "title": "Merchant Support Generalist (Daylight)",
+        "url": "https://job-boards.greenhouse.io/xendit/jobs/7698002003",
         "tags": []
       },
       {
@@ -114,7 +114,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-06T19:00:56.448Z",
+    "lastVerifiedAt": "2026-07-07T19:06:41.044Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -148,7 +148,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-06T19:01:12.580Z",
+    "lastVerifiedAt": "2026-07-07T19:06:56.511Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -182,7 +182,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-06T19:01:17.756Z",
+    "lastVerifiedAt": "2026-07-07T19:07:01.410Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -216,7 +216,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-06T19:01:24.506Z",
+    "lastVerifiedAt": "2026-07-07T19:07:08.147Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -257,7 +257,7 @@
       },
       {
         "title": "Senior AI Engineer",
-        "url": "https://remotive.com/remote-jobs/software-development/senior-ai-engineer-2090986",
+        "url": "https://remotive.com/remote-jobs/artificial-intelligence/senior-ai-engineer-2090986",
         "tags": [
           ".Net",
           "android",
@@ -436,44 +436,6 @@
     "website": "docs.google.com"
   },
   {
-    "id": "co-126",
-    "name": "ATOM PARTNERS LIMITED",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "junior-crypto-trader-atom-partners-limited-1134351",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-07-02T18:56:44.068Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Junior Crypto Trader",
-        "url": "https://remoteOK.com/remote-jobs/remote-junior-crypto-trader-atom-partners-limited-1134351",
-        "tags": [
-          "other",
-          "crypto",
-          "finance",
-          "web3",
-          "bitcoin",
-          "blockchain",
-          "junior",
-          "part time",
-          "education",
-          "analyst",
-          "ethereum",
-          "sales"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "atompartnerslimited.com"
-  },
-  {
     "id": "co-127",
     "name": "Better Futures Multi Academy Trust",
     "githubOrg": "",
@@ -588,5 +550,33 @@
     "source": "remoteok",
     "watchlistReason": "no-org-found",
     "website": "tmeic.com"
+  },
+  {
+    "id": "co-130",
+    "name": "sofatutor",
+    "githubOrg": "sofatutor",
+    "githubOrgUrl": "https://github.com/sofatutor",
+    "remoteokSlug": "cro-specialist-sofatutor-1134522",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-07-07T19:22:31.507Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "CRO specialist",
+        "url": "https://remoteOK.com/remote-jobs/remote-cro-specialist-sofatutor-1134522",
+        "tags": [
+          "testing",
+          "marketing"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "sofatutor.com"
   }
 ]
