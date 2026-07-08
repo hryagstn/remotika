@@ -8,9 +8,14 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-07-07T19:06:25.396Z",
+    "lastVerifiedAt": "2026-07-08T18:22:44.294Z",
     "hasActiveJobs": true,
     "activeJobs": [
+      {
+        "title": "Customer Experience (CX) People Ops Analyst",
+        "url": "https://job-boards.greenhouse.io/xendit/jobs/7690481003",
+        "tags": []
+      },
       {
         "title": "Financial Operations - Cross-Border Ops Lead",
         "url": "https://job-boards.greenhouse.io/xendit/jobs/7650615003",
@@ -114,7 +119,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-07T19:06:41.044Z",
+    "lastVerifiedAt": "2026-07-08T18:22:59.960Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -148,7 +153,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-07T19:06:56.511Z",
+    "lastVerifiedAt": "2026-07-08T18:23:15.226Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -182,7 +187,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-07T19:07:01.410Z",
+    "lastVerifiedAt": "2026-07-08T18:23:20.226Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -216,7 +221,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-07T19:07:08.147Z",
+    "lastVerifiedAt": "2026-07-08T18:23:26.772Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -241,20 +246,6 @@
     "lastVerifiedAt": "2026-06-25T19:24:38.317Z",
     "hasActiveJobs": true,
     "activeJobs": [
-      {
-        "title": "Senior AI Engineer Architect",
-        "url": "https://remoteOK.com/remote-jobs/remote-senior-ai-engineer-architect-lemon-io-1134396",
-        "tags": [
-          "dev",
-          "engineer",
-          "senior",
-          "full time",
-          "ai",
-          "architecture",
-          "python",
-          "sql"
-        ]
-      },
       {
         "title": "Senior AI Engineer",
         "url": "https://remotive.com/remote-jobs/artificial-intelligence/senior-ai-engineer-2090986",
@@ -436,37 +427,6 @@
     "website": "docs.google.com"
   },
   {
-    "id": "co-127",
-    "name": "Better Futures Multi Academy Trust",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "full-stack-developer-first-uk-better-futures-multi-academy-trust-1134395",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-07-03T18:33:34.238Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Full Stack Developer first UK",
-        "url": "https://remoteOK.com/remote-jobs/remote-full-stack-developer-first-uk-better-futures-multi-academy-trust-1134395",
-        "tags": [
-          "dev",
-          "ruby",
-          "full stack",
-          "react native",
-          "mobile"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "betterfuturesmultiacademytrust.com"
-  },
-  {
     "id": "co-128",
     "name": "Tellent",
     "githubOrg": "Tellent",
@@ -559,8 +519,8 @@
     "remoteokSlug": "cro-specialist-sofatutor-1134522",
     "industry": null,
     "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-07-07T19:22:31.507Z",
+    "label": "Confirmed",
+    "lastVerifiedAt": "2026-07-08T18:23:34.106Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -577,6 +537,79 @@
     "status": "watchlist",
     "source": "remoteok",
     "watchlistReason": "org-found-zero-match",
-    "website": "sofatutor.com"
+    "website": "sofatutor.com",
+    "verifiedAt": "2026-07-07T19:22:31.507Z"
+  },
+  {
+    "id": "co-131",
+    "name": "Noventra Group",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "paid-media-specialist-meta-google-ads-noventra-group-1134552",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-07-08T18:38:31.509Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Paid Media Specialist Meta & Google Ads",
+        "url": "https://remoteOK.com/remote-jobs/remote-paid-media-specialist-meta-google-ads-noventra-group-1134552",
+        "tags": [
+          "Marketing",
+          "Paid Media",
+          "Meta Ads",
+          "Facebook Ads",
+          "Google Ads",
+          "PPC",
+          "Performance Marketing",
+          "Ecommerce",
+          "SEM",
+          "Google Analytics",
+          "Google Tag Manager",
+          "Meta Pixel",
+          "Shopify"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "noventragroup.com"
+  },
+  {
+    "id": "co-132",
+    "name": "Mercier Consultancy",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "dutch-speaking-customer-service-agent-for-imperial-work-from-home-greece-mercier-consultancy-1134545",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-07-08T18:38:32.638Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Dutch Speaking Customer Service Agent For Imperial Work from Home Greece",
+        "url": "https://remoteOK.com/remote-jobs/remote-dutch-speaking-customer-service-agent-for-imperial-work-from-home-greece-mercier-consultancy-1134545",
+        "tags": [
+          "consulting",
+          "work from home",
+          "customer support",
+          "c",
+          "medical",
+          "full time",
+          "non tech"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "mercierconsultancy.com"
   }
 ]
