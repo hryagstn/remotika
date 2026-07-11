@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-07-10T18:25:42.782Z",
+    "lastVerifiedAt": "2026-07-11T17:59:02.135Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -119,7 +119,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-10T18:26:14.416Z",
+    "lastVerifiedAt": "2026-07-11T17:59:17.569Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -153,7 +153,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-10T18:26:29.301Z",
+    "lastVerifiedAt": "2026-07-11T17:59:32.589Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -187,7 +187,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-10T18:26:33.833Z",
+    "lastVerifiedAt": "2026-07-11T17:59:37.131Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -221,7 +221,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-10T18:26:39.656Z",
+    "lastVerifiedAt": "2026-07-11T17:59:42.963Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -425,106 +425,5 @@
     "source": "remoteok",
     "watchlistReason": "no-org-found",
     "website": "docs.google.com"
-  },
-  {
-    "id": "co-130",
-    "name": "sofatutor",
-    "githubOrg": "sofatutor",
-    "githubOrgUrl": "https://github.com/sofatutor",
-    "remoteokSlug": "cro-specialist-sofatutor-1134522",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-10T18:26:45.262Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "CRO specialist",
-        "url": "https://remoteOK.com/remote-jobs/remote-cro-specialist-sofatutor-1134522",
-        "tags": [
-          "testing",
-          "marketing"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "org-found-zero-match",
-    "website": "sofatutor.com",
-    "verifiedAt": "2026-07-07T19:22:31.507Z"
-  },
-  {
-    "id": "co-131",
-    "name": "Noventra Group",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "paid-media-specialist-meta-google-ads-noventra-group-1134552",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-07-08T18:38:31.509Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Paid Media Specialist Meta & Google Ads",
-        "url": "https://remoteOK.com/remote-jobs/remote-paid-media-specialist-meta-google-ads-noventra-group-1134552",
-        "tags": [
-          "Marketing",
-          "Paid Media",
-          "Meta Ads",
-          "Facebook Ads",
-          "Google Ads",
-          "PPC",
-          "Performance Marketing",
-          "Ecommerce",
-          "SEM",
-          "Google Analytics",
-          "Google Tag Manager",
-          "Meta Pixel",
-          "Shopify"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "noventragroup.com"
-  },
-  {
-    "id": "co-132",
-    "name": "Mercier Consultancy",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "dutch-speaking-customer-service-agent-for-imperial-work-from-home-greece-mercier-consultancy-1134545",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-07-08T18:38:32.638Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Dutch Speaking Customer Service Agent For Imperial Work from Home Greece",
-        "url": "https://remoteOK.com/remote-jobs/remote-dutch-speaking-customer-service-agent-for-imperial-work-from-home-greece-mercier-consultancy-1134545",
-        "tags": [
-          "consulting",
-          "work from home",
-          "customer support",
-          "c",
-          "medical",
-          "full time",
-          "non tech"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "mercierconsultancy.com"
   }
 ]
