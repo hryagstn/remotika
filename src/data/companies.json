@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-07-12T18:02:44.614Z",
+    "lastVerifiedAt": "2026-07-13T18:47:02.008Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -119,7 +119,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-12T18:02:59.924Z",
+    "lastVerifiedAt": "2026-07-13T18:47:18.322Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -153,7 +153,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-12T18:03:14.602Z",
+    "lastVerifiedAt": "2026-07-13T18:47:34.002Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -187,7 +187,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-12T18:03:19.732Z",
+    "lastVerifiedAt": "2026-07-13T18:47:39.754Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -221,7 +221,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-12T18:03:25.522Z",
+    "lastVerifiedAt": "2026-07-13T18:47:46.675Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -345,40 +345,6 @@
           "next.js",
           "flutter"
         ]
-      },
-      {
-        "title": "Senior Data Scientist",
-        "url": "https://remotive.com/remote-jobs/data/senior-data-scientist-2090982",
-        "tags": [
-          "android",
-          "AWS",
-          "azure",
-          "C++",
-          "data science",
-          "golang",
-          "ios",
-          "java",
-          "javascript",
-          "node.js",
-          "php",
-          "python",
-          "react",
-          "shopify",
-          "blockchain",
-          "AI/ML",
-          "rust",
-          "unity",
-          "spring",
-          "data analysis",
-          "solidity",
-          "flask",
-          "angular ",
-          "GCP",
-          "Symfony",
-          "startup",
-          "NumPy",
-          "marketplace"
-        ]
       }
     ],
     "verifiedMembers": [],
@@ -425,5 +391,245 @@
     "source": "remoteok",
     "watchlistReason": "no-org-found",
     "website": "docs.google.com"
+  },
+  {
+    "id": "co-125",
+    "name": "Orchestrate Consulting Group",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "customer-service-chat-representative-orchestrate-consulting-group-1134737",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-07-13T19:04:22.987Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Customer Service Chat Representative",
+        "url": "https://remoteOK.com/remote-jobs/remote-customer-service-chat-representative-orchestrate-consulting-group-1134737",
+        "tags": [
+          "c",
+          "music",
+          "game dev",
+          "dev",
+          "video",
+          "content writing",
+          "ops",
+          "marketing",
+          "internship",
+          "non tech",
+          "digital nomad",
+          "design",
+          "teaching",
+          "education",
+          "designer",
+          "technical",
+          "web dev",
+          "mobile",
+          "photoshop",
+          "illustrator",
+          "data entry",
+          "customer support",
+          "microsoft",
+          "exec",
+          "medical",
+          "consulting"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "orchestrateconsultinggroup.com"
+  },
+  {
+    "id": "co-126",
+    "name": "Outsource Access Careers",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "social-media-marketing-virtual-assistant-outsource-access-careers-1134728",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-07-13T19:04:24.160Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Social Media & Marketing Virtual Assistant",
+        "url": "https://remoteOK.com/remote-jobs/remote-social-media-marketing-virtual-assistant-outsource-access-careers-1134728",
+        "tags": [
+          "virtual assistant",
+          "marketing",
+          "social media",
+          "non tech"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "outsourceaccesscareers.com"
+  },
+  {
+    "id": "co-127",
+    "name": "Express Chipping Inc",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "inbound-sales-closer-express-chipping-inc-1134726",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-07-13T19:04:25.307Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Inbound Sales Closer",
+        "url": "https://remoteOK.com/remote-jobs/remote-inbound-sales-closer-express-chipping-inc-1134726",
+        "tags": [
+          "salesforce",
+          "customer support",
+          "marketing",
+          "web dev",
+          "ads",
+          "exec",
+          "legal",
+          "sales",
+          "sys admin",
+          "medical",
+          "full time"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "expresschippinginc.com"
+  },
+  {
+    "id": "co-128",
+    "name": "Conquer AI",
+    "githubOrg": "Conquer-AI",
+    "githubOrgUrl": "https://github.com/Conquer-AI",
+    "remoteokSlug": "apply-here-conquer-ai-1134722",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-07-13T19:04:26.790Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Apply Here",
+        "url": "https://remoteOK.com/remote-jobs/remote-apply-here-conquer-ai-1134722",
+        "tags": []
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "conquerai.com"
+  },
+  {
+    "id": "co-129",
+    "name": "JTS Growth",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "creative-strategist-jts-growth-1134718",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-07-13T19:04:27.946Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Creative Strategist",
+        "url": "https://remoteOK.com/remote-jobs/remote-creative-strategist-jts-growth-1134718",
+        "tags": [
+          "content writing",
+          "social media",
+          "non tech",
+          "teaching",
+          "customer support",
+          "education",
+          "marketing",
+          "strategy",
+          "full time"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "jtsgrowth.com"
+  },
+  {
+    "id": "co-130",
+    "name": "Classet",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "social-media-content-creator-classet-1134716",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-07-13T19:04:29.108Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Social Media Content Creator",
+        "url": "https://remoteOK.com/remote-jobs/remote-social-media-content-creator-classet-1134716",
+        "tags": [
+          "content writing",
+          "social media",
+          "non tech"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "classet.com"
+  },
+  {
+    "id": "co-131",
+    "name": "Martin Language School",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "online-language-tutors-martin-language-school-1134715",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-07-13T19:04:30.314Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Online Language Tutors",
+        "url": "https://remoteOK.com/remote-jobs/remote-online-language-tutors-martin-language-school-1134715",
+        "tags": [
+          "designer",
+          "video",
+          "non tech",
+          "strategy",
+          "content writing",
+          "teaching"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "martinlanguageschool.com"
   }
 ]
