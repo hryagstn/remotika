@@ -8,12 +8,17 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-07-15T18:13:49.921Z",
+    "lastVerifiedAt": "2026-07-16T18:11:15.803Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
         "title": "Financial Operations - Cross-Border Ops Lead",
         "url": "https://job-boards.greenhouse.io/xendit/jobs/7650615003",
+        "tags": []
+      },
+      {
+        "title": "Head of Global Communications",
+        "url": "https://job-boards.greenhouse.io/xendit/jobs/7806554003",
         "tags": []
       },
       {
@@ -34,6 +39,11 @@
       {
         "title": "Merchant Support (Daylight)",
         "url": "https://job-boards.greenhouse.io/xendit/jobs/7698002003",
+        "tags": []
+      },
+      {
+        "title": "Office of the Chief Revenue Officer",
+        "url": "https://job-boards.greenhouse.io/xendit/jobs/7806797003",
         "tags": []
       },
       {
@@ -119,7 +129,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-15T18:14:06.728Z",
+    "lastVerifiedAt": "2026-07-16T18:11:31.110Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -153,7 +163,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-15T18:14:23.020Z",
+    "lastVerifiedAt": "2026-07-16T18:11:45.845Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -187,7 +197,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-15T18:14:28.867Z",
+    "lastVerifiedAt": "2026-07-16T18:11:50.687Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -221,7 +231,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-15T18:14:35.810Z",
+    "lastVerifiedAt": "2026-07-16T18:11:56.826Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -246,6 +256,62 @@
     "lastVerifiedAt": "2026-06-25T19:24:38.317Z",
     "hasActiveJobs": true,
     "activeJobs": [
+      {
+        "title": "Senior DevOps Engineer",
+        "url": "https://remotive.com/remote-jobs/devops/senior-devops-engineer-2091067",
+        "tags": [
+          ".Net",
+          "android",
+          "AWS",
+          "azure",
+          "C",
+          "C#",
+          "C++",
+          "data science",
+          "golang",
+          "ios",
+          "java",
+          "javascript",
+          "kubernetes",
+          "node.js",
+          "php",
+          "python",
+          "react",
+          "ruby/rails",
+          "scala",
+          "shopify",
+          "sql",
+          "swift",
+          "UI/UX",
+          "wordpress",
+          "blockchain",
+          "AI/ML",
+          "automation",
+          "project management",
+          "react native",
+          "rust",
+          "product management",
+          "unity",
+          "electron",
+          "spring",
+          "data analysis",
+          "bash",
+          "laravel",
+          "Ethereum",
+          "graphic design",
+          "Typescript ",
+          "terraform",
+          "angular ",
+          "GCP",
+          "data engineering",
+          "Site Reliability",
+          "Symfony",
+          "startup",
+          "marketplace",
+          "next.js",
+          "flutter"
+        ]
+      },
       {
         "title": "Senior AI Engineer",
         "url": "https://remotive.com/remote-jobs/artificial-intelligence/senior-ai-engineer-2090986",
@@ -393,313 +459,6 @@
     "website": "docs.google.com"
   },
   {
-    "id": "co-125",
-    "name": "Orchestrate Consulting Group",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "customer-service-chat-representative-orchestrate-consulting-group-1134737",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-07-13T19:04:22.987Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Customer Service Chat Representative",
-        "url": "https://remoteOK.com/remote-jobs/remote-customer-service-chat-representative-orchestrate-consulting-group-1134737",
-        "tags": [
-          "c",
-          "music",
-          "game dev",
-          "dev",
-          "video",
-          "content writing",
-          "ops",
-          "marketing",
-          "internship",
-          "non tech",
-          "digital nomad",
-          "design",
-          "teaching",
-          "education",
-          "designer",
-          "technical",
-          "web dev",
-          "mobile",
-          "photoshop",
-          "illustrator",
-          "data entry",
-          "customer support",
-          "microsoft",
-          "exec",
-          "medical",
-          "consulting"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "orchestrateconsultinggroup.com"
-  },
-  {
-    "id": "co-126",
-    "name": "Outsource Access Careers",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "social-media-marketing-virtual-assistant-outsource-access-careers-1134728",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-07-13T19:04:24.160Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Social Media & Marketing Virtual Assistant",
-        "url": "https://remoteOK.com/remote-jobs/remote-social-media-marketing-virtual-assistant-outsource-access-careers-1134728",
-        "tags": [
-          "virtual assistant",
-          "marketing",
-          "social media",
-          "non tech"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "outsourceaccesscareers.com"
-  },
-  {
-    "id": "co-127",
-    "name": "Express Chipping Inc",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "inbound-sales-closer-express-chipping-inc-1134726",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-07-13T19:04:25.307Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Inbound Sales Closer",
-        "url": "https://remoteOK.com/remote-jobs/remote-inbound-sales-closer-express-chipping-inc-1134726",
-        "tags": [
-          "salesforce",
-          "customer support",
-          "marketing",
-          "web dev",
-          "ads",
-          "exec",
-          "legal",
-          "sales",
-          "sys admin",
-          "medical",
-          "full time"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "expresschippinginc.com"
-  },
-  {
-    "id": "co-128",
-    "name": "Conquer AI",
-    "githubOrg": "Conquer-AI",
-    "githubOrgUrl": "https://github.com/Conquer-AI",
-    "remoteokSlug": "apply-here-conquer-ai-1134722",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-07-13T19:04:26.790Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Apply Here",
-        "url": "https://remoteOK.com/remote-jobs/remote-apply-here-conquer-ai-1134722",
-        "tags": []
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "org-found-zero-match",
-    "website": "conquerai.com"
-  },
-  {
-    "id": "co-129",
-    "name": "JTS Growth",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "creative-strategist-jts-growth-1134718",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-07-13T19:04:27.946Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Creative Strategist",
-        "url": "https://remoteOK.com/remote-jobs/remote-creative-strategist-jts-growth-1134718",
-        "tags": [
-          "content writing",
-          "social media",
-          "non tech",
-          "teaching",
-          "customer support",
-          "education",
-          "marketing",
-          "strategy",
-          "full time"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "jtsgrowth.com"
-  },
-  {
-    "id": "co-130",
-    "name": "Classet",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "social-media-content-creator-classet-1134716",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-07-13T19:04:29.108Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Social Media Content Creator",
-        "url": "https://remoteOK.com/remote-jobs/remote-social-media-content-creator-classet-1134716",
-        "tags": [
-          "content writing",
-          "social media",
-          "non tech"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "classet.com"
-  },
-  {
-    "id": "co-131",
-    "name": "Martin Language School",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "online-language-tutors-martin-language-school-1134715",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-07-13T19:04:30.314Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Online Language Tutors",
-        "url": "https://remoteOK.com/remote-jobs/remote-online-language-tutors-martin-language-school-1134715",
-        "tags": [
-          "designer",
-          "video",
-          "non tech",
-          "strategy",
-          "content writing",
-          "teaching"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "martinlanguageschool.com"
-  },
-  {
-    "id": "co-132",
-    "name": "InterEx Group",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "business-analyst-interex-group-1134750",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-07-14T18:24:54.473Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Business Analyst",
-        "url": "https://remoteOK.com/remote-jobs/remote-business-analyst-interex-group-1134750",
-        "tags": [
-          "analyst"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "interexgroup.com"
-  },
-  {
-    "id": "co-133",
-    "name": "HireTalent - Staffing & Recruiting Firm",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "human-resources-generalist-hiretalent-staffing-recruiting-firm-1134804",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-07-15T18:31:12.137Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Human Resources Generalist",
-        "url": "https://remoteOK.com/remote-jobs/remote-human-resources-generalist-hiretalent-staffing-recruiting-firm-1134804",
-        "tags": [
-          "analyst",
-          "design",
-          "sys admin",
-          "architecture",
-          "technical",
-          "recruiter",
-          "testing",
-          "finance",
-          "api",
-          "exec",
-          "ops",
-          "full time",
-          "digital nomad",
-          "hr"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "hiretalentstaffingrecruitingfirm.com"
-  },
-  {
     "id": "co-134",
     "name": "Pragmatike",
     "githubOrg": "",
@@ -773,5 +532,128 @@
     "source": "remoteok",
     "watchlistReason": "org-found-zero-match",
     "website": "supportyourapp.com"
+  },
+  {
+    "id": "co-136",
+    "name": "APEX TRADE",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "entry-level-crypto-market-specialist-apex-trade-1134871",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-07-16T18:26:19.698Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Entry Level Crypto Market Specialist",
+        "url": "https://remoteOK.com/remote-jobs/remote-entry-level-crypto-market-specialist-apex-trade-1134871",
+        "tags": [
+          "other",
+          "finance"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "apextrade.com"
+  },
+  {
+    "id": "co-137",
+    "name": "Empire Life",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "project-manager-empire-life-1134867",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-07-16T18:26:20.790Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Project Manager",
+        "url": "https://remoteOK.com/remote-jobs/remote-project-manager-empire-life-1134867",
+        "tags": [
+          "speech",
+          "exec",
+          "content writing",
+          "sys admin",
+          "medical",
+          "recruiter",
+          "social media",
+          "game dev",
+          "designer",
+          "design",
+          "copywriting",
+          "marketing",
+          "video",
+          "education",
+          "finance",
+          "ads",
+          "digital nomad",
+          "virtual assistant",
+          "customer support",
+          "travel",
+          "ops",
+          "react",
+          "dev",
+          "front end",
+          "python",
+          "django",
+          "vfx",
+          "technical",
+          "javascript",
+          "postgres",
+          "typescript",
+          "mobile",
+          "senior",
+          "engineer",
+          "project manager"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "empirelife.com"
+  },
+  {
+    "id": "co-138",
+    "name": "Backpack Healthcare",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "medical-records-and-health-information-manager-backpack-healthcare-1134824",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-07-16T18:26:21.868Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Medical Records and Health Information Manager",
+        "url": "https://remoteOK.com/remote-jobs/remote-medical-records-and-health-information-manager-backpack-healthcare-1134824",
+        "tags": [
+          "exec",
+          "design",
+          "customer support",
+          "ops",
+          "legal",
+          "medical",
+          "full time",
+          "digital nomad"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "backpackhealthcare.com"
   }
 ]
