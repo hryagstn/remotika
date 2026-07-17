@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-07-16T18:11:15.803Z",
+    "lastVerifiedAt": "2026-07-17T18:10:59.748Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -17,7 +17,7 @@
         "tags": []
       },
       {
-        "title": "Head of Global Communications",
+        "title": "Global Head of Communications",
         "url": "https://job-boards.greenhouse.io/xendit/jobs/7806554003",
         "tags": []
       },
@@ -129,7 +129,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-16T18:11:31.110Z",
+    "lastVerifiedAt": "2026-07-17T18:11:18.462Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -163,7 +163,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-16T18:11:45.845Z",
+    "lastVerifiedAt": "2026-07-17T18:11:34.551Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -197,7 +197,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-16T18:11:50.687Z",
+    "lastVerifiedAt": "2026-07-17T18:11:40.287Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -231,7 +231,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-16T18:11:56.826Z",
+    "lastVerifiedAt": "2026-07-17T18:11:46.951Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -655,5 +655,204 @@
     "source": "remoteok",
     "watchlistReason": "no-org-found",
     "website": "backpackhealthcare.com"
+  },
+  {
+    "id": "co-139",
+    "name": "Outsource Access Careers",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "content-digital-marketing-specialist-outsource-access-careers-1134932",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-07-17T18:28:26.361Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Content & Digital Marketing Specialist",
+        "url": "https://remoteOK.com/remote-jobs/remote-content-digital-marketing-specialist-outsource-access-careers-1134932",
+        "tags": [
+          "virtual assistant",
+          "full time",
+          "sales",
+          "content writing",
+          "marketing",
+          "non tech"
+        ]
+      },
+      {
+        "title": "Sales Development Representative",
+        "url": "https://remoteOK.com/remote-jobs/remote-sales-development-representative-outsource-access-careers-1134931",
+        "tags": [
+          "virtual assistant",
+          "full time",
+          "sales"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "outsourceaccesscareers.com"
+  },
+  {
+    "id": "co-140",
+    "name": "YO IT Consulting",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "python-developer-yo-it-consulting-1134923",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-07-17T18:28:27.557Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Python Developer",
+        "url": "https://remoteOK.com/remote-jobs/remote-python-developer-yo-it-consulting-1134923",
+        "tags": [
+          "mobile",
+          "engineer",
+          "exec",
+          "dev",
+          "junior",
+          "digital nomad",
+          "analyst",
+          "customer support",
+          "marketing",
+          "ops",
+          "excel",
+          "stats",
+          "sales",
+          "python",
+          "consulting"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "yoitconsulting.com"
+  },
+  {
+    "id": "co-141",
+    "name": "Lockwood Publishing Ltd",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "engineers-lockwood-publishing-ltd-1134919",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-07-17T18:28:28.747Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Engineers",
+        "url": "https://remoteOK.com/remote-jobs/remote-engineers-lockwood-publishing-ltd-1134919",
+        "tags": [
+          "mobile",
+          "engineer"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "lockwoodpublishingltd.com"
+  },
+  {
+    "id": "co-142",
+    "name": "Work Force Nexus",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "operations-administrator-work-force-nexus-1134885",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-07-17T18:28:29.948Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Operations Administrator",
+        "url": "https://remoteOK.com/remote-jobs/remote-operations-administrator-work-force-nexus-1134885",
+        "tags": [
+          "copywriting",
+          "non tech",
+          "product manager",
+          "exec",
+          "design",
+          "saas",
+          "embedded",
+          "customer support",
+          "marketing",
+          "content writing",
+          "senior",
+          "ops",
+          "recruiter",
+          "digital nomad",
+          "admin"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "workforcenexus.com"
+  },
+  {
+    "id": "co-143",
+    "name": "DREAMLABS",
+    "githubOrg": "dreamlabs",
+    "githubOrgUrl": "https://github.com/dreamlabs",
+    "remoteokSlug": "creative-strategist-dreamlabs-1134875",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-07-17T18:28:32.060Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Creative Strategist",
+        "url": "https://remoteOK.com/remote-jobs/remote-creative-strategist-dreamlabs-1134875",
+        "tags": [
+          "design",
+          "marketing",
+          "exec",
+          "web dev",
+          "video",
+          "content writing",
+          "senior",
+          "photoshop",
+          "engineer",
+          "ecommerce",
+          "digital nomad",
+          "customer support",
+          "travel",
+          "education",
+          "finance",
+          "ops",
+          "legal",
+          "sales",
+          "golang",
+          "full time",
+          "part time",
+          "strategy"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "dreamlabs.com"
   }
 ]
