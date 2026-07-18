@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-07-17T18:10:59.748Z",
+    "lastVerifiedAt": "2026-07-18T18:00:41.324Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -129,7 +129,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-17T18:11:18.462Z",
+    "lastVerifiedAt": "2026-07-18T18:01:00.610Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -163,7 +163,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-17T18:11:34.551Z",
+    "lastVerifiedAt": "2026-07-18T18:01:15.421Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -197,7 +197,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-17T18:11:40.287Z",
+    "lastVerifiedAt": "2026-07-18T18:01:20.067Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -231,7 +231,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-17T18:11:46.951Z",
+    "lastVerifiedAt": "2026-07-18T18:01:25.774Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -459,81 +459,6 @@
     "website": "docs.google.com"
   },
   {
-    "id": "co-134",
-    "name": "Pragmatike",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "motion-designer-pragmatike-1134793",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-07-15T18:31:13.347Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Motion Designer",
-        "url": "https://remoteOK.com/remote-jobs/remote-motion-designer-pragmatike-1134793",
-        "tags": [
-          "customer support",
-          "exec",
-          "ops",
-          "medical",
-          "writer",
-          "content writing",
-          "junior",
-          "design",
-          "travel",
-          "video",
-          "senior",
-          "marketing",
-          "ads",
-          "full time",
-          "digital nomad",
-          "designer"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "pragmatike.com"
-  },
-  {
-    "id": "co-135",
-    "name": "SupportYourApp",
-    "githubOrg": "supportyourapp",
-    "githubOrgUrl": "https://github.com/supportyourapp",
-    "remoteokSlug": "junior-content-writer-supportyourapp-1134790",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-07-15T18:31:14.766Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Junior Content Writer",
-        "url": "https://remoteOK.com/remote-jobs/remote-junior-content-writer-supportyourapp-1134790",
-        "tags": [
-          "customer support",
-          "exec",
-          "ops",
-          "medical",
-          "writer",
-          "content writing",
-          "junior"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "org-found-zero-match",
-    "website": "supportyourapp.com"
-  },
-  {
     "id": "co-136",
     "name": "APEX TRADE",
     "githubOrg": "",
@@ -621,40 +546,6 @@
     "source": "remoteok",
     "watchlistReason": "no-org-found",
     "website": "empirelife.com"
-  },
-  {
-    "id": "co-138",
-    "name": "Backpack Healthcare",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "medical-records-and-health-information-manager-backpack-healthcare-1134824",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-07-16T18:26:21.868Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Medical Records and Health Information Manager",
-        "url": "https://remoteOK.com/remote-jobs/remote-medical-records-and-health-information-manager-backpack-healthcare-1134824",
-        "tags": [
-          "exec",
-          "design",
-          "customer support",
-          "ops",
-          "legal",
-          "medical",
-          "full time",
-          "digital nomad"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "backpackhealthcare.com"
   },
   {
     "id": "co-139",
@@ -815,8 +706,8 @@
     "remoteokSlug": "creative-strategist-dreamlabs-1134875",
     "industry": null,
     "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-07-17T18:28:32.060Z",
+    "label": "Confirmed",
+    "lastVerifiedAt": "2026-07-18T18:01:28.680Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -853,6 +744,129 @@
     "status": "watchlist",
     "source": "remoteok",
     "watchlistReason": "org-found-zero-match",
-    "website": "dreamlabs.com"
+    "website": "dreamlabs.com",
+    "verifiedAt": "2026-07-17T18:28:32.060Z"
+  },
+  {
+    "id": "co-144",
+    "name": "AllSTEM Connections",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "human-resources-specialist-allstem-connections-1134983",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-07-18T18:15:33.435Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Human Resources Specialist",
+        "url": "https://remoteOK.com/remote-jobs/remote-human-resources-specialist-allstem-connections-1134983",
+        "tags": [
+          "part time",
+          "hr"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "allstemconnections.com"
+  },
+  {
+    "id": "co-145",
+    "name": "D2B",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "management-accountant-dayshift-d2b-1134960",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-07-18T18:15:34.509Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Management Accountant Dayshift",
+        "url": "https://remoteOK.com/remote-jobs/remote-management-accountant-dayshift-d2b-1134960",
+        "tags": [
+          "accounting",
+          "customer support",
+          "payroll",
+          "finance",
+          "php",
+          "exec",
+          "ops",
+          "excel",
+          "medical",
+          "recruiter"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "d2b.com"
+  },
+  {
+    "id": "co-146",
+    "name": "Stay U-nique",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "agente-de-reservas-hospitality-stay-u-nique-1134943",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-07-18T18:15:35.594Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Hospitality Reservations Agent",
+        "url": "https://remoteOK.com/remote-jobs/remote-agente-de-reservas-hospitality-stay-u-nique-1134943",
+        "tags": [
+          "c",
+          "microsoft"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "stayunique.com"
+  },
+  {
+    "id": "co-147",
+    "name": "Home Market Foods",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "national-account-manager-foodservice-sales-required-home-market-foods-1134940",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-07-18T18:15:36.701Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "National Account Manager Foodservice Sales Required",
+        "url": "https://remoteOK.com/remote-jobs/remote-national-account-manager-foodservice-sales-required-home-market-foods-1134940",
+        "tags": [
+          "exec",
+          "customer support",
+          "marketing",
+          "sales"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "homemarketfoods.com"
   }
 ]
