@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-07-18T18:00:41.324Z",
+    "lastVerifiedAt": "2026-07-19T18:01:45.322Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -77,7 +77,7 @@
         "tags": []
       },
       {
-        "title": "Solution Engineering",
+        "title": "Solutions Engineering",
         "url": "https://job-boards.greenhouse.io/xendit/jobs/7719174003",
         "tags": []
       }
@@ -129,7 +129,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-18T18:01:00.610Z",
+    "lastVerifiedAt": "2026-07-19T18:02:00.639Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -163,7 +163,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-18T18:01:15.421Z",
+    "lastVerifiedAt": "2026-07-19T18:02:15.762Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -197,7 +197,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-18T18:01:20.067Z",
+    "lastVerifiedAt": "2026-07-19T18:02:20.839Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -231,7 +231,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-18T18:01:25.774Z",
+    "lastVerifiedAt": "2026-07-19T18:02:26.934Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -459,95 +459,6 @@
     "website": "docs.google.com"
   },
   {
-    "id": "co-136",
-    "name": "APEX TRADE",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "entry-level-crypto-market-specialist-apex-trade-1134871",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-07-16T18:26:19.698Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Entry Level Crypto Market Specialist",
-        "url": "https://remoteOK.com/remote-jobs/remote-entry-level-crypto-market-specialist-apex-trade-1134871",
-        "tags": [
-          "other",
-          "finance"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "apextrade.com"
-  },
-  {
-    "id": "co-137",
-    "name": "Empire Life",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "project-manager-empire-life-1134867",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-07-16T18:26:20.790Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Project Manager",
-        "url": "https://remoteOK.com/remote-jobs/remote-project-manager-empire-life-1134867",
-        "tags": [
-          "speech",
-          "exec",
-          "content writing",
-          "sys admin",
-          "medical",
-          "recruiter",
-          "social media",
-          "game dev",
-          "designer",
-          "design",
-          "copywriting",
-          "marketing",
-          "video",
-          "education",
-          "finance",
-          "ads",
-          "digital nomad",
-          "virtual assistant",
-          "customer support",
-          "travel",
-          "ops",
-          "react",
-          "dev",
-          "front end",
-          "python",
-          "django",
-          "vfx",
-          "technical",
-          "javascript",
-          "postgres",
-          "typescript",
-          "mobile",
-          "senior",
-          "engineer",
-          "project manager"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "empirelife.com"
-  },
-  {
     "id": "co-139",
     "name": "Outsource Access Careers",
     "githubOrg": "",
@@ -656,96 +567,6 @@
     "source": "remoteok",
     "watchlistReason": "no-org-found",
     "website": "lockwoodpublishingltd.com"
-  },
-  {
-    "id": "co-142",
-    "name": "Work Force Nexus",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "operations-administrator-work-force-nexus-1134885",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-07-17T18:28:29.948Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Operations Administrator",
-        "url": "https://remoteOK.com/remote-jobs/remote-operations-administrator-work-force-nexus-1134885",
-        "tags": [
-          "copywriting",
-          "non tech",
-          "product manager",
-          "exec",
-          "design",
-          "saas",
-          "embedded",
-          "customer support",
-          "marketing",
-          "content writing",
-          "senior",
-          "ops",
-          "recruiter",
-          "digital nomad",
-          "admin"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "workforcenexus.com"
-  },
-  {
-    "id": "co-143",
-    "name": "DREAMLABS",
-    "githubOrg": "dreamlabs",
-    "githubOrgUrl": "https://github.com/dreamlabs",
-    "remoteokSlug": "creative-strategist-dreamlabs-1134875",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-18T18:01:28.680Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Creative Strategist",
-        "url": "https://remoteOK.com/remote-jobs/remote-creative-strategist-dreamlabs-1134875",
-        "tags": [
-          "design",
-          "marketing",
-          "exec",
-          "web dev",
-          "video",
-          "content writing",
-          "senior",
-          "photoshop",
-          "engineer",
-          "ecommerce",
-          "digital nomad",
-          "customer support",
-          "travel",
-          "education",
-          "finance",
-          "ops",
-          "legal",
-          "sales",
-          "golang",
-          "full time",
-          "part time",
-          "strategy"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "org-found-zero-match",
-    "website": "dreamlabs.com",
-    "verifiedAt": "2026-07-17T18:28:32.060Z"
   },
   {
     "id": "co-144",
@@ -868,5 +689,36 @@
     "source": "remoteok",
     "watchlistReason": "no-org-found",
     "website": "homemarketfoods.com"
+  },
+  {
+    "id": "co-148",
+    "name": "HelpBnk",
+    "githubOrg": "HelpBnk",
+    "githubOrgUrl": "https://github.com/HelpBnk",
+    "remoteokSlug": "react-native-engineer-helpbnk-1135014",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-07-19T18:17:06.642Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "React Native Engineer",
+        "url": "https://remoteOK.com/remote-jobs/remote-react-native-engineer-helpbnk-1135014",
+        "tags": [
+          "dev",
+          "react native",
+          "mobile",
+          "iOS",
+          "android"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "helpbnk.com"
   }
 ]
