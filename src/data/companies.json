@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-07-19T18:01:45.322Z",
+    "lastVerifiedAt": "2026-07-20T18:57:32.376Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -77,7 +77,7 @@
         "tags": []
       },
       {
-        "title": "Solutions Engineering",
+        "title": "Solutions Engineer",
         "url": "https://job-boards.greenhouse.io/xendit/jobs/7719174003",
         "tags": []
       }
@@ -129,7 +129,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-19T18:02:00.639Z",
+    "lastVerifiedAt": "2026-07-20T18:57:48.150Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -163,7 +163,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-19T18:02:15.762Z",
+    "lastVerifiedAt": "2026-07-20T18:58:03.168Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -197,7 +197,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-19T18:02:20.839Z",
+    "lastVerifiedAt": "2026-07-20T18:58:07.491Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -231,7 +231,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-19T18:02:26.934Z",
+    "lastVerifiedAt": "2026-07-20T18:58:13.574Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -698,8 +698,8 @@
     "remoteokSlug": "react-native-engineer-helpbnk-1135014",
     "industry": null,
     "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-07-19T18:17:06.642Z",
+    "label": "Confirmed",
+    "lastVerifiedAt": "2026-07-20T18:58:14.974Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -719,6 +719,7 @@
     "status": "watchlist",
     "source": "remoteok",
     "watchlistReason": "org-found-zero-match",
-    "website": "helpbnk.com"
+    "website": "helpbnk.com",
+    "verifiedAt": "2026-07-19T18:17:06.642Z"
   }
 ]
