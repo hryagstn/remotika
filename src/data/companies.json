@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-07-20T18:57:32.376Z",
+    "lastVerifiedAt": "2026-07-21T18:19:07.125Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -24,11 +24,6 @@
       {
         "title": "Head of Treasury",
         "url": "https://job-boards.greenhouse.io/xendit/jobs/7653356003",
-        "tags": []
-      },
-      {
-        "title": "Internal Audit Manager (PT Syaftraco)",
-        "url": "https://job-boards.greenhouse.io/xendit/jobs/7616656003",
         "tags": []
       },
       {
@@ -129,7 +124,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-20T18:57:48.150Z",
+    "lastVerifiedAt": "2026-07-21T18:19:22.670Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -163,7 +158,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-20T18:58:03.168Z",
+    "lastVerifiedAt": "2026-07-21T18:19:38.358Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -197,7 +192,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-20T18:58:07.491Z",
+    "lastVerifiedAt": "2026-07-21T18:19:43.222Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -231,7 +226,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-20T18:58:13.574Z",
+    "lastVerifiedAt": "2026-07-21T18:19:49.351Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -459,116 +454,6 @@
     "website": "docs.google.com"
   },
   {
-    "id": "co-139",
-    "name": "Outsource Access Careers",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "content-digital-marketing-specialist-outsource-access-careers-1134932",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-07-17T18:28:26.361Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Content & Digital Marketing Specialist",
-        "url": "https://remoteOK.com/remote-jobs/remote-content-digital-marketing-specialist-outsource-access-careers-1134932",
-        "tags": [
-          "virtual assistant",
-          "full time",
-          "sales",
-          "content writing",
-          "marketing",
-          "non tech"
-        ]
-      },
-      {
-        "title": "Sales Development Representative",
-        "url": "https://remoteOK.com/remote-jobs/remote-sales-development-representative-outsource-access-careers-1134931",
-        "tags": [
-          "virtual assistant",
-          "full time",
-          "sales"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "outsourceaccesscareers.com"
-  },
-  {
-    "id": "co-140",
-    "name": "YO IT Consulting",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "python-developer-yo-it-consulting-1134923",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-07-17T18:28:27.557Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Python Developer",
-        "url": "https://remoteOK.com/remote-jobs/remote-python-developer-yo-it-consulting-1134923",
-        "tags": [
-          "mobile",
-          "engineer",
-          "exec",
-          "dev",
-          "junior",
-          "digital nomad",
-          "analyst",
-          "customer support",
-          "marketing",
-          "ops",
-          "excel",
-          "stats",
-          "sales",
-          "python",
-          "consulting"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "yoitconsulting.com"
-  },
-  {
-    "id": "co-141",
-    "name": "Lockwood Publishing Ltd",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "engineers-lockwood-publishing-ltd-1134919",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-07-17T18:28:28.747Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Engineers",
-        "url": "https://remoteOK.com/remote-jobs/remote-engineers-lockwood-publishing-ltd-1134919",
-        "tags": [
-          "mobile",
-          "engineer"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "lockwoodpublishingltd.com"
-  },
-  {
     "id": "co-144",
     "name": "AllSTEM Connections",
     "githubOrg": "",
@@ -633,64 +518,6 @@
     "website": "d2b.com"
   },
   {
-    "id": "co-146",
-    "name": "Stay U-nique",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "agente-de-reservas-hospitality-stay-u-nique-1134943",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-07-18T18:15:35.594Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Hospitality Reservations Agent",
-        "url": "https://remoteOK.com/remote-jobs/remote-agente-de-reservas-hospitality-stay-u-nique-1134943",
-        "tags": [
-          "c",
-          "microsoft"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "stayunique.com"
-  },
-  {
-    "id": "co-147",
-    "name": "Home Market Foods",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "national-account-manager-foodservice-sales-required-home-market-foods-1134940",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-07-18T18:15:36.701Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "National Account Manager Foodservice Sales Required",
-        "url": "https://remoteOK.com/remote-jobs/remote-national-account-manager-foodservice-sales-required-home-market-foods-1134940",
-        "tags": [
-          "exec",
-          "customer support",
-          "marketing",
-          "sales"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "homemarketfoods.com"
-  },
-  {
     "id": "co-148",
     "name": "HelpBnk",
     "githubOrg": "HelpBnk",
@@ -699,7 +526,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-20T18:58:14.974Z",
+    "lastVerifiedAt": "2026-07-21T18:19:50.955Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -721,5 +548,96 @@
     "watchlistReason": "org-found-zero-match",
     "website": "helpbnk.com",
     "verifiedAt": "2026-07-19T18:17:06.642Z"
+  },
+  {
+    "id": "co-149",
+    "name": "YO HR Consultancy",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "logistics-supply-chain-management-expert-yo-hr-consultancy-1135104",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-07-21T18:34:36.277Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Logistics & Supply Chain Management Expert",
+        "url": "https://remoteOK.com/remote-jobs/remote-logistics-supply-chain-management-expert-yo-hr-consultancy-1135104",
+        "tags": [
+          "hr",
+          "consulting",
+          "exec"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "yohrconsultancy.com"
+  },
+  {
+    "id": "co-150",
+    "name": "Buyers Edge Platform, LLC",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "data-mapping-analyst-buyers-edge-platform-llc-1135069",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-07-21T18:34:37.412Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Data Mapping Analyst",
+        "url": "https://remoteOK.com/remote-jobs/remote-data-mapping-analyst-buyers-edge-platform-llc-1135069",
+        "tags": [
+          "analyst",
+          "dev",
+          "exec",
+          "ops",
+          "stats",
+          "sys admin",
+          "digital nomad"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "buyersedgeplatformllc.com"
+  },
+  {
+    "id": "co-151",
+    "name": "Skinnify",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "hr-manager-fast-growing-e-commerce-startup-skinnify-1135063",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-07-21T18:34:38.564Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "HR Manager Fast Growing E Commerce Startup",
+        "url": "https://remoteOK.com/remote-jobs/remote-hr-manager-fast-growing-e-commerce-startup-skinnify-1135063",
+        "tags": [
+          "hr",
+          "exec",
+          "ecommerce"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "form.typeform.com"
   }
 ]
