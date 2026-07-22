@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-07-21T18:19:07.125Z",
+    "lastVerifiedAt": "2026-07-22T18:13:23.906Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -124,7 +124,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-21T18:19:22.670Z",
+    "lastVerifiedAt": "2026-07-22T18:13:39.522Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -158,7 +158,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-21T18:19:38.358Z",
+    "lastVerifiedAt": "2026-07-22T18:13:54.596Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -192,7 +192,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-21T18:19:43.222Z",
+    "lastVerifiedAt": "2026-07-22T18:13:59.579Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -226,7 +226,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-21T18:19:49.351Z",
+    "lastVerifiedAt": "2026-07-22T18:14:05.711Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -454,102 +454,6 @@
     "website": "docs.google.com"
   },
   {
-    "id": "co-144",
-    "name": "AllSTEM Connections",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "human-resources-specialist-allstem-connections-1134983",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-07-18T18:15:33.435Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Human Resources Specialist",
-        "url": "https://remoteOK.com/remote-jobs/remote-human-resources-specialist-allstem-connections-1134983",
-        "tags": [
-          "part time",
-          "hr"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "allstemconnections.com"
-  },
-  {
-    "id": "co-145",
-    "name": "D2B",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "management-accountant-dayshift-d2b-1134960",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-07-18T18:15:34.509Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Management Accountant Dayshift",
-        "url": "https://remoteOK.com/remote-jobs/remote-management-accountant-dayshift-d2b-1134960",
-        "tags": [
-          "accounting",
-          "customer support",
-          "payroll",
-          "finance",
-          "php",
-          "exec",
-          "ops",
-          "excel",
-          "medical",
-          "recruiter"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "d2b.com"
-  },
-  {
-    "id": "co-148",
-    "name": "HelpBnk",
-    "githubOrg": "HelpBnk",
-    "githubOrgUrl": "https://github.com/HelpBnk",
-    "remoteokSlug": "react-native-engineer-helpbnk-1135014",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-21T18:19:50.955Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "React Native Engineer",
-        "url": "https://remoteOK.com/remote-jobs/remote-react-native-engineer-helpbnk-1135014",
-        "tags": [
-          "dev",
-          "react native",
-          "mobile",
-          "iOS",
-          "android"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "org-found-zero-match",
-    "website": "helpbnk.com",
-    "verifiedAt": "2026-07-19T18:17:06.642Z"
-  },
-  {
     "id": "co-149",
     "name": "YO HR Consultancy",
     "githubOrg": "",
@@ -639,5 +543,110 @@
     "source": "remoteok",
     "watchlistReason": "no-org-found",
     "website": "form.typeform.com"
+  },
+  {
+    "id": "co-152",
+    "name": "MantraCare",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "dietician-mantracare-1135113",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-07-22T18:28:42.669Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Dietician",
+        "url": "https://remoteOK.com/remote-jobs/remote-dietician-mantracare-1135113",
+        "tags": [
+          "product manager",
+          "exec",
+          "dev",
+          "digital nomad",
+          "part time"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "mantracare.com"
+  },
+  {
+    "id": "co-153",
+    "name": "360Dialog",
+    "githubOrg": "360dialog",
+    "githubOrgUrl": "https://github.com/360dialog",
+    "remoteokSlug": "product-manager-360dialog-1135112",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-07-22T18:28:45.643Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Product Manager",
+        "url": "https://remoteOK.com/remote-jobs/remote-product-manager-360dialog-1135112",
+        "tags": [
+          "product manager",
+          "exec",
+          "dev",
+          "digital nomad"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "360dialog.com"
+  },
+  {
+    "id": "co-154",
+    "name": "Wheeler Staffing Partners",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "human-resources-generalist-wheeler-staffing-partners-1135109",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-07-22T18:28:46.729Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Human Resources Generalist",
+        "url": "https://remoteOK.com/remote-jobs/remote-human-resources-generalist-wheeler-staffing-partners-1135109",
+        "tags": [
+          "design",
+          "education",
+          "designer",
+          "adult",
+          "exec",
+          "photoshop",
+          "illustrator",
+          "digital nomad",
+          "hr",
+          "consulting",
+          "customer support",
+          "accounting",
+          "payroll",
+          "finance",
+          "microsoft",
+          "ops",
+          "excel",
+          "medical"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "wheelerstaffingpartners.com"
   }
 ]
