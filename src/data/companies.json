@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-07-27T18:26:59.282Z",
+    "lastVerifiedAt": "2026-07-28T18:19:28.517Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -134,7 +134,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-27T18:27:15.312Z",
+    "lastVerifiedAt": "2026-07-28T18:19:45.150Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -168,7 +168,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-27T18:27:30.742Z",
+    "lastVerifiedAt": "2026-07-28T18:20:02.470Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -202,7 +202,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-27T18:27:36.440Z",
+    "lastVerifiedAt": "2026-07-28T18:20:09.036Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -236,7 +236,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-27T18:27:42.473Z",
+    "lastVerifiedAt": "2026-07-28T18:20:15.931Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -374,86 +374,23 @@
     "website": "lemon.io"
   },
   {
-    "id": "co-164",
-    "name": "The Mom Project",
-    "githubOrg": "the-mom-project",
-    "githubOrgUrl": "https://github.com/the-mom-project",
-    "remoteokSlug": "executive-assistant-the-mom-project-1135306",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-27T18:27:48.535Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Executive Assistant",
-        "url": "https://remoteOK.com/remote-jobs/remote-executive-assistant-the-mom-project-1135306",
-        "tags": [
-          "design",
-          "sys admin",
-          "education",
-          "designer",
-          "customer support",
-          "marketing",
-          "web dev",
-          "video",
-          "cloud",
-          "exec",
-          "content writing",
-          "junior",
-          "golang",
-          "medical",
-          "ads",
-          "full time",
-          "digital nomad",
-          "hr",
-          "travel",
-          "payroll",
-          "senior",
-          "ops",
-          "recruiter",
-          "technical",
-          "finance",
-          "stats",
-          "engineer",
-          "dev",
-          "testing",
-          "coordinator",
-          "accounting",
-          "excel",
-          "sales",
-          "art direction",
-          "consulting",
-          "virtual assistant"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "org-found-zero-match",
-    "website": "themomproject.com",
-    "verifiedAt": "2026-07-25T18:18:37.674Z"
-  },
-  {
-    "id": "co-165",
-    "name": "DesignMeshAI",
+    "id": "co-166",
+    "name": "Atom Partners",
     "githubOrg": "",
     "githubOrgUrl": "",
-    "remoteokSlug": "content-producer-designmeshai-1135404",
+    "remoteokSlug": "entry-level-junior-trader-atom-partners-1135478",
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-07-26T18:21:35.158Z",
+    "lastVerifiedAt": "2026-07-28T18:37:03.010Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
-        "title": "Content Producer",
-        "url": "https://remoteOK.com/remote-jobs/remote-content-producer-designmeshai-1135404",
+        "title": "Entry Level Junior Trader",
+        "url": "https://remoteOK.com/remote-jobs/remote-entry-level-junior-trader-atom-partners-1135478",
         "tags": [
-          "video",
-          "content writing"
+          "other",
+          "finance"
         ]
       }
     ],
@@ -462,6 +399,96 @@
     "status": "watchlist",
     "source": "remoteok",
     "watchlistReason": "no-org-found",
-    "website": "designmeshai.com"
+    "website": "atompartners.com"
+  },
+  {
+    "id": "co-167",
+    "name": "Sailor Health",
+    "githubOrg": "Sailor-Health",
+    "githubOrgUrl": "https://github.com/Sailor-Health",
+    "remoteokSlug": "patient-intake-specialist-mental-health-sailor-health-1135461",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-07-28T18:37:04.425Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Patient Intake Specialist Mental Health",
+        "url": "https://remoteOK.com/remote-jobs/remote-patient-intake-specialist-mental-health-sailor-health-1135461",
+        "tags": [
+          "medical"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "sailorhealth.com"
+  },
+  {
+    "id": "co-168",
+    "name": "Huzzle",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "bilingual-sales-development-representative-german-english-huzzle-1135460",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-07-28T18:37:05.590Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Bilingual Sales Development Representative German English",
+        "url": "https://remoteOK.com/remote-jobs/remote-bilingual-sales-development-representative-german-english-huzzle-1135460",
+        "tags": [
+          "saas",
+          "marketing",
+          "finance",
+          "microsoft",
+          "exec",
+          "content writing",
+          "sales",
+          "golang",
+          "ecommerce",
+          "full time"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "huzzle.com"
+  },
+  {
+    "id": "co-169",
+    "name": "Twine",
+    "githubOrg": "twine",
+    "githubOrgUrl": "https://github.com/twine",
+    "remoteokSlug": "illustrator-childrens-book-art-twine-1135458",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-07-28T18:37:07.012Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Illustrator Children’s Book Art",
+        "url": "https://remoteOK.com/remote-jobs/remote-illustrator-childrens-book-art-twine-1135458",
+        "tags": [
+          "illustrator"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "twine.com"
   }
 ]
