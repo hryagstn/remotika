@@ -1692,6 +1692,19 @@ async function main() {
   console.log("\n=== PIPELINE RUN COMPLETE ===");
 }
 
+const slugify = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+
+function getCompanySlug(company: CompanyData): string {
+  if (company.githubOrg && company.githubOrg.trim() !== "") {
+    return company.githubOrg.toLowerCase().trim();
+  }
+  const slug = slugify(company.name);
+  if (slug) {
+    return slug;
+  }
+  return company.id;
+}
+
 async function notifyNewVerifiedCompanies(initialCompanies: CompanyData[], finalCompanies: CompanyData[]) {
   const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
   const TELEGRAM_CHANNEL_ID = process.env.TELEGRAM_CHANNEL_ID;
@@ -1701,23 +1714,61 @@ async function notifyNewVerifiedCompanies(initialCompanies: CompanyData[], final
     return;
   }
 
-  const initialOrgSet = new Set(initialCompanies.map(c => c.githubOrg.toLowerCase().trim()));
+  // Build lookup map of initial companies by githubOrg and id
+  const initialCompanyMap = new Map<string, CompanyData>();
+  initialCompanies.forEach(c => {
+    if (c.githubOrg && c.githubOrg.trim() !== "") {
+      initialCompanyMap.set(c.githubOrg.toLowerCase().trim(), c);
+    }
+    if (c.id) {
+      initialCompanyMap.set(c.id.toLowerCase().trim(), c);
+    }
+  });
+
   const newActiveJobCompanies = finalCompanies.filter(c => {
-    return !initialOrgSet.has(c.githubOrg.toLowerCase().trim()) && c.hasActiveJobs;
+    if (!c.hasActiveJobs) return false;
+
+    const orgKey = c.githubOrg ? c.githubOrg.toLowerCase().trim() : "";
+    const idKey = c.id ? c.id.toLowerCase().trim() : "";
+
+    const initialComp = (orgKey !== "" ? initialCompanyMap.get(orgKey) : undefined) ||
+                        (idKey !== "" ? initialCompanyMap.get(idKey) : undefined);
+
+    // 1. Brand new company with active jobs -> notify!
+    if (!initialComp) return true;
+
+    // 2. Company previously had NO active jobs, but now HAS active jobs -> notify!
+    if (!initialComp.hasActiveJobs && c.hasActiveJobs) return true;
+
+    // 3. Company was previously unverified (0 members/watchlist), but now IS verified (>0 members) -> notify!
+    const wasUnverified = initialComp.verifiedIndonesianCount <= 0 || initialComp.status === "watchlist";
+    const isNowVerified = c.verifiedIndonesianCount > 0 && c.status !== "watchlist";
+    if (wasUnverified && isNowVerified) return true;
+
+    return false;
   });
 
   if (newActiveJobCompanies.length === 0) {
-    console.log("\n[Telegram] No new verified companies with active jobs found in this run. No notifications to send.");
+    console.log("\n[Telegram] No new active job companies found in this run. No notifications to send.");
     return;
   }
 
-  console.log(`\n[Telegram] Found ${newActiveJobCompanies.length} new verified company/companies with active jobs. Sending notifications...`);
+  console.log(`\n[Telegram] Found ${newActiveJobCompanies.length} new company/companies with active jobs. Sending notifications...`);
 
   for (const company of newActiveJobCompanies) {
-    const messageText = `🆕 *New verified company on Remotika*\n\n*${company.name}* just got verified — ${company.verifiedIndonesianCount} Indonesian team member${company.verifiedIndonesianCount > 1 ? "s" : ""} confirmed via GitHub, and they're actively hiring remote.\n\nCheck it out: https://remotika.vercel.app/company/${company.id}`;
+    const slug = getCompanySlug(company);
+    const isVerified = company.verifiedIndonesianCount > 0 && company.status !== "watchlist";
+
+    let messageText = "";
+    if (isVerified) {
+      const memberSuffix = company.verifiedIndonesianCount > 1 ? "s" : "";
+      messageText = `🆕 *New verified company on Remotika*\n\n*${company.name}* just got verified — ${company.verifiedIndonesianCount} Indonesian team member${memberSuffix} confirmed via GitHub, and they're actively hiring remote.\n\nCheck it out: https://remotika.vercel.app/company/${slug}`;
+    } else {
+      messageText = `💼 *New remote hiring company on Remotika*\n\n*${company.name}* is actively hiring remote! Currently 0 Indonesian team members confirmed via GitHub — be the first to represent!\n\nCheck it out: https://remotika.vercel.app/company/${slug}`;
+    }
     
     try {
-      console.log(`  [Telegram] Sending notification for ${company.name} (ID: ${company.id})...`);
+      console.log(`  [Telegram] Sending notification for ${company.name} (Slug: ${slug}, Verified: ${isVerified})...`);
       const res = await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
         method: "POST",
         headers: {
