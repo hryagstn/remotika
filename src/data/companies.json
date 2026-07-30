@@ -8,12 +8,17 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-07-29T18:11:26.456Z",
+    "lastVerifiedAt": "2026-07-30T18:21:41.643Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
         "title": "Customer Success Manager (Greater China)",
         "url": "https://job-boards.greenhouse.io/xendit/jobs/7813473003",
+        "tags": []
+      },
+      {
+        "title": "Data / ML Automation Intern",
+        "url": "https://job-boards.greenhouse.io/xendit/jobs/7821208003",
         "tags": []
       },
       {
@@ -24,6 +29,11 @@
       {
         "title": "FinOps Recons Associate",
         "url": "https://job-boards.greenhouse.io/xendit/jobs/7813420003",
+        "tags": []
+      },
+      {
+        "title": "Full Stack Developer Intern",
+        "url": "https://job-boards.greenhouse.io/xendit/jobs/7821207003",
         "tags": []
       },
       {
@@ -134,7 +144,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-29T18:11:43.281Z",
+    "lastVerifiedAt": "2026-07-30T18:21:57.123Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -168,7 +178,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-29T18:11:59.560Z",
+    "lastVerifiedAt": "2026-07-30T18:22:12.767Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -202,7 +212,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-29T18:12:05.764Z",
+    "lastVerifiedAt": "2026-07-30T18:22:17.540Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -236,7 +246,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-29T18:12:12.717Z",
+    "lastVerifiedAt": "2026-07-30T18:22:23.424Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -277,6 +287,56 @@
           "kubernetes",
           "ansible",
           "sql"
+        ]
+      },
+      {
+        "title": "Senior Graphic Designer",
+        "url": "https://remotive.com/remote-jobs/design/senior-graphic-designer-2091081",
+        "tags": [
+          ".Net",
+          "android",
+          "C",
+          "C#",
+          "C++",
+          "data science",
+          "golang",
+          "illustrator",
+          "ios",
+          "java",
+          "javascript",
+          "node.js",
+          "php",
+          "python",
+          "react",
+          "ruby/rails",
+          "scala",
+          "shopify",
+          "swift",
+          "wordpress",
+          "blockchain",
+          "AI/ML",
+          "automation",
+          "project management",
+          "adobe creative suite",
+          "react native",
+          "rust",
+          "unity",
+          "electron",
+          "spring",
+          "laravel",
+          "Ethereum",
+          "graphic design",
+          "Typescript ",
+          "angular ",
+          "data engineering",
+          "Site Reliability",
+          "SOLID",
+          "Symfony",
+          "startup",
+          "marketplace",
+          "next.js",
+          "adobe illustrator",
+          "flutter"
         ]
       },
       {
@@ -334,124 +394,6 @@
     "source": "remoteok",
     "watchlistReason": "no-org-found",
     "website": "lemon.io"
-  },
-  {
-    "id": "co-166",
-    "name": "Atom Partners",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "entry-level-junior-trader-atom-partners-1135478",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-07-28T18:37:03.010Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Entry Level Junior Trader",
-        "url": "https://remoteOK.com/remote-jobs/remote-entry-level-junior-trader-atom-partners-1135478",
-        "tags": [
-          "other",
-          "finance"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "atompartners.com"
-  },
-  {
-    "id": "co-167",
-    "name": "Sailor Health",
-    "githubOrg": "Sailor-Health",
-    "githubOrgUrl": "https://github.com/Sailor-Health",
-    "remoteokSlug": "patient-intake-specialist-mental-health-sailor-health-1135461",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-07-28T18:37:04.425Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Patient Intake Specialist Mental Health",
-        "url": "https://remoteOK.com/remote-jobs/remote-patient-intake-specialist-mental-health-sailor-health-1135461",
-        "tags": [
-          "medical"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "org-found-zero-match",
-    "website": "sailorhealth.com"
-  },
-  {
-    "id": "co-168",
-    "name": "Huzzle",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "bilingual-sales-development-representative-german-english-huzzle-1135460",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-07-28T18:37:05.590Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Bilingual Sales Development Representative German English",
-        "url": "https://remoteOK.com/remote-jobs/remote-bilingual-sales-development-representative-german-english-huzzle-1135460",
-        "tags": [
-          "saas",
-          "marketing",
-          "finance",
-          "microsoft",
-          "exec",
-          "content writing",
-          "sales",
-          "golang",
-          "ecommerce",
-          "full time"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "huzzle.com"
-  },
-  {
-    "id": "co-169",
-    "name": "Twine",
-    "githubOrg": "twine",
-    "githubOrgUrl": "https://github.com/twine",
-    "remoteokSlug": "illustrator-childrens-book-art-twine-1135458",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-07-28T18:37:07.012Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Illustrator Children’s Book Art",
-        "url": "https://remoteOK.com/remote-jobs/remote-illustrator-childrens-book-art-twine-1135458",
-        "tags": [
-          "illustrator"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "org-found-zero-match",
-    "website": "twine.com"
   },
   {
     "id": "co-170",
@@ -538,5 +480,38 @@
     "source": "remoteok",
     "watchlistReason": "no-org-found",
     "website": "cxdventures.com"
+  },
+  {
+    "id": "co-172",
+    "name": "Weekday AI",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "legal-expert-weekday-ai-1135616",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-07-30T18:36:51.865Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Legal Expert",
+        "url": "https://remoteOK.com/remote-jobs/remote-legal-expert-weekday-ai-1135616",
+        "tags": [
+          "education",
+          "customer support",
+          "content writing",
+          "legal",
+          "sys admin",
+          "part time",
+          "non tech"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "weekdayai.com"
   }
 ]
