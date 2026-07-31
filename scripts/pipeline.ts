@@ -1761,10 +1761,9 @@ async function notifyNewVerifiedCompanies(initialCompanies: CompanyData[], final
 
     let messageText = "";
     if (isVerified) {
-      const memberSuffix = company.verifiedIndonesianCount > 1 ? "s" : "";
-      messageText = `🆕 *New verified company on Remotika*\n\n*${company.name}* just got verified — ${company.verifiedIndonesianCount} Indonesian team member${memberSuffix} confirmed via GitHub, and they're actively hiring remote.\n\nCheck it out: https://remotika.vercel.app/company/${slug}`;
+      messageText = `🆕 *Perusahaan Terverifikasi Baru di Remotika*\n\n*${company.name}* baru saja terverifikasi! Terkonfirmasi ${company.verifiedIndonesianCount} anggota tim asal Indonesia via GitHub, dan mereka sedang membuka lowongan kerja remote aktif.\n\nLihat selengkapnya di sini: https://remotika.vercel.app/company/${slug}`;
     } else {
-      messageText = `💼 *New remote hiring company on Remotika*\n\n*${company.name}* is actively hiring remote! Currently 0 Indonesian team members confirmed via GitHub — be the first to represent!\n\nCheck it out: https://remotika.vercel.app/company/${slug}`;
+      messageText = `💼 *Lowongan Remote Baru di Remotika*\n\n*${company.name}* sedang membuka lowongan kerja remote aktif! Saat ini belum ada anggota tim asal Indonesia yang terverifikasi via GitHub — jadilah developer Indonesia pertama di tim mereka!\n\nLihat selengkapnya di sini: https://remotika.vercel.app/company/${slug}`;
     }
     
     try {
