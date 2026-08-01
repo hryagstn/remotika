@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-08-01T02:43:49.415Z",
+    "lastVerifiedAt": "2026-08-01T18:03:33.302Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -144,7 +144,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-01T02:44:05.507Z",
+    "lastVerifiedAt": "2026-08-01T18:03:49.221Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -178,7 +178,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-01T02:44:20.893Z",
+    "lastVerifiedAt": "2026-08-01T18:04:05.157Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -212,7 +212,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-01T02:44:26.694Z",
+    "lastVerifiedAt": "2026-08-01T18:04:10.125Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -246,7 +246,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-01T02:44:33.409Z",
+    "lastVerifiedAt": "2026-08-01T18:04:16.095Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -271,24 +271,6 @@
     "lastVerifiedAt": "2026-06-25T19:24:38.317Z",
     "hasActiveJobs": true,
     "activeJobs": [
-      {
-        "title": "Senior DevOps Engineer",
-        "url": "https://remoteOK.com/remote-jobs/remote-senior-devops-engineer-lemon-io-1135562",
-        "tags": [
-          "dev",
-          "engineer",
-          "senior",
-          "full time",
-          "devops",
-          "python",
-          "golang",
-          "aws",
-          "gcp",
-          "kubernetes",
-          "ansible",
-          "sql"
-        ]
-      },
       {
         "title": "Senior Graphic Designer",
         "url": "https://remotive.com/remote-jobs/design/senior-graphic-designer-2091081",
@@ -336,6 +318,62 @@
           "marketplace",
           "next.js",
           "adobe illustrator",
+          "flutter"
+        ]
+      },
+      {
+        "title": "Senior DevOps Engineer",
+        "url": "https://remotive.com/remote-jobs/devops/senior-devops-engineer-2091067",
+        "tags": [
+          ".Net",
+          "android",
+          "AWS",
+          "azure",
+          "C",
+          "C#",
+          "C++",
+          "data science",
+          "golang",
+          "ios",
+          "java",
+          "javascript",
+          "kubernetes",
+          "node.js",
+          "php",
+          "python",
+          "react",
+          "ruby/rails",
+          "scala",
+          "shopify",
+          "sql",
+          "swift",
+          "UI/UX",
+          "wordpress",
+          "blockchain",
+          "AI/ML",
+          "automation",
+          "project management",
+          "react native",
+          "rust",
+          "product management",
+          "unity",
+          "electron",
+          "spring",
+          "data analysis",
+          "bash",
+          "laravel",
+          "Ethereum",
+          "graphic design",
+          "Typescript ",
+          "terraform",
+          "angular ",
+          "GCP",
+          "data engineering",
+          "Site Reliability",
+          "Symfony",
+          "startup",
+          "marketplace",
+          "next.js",
           "flutter"
         ]
       },
@@ -545,7 +583,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-01T02:44:35.051Z",
+    "lastVerifiedAt": "2026-08-01T18:04:17.761Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -609,5 +647,76 @@
     "source": "remoteok",
     "watchlistReason": "no-org-found",
     "website": "wakacjepl.com"
+  },
+  {
+    "id": "co-178",
+    "name": "SuperPlane",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "product-engineer-superplane-1135739",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-08-01T18:19:15.589Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Product Engineer",
+        "url": "https://remoteOK.com/remote-jobs/remote-product-engineer-superplane-1135739",
+        "tags": [
+          "golang",
+          "javascript",
+          "react",
+          "ai"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "superplane.com"
+  },
+  {
+    "id": "co-179",
+    "name": "Magic Compass Limited",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "genai-engineer-ai-builder-ai-agent-associate-specialist-magic-compass-limited-1135735",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-08-01T18:19:16.754Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "GenAI Engineer AI Builder AI Agent Associate Specialist",
+        "url": "https://remoteOK.com/remote-jobs/remote-genai-engineer-ai-builder-ai-agent-associate-specialist-magic-compass-limited-1135735",
+        "tags": [
+          "ai",
+          "blockchain",
+          "machine learning",
+          "deep learning",
+          "artificial intelligence",
+          "neural networks",
+          "Claude",
+          "OpenClaw",
+          "Codex",
+          "AI Agent",
+          "OpenAI",
+          "Prompt Engineering",
+          "Risk Management",
+          "crypto",
+          "web3"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "magiccompasslimited.com"
   }
 ]
