@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-07-31T18:24:43.808Z",
+    "lastVerifiedAt": "2026-08-01T02:43:49.415Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -144,7 +144,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-31T18:24:59.565Z",
+    "lastVerifiedAt": "2026-08-01T02:44:05.507Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -178,7 +178,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-31T18:25:15.353Z",
+    "lastVerifiedAt": "2026-08-01T02:44:20.893Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -212,7 +212,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-31T18:25:20.746Z",
+    "lastVerifiedAt": "2026-08-01T02:44:26.694Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -246,7 +246,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-07-31T18:25:26.928Z",
+    "lastVerifiedAt": "2026-08-01T02:44:33.409Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -544,8 +544,8 @@
     "remoteokSlug": "traveler-care-specialist-luxury-travel-zicasso-1135640",
     "industry": null,
     "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-07-31T18:40:22.097Z",
+    "label": "Confirmed",
+    "lastVerifiedAt": "2026-08-01T02:44:35.051Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -573,7 +573,8 @@
     "status": "watchlist",
     "source": "remoteok",
     "watchlistReason": "org-found-zero-match",
-    "website": "zicasso.com"
+    "website": "zicasso.com",
+    "verifiedAt": "2026-07-31T18:40:22.097Z"
   },
   {
     "id": "co-177",
