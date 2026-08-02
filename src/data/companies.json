@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-08-01T18:03:33.302Z",
+    "lastVerifiedAt": "2026-08-02T18:03:57.909Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -144,7 +144,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-01T18:03:49.221Z",
+    "lastVerifiedAt": "2026-08-02T18:04:13.272Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -178,7 +178,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-01T18:04:05.157Z",
+    "lastVerifiedAt": "2026-08-02T18:04:27.843Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -212,7 +212,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-01T18:04:10.125Z",
+    "lastVerifiedAt": "2026-08-02T18:04:32.378Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -246,7 +246,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-01T18:04:16.095Z",
+    "lastVerifiedAt": "2026-08-02T18:04:37.840Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -434,39 +434,6 @@
     "website": "lemon.io"
   },
   {
-    "id": "co-172",
-    "name": "Weekday AI",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "legal-expert-weekday-ai-1135616",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-07-30T18:36:51.865Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Legal Expert",
-        "url": "https://remoteOK.com/remote-jobs/remote-legal-expert-weekday-ai-1135616",
-        "tags": [
-          "education",
-          "customer support",
-          "content writing",
-          "legal",
-          "sys admin",
-          "part time",
-          "non tech"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "weekdayai.com"
-  },
-  {
     "id": "co-173",
     "name": "Lyric",
     "githubOrg": "",
@@ -583,7 +550,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-01T18:04:17.761Z",
+    "lastVerifiedAt": "2026-08-02T18:04:39.263Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -718,5 +685,77 @@
     "source": "remoteok",
     "watchlistReason": "no-org-found",
     "website": "magiccompasslimited.com"
+  },
+  {
+    "id": "co-180",
+    "name": "Grapefruit Health",
+    "githubOrg": "Grapefruit-Health",
+    "githubOrgUrl": "https://github.com/Grapefruit-Health",
+    "remoteokSlug": "patient-outreach-specialist-grapefruit-health-1135789",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-08-02T18:18:56.350Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Patient Outreach Specialist",
+        "url": "https://remoteOK.com/remote-jobs/remote-patient-outreach-specialist-grapefruit-health-1135789",
+        "tags": [
+          "hr",
+          "teaching",
+          "education",
+          "recruiter",
+          "supervisor",
+          "customer support",
+          "dev",
+          "virtual assistant",
+          "video",
+          "medical",
+          "part time",
+          "non tech",
+          "digital nomad"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "grapefruithealth.com"
+  },
+  {
+    "id": "co-181",
+    "name": "Liberty Mutual Insurance",
+    "githubOrg": "Liberty-Mutual-Insurance",
+    "githubOrgUrl": "https://github.com/Liberty-Mutual-Insurance",
+    "remoteokSlug": "licensed-customer-service-representative-liberty-mutual-insurance-1135788",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-08-02T18:18:57.697Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Licensed Customer Service Representative",
+        "url": "https://remoteOK.com/remote-jobs/remote-licensed-customer-service-representative-liberty-mutual-insurance-1135788",
+        "tags": [
+          "embedded",
+          "education",
+          "customer support",
+          "marketing",
+          "c",
+          "golang",
+          "non tech"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "libertymutualgroup.com"
   }
 ]
