@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-08-02T18:03:57.909Z",
+    "lastVerifiedAt": "2026-08-03T18:53:17.044Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -144,7 +144,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-02T18:04:13.272Z",
+    "lastVerifiedAt": "2026-08-03T18:53:32.494Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -178,7 +178,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-02T18:04:27.843Z",
+    "lastVerifiedAt": "2026-08-03T18:53:48.043Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -212,7 +212,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-02T18:04:32.378Z",
+    "lastVerifiedAt": "2026-08-03T18:53:53.216Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -246,7 +246,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-02T18:04:37.840Z",
+    "lastVerifiedAt": "2026-08-03T18:53:59.411Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -376,54 +376,6 @@
           "next.js",
           "flutter"
         ]
-      },
-      {
-        "title": "Senior AI Engineer",
-        "url": "https://remotive.com/remote-jobs/artificial-intelligence/senior-ai-engineer-2090986",
-        "tags": [
-          ".Net",
-          "android",
-          "C",
-          "C#",
-          "C++",
-          "data science",
-          "golang",
-          "ios",
-          "java",
-          "javascript",
-          "node.js",
-          "php",
-          "python",
-          "react",
-          "ruby/rails",
-          "scala",
-          "shopify",
-          "swift",
-          "UI/UX",
-          "wordpress",
-          "blockchain",
-          "AI/ML",
-          "automation",
-          "project management",
-          "react native",
-          "rust",
-          "unity",
-          "electron",
-          "spring",
-          "laravel",
-          "Ethereum",
-          "graphic design",
-          "Typescript ",
-          "angular ",
-          "data engineering",
-          "Site Reliability",
-          "SOLID",
-          "Symfony",
-          "startup",
-          "marketplace",
-          "next.js",
-          "flutter"
-        ]
       }
     ],
     "verifiedMembers": [],
@@ -505,115 +457,6 @@
     "source": "remoteok",
     "watchlistReason": "no-org-found",
     "website": "mindriftdataannotation.com"
-  },
-  {
-    "id": "co-175",
-    "name": "CLANX",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "growth-marketer-clanx-1135656",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-07-31T18:40:20.395Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Growth Marketer",
-        "url": "https://remoteOK.com/remote-jobs/remote-growth-marketer-clanx-1135656",
-        "tags": [
-          "marketing",
-          "design",
-          "exec",
-          "recruiter",
-          "travel",
-          "finance",
-          "admin",
-          "content writing",
-          "digital nomad"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "nola.money"
-  },
-  {
-    "id": "co-176",
-    "name": "Zicasso",
-    "githubOrg": "Zicasso",
-    "githubOrgUrl": "https://github.com/Zicasso",
-    "remoteokSlug": "traveler-care-specialist-luxury-travel-zicasso-1135640",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-02T18:04:39.263Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Traveler Care Specialist Luxury Travel",
-        "url": "https://remoteOK.com/remote-jobs/remote-traveler-care-specialist-luxury-travel-zicasso-1135640",
-        "tags": [
-          "travel",
-          "education",
-          "transcribing",
-          "dev",
-          "marketing",
-          "exec",
-          "video",
-          "ops",
-          "excel",
-          "stats",
-          "sales",
-          "recruiter",
-          "digital nomad"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "org-found-zero-match",
-    "website": "zicasso.com",
-    "verifiedAt": "2026-07-31T18:40:22.097Z"
-  },
-  {
-    "id": "co-177",
-    "name": "Wakacje.pl",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "software-engineer-go-wakacje-pl-1135634",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-07-31T18:40:23.231Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Software Engineer GO",
-        "url": "https://remoteOK.com/remote-jobs/remote-software-engineer-go-wakacje-pl-1135634",
-        "tags": [
-          "golang",
-          "dev",
-          "travel",
-          "api",
-          "golang",
-          "engineer",
-          "backend",
-          "digital nomad"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "wakacjepl.com"
   },
   {
     "id": "co-178",
