@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-08-04T18:42:26.491Z",
+    "lastVerifiedAt": "2026-08-05T18:26:54.231Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -144,7 +144,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-04T18:42:42.623Z",
+    "lastVerifiedAt": "2026-08-05T18:27:10.208Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -178,7 +178,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-04T18:43:00.326Z",
+    "lastVerifiedAt": "2026-08-05T18:27:26.068Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -212,7 +212,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-04T18:43:05.890Z",
+    "lastVerifiedAt": "2026-08-05T18:27:31.572Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -246,7 +246,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-04T18:43:13.065Z",
+    "lastVerifiedAt": "2026-08-05T18:27:38.437Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -384,36 +384,6 @@
     "source": "remoteok",
     "watchlistReason": "no-org-found",
     "website": "lemon.io"
-  },
-  {
-    "id": "co-178",
-    "name": "SuperPlane",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "product-engineer-superplane-1135739",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-08-01T18:19:15.589Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Product Engineer",
-        "url": "https://remoteOK.com/remote-jobs/remote-product-engineer-superplane-1135739",
-        "tags": [
-          "golang",
-          "javascript",
-          "react",
-          "ai"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "superplane.com"
   },
   {
     "id": "co-180",
