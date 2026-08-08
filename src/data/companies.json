@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-08-07T17:52:52.320Z",
+    "lastVerifiedAt": "2026-08-08T17:36:27.192Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -139,7 +139,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-07T17:53:07.739Z",
+    "lastVerifiedAt": "2026-08-08T17:36:42.503Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -173,7 +173,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-07T17:53:22.701Z",
+    "lastVerifiedAt": "2026-08-08T17:36:57.303Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -207,7 +207,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-07T17:53:27.562Z",
+    "lastVerifiedAt": "2026-08-08T17:37:02.058Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -241,7 +241,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-07T17:53:33.871Z",
+    "lastVerifiedAt": "2026-08-08T17:37:09.275Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -266,6 +266,24 @@
     "lastVerifiedAt": "2026-06-25T19:24:38.317Z",
     "hasActiveJobs": true,
     "activeJobs": [
+      {
+        "title": "Senior React Full stack Developer",
+        "url": "https://remoteOK.com/remote-jobs/remote-senior-react-full-stack-developer-lemon-io-1136299",
+        "tags": [
+          "dev",
+          "engineer",
+          "senior",
+          "full time",
+          "python",
+          "aws",
+          "gcp",
+          "javascript",
+          "react",
+          "node",
+          "ruby",
+          "typescript"
+        ]
+      },
       {
         "title": "Senior Graphic Designer",
         "url": "https://remotive.com/remote-jobs/design/senior-graphic-designer-2091081",
