@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-08-09T17:36:46.830Z",
+    "lastVerifiedAt": "2026-08-10T17:54:23.318Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -72,6 +72,11 @@
         "tags": []
       },
       {
+        "title": "Senior Design System and Product Designer | Operational Journey",
+        "url": "https://job-boards.greenhouse.io/xendit/jobs/7846781003",
+        "tags": []
+      },
+      {
         "title": "Senior Implementations Manager",
         "url": "https://job-boards.greenhouse.io/xendit/jobs/7731774003",
         "tags": []
@@ -89,6 +94,11 @@
       {
         "title": "Solutions Engineer",
         "url": "https://job-boards.greenhouse.io/xendit/jobs/7719174003",
+        "tags": []
+      },
+      {
+        "title": "UX Designer - Developer Experience (DevEx)",
+        "url": "https://job-boards.greenhouse.io/xendit/jobs/7847359003",
         "tags": []
       }
     ],
@@ -139,7 +149,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-09T17:37:02.289Z",
+    "lastVerifiedAt": "2026-08-10T17:54:38.676Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -173,7 +183,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-09T17:37:17.173Z",
+    "lastVerifiedAt": "2026-08-10T17:54:53.387Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -207,7 +217,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-09T17:37:21.936Z",
+    "lastVerifiedAt": "2026-08-10T17:54:58.153Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -241,7 +251,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-09T17:37:27.715Z",
+    "lastVerifiedAt": "2026-08-10T17:55:04.262Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
