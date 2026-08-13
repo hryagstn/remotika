@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-08-12T17:59:53.431Z",
+    "lastVerifiedAt": "2026-08-13T18:00:20.804Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -149,7 +149,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-12T18:00:09.026Z",
+    "lastVerifiedAt": "2026-08-13T18:00:37.280Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -183,7 +183,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-12T18:00:24.046Z",
+    "lastVerifiedAt": "2026-08-13T18:00:54.481Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -217,7 +217,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-12T18:00:29.025Z",
+    "lastVerifiedAt": "2026-08-13T18:00:59.857Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -251,7 +251,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-12T18:00:34.983Z",
+    "lastVerifiedAt": "2026-08-13T18:01:06.954Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -454,8 +454,8 @@
     "remoteokSlug": "senior-software-qa-engineer-covergo-1136378",
     "industry": null,
     "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-08-12T18:16:00.616Z",
+    "label": "Confirmed",
+    "lastVerifiedAt": "2026-08-13T18:01:14.559Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -484,6 +484,42 @@
     "status": "watchlist",
     "source": "remoteok",
     "watchlistReason": "org-found-zero-match",
-    "website": "covergo.com"
+    "website": "covergo.com",
+    "verifiedAt": "2026-08-12T18:16:00.616Z"
+  },
+  {
+    "id": "co-126",
+    "name": "Adaptive Teams",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "customer-service-representative-adaptive-teams-1136566",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-08-13T18:17:54.183Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Customer Service Representative",
+        "url": "https://remoteOK.com/remote-jobs/remote-customer-service-representative-adaptive-teams-1136566",
+        "tags": [
+          "hr",
+          "sys admin",
+          "education",
+          "customer support",
+          "video",
+          "finance",
+          "legal",
+          "part time",
+          "non tech"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "adaptiveteams.com"
   }
 ]
