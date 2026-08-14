@@ -6,9 +6,9 @@
     "githubOrgUrl": "https://github.com/xendit",
     "remoteokSlug": "xendit",
     "industry": null,
-    "verifiedIndonesianCount": 5,
-    "label": "Established",
-    "lastVerifiedAt": "2026-08-13T18:00:20.804Z",
+    "verifiedIndonesianCount": 4,
+    "label": "Indonesia-Friendly",
+    "lastVerifiedAt": "2026-08-14T17:56:19.661Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -19,11 +19,6 @@
       {
         "title": "Data / ML Automation Intern",
         "url": "https://job-boards.greenhouse.io/xendit/jobs/7821208003",
-        "tags": []
-      },
-      {
-        "title": "Financial Operations - Cross-Border Ops Lead",
-        "url": "https://job-boards.greenhouse.io/xendit/jobs/7650615003",
         "tags": []
       },
       {
@@ -126,12 +121,6 @@
         "githubLogin": "mychaelgo",
         "githubProfileUrl": "https://github.com/mychaelgo",
         "locationRaw": "Indonesia"
-      },
-      {
-        "id": "m-ndyhrdy",
-        "githubLogin": "ndyhrdy",
-        "githubProfileUrl": "https://github.com/ndyhrdy",
-        "locationRaw": "Makassar, Indonesia"
       }
     ],
     "jobSources": {
@@ -149,7 +138,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-13T18:00:37.280Z",
+    "lastVerifiedAt": "2026-08-14T17:56:35.898Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -183,7 +172,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-13T18:00:54.481Z",
+    "lastVerifiedAt": "2026-08-14T17:56:51.580Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -217,7 +206,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-13T18:00:59.857Z",
+    "lastVerifiedAt": "2026-08-14T17:56:56.786Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -251,7 +240,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-13T18:01:06.954Z",
+    "lastVerifiedAt": "2026-08-14T17:57:03.588Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -277,21 +266,18 @@
     "hasActiveJobs": true,
     "activeJobs": [
       {
-        "title": "Senior React Full stack Developer",
-        "url": "https://remoteOK.com/remote-jobs/remote-senior-react-full-stack-developer-lemon-io-1136299",
+        "title": "Senior Data Engineer",
+        "url": "https://remoteOK.com/remote-jobs/remote-senior-data-engineer-lemon-io-1136594",
         "tags": [
           "dev",
           "engineer",
-          "senior",
           "full time",
+          "senior",
           "python",
+          "sql",
           "aws",
           "gcp",
-          "javascript",
-          "react",
-          "node",
-          "ruby",
-          "typescript"
+          "apache"
         ]
       },
       {
@@ -455,7 +441,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-13T18:01:14.559Z",
+    "lastVerifiedAt": "2026-08-14T17:57:10.808Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -521,5 +507,41 @@
     "source": "remoteok",
     "watchlistReason": "no-org-found",
     "website": "adaptiveteams.com"
+  },
+  {
+    "id": "co-127",
+    "name": "Resourceful Talent Group",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "product-manager-resourceful-talent-group-1136579",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-08-14T18:14:00.379Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Product Manager",
+        "url": "https://remoteOK.com/remote-jobs/remote-product-manager-resourceful-talent-group-1136579",
+        "tags": [
+          "product manager",
+          "exec",
+          "saas",
+          "technical",
+          "dev",
+          "finance",
+          "ops",
+          "engineer",
+          "full time",
+          "digital nomad"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "resourcefultalentgroup.com"
   }
 ]
