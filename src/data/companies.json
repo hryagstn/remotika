@@ -6,9 +6,9 @@
     "githubOrgUrl": "https://github.com/xendit",
     "remoteokSlug": "xendit",
     "industry": null,
-    "verifiedIndonesianCount": 4,
-    "label": "Indonesia-Friendly",
-    "lastVerifiedAt": "2026-08-16T17:24:20.766Z",
+    "verifiedIndonesianCount": 5,
+    "label": "Established",
+    "lastVerifiedAt": "2026-08-17T17:32:39.986Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -121,6 +121,12 @@
         "githubLogin": "mychaelgo",
         "githubProfileUrl": "https://github.com/mychaelgo",
         "locationRaw": "Indonesia"
+      },
+      {
+        "id": "m-ndyhrdy",
+        "githubLogin": "ndyhrdy",
+        "githubProfileUrl": "https://github.com/ndyhrdy",
+        "locationRaw": "Makassar, Indonesia"
       }
     ],
     "jobSources": {
@@ -138,7 +144,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-16T17:24:36.327Z",
+    "lastVerifiedAt": "2026-08-17T17:32:56.901Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -172,7 +178,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-16T17:24:51.814Z",
+    "lastVerifiedAt": "2026-08-17T17:33:21.715Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -206,7 +212,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-16T17:24:56.330Z",
+    "lastVerifiedAt": "2026-08-17T17:33:33.514Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -240,7 +246,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-16T17:25:02.195Z",
+    "lastVerifiedAt": "2026-08-17T17:33:46.597Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -375,47 +381,6 @@
     "source": "remoteok",
     "watchlistReason": "no-org-found",
     "website": "atompartners.com"
-  },
-  {
-    "id": "co-125",
-    "name": "CoverGo",
-    "githubOrg": "CoverGo",
-    "githubOrgUrl": "https://github.com/CoverGo",
-    "remoteokSlug": "senior-software-qa-engineer-covergo-1136378",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-16T17:25:08.212Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Senior Software QA Engineer",
-        "url": "https://remoteOK.com/remote-jobs/remote-senior-software-qa-engineer-covergo-1136378",
-        "tags": [
-          "dev",
-          "customer support",
-          "testing",
-          "quality assurance",
-          "video",
-          "finance",
-          "c",
-          "api",
-          "exec",
-          "content writing",
-          "senior",
-          "medical",
-          "engineer",
-          "digital nomad"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "org-found-zero-match",
-    "website": "covergo.com",
-    "verifiedAt": "2026-08-12T18:16:00.616Z"
   },
   {
     "id": "co-126",
