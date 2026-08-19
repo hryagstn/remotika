@@ -6,9 +6,9 @@
     "githubOrgUrl": "https://github.com/xendit",
     "remoteokSlug": "xendit",
     "industry": null,
-    "verifiedIndonesianCount": 5,
-    "label": "Established",
-    "lastVerifiedAt": "2026-08-18T17:32:34.580Z",
+    "verifiedIndonesianCount": 4,
+    "label": "Indonesia-Friendly",
+    "lastVerifiedAt": "2026-08-19T17:31:24.700Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -82,11 +82,6 @@
         "tags": []
       },
       {
-        "title": "Senior Total Rewards Manager",
-        "url": "https://job-boards.greenhouse.io/xendit/jobs/7788512003",
-        "tags": []
-      },
-      {
         "title": "Solutions Engineer",
         "url": "https://job-boards.greenhouse.io/xendit/jobs/7719174003",
         "tags": []
@@ -121,12 +116,6 @@
         "githubLogin": "mychaelgo",
         "githubProfileUrl": "https://github.com/mychaelgo",
         "locationRaw": "Indonesia"
-      },
-      {
-        "id": "m-ndyhrdy",
-        "githubLogin": "ndyhrdy",
-        "githubProfileUrl": "https://github.com/ndyhrdy",
-        "locationRaw": "Makassar, Indonesia"
       }
     ],
     "jobSources": {
@@ -144,7 +133,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-18T17:32:50.020Z",
+    "lastVerifiedAt": "2026-08-19T17:31:40.258Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -178,7 +167,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-18T17:33:05.057Z",
+    "lastVerifiedAt": "2026-08-19T17:31:56.172Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -212,7 +201,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-18T17:33:09.666Z",
+    "lastVerifiedAt": "2026-08-19T17:32:01.237Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -246,7 +235,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-18T17:33:15.514Z",
+    "lastVerifiedAt": "2026-08-19T17:32:07.068Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -343,41 +332,6 @@
     "source": "remoteok",
     "watchlistReason": "no-org-found",
     "website": "lemon.io"
-  },
-  {
-    "id": "co-126",
-    "name": "Adaptive Teams",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "customer-service-representative-adaptive-teams-1136566",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-08-13T18:17:54.183Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Customer Service Representative",
-        "url": "https://remoteOK.com/remote-jobs/remote-customer-service-representative-adaptive-teams-1136566",
-        "tags": [
-          "hr",
-          "sys admin",
-          "education",
-          "customer support",
-          "video",
-          "finance",
-          "legal",
-          "part time",
-          "non tech"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "adaptiveteams.com"
   },
   {
     "id": "co-127",
@@ -537,5 +491,45 @@
     "source": "remoteok",
     "watchlistReason": "org-found-zero-match",
     "website": "impact.com"
+  },
+  {
+    "id": "co-131",
+    "name": "Chaos",
+    "githubOrg": "chaos",
+    "githubOrgUrl": "https://github.com/chaos",
+    "remoteokSlug": "team-lead-education-chaos-1136949",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-08-19T17:47:15.128Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Team Lead Education",
+        "url": "https://remoteOK.com/remote-jobs/remote-team-lead-education-chaos-1136949",
+        "tags": [
+          "design",
+          "saas",
+          "vfx",
+          "customer support",
+          "dev",
+          "marketing",
+          "exec",
+          "education",
+          "content writing",
+          "senior",
+          "sales",
+          "golang",
+          "ecommerce",
+          "digital nomad"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "chaos.com"
   }
 ]
