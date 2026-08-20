@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 4,
     "label": "Indonesia-Friendly",
-    "lastVerifiedAt": "2026-08-19T17:31:24.700Z",
+    "lastVerifiedAt": "2026-08-20T17:36:00.025Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -133,7 +133,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-19T17:31:40.258Z",
+    "lastVerifiedAt": "2026-08-20T17:36:16.634Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -167,7 +167,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-19T17:31:56.172Z",
+    "lastVerifiedAt": "2026-08-20T17:36:33.097Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -201,7 +201,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-19T17:32:01.237Z",
+    "lastVerifiedAt": "2026-08-20T17:36:38.843Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -235,7 +235,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-19T17:32:07.068Z",
+    "lastVerifiedAt": "2026-08-20T17:36:45.791Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -332,42 +332,6 @@
     "source": "remoteok",
     "watchlistReason": "no-org-found",
     "website": "lemon.io"
-  },
-  {
-    "id": "co-127",
-    "name": "Resourceful Talent Group",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "product-manager-resourceful-talent-group-1136579",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-08-14T18:14:00.379Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Product Manager",
-        "url": "https://remoteOK.com/remote-jobs/remote-product-manager-resourceful-talent-group-1136579",
-        "tags": [
-          "product manager",
-          "exec",
-          "saas",
-          "technical",
-          "dev",
-          "finance",
-          "ops",
-          "engineer",
-          "full time",
-          "digital nomad"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "resourcefultalentgroup.com"
   },
   {
     "id": "co-128",
