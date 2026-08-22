@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 4,
     "label": "Indonesia-Friendly",
-    "lastVerifiedAt": "2026-08-21T17:34:49.055Z",
+    "lastVerifiedAt": "2026-08-22T17:26:35.864Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -133,7 +133,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-21T17:35:05.390Z",
+    "lastVerifiedAt": "2026-08-22T17:26:52.299Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -167,7 +167,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-21T17:35:21.363Z",
+    "lastVerifiedAt": "2026-08-22T17:27:07.999Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -201,7 +201,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-21T17:35:26.825Z",
+    "lastVerifiedAt": "2026-08-22T17:27:13.552Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -235,7 +235,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-21T17:35:33.213Z",
+    "lastVerifiedAt": "2026-08-22T17:27:19.833Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -370,46 +370,6 @@
     "source": "remoteok",
     "watchlistReason": "no-org-found",
     "website": "lemon.io"
-  },
-  {
-    "id": "co-128",
-    "name": "MultiplyMii",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "brand-protection-marketplace-compliance-analyst-multiplymii-1136687",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-08-15T17:40:53.810Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Brand Protection & Marketplace Compliance Analyst",
-        "url": "https://remoteOK.com/remote-jobs/remote-brand-protection-marketplace-compliance-analyst-multiplymii-1136687",
-        "tags": [
-          "analyst",
-          "amazon",
-          "salesforce",
-          "technical",
-          "recruiter",
-          "customer support",
-          "marketing",
-          "speech",
-          "exec",
-          "content writing",
-          "excel",
-          "sales",
-          "ecommerce",
-          "full time"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "multiplymii.com"
   },
   {
     "id": "co-129",
