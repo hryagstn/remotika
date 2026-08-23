@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 4,
     "label": "Indonesia-Friendly",
-    "lastVerifiedAt": "2026-08-22T17:26:35.864Z",
+    "lastVerifiedAt": "2026-08-23T17:25:33.781Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -133,7 +133,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-22T17:26:52.299Z",
+    "lastVerifiedAt": "2026-08-23T17:25:49.931Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -167,7 +167,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-22T17:27:07.999Z",
+    "lastVerifiedAt": "2026-08-23T17:26:05.382Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -201,7 +201,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-22T17:27:13.552Z",
+    "lastVerifiedAt": "2026-08-23T17:26:10.821Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -235,7 +235,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-22T17:27:19.833Z",
+    "lastVerifiedAt": "2026-08-23T17:26:17.175Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -493,5 +493,86 @@
     "source": "remoteok",
     "watchlistReason": "org-found-zero-match",
     "website": "chaos.com"
+  },
+  {
+    "id": "co-132",
+    "name": "Orca Bio",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "senior-specialist-global-qms-orca-bio-1137072",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-08-23T17:42:19.359Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Senior Specialist Global QMS",
+        "url": "https://remoteOK.com/remote-jobs/remote-senior-specialist-global-qms-orca-bio-1137072",
+        "tags": [
+          "hr",
+          "sys admin",
+          "customer support",
+          "marketing",
+          "education",
+          "exec",
+          "senior",
+          "medical",
+          "engineer",
+          "recruiter",
+          "full time"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "orcabio.com"
+  },
+  {
+    "id": "co-133",
+    "name": "Kruger NearShore LLC - Rekluti",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "desarrollador-full-stack-kruger-nearshore-llc-rekluti-1137062",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-08-23T17:42:20.566Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "DESARROLLADOR FULL STACK",
+        "url": "https://remoteOK.com/remote-jobs/remote-desarrollador-full-stack-kruger-nearshore-llc-rekluti-1137062",
+        "tags": [
+          "full stack",
+          "front end",
+          "python",
+          "dev",
+          "testing",
+          "web dev",
+          "quality assurance",
+          "devops",
+          "c",
+          "cloud",
+          "nosql",
+          "git",
+          "flutter",
+          "angular",
+          "mobile",
+          "golang",
+          "backend",
+          "digital nomad"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "krugernearshorellcrekluti.com"
   }
 ]
