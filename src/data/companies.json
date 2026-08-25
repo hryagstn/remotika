@@ -6,9 +6,9 @@
     "githubOrgUrl": "https://github.com/xendit",
     "remoteokSlug": "xendit",
     "industry": null,
-    "verifiedIndonesianCount": 4,
-    "label": "Indonesia-Friendly",
-    "lastVerifiedAt": "2026-08-24T17:36:03.013Z",
+    "verifiedIndonesianCount": 5,
+    "label": "Established",
+    "lastVerifiedAt": "2026-08-25T17:36:36.867Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -116,6 +116,12 @@
         "githubLogin": "mychaelgo",
         "githubProfileUrl": "https://github.com/mychaelgo",
         "locationRaw": "Indonesia"
+      },
+      {
+        "id": "m-ndyhrdy",
+        "githubLogin": "ndyhrdy",
+        "githubProfileUrl": "https://github.com/ndyhrdy",
+        "locationRaw": "Makassar, Indonesia"
       }
     ],
     "jobSources": {
@@ -133,7 +139,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-24T17:36:18.382Z",
+    "lastVerifiedAt": "2026-08-25T17:36:53.062Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -167,7 +173,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-24T17:36:33.637Z",
+    "lastVerifiedAt": "2026-08-25T17:37:08.233Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -201,7 +207,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-24T17:36:38.649Z",
+    "lastVerifiedAt": "2026-08-25T17:37:13.660Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -235,7 +241,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-24T17:36:44.846Z",
+    "lastVerifiedAt": "2026-08-25T17:37:20.322Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -370,89 +376,6 @@
     "source": "remoteok",
     "watchlistReason": "no-org-found",
     "website": "lemon.io"
-  },
-  {
-    "id": "co-129",
-    "name": "Vomela",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "principal-data-engineer-vomela-1136860",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-08-18T17:47:38.341Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Principal Data Engineer",
-        "url": "https://remoteOK.com/remote-jobs/remote-principal-data-engineer-vomela-1136860",
-        "tags": [
-          "design",
-          "sys admin",
-          "education",
-          "technical",
-          "dev",
-          "speech",
-          "devops",
-          "cloud",
-          "git",
-          "microsoft",
-          "exec",
-          "senior",
-          "ops",
-          "stats",
-          "sales",
-          "medical",
-          "engineer",
-          "apache",
-          "digital nomad"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "vomela.com"
-  },
-  {
-    "id": "co-130",
-    "name": "Aftershoot",
-    "githubOrg": "Aftershoot",
-    "githubOrgUrl": "https://github.com/Aftershoot",
-    "remoteokSlug": "influencer-marketing-lead-aftershoot-1136843",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-08-18T17:47:39.584Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Influencer Marketing Lead",
-        "url": "https://remoteOK.com/remote-jobs/remote-influencer-marketing-lead-aftershoot-1136843",
-        "tags": [
-          "design",
-          "saas",
-          "game dev",
-          "dev",
-          "testing",
-          "marketing",
-          "video",
-          "finance",
-          "exec",
-          "content writing",
-          "golang",
-          "digital nomad"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "org-found-zero-match",
-    "website": "impact.com"
   },
   {
     "id": "co-131",
