@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-08-25T17:36:36.867Z",
+    "lastVerifiedAt": "2026-08-26T19:09:10.065Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -139,7 +139,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-25T17:36:53.062Z",
+    "lastVerifiedAt": "2026-08-26T19:09:25.369Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -173,7 +173,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-25T17:37:08.233Z",
+    "lastVerifiedAt": "2026-08-26T19:09:40.447Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -207,7 +207,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-25T17:37:13.660Z",
+    "lastVerifiedAt": "2026-08-26T19:09:45.547Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -241,7 +241,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-25T17:37:20.322Z",
+    "lastVerifiedAt": "2026-08-26T19:09:51.542Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -497,5 +497,36 @@
     "source": "remoteok",
     "watchlistReason": "no-org-found",
     "website": "krugernearshorellcrekluti.com"
+  },
+  {
+    "id": "co-134",
+    "name": "Salesforge",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "senior-backend-engineer-build-ai-agents-salesforge-1137114",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-08-26T19:24:36.313Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Senior Backend Engineer Build AI Agents",
+        "url": "https://remoteOK.com/remote-jobs/remote-senior-backend-engineer-build-ai-agents-salesforge-1137114",
+        "tags": [
+          "golang",
+          "senior",
+          "sales",
+          "engineer",
+          "backend"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "salesforge.com"
   }
 ]
