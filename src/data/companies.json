@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-08-28T01:24:18.576Z",
+    "lastVerifiedAt": "2026-08-29T00:55:23.485Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -139,7 +139,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-28T01:24:34.376Z",
+    "lastVerifiedAt": "2026-08-29T00:55:39.609Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -173,7 +173,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-28T01:24:49.577Z",
+    "lastVerifiedAt": "2026-08-29T00:55:56.267Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -207,7 +207,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-28T01:24:54.306Z",
+    "lastVerifiedAt": "2026-08-29T00:56:01.925Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -241,7 +241,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-28T01:25:00.214Z",
+    "lastVerifiedAt": "2026-08-29T00:56:09.710Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -556,8 +556,8 @@
     "remoteokSlug": "oracle-fusion-cloud-lead-logistics-supply-chain-management-tessera-labs-1137155",
     "industry": null,
     "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-08-28T01:39:58.190Z",
+    "label": "Confirmed",
+    "lastVerifiedAt": "2026-08-29T00:56:12.630Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -585,7 +585,8 @@
     "status": "watchlist",
     "source": "remoteok",
     "watchlistReason": "org-found-zero-match",
-    "website": "tesseralabs.com"
+    "website": "tesseralabs.com",
+    "verifiedAt": "2026-08-28T01:39:58.190Z"
   },
   {
     "id": "co-136",
@@ -632,5 +633,69 @@
     "source": "remoteok",
     "watchlistReason": "org-found-zero-match",
     "website": "ixdf.org"
+  },
+  {
+    "id": "co-137",
+    "name": "VirtuHire",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "programmatic-campaign-operations-specialist-trader-virtuhire-1137169",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-08-29T01:14:56.909Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Programmatic Campaign Operations Specialist Trader",
+        "url": "https://remoteOK.com/remote-jobs/remote-programmatic-campaign-operations-specialist-trader-virtuhire-1137169",
+        "tags": [
+          "amazon",
+          "technical",
+          "customer support",
+          "quality assurance",
+          "video",
+          "exec",
+          "senior",
+          "ops",
+          "excel",
+          "full time"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "virtuhire.com"
+  },
+  {
+    "id": "co-138",
+    "name": "The AI Whistleblower Initiative",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "principal-engineer-the-ai-whistleblower-initiative-1137162",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-08-29T01:14:58.039Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Principal Engineer",
+        "url": "https://remoteOK.com/remote-jobs/remote-principal-engineer-the-ai-whistleblower-initiative-1137162",
+        "tags": [
+          "golang",
+          "engineer"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "theaiwhistleblowerinitiative.com"
   }
 ]
