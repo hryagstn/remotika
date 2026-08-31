@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-08-30T19:42:22.909Z",
+    "lastVerifiedAt": "2026-08-31T21:51:07.633Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -139,7 +139,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-30T19:42:38.307Z",
+    "lastVerifiedAt": "2026-08-31T21:51:23.214Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -173,7 +173,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-30T19:42:53.189Z",
+    "lastVerifiedAt": "2026-08-31T21:51:39.562Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -207,7 +207,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-30T19:42:58.190Z",
+    "lastVerifiedAt": "2026-08-31T21:51:44.690Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -241,7 +241,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-30T19:43:04.082Z",
+    "lastVerifiedAt": "2026-08-31T21:51:50.937Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -559,7 +559,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-30T19:43:06.630Z",
+    "lastVerifiedAt": "2026-08-31T21:51:53.674Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -699,5 +699,34 @@
     "source": "remoteok",
     "watchlistReason": "no-org-found",
     "website": "theaiwhistleblowerinitiative.com"
+  },
+  {
+    "id": "co-139",
+    "name": "Benzinga",
+    "githubOrg": "Benzinga",
+    "githubOrgUrl": "https://github.com/Benzinga",
+    "remoteokSlug": "ai-engineer-data-apis-benzinga-1137224",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-08-31T22:07:51.825Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "AI Engineer Data APIs",
+        "url": "https://remoteOK.com/remote-jobs/remote-ai-engineer-data-apis-benzinga-1137224",
+        "tags": [
+          "golang",
+          "video",
+          "engineer"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "benzinga.com"
   }
 ]
