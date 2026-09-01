@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-08-31T21:51:07.633Z",
+    "lastVerifiedAt": "2026-09-01T03:45:38.701Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -139,7 +139,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-31T21:51:23.214Z",
+    "lastVerifiedAt": "2026-09-01T03:45:54.109Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -173,7 +173,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-31T21:51:39.562Z",
+    "lastVerifiedAt": "2026-09-01T03:46:09.443Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -207,7 +207,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-31T21:51:44.690Z",
+    "lastVerifiedAt": "2026-09-01T03:46:14.144Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -241,7 +241,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-31T21:51:50.937Z",
+    "lastVerifiedAt": "2026-09-01T03:46:19.705Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -559,7 +559,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-08-31T21:51:53.674Z",
+    "lastVerifiedAt": "2026-09-01T03:46:22.191Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -708,8 +708,8 @@
     "remoteokSlug": "ai-engineer-data-apis-benzinga-1137224",
     "industry": null,
     "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-08-31T22:07:51.825Z",
+    "label": "Confirmed",
+    "lastVerifiedAt": "2026-09-01T03:46:28.365Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -727,6 +727,7 @@
     "status": "watchlist",
     "source": "remoteok",
     "watchlistReason": "org-found-zero-match",
-    "website": "benzinga.com"
+    "website": "benzinga.com",
+    "verifiedAt": "2026-08-31T22:07:51.825Z"
   }
 ]
