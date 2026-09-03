@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-09-02T19:40:18.595Z",
+    "lastVerifiedAt": "2026-09-03T19:42:03.279Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -62,7 +62,7 @@
         "tags": []
       },
       {
-        "title": "Senior Design System and Product Designer | Operational Journey",
+        "title": "Senior Design System and Product Designer - Operational Journey",
         "url": "https://job-boards.greenhouse.io/xendit/jobs/7846781003",
         "tags": []
       },
@@ -139,7 +139,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-02T19:40:34.728Z",
+    "lastVerifiedAt": "2026-09-03T19:42:19.323Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -173,7 +173,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-02T19:40:50.989Z",
+    "lastVerifiedAt": "2026-09-03T19:42:34.849Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -207,7 +207,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-02T19:40:56.182Z",
+    "lastVerifiedAt": "2026-09-03T19:42:39.814Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -241,7 +241,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-02T19:41:02.269Z",
+    "lastVerifiedAt": "2026-09-03T19:42:46.042Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -447,7 +447,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-02T19:41:05.001Z",
+    "lastVerifiedAt": "2026-09-03T19:42:48.592Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -597,7 +597,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-02T19:41:11.602Z",
+    "lastVerifiedAt": "2026-09-03T19:42:55.136Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -617,5 +617,98 @@
     "watchlistReason": "org-found-zero-match",
     "website": "benzinga.com",
     "verifiedAt": "2026-08-31T22:07:51.825Z"
+  },
+  {
+    "id": "co-140",
+    "name": "Astrek Careers",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "data-entry-clerk-astrek-careers-1137286",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-09-03T19:58:01.848Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Data Entry Clerk",
+        "url": "https://remoteOK.com/remote-jobs/remote-data-entry-clerk-astrek-careers-1137286",
+        "tags": [
+          "non tech",
+          "data entry",
+          "admin",
+          "ops"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "astrekcareers.com"
+  },
+  {
+    "id": "co-141",
+    "name": "Emplyfy",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "service-sales-executive-emplyfy-1137280",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-09-03T19:58:02.983Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Service Sales Executive",
+        "url": "https://remoteOK.com/remote-jobs/remote-service-sales-executive-emplyfy-1137280",
+        "tags": [
+          "customer support",
+          "microsoft",
+          "excel",
+          "sales",
+          "exec"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "emplyfy.com"
+  },
+  {
+    "id": "co-142",
+    "name": "OrderYOYO",
+    "githubOrg": "OrderYOYO",
+    "githubOrgUrl": "https://github.com/OrderYOYO",
+    "remoteokSlug": "regional-sales-manager-orderyoyo-1137279",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-09-03T19:58:04.778Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Regional Sales Manager",
+        "url": "https://remoteOK.com/remote-jobs/remote-regional-sales-manager-orderyoyo-1137279",
+        "tags": [
+          "exec",
+          "customer support",
+          "marketing",
+          "scheme",
+          "mobile",
+          "sales"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "orderyoyo.com"
   }
 ]
