@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-09-03T19:42:03.279Z",
+    "lastVerifiedAt": "2026-09-04T19:22:19.510Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -44,6 +44,11 @@
       {
         "title": "IT GRC Analyst",
         "url": "https://job-boards.greenhouse.io/xendit/jobs/7731687003",
+        "tags": []
+      },
+      {
+        "title": "Market Expansion Lead - Financial Partnerships",
+        "url": "https://job-boards.greenhouse.io/xendit/jobs/7984045003",
         "tags": []
       },
       {
@@ -139,7 +144,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-03T19:42:19.323Z",
+    "lastVerifiedAt": "2026-09-04T19:22:35.386Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -173,7 +178,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-03T19:42:34.849Z",
+    "lastVerifiedAt": "2026-09-04T19:22:51.006Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -207,7 +212,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-03T19:42:39.814Z",
+    "lastVerifiedAt": "2026-09-04T19:22:57.343Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -241,7 +246,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-03T19:42:46.042Z",
+    "lastVerifiedAt": "2026-09-04T19:23:03.487Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -439,92 +444,6 @@
     "website": "lemon.io"
   },
   {
-    "id": "co-135",
-    "name": "Tessera Labs",
-    "githubOrg": "tessera-labs",
-    "githubOrgUrl": "https://github.com/tessera-labs",
-    "remoteokSlug": "oracle-fusion-cloud-lead-logistics-supply-chain-management-tessera-labs-1137155",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-03T19:42:48.592Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Oracle Fusion Cloud Lead — Logistics & Supply Chain Management",
-        "url": "https://remoteOK.com/remote-jobs/remote-oracle-fusion-cloud-lead-logistics-supply-chain-management-tessera-labs-1137155",
-        "tags": [
-          "design",
-          "sys admin",
-          "consulting",
-          "testing",
-          "exec",
-          "cloud",
-          "senior",
-          "ops",
-          "engineer",
-          "ecommerce",
-          "shopify",
-          "full time",
-          "digital nomad"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "org-found-zero-match",
-    "website": "tesseralabs.com",
-    "verifiedAt": "2026-08-28T01:39:58.190Z"
-  },
-  {
-    "id": "co-136",
-    "name": "Interaction Design Foundation",
-    "githubOrg": "Interaction-Design-Foundation",
-    "githubOrgUrl": "https://github.com/Interaction-Design-Foundation",
-    "remoteokSlug": "course-director-ux-ui-and-ai-interaction-design-foundation-1137139",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-08-28T01:39:59.527Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Course Director UX UI and AI",
-        "url": "https://remoteOK.com/remote-jobs/remote-course-director-ux-ui-and-ai-interaction-design-foundation-1137139",
-        "tags": [
-          "education",
-          "design",
-          "content writing"
-        ]
-      },
-      {
-        "title": "Education Designer UX UI and AI",
-        "url": "https://remoteOK.com/remote-jobs/remote-education-designer-ux-ui-and-ai-interaction-design-foundation-1137138",
-        "tags": [
-          "design",
-          "content writing",
-          "education"
-        ]
-      },
-      {
-        "title": "Course Writer and Editor UX UI and AI",
-        "url": "https://remoteOK.com/remote-jobs/remote-course-writer-and-editor-ux-ui-and-ai-interaction-design-foundation-1137136",
-        "tags": [
-          "design",
-          "content writing"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "org-found-zero-match",
-    "website": "ixdf.org"
-  },
-  {
     "id": "co-137",
     "name": "VirtuHire",
     "githubOrg": "",
@@ -597,7 +516,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-03T19:42:55.136Z",
+    "lastVerifiedAt": "2026-09-04T19:23:13.154Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -687,8 +606,8 @@
     "remoteokSlug": "regional-sales-manager-orderyoyo-1137279",
     "industry": null,
     "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-09-03T19:58:04.778Z",
+    "label": "Confirmed",
+    "lastVerifiedAt": "2026-09-04T19:23:14.927Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -709,6 +628,69 @@
     "status": "watchlist",
     "source": "remoteok",
     "watchlistReason": "org-found-zero-match",
-    "website": "orderyoyo.com"
+    "website": "orderyoyo.com",
+    "verifiedAt": "2026-09-03T19:58:04.778Z"
+  },
+  {
+    "id": "co-143",
+    "name": "Warehance",
+    "githubOrg": "warehance",
+    "githubOrgUrl": "https://github.com/warehance",
+    "remoteokSlug": "customer-support-success-specialist-warehance-1137302",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-09-04T19:38:54.942Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Customer Support & Success Specialist",
+        "url": "https://remoteOK.com/remote-jobs/remote-customer-support-success-specialist-warehance-1137302",
+        "tags": [
+          "customer support"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "warehance.com"
+  },
+  {
+    "id": "co-144",
+    "name": "SunnyData",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "qa-engineer-sunnydata-1137300",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-09-04T19:38:56.105Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "QA Engineer",
+        "url": "https://remoteOK.com/remote-jobs/remote-qa-engineer-sunnydata-1137300",
+        "tags": [
+          "technical",
+          "dev",
+          "testing",
+          "marketing",
+          "quality assurance",
+          "education",
+          "cloud",
+          "engineer",
+          "digital nomad"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "sunnydata.com"
   }
 ]
