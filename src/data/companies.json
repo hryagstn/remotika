@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-09-04T19:22:19.510Z",
+    "lastVerifiedAt": "2026-09-05T18:56:50.924Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -144,7 +144,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-04T19:22:35.386Z",
+    "lastVerifiedAt": "2026-09-05T18:57:05.910Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -178,7 +178,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-04T19:22:51.006Z",
+    "lastVerifiedAt": "2026-09-05T18:57:20.535Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -212,7 +212,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-04T19:22:57.343Z",
+    "lastVerifiedAt": "2026-09-05T18:57:25.306Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -246,7 +246,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-04T19:23:03.487Z",
+    "lastVerifiedAt": "2026-09-05T18:57:30.562Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -516,7 +516,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-04T19:23:13.154Z",
+    "lastVerifiedAt": "2026-09-05T18:57:35.443Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -607,7 +607,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-04T19:23:14.927Z",
+    "lastVerifiedAt": "2026-09-05T18:57:36.882Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -639,8 +639,8 @@
     "remoteokSlug": "customer-support-success-specialist-warehance-1137302",
     "industry": null,
     "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-09-04T19:38:54.942Z",
+    "label": "Confirmed",
+    "lastVerifiedAt": "2026-09-05T18:57:38.476Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -656,7 +656,8 @@
     "status": "watchlist",
     "source": "remoteok",
     "watchlistReason": "org-found-zero-match",
-    "website": "warehance.com"
+    "website": "warehance.com",
+    "verifiedAt": "2026-09-04T19:38:54.942Z"
   },
   {
     "id": "co-144",
@@ -692,5 +693,44 @@
     "source": "remoteok",
     "watchlistReason": "no-org-found",
     "website": "sunnydata.com"
+  },
+  {
+    "id": "co-145",
+    "name": "Empire Assets",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "junior-crypto-analyst-trader-empire-assets-1137307",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-09-05T19:11:36.431Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Junior Crypto Analyst & Trader",
+        "url": "https://remoteOK.com/remote-jobs/remote-junior-crypto-analyst-trader-empire-assets-1137307",
+        "tags": [
+          "other",
+          "crypto",
+          "remote",
+          "trader",
+          "analyst",
+          "Binance",
+          "web3",
+          "bitcoin",
+          "ethereum",
+          "blockchain",
+          "defi",
+          "part time",
+          "junior"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "empireassets.com"
   }
 ]
