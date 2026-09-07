@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-09-06T18:59:11.630Z",
+    "lastVerifiedAt": "2026-09-07T20:25:17.590Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -144,7 +144,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-06T18:59:28.127Z",
+    "lastVerifiedAt": "2026-09-07T20:25:33.515Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -178,7 +178,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-06T18:59:44.738Z",
+    "lastVerifiedAt": "2026-09-07T20:25:49.098Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -212,7 +212,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-06T18:59:50.210Z",
+    "lastVerifiedAt": "2026-09-07T20:25:54.016Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -246,7 +246,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-06T18:59:56.372Z",
+    "lastVerifiedAt": "2026-09-07T20:25:59.759Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -516,7 +516,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-06T19:00:02.782Z",
+    "lastVerifiedAt": "2026-09-07T20:26:04.845Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -568,37 +568,6 @@
     "website": "astrekcareers.com"
   },
   {
-    "id": "co-141",
-    "name": "Emplyfy",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "service-sales-executive-emplyfy-1137280",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-09-03T19:58:02.983Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Service Sales Executive",
-        "url": "https://remoteOK.com/remote-jobs/remote-service-sales-executive-emplyfy-1137280",
-        "tags": [
-          "customer support",
-          "microsoft",
-          "excel",
-          "sales",
-          "exec"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "emplyfy.com"
-  },
-  {
     "id": "co-142",
     "name": "OrderYOYO",
     "githubOrg": "OrderYOYO",
@@ -607,7 +576,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-06T19:00:04.486Z",
+    "lastVerifiedAt": "2026-09-07T20:26:06.392Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -640,7 +609,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-06T19:00:06.415Z",
+    "lastVerifiedAt": "2026-09-07T20:26:08.081Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -732,5 +701,73 @@
     "source": "remoteok",
     "watchlistReason": "no-org-found",
     "website": "empireassets.com"
+  },
+  {
+    "id": "co-146",
+    "name": "iMerit Technology",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "ai-response-analyst-imerit-technology-1137309",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-09-07T20:40:51.584Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "AI Response Analyst",
+        "url": "https://remoteOK.com/remote-jobs/remote-ai-response-analyst-imerit-technology-1137309",
+        "tags": [
+          "content writing",
+          "quality assurance",
+          "ai"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "imerittechnology.com"
+  },
+  {
+    "id": "co-147",
+    "name": "Tessera Labs",
+    "githubOrg": "tessera-labs",
+    "githubOrgUrl": "https://github.com/tessera-labs",
+    "remoteokSlug": "oracle-fusion-cloud-lead-logistics-supply-chain-management-tessera-labs-1137155",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-09-07T20:40:54.129Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Oracle Fusion Cloud Lead — Logistics & Supply Chain Management",
+        "url": "https://remoteOK.com/remote-jobs/remote-oracle-fusion-cloud-lead-logistics-supply-chain-management-tessera-labs-1137155",
+        "tags": [
+          "design",
+          "sys admin",
+          "consulting",
+          "testing",
+          "exec",
+          "cloud",
+          "senior",
+          "ops",
+          "engineer",
+          "ecommerce",
+          "shopify",
+          "full time",
+          "digital nomad"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "tesseralabs.com"
   }
 ]
