@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-09-08T19:48:11.227Z",
+    "lastVerifiedAt": "2026-09-09T19:39:15.243Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -54,11 +54,6 @@
       {
         "title": "Merchant Technical Support  - Jr Manager",
         "url": "https://job-boards.greenhouse.io/xendit/jobs/7983136003",
-        "tags": []
-      },
-      {
-        "title": "People Operations Analyst for Customer Experience (CX)",
-        "url": "https://job-boards.greenhouse.io/xendit/jobs/7690481003",
         "tags": []
       },
       {
@@ -144,7 +139,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-08T19:48:27.057Z",
+    "lastVerifiedAt": "2026-09-09T19:39:31.467Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -178,7 +173,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-08T19:48:41.628Z",
+    "lastVerifiedAt": "2026-09-09T19:39:46.577Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -212,7 +207,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-08T19:48:46.600Z",
+    "lastVerifiedAt": "2026-09-09T19:39:51.407Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -246,7 +241,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-08T19:48:52.419Z",
+    "lastVerifiedAt": "2026-09-09T19:39:57.396Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -444,70 +439,6 @@
     "website": "lemon.io"
   },
   {
-    "id": "co-137",
-    "name": "VirtuHire",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "programmatic-campaign-operations-specialist-trader-virtuhire-1137169",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-08-29T01:14:56.909Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Programmatic Campaign Operations Specialist Trader",
-        "url": "https://remoteOK.com/remote-jobs/remote-programmatic-campaign-operations-specialist-trader-virtuhire-1137169",
-        "tags": [
-          "amazon",
-          "technical",
-          "customer support",
-          "quality assurance",
-          "video",
-          "exec",
-          "senior",
-          "ops",
-          "excel",
-          "full time"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "virtuhire.com"
-  },
-  {
-    "id": "co-138",
-    "name": "The AI Whistleblower Initiative",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "principal-engineer-the-ai-whistleblower-initiative-1137162",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-08-29T01:14:58.039Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Principal Engineer",
-        "url": "https://remoteOK.com/remote-jobs/remote-principal-engineer-the-ai-whistleblower-initiative-1137162",
-        "tags": [
-          "golang",
-          "engineer"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "theaiwhistleblowerinitiative.com"
-  },
-  {
     "id": "co-139",
     "name": "Benzinga",
     "githubOrg": "Benzinga",
@@ -516,7 +447,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-08T19:48:57.845Z",
+    "lastVerifiedAt": "2026-09-09T19:40:02.754Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -546,7 +477,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-08T19:48:59.301Z",
+    "lastVerifiedAt": "2026-09-09T19:40:04.387Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -579,7 +510,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-08T19:49:00.995Z",
+    "lastVerifiedAt": "2026-09-09T19:40:06.176Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -634,7 +565,7 @@
     "website": "sunnydata.com"
   },
   {
-    "id": "co-145",
+    "id": "co-149",
     "name": "Empire Assets",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -642,26 +573,26 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-09-05T19:11:36.431Z",
+    "lastVerifiedAt": "2026-09-09T19:55:25.651Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
         "title": "Junior Crypto Analyst & Trader",
         "url": "https://remoteOK.com/remote-jobs/remote-junior-crypto-analyst-trader-empire-assets-1137307",
         "tags": [
-          "other",
-          "crypto",
-          "remote",
-          "trader",
+          "part time",
+          "junior",
           "analyst",
-          "Binance",
+          "crypto",
+          "other",
           "web3",
-          "bitcoin",
-          "ethereum",
           "blockchain",
           "defi",
-          "part time",
-          "junior"
+          "bitcoin",
+          "ethereum",
+          "remote",
+          "trader",
+          "Binance"
         ]
       }
     ],
@@ -670,7 +601,7 @@
     "status": "watchlist",
     "source": "remoteok",
     "watchlistReason": "no-org-found",
-    "website": "empireassets.com"
+    "website": "empireground.com"
   },
   {
     "id": "co-146",
@@ -702,34 +633,28 @@
     "website": "imerittechnology.com"
   },
   {
-    "id": "co-147",
-    "name": "Tessera Labs",
-    "githubOrg": "tessera-labs",
-    "githubOrgUrl": "https://github.com/tessera-labs",
-    "remoteokSlug": "oracle-fusion-cloud-lead-logistics-supply-chain-management-tessera-labs-1137155",
+    "id": "co-148",
+    "name": "NOPE",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "social-comms-nope-1137314",
     "industry": null,
     "verifiedIndonesianCount": 0,
-    "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-08T19:49:03.509Z",
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-09-09T19:55:24.542Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
-        "title": "Oracle Fusion Cloud Lead — Logistics & Supply Chain Management",
-        "url": "https://remoteOK.com/remote-jobs/remote-oracle-fusion-cloud-lead-logistics-supply-chain-management-tessera-labs-1137155",
+        "title": "Social Comms",
+        "url": "https://remoteOK.com/remote-jobs/remote-social-comms-nope-1137314",
         "tags": [
-          "design",
-          "sys admin",
-          "consulting",
-          "testing",
-          "exec",
-          "cloud",
-          "senior",
-          "ops",
-          "engineer",
-          "ecommerce",
-          "shopify",
-          "full time",
-          "digital nomad"
+          "marketing",
+          "education",
+          "technical",
+          "content writing",
+          "social media",
+          "ai",
+          "social"
         ]
       }
     ],
@@ -737,8 +662,7 @@
     "headquarters": "Global Remote",
     "status": "watchlist",
     "source": "remoteok",
-    "watchlistReason": "org-found-zero-match",
-    "website": "tesseralabs.com",
-    "verifiedAt": "2026-09-07T20:40:54.129Z"
+    "watchlistReason": "no-org-found",
+    "website": "nope.com"
   }
 ]
