@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-09-11T19:30:27.642Z",
+    "lastVerifiedAt": "2026-09-12T19:06:27.299Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -149,7 +149,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-11T19:30:51.444Z",
+    "lastVerifiedAt": "2026-09-12T19:06:43.701Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -183,7 +183,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-11T19:31:07.340Z",
+    "lastVerifiedAt": "2026-09-12T19:06:59.768Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -217,7 +217,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-11T19:31:12.233Z",
+    "lastVerifiedAt": "2026-09-12T19:07:04.752Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -251,7 +251,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-11T19:31:18.451Z",
+    "lastVerifiedAt": "2026-09-12T19:07:10.949Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -419,7 +419,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-11T19:31:23.777Z",
+    "lastVerifiedAt": "2026-09-12T19:07:16.413Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -449,7 +449,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-11T19:31:25.381Z",
+    "lastVerifiedAt": "2026-09-12T19:07:18.115Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -482,7 +482,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-11T19:31:27.132Z",
+    "lastVerifiedAt": "2026-09-12T19:07:19.955Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -675,7 +675,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-11T19:31:29.668Z",
+    "lastVerifiedAt": "2026-09-12T19:07:22.516Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1245,5 +1245,41 @@
     "source": "remoteok",
     "watchlistReason": "no-org-found",
     "website": "wakacjepl.com"
+  },
+  {
+    "id": "co-168",
+    "name": "Copenhagen Optimization",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "marketing-student-assistant-copenhagen-optimization-1137381",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-09-12T19:23:00.115Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Marketing Student Assistant",
+        "url": "https://remoteOK.com/remote-jobs/remote-marketing-student-assistant-copenhagen-optimization-1137381",
+        "tags": [
+          "virtual assistant",
+          "strategy",
+          "customer support",
+          "dev",
+          "marketing",
+          "exec",
+          "content writing",
+          "ops",
+          "golang",
+          "digital nomad"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "copenhagenoptimization.com"
   }
 ]
