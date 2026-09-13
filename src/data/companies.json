@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-09-12T19:06:27.299Z",
+    "lastVerifiedAt": "2026-09-13T19:15:51.875Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -149,7 +149,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-12T19:06:43.701Z",
+    "lastVerifiedAt": "2026-09-13T19:16:07.520Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -183,7 +183,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-12T19:06:59.768Z",
+    "lastVerifiedAt": "2026-09-13T19:16:22.636Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -217,7 +217,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-12T19:07:04.752Z",
+    "lastVerifiedAt": "2026-09-13T19:16:27.132Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -251,7 +251,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-12T19:07:10.949Z",
+    "lastVerifiedAt": "2026-09-13T19:16:32.793Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -276,21 +276,6 @@
     "lastVerifiedAt": "2026-06-25T19:24:38.317Z",
     "hasActiveJobs": true,
     "activeJobs": [
-      {
-        "title": "Senior Data Engineer",
-        "url": "https://remoteOK.com/remote-jobs/remote-senior-data-engineer-lemon-io-1136594",
-        "tags": [
-          "dev",
-          "engineer",
-          "full time",
-          "senior",
-          "python",
-          "sql",
-          "aws",
-          "gcp",
-          "apache"
-        ]
-      },
       {
         "title": "Senior React Full-stack Developer",
         "url": "https://remotive.com/remote-jobs/software-development/senior-react-full-stack-developer-2091101",
@@ -401,6 +386,59 @@
           "infrastructure",
           "flutter"
         ]
+      },
+      {
+        "title": "Senior Data Engineer",
+        "url": "https://remotive.com/remote-jobs/software-development/senior-data-engineer-2091097",
+        "tags": [
+          ".Net",
+          "android",
+          "apache",
+          "AWS",
+          "azure",
+          "C",
+          "C#",
+          "C++",
+          "data science",
+          "golang",
+          "ios",
+          "java",
+          "javascript",
+          "node.js",
+          "php",
+          "python",
+          "react",
+          "ruby/rails",
+          "scala",
+          "shopify",
+          "sql",
+          "swift",
+          "UI/UX",
+          "wordpress",
+          "blockchain",
+          "AI/ML",
+          "automation",
+          "project management",
+          "react native",
+          "rust",
+          "product management",
+          "unity",
+          "electron",
+          "spring",
+          "laravel",
+          "Ethereum",
+          "graphic design",
+          "Typescript ",
+          "angular ",
+          "GCP",
+          "Snowflake",
+          "Site Reliability",
+          "Symfony",
+          "startup",
+          "marketplace",
+          "next.js",
+          "flutter"
+        ]
       }
     ],
     "verifiedMembers": [],
@@ -419,7 +457,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-12T19:07:16.413Z",
+    "lastVerifiedAt": "2026-09-13T19:16:38.017Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -449,7 +487,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-12T19:07:18.115Z",
+    "lastVerifiedAt": "2026-09-13T19:16:39.554Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -482,7 +520,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-12T19:07:19.955Z",
+    "lastVerifiedAt": "2026-09-13T19:16:41.227Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -675,7 +713,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-12T19:07:22.516Z",
+    "lastVerifiedAt": "2026-09-13T19:16:43.690Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1028,42 +1066,6 @@
     "website": "multiplymii.com"
   },
   {
-    "id": "co-161",
-    "name": "Resourceful Talent Group",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "product-manager-resourceful-talent-group-1136579",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-09-10T19:47:33.434Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Product Manager",
-        "url": "https://remoteOK.com/remote-jobs/remote-product-manager-resourceful-talent-group-1136579",
-        "tags": [
-          "product manager",
-          "exec",
-          "saas",
-          "technical",
-          "dev",
-          "finance",
-          "ops",
-          "engineer",
-          "full time",
-          "digital nomad"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "resourcefultalentgroup.com"
-  },
-  {
     "id": "co-162",
     "name": "Adaptive Teams",
     "githubOrg": "",
@@ -1281,5 +1283,73 @@
     "source": "remoteok",
     "watchlistReason": "no-org-found",
     "website": "copenhagenoptimization.com"
+  },
+  {
+    "id": "co-169",
+    "name": "Mirantis",
+    "githubOrg": "Mirantis",
+    "githubOrgUrl": "https://github.com/Mirantis",
+    "remoteokSlug": "software-engineer-mirantis-1137387",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-09-13T19:31:34.703Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Software Engineer",
+        "url": "https://remoteOK.com/remote-jobs/remote-software-engineer-mirantis-1137387",
+        "tags": [
+          "golang",
+          "dev",
+          "engineer",
+          "digital nomad"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "mirantis.com"
+  },
+  {
+    "id": "co-170",
+    "name": "Law Offices of Sabrina Li",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "hr-operations-specialist-law-offices-of-sabrina-li-1137386",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-09-13T19:31:35.798Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "HR Operations Specialist",
+        "url": "https://remoteOK.com/remote-jobs/remote-hr-operations-specialist-law-offices-of-sabrina-li-1137386",
+        "tags": [
+          "hr",
+          "education",
+          "customer support",
+          "marketing",
+          "finance",
+          "c",
+          "exec",
+          "content writing",
+          "ops",
+          "legal",
+          "recruiter",
+          "full time"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "lawofficesofsabrinali.com"
   }
 ]
