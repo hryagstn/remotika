@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-09-13T19:15:51.875Z",
+    "lastVerifiedAt": "2026-09-14T20:51:13.458Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -92,6 +92,11 @@
         "tags": []
       },
       {
+        "title": "Strategic Account Manager ",
+        "url": "https://job-boards.greenhouse.io/xendit/jobs/7691564003",
+        "tags": []
+      },
+      {
         "title": "UX Designer - Developer Experience (DevEx)",
         "url": "https://job-boards.greenhouse.io/xendit/jobs/7847359003",
         "tags": []
@@ -149,7 +154,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-13T19:16:07.520Z",
+    "lastVerifiedAt": "2026-09-14T20:51:29.319Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -183,7 +188,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-13T19:16:22.636Z",
+    "lastVerifiedAt": "2026-09-14T20:51:44.357Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -217,7 +222,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-13T19:16:27.132Z",
+    "lastVerifiedAt": "2026-09-14T20:51:49.298Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -251,7 +256,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-13T19:16:32.793Z",
+    "lastVerifiedAt": "2026-09-14T20:51:55.219Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -457,7 +462,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-13T19:16:38.017Z",
+    "lastVerifiedAt": "2026-09-14T20:52:01.613Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -487,7 +492,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-13T19:16:39.554Z",
+    "lastVerifiedAt": "2026-09-14T20:52:03.230Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -520,7 +525,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-13T19:16:41.227Z",
+    "lastVerifiedAt": "2026-09-14T20:52:04.975Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -713,7 +718,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-13T19:16:43.690Z",
+    "lastVerifiedAt": "2026-09-14T20:52:07.592Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1292,8 +1297,8 @@
     "remoteokSlug": "software-engineer-mirantis-1137387",
     "industry": null,
     "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-09-13T19:31:34.703Z",
+    "label": "Confirmed",
+    "lastVerifiedAt": "2026-09-14T20:52:21.351Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1312,7 +1317,8 @@
     "status": "watchlist",
     "source": "remoteok",
     "watchlistReason": "org-found-zero-match",
-    "website": "mirantis.com"
+    "website": "mirantis.com",
+    "verifiedAt": "2026-09-13T19:31:34.703Z"
   },
   {
     "id": "co-170",
