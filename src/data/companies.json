@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-09-14T20:51:13.458Z",
+    "lastVerifiedAt": "2026-09-15T20:06:01.659Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -154,7 +154,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-14T20:51:29.319Z",
+    "lastVerifiedAt": "2026-09-15T20:06:18.362Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -188,7 +188,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-14T20:51:44.357Z",
+    "lastVerifiedAt": "2026-09-15T20:06:34.604Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -222,7 +222,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-14T20:51:49.298Z",
+    "lastVerifiedAt": "2026-09-15T20:06:40.042Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -256,7 +256,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-14T20:51:55.219Z",
+    "lastVerifiedAt": "2026-09-15T20:06:46.103Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -462,7 +462,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-14T20:52:01.613Z",
+    "lastVerifiedAt": "2026-09-15T20:06:51.717Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -492,7 +492,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-14T20:52:03.230Z",
+    "lastVerifiedAt": "2026-09-15T20:06:53.399Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -525,7 +525,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-14T20:52:04.975Z",
+    "lastVerifiedAt": "2026-09-15T20:06:55.235Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -718,7 +718,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-14T20:52:07.592Z",
+    "lastVerifiedAt": "2026-09-15T20:06:57.881Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1298,7 +1298,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-14T20:52:21.351Z",
+    "lastVerifiedAt": "2026-09-15T20:07:13.008Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1357,5 +1357,85 @@
     "source": "remoteok",
     "watchlistReason": "no-org-found",
     "website": "lawofficesofsabrinali.com"
+  },
+  {
+    "id": "co-171",
+    "name": "Sleek",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "junior-payroll-assistant-sleek-1137391",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-09-15T20:23:01.206Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Junior Payroll Assistant",
+        "url": "https://remoteOK.com/remote-jobs/remote-junior-payroll-assistant-sleek-1137391",
+        "tags": [
+          "payroll",
+          "virtual assistant",
+          "education",
+          "technical",
+          "supervisor",
+          "customer support",
+          "dev",
+          "marketing",
+          "exec",
+          "accounting",
+          "finance",
+          "video",
+          "junior",
+          "ops",
+          "excel",
+          "sys admin",
+          "digital nomad"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "sleek.com"
+  },
+  {
+    "id": "co-172",
+    "name": "Prop Firm Match Global – FZCO",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "customer-experience-representative-prop-firm-match-global-fzco-1137390",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-09-15T20:23:02.364Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Customer Experience Representative",
+        "url": "https://remoteOK.com/remote-jobs/remote-customer-experience-representative-prop-firm-match-global-fzco-1137390",
+        "tags": [
+          "saas",
+          "hr",
+          "education",
+          "technical",
+          "customer support",
+          "video",
+          "finance",
+          "exec",
+          "ops",
+          "excel",
+          "full time"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "propfirmmatchglobalfzco.com"
   }
 ]
