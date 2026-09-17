@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-09-16T19:56:34.754Z",
+    "lastVerifiedAt": "2026-09-17T20:07:34.677Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -63,7 +63,7 @@
       },
       {
         "title": "RevOps Systems Administrator (Salesforce)",
-        "url": "https://job-boards.greenhouse.io/xendit/jobs/7992220003",
+        "url": "https://job-boards.greenhouse.io/xendit/jobs/7992262003",
         "tags": []
       },
       {
@@ -79,11 +79,6 @@
       {
         "title": "Senior Manager, Customer Success",
         "url": "https://job-boards.greenhouse.io/xendit/jobs/7731779003",
-        "tags": []
-      },
-      {
-        "title": "Senior Product Manager - Operational Journey",
-        "url": "https://job-boards.greenhouse.io/xendit/jobs/7852265003",
         "tags": []
       },
       {
@@ -154,7 +149,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-16T19:56:53.179Z",
+    "lastVerifiedAt": "2026-09-17T20:07:51.368Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -188,7 +183,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-16T19:57:08.631Z",
+    "lastVerifiedAt": "2026-09-17T20:08:07.752Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -222,7 +217,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-16T19:57:13.784Z",
+    "lastVerifiedAt": "2026-09-17T20:08:13.401Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -256,7 +251,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-16T19:57:20.385Z",
+    "lastVerifiedAt": "2026-09-17T20:08:19.977Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -462,7 +457,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-16T19:57:26.482Z",
+    "lastVerifiedAt": "2026-09-17T20:08:25.874Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -492,7 +487,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-16T19:57:28.095Z",
+    "lastVerifiedAt": "2026-09-17T20:08:27.674Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -525,7 +520,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-16T19:57:29.891Z",
+    "lastVerifiedAt": "2026-09-17T20:08:29.659Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -595,6 +590,15 @@
     "lastVerifiedAt": "2026-09-07T20:40:51.584Z",
     "hasActiveJobs": true,
     "activeJobs": [
+      {
+        "title": "AI Trainer Image QA Evaluator",
+        "url": "https://remoteOK.com/remote-jobs/remote-ai-trainer-image-qa-evaluator-imerit-technology-1137398",
+        "tags": [
+          "ai",
+          "data annotation",
+          "quality assurance"
+        ]
+      },
       {
         "title": "AI Response Analyst",
         "url": "https://remoteOK.com/remote-jobs/remote-ai-response-analyst-imerit-technology-1137309",
@@ -718,7 +722,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-16T19:57:32.468Z",
+    "lastVerifiedAt": "2026-09-17T20:08:32.501Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -946,89 +950,6 @@
     "source": "remoteok",
     "watchlistReason": "org-found-zero-match",
     "website": "chaos.com"
-  },
-  {
-    "id": "co-158",
-    "name": "Vomela",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "principal-data-engineer-vomela-1136860",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-09-10T19:47:29.874Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Principal Data Engineer",
-        "url": "https://remoteOK.com/remote-jobs/remote-principal-data-engineer-vomela-1136860",
-        "tags": [
-          "design",
-          "sys admin",
-          "education",
-          "technical",
-          "dev",
-          "speech",
-          "devops",
-          "cloud",
-          "git",
-          "microsoft",
-          "exec",
-          "senior",
-          "ops",
-          "stats",
-          "sales",
-          "medical",
-          "engineer",
-          "apache",
-          "digital nomad"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "vomela.com"
-  },
-  {
-    "id": "co-159",
-    "name": "Aftershoot",
-    "githubOrg": "Aftershoot",
-    "githubOrgUrl": "https://github.com/Aftershoot",
-    "remoteokSlug": "influencer-marketing-lead-aftershoot-1136843",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-09-10T19:47:31.220Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Influencer Marketing Lead",
-        "url": "https://remoteOK.com/remote-jobs/remote-influencer-marketing-lead-aftershoot-1136843",
-        "tags": [
-          "design",
-          "saas",
-          "game dev",
-          "dev",
-          "testing",
-          "marketing",
-          "video",
-          "finance",
-          "exec",
-          "content writing",
-          "golang",
-          "digital nomad"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "org-found-zero-match",
-    "website": "impact.com"
   },
   {
     "id": "co-160",
@@ -1298,7 +1219,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-16T19:57:46.807Z",
+    "lastVerifiedAt": "2026-09-17T20:08:47.775Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1437,5 +1358,103 @@
     "source": "remoteok",
     "watchlistReason": "no-org-found",
     "website": "propfirmmatchglobalfzco.com"
+  },
+  {
+    "id": "co-173",
+    "name": "Arango",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "golang-kubernetes-engineer-arango-1137400",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-09-17T20:24:53.862Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Golang Kubernetes Engineer",
+        "url": "https://remoteOK.com/remote-jobs/remote-golang-kubernetes-engineer-arango-1137400",
+        "tags": [
+          "golang",
+          "golang",
+          "engineer"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "arango.com"
+  },
+  {
+    "id": "co-174",
+    "name": "Sticker Mule",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "ai-agent-engineer-sticker-mule-1137399",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-09-17T20:24:54.992Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "AI agent engineer",
+        "url": "https://remoteOK.com/remote-jobs/remote-ai-agent-engineer-sticker-mule-1137399",
+        "tags": [
+          "ai",
+          "golang",
+          "javascript",
+          "typescript"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "stickermule.com"
+  },
+  {
+    "id": "co-175",
+    "name": "DomainTools",
+    "githubOrg": "DomainTools",
+    "githubOrgUrl": "https://github.com/DomainTools",
+    "remoteokSlug": "principal-product-manager-domaintools-1137396",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-09-17T20:24:59.804Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Principal Product Manager",
+        "url": "https://remoteOK.com/remote-jobs/remote-principal-product-manager-domaintools-1137396",
+        "tags": [
+          "product manager",
+          "exec",
+          "infosec",
+          "marketing",
+          "design",
+          "web dev",
+          "scrum",
+          "cloud",
+          "api",
+          "stats",
+          "sales",
+          "engineer",
+          "digital nomad"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "domaintools.com"
   }
 ]
