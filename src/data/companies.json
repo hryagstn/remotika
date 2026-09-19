@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-09-18T19:29:49.664Z",
+    "lastVerifiedAt": "2026-09-19T19:15:25.605Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -63,7 +63,7 @@
       },
       {
         "title": "RevOps Systems Administrator (Salesforce)",
-        "url": "https://job-boards.greenhouse.io/xendit/jobs/7992262003",
+        "url": "https://job-boards.greenhouse.io/xendit/jobs/7992220003",
         "tags": []
       },
       {
@@ -149,7 +149,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-18T19:30:05.606Z",
+    "lastVerifiedAt": "2026-09-19T19:15:40.272Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -183,7 +183,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-18T19:30:20.278Z",
+    "lastVerifiedAt": "2026-09-19T19:15:54.955Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -217,7 +217,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-18T19:30:25.183Z",
+    "lastVerifiedAt": "2026-09-19T19:15:59.477Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -251,7 +251,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-18T19:30:31.502Z",
+    "lastVerifiedAt": "2026-09-19T19:16:05.028Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -276,6 +276,55 @@
     "lastVerifiedAt": "2026-06-25T19:24:38.317Z",
     "hasActiveJobs": true,
     "activeJobs": [
+      {
+        "title": "Senior .NET Full-stack Developer",
+        "url": "https://remotive.com/remote-jobs/software-development/senior-net-full-stack-developer-2091130",
+        "tags": [
+          ".Net",
+          "android",
+          "C",
+          "C#",
+          "C++",
+          "data science",
+          "fullstack",
+          "golang",
+          "ios",
+          "java",
+          "javascript",
+          "node.js",
+          "php",
+          "python",
+          "react",
+          "ruby/rails",
+          "scala",
+          "shopify",
+          "swift",
+          "UI/UX",
+          "wordpress",
+          "blockchain",
+          "AI/ML",
+          "automation",
+          "project management",
+          "react native",
+          "rust",
+          "unity",
+          "electron",
+          "spring",
+          "laravel",
+          "Ethereum",
+          "graphic design",
+          "Typescript ",
+          "angular ",
+          "firebase",
+          "data engineering",
+          "Site Reliability",
+          "Symfony",
+          "startup",
+          "marketplace",
+          "next.js",
+          "flutter"
+        ]
+      },
       {
         "title": "Senior Data Scientist",
         "url": "https://remotive.com/remote-jobs/data/senior-data-scientist-2091129",
@@ -506,7 +555,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-18T19:30:36.725Z",
+    "lastVerifiedAt": "2026-09-19T19:16:09.820Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -536,7 +585,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-18T19:30:38.313Z",
+    "lastVerifiedAt": "2026-09-19T19:16:11.226Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -569,7 +618,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-18T19:30:40.110Z",
+    "lastVerifiedAt": "2026-09-19T19:16:12.849Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -771,7 +820,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-18T19:30:43.764Z",
+    "lastVerifiedAt": "2026-09-19T19:16:15.153Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1268,7 +1317,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-18T19:30:56.385Z",
+    "lastVerifiedAt": "2026-09-19T19:16:26.553Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1372,43 +1421,6 @@
     "website": "sleek.com"
   },
   {
-    "id": "co-172",
-    "name": "Prop Firm Match Global – FZCO",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "customer-experience-representative-prop-firm-match-global-fzco-1137390",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-09-15T20:23:02.364Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Customer Experience Representative",
-        "url": "https://remoteOK.com/remote-jobs/remote-customer-experience-representative-prop-firm-match-global-fzco-1137390",
-        "tags": [
-          "saas",
-          "hr",
-          "education",
-          "technical",
-          "customer support",
-          "video",
-          "finance",
-          "exec",
-          "ops",
-          "excel",
-          "full time"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "propfirmmatchglobalfzco.com"
-  },
-  {
     "id": "co-173",
     "name": "Arango",
     "githubOrg": "",
@@ -1476,7 +1488,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-18T19:31:01.265Z",
+    "lastVerifiedAt": "2026-09-19T19:16:30.818Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1506,5 +1518,36 @@
     "watchlistReason": "org-found-zero-match",
     "website": "domaintools.com",
     "verifiedAt": "2026-09-17T20:24:59.804Z"
+  },
+  {
+    "id": "co-176",
+    "name": "Sanctuary Computer",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "senior-shopify-developer-sanctuary-computer-1137405",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-09-19T19:30:42.440Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Senior Shopify Developer",
+        "url": "https://remoteOK.com/remote-jobs/remote-senior-shopify-developer-sanctuary-computer-1137405",
+        "tags": [
+          "dev",
+          "engineer",
+          "senior",
+          "front end",
+          "shopify"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "garden3d.notion.site"
   }
 ]
