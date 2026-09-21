@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-09-20T19:19:30.699Z",
+    "lastVerifiedAt": "2026-09-21T20:56:08.643Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -63,7 +63,7 @@
       },
       {
         "title": "RevOps Systems Administrator (Salesforce)",
-        "url": "https://job-boards.greenhouse.io/xendit/jobs/7992262003",
+        "url": "https://job-boards.greenhouse.io/xendit/jobs/7992220003",
         "tags": []
       },
       {
@@ -74,11 +74,6 @@
       {
         "title": "Senior Implementations Manager",
         "url": "https://job-boards.greenhouse.io/xendit/jobs/7731774003",
-        "tags": []
-      },
-      {
-        "title": "Senior Manager, Customer Success",
-        "url": "https://job-boards.greenhouse.io/xendit/jobs/7731779003",
         "tags": []
       },
       {
@@ -149,7 +144,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-20T19:19:46.388Z",
+    "lastVerifiedAt": "2026-09-21T20:56:24.390Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -183,7 +178,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-20T19:20:02.591Z",
+    "lastVerifiedAt": "2026-09-21T20:56:40.177Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -217,7 +212,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-20T19:20:08.042Z",
+    "lastVerifiedAt": "2026-09-21T20:56:44.949Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -251,7 +246,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-20T19:20:14.943Z",
+    "lastVerifiedAt": "2026-09-21T20:56:50.759Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -551,7 +546,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-20T19:20:22.064Z",
+    "lastVerifiedAt": "2026-09-21T20:56:55.953Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -581,7 +576,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-20T19:20:23.741Z",
+    "lastVerifiedAt": "2026-09-21T20:56:57.398Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -614,7 +609,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-20T19:20:25.858Z",
+    "lastVerifiedAt": "2026-09-21T20:56:58.998Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -816,7 +811,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-20T19:20:28.664Z",
+    "lastVerifiedAt": "2026-09-21T20:57:01.534Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1235,40 +1230,6 @@
     "website": "lyric.com"
   },
   {
-    "id": "co-167",
-    "name": "Wakacje.pl",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "software-engineer-go-wakacje-pl-1135634",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-09-11T19:46:53.261Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Software Engineer GO",
-        "url": "https://remoteOK.com/remote-jobs/remote-software-engineer-go-wakacje-pl-1135634",
-        "tags": [
-          "golang",
-          "dev",
-          "travel",
-          "api",
-          "golang",
-          "engineer",
-          "backend",
-          "digital nomad"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "wakacjepl.com"
-  },
-  {
     "id": "co-168",
     "name": "Copenhagen Optimization",
     "githubOrg": "",
@@ -1313,7 +1274,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-20T19:20:42.365Z",
+    "lastVerifiedAt": "2026-09-21T20:57:14.092Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1484,7 +1445,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-20T19:20:47.803Z",
+    "lastVerifiedAt": "2026-09-21T20:57:18.628Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1545,5 +1506,87 @@
     "source": "remoteok",
     "watchlistReason": "no-org-found",
     "website": "garden3d.notion.site"
+  },
+  {
+    "id": "co-177",
+    "name": "OkWhen",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "senior-net-software-engineer-okwhen-1137411",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-09-21T21:12:04.791Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Senior .NET Software Engineer",
+        "url": "https://remoteOK.com/remote-jobs/remote-senior-net-software-engineer-okwhen-1137411",
+        "tags": [
+          "dev",
+          "design",
+          "c sharp",
+          "saas",
+          "sys admin",
+          "infosec",
+          "education",
+          "technical",
+          "testing",
+          "web dev",
+          "xamarin",
+          "c",
+          "cloud",
+          "git",
+          "typescript",
+          "angular",
+          "mobile",
+          "exec",
+          "content writing",
+          "senior",
+          "ops",
+          "medical",
+          "engineer",
+          "backend",
+          "digital nomad"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "okwhen.com"
+  },
+  {
+    "id": "co-178",
+    "name": "Airspace Link",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "backend-software-engineer-airspace-link-1137409",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-09-21T21:12:05.866Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Backend Software Engineer",
+        "url": "https://remoteOK.com/remote-jobs/remote-backend-software-engineer-airspace-link-1137409",
+        "tags": [
+          "golang",
+          "dev",
+          "engineer",
+          "backend",
+          "digital nomad"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "airspacelink.com"
   }
 ]
