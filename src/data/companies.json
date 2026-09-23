@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-09-22T20:05:01.723Z",
+    "lastVerifiedAt": "2026-09-23T20:06:12.815Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -144,7 +144,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-22T20:05:17.638Z",
+    "lastVerifiedAt": "2026-09-23T20:06:29.322Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -178,7 +178,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-22T20:05:33.667Z",
+    "lastVerifiedAt": "2026-09-23T20:06:44.940Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -212,7 +212,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-22T20:05:39.005Z",
+    "lastVerifiedAt": "2026-09-23T20:06:50.404Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -246,7 +246,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-22T20:05:46.115Z",
+    "lastVerifiedAt": "2026-09-23T20:06:56.834Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -546,7 +546,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-22T20:05:51.518Z",
+    "lastVerifiedAt": "2026-09-23T20:07:02.632Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -576,7 +576,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-22T20:05:53.076Z",
+    "lastVerifiedAt": "2026-09-23T20:07:04.449Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -609,7 +609,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-22T20:05:54.847Z",
+    "lastVerifiedAt": "2026-09-23T20:07:06.354Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -811,7 +811,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-22T20:05:57.441Z",
+    "lastVerifiedAt": "2026-09-23T20:07:09.091Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1274,7 +1274,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-22T20:06:10.034Z",
+    "lastVerifiedAt": "2026-09-23T20:07:24.025Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1445,7 +1445,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-22T20:06:15.023Z",
+    "lastVerifiedAt": "2026-09-23T20:07:29.561Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1624,5 +1624,105 @@
     "source": "remoteok",
     "watchlistReason": "no-org-found",
     "website": "ashbyhq.com"
+  },
+  {
+    "id": "co-180",
+    "name": "Omega Enterprises",
+    "githubOrg": "omega-enterprises",
+    "githubOrgUrl": "https://github.com/omega-enterprises",
+    "remoteokSlug": "junior-digital-assets-operations-analyst-omega-enterprises-1137418",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-09-23T20:23:48.151Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Junior Digital Assets Operations Analyst",
+        "url": "https://remoteOK.com/remote-jobs/remote-junior-digital-assets-operations-analyst-omega-enterprises-1137418",
+        "tags": [
+          "other",
+          "crypto",
+          "remote",
+          "education",
+          "web3",
+          "bitcoin",
+          "ethereum",
+          "part time",
+          "finance",
+          "blockchain",
+          "defi",
+          "junior",
+          "analyst",
+          "ops"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "omegadg.com"
+  },
+  {
+    "id": "co-181",
+    "name": "RedMimicry",
+    "githubOrg": "RedMimicry",
+    "githubOrgUrl": "https://github.com/RedMimicry",
+    "remoteokSlug": "software-developer-security-analytics-redmimicry-1137417",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-09-23T20:23:50.073Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Software Developer Security Analytics",
+        "url": "https://remoteOK.com/remote-jobs/remote-software-developer-security-analytics-redmimicry-1137417",
+        "tags": [
+          "golang",
+          "infosec",
+          "dev",
+          "stats",
+          "full time",
+          "digital nomad"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "redmimicry.com"
+  },
+  {
+    "id": "co-182",
+    "name": "Mindrift - Data annotation",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "freelance-grabacion-de-tareas-cotidianas-para-proyecto-de-ia-mindrift-data-annotation-1137415",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-09-23T20:23:51.242Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Freelance grabación de tareas cotidianas para proyecto de IA",
+        "url": "https://remoteOK.com/remote-jobs/remote-freelance-grabacion-de-tareas-cotidianas-para-proyecto-de-ia-mindrift-data-annotation-1137415",
+        "tags": [
+          "data annotation",
+          "c"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "mindriftdataannotation.com"
   }
 ]
