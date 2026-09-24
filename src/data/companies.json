@@ -8,22 +8,12 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-09-23T20:06:12.815Z",
+    "lastVerifiedAt": "2026-09-24T20:20:27.278Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
-        "title": "Data / ML Automation Intern",
-        "url": "https://job-boards.greenhouse.io/xendit/jobs/7821208003",
-        "tags": []
-      },
-      {
         "title": "FinOps Recons Associate",
         "url": "https://job-boards.greenhouse.io/xendit/jobs/7813420003",
-        "tags": []
-      },
-      {
-        "title": "Full Stack Developer Intern",
-        "url": "https://job-boards.greenhouse.io/xendit/jobs/7821207003",
         "tags": []
       },
       {
@@ -63,7 +53,7 @@
       },
       {
         "title": "RevOps Systems Administrator (Salesforce)",
-        "url": "https://job-boards.greenhouse.io/xendit/jobs/7992220003",
+        "url": "https://job-boards.greenhouse.io/xendit/jobs/7992262003",
         "tags": []
       },
       {
@@ -79,6 +69,11 @@
       {
         "title": "Senior Solutions Engineer",
         "url": "https://job-boards.greenhouse.io/xendit/jobs/7719174003",
+        "tags": []
+      },
+      {
+        "title": "Sr. Product Manager - MFG",
+        "url": "https://job-boards.greenhouse.io/xendit/jobs/8003063003",
         "tags": []
       },
       {
@@ -144,7 +139,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-23T20:06:29.322Z",
+    "lastVerifiedAt": "2026-09-24T20:20:42.998Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -178,7 +173,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-23T20:06:44.940Z",
+    "lastVerifiedAt": "2026-09-24T20:20:58.797Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -212,7 +207,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-23T20:06:50.404Z",
+    "lastVerifiedAt": "2026-09-24T20:21:03.932Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -246,7 +241,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-23T20:06:56.834Z",
+    "lastVerifiedAt": "2026-09-24T20:21:10.056Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -546,7 +541,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-23T20:07:02.632Z",
+    "lastVerifiedAt": "2026-09-24T20:21:15.347Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -576,7 +571,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-23T20:07:04.449Z",
+    "lastVerifiedAt": "2026-09-24T20:21:16.862Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -609,7 +604,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-23T20:07:06.354Z",
+    "lastVerifiedAt": "2026-09-24T20:21:18.584Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -811,7 +806,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-23T20:07:09.091Z",
+    "lastVerifiedAt": "2026-09-24T20:21:21.162Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1188,48 +1183,6 @@
     "website": "libertymutualgroup.com"
   },
   {
-    "id": "co-166",
-    "name": "Lyric",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "growth-strategist-lyric-1135681",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-09-10T19:47:45.046Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Growth Strategist",
-        "url": "https://remoteOK.com/remote-jobs/remote-growth-strategist-lyric-1135681",
-        "tags": [
-          "marketing",
-          "design",
-          "embedded",
-          "technical",
-          "strategy",
-          "customer support",
-          "dev",
-          "travel",
-          "finance",
-          "exec",
-          "content writing",
-          "senior",
-          "ops",
-          "sales",
-          "golang",
-          "digital nomad"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "lyric.com"
-  },
-  {
     "id": "co-168",
     "name": "Copenhagen Optimization",
     "githubOrg": "",
@@ -1274,7 +1227,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-23T20:07:24.025Z",
+    "lastVerifiedAt": "2026-09-24T20:21:34.724Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1445,7 +1398,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-23T20:07:29.561Z",
+    "lastVerifiedAt": "2026-09-24T20:21:39.660Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1673,8 +1626,8 @@
     "remoteokSlug": "software-developer-security-analytics-redmimicry-1137417",
     "industry": null,
     "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-09-23T20:23:50.073Z",
+    "label": "Confirmed",
+    "lastVerifiedAt": "2026-09-24T20:21:42.352Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1695,7 +1648,8 @@
     "status": "watchlist",
     "source": "remoteok",
     "watchlistReason": "org-found-zero-match",
-    "website": "redmimicry.com"
+    "website": "redmimicry.com",
+    "verifiedAt": "2026-09-23T20:23:50.073Z"
   },
   {
     "id": "co-182",
@@ -1724,5 +1678,35 @@
     "source": "remoteok",
     "watchlistReason": "no-org-found",
     "website": "mindriftdataannotation.com"
+  },
+  {
+    "id": "co-183",
+    "name": "Prenosis",
+    "githubOrg": "Prenosis",
+    "githubOrgUrl": "https://github.com/Prenosis",
+    "remoteokSlug": "software-engineer-prenosis-1137427",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-09-24T20:36:43.302Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Software Engineer",
+        "url": "https://remoteOK.com/remote-jobs/remote-software-engineer-prenosis-1137427",
+        "tags": [
+          "golang",
+          "dev",
+          "engineer",
+          "digital nomad"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "prenosis.com"
   }
 ]
