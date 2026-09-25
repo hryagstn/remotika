@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-09-24T20:20:27.278Z",
+    "lastVerifiedAt": "2026-09-25T20:20:59.258Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -53,7 +53,7 @@
       },
       {
         "title": "RevOps Systems Administrator (Salesforce)",
-        "url": "https://job-boards.greenhouse.io/xendit/jobs/7992262003",
+        "url": "https://job-boards.greenhouse.io/xendit/jobs/7992220003",
         "tags": []
       },
       {
@@ -139,7 +139,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-24T20:20:42.998Z",
+    "lastVerifiedAt": "2026-09-25T20:21:15.417Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -173,7 +173,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-24T20:20:58.797Z",
+    "lastVerifiedAt": "2026-09-25T20:21:31.392Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -207,7 +207,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-24T20:21:03.932Z",
+    "lastVerifiedAt": "2026-09-25T20:21:36.296Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -241,7 +241,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-24T20:21:10.056Z",
+    "lastVerifiedAt": "2026-09-25T20:21:42.339Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -541,7 +541,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-24T20:21:15.347Z",
+    "lastVerifiedAt": "2026-09-25T20:21:47.857Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -571,7 +571,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-24T20:21:16.862Z",
+    "lastVerifiedAt": "2026-09-25T20:21:49.432Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -604,7 +604,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-24T20:21:18.584Z",
+    "lastVerifiedAt": "2026-09-25T20:21:51.118Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -674,6 +674,15 @@
     "lastVerifiedAt": "2026-09-07T20:40:51.584Z",
     "hasActiveJobs": true,
     "activeJobs": [
+      {
+        "title": "Video Data Annotator",
+        "url": "https://remoteOK.com/remote-jobs/remote-video-data-annotator-imerit-technology-1137428",
+        "tags": [
+          "quality assurance",
+          "ai",
+          "data annotation"
+        ]
+      },
       {
         "title": "AI Trainer Image QA Evaluator",
         "url": "https://remoteOK.com/remote-jobs/remote-ai-trainer-image-qa-evaluator-imerit-technology-1137398",
@@ -806,7 +815,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-24T20:21:21.162Z",
+    "lastVerifiedAt": "2026-09-25T20:21:53.640Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1227,7 +1236,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-24T20:21:34.724Z",
+    "lastVerifiedAt": "2026-09-25T20:22:06.869Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1398,7 +1407,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-24T20:21:39.660Z",
+    "lastVerifiedAt": "2026-09-25T20:22:12.077Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1627,7 +1636,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-24T20:21:42.352Z",
+    "lastVerifiedAt": "2026-09-25T20:22:14.874Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1708,5 +1717,65 @@
     "source": "remoteok",
     "watchlistReason": "org-found-zero-match",
     "website": "prenosis.com"
+  },
+  {
+    "id": "co-184",
+    "name": "Mercier Consultancy Group",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "danish-speaking-solutions-consultant-work-sofia-bulgaria-mercier-consultancy-group-1137431",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-09-25T20:37:58.471Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Danish Speaking Solutions Consultant Work Sofia Bulgaria",
+        "url": "https://remoteOK.com/remote-jobs/remote-danish-speaking-solutions-consultant-work-sofia-bulgaria-mercier-consultancy-group-1137431",
+        "tags": [
+          "consulting",
+          "education",
+          "technical",
+          "customer support",
+          "marketing",
+          "travel",
+          "excel",
+          "medical",
+          "recruiter"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "mercierconsultancygroup.com"
+  },
+  {
+    "id": "co-185",
+    "name": "Workana",
+    "githubOrg": "Workana",
+    "githubOrgUrl": "https://github.com/Workana",
+    "remoteokSlug": "mecanico-automotriz-diagnostico-y-presupuestos-workana-1137429",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-09-25T20:38:03.521Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Mecánico Automotriz Diagnóstico y Presupuestos",
+        "url": "https://remoteOK.com/remote-jobs/remote-mecanico-automotriz-diagnostico-y-presupuestos-workana-1137429",
+        "tags": []
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "workana.com"
   }
 ]
