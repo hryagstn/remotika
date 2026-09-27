@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-09-26T19:38:43.610Z",
+    "lastVerifiedAt": "2026-09-27T20:00:11.938Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -139,7 +139,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-26T19:38:59.397Z",
+    "lastVerifiedAt": "2026-09-27T20:00:27.737Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -173,7 +173,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-26T19:39:14.610Z",
+    "lastVerifiedAt": "2026-09-27T20:00:42.574Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -207,7 +207,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-26T19:39:19.335Z",
+    "lastVerifiedAt": "2026-09-27T20:00:47.505Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -241,7 +241,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-26T19:39:25.312Z",
+    "lastVerifiedAt": "2026-09-27T20:00:53.391Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -482,7 +482,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-26T19:39:30.497Z",
+    "lastVerifiedAt": "2026-09-27T20:00:58.744Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -512,7 +512,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-26T19:39:32.096Z",
+    "lastVerifiedAt": "2026-09-27T20:01:00.313Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -545,7 +545,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-26T19:39:33.848Z",
+    "lastVerifiedAt": "2026-09-27T20:01:02.063Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -684,42 +684,6 @@
     "website": "nope.com"
   },
   {
-    "id": "co-150",
-    "name": "VirtuHire",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "programmatic-campaign-operations-specialist-trader-virtuhire-1137169",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-09-10T19:47:18.846Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Programmatic Campaign Operations Specialist Trader",
-        "url": "https://remoteOK.com/remote-jobs/remote-programmatic-campaign-operations-specialist-trader-virtuhire-1137169",
-        "tags": [
-          "amazon",
-          "technical",
-          "customer support",
-          "quality assurance",
-          "video",
-          "exec",
-          "senior",
-          "ops",
-          "excel",
-          "full time"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "virtuhire.com"
-  },
-  {
     "id": "co-151",
     "name": "The AI Whistleblower Initiative",
     "githubOrg": "",
@@ -756,7 +720,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-26T19:39:36.334Z",
+    "lastVerifiedAt": "2026-09-27T20:01:04.589Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1131,7 +1095,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-26T19:39:48.613Z",
+    "lastVerifiedAt": "2026-09-27T20:01:15.715Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1302,7 +1266,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-26T19:39:53.376Z",
+    "lastVerifiedAt": "2026-09-27T20:01:20.328Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1531,7 +1495,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-26T19:39:56.206Z",
+    "lastVerifiedAt": "2026-09-27T20:01:23.126Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1657,7 +1621,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-26T19:40:01.920Z",
+    "lastVerifiedAt": "2026-09-27T20:01:28.799Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
