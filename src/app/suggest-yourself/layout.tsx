@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Verifikasi Mandiri Instan | Remotika",
-  description: "Daftarkan diri Anda sebagai talenta remote Indonesia secara real-time dan transparan via integrasi API organisasi GitHub.",
+  title: "Tambahkan Bukti Publik | Remotika",
+  description: "Tambahkan bukti keanggotaan publik GitHub atau GitLab Anda ke direktori Remotika.",
   openGraph: {
-    title: "Verifikasi Mandiri Instan | Remotika",
-    description: "Buktikan keaslian keanggotaan organisasi GitHub Anda secara real-time dan dukung keterbukaan data kerja remote talenta Indonesia.",
+    title: "Tambahkan Bukti Publik | Remotika",
+    description: "Periksa profil dan keanggotaan publik Anda untuk melengkapi data direktori.",
     url: "/suggest-yourself",
     type: "website",
     images: [
@@ -19,8 +19,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Verifikasi Mandiri Instan | Remotika",
-    description: "Buktikan keaslian keanggotaan organisasi GitHub Anda secara real-time.",
+    title: "Tambahkan Bukti Publik | Remotika",
+    description: "Periksa keanggotaan publik Anda.",
     images: ["/og-directory.png"],
   }
 };

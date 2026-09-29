@@ -1,1000 +1,208 @@
 "use client";
 
-import React, { useState, useTransition, useEffect } from "react";
+import React, { useEffect, useMemo, useState, useTransition } from "react";
 import Link from "next/link";
-import { 
-  Search, 
-  MapPin, 
-  ExternalLink, 
-  Download, 
-  Code, 
-  Briefcase, 
-  CheckCircle, 
-  Users, 
-  TrendingUp, 
-  ChevronDown,
-  ChevronUp,
-  X,
-  Mail,
-  Building,
-  Plus,
-  Sparkles,
-  Menu
-} from "lucide-react";
 
-// Inline Custom SVG for GitHub logo (resolves missing brand icons in some lucide-react versions)
-const Github = ({ className = "w-4 h-4" }: { className?: string }) => (
-  <svg 
-    className={className} 
-    viewBox="0 0 24 24" 
-    fill="none" 
-    stroke="currentColor" 
-    strokeWidth="2" 
-    strokeLinecap="round" 
-    strokeLinejoin="round"
-  >
-    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
-    <path d="M9 18c-4.51 2-5-2-7-2" />
-  </svg>
-);
-
-const TelegramIcon = ({ className = "w-4 h-4" }: { className?: string }) => (
-  <svg 
-    className={className} 
-    viewBox="0 0 16 16" 
-    fill="currentColor"
-  >
-    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09"/>
-  </svg>
-);
+import { Check, ChevronDown, Code2, Mail, Search, Send, X } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 import { CompanyData, submitSuggestion } from "../actions";
 
+const TELEGRAM_CHANNEL_URL = "https://t.me/remotika_updates";
+
+interface DashboardProps { initialCompanies: CompanyData[] }
+type SortKey = "members" | "verified" | "name" | "jobs";
+
+const labels = ["All", "Top Pick", "Established", "Indonesia-Friendly", "Confirmed"];
+const categories = ["All Roles", "Engineering", "Design", "Product", "Marketing", "Data", "Operations"];
+const categoryLabels: Record<string, string> = { "All Roles": "Semua peran", Engineering: "Engineering", Design: "Desain", Product: "Produk", Marketing: "Pemasaran", Data: "Data", Operations: "Operasional" };
 const slugify = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 
-interface DashboardProps {
-  initialCompanies: CompanyData[];
+function matchesCategory(company: CompanyData, category: string) {
+  if (category === "All Roles") return true;
+  const value = category.toLowerCase();
+  const synonyms: Record<string, string[]> = {
+    engineering: ["tech", "development", "software", "systems", "infrastructure", "devsecops", "developer"],
+    design: ["design", "graphics", "creative", "ux", "ui"], product: ["product", "saas", "platform"],
+    marketing: ["marketing", "growth", "sales", "seo"], data: ["data", "ai", "analytics", "database", "machine learning"],
+    operations: ["operations", "security", "devops", "cloud", "logistics"],
+  };
+  const terms = [value, ...(synonyms[value] || [])];
+  if (terms.some((term) => (company.industry || "").toLowerCase().includes(term))) return true;
+  return Boolean(company.activeJobs?.some((job) => terms.some((term) => `${job.title} ${job.tags.join(" ")}`.toLowerCase().includes(term))));
 }
 
 export default function Dashboard({ initialCompanies }: DashboardProps) {
-  const [companies, setCompanies] = useState<CompanyData[]>(initialCompanies);
   const [search, setSearch] = useState("");
   const [labelFilter, setLabelFilter] = useState("All");
   const [categoryFilter, setCategoryFilter] = useState("All Roles");
   const [hasJobsOnly, setHasJobsOnly] = useState(false);
-  const [sortBy, setSortBy] = useState<"members" | "verified" | "name" | "jobs">("members");
   const [hideWatchlist, setHideWatchlist] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [mounted, setMounted] = useState(false);
+  const [sortBy, setSortBy] = useState<SortKey>("members");
+  
+  const [suggestOpen, setSuggestOpen] = useState(false);
+  const [badgeOrg, setBadgeOrg] = useState<string | null>(null);
+  const [expandedCard, setExpandedCard] = useState<string | null>(null);
+  const [copied, setCopied] = useState(false);
+  const [suggestOrg, setSuggestOrg] = useState("");
+  const [suggestEmail, setSuggestEmail] = useState("");
+  const [suggestStatus, setSuggestStatus] = useState<{ success?: boolean; message?: string; redirectUrl?: string } | null>(null);
+  const [suggestPending, startSuggestTransition] = useTransition();
+  const hasModal = suggestOpen || Boolean(badgeOrg);
 
   useEffect(() => {
-    setMounted(true);
-  }, []);
-  
-  // Modal states
-  const [isSuggestOpen, setIsSuggestOpen] = useState(false);
-  const [suggestOrg, setSuggestOrg] = useState("");
-  const [suggestEmail, setSuggestByEmail] = useState("");
-  const [suggestStatus, setSuggestStatus] = useState<{ success?: boolean; message?: string; redirectUrl?: string } | null>(null);
-  const [isSuggestPending, startSuggestTransition] = useTransition();
+    if (!hasModal) return;
+    const previous = document.body.style.overflow;
+    const previousFocus = document.activeElement instanceof HTMLElement ? document.activeElement : null;
+    const dialog = document.querySelector<HTMLElement>('[role="dialog"]');
+    const focusable = () => Array.from(dialog?.querySelectorAll<HTMLElement>('button:not([disabled]), input:not([disabled]), a[href], select, textarea, [tabindex="0"]') || []);
+    focusable()[0]?.focus();
+    document.body.style.overflow = "hidden";
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === "Escape") { setSuggestOpen(false); setBadgeOrg(null); setSuggestStatus(null); }
+      if (event.key === "Tab") {
+        const elements = focusable(); const first = elements[0]; const last = elements.at(-1);
+        if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last?.focus(); }
+        else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first?.focus(); }
+      }
+    };
+    window.addEventListener("keydown", closeOnEscape);
+    return () => { document.body.style.overflow = previous; window.removeEventListener("keydown", closeOnEscape); previousFocus?.focus(); };
+  }, [hasModal]);
 
-  const [activeBadgeOrg, setActiveBadgeOrg] = useState<string | null>(null);
-  const [expandedCard, setExpandedCard] = useState<string | null>(null);
+  const stats = useMemo(() => {
+    const verified = initialCompanies.filter((company) => company.status !== "watchlist");
+    return { companies: verified.length, members: verified.reduce((sum, company) => sum + company.verifiedIndonesianCount, 0), jobs: initialCompanies.reduce((sum, company) => sum + (company.activeJobs?.length || 0), 0) };
+  }, [initialCompanies]);
 
-  // Find the latest verification date to show database fresh status
-  const lastUpdated = React.useMemo(() => {
-    if (!mounted) return "Sedang memuat...";
-    const dates = companies
-      .map(c => c.lastVerifiedAt ? new Date(c.lastVerifiedAt).getTime() : 0)
-      .filter(t => t > 0);
-    if (dates.length === 0) return "Baru-baru ini";
-    const maxTime = Math.max(...dates);
-    return new Date(maxTime).toLocaleDateString("id-ID", {
-      day: "numeric",
-      month: "long",
-      year: "numeric"
-    });
-  }, [companies, mounted]);
+  const lastUpdated = useMemo(() => {
+    const dates = initialCompanies.map((company) => company.lastVerifiedAt ? new Date(company.lastVerifiedAt).getTime() : 0).filter(Boolean);
+    return dates.length ? new Intl.DateTimeFormat("id-ID", { day: "numeric", month: "long", year: "numeric" }).format(new Date(Math.max(...dates))) : "Baru-baru ini";
+  }, [initialCompanies]);
 
-  // Filter list on client-side dynamically for immediate feedback!
-  const filteredCompanies = companies.filter((c) => {
+  const filteredCompanies = useMemo(() => {
     const query = search.trim().toLowerCase();
-    const matchesSearch = !query || 
-      c.name.toLowerCase().includes(query) ||
-      c.githubOrg.toLowerCase().includes(query) ||
-      (c.industry && c.industry.toLowerCase().includes(query));
-    
-    const matchesLabel = labelFilter === "All" || c.label === labelFilter;
-    const matchesJobs = !hasJobsOnly || c.hasActiveJobs;
-
-    const matchesCategory = categoryFilter === "All Roles" || (() => {
-      const cat = categoryFilter.toLowerCase();
-      // Check if industry contains category keyword or synonyms
-      const indLower = (c.industry || "").toLowerCase();
-      const industryMatches = indLower.includes(cat) || 
-        (cat === "engineering" && (indLower.includes("tech") || indLower.includes("development") || indLower.includes("software") || indLower.includes("systems") || indLower.includes("infrastructure") || indLower.includes("devsecops"))) ||
-        (cat === "design" && (indLower.includes("design") || indLower.includes("graphics") || indLower.includes("collaboration") || indLower.includes("creative"))) ||
-        (cat === "product" && (indLower.includes("product") || indLower.includes("saas") || indLower.includes("platform"))) ||
-        (cat === "data" && (indLower.includes("data") || indLower.includes("ai") || indLower.includes("analytics") || indLower.includes("database") || indLower.includes("machine learning"))) ||
-        (cat === "operations" && (indLower.includes("operations") || indLower.includes("security") || indLower.includes("devsecops") || indLower.includes("cloud") || indLower.includes("logistics"))) ||
-        (cat === "marketing" && (indLower.includes("marketing") || indLower.includes("growth") || indLower.includes("sales") || indLower.includes("seo")));
-
-      // Check if any active job tags/titles match the category
-      const jobsMatch = c.activeJobs?.some(job => {
-        const jobTitle = job.title.toLowerCase();
-        const jobTags = job.tags.map(t => t.toLowerCase());
-        if (cat === "engineering") {
-          return jobTitle.includes("engineer") || jobTitle.includes("developer") || jobTitle.includes("frontend") || jobTitle.includes("backend") || jobTitle.includes("systems") || jobTags.some(t => ["go", "react", "typescript", "systems", "docker", "nodejs", "backend", "frontend", "engineering", "php"].includes(t));
-        }
-        if (cat === "design") {
-          return jobTitle.includes("design") || jobTitle.includes("ux") || jobTitle.includes("ui") || jobTags.some(t => ["figma", "design", "ux", "ui"].includes(t));
-        }
-        if (cat === "product") {
-          return jobTitle.includes("product") || jobTitle.includes("pm") || jobTitle.includes("manager") || jobTags.some(t => ["product", "pm"].includes(t));
-        }
-        if (cat === "marketing") {
-          return jobTitle.includes("marketing") || jobTitle.includes("growth") || jobTitle.includes("seo") || jobTags.some(t => ["marketing", "growth"].includes(t));
-        }
-        if (cat === "data") {
-          return jobTitle.includes("data") || jobTitle.includes("ai") || jobTitle.includes("analytics") || jobTitle.includes("database") || jobTags.some(t => ["data", "ai", "analytics"].includes(t));
-        }
-        if (cat === "operations") {
-          return jobTitle.includes("operations") || jobTitle.includes("security") || jobTitle.includes("devops") || jobTags.some(t => ["operations", "security", "devops", "aws", "kubernetes"].includes(t));
-        }
-        return false;
-      });
-
-      return industryMatches || jobsMatch;
-    })();
-
-    const matchesWatchlist = !hideWatchlist || c.status !== "watchlist";
-
-    return matchesSearch && matchesLabel && matchesJobs && matchesCategory && matchesWatchlist;
-  }).sort((a, b) => {
-    if (sortBy === "name") {
-      return a.name.localeCompare(b.name, "id", { sensitivity: "base" });
-    }
-    if (sortBy === "verified") {
-      const dateA = a.verifiedAt || a.lastVerifiedAt || "";
-      const dateB = b.verifiedAt || b.lastVerifiedAt || "";
-      return new Date(dateB).getTime() - new Date(dateA).getTime();
-    }
-    if (sortBy === "jobs") {
-      const countA = a.activeJobs ? a.activeJobs.length : 0;
-      const countB = b.activeJobs ? b.activeJobs.length : 0;
-      if (countA !== countB) {
-        return countB - countA;
-      }
+    return initialCompanies.filter((company) => {
+      const inSearch = !query || company.name.toLowerCase().includes(query) || company.githubOrg.toLowerCase().includes(query) || Boolean(company.industry?.toLowerCase().includes(query));
+      return inSearch && (labelFilter === "All" || company.label === labelFilter) && (!hasJobsOnly || company.hasActiveJobs) && (!hideWatchlist || company.status !== "watchlist") && matchesCategory(company, categoryFilter);
+    }).sort((a, b) => {
+      if (sortBy === "name") return a.name.localeCompare(b.name, "id", { sensitivity: "base" });
+      if (sortBy === "verified") return new Date(b.verifiedAt || b.lastVerifiedAt || 0).getTime() - new Date(a.verifiedAt || a.lastVerifiedAt || 0).getTime();
+      if (sortBy === "jobs") return (b.activeJobs?.length || 0) - (a.activeJobs?.length || 0);
       return b.verifiedIndonesianCount - a.verifiedIndonesianCount;
-    }
-    return b.verifiedIndonesianCount - a.verifiedIndonesianCount;
-  });
-
-  const handleExportCSV = () => {
-    const headers = ["Company Name", "GitHub Org", "GitHub Org URL", "Verified Indonesian Members", "Label", "Industry", "Last Verified At"];
-    const rows = filteredCompanies.map(c => [
-      `"${c.name.replace(/"/g, '""')}"`,
-      c.githubOrg,
-      c.githubOrgUrl,
-      c.verifiedIndonesianCount,
-      c.label,
-      `"${(c.industry || "").replace(/"/g, '""')}"`,
-      c.lastVerifiedAt ? new Date(c.lastVerifiedAt).toLocaleDateString() : 'N/A'
-    ]);
-    const csvContent = "data:text/csv;charset=utf-8," 
-      + [headers.join(","), ...rows.map(e => e.join(","))].join("\n");
-    const encodedUri = encodeURI(csvContent);
-    const link = document.createElement("a");
-    link.setAttribute("href", encodedUri);
-    link.setAttribute("download", "remotika-verified-companies.csv");
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
-
-  const handleSuggestSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setSuggestStatus(null);
-    if (!suggestOrg) return;
-
-    startSuggestTransition(async () => {
-      const res = await submitSuggestion(suggestOrg, suggestEmail);
-      setSuggestStatus(res);
-      if (res.success) {
-        setSuggestOrg("");
-        setSuggestByEmail("");
-        if (res.redirectUrl) {
-          setTimeout(() => {
-            window.open(res.redirectUrl, "_blank");
-          }, 1500);
-        }
-      }
     });
+  }, [categoryFilter, hasJobsOnly, hideWatchlist, initialCompanies, labelFilter, search, sortBy]);
+
+  const resetFilters = () => { setSearch(""); setLabelFilter("All"); setCategoryFilter("All Roles"); setHasJobsOnly(false); setHideWatchlist(false); };
+  const exportCsv = () => {
+    const headers = ["Company Name", "GitHub Org", "GitHub URL", "Verified Members", "Label", "Industry", "Last Verified"];
+    const rows = filteredCompanies.map((company) => [`"${company.name.replace(/"/g, '""')}"`, company.githubOrg, company.githubOrgUrl, company.verifiedIndonesianCount, company.label, `"${(company.industry || "").replace(/"/g, '""')}"`, company.lastVerifiedAt ? new Date(company.lastVerifiedAt).toLocaleDateString("id-ID") : "N/A"]);
+    const blob = new Blob([[headers.join(","), ...rows.map((row) => row.join(","))].join("\n")], { type: "text/csv;charset=utf-8" });
+    const url = URL.createObjectURL(blob); const anchor = document.createElement("a"); anchor.href = url; anchor.download = "remotika-verified-companies.csv"; anchor.click(); URL.revokeObjectURL(url);
   };
-
-  const labels = ["All", "Top Pick", "Established", "Indonesia-Friendly", "Confirmed"];
-  const categories = ["All Roles", "Engineering", "Design", "Product", "Marketing", "Data", "Operations"];
-
-  const getLabelStyles = (label: string) => {
-    switch (label) {
-      case "Top Pick":
-        return "bg-amber-500/10 text-amber-400 border-amber-500/30";
-      case "Established":
-        return "bg-purple-500/10 text-purple-400 border-purple-500/30";
-      case "Indonesia-Friendly":
-        return "bg-teal-500/10 text-teal-400 border-teal-500/30";
-      default:
-        return "bg-blue-500/10 text-blue-400 border-blue-500/30";
-    }
+  const sendSuggestion = (event: React.FormEvent) => {
+    event.preventDefault(); if (!suggestOrg.trim()) return; setSuggestStatus(null);
+    startSuggestTransition(async () => { const result = await submitSuggestion(suggestOrg, suggestEmail); setSuggestStatus(result); if (result.success) { setSuggestOrg(""); setSuggestEmail(""); if (result.redirectUrl) window.setTimeout(() => window.open(result.redirectUrl, "_blank", "noopener,noreferrer"), 900); } });
   };
-
-  const getTierFlatColor = (label: string) => {
-    switch (label) {
-      case "Top Pick":
-        return "bg-amber-600";
-      case "Established":
-        return "bg-purple-600";
-      case "Indonesia-Friendly":
-        return "bg-teal-600";
-      default:
-        return "bg-blue-600";
-    }
+  const copyBadge = async () => {
+    if (!badgeOrg) return; await navigator.clipboard.writeText(`[![Remotika Verified](https://remotika.vercel.app/api/badge?org=${badgeOrg})](https://remotika.vercel.app)`); setCopied(true); window.setTimeout(() => setCopied(false), 1800);
   };
 
   return (
-    <div className="relative min-h-screen bg-bg-base overflow-hidden flex flex-col grid-pattern">
-      {/* Navigation Header */}
-      <header className="glass-panel sticky top-0 z-40 border-b border-border-faint backdrop-blur-md">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-          <div className="flex items-center space-x-6">
-            <Link href="/" className="flex items-center space-x-3 group">
-              <img src="/logo.png" alt="Remotika Logo" className="w-9 h-9 object-contain rounded-xl shadow-lg shadow-brand-primary/20" />
+    <div className="directory-root">
+      <a href="#direktori" className="skip-link">Lewati ke direktori</a>
+
+      <main className="research-page directory-page">
+        <header className="directory-intro">
+          <div><p className="eyebrow">Direktori perusahaan</p><h1>Temukan perusahaan yang punya talenta Indonesia.</h1><p>Bandingkan jejak publik dan lowongan sebelum memulai riset Anda.</p></div>
+          <div className="directory-context">
+            <span><strong>{stats.companies}</strong> perusahaan dengan bukti publik</span>
+            <span><strong>{stats.jobs}</strong> lowongan tercatat</span>
+            <a
+              href={TELEGRAM_CHANNEL_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 text-xs font-medium text-sky-700 hover:text-sky-800 dark:text-sky-400 transition-colors"
+            >
+              <Send size={12} aria-hidden="true" />
+              <span>Update harian di Telegram ↗</span>
+            </a>
+            <Link href="/cara-kerja">Tentang sumber data →</Link>
+          </div>
+        </header>
+        <section id="direktori" aria-label="Cari perusahaan" className="directory-workspace">
+          <div className="mb-6 rounded-2xl border border-border/80 bg-white/70 dark:bg-card p-4 sm:p-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <div className="flex items-start sm:items-center gap-3.5">
+              <div className="size-10 rounded-xl bg-sky-50 text-sky-600 dark:bg-sky-950 dark:text-sky-300 flex items-center justify-center shrink-0 mt-0.5 sm:mt-0">
+                <Send className="size-5 -translate-x-0.5 translate-y-0.5" aria-hidden="true" />
+              </div>
               <div>
-                <span className="text-lg font-bold tracking-tight text-white font-outfit">Remotika</span>
-                <span className="hidden sm:inline-block ml-2 text-xs px-2 py-0.5 rounded-full bg-white/5 border border-white/10 text-white/50">v1.4</span>
-              </div>
-            </Link>
-            {/* Desktop Navigation Links */}
-            <div className="hidden md:flex items-center space-x-2">
-              <Link href="/" className="text-xs font-semibold text-white bg-white/5 border border-white/10 px-3 py-1.5 rounded-lg transition-all">
-                Direktori
-              </Link>
-              <Link href="/cara-kerja" className="text-xs font-semibold text-white/60 hover:text-white hover:bg-white/5 px-3 py-1.5 rounded-lg border border-transparent hover:border-white/5 transition-all">
-                Cara Kerja
-              </Link>
-              <Link href="/readiness-check" className="text-xs font-semibold text-white/60 hover:text-white hover:bg-white/5 px-3 py-1.5 rounded-lg border border-transparent hover:border-white/5 transition-all">
-                Cek Kesiapan
-              </Link>
-              <Link href="/berkontribusi" className="text-xs font-semibold text-white/60 hover:text-white hover:bg-white/5 px-3 py-1.5 rounded-lg border border-transparent hover:border-white/5 transition-all">
-                Berkontribusi
-              </Link>
-            </div>
-          </div>
-
-          {/* Desktop Right Actions */}
-          <div className="hidden md:flex items-center space-x-3">
-            {/* Grouped Header Buttons */}
-            <div className="inline-flex items-center rounded-xl bg-white/5 border border-white/10 p-0.5 shadow-md shadow-brand-primary/5">
-              <Link
-                href="/suggest-yourself"
-                className="px-3.5 py-1.5 text-xs font-bold text-brand-primary hover:bg-white/5 rounded-lg transition-all flex items-center space-x-1.5 cursor-pointer"
-              >
-                <Sparkles className="w-3.5 h-3.5" />
-                <span>Verifikasi Mandiri</span>
-              </Link>
-              <div className="h-4 w-px bg-white/10 mx-0.5" />
-              <button
-                onClick={() => setIsSuggestOpen(true)}
-                className="px-3.5 py-1.5 text-xs font-semibold text-white/90 hover:text-white hover:bg-white/5 rounded-lg transition-all flex items-center space-x-1.5 cursor-pointer"
-              >
-                <Plus className="w-3.5 h-3.5" />
-                <span>Sarankan Perusahaan</span>
-              </button>
-            </div>
-            {/* Telegram Channel Link */}
-            <a 
-              href="https://t.me/remotika_updates" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="px-4 py-2 text-xs font-semibold rounded-xl bg-[#0088cc]/10 hover:bg-[#0088cc]/20 text-[#0088cc] hover:text-[#0088cc]/90 border border-[#0088cc]/20 hover:border-[#0088cc]/35 transition-all flex items-center space-x-1.5 cursor-pointer"
-            >
-              <TelegramIcon className="w-3.5 h-3.5" />
-              <span>Telegram</span>
-            </a>
-            <a 
-              href={process.env.NEXT_PUBLIC_GITHUB_REPO || "https://github.com/hryagstn/remotika"} 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="p-2 rounded-xl bg-white/5 hover:bg-white/10 border border-white/5 text-white/70 hover:text-white transition-all"
-            >
-              <Github className="w-4 h-4" />
-            </a>
-          </div>
-
-          {/* Mobile Menu Button (Hamburger) */}
-          <div className="flex md:hidden">
-            <button
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="p-2 rounded-xl bg-white/5 border border-white/10 text-white/85 hover:text-white transition-colors"
-            >
-              {isMobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
-            </button>
-          </div>
-        </div>
-
-        {/* Mobile Navigation Drawer */}
-        {isMobileMenuOpen && (
-          <div className="md:hidden border-t border-border-faint bg-bg-surface/98 backdrop-blur-lg animate-fade-in">
-            <div className="px-4 pt-3 pb-6 space-y-4">
-              <div className="flex flex-col space-y-2">
-                <Link
-                  href="/"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="px-3 py-2 rounded-xl text-xs font-semibold text-white bg-white/5 border border-white/10 text-center"
-                >
-                  Direktori
-                </Link>
-                <Link
-                  href="/cara-kerja"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="px-3 py-2 rounded-xl text-xs font-semibold text-white/70 hover:text-white hover:bg-white/5 text-center"
-                >
-                  Cara Kerja
-                </Link>
-                <Link
-                  href="/readiness-check"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="px-3 py-2 rounded-xl text-xs font-semibold text-white/70 hover:text-white hover:bg-white/5 text-center"
-                >
-                  Cek Kesiapan
-                </Link>
-                <Link
-                  href="/berkontribusi"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="px-3 py-2 rounded-xl text-xs font-semibold text-white/70 hover:text-white hover:bg-white/5 text-center"
-                >
-                  Berkontribusi
-                </Link>
-              </div>
-
-              <div className="h-px bg-white/5 my-2" />
-
-              <div className="flex flex-col space-y-2">
-                <Link
-                  href="/suggest-yourself"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="w-full py-2.5 rounded-xl text-xs font-bold text-center bg-brand-primary text-white shadow-lg shadow-brand-primary/20 flex items-center justify-center space-x-2"
-                >
-                  <Sparkles className="w-4 h-4" />
-                  <span>Verifikasi Mandiri</span>
-                </Link>
-                
-                <button
-                  onClick={() => {
-                    setIsMobileMenuOpen(false);
-                    setIsSuggestOpen(true);
-                  }}
-                  className="w-full py-2.5 rounded-xl text-xs font-semibold text-center bg-white/5 border border-white/10 text-white hover:bg-white/10 flex items-center justify-center space-x-2"
-                >
-                  <Plus className="w-4 h-4" />
-                  <span>Sarankan Perusahaan</span>
-                </button>
-
-                <div className="grid grid-cols-2 gap-2 pt-1">
-                  <a
-                    href="https://t.me/remotika_updates"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="py-2 rounded-xl text-xs font-semibold text-center bg-[#0088cc]/10 text-[#0088cc] border border-[#0088cc]/20 flex items-center justify-center space-x-1.5"
-                  >
-                    <TelegramIcon className="w-3.5 h-3.5" />
-                    <span>Telegram</span>
-                  </a>
-                  <a
-                    href={process.env.NEXT_PUBLIC_GITHUB_REPO || "https://github.com/hryagstn/remotika"}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="py-2 rounded-xl text-xs font-semibold text-center bg-white/5 text-white/70 border border-white/5 flex items-center justify-center space-x-1.5"
-                  >
-                    <Github className="w-3.5 h-3.5" />
-                    <span>GitHub</span>
-                  </a>
+                <div className="flex items-center gap-2 flex-wrap">
+                  <h2 className="text-sm font-semibold text-foreground">Pantau lowongan remote baru setiap hari</h2>
+                  <Badge variant="secondary" className="text-[10px] py-0 px-1.5 font-normal">
+                    Telegram Channel
+                  </Badge>
                 </div>
+                <p className="text-xs text-muted-foreground mt-0.5">
+                  Rangkuman posisi baru dan perusahaan terverifikasi langsung via <span className="font-medium text-foreground">@remotika_updates</span>.
+                </p>
               </div>
             </div>
-          </div>
-        )}
-      </header>
-
-      {/* Main Container */}
-      <main className="flex-1 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full relative z-10 space-y-12 pt-20">
-        
-        {/* Hero Section */}
-        <section className="text-center space-y-6 animate-fade-in max-w-3xl mx-auto py-4">
-          <div className="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-white/70 text-xs font-medium">
-            <span className="flex h-2 w-2 rounded-full bg-brand-accent animate-ping" />
-            <span>Verifikasi Berbasis Organisasi via API GitHub</span>
-          </div>
-
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight font-outfit">
-            Temukan perusahaan global yang <span className="text-gradient">memercayai talenta Indonesia</span>
-          </h1>
-
-          <p className="text-base sm:text-lg text-white/60 leading-relaxed font-inter">
-            Bukan sekadar klaim sepihak. Remotika memindai keanggotaan GitHub publik dari perusahaan internasional untuk memverifikasi tempat insinyur Indonesia benar-benar bekerja.
-          </p>
-
-          <div className="pt-2 flex flex-wrap justify-center gap-6 text-xs text-white/50">
-            <div className="flex items-center space-x-1.5 bg-white/5 px-3 py-1.5 rounded-lg border border-white/5">
-              <CheckCircle className="w-3.5 h-3.5 text-brand-accent" />
-              <span>100% Terverifikasi Kriptografis</span>
-            </div>
-            <div className="flex items-center space-x-1.5 bg-white/5 px-3 py-1.5 rounded-lg border border-white/5">
-              <Users className="w-3.5 h-3.5 text-brand-primary" />
-              <span>Saran Komunitas Aktif</span>
-            </div>
-            <div className="flex items-center space-x-1.5 bg-white/5 px-3 py-1.5 rounded-lg border border-white/5">
-              <TrendingUp className="w-3.5 h-3.5 text-brand-secondary" />
-              <span>Pengayaan Lowongan Kerja Aktif</span>
-            </div>
-          </div>
-        </section>
-
-        {/* Filter & Controls Panel */}
-        <section className="glass-panel p-5 rounded-2xl border border-white/10 space-y-4 shadow-xl shadow-black/40">
-          <div className="flex flex-col md:flex-row gap-4 items-center justify-between">
-            {/* Search Input */}
-            <div className="relative w-full md:max-w-md">
-              <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-white/40" />
-              <input
-                type="text"
-                value={search}
-                onChange={(e) => setSearch(e.target.value)}
-                placeholder="Cari berdasarkan perusahaan, username GitHub, atau industri..."
-                className="w-full bg-[#080d24] border border-white/10 focus:border-brand-primary focus:ring-1 focus:ring-brand-primary rounded-xl pl-10 pr-10 py-2.5 text-sm text-white/90 placeholder:text-white/40 outline-none transition-all"
-              />
-              {search && (
-                <button 
-                  onClick={() => setSearch("")}
-                  className="absolute right-3 top-1/2 -translate-y-1/2 text-white/40 hover:text-white"
-                >
-                  <X className="w-4 h-4" />
-                </button>
-              )}
-            </div>
-
-            {/* Filter Toggle, Sort Select & CSV Button */}
-            <div className="flex flex-wrap items-center gap-3 w-full md:w-auto justify-end">
-              {/* Sort Select */}
-              <div className="relative">
-                <select
-                  value={sortBy}
-                  onChange={(e) => setSortBy(e.target.value as "members" | "verified" | "name" | "jobs")}
-                  className="appearance-none bg-[#080d24] border border-white/10 hover:border-white/20 focus:border-brand-primary rounded-xl pl-3.5 pr-8 py-2.5 text-xs text-white/80 focus:text-white font-semibold outline-none transition-all cursor-pointer"
-                >
-                  <option value="members">Urutan: Anggota Terbanyak</option>
-                  <option value="jobs">Urutan: Loker Terbanyak</option>
-                  <option value="verified">Urutan: Baru Terverifikasi</option>
-                  <option value="name">Urutan: Nama (A-Z)</option>
-                </select>
-                <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2.5 text-white/40">
-                  <ChevronDown className="w-3.5 h-3.5" />
-                </div>
-              </div>
-
-              <label className="flex items-center space-x-2 text-xs font-semibold text-white/70 cursor-pointer select-none border border-white/10 px-3 py-2.5 rounded-xl bg-[#080d24] hover:bg-white/5 transition-all">
-                <input
-                  type="checkbox"
-                  checked={hasJobsOnly}
-                  onChange={(e) => setHasJobsOnly(e.target.checked)}
-                  className="rounded border-white/10 text-brand-primary focus:ring-brand-primary bg-[#080d24] h-4 w-4 transition-all"
+            <Button
+              variant="outline"
+              size="sm"
+              className="rounded-lg text-xs font-semibold shrink-0 w-full sm:w-auto h-8 px-3.5"
+              render={
+                <a
+                  href={TELEGRAM_CHANNEL_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 />
-                <span className="flex items-center space-x-1.5">
-                  <Briefcase className="w-3.5 h-3.5 text-brand-secondary" />
-                  <span>Memiliki Lowongan Aktif</span>
-                </span>
-              </label>
-
-              <label className="flex items-center space-x-2 text-xs font-semibold text-white/70 cursor-pointer select-none border border-white/10 px-3 py-2.5 rounded-xl bg-[#080d24] hover:bg-white/5 transition-all">
-                <input
-                  type="checkbox"
-                  checked={hideWatchlist}
-                  onChange={(e) => setHideWatchlist(e.target.checked)}
-                  className="rounded border-white/10 text-brand-primary focus:ring-brand-primary bg-[#080d24] h-4 w-4 transition-all"
-                />
-                <span className="flex items-center space-x-1.5">
-                  <Building className="w-3.5 h-3.5 text-brand-accent" />
-                  <span>Sembunyikan watchlist (unverified)</span>
-                </span>
-              </label>
-
-              <button
-                onClick={handleExportCSV}
-                className="px-4 py-2.5 rounded-xl border border-white/10 hover:border-white/20 bg-[#080d24] hover:bg-white/5 text-white/80 hover:text-white text-xs font-semibold flex items-center space-x-1.5 transition-all"
-              >
-                <Download className="w-3.5 h-3.5" />
-                <span>Ekspor CSV</span>
-              </button>
-            </div>
+              }
+            >
+              Gabung Channel ↗
+            </Button>
           </div>
 
-          {/* Level Filter Pills */}
-          <div className="border-t border-white/5 pt-3 flex flex-wrap items-center gap-1.5">
-            <span className="text-xs font-semibold text-white/50 mr-2">Level Verifikasi:</span>
-            {labels.map((lbl) => (
-              <button
-                key={lbl}
-                onClick={() => setLabelFilter(lbl)}
-                className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all border ${
-                  labelFilter === lbl
-                    ? "bg-brand-primary border-brand-primary text-white shadow-md shadow-brand-primary/20"
-                    : "bg-white/5 border-white/5 text-white/60 hover:bg-white/10 hover:text-white"
-                }`}
-              >
-                {lbl === "All" ? "Semua" : lbl}
-              </button>
-            ))}
+          <div className="search-toolbar">
+            <label className="directory-search"><span className="sr-only">Cari perusahaan, organisasi GitHub, atau industri</span><Search size={20} aria-hidden="true"/><input type="search" value={search} onChange={event=>setSearch(event.target.value)} placeholder="Cari nama perusahaan atau industri"/>{search && <button type="button" onClick={()=>setSearch("")} aria-label="Hapus pencarian"><X size={18}/></button>}</label>
+            <label className="sort-control"><span>Urutkan</span><select value={sortBy} onChange={event=>setSortBy(event.target.value as SortKey)}><option value="members">Anggota terbanyak</option><option value="jobs">Lowongan terbanyak</option><option value="verified">Terakhir diperiksa</option><option value="name">Nama A–Z</option></select></label>
           </div>
-
-          {/* Category Filter Pills */}
-          <div className="border-t border-white/5 pt-3 flex flex-wrap items-center gap-1.5">
-            <span className="text-xs font-semibold text-white/50 mr-2">Kategori Peran:</span>
-            {categories.map((cat) => (
-              <button
-                key={cat}
-                onClick={() => setCategoryFilter(cat)}
-                className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all border ${
-                  categoryFilter === cat
-                    ? "bg-brand-primary border-brand-primary text-white shadow-md shadow-brand-primary/20"
-                    : "bg-white/5 border-white/5 text-white/60 hover:bg-white/10 hover:text-white"
-                }`}
-              >
-                {cat === "All Roles" ? "Semua Peran" :
-                 cat === "Engineering" ? "Engineering" :
-                 cat === "Design" ? "Desain" :
-                 cat === "Product" ? "Produk" :
-                 cat === "Marketing" ? "Pemasaran" :
-                 cat === "Data" ? "Data" :
-                 cat === "Operations" ? "Operasional" : cat}
-              </button>
-            ))}
-          </div>
-        </section>
-
-        {/* Listing Stats */}
-        <div className="flex justify-between items-center text-xs text-white/50 px-2">
-          <div>
-            Menampilkan <span className="text-white font-semibold">{filteredCompanies.length}</span> dari <span className="text-white font-semibold">{companies.length}</span> perusahaan terverifikasi
-          </div>
-          <div>
-            Database Terakhir Diperbarui: <span className="text-white font-semibold" suppressHydrationWarning>{lastUpdated}</span>
-          </div>
-        </div>
-
-        {/* Company Card Grid */}
-        <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-          {filteredCompanies.length > 0 ? (
-            filteredCompanies.map((c) => {
-              const isExpanded = expandedCard === c.id;
-              const isWatchlist = c.status === "watchlist";
-              const hasGithub = c.githubOrg && c.githubOrg.trim() !== "";
-              const companyLink = `/company/${c.githubOrg?.toLowerCase() || slugify(c.name) || c.id}`;
-
-              return (
-                <div 
-                  key={c.id} 
-                  className={`relative bg-bg-surface border rounded-2xl hover:scale-[1.01] hover:border-white/20 transition-all duration-300 flex flex-col justify-between overflow-hidden shadow-lg hover:shadow-2xl ${
-                    isWatchlist 
-                      ? "border-dashed border-white/20 opacity-80 hover:opacity-100" 
-                      : c.label === "Top Pick" 
-                        ? "border-amber-500/20 hover:border-amber-500/40" 
-                        : "border-border-faint"
-                  }`}
-                >
-                  <div className="p-5 sm:p-6 space-y-4">
-                    {/* Card Header */}
-                    <div className="flex items-start justify-between gap-3">
-                      <div className="flex items-center space-x-3">
-                        {/* Company Logo Initials fallback (Flat tier color as per Stitch spec) */}
-                        <Link href={companyLink}>
-                          <div className={`w-12 h-12 rounded-xl flex items-center justify-center font-bold text-lg text-white shadow-inner shrink-0 ${isWatchlist ? "bg-gray-800 text-white/70" : getTierFlatColor(c.label)}`}>
-                            {c.name.substring(0, 2).toUpperCase()}
-                          </div>
-                        </Link>
-                        <div>
-                          <Link href={companyLink} className="group/title">
-                            <h3 className="font-bold text-white text-sm sm:text-base font-outfit flex items-center gap-1.5 hover:text-brand-primary transition-colors line-clamp-1">
-                              {c.name}
-                            </h3>
-                          </Link>
-                          <span className="text-xs text-white/40 block truncate max-w-[150px]">
-                            {hasGithub ? `@${c.githubOrg}` : "No GitHub Org"}
-                          </span>
-                        </div>
-                      </div>
-
-                      {/* GitHub Link */}
-                      {hasGithub && (
-                        <a 
-                          href={c.githubOrgUrl} 
-                          target="_blank" 
-                          rel="noopener noreferrer" 
-                          className="p-1.5 rounded-lg bg-white/5 text-white/40 hover:text-white hover:bg-white/10 transition-all shrink-0"
-                        >
-                          <ExternalLink className="w-3.5 h-3.5" />
-                        </a>
-                      )}
-                    </div>
-
-                    {/* Verified Level Badge vs Watchlist Badge */}
-                    <div className="flex flex-wrap items-center gap-1.5">
-                      {isWatchlist ? (
-                        <span className="text-[9px] uppercase tracking-wider px-2 py-0.5 rounded-full font-bold border border-white/10 text-white/50 border-dashed bg-white/5">
-                          Belum Terverifikasi
-                        </span>
-                      ) : (
-                        <>
-                          <span className={`text-[9px] uppercase tracking-wider px-2 py-0.5 rounded-full font-bold border flex items-center gap-0.5 ${getLabelStyles(c.label)}`}>
-                            <span className="font-sans">✓</span>
-                            <span>{c.label}</span>
-                          </span>
-                          <span className="bg-white/5 border border-white/5 text-white/70 text-[10px] font-semibold px-2 py-0.5 rounded-full flex items-center gap-1">
-                            <Users className="w-3 h-3 text-brand-primary" />
-                            <span>{c.verifiedIndonesianCount} Anggota</span>
-                          </span>
-                        </>
-                      )}
-                    </div>
-
-                    {/* Industry */}
-                    {c.industry && (
-                      <p className="text-xs text-white/60 line-clamp-2 leading-relaxed">
-                        {c.industry}
-                      </p>
-                    )}
-
-                    {/* Watchlist CTA Box */}
-                    {isWatchlist && (
-                      <div className="p-3.5 rounded-xl bg-white/5 border border-white/5 text-[11px] text-white/60 leading-relaxed space-y-2">
-                        <p>Kerja di sini? Bantu verifikasi — pastikan lokasi profil GitHub-mu menyebutkan kota Indonesia.</p>
-                        {hasGithub ? (
-                          <a
-                            href={c.githubOrgUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-flex items-center gap-1 font-bold text-brand-primary hover:text-brand-secondary transition-colors"
-                          >
-                            <span>Verifikasi via GitHub Org</span>
-                            <ExternalLink className="w-2.5 h-2.5" />
-                          </a>
-                        ) : (
-                          <button
-                            onClick={() => {
-                              setSuggestOrg(c.name);
-                              setIsSuggestOpen(true);
-                            }}
-                            className="inline-flex items-center gap-1 font-bold text-brand-primary hover:text-brand-secondary transition-colors text-left focus:outline-none"
-                          >
-                            <span>Hubungkan GitHub Org</span>
-                            <Plus className="w-2.5 h-2.5" />
-                          </button>
-                        )}
-                      </div>
-                    )}
-
-                    {/* Active Jobs Section */}
-                    {c.hasActiveJobs && c.activeJobs && c.activeJobs.length > 0 && (
-                      <div className="border-t border-white/5 pt-3.5 space-y-2">
-                        <span className="text-[9px] font-bold uppercase tracking-wider text-brand-secondary flex items-center gap-1">
-                          <Briefcase className="w-3 h-3" />
-                          <span>Lowongan Kerja Remote Aktif ({c.activeJobs.length})</span>
-                        </span>
-                        <div className="space-y-1.5">
-                          {c.activeJobs.slice(0, 2).map((job, idx) => (
-                            <a 
-                              key={idx} 
-                              href={job.url} 
-                              target="_blank" 
-                              rel="noopener noreferrer"
-                              className="group block p-2 rounded-lg bg-white/5 hover:bg-white/10 transition-all border border-white/5"
-                            >
-                              <div className="flex justify-between items-start gap-1">
-                                <span className="text-xs font-semibold text-white/90 group-hover:text-brand-primary transition-colors line-clamp-1">{job.title}</span>
-                                <ExternalLink className="w-2.5 h-2.5 text-white/30 group-hover:text-white/70 transition-all shrink-0" />
-                              </div>
-                              <div className="flex justify-between items-center mt-1 text-[9px] text-white/40">
-                                <span className="line-clamp-1">{job.tags.join(", ")}</span>
-                                {job.salary && <span className="text-white/60 font-semibold">{job.salary} / tahun</span>}
-                              </div>
-                            </a>
-                          ))}
-                        </div>
-                      </div>
-                    )}
-
-                    {/* Career Page Link (when no active jobs from API) */}
-                    {(!c.hasActiveJobs || !c.activeJobs || c.activeJobs.length === 0) && c.jobSources?.careerPageUrl && (
-                      <div className="border-t border-white/5 pt-3.5">
-                        <a
-                          href={c.jobSources.careerPageUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="flex items-center gap-2 p-2 rounded-lg bg-brand-primary/5 hover:bg-brand-primary/10 border border-brand-primary/10 hover:border-brand-primary/20 transition-all group"
-                        >
-                          <Briefcase className="w-3.5 h-3.5 text-brand-primary/60 group-hover:text-brand-primary transition-colors" />
-                          <span className="text-[10px] font-semibold text-white/60 group-hover:text-white/80 transition-colors">Lihat Halaman Karir</span>
-                          <ExternalLink className="w-2.5 h-2.5 text-white/30 group-hover:text-brand-primary ml-auto transition-colors" />
-                        </a>
-                      </div>
-                    )}
-                  </div>
-
-                  {/* Card Actions Footer */}
-                  {isWatchlist ? (
-                    <div className="px-5 sm:px-6 pb-5 pt-3 border-t border-white/5 bg-black/10 flex items-center justify-between text-[11px] text-white/40">
-                      <span>Sumber: {c.source || "RemoteOK"}</span>
-                      <span className="text-[9px] font-bold text-brand-accent/80 uppercase tracking-wider">Watchlist</span>
-                    </div>
-                  ) : (
-                    <div className="px-5 sm:px-6 pb-5 pt-2 border-t border-white/5 bg-black/10 flex items-center justify-between text-[11px]">
-                      <button
-                        onClick={() => setExpandedCard(isExpanded ? null : c.id)}
-                        className="text-white/50 hover:text-white flex items-center space-x-1 font-semibold transition-colors focus:outline-none"
-                      >
-                        {isExpanded ? (
-                          <>
-                            <ChevronUp className="w-3.5 h-3.5" />
-                            <span>Sembunyikan Anggota</span>
-                          </>
-                        ) : (
-                          <>
-                            <ChevronDown className="w-3.5 h-3.5" />
-                            <span>Lihat {c.verifiedMembers.length} Anggota</span>
-                          </>
-                        )}
-                      </button>
-
-                      <button
-                        onClick={() => setActiveBadgeOrg(c.githubOrg)}
-                        className="text-white/40 hover:text-white flex items-center space-x-1 transition-colors focus:outline-none"
-                        title="Ambil kode badge embed"
-                      >
-                        <Code className="w-3.5 h-3.5" />
-                        <span>Ambil Badge</span>
-                      </button>
-                    </div>
-                  )}
-
-                  {/* Expandable member list drawer as absolute overlay to prevent changing card height */}
-                  {isExpanded && (
-                    <div className="absolute inset-0 bg-[#0a0f1e]/98 p-6 flex flex-col justify-between z-20 animate-fade-in border border-brand-primary/30 rounded-2xl">
-                      <div className="space-y-4 flex-1 flex flex-col min-h-0">
-                        <div className="flex justify-between items-center shrink-0">
-                          <span className="text-xs font-bold uppercase tracking-wider text-white/70 flex items-center gap-1.5 font-outfit">
-                            <Users className="w-4 h-4 text-brand-accent" />
-                            <span>Anggota Terverifikasi ({c.verifiedMembers.length})</span>
-                          </span>
-                          <button 
-                            onClick={() => setExpandedCard(null)}
-                            className="text-white/40 hover:text-white p-1 rounded-lg hover:bg-white/5 transition-all"
-                            title="Tutup daftar anggota"
-                          >
-                            <X className="w-4 h-4" />
-                          </button>
-                        </div>
-                        
-                        <div className="grid grid-cols-1 gap-2 overflow-y-auto pr-1 flex-1 min-h-0">
-                          {c.verifiedMembers.map((m) => (
-                            <a 
-                              key={m.id}
-                              href={m.githubProfileUrl}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="flex items-center justify-between p-2 rounded-lg bg-white/5 hover:bg-white/10 transition-all border border-white/5 group"
-                            >
-                              <span className="text-xs font-semibold text-white/80 group-hover:text-white transition-colors flex items-center gap-1.5 font-inter">
-                                <Github className="w-3.5 h-3.5 text-white/50 group-hover:text-white" />
-                                <span>{m.githubLogin}</span>
-                              </span>
-                              <span className="text-[10px] text-white/40 flex items-center gap-1 max-w-[130px] truncate font-inter">
-                                <MapPin className="w-2.5 h-2.5 shrink-0 text-brand-primary" />
-                                <span className="truncate">{m.locationRaw || "Indonesia"}</span>
-                              </span>
-                            </a>
-                          ))}
-                        </div>
-                      </div>
-                      
-                      <button
-                        onClick={() => setExpandedCard(null)}
-                        className="mt-4 w-full py-2.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-xs font-semibold text-white transition-all text-center shrink-0 font-inter"
-                      >
-                        Kembali ke Info Perusahaan
-                      </button>
-                    </div>
-                  )}
-                </div>
-              );
-            })
-          ) : (
-            <div className="col-span-full glass-panel py-16 px-6 text-center rounded-2xl border border-white/10 space-y-4">
-              <Building className="w-12 h-12 text-white/30 mx-auto" />
-              <div className="space-y-1">
-                <h3 className="font-bold text-lg text-white font-outfit">Tidak ada perusahaan yang cocok dengan filter Anda</h3>
-                <p className="text-sm text-white/50 max-w-sm mx-auto">Coba hapus kueri pencarian Anda atau pilih tingkat verifikasi yang berbeda.</p>
-              </div>
-              <button 
-                onClick={() => { setSearch(""); setLabelFilter("All"); setCategoryFilter("All Roles"); setHasJobsOnly(false); }}
-                className="px-4 py-2 text-xs font-semibold rounded-lg bg-white/10 hover:bg-white/15 text-white transition-all border border-white/10"
-              >
-                Atur Ulang Filter
-              </button>
-            </div>
-          )}
+          <div className="filter-toolbar"><label><input type="checkbox" checked={hasJobsOnly} onChange={event=>setHasJobsOnly(event.target.checked)}/> Ada lowongan</label><label><input type="checkbox" checked={hideWatchlist} onChange={event=>setHideWatchlist(event.target.checked)}/> Hanya dengan bukti publik</label><details className="filter-details"><summary>Filter lainnya{labelFilter!=="All" || categoryFilter!=="All Roles" ? " · aktif" : ""}</summary><div><FilterGroup label="Jumlah bukti publik" values={labels} active={labelFilter} onChange={setLabelFilter} format={value=>value==="All"?"Semua tingkat":value}/><FilterGroup label="Bidang" values={categories} active={categoryFilter} onChange={setCategoryFilter} format={value=>categoryLabels[value]}/><button type="button" className="quiet-link" onClick={resetFilters}>Reset filter</button></div></details></div>
+          <div className="results-summary"><p aria-live="polite">{filteredCompanies.length} perusahaan · diperiksa {lastUpdated}</p><button type="button" onClick={exportCsv}>Unduh CSV</button></div>
+          <div className="company-list-head" aria-hidden="true"><span>Perusahaan</span><span>Bukti publik</span><span>Lowongan</span><span>Diperiksa</span></div>
+          <div className="company-list">{filteredCompanies.map(company=><CompanyRow key={company.id} company={company} expanded={expandedCard===company.id} onToggleMembers={()=>setExpandedCard(expandedCard===company.id?null:company.id)} onBadge={()=>{setCopied(false);setBadgeOrg(company.githubOrg);}} onSuggest={name=>{setSuggestOrg(name);setSuggestOpen(true);}}/>)}</div>
+          {!filteredCompanies.length && <div className="directory-empty"><h2>Tidak ada perusahaan yang cocok</h2><p>Coba nama lain atau kurangi filter yang dipilih.</p><button type="button" onClick={resetFilters} className="button-secondary">Reset pencarian</button></div>}
+          <div className="directory-bottom"><p>Jumlah anggota mengacu pada profil publik, bukan jumlah seluruh karyawan.</p><button type="button" onClick={()=>setSuggestOpen(true)} className="quiet-link">Sarankan perusahaan →</button></div>
         </section>
       </main>
 
-      {/* Footer */}
-      <footer className="border-t border-border-faint py-10 mt-20 relative z-10 glass-panel">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
-          <div className="flex justify-center items-center space-x-1.5 text-xs text-white/40">
-            <span>Dibuat untuk Freelancer dan Pencari Kerja Indonesia</span>
-          </div>
-          <p className="text-[11px] text-white/30 max-w-md mx-auto leading-relaxed">
-            Data diverifikasi secara dinamis dengan memindai riwayat aktivitas organisasi publik di GitHub. Dukung open-source. Kirimkan saran Anda dan bergabunglah dalam revolusi teknologi Indonesia.
-          </p>
-          <div className="text-[10px] text-white/20">
-            © 2026 Remotika. Hak Cipta Dilindungi Undang-Undang.
-          </div>
-        </div>
-      </footer>
 
-      {/* Suggest a Company Modal */}
-      {isSuggestOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-fade-in">
-          <div className="glass-panel w-full max-w-md rounded-2xl border border-white/10 shadow-2xl p-6 relative space-y-5">
-            <button 
-              onClick={() => { setIsSuggestOpen(false); setSuggestStatus(null); }}
-              className="absolute right-4 top-4 p-1 rounded-lg text-white/40 hover:text-white hover:bg-white/5 transition-all"
-            >
-              <X className="w-5 h-5" />
-            </button>
-
-            <div className="space-y-1">
-              <h2 className="text-xl font-bold font-outfit text-white flex items-center gap-2">
-                <span>Sarankan Perusahaan</span>
-              </h2>
-              <p className="text-xs text-white/50 leading-relaxed">
-                Tambahkan perusahaan internasional/global ke dalam antrean kami. Kami akan menjalankan pipeline verifikasi pada organisasi GitHub mereka untuk menemukan anggota dari Indonesia.
-              </p>
-            </div>
-
-            <form onSubmit={handleSuggestSubmit} className="space-y-4">
-              <div className="space-y-1.5">
-                <label className="text-xs font-bold text-white/70 uppercase tracking-wider block">Username Org GitHub</label>
-                <div className="relative">
-                  <span className="absolute left-3 top-1/2 -translate-y-1/2 text-white/40 text-sm font-semibold select-none">github.com/</span>
-                  <input
-                    type="text"
-                    required
-                    value={suggestOrg}
-                    onChange={(e) => setSuggestOrg(e.target.value)}
-                    placeholder="shopify"
-                    disabled={isSuggestPending}
-                    className="w-full bg-[#080d24] border border-white/10 focus:border-brand-primary focus:ring-1 focus:ring-brand-primary rounded-xl pl-[100px] pr-4 py-2.5 text-sm text-white outline-none transition-all placeholder:text-white/30"
-                  />
-                </div>
-              </div>
-
-              <div className="space-y-1.5">
-                <label className="text-xs font-bold text-white/70 uppercase tracking-wider block">Email Anda (Opsional)</label>
-                <div className="relative">
-                  <Mail className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-white/40" />
-                  <input
-                    type="email"
-                    value={suggestEmail}
-                    onChange={(e) => setSuggestByEmail(e.target.value)}
-                    placeholder="you@example.com"
-                    disabled={isSuggestPending}
-                    className="w-full bg-[#080d24] border border-white/10 focus:border-brand-primary focus:ring-1 focus:ring-brand-primary rounded-xl pl-10 pr-4 py-2.5 text-sm text-white outline-none transition-all placeholder:text-white/30"
-                  />
-                </div>
-              </div>
-
-              {suggestStatus && (
-                <div className={`p-3.5 rounded-xl text-xs border ${
-                  suggestStatus.success 
-                    ? "bg-emerald-500/10 border-emerald-500/20 text-emerald-400" 
-                    : "bg-rose-500/10 border-rose-500/20 text-rose-400"
-                }`}>
-                  {suggestStatus.message}
-                </div>
-              )}
-
-              <button
-                type="submit"
-                disabled={isSuggestPending}
-                className="w-full py-2.5 rounded-xl bg-gradient-to-r from-brand-primary to-brand-secondary text-sm font-semibold text-white shadow-lg shadow-brand-primary/20 hover:opacity-95 disabled:opacity-50 transition-all flex items-center justify-center space-x-1.5"
-              >
-                {isSuggestPending ? (
-                  <span className="border-2 border-white/30 border-t-white rounded-full w-4 h-4 animate-spin" />
-                ) : (
-                  <span>Kirim Saran</span>
-                )}
-              </button>
-            </form>
-          </div>
-        </div>
-      )}
-
-      {/* Embed Badge Generator Modal */}
-      {activeBadgeOrg && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-fade-in">
-          <div className="glass-panel w-full max-w-lg rounded-2xl border border-white/10 shadow-2xl p-6 relative space-y-5">
-            <button 
-              onClick={() => setActiveBadgeOrg(null)}
-              className="absolute right-4 top-4 p-1 rounded-lg text-white/40 hover:text-white hover:bg-white/5 transition-all"
-            >
-              <X className="w-5 h-5" />
-            </button>
-
-            <div className="space-y-1">
-              <h2 className="text-xl font-bold font-outfit text-white flex items-center gap-2">
-                <Code className="w-5 h-5 text-brand-primary" />
-                <span>Badge Embed README</span>
-              </h2>
-              <p className="text-xs text-white/50 leading-relaxed">
-                Sebarkan kabar baik ini! Pasang badge terverifikasi ini di README repositori perusahaan Anda untuk menunjukkan bahwa tim engineering Anda memercayai talenta remote dari Indonesia.
-              </p>
-            </div>
-
-            <div className="space-y-4">
-              {/* Badge Preview */}
-              <div className="p-4 rounded-xl bg-black/30 border border-white/5 flex flex-col items-center justify-center space-y-2">
-                <span className="text-[10px] uppercase font-bold text-white/40 tracking-wider">Pratinjau Badge</span>
-                {/* Embedded SVG preview */}
-                <div className="inline-flex rounded overflow-hidden shadow-md text-[11px] font-bold font-sans">
-                  <div className="bg-[#1f2937] text-white px-2.5 py-1 flex items-center space-x-1">
-                    <span className="w-1.5 h-1.5 rounded-full bg-brand-primary animate-ping" />
-                    <span>Remotika</span>
-                  </div>
-                  <div className="bg-brand-primary text-white px-2.5 py-1">
-                    Verified Talent
-                  </div>
-                </div>
-              </div>
-
-              {/* Embed markdown code block */}
-              <div className="space-y-1.5">
-                <label className="text-xs font-bold text-white/70 uppercase tracking-wider block">Kode Embed Markdown</label>
-                <div className="relative">
-                  <pre className="bg-[#080d24] border border-white/10 rounded-xl p-3 text-xs text-white/90 overflow-x-auto select-all max-w-full font-mono">
-{`[![Remotika Verified](https://remotika.vercel.app/api/badge?org=${activeBadgeOrg})](https://remotika.vercel.app)`}
-                  </pre>
-                </div>
-              </div>
-
-              <div className="space-y-1.5">
-                <label className="text-xs font-bold text-white/70 uppercase tracking-wider block">Kode Embed HTML</label>
-                <div className="relative">
-                  <pre className="bg-[#080d24] border border-white/10 rounded-xl p-3 text-xs text-white/90 overflow-x-auto select-all max-w-full font-mono">
-{`<a href="https://remotika.vercel.app"><img src="https://remotika.vercel.app/api/badge?org=${activeBadgeOrg}" alt="Remotika Verified" /></a>`}
-                  </pre>
-                </div>
-              </div>
-
-              <button
-                onClick={() => {
-                  navigator.clipboard.writeText(`[![Remotika Verified](https://remotika.vercel.app/api/badge?org=${activeBadgeOrg})](https://remotika.vercel.app)`);
-                  alert("Kode Markdown berhasil disalin!");
-                }}
-                className="w-full py-2.5 rounded-xl border border-white/10 bg-[#080d24] hover:bg-white/5 text-sm font-semibold text-white transition-all"
-              >
-                Salin Kode Markdown
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
+      {suggestOpen && <Modal onClose={() => { setSuggestOpen(false); setSuggestStatus(null); }} title="Sarankan perusahaan" description="Tambahkan organisasi GitHub ke antrean pemeriksaan komunitas."><form onSubmit={sendSuggestion} className="space-y-5"><label className="form-field"><span>Organisasi GitHub</span><div className="input-prefix"><span>github.com/</span><input autoFocus required value={suggestOrg} onChange={(event) => setSuggestOrg(event.target.value)} placeholder="shopify" disabled={suggestPending} /></div></label><label className="form-field"><span>Email (opsional)</span><div className="input-icon"><Mail className="h-4 w-4" /><input type="email" value={suggestEmail} onChange={(event) => setSuggestEmail(event.target.value)} placeholder="nama@contoh.com" disabled={suggestPending} /></div></label>{suggestStatus?.message && <p role="status" className={`rounded-xl border px-4 py-3 text-sm ${suggestStatus.success ? "border-emerald-200 bg-emerald-50 text-emerald-800" : "border-rose-200 bg-rose-50 text-rose-800"}`}>{suggestStatus.message}</p>}<button type="submit" disabled={suggestPending} className="button-primary w-full justify-center py-3 disabled:cursor-wait disabled:opacity-60">{suggestPending ? "Menyiapkan saran…" : "Lanjutkan ke GitHub"}</button><p className="text-[15px] leading-7 text-slate-500">Anda akan diarahkan ke GitHub untuk meninjau dan mengirim issue. Tidak ada data yang dikirim sebelum Anda menyetujuinya di sana.</p></form></Modal>}
+      {badgeOrg && <Modal onClose={() => setBadgeOrg(null)} title="Badge Remotika" description="Tampilkan sinyal verifikasi Remotika di README organisasi Anda."><div className="space-y-5"><div className="flex min-h-28 items-center justify-center rounded-2xl border border-slate-200 bg-slate-50"><div className="inline-flex overflow-hidden rounded-md text-xs font-bold shadow-sm"><span className="bg-slate-900 px-3 py-1.5 text-white">Remotika</span><span className="bg-indigo-600 px-3 py-1.5 text-white">Verified talent</span></div></div><div><p className="mb-2 text-xs font-bold uppercase tracking-[0.12em] text-slate-500">Markdown</p><pre className="overflow-x-auto rounded-2xl bg-slate-950 p-4 text-[15px] leading-7 text-slate-200">{`[![Remotika Verified](https://remotika.vercel.app/api/badge?org=${badgeOrg})](https://remotika.vercel.app)`}</pre></div><button type="button" onClick={copyBadge} className="button-primary w-full justify-center py-3" aria-live="polite">{copied ? <><Check className="h-4 w-4" />Tersalin</> : <><Code2 className="h-4 w-4" />Salin kode Markdown</>}</button></div></Modal>}
     </div>
   );
+}
+
+function FilterGroup({ label, values, active, onChange, format }: { label: string; values: string[]; active: string; onChange: (value: string) => void; format: (value: string) => string }) {
+  return <label className="filter-select"><span>{label}</span><select value={active} onChange={event=>onChange(event.target.value)}>{values.map(value=><option key={value} value={value}>{format(value)}</option>)}</select></label>;
+}
+
+function CompanyRow({ company, expanded, onToggleMembers, onBadge, onSuggest }: { company: CompanyData; expanded: boolean; onToggleMembers: () => void; onBadge: () => void; onSuggest: (name: string) => void }) {
+  const watchlist=company.status==="watchlist";
+  const href=`/company/${company.githubOrg?.toLowerCase() || slugify(company.name) || company.id}`;
+  const date=company.lastVerifiedAt?new Intl.DateTimeFormat("id-ID",{day:"numeric",month:"short",year:"numeric"}).format(new Date(company.lastVerifiedAt)):"Belum diperiksa";
+  return <article className="company-row">
+    <div className="company-row__main">
+      <div className="company-identity"><Link href={href} className="company-monogram" aria-label={`Profil ${company.name}`}>{company.name.slice(0,2).toUpperCase()}</Link><div><h2><Link href={href}>{company.name}</Link></h2><p>{company.industry || (company.githubOrg?`github.com/${company.githubOrg}`:"Organisasi belum ditemukan")}</p></div></div>
+      <div className="company-evidence">{watchlist?<><span className="unconfirmed">Belum ditemukan</span><button type="button" onClick={()=>onSuggest(company.name)}>Kirim sumber</button></>:<><button type="button" aria-expanded={expanded} onClick={onToggleMembers}>{company.verifiedMembers.length} anggota <ChevronDown size={14} aria-hidden="true"/></button><span>{company.label}</span></>}</div>
+      <div className="company-jobs">{company.activeJobs?.length?<><Link href={href+"#lowongan"}>{company.activeJobs.length} lowongan →</Link><span>Lihat posisi dan lokasi</span></>:company.jobSources?.careerPageUrl?<><a href={company.jobSources.careerPageUrl} target="_blank" rel="noopener noreferrer">Halaman karier ↗</a><span>Belum ada posisi tercatat</span></>:<><span>Belum ada lowongan</span><Link href={href}>Lihat profil →</Link></>}</div>
+      <p className="company-date">{date}</p>
+    </div>
+    {expanded && <div className="inline-evidence"><div className="section-heading"><h3>Anggota dengan lokasi Indonesia</h3><button type="button" className="quiet-link" onClick={onBadge}>Salin badge</button></div><ul>{company.verifiedMembers.map(member=><li key={member.id}><a href={member.githubProfileUrl} target="_blank" rel="noopener noreferrer">{member.githubLogin} ↗</a><span>{member.locationRaw || "Indonesia"}</span></li>)}</ul><p>Lokasi berasal dari profil pengguna. <Link href="/cara-kerja#batasan">Baca batasan data</Link>.</p></div>}
+  </article>;
+}
+
+function Modal({ onClose, title, description, children }: { onClose: () => void; title: string; description: string; children: React.ReactNode }) {
+  return <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/65 p-4 backdrop-blur-sm" onMouseDown={(event) => { if (event.target === event.currentTarget) onClose(); }}><section role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-description" className="modal-enter w-full max-w-lg rounded-3xl border border-white/20 bg-white p-6 shadow-2xl sm:p-7"><div className="flex items-start justify-between gap-4"><div><h2 id="modal-title" className="font-outfit text-2xl font-bold tracking-tight text-slate-950">{title}</h2><p id="modal-description" className="mt-2 text-[15px] leading-7 text-slate-600">{description}</p></div><button type="button" onClick={onClose} className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-slate-200 text-slate-500 hover:bg-slate-50 hover:text-slate-950" aria-label="Tutup dialog"><X className="h-5 w-5" /></button></div><div className="mt-6">{children}</div></section></div>;
 }

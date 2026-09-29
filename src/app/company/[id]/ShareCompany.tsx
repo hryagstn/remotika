@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import { Zap } from "lucide-react";
 
 const LinkedinIcon = ({ className = "w-4 h-4" }: { className?: string }) => (
   <svg 
@@ -21,9 +22,7 @@ interface ShareCompanyProps {
 }
 
 export default function ShareCompany({ companyName, companyId, companySlug, verifiedCount, hasActiveJobs }: ShareCompanyProps) {
-  const defaultCaption = verifiedCount > 0
-    ? `${companyName} memiliki developer asal Indonesia terverifikasi di tim mereka — dan saat ini mereka sedang membuka lowongan remote global aktif!\n\nBukan sekadar tebakan, tetapi terverifikasi langsung secara akurat melalui keanggotaan organisasi publik GitHub.\n\nLihat detail peran dan pembuktian verifikasinya di sini: https://remotika.vercel.app/company/${companySlug}`
-    : `${companyName} sedang membuka lowongan remote global aktif! Apakah kamu akan menjadi developer asal Indonesia pertama yang terverifikasi di tim mereka?\n\nCek detail peran dan cara verifikasi keanggotaan organisasi di sini: https://remotika.vercel.app/company/${companySlug}`;
+  const defaultCaption = `Lowongan di ${companyName} tercatat di Remotika.${verifiedCount > 0 ? ` Ada ${verifiedCount} profil anggota dengan lokasi Indonesia dalam data publik.` : ""}\n\nPeriksa posisi, syarat lokasi, dan sumbernya: https://remotika.vercel.app/company/${companySlug}`;
 
   const [caption, setCaption] = useState(defaultCaption);
   const [isDownloading, setIsDownloading] = useState(false);
@@ -84,25 +83,25 @@ export default function ShareCompany({ companyName, companyId, companySlug, veri
   return (
     <div className="glass-panel p-6 rounded-xl border border-brand-secondary/20 space-y-4">
       <h3 className="font-title-md text-title-md text-text-primary flex items-center gap-2 font-bold font-outfit">
-        <span className="text-brand-secondary">⚡</span>
-        <span>Bagikan Peluang Ini</span>
+        <Zap className="w-5 h-5 text-brand-secondary" aria-hidden="true" />
+        <span>Bagikan halaman ini</span>
       </h3>
 
-      <p className="text-text-muted text-xs leading-relaxed">
+      <p className="text-text-muted text-[15px] leading-7">
         {verifiedCount > 0 ? (
           <>
-            Bantu talenta Indonesia lainnya mengetahui bahwa <strong>{companyName}</strong> memiliki tim Indonesia terverifikasi dan sedang membuka lowongan remote aktif!
+            Ada {verifiedCount} profil anggota dengan lokasi Indonesia pada data publik <strong>{companyName}</strong>.
           </>
         ) : (
           <>
-            Bantu talenta Indonesia lainnya mengetahui bahwa <strong>{companyName}</strong> sedang membuka lowongan remote aktif dan jadilah yang pertama terverifikasi!
+            Lihat lowongan yang tercatat untuk <strong>{companyName}</strong> dan periksa syaratnya di sumber asli.
           </>
         )}
       </p>
 
       {/* Editable Textarea for LinkedIn Caption */}
       <div className="space-y-1.5">
-        <label className="text-[10px] font-bold text-white/50 uppercase tracking-wider block">Caption LinkedIn</label>
+        <label className="text-xs font-bold text-white/50 uppercase tracking-wider block">Caption LinkedIn</label>
         <textarea
           value={caption}
           onChange={(e) => setCaption(e.target.value)}

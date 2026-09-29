@@ -1,28 +1,22 @@
 import type { Metadata } from "next";
-import { Outfit, Inter } from "next/font/google";
 import "./globals.css";
+import "./research.css";
+import { SiteFooter, SiteHeader } from "./components/SiteChrome";
+import { Geist } from "next/font/google";
+import { cn } from "@/lib/utils";
+import { TooltipProvider } from "@/components/ui/tooltip";
 
-const outfit = Outfit({
-  variable: "--font-outfit",
-  subsets: ["latin"],
-  display: "swap",
-});
-
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-  display: "swap",
-});
+const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
 export const metadata: Metadata = {
-  title: "Remotika | Temukan Perusahaan Remote Terverifikasi",
-  description: "Temukan perusahaan teknologi asing yang terbukti mempekerjakan developer dari Indonesia. Data akurat 100% yang diverifikasi langsung dari keanggotaan organisasi GitHub.",
+  title: "Remotika | Direktori Perusahaan untuk Talenta Indonesia",
+  description: "Cari perusahaan dengan jejak publik talenta Indonesia. Bandingkan bukti anggota, lowongan, dan sumber datanya.",
   keywords: ["kerja remote", "developer indonesia", "lowongan remote indonesia", "perusahaan terverifikasi", "keanggotaan github", "freelancer indonesia"],
   authors: [{ name: "Remotika Team" }],
   metadataBase: new URL("https://remotika.vercel.app"),
   openGraph: {
     title: "Remotika - Perusahaan Remote Terverifikasi untuk Talenta Indonesia",
-    description: "Temukan perusahaan teknologi asing yang terbukti mempekerjakan developer dari Indonesia. Tanpa klaim sepihak, diverifikasi langsung via organisasi GitHub.",
+    description: "Cari perusahaan dengan jejak publik talenta Indonesia. Lihat lowongan dan sumber datanya.",
     url: "/",
     siteName: "Remotika",
     type: "website",
@@ -50,11 +44,17 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
-      className={`${outfit.variable} ${inter.variable} h-full antialiased scroll-smooth`}
+      lang="id"
+      className={cn("h-full antialiased scroll-smooth", "font-sans", geist.variable)}
     >
-      <body className="min-h-full flex flex-col bg-[#030712] text-[#f3f4f6]">
-        {children}
+      <body className="min-h-full">
+        <TooltipProvider>
+          <SiteHeader />
+          <div className="site-content">
+            <div className="site-content__page">{children}</div>
+          </div>
+          <SiteFooter />
+        </TooltipProvider>
       </body>
     </html>
   );

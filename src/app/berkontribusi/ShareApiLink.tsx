@@ -20,18 +20,18 @@ export default function ShareApiLink() {
   return (
     <button
       onClick={handleCopy}
-      className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/5 hover:border-white/15 text-white/70 hover:text-white transition-all text-xs font-semibold select-none cursor-pointer active:scale-95"
+      className="quiet-link inline-flex min-h-11 items-center gap-2 text-sm"
       title="Salin tautan langsung ke bagian dokumentasi API"
     >
       {copied ? (
         <>
           <Check className="w-3.5 h-3.5 text-brand-secondary animate-pulse" />
-          <span className="text-brand-secondary">Tautan Tersalin!</span>
+          <span>Tautan disalin</span>
         </>
       ) : (
         <>
           <Link2 className="w-3.5 h-3.5 text-brand-primary" />
-          <span>Salin Tautan API Docs</span>
+          <span>Salin tautan</span>
         </>
       )}
     </button>
