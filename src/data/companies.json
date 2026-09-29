@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-09-28T22:28:37.162Z",
+    "lastVerifiedAt": "2026-09-29T21:19:37.407Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -19,11 +19,6 @@
       {
         "title": "Global Head of Communications",
         "url": "https://job-boards.greenhouse.io/xendit/jobs/7806554003",
-        "tags": []
-      },
-      {
-        "title": "Head of Treasury",
-        "url": "https://job-boards.greenhouse.io/xendit/jobs/7653356003",
         "tags": []
       },
       {
@@ -139,7 +134,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-28T22:28:53.829Z",
+    "lastVerifiedAt": "2026-09-29T21:19:54.247Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -173,7 +168,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-28T22:29:10.429Z",
+    "lastVerifiedAt": "2026-09-29T21:20:12.075Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -207,7 +202,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-28T22:29:15.875Z",
+    "lastVerifiedAt": "2026-09-29T21:20:18.320Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -241,7 +236,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-28T22:29:22.256Z",
+    "lastVerifiedAt": "2026-09-29T21:20:25.378Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -430,7 +425,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-28T22:29:27.933Z",
+    "lastVerifiedAt": "2026-09-29T21:20:31.641Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -460,7 +455,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-28T22:29:29.662Z",
+    "lastVerifiedAt": "2026-09-29T21:20:33.519Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -493,7 +488,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-28T22:29:31.667Z",
+    "lastVerifiedAt": "2026-09-29T21:20:35.813Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -668,7 +663,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-28T22:29:34.549Z",
+    "lastVerifiedAt": "2026-09-29T21:20:38.749Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1043,7 +1038,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-28T22:29:47.830Z",
+    "lastVerifiedAt": "2026-09-29T21:20:52.153Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1214,7 +1209,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-28T22:29:52.934Z",
+    "lastVerifiedAt": "2026-09-29T21:20:57.538Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1443,7 +1438,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-28T22:29:55.818Z",
+    "lastVerifiedAt": "2026-09-29T21:21:00.661Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1569,7 +1564,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-28T22:30:02.125Z",
+    "lastVerifiedAt": "2026-09-29T21:21:07.456Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1585,5 +1580,47 @@
     "watchlistReason": "org-found-zero-match",
     "website": "workana.com",
     "verifiedAt": "2026-09-25T20:38:03.521Z"
+  },
+  {
+    "id": "co-186",
+    "name": "Lyric",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "growth-strategist-lyric-1135681",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-09-29T21:37:32.105Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Growth Strategist",
+        "url": "https://remoteOK.com/remote-jobs/remote-growth-strategist-lyric-1135681",
+        "tags": [
+          "marketing",
+          "design",
+          "embedded",
+          "technical",
+          "strategy",
+          "customer support",
+          "dev",
+          "travel",
+          "finance",
+          "exec",
+          "content writing",
+          "senior",
+          "ops",
+          "sales",
+          "golang",
+          "digital nomad"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "lyric.com"
   }
 ]
