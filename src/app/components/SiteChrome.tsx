@@ -84,7 +84,7 @@ export function SiteHeader() {
           >
             <Menu className="size-5" aria-hidden="true" />
           </SheetTrigger>
-          <SheetContent side="right" className="w-[300px] sm:w-[340px] flex flex-col justify-between p-6">
+          <SheetContent side="right" className="w-[85vw] max-w-[340px] flex flex-col justify-between p-6 pt-7">
             <div>
               <SheetHeader className="p-0 pb-4 text-left">
                 <div className="flex items-center gap-2">
