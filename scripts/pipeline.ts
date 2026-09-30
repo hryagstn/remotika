@@ -1705,6 +1705,30 @@ function getCompanySlug(company: CompanyData): string {
   return company.id;
 }
 
+function escapeMarkdown(text: string = ""): string {
+  return (text || "").replace(/([*_`\[\]])/g, "\\$1");
+}
+
+function formatJobsSection(jobs?: ActiveJob[], maxDisplay: number = 3): string {
+  if (!jobs || jobs.length === 0) return "";
+
+  // If there is only 1 job exceeding maxDisplay (e.g. 4 jobs), display all 4 directly
+  const limit = jobs.length === maxDisplay + 1 ? maxDisplay + 1 : maxDisplay;
+  const displayedJobs = jobs.slice(0, limit);
+  const remainingCount = jobs.length - displayedJobs.length;
+
+  const jobList = displayedJobs
+    .map(j => `• ${escapeMarkdown(j.title.trim())}`)
+    .join("\n");
+
+  let section = `\n\n📌 *Lowongan yang tersedia:*\n${jobList}`;
+  if (remainingCount > 0) {
+    section += `\n_(...dan ${remainingCount} lowongan lainnya)_`;
+  }
+
+  return section;
+}
+
 async function notifyNewVerifiedCompanies(initialCompanies: CompanyData[], finalCompanies: CompanyData[]) {
   const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
   const TELEGRAM_CHANNEL_ID = process.env.TELEGRAM_CHANNEL_ID;
@@ -1758,12 +1782,13 @@ async function notifyNewVerifiedCompanies(initialCompanies: CompanyData[], final
   for (const company of newActiveJobCompanies) {
     const slug = getCompanySlug(company);
     const isVerified = company.verifiedIndonesianCount > 0 && company.status !== "watchlist";
+    const jobsSection = formatJobsSection(company.activeJobs, 3);
 
     let messageText = "";
     if (isVerified) {
-      messageText = `🆕 *Perusahaan Terverifikasi Baru di Remotika*\n\n*${company.name}* baru saja terverifikasi! Terkonfirmasi ${company.verifiedIndonesianCount} anggota tim asal Indonesia via GitHub, dan mereka sedang membuka lowongan kerja remote aktif.\n\nLihat selengkapnya di sini: https://remotika.vercel.app/company/${slug}`;
+      messageText = `🆕 *Perusahaan Terverifikasi Baru di Remotika*\n\n*${escapeMarkdown(company.name)}* baru saja terverifikasi! Terkonfirmasi ${company.verifiedIndonesianCount} anggota tim asal Indonesia via GitHub, dan mereka sedang membuka lowongan kerja remote aktif.${jobsSection}\n\nLihat selengkapnya di sini: https://remotika.vercel.app/company/${slug}`;
     } else {
-      messageText = `💼 *Lowongan Remote Baru di Remotika*\n\n*${company.name}* sedang membuka lowongan kerja remote aktif! Saat ini belum ada anggota tim asal Indonesia yang terverifikasi via GitHub — jadilah developer Indonesia pertama di tim mereka!\n\nLihat selengkapnya di sini: https://remotika.vercel.app/company/${slug}`;
+      messageText = `💼 *Lowongan Remote Baru di Remotika*\n\n*${escapeMarkdown(company.name)}* sedang membuka lowongan kerja remote aktif! Saat ini belum ada anggota tim asal Indonesia yang terverifikasi via GitHub — jadilah developer Indonesia pertama di tim mereka!${jobsSection}\n\nLihat selengkapnya di sini: https://remotika.vercel.app/company/${slug}`;
     }
     
     try {
