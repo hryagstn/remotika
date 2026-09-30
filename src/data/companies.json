@@ -1,28 +1,5 @@
 [
   {
-    "id": "co-187",
-    "name": "Rekayasa Solverindo",
-    "githubOrg": "reksolindo-org",
-    "githubOrgUrl": "https://github.com/reksolindo-org",
-    "remoteokSlug": null,
-    "industry": "PT Rekayasa Solverindo (REKSOLINDO) has provided practical material engineering solutions for industries across Indonesia since 2005.",
-    "verifiedIndonesianCount": 1,
-    "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-30T11:39:29.952Z",
-    "verifiedAt": "2026-09-30T11:39:29.952Z",
-    "hasActiveJobs": false,
-    "activeJobs": [],
-    "verifiedMembers": [
-      {
-        "id": "204626097",
-        "githubLogin": "hryagstn",
-        "githubProfileUrl": "https://github.com/hryagstn",
-        "locationRaw": "Bandung, ID"
-      }
-    ],
-    "headquarters": "Indonesia"
-  },
-  {
     "id": "co-9",
     "name": "Xendit",
     "githubOrg": "xendit",
@@ -31,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-09-29T21:19:37.407Z",
+    "lastVerifiedAt": "2026-09-30T21:21:03.395Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -71,7 +48,7 @@
       },
       {
         "title": "RevOps Systems Administrator (Salesforce)",
-        "url": "https://job-boards.greenhouse.io/xendit/jobs/7992262003",
+        "url": "https://job-boards.greenhouse.io/xendit/jobs/7992220003",
         "tags": []
       },
       {
@@ -157,7 +134,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-29T21:19:54.247Z",
+    "lastVerifiedAt": "2026-09-30T21:21:19.608Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -191,7 +168,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-29T21:20:12.075Z",
+    "lastVerifiedAt": "2026-09-30T21:21:36.162Z",
     "hasActiveJobs": false,
     "headquarters": "San Francisco, CA",
     "foundationYear": "2005",
@@ -225,7 +202,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-29T21:20:18.320Z",
+    "lastVerifiedAt": "2026-09-30T21:21:41.485Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -259,7 +236,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-29T21:20:25.378Z",
+    "lastVerifiedAt": "2026-09-30T21:21:47.741Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -448,7 +425,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-29T21:20:31.641Z",
+    "lastVerifiedAt": "2026-09-30T21:21:53.367Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -478,7 +455,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-29T21:20:33.519Z",
+    "lastVerifiedAt": "2026-09-30T21:21:55.026Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -511,7 +488,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-29T21:20:35.813Z",
+    "lastVerifiedAt": "2026-09-30T21:21:56.915Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -686,7 +663,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-29T21:20:38.749Z",
+    "lastVerifiedAt": "2026-09-30T21:21:59.481Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1061,7 +1038,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-29T21:20:52.153Z",
+    "lastVerifiedAt": "2026-09-30T21:22:12.730Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1232,7 +1209,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-29T21:20:57.538Z",
+    "lastVerifiedAt": "2026-09-30T21:22:17.961Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1461,7 +1438,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-29T21:21:00.661Z",
+    "lastVerifiedAt": "2026-09-30T21:22:20.962Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1587,7 +1564,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-29T21:21:07.456Z",
+    "lastVerifiedAt": "2026-09-30T21:22:27.341Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
