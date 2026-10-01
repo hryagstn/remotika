@@ -12,6 +12,7 @@ const TELEGRAM_CHANNEL_URL = "https://t.me/remotika_updates";
 
 interface DashboardProps { initialCompanies: CompanyData[] }
 type SortKey = "members" | "verified" | "name" | "jobs";
+type TabFilter = "all" | "global" | "local" | "watchlist";
 
 const labels = ["All", "Top Pick", "Established", "Indonesia-Friendly", "Confirmed"];
 const categories = ["All Roles", "Engineering", "Design", "Product", "Marketing", "Data", "Operations"];
@@ -36,7 +37,7 @@ export default function Dashboard({ initialCompanies }: DashboardProps) {
   const [search, setSearch] = useState("");
   const [labelFilter, setLabelFilter] = useState("All");
   const [categoryFilter, setCategoryFilter] = useState("All Roles");
-  const [scopeFilter, setScopeFilter] = useState<"all" | "global" | "local">("all");
+  const [tabFilter, setTabFilter] = useState<TabFilter>("all");
   const [hasJobsOnly, setHasJobsOnly] = useState(false);
   const [hideWatchlist, setHideWatchlist] = useState(false);
   const [sortBy, setSortBy] = useState<SortKey>("members");
@@ -72,13 +73,17 @@ export default function Dashboard({ initialCompanies }: DashboardProps) {
   }, [hasModal]);
 
   const stats = useMemo(() => {
+    const total = initialCompanies.length;
     const verified = initialCompanies.filter((company) => company.status !== "watchlist");
-    const globalCount = verified.filter(c => c.scope !== "local").length;
-    const localCount = verified.filter(c => c.scope === "local").length;
+    const globalVerifiedCount = verified.filter(c => c.scope !== "local").length;
+    const localVerifiedCount = verified.filter(c => c.scope === "local").length;
+    const watchlistCount = initialCompanies.filter(c => c.status === "watchlist").length;
     return {
-      companies: verified.length,
-      globalCount,
-      localCount,
+      total,
+      verifiedCount: verified.length,
+      globalVerifiedCount,
+      localVerifiedCount,
+      watchlistCount,
       members: verified.reduce((sum, company) => sum + company.verifiedIndonesianCount, 0),
       jobs: initialCompanies.reduce((sum, company) => sum + (company.activeJobs?.length || 0), 0)
     };
@@ -93,20 +98,37 @@ export default function Dashboard({ initialCompanies }: DashboardProps) {
     const query = search.trim().toLowerCase();
     return initialCompanies.filter((company) => {
       const inSearch = !query || company.name.toLowerCase().includes(query) || company.githubOrg.toLowerCase().includes(query) || Boolean(company.industry?.toLowerCase().includes(query));
-      const inScope = scopeFilter === "all" || (scopeFilter === "local" ? company.scope === "local" : company.scope !== "local");
-      return inSearch && inScope && (labelFilter === "All" || company.label === labelFilter) && (!hasJobsOnly || company.hasActiveJobs) && (!hideWatchlist || company.status !== "watchlist") && matchesCategory(company, categoryFilter);
+      
+      const inTab = (() => {
+        if (tabFilter === "global") return company.status !== "watchlist" && company.scope !== "local";
+        if (tabFilter === "local") return company.status !== "watchlist" && company.scope === "local";
+        if (tabFilter === "watchlist") return company.status === "watchlist";
+        return !hideWatchlist || company.status !== "watchlist";
+      })();
+
+      return inSearch && inTab && (labelFilter === "All" || company.label === labelFilter) && (!hasJobsOnly || company.hasActiveJobs) && matchesCategory(company, categoryFilter);
     }).sort((a, b) => {
       if (sortBy === "name") return a.name.localeCompare(b.name, "id", { sensitivity: "base" });
       if (sortBy === "verified") return new Date(b.verifiedAt || b.lastVerifiedAt || 0).getTime() - new Date(a.verifiedAt || a.lastVerifiedAt || 0).getTime();
       if (sortBy === "jobs") return (b.activeJobs?.length || 0) - (a.activeJobs?.length || 0);
       return b.verifiedIndonesianCount - a.verifiedIndonesianCount;
     });
-  }, [categoryFilter, hasJobsOnly, hideWatchlist, initialCompanies, labelFilter, scopeFilter, search, sortBy]);
+  }, [categoryFilter, hasJobsOnly, hideWatchlist, initialCompanies, labelFilter, tabFilter, search, sortBy]);
 
-  const resetFilters = () => { setSearch(""); setLabelFilter("All"); setCategoryFilter("All Roles"); setScopeFilter("all"); setHasJobsOnly(false); setHideWatchlist(false); };
+  const resetFilters = () => { setSearch(""); setLabelFilter("All"); setCategoryFilter("All Roles"); setTabFilter("all"); setHasJobsOnly(false); setHideWatchlist(false); };
   const exportCsv = () => {
-    const headers = ["Company Name", "Scope", "GitHub Org", "GitHub URL", "Verified Members", "Label", "Industry", "Last Verified"];
-    const rows = filteredCompanies.map((company) => [`"${company.name.replace(/"/g, '""')}"`, company.scope === "local" ? "Local" : "Global", company.githubOrg, company.githubOrgUrl, company.verifiedIndonesianCount, company.label, `"${(company.industry || "").replace(/"/g, '""')}"`, company.lastVerifiedAt ? new Date(company.lastVerifiedAt).toLocaleDateString("id-ID") : "N/A"]);
+    const headers = ["Company Name", "Status", "Scope", "GitHub Org", "GitHub URL", "Verified Members", "Label", "Industry", "Last Verified"];
+    const rows = filteredCompanies.map((company) => [
+      `"${company.name.replace(/"/g, '""')}"`,
+      company.status === "watchlist" ? "Watchlist" : "Verified",
+      company.scope === "local" ? "Local" : "Global",
+      company.githubOrg,
+      company.githubOrgUrl,
+      company.verifiedIndonesianCount,
+      company.label,
+      `"${(company.industry || "").replace(/"/g, '""')}"`,
+      company.lastVerifiedAt ? new Date(company.lastVerifiedAt).toLocaleDateString("id-ID") : "N/A"
+    ]);
     const blob = new Blob([[headers.join(","), ...rows.map((row) => row.join(","))].join("\n")], { type: "text/csv;charset=utf-8" });
     const url = URL.createObjectURL(blob); const anchor = document.createElement("a"); anchor.href = url; anchor.download = "remotika-verified-companies.csv"; anchor.click(); URL.revokeObjectURL(url);
   };
@@ -126,7 +148,7 @@ export default function Dashboard({ initialCompanies }: DashboardProps) {
         <header className="directory-intro">
           <div><p className="eyebrow">Direktori perusahaan</p><h1>Temukan perusahaan global &amp; lokal yang ramah remote.</h1><p>Bandingkan bukti publik keanggotaan GitHub dan lowongan remote aktif.</p></div>
           <div className="directory-context">
-            <span><strong>{stats.companies}</strong> perusahaan ({stats.globalCount} global, {stats.localCount} lokal)</span>
+            <span><strong>{stats.total}</strong> perusahaan ({stats.globalVerifiedCount} global terverifikasi, {stats.localVerifiedCount} lokal terverifikasi, {stats.watchlistCount} watchlist)</span>
             <span><strong>{stats.jobs}</strong> lowongan tercatat</span>
             <a
               href={TELEGRAM_CHANNEL_URL}
@@ -174,39 +196,50 @@ export default function Dashboard({ initialCompanies }: DashboardProps) {
             </Button>
           </div>
 
-          <div className="flex items-center gap-1.5 p-1 rounded-xl bg-slate-100 dark:bg-card border border-border/80 w-fit mb-5">
+          <div className="flex flex-wrap items-center gap-1.5 p-1 rounded-xl bg-slate-100 dark:bg-card border border-border/80 w-fit mb-5">
             <button
               type="button"
-              onClick={() => setScopeFilter("all")}
+              onClick={() => setTabFilter("all")}
               className={`px-3.5 py-1.5 rounded-lg text-xs font-semibold transition-all cursor-pointer ${
-                scopeFilter === "all"
+                tabFilter === "all"
                   ? "bg-white dark:bg-slate-800 text-foreground shadow-sm"
                   : "text-muted-foreground hover:text-foreground"
               }`}
             >
-              Semua ({stats.companies})
+              Semua ({stats.total})
             </button>
             <button
               type="button"
-              onClick={() => setScopeFilter("global")}
+              onClick={() => setTabFilter("global")}
               className={`px-3.5 py-1.5 rounded-lg text-xs font-semibold transition-all cursor-pointer ${
-                scopeFilter === "global"
+                tabFilter === "global"
                   ? "bg-white dark:bg-slate-800 text-foreground shadow-sm"
                   : "text-muted-foreground hover:text-foreground"
               }`}
             >
-              🌐 Global Remote ({stats.globalCount})
+              🌐 Global Terverifikasi ({stats.globalVerifiedCount})
             </button>
             <button
               type="button"
-              onClick={() => setScopeFilter("local")}
+              onClick={() => setTabFilter("local")}
               className={`px-3.5 py-1.5 rounded-lg text-xs font-semibold transition-all cursor-pointer ${
-                scopeFilter === "local"
+                tabFilter === "local"
                   ? "bg-white dark:bg-slate-800 text-foreground shadow-sm"
                   : "text-muted-foreground hover:text-foreground"
               }`}
             >
-              🇮🇩 Indonesia Remote ({stats.localCount})
+              🇮🇩 Lokal Terverifikasi ({stats.localVerifiedCount})
+            </button>
+            <button
+              type="button"
+              onClick={() => setTabFilter("watchlist")}
+              className={`px-3.5 py-1.5 rounded-lg text-xs font-semibold transition-all cursor-pointer ${
+                tabFilter === "watchlist"
+                  ? "bg-white dark:bg-slate-800 text-foreground shadow-sm"
+                  : "text-muted-foreground hover:text-foreground"
+              }`}
+            >
+              📋 Watchlist ({stats.watchlistCount})
             </button>
           </div>
 
@@ -214,7 +247,7 @@ export default function Dashboard({ initialCompanies }: DashboardProps) {
             <label className="directory-search"><span className="sr-only">Cari perusahaan, organisasi GitHub, atau industri</span><Search size={20} aria-hidden="true"/><input type="search" value={search} onChange={event=>setSearch(event.target.value)} placeholder="Cari nama perusahaan atau industri"/>{search && <button type="button" onClick={()=>setSearch("")} aria-label="Hapus pencarian"><X size={18}/></button>}</label>
             <label className="sort-control"><span>Urutkan</span><select value={sortBy} onChange={event=>setSortBy(event.target.value as SortKey)}><option value="members">Anggota terbanyak</option><option value="jobs">Lowongan terbanyak</option><option value="verified">Terakhir diperiksa</option><option value="name">Nama A–Z</option></select></label>
           </div>
-          <div className="filter-toolbar"><label><input type="checkbox" checked={hasJobsOnly} onChange={event=>setHasJobsOnly(event.target.checked)}/> Ada lowongan</label><label><input type="checkbox" checked={hideWatchlist} onChange={event=>setHideWatchlist(event.target.checked)}/> Hanya dengan bukti publik</label><details className="filter-details"><summary>Filter lainnya{labelFilter!=="All" || categoryFilter!=="All Roles" ? " · aktif" : ""}</summary><div><FilterGroup label="Jumlah bukti publik" values={labels} active={labelFilter} onChange={setLabelFilter} format={value=>value==="All"?"Semua tingkat":value}/><FilterGroup label="Bidang" values={categories} active={categoryFilter} onChange={setCategoryFilter} format={value=>categoryLabels[value]}/><button type="button" className="quiet-link" onClick={resetFilters}>Reset filter</button></div></details></div>
+          <div className="filter-toolbar"><label><input type="checkbox" checked={hasJobsOnly} onChange={event=>setHasJobsOnly(event.target.checked)}/> Ada lowongan</label>{tabFilter === "all" && (<label><input type="checkbox" checked={hideWatchlist} onChange={event=>setHideWatchlist(event.target.checked)}/> Hanya dengan bukti publik</label>)}<details className="filter-details"><summary>Filter lainnya{labelFilter!=="All" || categoryFilter!=="All Roles" ? " · aktif" : ""}</summary><div><FilterGroup label="Jumlah bukti publik" values={labels} active={labelFilter} onChange={setLabelFilter} format={value=>value==="All"?"Semua tingkat":value}/><FilterGroup label="Bidang" values={categories} active={categoryFilter} onChange={setCategoryFilter} format={value=>categoryLabels[value]}/><button type="button" className="quiet-link" onClick={resetFilters}>Reset filter</button></div></details></div>
           <div className="results-summary"><p aria-live="polite">{filteredCompanies.length} perusahaan · diperiksa {lastUpdated}</p><button type="button" onClick={exportCsv}>Unduh CSV</button></div>
           <div className="company-list-head" aria-hidden="true"><span>Perusahaan</span><span>Bukti publik</span><span>Lowongan</span><span>Diperiksa</span></div>
           <div className="company-list">{filteredCompanies.map(company=><CompanyRow key={company.id} company={company} expanded={expandedCard===company.id} onToggleMembers={()=>setExpandedCard(expandedCard===company.id?null:company.id)} onBadge={()=>{setCopied(false);setBadgeOrg(company.githubOrg);}} onSuggest={name=>{setSuggestOrg(name);setSuggestOpen(true);}}/>)}</div>
@@ -241,7 +274,7 @@ function CompanyRow({ company, expanded, onToggleMembers, onBadge, onSuggest }: 
   const isLocal = company.scope === "local" || (company.headquarters && company.headquarters.toLowerCase().includes("indonesia"));
   return <article className="company-row">
     <div className="company-row__main">
-      <div className="company-identity"><Link href={href} className="company-monogram" aria-label={`Profil ${company.name}`}>{company.name.slice(0,2).toUpperCase()}</Link><div><div className="flex items-center gap-1.5 flex-wrap"><h2><Link href={href}>{company.name}</Link></h2><span className={`text-[10px] font-semibold px-2 py-0.5 rounded-md ${isLocal ? "bg-amber-500/10 text-amber-700 dark:text-amber-400 border border-amber-500/20" : "bg-sky-500/10 text-sky-700 dark:text-sky-400 border border-sky-500/20"}`}>{isLocal ? "🇮🇩 Lokal" : "🌐 Global"}</span></div><p>{company.industry || (company.githubOrg?`github.com/${company.githubOrg}`:"Organisasi belum ditemukan")}</p></div></div>
+      <div className="company-identity"><Link href={href} className="company-monogram" aria-label={`Profil ${company.name}`}>{company.name.slice(0,2).toUpperCase()}</Link><div><div className="flex items-center gap-1.5 flex-wrap"><h2><Link href={href}>{company.name}</Link></h2><span className={`text-[10px] font-semibold px-2 py-0.5 rounded-md ${isLocal ? "bg-amber-500/10 text-amber-700 dark:text-amber-400 border border-amber-500/20" : "bg-sky-500/10 text-sky-700 dark:text-sky-400 border border-sky-500/20"}`}>{isLocal ? "🇮🇩 Lokal" : "🌐 Global"}</span>{watchlist && <span className="text-[10px] font-semibold px-2 py-0.5 rounded-md bg-slate-500/10 text-slate-600 dark:text-slate-400 border border-slate-500/20">Watchlist</span>}</div><p>{company.industry || (company.githubOrg?`github.com/${company.githubOrg}`:"Organisasi belum ditemukan")}</p></div></div>
       <div className="company-evidence">{watchlist?<><span className="unconfirmed">Belum ditemukan</span><button type="button" onClick={()=>onSuggest(company.name)}>Kirim sumber</button></>:<><button type="button" aria-expanded={expanded} onClick={onToggleMembers}>{company.verifiedMembers.length} anggota <ChevronDown size={14} aria-hidden="true"/></button><span>{company.label}</span></>}</div>
       <div className="company-jobs">{company.activeJobs?.length?<><Link href={href+"#lowongan"}>{company.activeJobs.length} lowongan →</Link><span>Lihat posisi dan lokasi</span></>:company.jobSources?.careerPageUrl?<><a href={company.jobSources.careerPageUrl} target="_blank" rel="noopener noreferrer">Halaman karier ↗</a><span>Belum ada posisi tercatat</span></>:<><span>Belum ada lowongan</span><Link href={href}>Lihat profil →</Link></>}</div>
       <p className="company-date">{date}</p>
