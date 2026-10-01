@@ -1,29 +1,5 @@
 [
   {
-    "id": "co-187",
-    "name": "Rekayasa Solverindo",
-    "githubOrg": "reksolindo-org",
-    "githubOrgUrl": "https://github.com/reksolindo-org",
-    "remoteokSlug": null,
-    "industry": "PT Rekayasa Solverindo (REKSOLINDO) has provided practical material engineering solutions for industries across Indonesia since 2005.",
-    "verifiedIndonesianCount": 1,
-    "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-30T11:39:29.952Z",
-    "verifiedAt": "2026-09-30T11:39:29.952Z",
-    "hasActiveJobs": false,
-    "activeJobs": [],
-    "verifiedMembers": [
-      {
-        "id": "204626097",
-        "githubLogin": "hryagstn",
-        "githubProfileUrl": "https://github.com/hryagstn",
-        "locationRaw": "Bandung, ID"
-      }
-    ],
-    "headquarters": "Indonesia",
-    "scope": "local"
-  },
-  {
     "id": "co-9",
     "name": "Xendit",
     "githubOrg": "xendit",
@@ -32,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-09-30T21:21:03.395Z",
+    "lastVerifiedAt": "2026-10-01T04:23:02.107Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -148,7 +124,32 @@
       "careerPageUrl": "https://www.xendit.co/en/careers"
     },
     "verifiedAt": "2026-06-21T09:23:25.281Z",
-    "scope": "global"
+    "scope": "global",
+    "headquarters": "San Francisco, CA"
+  },
+  {
+    "id": "co-187",
+    "name": "Rekayasa Solverindo",
+    "githubOrg": "reksolindo-org",
+    "githubOrgUrl": "https://github.com/reksolindo-org",
+    "remoteokSlug": "reksolindo-org",
+    "industry": "PT Rekayasa Solverindo (REKSOLINDO) has provided practical material engineering solutions for industries across Indonesia since 2005.",
+    "verifiedIndonesianCount": 1,
+    "label": "Confirmed",
+    "lastVerifiedAt": "2026-10-01T04:22:56.600Z",
+    "verifiedAt": "2026-09-30T11:39:29.952Z",
+    "hasActiveJobs": false,
+    "activeJobs": [],
+    "verifiedMembers": [
+      {
+        "id": "204626097",
+        "githubLogin": "hryagstn",
+        "githubProfileUrl": "https://github.com/hryagstn",
+        "locationRaw": "Bandung, ID"
+      }
+    ],
+    "headquarters": "Indonesia",
+    "scope": "local"
   },
   {
     "id": "co-3",
@@ -159,7 +160,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-30T21:21:19.608Z",
+    "lastVerifiedAt": "2026-10-01T04:23:17.325Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -194,9 +195,9 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-30T21:21:36.162Z",
+    "lastVerifiedAt": "2026-10-01T04:23:32.890Z",
     "hasActiveJobs": false,
-    "headquarters": "San Francisco, CA",
+    "headquarters": "Worldwide",
     "foundationYear": "2005",
     "activeJobs": [],
     "verifiedMembers": [
@@ -229,7 +230,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-30T21:21:41.485Z",
+    "lastVerifiedAt": "2026-10-01T04:23:38.973Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -264,7 +265,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-30T21:21:47.741Z",
+    "lastVerifiedAt": "2026-10-01T04:23:44.849Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -276,7 +277,8 @@
       }
     ],
     "verifiedAt": "2026-06-21T09:23:16.817Z",
-    "scope": "global"
+    "scope": "global",
+    "headquarters": "Global Remote"
   },
   {
     "id": "co-123",
@@ -455,7 +457,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-30T21:21:53.367Z",
+    "lastVerifiedAt": "2026-10-01T04:23:50.791Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -486,7 +488,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-30T21:21:55.026Z",
+    "lastVerifiedAt": "2026-10-01T04:23:52.319Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -520,7 +522,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-30T21:21:56.915Z",
+    "lastVerifiedAt": "2026-10-01T04:23:54.091Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -700,7 +702,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-30T21:21:59.481Z",
+    "lastVerifiedAt": "2026-10-01T04:23:56.529Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1085,7 +1087,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-30T21:22:12.730Z",
+    "lastVerifiedAt": "2026-10-01T04:24:07.671Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1261,7 +1263,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-30T21:22:17.961Z",
+    "lastVerifiedAt": "2026-10-01T04:24:13.427Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1496,7 +1498,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-30T21:22:20.962Z",
+    "lastVerifiedAt": "2026-10-01T04:24:16.099Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1626,7 +1628,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-09-30T21:22:27.341Z",
+    "lastVerifiedAt": "2026-10-01T04:24:21.700Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
