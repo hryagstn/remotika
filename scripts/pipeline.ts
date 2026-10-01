@@ -226,6 +226,7 @@ interface CompanyData {
   source?: "github-scan" | "remoteok" | "community";
   watchlistReason?: "no-org-found" | "org-found-zero-match";
   website?: string;
+  scope?: "global" | "local";
 }
 
 // User location search cache to save GitHub API quota

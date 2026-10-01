@@ -112,7 +112,7 @@ export async function POST(request: NextRequest) {
 
     // 4. Step B: Fetch user profile and verify location
     const userUrl = `https://gitlab.com/api/v4/users/${member.id}`;
-    const userRes = await fetch(userUrl, { headers });
+    const userRes = await fetchGitlabWithFallback(userUrl);
 
     if (!userRes.ok) {
       const errorText = await userRes.text();
@@ -145,7 +145,7 @@ export async function POST(request: NextRequest) {
 
     // 5. Step C: Success! Update dataset
     const groupUrl = `https://gitlab.com/api/v4/groups/${cleanGroupSlug}`;
-    const groupRes = await fetch(groupUrl, { headers });
+    const groupRes = await fetchGitlabWithFallback(groupUrl);
     let groupData: any = {};
     if (groupRes.ok) {
       groupData = await groupRes.json();
