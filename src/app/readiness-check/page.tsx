@@ -256,9 +256,9 @@ export default function ReadinessCheckPage() {
   };
 
   // Pre-filled LinkedIn Captions
-  const linkedinCaptionId = `Saya menggunakan evaluasi mandiri Remotika untuk meninjau kebiasaan teknis, komunikasi, dan keseharian saat bekerja remote. Hasilnya membantu saya memilih hal yang ingin dilatih berikutnya.\n\nhttps://remotika.vercel.app/readiness-check`;
+  const linkedinCaptionId = `Saya menggunakan evaluasi mandiri Remotika untuk meninjau kebiasaan teknis, komunikasi, dan keseharian saat bekerja remote. Hasilnya membantu saya memilih hal yang ingin dilatih berikutnya.\n\nhttps://remotika.my.id/readiness-check`;
 
-  const linkedinCaptionEn = `I used Remotika's self-assessment to reflect on my technical habits, communication, and daily routine for remote work. It helped me choose what to practice next.\n\nhttps://remotika.vercel.app/readiness-check`;
+  const linkedinCaptionEn = `I used Remotika's self-assessment to reflect on my technical habits, communication, and daily routine for remote work. It helped me choose what to practice next.\n\nhttps://remotika.my.id/readiness-check`;
 
   const handleCopyCaption = () => {
     const textToCopy = captionLang === "id" ? linkedinCaptionId : linkedinCaptionEn;

@@ -1,5 +1,29 @@
 [
   {
+    "id": "co-187",
+    "name": "Rekayasa Solverindo",
+    "githubOrg": "reksolindo-org",
+    "githubOrgUrl": "https://github.com/reksolindo-org",
+    "remoteokSlug": null,
+    "industry": "PT Rekayasa Solverindo (REKSOLINDO) has provided practical material engineering solutions for industries across Indonesia since 2005.",
+    "verifiedIndonesianCount": 1,
+    "label": "Confirmed",
+    "lastVerifiedAt": "2026-09-30T11:39:29.952Z",
+    "verifiedAt": "2026-09-30T11:39:29.952Z",
+    "hasActiveJobs": false,
+    "activeJobs": [],
+    "verifiedMembers": [
+      {
+        "id": "204626097",
+        "githubLogin": "hryagstn",
+        "githubProfileUrl": "https://github.com/hryagstn",
+        "locationRaw": "Bandung, ID"
+      }
+    ],
+    "headquarters": "Indonesia",
+    "scope": "local"
+  },
+  {
     "id": "co-9",
     "name": "Xendit",
     "githubOrg": "xendit",
@@ -123,7 +147,8 @@
       "greenhouse": "xendit",
       "careerPageUrl": "https://www.xendit.co/en/careers"
     },
-    "verifiedAt": "2026-06-21T09:23:25.281Z"
+    "verifiedAt": "2026-06-21T09:23:25.281Z",
+    "scope": "global"
   },
   {
     "id": "co-3",
@@ -157,7 +182,8 @@
     "jobSources": {
       "careerPageUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite"
     },
-    "verifiedAt": "2026-06-21T09:22:41.598Z"
+    "verifiedAt": "2026-06-21T09:22:41.598Z",
+    "scope": "global"
   },
   {
     "id": "co-6",
@@ -191,7 +217,8 @@
     "jobSources": {
       "careerPageUrl": "https://automattic.com/work-with-us/"
     },
-    "verifiedAt": "2026-06-21T09:23:00.135Z"
+    "verifiedAt": "2026-06-21T09:23:00.135Z",
+    "scope": "global"
   },
   {
     "id": "co-7",
@@ -225,7 +252,8 @@
     "jobSources": {
       "careerPageUrl": "https://grab.careers/"
     },
-    "verifiedAt": "2026-06-21T09:23:07.503Z"
+    "verifiedAt": "2026-06-21T09:23:07.503Z",
+    "scope": "global"
   },
   {
     "id": "co-8",
@@ -247,7 +275,8 @@
         "locationRaw": "Indonesia"
       }
     ],
-    "verifiedAt": "2026-06-21T09:23:16.817Z"
+    "verifiedAt": "2026-06-21T09:23:16.817Z",
+    "scope": "global"
   },
   {
     "id": "co-123",
@@ -414,7 +443,8 @@
     "status": "watchlist",
     "source": "remoteok",
     "watchlistReason": "no-org-found",
-    "website": "lemon.io"
+    "website": "lemon.io",
+    "scope": "global"
   },
   {
     "id": "co-139",
@@ -444,7 +474,8 @@
     "source": "remoteok",
     "watchlistReason": "org-found-zero-match",
     "website": "benzinga.com",
-    "verifiedAt": "2026-08-31T22:07:51.825Z"
+    "verifiedAt": "2026-08-31T22:07:51.825Z",
+    "scope": "global"
   },
   {
     "id": "co-142",
@@ -477,7 +508,8 @@
     "source": "remoteok",
     "watchlistReason": "org-found-zero-match",
     "website": "orderyoyo.com",
-    "verifiedAt": "2026-09-03T19:58:04.778Z"
+    "verifiedAt": "2026-09-03T19:58:04.778Z",
+    "scope": "global"
   },
   {
     "id": "co-143",
@@ -505,7 +537,8 @@
     "source": "remoteok",
     "watchlistReason": "org-found-zero-match",
     "website": "warehance.com",
-    "verifiedAt": "2026-09-04T19:38:54.942Z"
+    "verifiedAt": "2026-09-04T19:38:54.942Z",
+    "scope": "global"
   },
   {
     "id": "co-149",
@@ -544,7 +577,8 @@
     "status": "watchlist",
     "source": "remoteok",
     "watchlistReason": "no-org-found",
-    "website": "empireground.com"
+    "website": "empireground.com",
+    "scope": "global"
   },
   {
     "id": "co-146",
@@ -591,7 +625,8 @@
     "status": "watchlist",
     "source": "remoteok",
     "watchlistReason": "no-org-found",
-    "website": "imerittechnology.com"
+    "website": "imerittechnology.com",
+    "scope": "global"
   },
   {
     "id": "co-148",
@@ -624,7 +659,8 @@
     "status": "watchlist",
     "source": "remoteok",
     "watchlistReason": "no-org-found",
-    "website": "nope.com"
+    "website": "nope.com",
+    "scope": "global"
   },
   {
     "id": "co-151",
@@ -652,7 +688,8 @@
     "status": "watchlist",
     "source": "remoteok",
     "watchlistReason": "no-org-found",
-    "website": "theaiwhistleblowerinitiative.com"
+    "website": "theaiwhistleblowerinitiative.com",
+    "scope": "global"
   },
   {
     "id": "co-152",
@@ -692,7 +729,8 @@
     "source": "remoteok",
     "watchlistReason": "org-found-zero-match",
     "website": "tesseralabs.com",
-    "verifiedAt": "2026-09-10T19:47:22.636Z"
+    "verifiedAt": "2026-09-10T19:47:22.636Z",
+    "scope": "global"
   },
   {
     "id": "co-154",
@@ -723,7 +761,8 @@
     "status": "watchlist",
     "source": "remoteok",
     "watchlistReason": "no-org-found",
-    "website": "salesforge.com"
+    "website": "salesforge.com",
+    "scope": "global"
   },
   {
     "id": "co-155",
@@ -760,7 +799,8 @@
     "status": "watchlist",
     "source": "remoteok",
     "watchlistReason": "no-org-found",
-    "website": "orcabio.com"
+    "website": "orcabio.com",
+    "scope": "global"
   },
   {
     "id": "co-156",
@@ -804,7 +844,8 @@
     "status": "watchlist",
     "source": "remoteok",
     "watchlistReason": "no-org-found",
-    "website": "krugernearshorellcrekluti.com"
+    "website": "krugernearshorellcrekluti.com",
+    "scope": "global"
   },
   {
     "id": "co-157",
@@ -844,7 +885,8 @@
     "status": "watchlist",
     "source": "remoteok",
     "watchlistReason": "org-found-zero-match",
-    "website": "chaos.com"
+    "website": "chaos.com",
+    "scope": "global"
   },
   {
     "id": "co-160",
@@ -884,7 +926,8 @@
     "status": "watchlist",
     "source": "remoteok",
     "watchlistReason": "no-org-found",
-    "website": "multiplymii.com"
+    "website": "multiplymii.com",
+    "scope": "global"
   },
   {
     "id": "co-162",
@@ -919,7 +962,8 @@
     "status": "watchlist",
     "source": "remoteok",
     "watchlistReason": "no-org-found",
-    "website": "adaptiveteams.com"
+    "website": "adaptiveteams.com",
+    "scope": "global"
   },
   {
     "id": "co-164",
@@ -958,7 +1002,8 @@
     "status": "watchlist",
     "source": "remoteok",
     "watchlistReason": "org-found-zero-match",
-    "website": "grapefruithealth.com"
+    "website": "grapefruithealth.com",
+    "scope": "global"
   },
   {
     "id": "co-165",
@@ -991,7 +1036,8 @@
     "status": "watchlist",
     "source": "remoteok",
     "watchlistReason": "org-found-zero-match",
-    "website": "libertymutualgroup.com"
+    "website": "libertymutualgroup.com",
+    "scope": "global"
   },
   {
     "id": "co-168",
@@ -1027,7 +1073,8 @@
     "status": "watchlist",
     "source": "remoteok",
     "watchlistReason": "no-org-found",
-    "website": "copenhagenoptimization.com"
+    "website": "copenhagenoptimization.com",
+    "scope": "global"
   },
   {
     "id": "co-169",
@@ -1058,7 +1105,8 @@
     "source": "remoteok",
     "watchlistReason": "org-found-zero-match",
     "website": "mirantis.com",
-    "verifiedAt": "2026-09-13T19:31:34.703Z"
+    "verifiedAt": "2026-09-13T19:31:34.703Z",
+    "scope": "global"
   },
   {
     "id": "co-170",
@@ -1096,7 +1144,8 @@
     "status": "watchlist",
     "source": "remoteok",
     "watchlistReason": "no-org-found",
-    "website": "lawofficesofsabrinali.com"
+    "website": "lawofficesofsabrinali.com",
+    "scope": "global"
   },
   {
     "id": "co-171",
@@ -1139,7 +1188,8 @@
     "status": "watchlist",
     "source": "remoteok",
     "watchlistReason": "no-org-found",
-    "website": "sleek.com"
+    "website": "sleek.com",
+    "scope": "global"
   },
   {
     "id": "co-173",
@@ -1168,7 +1218,8 @@
     "status": "watchlist",
     "source": "remoteok",
     "watchlistReason": "no-org-found",
-    "website": "arango.com"
+    "website": "arango.com",
+    "scope": "global"
   },
   {
     "id": "co-174",
@@ -1198,7 +1249,8 @@
     "status": "watchlist",
     "source": "remoteok",
     "watchlistReason": "no-org-found",
-    "website": "stickermule.com"
+    "website": "stickermule.com",
+    "scope": "global"
   },
   {
     "id": "co-175",
@@ -1238,7 +1290,8 @@
     "source": "remoteok",
     "watchlistReason": "org-found-zero-match",
     "website": "domaintools.com",
-    "verifiedAt": "2026-09-17T20:24:59.804Z"
+    "verifiedAt": "2026-09-17T20:24:59.804Z",
+    "scope": "global"
   },
   {
     "id": "co-176",
@@ -1269,7 +1322,8 @@
     "status": "watchlist",
     "source": "remoteok",
     "watchlistReason": "no-org-found",
-    "website": "garden3d.notion.site"
+    "website": "garden3d.notion.site",
+    "scope": "global"
   },
   {
     "id": "co-177",
@@ -1320,7 +1374,8 @@
     "status": "watchlist",
     "source": "remoteok",
     "watchlistReason": "no-org-found",
-    "website": "okwhen.com"
+    "website": "okwhen.com",
+    "scope": "global"
   },
   {
     "id": "co-178",
@@ -1351,7 +1406,8 @@
     "status": "watchlist",
     "source": "remoteok",
     "watchlistReason": "no-org-found",
-    "website": "airspacelink.com"
+    "website": "airspacelink.com",
+    "scope": "global"
   },
   {
     "id": "co-179",
@@ -1387,7 +1443,8 @@
     "status": "watchlist",
     "source": "remoteok",
     "watchlistReason": "no-org-found",
-    "website": "ashbyhq.com"
+    "website": "ashbyhq.com",
+    "scope": "global"
   },
   {
     "id": "co-180",
@@ -1427,7 +1484,8 @@
     "status": "watchlist",
     "source": "remoteok",
     "watchlistReason": "org-found-zero-match",
-    "website": "omegadg.com"
+    "website": "omegadg.com",
+    "scope": "global"
   },
   {
     "id": "co-181",
@@ -1460,7 +1518,8 @@
     "source": "remoteok",
     "watchlistReason": "org-found-zero-match",
     "website": "redmimicry.com",
-    "verifiedAt": "2026-09-23T20:23:50.073Z"
+    "verifiedAt": "2026-09-23T20:23:50.073Z",
+    "scope": "global"
   },
   {
     "id": "co-182",
@@ -1488,7 +1547,8 @@
     "status": "watchlist",
     "source": "remoteok",
     "watchlistReason": "no-org-found",
-    "website": "mindriftdataannotation.com"
+    "website": "mindriftdataannotation.com",
+    "scope": "global"
   },
   {
     "id": "co-183",
@@ -1518,7 +1578,8 @@
     "status": "watchlist",
     "source": "remoteok",
     "watchlistReason": "org-found-zero-match",
-    "website": "prenosis.com"
+    "website": "prenosis.com",
+    "scope": "global"
   },
   {
     "id": "co-184",
@@ -1553,7 +1614,8 @@
     "status": "watchlist",
     "source": "remoteok",
     "watchlistReason": "no-org-found",
-    "website": "mercierconsultancygroup.com"
+    "website": "mercierconsultancygroup.com",
+    "scope": "global"
   },
   {
     "id": "co-185",
@@ -1579,7 +1641,8 @@
     "source": "remoteok",
     "watchlistReason": "org-found-zero-match",
     "website": "workana.com",
-    "verifiedAt": "2026-09-25T20:38:03.521Z"
+    "verifiedAt": "2026-09-25T20:38:03.521Z",
+    "scope": "global"
   },
   {
     "id": "co-186",
@@ -1621,6 +1684,7 @@
     "status": "watchlist",
     "source": "remoteok",
     "watchlistReason": "no-org-found",
-    "website": "lyric.com"
+    "website": "lyric.com",
+    "scope": "global"
   }
 ]

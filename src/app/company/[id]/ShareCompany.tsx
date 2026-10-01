@@ -22,7 +22,7 @@ interface ShareCompanyProps {
 }
 
 export default function ShareCompany({ companyName, companyId, companySlug, verifiedCount, hasActiveJobs }: ShareCompanyProps) {
-  const defaultCaption = `Lowongan di ${companyName} tercatat di Remotika.${verifiedCount > 0 ? ` Ada ${verifiedCount} profil anggota dengan lokasi Indonesia dalam data publik.` : ""}\n\nPeriksa posisi, syarat lokasi, dan sumbernya: https://remotika.vercel.app/company/${companySlug}`;
+  const defaultCaption = `Lowongan di ${companyName} tercatat di Remotika.${verifiedCount > 0 ? ` Ada ${verifiedCount} profil anggota dengan lokasi Indonesia dalam data publik.` : ""}\n\nPeriksa posisi, syarat lokasi, dan sumbernya: https://remotika.my.id/company/${companySlug}`;
 
   const [caption, setCaption] = useState(defaultCaption);
   const [isDownloading, setIsDownloading] = useState(false);

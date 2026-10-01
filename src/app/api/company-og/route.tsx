@@ -270,7 +270,7 @@ export async function GET(request: NextRequest) {
                 See open roles and proof of verification at:
               </span>
               <span style={{ fontSize: "18px", color: "#2dd4bf", fontWeight: 700, marginTop: "4px" }}>
-                remotika.vercel.app/company/{company.githubOrg.toLowerCase() || slugify(company.name) || company.id}
+                remotika.my.id/company/{company.githubOrg.toLowerCase() || slugify(company.name) || company.id}
               </span>
             </div>
           </div>

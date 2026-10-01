@@ -36,6 +36,7 @@ export default function Dashboard({ initialCompanies }: DashboardProps) {
   const [search, setSearch] = useState("");
   const [labelFilter, setLabelFilter] = useState("All");
   const [categoryFilter, setCategoryFilter] = useState("All Roles");
+  const [scopeFilter, setScopeFilter] = useState<"all" | "global" | "local">("all");
   const [hasJobsOnly, setHasJobsOnly] = useState(false);
   const [hideWatchlist, setHideWatchlist] = useState(false);
   const [sortBy, setSortBy] = useState<SortKey>("members");
@@ -72,7 +73,15 @@ export default function Dashboard({ initialCompanies }: DashboardProps) {
 
   const stats = useMemo(() => {
     const verified = initialCompanies.filter((company) => company.status !== "watchlist");
-    return { companies: verified.length, members: verified.reduce((sum, company) => sum + company.verifiedIndonesianCount, 0), jobs: initialCompanies.reduce((sum, company) => sum + (company.activeJobs?.length || 0), 0) };
+    const globalCount = verified.filter(c => c.scope !== "local").length;
+    const localCount = verified.filter(c => c.scope === "local").length;
+    return {
+      companies: verified.length,
+      globalCount,
+      localCount,
+      members: verified.reduce((sum, company) => sum + company.verifiedIndonesianCount, 0),
+      jobs: initialCompanies.reduce((sum, company) => sum + (company.activeJobs?.length || 0), 0)
+    };
   }, [initialCompanies]);
 
   const lastUpdated = useMemo(() => {
@@ -84,19 +93,20 @@ export default function Dashboard({ initialCompanies }: DashboardProps) {
     const query = search.trim().toLowerCase();
     return initialCompanies.filter((company) => {
       const inSearch = !query || company.name.toLowerCase().includes(query) || company.githubOrg.toLowerCase().includes(query) || Boolean(company.industry?.toLowerCase().includes(query));
-      return inSearch && (labelFilter === "All" || company.label === labelFilter) && (!hasJobsOnly || company.hasActiveJobs) && (!hideWatchlist || company.status !== "watchlist") && matchesCategory(company, categoryFilter);
+      const inScope = scopeFilter === "all" || (scopeFilter === "local" ? company.scope === "local" : company.scope !== "local");
+      return inSearch && inScope && (labelFilter === "All" || company.label === labelFilter) && (!hasJobsOnly || company.hasActiveJobs) && (!hideWatchlist || company.status !== "watchlist") && matchesCategory(company, categoryFilter);
     }).sort((a, b) => {
       if (sortBy === "name") return a.name.localeCompare(b.name, "id", { sensitivity: "base" });
       if (sortBy === "verified") return new Date(b.verifiedAt || b.lastVerifiedAt || 0).getTime() - new Date(a.verifiedAt || a.lastVerifiedAt || 0).getTime();
       if (sortBy === "jobs") return (b.activeJobs?.length || 0) - (a.activeJobs?.length || 0);
       return b.verifiedIndonesianCount - a.verifiedIndonesianCount;
     });
-  }, [categoryFilter, hasJobsOnly, hideWatchlist, initialCompanies, labelFilter, search, sortBy]);
+  }, [categoryFilter, hasJobsOnly, hideWatchlist, initialCompanies, labelFilter, scopeFilter, search, sortBy]);
 
-  const resetFilters = () => { setSearch(""); setLabelFilter("All"); setCategoryFilter("All Roles"); setHasJobsOnly(false); setHideWatchlist(false); };
+  const resetFilters = () => { setSearch(""); setLabelFilter("All"); setCategoryFilter("All Roles"); setScopeFilter("all"); setHasJobsOnly(false); setHideWatchlist(false); };
   const exportCsv = () => {
-    const headers = ["Company Name", "GitHub Org", "GitHub URL", "Verified Members", "Label", "Industry", "Last Verified"];
-    const rows = filteredCompanies.map((company) => [`"${company.name.replace(/"/g, '""')}"`, company.githubOrg, company.githubOrgUrl, company.verifiedIndonesianCount, company.label, `"${(company.industry || "").replace(/"/g, '""')}"`, company.lastVerifiedAt ? new Date(company.lastVerifiedAt).toLocaleDateString("id-ID") : "N/A"]);
+    const headers = ["Company Name", "Scope", "GitHub Org", "GitHub URL", "Verified Members", "Label", "Industry", "Last Verified"];
+    const rows = filteredCompanies.map((company) => [`"${company.name.replace(/"/g, '""')}"`, company.scope === "local" ? "Local" : "Global", company.githubOrg, company.githubOrgUrl, company.verifiedIndonesianCount, company.label, `"${(company.industry || "").replace(/"/g, '""')}"`, company.lastVerifiedAt ? new Date(company.lastVerifiedAt).toLocaleDateString("id-ID") : "N/A"]);
     const blob = new Blob([[headers.join(","), ...rows.map((row) => row.join(","))].join("\n")], { type: "text/csv;charset=utf-8" });
     const url = URL.createObjectURL(blob); const anchor = document.createElement("a"); anchor.href = url; anchor.download = "remotika-verified-companies.csv"; anchor.click(); URL.revokeObjectURL(url);
   };
@@ -105,7 +115,7 @@ export default function Dashboard({ initialCompanies }: DashboardProps) {
     startSuggestTransition(async () => { const result = await submitSuggestion(suggestOrg, suggestEmail); setSuggestStatus(result); if (result.success) { setSuggestOrg(""); setSuggestEmail(""); if (result.redirectUrl) window.setTimeout(() => window.open(result.redirectUrl, "_blank", "noopener,noreferrer"), 900); } });
   };
   const copyBadge = async () => {
-    if (!badgeOrg) return; await navigator.clipboard.writeText(`[![Remotika Verified](https://remotika.vercel.app/api/badge?org=${badgeOrg})](https://remotika.vercel.app)`); setCopied(true); window.setTimeout(() => setCopied(false), 1800);
+    if (!badgeOrg) return; await navigator.clipboard.writeText(`[![Remotika Verified](https://remotika.my.id/api/badge?org=${badgeOrg})](https://remotika.my.id)`); setCopied(true); window.setTimeout(() => setCopied(false), 1800);
   };
 
   return (
@@ -114,9 +124,9 @@ export default function Dashboard({ initialCompanies }: DashboardProps) {
 
       <main className="research-page directory-page">
         <header className="directory-intro">
-          <div><p className="eyebrow">Direktori perusahaan</p><h1>Temukan perusahaan yang punya talenta Indonesia.</h1><p>Bandingkan jejak publik dan lowongan sebelum memulai riset Anda.</p></div>
+          <div><p className="eyebrow">Direktori perusahaan</p><h1>Temukan perusahaan global &amp; lokal yang ramah remote.</h1><p>Bandingkan bukti publik keanggotaan GitHub dan lowongan remote aktif.</p></div>
           <div className="directory-context">
-            <span><strong>{stats.companies}</strong> perusahaan dengan bukti publik</span>
+            <span><strong>{stats.companies}</strong> perusahaan ({stats.globalCount} global, {stats.localCount} lokal)</span>
             <span><strong>{stats.jobs}</strong> lowongan tercatat</span>
             <a
               href={TELEGRAM_CHANNEL_URL}
@@ -164,6 +174,42 @@ export default function Dashboard({ initialCompanies }: DashboardProps) {
             </Button>
           </div>
 
+          <div className="flex items-center gap-1.5 p-1 rounded-xl bg-slate-100 dark:bg-card border border-border/80 w-fit mb-5">
+            <button
+              type="button"
+              onClick={() => setScopeFilter("all")}
+              className={`px-3.5 py-1.5 rounded-lg text-xs font-semibold transition-all cursor-pointer ${
+                scopeFilter === "all"
+                  ? "bg-white dark:bg-slate-800 text-foreground shadow-sm"
+                  : "text-muted-foreground hover:text-foreground"
+              }`}
+            >
+              Semua ({stats.companies})
+            </button>
+            <button
+              type="button"
+              onClick={() => setScopeFilter("global")}
+              className={`px-3.5 py-1.5 rounded-lg text-xs font-semibold transition-all cursor-pointer ${
+                scopeFilter === "global"
+                  ? "bg-white dark:bg-slate-800 text-foreground shadow-sm"
+                  : "text-muted-foreground hover:text-foreground"
+              }`}
+            >
+              🌐 Global Remote ({stats.globalCount})
+            </button>
+            <button
+              type="button"
+              onClick={() => setScopeFilter("local")}
+              className={`px-3.5 py-1.5 rounded-lg text-xs font-semibold transition-all cursor-pointer ${
+                scopeFilter === "local"
+                  ? "bg-white dark:bg-slate-800 text-foreground shadow-sm"
+                  : "text-muted-foreground hover:text-foreground"
+              }`}
+            >
+              🇮🇩 Indonesia Remote ({stats.localCount})
+            </button>
+          </div>
+
           <div className="search-toolbar">
             <label className="directory-search"><span className="sr-only">Cari perusahaan, organisasi GitHub, atau industri</span><Search size={20} aria-hidden="true"/><input type="search" value={search} onChange={event=>setSearch(event.target.value)} placeholder="Cari nama perusahaan atau industri"/>{search && <button type="button" onClick={()=>setSearch("")} aria-label="Hapus pencarian"><X size={18}/></button>}</label>
             <label className="sort-control"><span>Urutkan</span><select value={sortBy} onChange={event=>setSortBy(event.target.value as SortKey)}><option value="members">Anggota terbanyak</option><option value="jobs">Lowongan terbanyak</option><option value="verified">Terakhir diperiksa</option><option value="name">Nama A–Z</option></select></label>
@@ -179,7 +225,7 @@ export default function Dashboard({ initialCompanies }: DashboardProps) {
 
 
       {suggestOpen && <Modal onClose={() => { setSuggestOpen(false); setSuggestStatus(null); }} title="Sarankan perusahaan" description="Tambahkan organisasi GitHub ke antrean pemeriksaan komunitas."><form onSubmit={sendSuggestion} className="space-y-5"><label className="form-field"><span>Organisasi GitHub</span><div className="input-prefix"><span>github.com/</span><input autoFocus required value={suggestOrg} onChange={(event) => setSuggestOrg(event.target.value)} placeholder="shopify" disabled={suggestPending} /></div></label><label className="form-field"><span>Email (opsional)</span><div className="input-icon"><Mail className="h-4 w-4" /><input type="email" value={suggestEmail} onChange={(event) => setSuggestEmail(event.target.value)} placeholder="nama@contoh.com" disabled={suggestPending} /></div></label>{suggestStatus?.message && <p role="status" className={`rounded-xl border px-4 py-3 text-sm ${suggestStatus.success ? "border-emerald-200 bg-emerald-50 text-emerald-800" : "border-rose-200 bg-rose-50 text-rose-800"}`}>{suggestStatus.message}</p>}<button type="submit" disabled={suggestPending} className="button-primary w-full justify-center py-3 disabled:cursor-wait disabled:opacity-60">{suggestPending ? "Menyiapkan saran…" : "Lanjutkan ke GitHub"}</button><p className="text-[15px] leading-7 text-slate-500">Anda akan diarahkan ke GitHub untuk meninjau dan mengirim issue. Tidak ada data yang dikirim sebelum Anda menyetujuinya di sana.</p></form></Modal>}
-      {badgeOrg && <Modal onClose={() => setBadgeOrg(null)} title="Badge Remotika" description="Tampilkan sinyal verifikasi Remotika di README organisasi Anda."><div className="space-y-5"><div className="flex min-h-28 items-center justify-center rounded-2xl border border-slate-200 bg-slate-50"><div className="inline-flex overflow-hidden rounded-md text-xs font-bold shadow-sm"><span className="bg-slate-900 px-3 py-1.5 text-white">Remotika</span><span className="bg-indigo-600 px-3 py-1.5 text-white">Verified talent</span></div></div><div><p className="mb-2 text-xs font-bold uppercase tracking-[0.12em] text-slate-500">Markdown</p><pre className="overflow-x-auto rounded-2xl bg-slate-950 p-4 text-[15px] leading-7 text-slate-200">{`[![Remotika Verified](https://remotika.vercel.app/api/badge?org=${badgeOrg})](https://remotika.vercel.app)`}</pre></div><button type="button" onClick={copyBadge} className="button-primary w-full justify-center py-3" aria-live="polite">{copied ? <><Check className="h-4 w-4" />Tersalin</> : <><Code2 className="h-4 w-4" />Salin kode Markdown</>}</button></div></Modal>}
+      {badgeOrg && <Modal onClose={() => setBadgeOrg(null)} title="Badge Remotika" description="Tampilkan sinyal verifikasi Remotika di README organisasi Anda."><div className="space-y-5"><div className="flex min-h-28 items-center justify-center rounded-2xl border border-slate-200 bg-slate-50"><div className="inline-flex overflow-hidden rounded-md text-xs font-bold shadow-sm"><span className="bg-slate-900 px-3 py-1.5 text-white">Remotika</span><span className="bg-indigo-600 px-3 py-1.5 text-white">Verified talent</span></div></div><div><p className="mb-2 text-xs font-bold uppercase tracking-[0.12em] text-slate-500">Markdown</p><pre className="overflow-x-auto rounded-2xl bg-slate-950 p-4 text-[15px] leading-7 text-slate-200">{`[![Remotika Verified](https://remotika.my.id/api/badge?org=${badgeOrg})](https://remotika.my.id)`}</pre></div><button type="button" onClick={copyBadge} className="button-primary w-full justify-center py-3" aria-live="polite">{copied ? <><Check className="h-4 w-4" />Tersalin</> : <><Code2 className="h-4 w-4" />Salin kode Markdown</>}</button></div></Modal>}
     </div>
   );
 }
@@ -192,9 +238,10 @@ function CompanyRow({ company, expanded, onToggleMembers, onBadge, onSuggest }: 
   const watchlist=company.status==="watchlist";
   const href=`/company/${company.githubOrg?.toLowerCase() || slugify(company.name) || company.id}`;
   const date=company.lastVerifiedAt?new Intl.DateTimeFormat("id-ID",{day:"numeric",month:"short",year:"numeric"}).format(new Date(company.lastVerifiedAt)):"Belum diperiksa";
+  const isLocal = company.scope === "local" || (company.headquarters && company.headquarters.toLowerCase().includes("indonesia"));
   return <article className="company-row">
     <div className="company-row__main">
-      <div className="company-identity"><Link href={href} className="company-monogram" aria-label={`Profil ${company.name}`}>{company.name.slice(0,2).toUpperCase()}</Link><div><h2><Link href={href}>{company.name}</Link></h2><p>{company.industry || (company.githubOrg?`github.com/${company.githubOrg}`:"Organisasi belum ditemukan")}</p></div></div>
+      <div className="company-identity"><Link href={href} className="company-monogram" aria-label={`Profil ${company.name}`}>{company.name.slice(0,2).toUpperCase()}</Link><div><div className="flex items-center gap-1.5 flex-wrap"><h2><Link href={href}>{company.name}</Link></h2><span className={`text-[10px] font-semibold px-2 py-0.5 rounded-md ${isLocal ? "bg-amber-500/10 text-amber-700 dark:text-amber-400 border border-amber-500/20" : "bg-sky-500/10 text-sky-700 dark:text-sky-400 border border-sky-500/20"}`}>{isLocal ? "🇮🇩 Lokal" : "🌐 Global"}</span></div><p>{company.industry || (company.githubOrg?`github.com/${company.githubOrg}`:"Organisasi belum ditemukan")}</p></div></div>
       <div className="company-evidence">{watchlist?<><span className="unconfirmed">Belum ditemukan</span><button type="button" onClick={()=>onSuggest(company.name)}>Kirim sumber</button></>:<><button type="button" aria-expanded={expanded} onClick={onToggleMembers}>{company.verifiedMembers.length} anggota <ChevronDown size={14} aria-hidden="true"/></button><span>{company.label}</span></>}</div>
       <div className="company-jobs">{company.activeJobs?.length?<><Link href={href+"#lowongan"}>{company.activeJobs.length} lowongan →</Link><span>Lihat posisi dan lokasi</span></>:company.jobSources?.careerPageUrl?<><a href={company.jobSources.careerPageUrl} target="_blank" rel="noopener noreferrer">Halaman karier ↗</a><span>Belum ada posisi tercatat</span></>:<><span>Belum ada lowongan</span><Link href={href}>Lihat profil →</Link></>}</div>
       <p className="company-date">{date}</p>

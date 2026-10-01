@@ -1223,24 +1223,10 @@ async function processOrg(orgLogin: string, existingCompanies: CompanyData[]): P
     console.log(`  Completed scan for ${orgLogin}. Total Indonesian members verified: ${foundIndonesianMembers.length}`);
 
     if (foundIndonesianMembers.length > 0) {
-      // Heuristic location check (Part 1 acceptance criteria)
       const orgLocation = orgData.location;
-      if (orgLocation && isLocationIndonesian(orgLocation)) {
-        console.log(`  ⚠️ FLAGGED FOR MANUAL REVIEW: ${orgLogin} GitHub location suggests Indonesia (${orgLocation}).`);
-        
-        const flagged = loadFlaggedForReview();
-        flagged[orgLoginLower] = {
-          githubOrg: orgLoginLower,
-          name: orgName,
-          location: orgLocation,
-          reason: "GitHub location suggests Indonesia",
-          flaggedAt: new Date().toISOString(),
-          verifiedIndonesianCount: foundIndonesianMembers.length
-        };
-        saveFlaggedForReview(flagged);
-        
-        newlyFlaggedOrgs.push({ org: orgLogin, reason: `GitHub location suggests Indonesia (${orgLocation})` });
-        return null;
+      const isLocal = Boolean(orgLocation && isLocationIndonesian(orgLocation));
+      if (isLocal) {
+        console.log(`  ℹ️ Organization ${orgLogin} is categorized as an Indonesian Remote-Friendly company (${orgLocation}).`);
       }
 
       // Community / OSS organization check
@@ -1265,6 +1251,7 @@ async function processOrg(orgLogin: string, existingCompanies: CompanyData[]): P
 
       const label = getEmployeeLabel(foundIndonesianMembers.length);
       const lastVerifiedAt = new Date().toISOString();
+      const companyScope: "global" | "local" = isLocal ? "local" : (existingCompany?.scope || "global");
 
       if (existingCompany) {
         const updated: CompanyData = {
@@ -1277,9 +1264,11 @@ async function processOrg(orgLogin: string, existingCompanies: CompanyData[]): P
           label: label,
           lastVerifiedAt: lastVerifiedAt,
           verifiedAt: existingCompany.verifiedAt || existingCompany.lastVerifiedAt || lastVerifiedAt,
-          verifiedMembers: foundIndonesianMembers
+          verifiedMembers: foundIndonesianMembers,
+          headquarters: orgLocation || existingCompany.headquarters || (isLocal ? "Indonesia" : "Global Remote"),
+          scope: companyScope
         };
-        console.log(`  🔄 Updated existing entry for ${orgName}.`);
+        console.log(`  🔄 Updated existing entry for ${orgName} (${companyScope}).`);
         return updated;
       } else {
         const numericalIds = existingCompanies
@@ -1301,9 +1290,11 @@ async function processOrg(orgLogin: string, existingCompanies: CompanyData[]): P
           verifiedAt: lastVerifiedAt,
           hasActiveJobs: false,
           activeJobs: [],
-          verifiedMembers: foundIndonesianMembers
+          verifiedMembers: foundIndonesianMembers,
+          headquarters: orgLocation || (isLocal ? "Indonesia" : "Global Remote"),
+          scope: companyScope
         };
-        console.log(`  ✨ Candidate new entry for ${orgName} (ID ${newId}). Running liveness check...`);
+        console.log(`  ✨ Candidate new entry for ${orgName} (ID ${newId}, ${companyScope}). Running liveness check...`);
         
         // Liveness check: verify website is still accessible before adding
         const websiteUrl = orgData.blog || orgData.html_url;
@@ -1665,8 +1656,14 @@ async function main() {
   const finalCompaniesList = Array.from(updatedCompaniesMap.values())
     .filter(c => c.status === "watchlist" ? c.hasActiveJobs : c.verifiedIndonesianCount > 0)
     .filter(c => !c.githubOrg || !BLOCKLISTED_ORGS.has(c.githubOrg.toLowerCase()))
-    .filter(c => !c.githubOrg || !EXCLUDED_SET.has(c.githubOrg.toLowerCase()))
-    .filter(c => !c.githubOrg || c.githubOrg.toLowerCase() === "xendit" || !isLocationIndonesian(c.headquarters));
+    .filter(c => !c.githubOrg || !EXCLUDED_SET.has(c.githubOrg.toLowerCase()));
+
+  // Ensure every company has a valid scope (global or local)
+  finalCompaniesList.forEach(c => {
+    if (!c.scope) {
+      c.scope = (c.headquarters && isLocationIndonesian(c.headquarters)) ? "local" : "global";
+    }
+  });
 
   // Sort by verified count descending
   finalCompaniesList.sort((a, b) => b.verifiedIndonesianCount - a.verifiedIndonesianCount);
@@ -1786,9 +1783,9 @@ async function notifyNewVerifiedCompanies(initialCompanies: CompanyData[], final
 
     let messageText = "";
     if (isVerified) {
-      messageText = `🆕 *Perusahaan Terverifikasi Baru di Remotika*\n\n*${escapeMarkdown(company.name)}* baru saja terverifikasi! Terkonfirmasi ${company.verifiedIndonesianCount} anggota tim asal Indonesia via GitHub, dan mereka sedang membuka lowongan kerja remote aktif.${jobsSection}\n\nLihat selengkapnya di sini: https://remotika.vercel.app/company/${slug}`;
+      messageText = `🆕 *Perusahaan Terverifikasi Baru di Remotika*\n\n*${escapeMarkdown(company.name)}* baru saja terverifikasi! Terkonfirmasi ${company.verifiedIndonesianCount} anggota tim asal Indonesia via GitHub, dan mereka sedang membuka lowongan kerja remote aktif.${jobsSection}\n\nLihat selengkapnya di sini: https://remotika.my.id/company/${slug}`;
     } else {
-      messageText = `💼 *Lowongan Remote Baru di Remotika*\n\n*${escapeMarkdown(company.name)}* sedang membuka lowongan kerja remote aktif! Saat ini belum ada anggota tim asal Indonesia yang terverifikasi via GitHub — jadilah developer Indonesia pertama di tim mereka!${jobsSection}\n\nLihat selengkapnya di sini: https://remotika.vercel.app/company/${slug}`;
+      messageText = `💼 *Lowongan Remote Baru di Remotika*\n\n*${escapeMarkdown(company.name)}* sedang membuka lowongan kerja remote aktif! Saat ini belum ada anggota tim asal Indonesia yang terverifikasi via GitHub — jadilah developer Indonesia pertama di tim mereka!${jobsSection}\n\nLihat selengkapnya di sini: https://remotika.my.id/company/${slug}`;
     }
     
     try {

@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { revalidatePath } from "next/cache";
 import { isLocationIndonesian } from "@/lib/location";
 import fs from "fs";
 import path from "path";
@@ -66,18 +67,32 @@ export async function POST(request: NextRequest) {
     const cleanOrgSlug = orgSlug.trim().toLowerCase().replace(/^@/, "");
     const cleanCompanyName = companyName.trim();
 
-    const headers: HeadersInit = {
+    const baseHeaders: Record<string, string> = {
       "Accept": "application/vnd.github.v3+json",
       "User-Agent": "Remotika-Verification-App"
     };
 
-    if (process.env.GITHUB_TOKEN) {
-      headers["Authorization"] = `token ${process.env.GITHUB_TOKEN}`;
-    }
+    // Helper to fetch from GitHub API with optional auth and graceful unauthenticated fallback if token is invalid (e.g. 401 Bad credentials)
+    const fetchGithubWithFallback = async (url: string) => {
+      const authHeaders: Record<string, string> = { ...baseHeaders };
+      const token = process.env.GITHUB_TOKEN;
+      if (token) {
+        authHeaders["Authorization"] = `Bearer ${token}`;
+      }
+
+      let res = await fetch(url, { headers: authHeaders });
+
+      if (res.status === 401 && token) {
+        console.warn(`[verify-self] GITHUB_TOKEN failed with 401 Unauthorized for ${url}. Retrying unauthenticated...`);
+        res = await fetch(url, { headers: baseHeaders });
+      }
+
+      return res;
+    };
 
     // 3. Step A: Check GitHub organization membership
     const memberUrl = `https://api.github.com/orgs/${cleanOrgSlug}/members/${cleanUsername}`;
-    const memberRes = await fetch(memberUrl, { headers });
+    const memberRes = await fetchGithubWithFallback(memberUrl);
 
     if (memberRes.status === 404) {
       return NextResponse.json({
@@ -98,7 +113,7 @@ export async function POST(request: NextRequest) {
 
     // 4. Step B: Fetch user profile and verify location
     const userUrl = `https://api.github.com/users/${cleanUsername}`;
-    const userRes = await fetch(userUrl, { headers });
+    const userRes = await fetchGithubWithFallback(userUrl);
 
     if (!userRes.ok) {
       const errorText = await userRes.text();
@@ -122,7 +137,7 @@ export async function POST(request: NextRequest) {
     // 5. Step C: Success! Update dataset (Immediate GitHub Commit or File Write)
     // Fetch official Org Info to enrich company card
     const orgUrl = `https://api.github.com/orgs/${cleanOrgSlug}`;
-    const orgRes = await fetch(orgUrl, { headers });
+    const orgRes = await fetchGithubWithFallback(orgUrl);
     let orgData: any = {};
     if (orgRes.ok) {
       orgData = await orgRes.json();
@@ -144,8 +159,8 @@ export async function POST(request: NextRequest) {
         const githubGetUrl = `https://api.github.com/repos/${repoPath}/contents/src/data/companies.json`;
         const getRes = await fetch(githubGetUrl, {
           headers: {
-            ...headers,
-            "Authorization": `token ${GITHUB_TOKEN}`
+            ...baseHeaders,
+            "Authorization": `Bearer ${GITHUB_TOKEN}`
           }
         });
 
@@ -177,8 +192,8 @@ export async function POST(request: NextRequest) {
           const putRes = await fetch(githubGetUrl, {
             method: "PUT",
             headers: {
-              ...headers,
-              "Authorization": `token ${GITHUB_TOKEN}`,
+              ...baseHeaders,
+              "Authorization": `Bearer ${GITHUB_TOKEN}`,
               "Content-Type": "application/json"
             },
             body: JSON.stringify({
@@ -231,6 +246,13 @@ export async function POST(request: NextRequest) {
           { status: 500 }
         );
       }
+    }
+
+    try {
+      revalidatePath("/");
+      revalidatePath(`/company/${cleanOrgSlug}`);
+    } catch (e) {
+      console.warn("revalidatePath error:", e);
     }
 
     return NextResponse.json({
@@ -315,7 +337,10 @@ function updateCompaniesArray(
       hasActiveJobs: false,
       activeJobs: [],
       verifiedMembers: [newUserPayload],
-      headquarters: orgData.location || "Global Remote"
+      headquarters: orgData.location || "Global Remote",
+      scope: isLocationIndonesian(orgData.location) ? "local" : "global",
+      status: "verified",
+      source: "community"
     };
 
     return { updatedCompanies: [newCompany, ...companies], alreadyVerified: false };

@@ -125,7 +125,7 @@ export async function GET(request: NextRequest) {
       verifiedIndonesianCount: c.verifiedIndonesianCount,
       hasActiveJobs: c.hasActiveJobs,
       verifiedAt: c.verifiedAt || c.lastVerifiedAt || new Date().toISOString(),
-      profileUrl: `https://remotika.vercel.app/company/${c.githubOrg?.toLowerCase() || slugify(c.name) || c.id}`
+      profileUrl: `https://remotika.my.id/company/${c.githubOrg?.toLowerCase() || slugify(c.name) || c.id}`
     }));
 
     const response = NextResponse.json({

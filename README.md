@@ -1,12 +1,23 @@
 # Remotika 🇮🇩 🚀
 
-> **Direktori perusahaan global yang terbukti mempekerjakan developer remote dari Indonesia — 100% terverifikasi melalui data keanggotaan GitHub secara real-time.**
+> **Direktori perusahaan global & lokal ramah-remote yang terbukti mempekerjakan developer dari Indonesia — 100% terverifikasi melalui data keanggotaan GitHub secara real-time.**
 >
-> 🌐 **Website Resmi:** [remotika.vercel.app](https://remotika.vercel.app)
+> 🌐 **Website Resmi:** [remotika.my.id](https://remotika.my.id)
 
-Remotika hadir untuk menjembatani kesenjangan informasi bagi developer dan freelancer lokal. Platform ini membantu Anda menemukan perusahaan teknologi luar negeri yang memiliki rekam jejak nyata dalam mempekerjakan talenta dari Indonesia.
+Remotika hadir untuk menjembatani kesenjangan informasi bagi developer dan freelancer lokal. Platform ini membantu Anda menemukan perusahaan teknologi — baik **perusahaan global internasional** maupun **perusahaan lokal ramah-remote (remote-first)** — yang memiliki rekam jejak nyata dalam mempekerjakan talenta dari Indonesia.
 
-Berbeda dari direktori lowongan kerja biasa yang mengandalkan klaim sepihak atau profil buatan, Remotika menggunakan **pendekatan berbasis organisasi (GitHub-first)**. Sistem kami memindai keanggotaan organisasi GitHub publik milik perusahaan target, memverifikasi lokasi pengembang berdasarkan kata kunci geografis Indonesia, lalu mengelompokkannya ke dalam tingkat kepercayaan (*verification tier*) yang jelas dan transparan.
+Berbeda dari direktori lowongan kerja biasa yang mengandalkan klaim sepihak atau profil buatan, Remotika menggunakan **pendekatan berbasis organisasi (GitHub-first)**. Sistem kami memindai keanggotaan organisasi GitHub publik milik perusahaan target, memverifikasi lokasi pengembang berdasarkan kata kunci geografis Indonesia, lalu mengelompokkannya ke dalam cakupan pasar dan tingkat kepercayaan (*verification tier*) yang jelas dan transparan.
+
+---
+
+## 🌐 Cakupan Perusahaan (Market Scope)
+
+Untuk menjaga nilai utama pencari kerja remote tanpa mengorbankan kekayaan direktori, Remotika mengkategorikan perusahaan ke dalam dua cakupan:
+
+| Cakupan | Label | Arti | Contoh |
+| :--- | :--- | :--- | :--- |
+| **Global Remote** | 🌐 **Global** | Perusahaan berkantor pusat di luar negeri yang mempekerjakan developer remote dari Indonesia (standar gaji global/multi-currency). | Automattic, Canva, GitLab |
+| **Indonesia Remote** | 🇮🇩 **Lokal Remote** | Perusahaan berbasis di Indonesia yang membuktikan kultur kerja terdistribusi/remote penuh bagi talenta lokal. | Rekayasa Solverindo, Xendit |
 
 ---
 

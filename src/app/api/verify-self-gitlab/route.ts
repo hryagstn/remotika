@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { revalidatePath } from "next/cache";
 import { isLocationIndonesian } from "@/lib/location";
 import fs from "fs";
 import path from "path";
@@ -64,17 +65,30 @@ export async function POST(request: NextRequest) {
     const cleanGroupSlug = groupSlug.trim().toLowerCase().replace(/^@/, "");
     const cleanCompanyName = companyName.trim();
 
-    const headers: HeadersInit = {
+    const baseHeaders: Record<string, string> = {
       "User-Agent": "Remotika-Verification-App"
     };
 
-    if (process.env.GITLAB_ACCESS_TOKEN) {
-      headers["PRIVATE-TOKEN"] = process.env.GITLAB_ACCESS_TOKEN;
-    }
+    const fetchGitlabWithFallback = async (url: string) => {
+      const authHeaders: Record<string, string> = { ...baseHeaders };
+      const token = process.env.GITLAB_ACCESS_TOKEN;
+      if (token) {
+        authHeaders["PRIVATE-TOKEN"] = token;
+      }
+
+      let res = await fetch(url, { headers: authHeaders });
+
+      if (res.status === 401 && token) {
+        console.warn(`[verify-self-gitlab] GITLAB_ACCESS_TOKEN failed with 401 Unauthorized for ${url}. Retrying unauthenticated...`);
+        res = await fetch(url, { headers: baseHeaders });
+      }
+
+      return res;
+    };
 
     // 3. Step A: Check GitLab group membership
     const membersUrl = `https://gitlab.com/api/v4/groups/${cleanGroupSlug}/members/all?query=${cleanUsername}`;
-    const membersRes = await fetch(membersUrl, { headers });
+    const membersRes = await fetchGitlabWithFallback(membersUrl);
 
     if (!membersRes.ok) {
       const errorText = await membersRes.text();
@@ -178,7 +192,7 @@ export async function POST(request: NextRequest) {
           headers: {
             "Accept": "application/vnd.github.v3+json",
             "User-Agent": "Remotika-Verification-App",
-            "Authorization": `token ${GITHUB_TOKEN}`
+            "Authorization": `Bearer ${GITHUB_TOKEN}`
           }
         });
 
@@ -212,7 +226,7 @@ export async function POST(request: NextRequest) {
             headers: {
               "Accept": "application/vnd.github.v3+json",
               "User-Agent": "Remotika-Verification-App",
-              "Authorization": `token ${GITHUB_TOKEN}`,
+              "Authorization": `Bearer ${GITHUB_TOKEN}`,
               "Content-Type": "application/json"
             },
             body: JSON.stringify({
@@ -243,6 +257,13 @@ export async function POST(request: NextRequest) {
           message: `@${cleanUsername} (GitLab) sudah terverifikasi sebelumnya sebagai bagian dari ${cleanCompanyName}. Terima kasih atas kontribusi Anda!`
         });
       }
+    }
+
+    try {
+      revalidatePath("/");
+      revalidatePath(`/company/${cleanGroupSlug}`);
+    } catch (e) {
+      console.warn("revalidatePath error:", e);
     }
 
     return NextResponse.json({
@@ -333,7 +354,10 @@ function updateCompaniesArray(
       hasActiveJobs: false,
       activeJobs: [],
       verifiedMembers: [newUserPayload],
-      headquarters: "Global Remote"
+      headquarters: "Global Remote",
+      scope: "global",
+      status: "verified",
+      source: "community"
     };
 
     return { updatedCompanies: [newCompany, ...companies], alreadyVerified: false };

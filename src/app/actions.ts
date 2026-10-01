@@ -46,6 +46,7 @@ export interface CompanyData {
   source?: "github-scan" | "remoteok" | "community";
   watchlistReason?: "no-org-found" | "org-found-zero-match";
   website?: string;
+  scope?: "global" | "local";
 }
 
 // Read and cast static companies JSON database

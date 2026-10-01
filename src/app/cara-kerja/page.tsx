@@ -13,7 +13,7 @@ export default function CaraKerjaPage() {
       </ol>
       <p>Anda dapat membuka profil setiap anggota dari halaman perusahaan untuk memeriksa sumbernya sendiri.</p>
     </section>
-    <section id="label"><h2>Label menunjukkan jumlah yang ditemukan</h2><p>Label ini merangkum jumlah talenta Indonesia yang terdeteksi melalui data publik. Label tidak menilai kualitas tempat kerja atau peluang Anda diterima.</p>
+    <section id="label"><h2>Cakupan dan label perusahaan</h2><p>Remotika mengelompokkan perusahaan ke dalam dua cakupan: <strong>🌐 Global Remote</strong> (perusahaan luar negeri yang mempekerjakan talenta remote Indonesia) dan <strong>🇮🇩 Indonesia Remote</strong> (perusahaan berbasis di Indonesia dengan kultur kerja remote terdistribusi). Label di bawah ini merangkum jumlah talenta Indonesia yang terdeteksi melalui data publik:</p>
       <dl className="definition-list"><div><dt>Confirmed</dt><dd>1 talenta</dd></div><div><dt>Indonesia-Friendly</dt><dd>2–4 talenta</dd></div><div><dt>Established</dt><dd>5–9 talenta</dd></div><div><dt>Top Pick</dt><dd>10 atau lebih</dd></div><div><dt>Watchlist</dt><dd>Hubungan dengan talenta Indonesia belum ditemukan.</dd></div></dl>
     </section>
     <section id="lowongan"><h2>Lowongan berasal dari beberapa sumber</h2><p>Data diambil dari RemoteOK, Remotive, serta halaman perekrutan perusahaan melalui Greenhouse dan Workday. Kami menyaring lokasi yang relevan dengan Indonesia atau kerja remote global.</p><p>Buka tautan lowongan untuk memastikan posisi masih tersedia, lokasi yang diperbolehkan, dan syarat melamarnya. Tanggal pemeriksaan di direktori menunjukkan usia data yang tersimpan.</p></section>

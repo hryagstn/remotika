@@ -337,7 +337,7 @@ export async function GET(request: NextRequest) {
             {/* Footer / Call to action */}
             <span style={{ fontSize: "14px", color: "#64748b" }}>
               Check your own readiness at{" "}
-              <span style={{ color: "#94a3b8", fontWeight: 600 }}>remotika.vercel.app/readiness-check</span>
+              <span style={{ color: "#94a3b8", fontWeight: 600 }}>remotika.my.id/readiness-check</span>
             </span>
           </div>
 

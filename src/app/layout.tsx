@@ -9,14 +9,14 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
 export const metadata: Metadata = {
-  title: "Remotika | Direktori Perusahaan untuk Talenta Indonesia",
-  description: "Cari perusahaan dengan jejak publik talenta Indonesia. Bandingkan bukti anggota, lowongan, dan sumber datanya.",
-  keywords: ["kerja remote", "developer indonesia", "lowongan remote indonesia", "perusahaan terverifikasi", "keanggotaan github", "freelancer indonesia"],
+  title: "Remotika | Direktori Perusahaan Ramah-Remote untuk Talenta Indonesia",
+  description: "Cari perusahaan global dan lokal dengan jejak publik talenta Indonesia. Bandingkan bukti anggota, lowongan, dan sumber datanya.",
+  keywords: ["kerja remote", "developer indonesia", "lowongan remote indonesia", "perusahaan terverifikasi", "keanggotaan github", "freelancer indonesia", "remote work indonesia"],
   authors: [{ name: "Remotika Team" }],
-  metadataBase: new URL("https://remotika.vercel.app"),
+  metadataBase: new URL("https://remotika.my.id"),
   openGraph: {
     title: "Remotika - Perusahaan Remote Terverifikasi untuk Talenta Indonesia",
-    description: "Cari perusahaan dengan jejak publik talenta Indonesia. Lihat lowongan dan sumber datanya.",
+    description: "Cari perusahaan global dan lokal dengan jejak publik talenta Indonesia. Lihat lowongan dan sumber datanya.",
     url: "/",
     siteName: "Remotika",
     type: "website",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Remotika - Perusahaan Remote Terverifikasi untuk Talenta Indonesia",
-    description: "Temukan perusahaan teknologi asing yang terbukti mempekerjakan developer dari Indonesia.",
+    description: "Temukan perusahaan teknologi global dan lokal yang terbukti mempekerjakan developer dari Indonesia.",
     images: ["/og-directory.png"]
   }
 };

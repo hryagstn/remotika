@@ -10,8 +10,8 @@ interface BadgeEmbedProps {
 export default function BadgeEmbed({ githubOrg }: BadgeEmbedProps) {
   const [copiedType, setCopiedType] = useState<"markdown" | "html" | null>(null);
 
-  const markdownCode = `[![Remotika Verified](https://remotika.vercel.app/api/badge?org=${githubOrg})](https://remotika.vercel.app)`;
-  const htmlCode = `<a href="https://remotika.vercel.app"><img src="https://remotika.vercel.app/api/badge?org=${githubOrg}" alt="Remotika Verified" /></a>`;
+  const markdownCode = `[![Remotika Verified](https://remotika.my.id/api/badge?org=${githubOrg})](https://remotika.my.id)`;
+  const htmlCode = `<a href="https://remotika.my.id"><img src="https://remotika.my.id/api/badge?org=${githubOrg}" alt="Remotika Verified" /></a>`;
 
   const copyToClipboard = (text: string, type: "markdown" | "html") => {
     navigator.clipboard.writeText(text);

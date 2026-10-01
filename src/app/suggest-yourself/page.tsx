@@ -128,7 +128,7 @@ function SuggestYourselfForm() {
       {/* Main Content */}
       <main className="research-page verification-page">
         
-        <header className="page-intro"><p className="eyebrow">Kontribusi data</p><h1>Tambahkan keanggotaan Anda</h1><p className="page-intro__copy">Bekerja di perusahaan yang belum tercatat? Periksa profil publik Anda untuk menambahkan bukti ke direktori.</p></header>
+        <header className="page-intro"><p className="eyebrow">Kontribusi data</p><h1>Tambahkan keanggotaan Anda</h1><p className="page-intro__copy">Bekerja di perusahaan global atau lokal ramah-remote yang belum tercatat? Periksa profil publik Anda untuk menambahkan bukti ke direktori.</p></header>
         <div className="verification-layout"><div className="verification-primary">
         {/* Verification Card / Result Box */}
         <div className="verification-form" aria-live="polite">
