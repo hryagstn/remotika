@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-10-01T04:23:02.107Z",
+    "lastVerifiedAt": "2026-10-01T21:43:14.249Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -48,7 +48,7 @@
       },
       {
         "title": "RevOps Systems Administrator (Salesforce)",
-        "url": "https://job-boards.greenhouse.io/xendit/jobs/7992220003",
+        "url": "https://job-boards.greenhouse.io/xendit/jobs/7992262003",
         "tags": []
       },
       {
@@ -136,7 +136,7 @@
     "industry": "PT Rekayasa Solverindo (REKSOLINDO) has provided practical material engineering solutions for industries across Indonesia since 2005.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-01T04:22:56.600Z",
+    "lastVerifiedAt": "2026-10-01T21:43:17.061Z",
     "verifiedAt": "2026-09-30T11:39:29.952Z",
     "hasActiveJobs": false,
     "activeJobs": [],
@@ -160,7 +160,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-01T04:23:17.325Z",
+    "lastVerifiedAt": "2026-10-01T21:43:33.405Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -195,7 +195,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-01T04:23:32.890Z",
+    "lastVerifiedAt": "2026-10-01T21:43:49.080Z",
     "hasActiveJobs": false,
     "headquarters": "Worldwide",
     "foundationYear": "2005",
@@ -230,7 +230,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-01T04:23:38.973Z",
+    "lastVerifiedAt": "2026-10-01T21:43:55.051Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -265,7 +265,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-01T04:23:44.849Z",
+    "lastVerifiedAt": "2026-10-01T21:44:01.575Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -457,7 +457,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-01T04:23:50.791Z",
+    "lastVerifiedAt": "2026-10-01T21:44:07.187Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -488,7 +488,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-01T04:23:52.319Z",
+    "lastVerifiedAt": "2026-10-01T21:44:09.669Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -522,7 +522,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-01T04:23:54.091Z",
+    "lastVerifiedAt": "2026-10-01T21:44:11.420Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -631,40 +631,6 @@
     "scope": "global"
   },
   {
-    "id": "co-148",
-    "name": "NOPE",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "social-comms-nope-1137314",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-09-09T19:55:24.542Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Social Comms",
-        "url": "https://remoteOK.com/remote-jobs/remote-social-comms-nope-1137314",
-        "tags": [
-          "marketing",
-          "education",
-          "technical",
-          "content writing",
-          "social media",
-          "ai",
-          "social"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "nope.com",
-    "scope": "global"
-  },
-  {
     "id": "co-151",
     "name": "The AI Whistleblower Initiative",
     "githubOrg": "",
@@ -702,7 +668,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-01T04:23:56.529Z",
+    "lastVerifiedAt": "2026-10-01T21:44:13.941Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1087,7 +1053,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-01T04:24:07.671Z",
+    "lastVerifiedAt": "2026-10-01T21:44:25.620Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1263,7 +1229,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-01T04:24:13.427Z",
+    "lastVerifiedAt": "2026-10-01T21:44:31.107Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1498,7 +1464,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-01T04:24:16.099Z",
+    "lastVerifiedAt": "2026-10-01T21:44:33.890Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1628,7 +1594,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-01T04:24:21.700Z",
+    "lastVerifiedAt": "2026-10-01T21:44:40.109Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1647,37 +1613,30 @@
     "scope": "global"
   },
   {
-    "id": "co-186",
-    "name": "Lyric",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "growth-strategist-lyric-1135681",
+    "id": "co-188",
+    "name": "Toptal",
+    "githubOrg": "toptal",
+    "githubOrgUrl": "https://github.com/toptal",
+    "remoteokSlug": "enterprise-sales-development-representative-toptal-1137451",
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-09-29T21:37:32.105Z",
+    "lastVerifiedAt": "2026-10-01T22:00:44.943Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
-        "title": "Growth Strategist",
-        "url": "https://remoteOK.com/remote-jobs/remote-growth-strategist-lyric-1135681",
+        "title": "Enterprise Sales Development Representative",
+        "url": "https://remoteOK.com/remote-jobs/remote-enterprise-sales-development-representative-toptal-1137451",
         "tags": [
-          "marketing",
-          "design",
-          "embedded",
-          "technical",
-          "strategy",
           "customer support",
-          "dev",
-          "travel",
-          "finance",
-          "exec",
-          "content writing",
-          "senior",
-          "ops",
-          "sales",
-          "golang",
-          "digital nomad"
+          "sales"
+        ]
+      },
+      {
+        "title": "Client Advisor",
+        "url": "https://remoteOK.com/remote-jobs/remote-client-advisor-toptal-1137439",
+        "tags": [
+          "customer support"
         ]
       }
     ],
@@ -1685,8 +1644,8 @@
     "headquarters": "Global Remote",
     "status": "watchlist",
     "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "lyric.com",
+    "watchlistReason": "org-found-zero-match",
+    "website": "toptal.com",
     "scope": "global"
   }
 ]
