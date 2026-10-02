@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-10-01T21:43:14.249Z",
+    "lastVerifiedAt": "2026-10-02T21:14:39.975Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -48,7 +48,7 @@
       },
       {
         "title": "RevOps Systems Administrator (Salesforce)",
-        "url": "https://job-boards.greenhouse.io/xendit/jobs/7992262003",
+        "url": "https://job-boards.greenhouse.io/xendit/jobs/7992220003",
         "tags": []
       },
       {
@@ -136,7 +136,7 @@
     "industry": "PT Rekayasa Solverindo (REKSOLINDO) has provided practical material engineering solutions for industries across Indonesia since 2005.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-01T21:43:17.061Z",
+    "lastVerifiedAt": "2026-10-02T21:14:42.966Z",
     "verifiedAt": "2026-09-30T11:39:29.952Z",
     "hasActiveJobs": false,
     "activeJobs": [],
@@ -160,7 +160,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-01T21:43:33.405Z",
+    "lastVerifiedAt": "2026-10-02T21:14:58.341Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -195,7 +195,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-01T21:43:49.080Z",
+    "lastVerifiedAt": "2026-10-02T21:15:13.942Z",
     "hasActiveJobs": false,
     "headquarters": "Worldwide",
     "foundationYear": "2005",
@@ -230,7 +230,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-01T21:43:55.051Z",
+    "lastVerifiedAt": "2026-10-02T21:15:19.506Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -265,7 +265,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-01T21:44:01.575Z",
+    "lastVerifiedAt": "2026-10-02T21:15:25.627Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -457,7 +457,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-01T21:44:07.187Z",
+    "lastVerifiedAt": "2026-10-02T21:15:30.954Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -488,7 +488,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-01T21:44:09.669Z",
+    "lastVerifiedAt": "2026-10-02T21:15:32.480Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -522,7 +522,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-01T21:44:11.420Z",
+    "lastVerifiedAt": "2026-10-02T21:15:34.175Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -668,7 +668,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-01T21:44:13.941Z",
+    "lastVerifiedAt": "2026-10-02T21:15:37.585Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1053,7 +1053,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-01T21:44:25.620Z",
+    "lastVerifiedAt": "2026-10-02T21:15:49.254Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1229,7 +1229,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-01T21:44:31.107Z",
+    "lastVerifiedAt": "2026-10-02T21:15:53.798Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1464,7 +1464,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-01T21:44:33.890Z",
+    "lastVerifiedAt": "2026-10-02T21:15:56.460Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1594,7 +1594,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-01T21:44:40.109Z",
+    "lastVerifiedAt": "2026-10-02T21:16:02.447Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1620,8 +1620,8 @@
     "remoteokSlug": "enterprise-sales-development-representative-toptal-1137451",
     "industry": null,
     "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-01T22:00:44.943Z",
+    "label": "Confirmed",
+    "lastVerifiedAt": "2026-10-02T21:16:09.089Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1646,6 +1646,7 @@
     "source": "remoteok",
     "watchlistReason": "org-found-zero-match",
     "website": "toptal.com",
-    "scope": "global"
+    "scope": "global",
+    "verifiedAt": "2026-10-01T22:00:44.943Z"
   }
 ]
