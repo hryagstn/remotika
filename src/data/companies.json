@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-10-02T21:14:39.975Z",
+    "lastVerifiedAt": "2026-10-03T19:44:33.472Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -136,7 +136,7 @@
     "industry": "PT Rekayasa Solverindo (REKSOLINDO) has provided practical material engineering solutions for industries across Indonesia since 2005.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-02T21:14:42.966Z",
+    "lastVerifiedAt": "2026-10-03T19:44:36.342Z",
     "verifiedAt": "2026-09-30T11:39:29.952Z",
     "hasActiveJobs": false,
     "activeJobs": [],
@@ -160,7 +160,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-02T21:14:58.341Z",
+    "lastVerifiedAt": "2026-10-03T19:44:51.594Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -195,7 +195,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-02T21:15:13.942Z",
+    "lastVerifiedAt": "2026-10-03T19:45:06.608Z",
     "hasActiveJobs": false,
     "headquarters": "Worldwide",
     "foundationYear": "2005",
@@ -230,7 +230,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-02T21:15:19.506Z",
+    "lastVerifiedAt": "2026-10-03T19:45:11.506Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -265,7 +265,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-02T21:15:25.627Z",
+    "lastVerifiedAt": "2026-10-03T19:45:17.231Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -457,7 +457,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-02T21:15:30.954Z",
+    "lastVerifiedAt": "2026-10-03T19:45:22.097Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -480,69 +480,6 @@
     "scope": "global"
   },
   {
-    "id": "co-142",
-    "name": "OrderYOYO",
-    "githubOrg": "OrderYOYO",
-    "githubOrgUrl": "https://github.com/OrderYOYO",
-    "remoteokSlug": "regional-sales-manager-orderyoyo-1137279",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-02T21:15:32.480Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Regional Sales Manager",
-        "url": "https://remoteOK.com/remote-jobs/remote-regional-sales-manager-orderyoyo-1137279",
-        "tags": [
-          "exec",
-          "customer support",
-          "marketing",
-          "scheme",
-          "mobile",
-          "sales"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "org-found-zero-match",
-    "website": "orderyoyo.com",
-    "verifiedAt": "2026-09-03T19:58:04.778Z",
-    "scope": "global"
-  },
-  {
-    "id": "co-143",
-    "name": "Warehance",
-    "githubOrg": "warehance",
-    "githubOrgUrl": "https://github.com/warehance",
-    "remoteokSlug": "customer-support-success-specialist-warehance-1137302",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-02T21:15:34.175Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Customer Support & Success Specialist",
-        "url": "https://remoteOK.com/remote-jobs/remote-customer-support-success-specialist-warehance-1137302",
-        "tags": [
-          "customer support"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "org-found-zero-match",
-    "website": "warehance.com",
-    "verifiedAt": "2026-09-04T19:38:54.942Z",
-    "scope": "global"
-  },
-  {
     "id": "co-149",
     "name": "Empire Assets",
     "githubOrg": "",
@@ -556,21 +493,25 @@
     "activeJobs": [
       {
         "title": "Junior Crypto Analyst & Trader",
-        "url": "https://remoteOK.com/remote-jobs/remote-junior-crypto-analyst-trader-empire-assets-1137307",
+        "url": "https://remoteOK.com/remote-jobs/remote-junior-crypto-analyst-trader-empire-assets-1137460",
         "tags": [
-          "part time",
-          "junior",
-          "analyst",
           "crypto",
-          "other",
+          "finance",
+          "trader",
+          "remote",
+          "part time",
+          "full time",
           "web3",
-          "blockchain",
-          "defi",
           "bitcoin",
           "ethereum",
-          "remote",
-          "trader",
-          "Binance"
+          "blockchain",
+          "defi",
+          "work from home",
+          "Anywhere",
+          "junior",
+          "analyst",
+          "exec",
+          "ops"
         ]
       }
     ],
@@ -668,7 +609,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-02T21:15:37.585Z",
+    "lastVerifiedAt": "2026-10-03T19:45:27.458Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1053,7 +994,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-02T21:15:49.254Z",
+    "lastVerifiedAt": "2026-10-03T19:45:38.675Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1229,7 +1170,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-02T21:15:53.798Z",
+    "lastVerifiedAt": "2026-10-03T19:45:43.091Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1346,38 +1287,6 @@
     "scope": "global"
   },
   {
-    "id": "co-178",
-    "name": "Airspace Link",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "backend-software-engineer-airspace-link-1137409",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-09-21T21:12:05.866Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Backend Software Engineer",
-        "url": "https://remoteOK.com/remote-jobs/remote-backend-software-engineer-airspace-link-1137409",
-        "tags": [
-          "golang",
-          "dev",
-          "engineer",
-          "backend",
-          "digital nomad"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "airspacelink.com",
-    "scope": "global"
-  },
-  {
     "id": "co-179",
     "name": "Ashby",
     "githubOrg": "",
@@ -1464,7 +1373,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-02T21:15:56.460Z",
+    "lastVerifiedAt": "2026-10-03T19:45:45.662Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1594,7 +1503,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-02T21:16:02.447Z",
+    "lastVerifiedAt": "2026-10-03T19:45:51.290Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1621,7 +1530,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-02T21:16:09.089Z",
+    "lastVerifiedAt": "2026-10-03T19:45:57.668Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1648,5 +1557,48 @@
     "website": "toptal.com",
     "scope": "global",
     "verifiedAt": "2026-10-01T22:00:44.943Z"
+  },
+  {
+    "id": "co-189",
+    "name": "Lyric",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "growth-strategist-lyric-1135681",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-10-03T20:00:24.519Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Growth Strategist",
+        "url": "https://remoteOK.com/remote-jobs/remote-growth-strategist-lyric-1135681",
+        "tags": [
+          "marketing",
+          "design",
+          "embedded",
+          "technical",
+          "strategy",
+          "customer support",
+          "dev",
+          "travel",
+          "finance",
+          "exec",
+          "content writing",
+          "senior",
+          "ops",
+          "sales",
+          "golang",
+          "digital nomad"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "lyric.com",
+    "scope": "global"
   }
 ]
