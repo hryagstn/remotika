@@ -1727,12 +1727,83 @@ function formatJobsSection(jobs?: ActiveJob[], maxDisplay: number = 3): string {
   return section;
 }
 
+function generateTwitterText(company: CompanyData, slug: string, isVerified: boolean): string {
+  const url = `https://remotika.my.id/company/${slug}`;
+  const hashtags = "#KerjaRemote #RemoteJobs #Remotika";
+  const jobs = company.activeJobs || [];
+
+  if (isVerified) {
+    const header = `🆕 Perusahaan Terverifikasi di Remotika!\n\n${company.name} terkonfirmasi memiliki ${company.verifiedIndonesianCount} anggota tim asal Indonesia via GitHub & sedang buka lowongan remote:`;
+    const cta = `\n\nCek detail: ${url}\n\n${hashtags}`;
+
+    let jobsList = "";
+    if (jobs.length > 0) {
+      const topJobs = jobs.slice(0, 2).map(j => `• ${j.title.trim()}`).join("\n");
+      jobsList = `\n${topJobs}`;
+      if (jobs.length > 2) {
+        jobsList += `\n(+${jobs.length - 2} lowongan lainnya)`;
+      }
+    }
+
+    let tweet = `${header}${jobsList}${cta}`;
+    if (tweet.length > 275) {
+      tweet = `${header}\n\nCek detail: ${url}\n\n${hashtags}`;
+    }
+    return tweet;
+  } else {
+    const header = `💼 Lowongan Remote Baru di Remotika!\n\n${company.name} membuka lowongan kerja remote aktif:`;
+    const cta = `\n\nJadilah developer Indonesia pertama!\n👉 ${url}\n\n${hashtags}`;
+
+    let jobsList = "";
+    if (jobs.length > 0) {
+      const topJobs = jobs.slice(0, 2).map(j => `• ${j.title.trim()}`).join("\n");
+      jobsList = `\n${topJobs}`;
+      if (jobs.length > 2) {
+        jobsList += `\n(+${jobs.length - 2} lowongan lainnya)`;
+      }
+    }
+
+    let tweet = `${header}${jobsList}${cta}`;
+    if (tweet.length > 275) {
+      tweet = `${header}\n\n👉 ${url}\n\n${hashtags}`;
+    }
+    return tweet;
+  }
+}
+
+function generateLinkedInText(company: CompanyData, slug: string, isVerified: boolean): string {
+  const url = `https://remotika.my.id/company/${slug}`;
+  const jobs = company.activeJobs || [];
+  const hashtags = "#RemoteWork #KerjaRemote #IndonesiaDeveloper #TechJobs #Remotika";
+
+  let jobsSection = "";
+  if (jobs.length > 0) {
+    const maxDisplay = 4;
+    const limit = jobs.length === maxDisplay + 1 ? maxDisplay + 1 : maxDisplay;
+    const displayedJobs = jobs.slice(0, limit);
+    const remainingCount = jobs.length - displayedJobs.length;
+
+    const list = displayedJobs.map(j => `• ${j.title.trim()}`).join("\n");
+    jobsSection = `\n\n📌 Lowongan aktif yang tersedia:\n${list}`;
+    if (remainingCount > 0) {
+      jobsSection += `\n(...dan ${remainingCount} lowongan lainnya)`;
+    }
+  }
+
+  if (isVerified) {
+    return `🆕 Perusahaan Terverifikasi Baru di Remotika!\n\n${company.name} baru saja terverifikasi di Remotika. Terkonfirmasi memiliki ${company.verifiedIndonesianCount} anggota tim asal Indonesia via GitHub, dan saat ini mereka sedang membuka lowongan kerja remote aktif!${jobsSection}\n\nCek detail profil perusahaan dan pembuktian verifikasinya di Remotika:\n👉 ${url}\n\n${hashtags}`;
+  } else {
+    return `💼 Lowongan Remote Baru di Remotika!\n\n${company.name} sedang membuka lowongan kerja remote global aktif!\n\nSaat ini belum ada anggota tim asal Indonesia yang terverifikasi via keanggotaan publik GitHub di perusahaan ini. Apakah kamu yang akan menjadi developer Indonesia pertama di tim mereka?${jobsSection}\n\nCek detail lowongan dan cara apply di:\n👉 ${url}\n\n${hashtags}`;
+  }
+}
+
 async function notifyNewVerifiedCompanies(initialCompanies: CompanyData[], finalCompanies: CompanyData[]) {
   const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
   const TELEGRAM_CHANNEL_ID = process.env.TELEGRAM_CHANNEL_ID;
+  const SOCIAL_WEBHOOK_URL = process.env.SOCIAL_WEBHOOK_URL;
 
-  if (!TELEGRAM_BOT_TOKEN || !TELEGRAM_CHANNEL_ID) {
-    console.log("\n[Telegram] TELEGRAM_BOT_TOKEN or TELEGRAM_CHANNEL_ID environment variables are not set. Skipping notifications.");
+  if ((!TELEGRAM_BOT_TOKEN || !TELEGRAM_CHANNEL_ID) && !SOCIAL_WEBHOOK_URL) {
+    console.log("\n[Notifications] Neither Telegram nor SOCIAL_WEBHOOK_URL are set. Skipping notifications.");
     return;
   }
 
@@ -1771,11 +1842,11 @@ async function notifyNewVerifiedCompanies(initialCompanies: CompanyData[], final
   });
 
   if (newActiveJobCompanies.length === 0) {
-    console.log("\n[Telegram] No new active job companies found in this run. No notifications to send.");
+    console.log("\n[Notifications] No new active job companies found in this run. No notifications to send.");
     return;
   }
 
-  console.log(`\n[Telegram] Found ${newActiveJobCompanies.length} new company/companies with active jobs. Sending notifications...`);
+  console.log(`\n[Notifications] Found ${newActiveJobCompanies.length} new company/companies with active jobs. Sending notifications...`);
 
   for (const company of newActiveJobCompanies) {
     const slug = getCompanySlug(company);
@@ -1788,29 +1859,75 @@ async function notifyNewVerifiedCompanies(initialCompanies: CompanyData[], final
     } else {
       messageText = `💼 *Lowongan Remote Baru di Remotika*\n\n*${escapeMarkdown(company.name)}* sedang membuka lowongan kerja remote aktif! Saat ini belum ada anggota tim asal Indonesia yang terverifikasi via GitHub — jadilah developer Indonesia pertama di tim mereka!${jobsSection}\n\nLihat selengkapnya di sini: https://remotika.my.id/company/${slug}`;
     }
-    
-    try {
-      console.log(`  [Telegram] Sending notification for ${company.name} (Slug: ${slug}, Verified: ${isVerified})...`);
-      const res = await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-          chat_id: TELEGRAM_CHANNEL_ID,
-          text: messageText,
-          parse_mode: "Markdown"
-        })
-      });
 
-      if (!res.ok) {
-        const errorText = await res.text();
-        console.error(`  ❌ [Telegram] Failed to send notification for ${company.name}: ${res.statusText} - ${errorText}`);
-      } else {
-        console.log(`  ✅ [Telegram] Notification sent successfully for ${company.name}.`);
+    // 1. Dispatch Telegram notification
+    if (TELEGRAM_BOT_TOKEN && TELEGRAM_CHANNEL_ID) {
+      try {
+        console.log(`  [Telegram] Sending notification for ${company.name} (Slug: ${slug}, Verified: ${isVerified})...`);
+        const res = await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({
+            chat_id: TELEGRAM_CHANNEL_ID,
+            text: messageText,
+            parse_mode: "Markdown"
+          })
+        });
+
+        if (!res.ok) {
+          const errorText = await res.text();
+          console.error(`  ❌ [Telegram] Failed to send notification for ${company.name}: ${res.statusText} - ${errorText}`);
+        } else {
+          console.log(`  ✅ [Telegram] Notification sent successfully for ${company.name}.`);
+        }
+      } catch (err: any) {
+        console.error(`  ❌ [Telegram] Error sending message for ${company.name}:`, err.message);
       }
-    } catch (err: any) {
-      console.error(`  ❌ [Telegram] Error sending message for ${company.name}:`, err.message);
+    }
+
+    // 2. Dispatch Social Webhook notification (Make.com / Zapier / etc)
+    if (SOCIAL_WEBHOOK_URL) {
+      try {
+        console.log(`  [Social Webhook] Sending payload for ${company.name} to Make.com...`);
+        const twitterText = generateTwitterText(company, slug, isVerified);
+        const linkedinText = generateLinkedInText(company, slug, isVerified);
+
+        const webhookPayload = {
+          event: isVerified ? "new_verified_company" : "new_remote_hiring_company",
+          company: {
+            id: company.id,
+            name: company.name,
+            slug,
+            url: `https://remotika.my.id/company/${slug}`,
+            isVerified,
+            verifiedCount: company.verifiedIndonesianCount,
+            activeJobsCount: company.activeJobs?.length || 0,
+            activeJobs: (company.activeJobs || []).map(j => ({ title: j.title, url: j.url }))
+          },
+          telegramText: messageText,
+          twitterText,
+          linkedinText
+        };
+
+        const hookRes = await fetch(SOCIAL_WEBHOOK_URL, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(webhookPayload)
+        });
+
+        if (!hookRes.ok) {
+          const errBody = await hookRes.text();
+          console.error(`  ❌ [Social Webhook] Failed for ${company.name}: ${hookRes.statusText} - ${errBody}`);
+        } else {
+          console.log(`  ✅ [Social Webhook] Notification sent successfully for ${company.name}.`);
+        }
+      } catch (err: any) {
+        console.error(`  ❌ [Social Webhook] Error sending webhook payload for ${company.name}:`, err.message);
+      }
     }
   }
 }
