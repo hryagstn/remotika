@@ -1,31 +1,5 @@
 [
   {
-    "id": "co-190",
-    "name": "BikeFixup",
-    "githubOrg": "bikefixup",
-    "githubOrgUrl": "https://github.com/bikefixup",
-    "remoteokSlug": null,
-    "industry": "Technology",
-    "verifiedIndonesianCount": 1,
-    "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-04T07:23:19.024Z",
-    "verifiedAt": "2026-10-04T07:23:19.024Z",
-    "hasActiveJobs": false,
-    "activeJobs": [],
-    "verifiedMembers": [
-      {
-        "id": "204626097",
-        "githubLogin": "hryagstn",
-        "githubProfileUrl": "https://github.com/hryagstn",
-        "locationRaw": "Bandung, ID"
-      }
-    ],
-    "headquarters": "India",
-    "scope": "global",
-    "status": "verified",
-    "source": "community"
-  },
-  {
     "id": "co-9",
     "name": "Xendit",
     "githubOrg": "xendit",
@@ -34,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-10-03T19:44:33.472Z",
+    "lastVerifiedAt": "2026-10-04T20:00:40.189Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -154,6 +128,32 @@
     "headquarters": "San Francisco, CA"
   },
   {
+    "id": "co-190",
+    "name": "BikeFixup",
+    "githubOrg": "bikefixup",
+    "githubOrgUrl": "https://github.com/bikefixup",
+    "remoteokSlug": null,
+    "industry": "Technology",
+    "verifiedIndonesianCount": 1,
+    "label": "Confirmed",
+    "lastVerifiedAt": "2026-10-04T07:23:19.024Z",
+    "verifiedAt": "2026-10-04T07:23:19.024Z",
+    "hasActiveJobs": false,
+    "activeJobs": [],
+    "verifiedMembers": [
+      {
+        "id": "204626097",
+        "githubLogin": "hryagstn",
+        "githubProfileUrl": "https://github.com/hryagstn",
+        "locationRaw": "Bandung, ID"
+      }
+    ],
+    "headquarters": "India",
+    "scope": "global",
+    "status": "verified",
+    "source": "community"
+  },
+  {
     "id": "co-187",
     "name": "Rekayasa Solverindo",
     "githubOrg": "reksolindo-org",
@@ -162,7 +162,7 @@
     "industry": "PT Rekayasa Solverindo (REKSOLINDO) has provided practical material engineering solutions for industries across Indonesia since 2005.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-03T19:44:36.342Z",
+    "lastVerifiedAt": "2026-10-04T20:00:43.017Z",
     "verifiedAt": "2026-09-30T11:39:29.952Z",
     "hasActiveJobs": false,
     "activeJobs": [],
@@ -186,7 +186,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-03T19:44:51.594Z",
+    "lastVerifiedAt": "2026-10-04T20:00:59.652Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -221,7 +221,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-03T19:45:06.608Z",
+    "lastVerifiedAt": "2026-10-04T20:01:14.929Z",
     "hasActiveJobs": false,
     "headquarters": "Worldwide",
     "foundationYear": "2005",
@@ -256,7 +256,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-03T19:45:11.506Z",
+    "lastVerifiedAt": "2026-10-04T20:01:19.812Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -291,7 +291,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-03T19:45:17.231Z",
+    "lastVerifiedAt": "2026-10-04T20:01:26.817Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -318,6 +318,60 @@
     "lastVerifiedAt": "2026-06-25T19:24:38.317Z",
     "hasActiveJobs": true,
     "activeJobs": [
+      {
+        "title": "Senior React Full-stack Developer",
+        "url": "https://remotive.com/remote-jobs/software-development/senior-react-full-stack-developer-2091133",
+        "tags": [
+          ".Net",
+          "android",
+          "AWS",
+          "azure",
+          "C",
+          "C#",
+          "C++",
+          "data science",
+          "fullstack",
+          "golang",
+          "ios",
+          "java",
+          "javascript",
+          "node.js",
+          "php",
+          "python",
+          "react",
+          "react js",
+          "ruby/rails",
+          "scala",
+          "shopify",
+          "swift",
+          "UI/UX",
+          "wordpress",
+          "blockchain",
+          "AI/ML",
+          "automation",
+          "react native",
+          "rust",
+          "product management",
+          "unity",
+          "electron",
+          "spring",
+          "data analysis",
+          "laravel",
+          "Ethereum",
+          "graphic design",
+          "Typescript ",
+          "angular ",
+          "GCP",
+          "firebase",
+          "data engineering",
+          "Site Reliability",
+          "Symfony",
+          "startup",
+          "marketplace",
+          "next.js",
+          "flutter"
+        ]
+      },
       {
         "title": "Senior AI Engineer",
         "url": "https://remotive.com/remote-jobs/artificial-intelligence/senior-ai-engineer-2091131",
@@ -483,7 +537,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-03T19:45:22.097Z",
+    "lastVerifiedAt": "2026-10-04T20:01:31.965Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -635,7 +689,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-03T19:45:27.458Z",
+    "lastVerifiedAt": "2026-10-04T20:01:34.565Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1020,7 +1074,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-03T19:45:38.675Z",
+    "lastVerifiedAt": "2026-10-04T20:01:46.830Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1196,7 +1250,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-03T19:45:43.091Z",
+    "lastVerifiedAt": "2026-10-04T20:01:52.037Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1399,7 +1453,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-03T19:45:45.662Z",
+    "lastVerifiedAt": "2026-10-04T20:01:54.917Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1529,7 +1583,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-03T19:45:51.290Z",
+    "lastVerifiedAt": "2026-10-04T20:02:00.955Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1556,7 +1610,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-03T19:45:57.668Z",
+    "lastVerifiedAt": "2026-10-04T20:02:07.586Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
