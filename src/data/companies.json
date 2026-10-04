@@ -1,5 +1,31 @@
 [
   {
+    "id": "co-190",
+    "name": "BikeFixup",
+    "githubOrg": "bikefixup",
+    "githubOrgUrl": "https://github.com/bikefixup",
+    "remoteokSlug": null,
+    "industry": "Technology",
+    "verifiedIndonesianCount": 1,
+    "label": "Confirmed",
+    "lastVerifiedAt": "2026-10-04T07:23:19.024Z",
+    "verifiedAt": "2026-10-04T07:23:19.024Z",
+    "hasActiveJobs": false,
+    "activeJobs": [],
+    "verifiedMembers": [
+      {
+        "id": "204626097",
+        "githubLogin": "hryagstn",
+        "githubProfileUrl": "https://github.com/hryagstn",
+        "locationRaw": "Bandung, ID"
+      }
+    ],
+    "headquarters": "India",
+    "scope": "global",
+    "status": "verified",
+    "source": "community"
+  },
+  {
     "id": "co-9",
     "name": "Xendit",
     "githubOrg": "xendit",
