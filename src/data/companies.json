@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-10-04T20:00:40.189Z",
+    "lastVerifiedAt": "2026-10-05T23:06:08.242Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -48,7 +48,7 @@
       },
       {
         "title": "RevOps Systems Administrator (Salesforce)",
-        "url": "https://job-boards.greenhouse.io/xendit/jobs/7992220003",
+        "url": "https://job-boards.greenhouse.io/xendit/jobs/7992262003",
         "tags": []
       },
       {
@@ -162,7 +162,7 @@
     "industry": "PT Rekayasa Solverindo (REKSOLINDO) has provided practical material engineering solutions for industries across Indonesia since 2005.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-04T20:00:43.017Z",
+    "lastVerifiedAt": "2026-10-05T23:06:12.404Z",
     "verifiedAt": "2026-09-30T11:39:29.952Z",
     "hasActiveJobs": false,
     "activeJobs": [],
@@ -186,7 +186,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-04T20:00:59.652Z",
+    "lastVerifiedAt": "2026-10-05T23:06:27.738Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -221,7 +221,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-04T20:01:14.929Z",
+    "lastVerifiedAt": "2026-10-05T23:06:43.542Z",
     "hasActiveJobs": false,
     "headquarters": "Worldwide",
     "foundationYear": "2005",
@@ -256,7 +256,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-04T20:01:19.812Z",
+    "lastVerifiedAt": "2026-10-05T23:06:48.619Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -291,7 +291,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-04T20:01:26.817Z",
+    "lastVerifiedAt": "2026-10-05T23:06:57.772Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -537,7 +537,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-04T20:01:31.965Z",
+    "lastVerifiedAt": "2026-10-05T23:07:03.088Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -689,7 +689,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-04T20:01:34.565Z",
+    "lastVerifiedAt": "2026-10-05T23:07:05.650Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1074,7 +1074,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-04T20:01:46.830Z",
+    "lastVerifiedAt": "2026-10-05T23:07:18.655Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1250,7 +1250,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-04T20:01:52.037Z",
+    "lastVerifiedAt": "2026-10-05T23:07:24.263Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1453,7 +1453,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-04T20:01:54.917Z",
+    "lastVerifiedAt": "2026-10-05T23:07:27.147Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1583,7 +1583,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-04T20:02:00.955Z",
+    "lastVerifiedAt": "2026-10-05T23:07:33.244Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1610,7 +1610,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-04T20:02:07.586Z",
+    "lastVerifiedAt": "2026-10-05T23:07:39.978Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1679,6 +1679,75 @@
     "source": "remoteok",
     "watchlistReason": "no-org-found",
     "website": "lyric.com",
+    "scope": "global"
+  },
+  {
+    "id": "co-191",
+    "name": "Fortanix",
+    "githubOrg": "fortanix",
+    "githubOrgUrl": "https://github.com/fortanix",
+    "remoteokSlug": "federal-business-development-director-fortanix-1137463",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-10-05T23:23:21.622Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Federal Business Development Director",
+        "url": "https://remoteOK.com/remote-jobs/remote-federal-business-development-director-fortanix-1137463",
+        "tags": [
+          "exec",
+          "infosec",
+          "teaching",
+          "consulting",
+          "technical",
+          "customer support",
+          "marketing",
+          "speech",
+          "cloud",
+          "bus dev",
+          "sales",
+          "medical"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "fortanix.com",
+    "scope": "global"
+  },
+  {
+    "id": "co-192",
+    "name": "Leverage Live Local",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "head-of-operations-leverage-live-local-1137461",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-10-05T23:23:22.762Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Head of Operations",
+        "url": "https://remoteOK.com/remote-jobs/remote-head-of-operations-leverage-live-local-1137461",
+        "tags": [
+          "non tech",
+          "ops",
+          "exec"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "leveragelivelocal.com",
     "scope": "global"
   }
 ]
