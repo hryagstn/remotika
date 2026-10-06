@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-10-05T23:06:08.242Z",
+    "lastVerifiedAt": "2026-10-06T21:32:37.868Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -162,7 +162,7 @@
     "industry": "PT Rekayasa Solverindo (REKSOLINDO) has provided practical material engineering solutions for industries across Indonesia since 2005.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-05T23:06:12.404Z",
+    "lastVerifiedAt": "2026-10-06T21:32:41.976Z",
     "verifiedAt": "2026-09-30T11:39:29.952Z",
     "hasActiveJobs": false,
     "activeJobs": [],
@@ -186,7 +186,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-05T23:06:27.738Z",
+    "lastVerifiedAt": "2026-10-06T21:32:57.171Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -221,7 +221,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-05T23:06:43.542Z",
+    "lastVerifiedAt": "2026-10-06T21:33:12.539Z",
     "hasActiveJobs": false,
     "headquarters": "Worldwide",
     "foundationYear": "2005",
@@ -256,7 +256,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-05T23:06:48.619Z",
+    "lastVerifiedAt": "2026-10-06T21:33:17.593Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -291,7 +291,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-05T23:06:57.772Z",
+    "lastVerifiedAt": "2026-10-06T21:33:23.702Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -537,7 +537,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-05T23:07:03.088Z",
+    "lastVerifiedAt": "2026-10-06T21:33:29.200Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -689,7 +689,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-05T23:07:05.650Z",
+    "lastVerifiedAt": "2026-10-06T21:33:31.845Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1074,7 +1074,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-05T23:07:18.655Z",
+    "lastVerifiedAt": "2026-10-06T21:33:43.571Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1250,7 +1250,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-05T23:07:24.263Z",
+    "lastVerifiedAt": "2026-10-06T21:33:49.826Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1453,9 +1453,19 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-05T23:07:27.147Z",
+    "lastVerifiedAt": "2026-10-06T21:33:52.516Z",
     "hasActiveJobs": true,
     "activeJobs": [
+      {
+        "title": "Platform and Integration Engineer Security Telemetry",
+        "url": "https://remoteOK.com/remote-jobs/remote-platform-and-integration-engineer-security-telemetry-redmimicry-1137465",
+        "tags": [
+          "golang",
+          "infosec",
+          "engineer",
+          "part time"
+        ]
+      },
       {
         "title": "Software Developer Security Analytics",
         "url": "https://remoteOK.com/remote-jobs/remote-software-developer-security-analytics-redmimicry-1137417",
@@ -1583,7 +1593,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-05T23:07:33.244Z",
+    "lastVerifiedAt": "2026-10-06T21:33:58.323Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1610,7 +1620,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-05T23:07:39.978Z",
+    "lastVerifiedAt": "2026-10-06T21:34:05.531Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1689,8 +1699,8 @@
     "remoteokSlug": "federal-business-development-director-fortanix-1137463",
     "industry": null,
     "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-05T23:23:21.622Z",
+    "label": "Confirmed",
+    "lastVerifiedAt": "2026-10-06T21:34:12.283Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1718,7 +1728,8 @@
     "source": "remoteok",
     "watchlistReason": "org-found-zero-match",
     "website": "fortanix.com",
-    "scope": "global"
+    "scope": "global",
+    "verifiedAt": "2026-10-05T23:23:21.622Z"
   },
   {
     "id": "co-192",
