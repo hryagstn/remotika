@@ -431,7 +431,7 @@ async function checkWebsiteLiveness(url: string | null, orgLogin: string): Promi
   }
 }
 
-function extractWebsiteFromDescription(companyName: string, description: string): string {
+function extractWebsiteFromDescription(companyName: string, description: string): string | null {
   const cleanName = companyName.toLowerCase().trim();
   
   // Try to find URLs in the description
@@ -457,12 +457,7 @@ function extractWebsiteFromDescription(companyName: string, description: string)
     return Array.from(foundDomains)[0];
   }
 
-  // Fallback: guess from company name
-  const slug = cleanName
-    .replace(/[^\w\s-]/g, "")
-    .replace(/[\s_-]+/g, "")
-    .trim();
-  return `${slug}.com`;
+  return null;
 }
 
 export function isSignificantMatch(companyName: string, orgName: string | null, orgLogin: string): boolean {
@@ -601,7 +596,7 @@ async function translateText(text: string, targetLanguage: string = "en"): Promi
 
 interface RemoteOkCandidate {
   name: string;
-  website: string;
+  website?: string | null;
   remoteokSlug: string;
   jobs: ActiveJob[];
 }
@@ -711,10 +706,13 @@ async function harvestRemoteOkCandidates(existingCompanies: CompanyData[]): Prom
       const existingCandidate = candidatesMap.get(companyKey);
       if (existingCandidate) {
         existingCandidate.jobs.push(activeJob);
+        if (!existingCandidate.website && website) {
+          existingCandidate.website = website;
+        }
       } else {
         candidatesMap.set(companyKey, {
           name: companyName,
-          website: website,
+          website: website || undefined,
           remoteokSlug: job.slug ? fixMojibake(job.slug.split("-").slice(1).join("-")) : companyKey,
           jobs: [activeJob]
         });
@@ -731,7 +729,7 @@ async function harvestRemoteOkCandidates(existingCompanies: CompanyData[]): Prom
 const createWatchlistEntry = (
   name: string,
   githubOrg: string | null,
-  website: string,
+  website: string | null | undefined,
   remoteokSlug: string,
   reason: "no-org-found" | "org-found-zero-match",
   jobs: ActiveJob[],
@@ -761,7 +759,7 @@ const createWatchlistEntry = (
     status: "watchlist",
     source: "remoteok",
     watchlistReason: reason,
-    website: website
+    website: website || undefined
   };
 };
 
@@ -1534,15 +1532,15 @@ async function main() {
   // 4.5 Process RemoteOK Candidate discovery and watchlist sorting
   console.log("\n[Pipeline] Processing harvested RemoteOK candidates...");
   for (const candidate of remoteokCandidates) {
-    const candidateDomain = parseDomain(candidate.website);
+    const candidateDomain = parseDomain(candidate.website || null);
     
     // Check if domain is already in updatedCompaniesMap values
     const currentCompanies = Array.from(updatedCompaniesMap.values());
-    const domainExists = currentCompanies.some(c => {
+    const domainExists = candidateDomain ? currentCompanies.some(c => {
       if (c.website && parseDomain(c.website) === candidateDomain) return true;
       const parsedDom = parseDomain(c.githubOrgUrl) || parseDomain(c.jobSources?.careerPageUrl || null);
       return parsedDom === candidateDomain;
-    });
+    }) : false;
 
     if (domainExists) {
       console.log(`  ⏭️ Candidate "${candidate.name}" domain (${candidateDomain}) already exists. Skipping.`);
@@ -1550,7 +1548,7 @@ async function main() {
     }
 
     // Try to resolve organization on GitHub
-    const resolvedOrg = await resolveGithubOrg(candidate.name, candidate.website);
+    const resolvedOrg = await resolveGithubOrg(candidate.name, candidate.website || null);
     
     if (resolvedOrg) {
       const resolvedOrgKey = resolvedOrg.toLowerCase().trim();
@@ -1567,7 +1565,9 @@ async function main() {
         // Passed Saringan A/B/C!
         scannedCompany.status = "verified";
         scannedCompany.source = "remoteok";
-        scannedCompany.website = candidate.website;
+        if (candidate.website) {
+          scannedCompany.website = candidate.website;
+        }
         
         // Enrich with candidate jobs from RemoteOK
         scannedCompany.activeJobs = candidate.jobs;
