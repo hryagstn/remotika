@@ -6,6 +6,7 @@ import Link from "next/link";
 import { Check, ChevronDown, Code2, Mail, Search, Send, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { formatExternalUrl } from "@/lib/utils";
 import { CompanyData, submitSuggestion } from "../actions";
 
 const TELEGRAM_CHANNEL_URL = "https://t.me/remotika_updates";
@@ -276,10 +277,10 @@ function CompanyRow({ company, expanded, onToggleMembers, onBadge, onSuggest }: 
     <div className="company-row__main">
       <div className="company-identity"><Link href={href} className="company-monogram" aria-label={`Profil ${company.name}`}>{company.name.slice(0,2).toUpperCase()}</Link><div><div className="flex items-center gap-1.5 flex-wrap"><h2><Link href={href}>{company.name}</Link></h2><span className={`text-[10px] font-semibold px-2 py-0.5 rounded-md ${isLocal ? "bg-amber-500/10 text-amber-700 dark:text-amber-400 border border-amber-500/20" : "bg-sky-500/10 text-sky-700 dark:text-sky-400 border border-sky-500/20"}`}>{isLocal ? "🇮🇩 Lokal" : "🌐 Global"}</span>{watchlist && <span className="text-[10px] font-semibold px-2 py-0.5 rounded-md bg-slate-500/10 text-slate-600 dark:text-slate-400 border border-slate-500/20">Watchlist</span>}</div><p>{company.industry || (company.githubOrg?`github.com/${company.githubOrg}`:"Organisasi belum ditemukan")}</p></div></div>
       <div className="company-evidence">{watchlist?<><span className="unconfirmed">Belum ditemukan</span><button type="button" onClick={()=>onSuggest(company.name)}>Kirim sumber</button></>:<><button type="button" aria-expanded={expanded} onClick={onToggleMembers}>{company.verifiedMembers.length} anggota <ChevronDown size={14} aria-hidden="true"/></button><span>{company.label}</span></>}</div>
-      <div className="company-jobs">{company.activeJobs?.length?<><Link href={href+"#lowongan"}>{company.activeJobs.length} lowongan →</Link><span>Lihat posisi dan lokasi</span></>:company.jobSources?.careerPageUrl?<><a href={company.jobSources.careerPageUrl} target="_blank" rel="noopener noreferrer">Halaman karier ↗</a><span>Belum ada posisi tercatat</span></>:<><span>Belum ada lowongan</span><Link href={href}>Lihat profil →</Link></>}</div>
+      <div className="company-jobs">{company.activeJobs?.length?<><Link href={href+"#lowongan"}>{company.activeJobs.length} lowongan →</Link><span>Lihat posisi dan lokasi</span></>:company.jobSources?.careerPageUrl?<><a href={formatExternalUrl(company.jobSources.careerPageUrl)} target="_blank" rel="noopener noreferrer">Halaman karier ↗</a><span>Belum ada posisi tercatat</span></>:<><span>Belum ada lowongan</span><Link href={href}>Lihat profil →</Link></>}</div>
       <p className="company-date">{date}</p>
     </div>
-    {expanded && <div className="inline-evidence"><div className="section-heading"><h3>Anggota dengan lokasi Indonesia</h3><button type="button" className="quiet-link" onClick={onBadge}>Salin badge</button></div><ul>{company.verifiedMembers.map(member=><li key={member.id}><a href={member.githubProfileUrl} target="_blank" rel="noopener noreferrer">{member.githubLogin} ↗</a><span>{member.locationRaw || "Indonesia"}</span></li>)}</ul><p>Lokasi berasal dari profil pengguna. <Link href="/cara-kerja#batasan">Baca batasan data</Link>.</p></div>}
+    {expanded && <div className="inline-evidence"><div className="section-heading"><h3>Anggota dengan lokasi Indonesia</h3><button type="button" className="quiet-link" onClick={onBadge}>Salin badge</button></div><ul>{company.verifiedMembers.map(member=><li key={member.id}><a href={formatExternalUrl(member.githubProfileUrl)} target="_blank" rel="noopener noreferrer">{member.githubLogin} ↗</a><span>{member.locationRaw || "Indonesia"}</span></li>)}</ul><p>Lokasi berasal dari profil pengguna. <Link href="/cara-kerja#batasan">Baca batasan data</Link>.</p></div>}
   </article>;
 }
 

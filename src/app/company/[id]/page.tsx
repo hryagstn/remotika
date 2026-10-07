@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { getCompanies } from "../../actions";
+import { formatExternalUrl } from "@/lib/utils";
 import BadgeEmbed from "./BadgeEmbed";
 import ShareCompany from "./ShareCompany";
 
@@ -71,11 +72,11 @@ export default async function CompanyProfilePage({ params }: PageProps) {
   const date = company.lastVerifiedAt ? new Intl.DateTimeFormat("id-ID", {day:"numeric",month:"long",year:"numeric"}).format(new Date(company.lastVerifiedAt)) : "Belum diperiksa";
   return <main className="research-page profile-page">
     <Link href="/" className="back-link">← Semua perusahaan</Link>
-    <header className="profile-intro"><div className="company-monogram company-monogram--large" aria-hidden="true">{company.name.slice(0,2).toUpperCase()}</div><div><p className="eyebrow">Profil perusahaan</p><h1>{company.name}</h1>{company.industry && <p>{company.industry}</p>}<div className="profile-links">{company.website && <a href={company.website} target="_blank" rel="noopener noreferrer">Situs perusahaan ↗</a>}{company.githubOrg && <a href={company.githubOrgUrl} target="_blank" rel="noopener noreferrer">GitHub ↗</a>}{company.gitlabOrgUrl && <a href={company.gitlabOrgUrl} target="_blank" rel="noopener noreferrer">GitLab ↗</a>}</div></div></header>
+    <header className="profile-intro"><div className="company-monogram company-monogram--large" aria-hidden="true">{company.name.slice(0,2).toUpperCase()}</div><div><p className="eyebrow">Profil perusahaan</p><h1>{company.name}</h1>{company.industry && <p>{company.industry}</p>}<div className="profile-links">{company.website && <a href={formatExternalUrl(company.website)} target="_blank" rel="noopener noreferrer">Situs perusahaan ↗</a>}{company.githubOrg && <a href={company.githubOrgUrl} target="_blank" rel="noopener noreferrer">GitHub ↗</a>}{company.gitlabOrgUrl && <a href={company.gitlabOrgUrl} target="_blank" rel="noopener noreferrer">GitLab ↗</a>}</div></div></header>
     <div className="profile-layout">
       <div className="profile-content">
         <section id="lowongan"><div className="section-heading"><h2>Lowongan tercatat</h2><span>{jobs.length} posisi</span></div><p className="section-description">Periksa kembali syarat lokasi dan ketersediaan di halaman perekrutan.</p>
-          {jobs.length ? <ul className="job-list">{jobs.map((job,index)=><li key={job.url+index}><a href={job.url} target="_blank" rel="noopener noreferrer"><h3>{job.title}</h3><span aria-hidden="true">↗</span></a><p>{job.location || "Lokasi: lihat halaman lowongan"}{job.salary ? " · "+job.salary : ""}</p>{job.tags.length>0 && <p className="job-tags">{job.tags.slice(0,4).join(" · ")}</p>}</li>)}</ul> : <div className="margin-note"><p>Belum ada lowongan dalam data yang tersimpan.</p>{company.jobSources?.careerPageUrl && <a href={company.jobSources.careerPageUrl} target="_blank" rel="noopener noreferrer">Periksa halaman karier ↗</a>}</div>}
+          {jobs.length ? <ul className="job-list">{jobs.map((job,index)=><li key={job.url+index}><a href={formatExternalUrl(job.url)} target="_blank" rel="noopener noreferrer"><h3>{job.title}</h3><span aria-hidden="true">↗</span></a><p>{job.location || "Lokasi: lihat halaman lowongan"}{job.salary ? " · "+job.salary : ""}</p>{job.tags.length>0 && <p className="job-tags">{job.tags.slice(0,4).join(" · ")}</p>}</li>)}</ul> : <div className="margin-note"><p>Belum ada lowongan dalam data yang tersimpan.</p>{company.jobSources?.careerPageUrl && <a href={formatExternalUrl(company.jobSources.careerPageUrl)} target="_blank" rel="noopener noreferrer">Periksa halaman karier ↗</a>}</div>}
           {jobs.length>0 && <details className="disclosure profile-tools apple-page"><summary>Bagikan halaman perusahaan</summary><div><ShareCompany companyName={company.name} companyId={company.id} companySlug={slug} verifiedCount={company.verifiedIndonesianCount} hasActiveJobs={company.hasActiveJobs}/></div></details>}
         </section>
         <section id="bukti"><div className="section-heading"><h2>Bukti publik</h2><span>{company.verifiedMembers.length} anggota</span></div><p className="section-description">Profil berikut mencantumkan lokasi di Indonesia dan memiliki jejak publik pada organisasi ini.</p>

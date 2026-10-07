@@ -627,7 +627,8 @@ async function harvestRemoteOkCandidates(existingCompanies: CompanyData[]): Prom
     const existingDomains = new Set<string>();
     existingCompanies.forEach(c => {
       if (c.website) {
-        existingDomains.add(c.website.toLowerCase().trim());
+        const dom = parseDomain(c.website) || c.website.toLowerCase().trim();
+        existingDomains.add(dom);
       }
       const parsedDom = parseDomain(c.githubOrgUrl) || parseDomain(c.jobSources?.careerPageUrl || null);
       if (parsedDom) {
