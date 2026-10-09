@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-10-08T21:56:32.520Z",
+    "lastVerifiedAt": "2026-10-09T21:32:33.746Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -64,11 +64,6 @@
       {
         "title": "Senior Solutions Engineer",
         "url": "https://job-boards.greenhouse.io/xendit/jobs/7719174003",
-        "tags": []
-      },
-      {
-        "title": "Sr. Product Manager - MFG",
-        "url": "https://job-boards.greenhouse.io/xendit/jobs/8003063003",
         "tags": []
       },
       {
@@ -162,7 +157,7 @@
     "industry": "PT Rekayasa Solverindo (REKSOLINDO) has provided practical material engineering solutions for industries across Indonesia since 2005.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-08T21:56:36.554Z",
+    "lastVerifiedAt": "2026-10-09T21:32:37.648Z",
     "verifiedAt": "2026-09-30T11:39:29.952Z",
     "hasActiveJobs": false,
     "activeJobs": [],
@@ -186,7 +181,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-08T21:56:51.801Z",
+    "lastVerifiedAt": "2026-10-09T21:32:52.788Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -221,7 +216,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-08T21:57:08.092Z",
+    "lastVerifiedAt": "2026-10-09T21:33:07.834Z",
     "hasActiveJobs": false,
     "headquarters": "Worldwide",
     "foundationYear": "2005",
@@ -256,7 +251,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-08T21:57:13.173Z",
+    "lastVerifiedAt": "2026-10-09T21:33:12.812Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -291,7 +286,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-08T21:57:19.087Z",
+    "lastVerifiedAt": "2026-10-09T21:33:18.721Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -537,7 +532,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-08T21:57:24.104Z",
+    "lastVerifiedAt": "2026-10-09T21:33:23.928Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -643,7 +638,7 @@
     "scope": "global"
   },
   {
-    "id": "co-222",
+    "id": "co-240",
     "name": "The AI Whistleblower Initiative",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -651,7 +646,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-08T22:13:14.196Z",
+    "lastVerifiedAt": "2026-10-09T21:49:11.972Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -679,7 +674,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-08T21:57:26.585Z",
+    "lastVerifiedAt": "2026-10-09T21:33:26.513Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -712,7 +707,7 @@
     "scope": "global"
   },
   {
-    "id": "co-223",
+    "id": "co-241",
     "name": "Salesforge",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -720,7 +715,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-08T22:13:15.475Z",
+    "lastVerifiedAt": "2026-10-09T21:49:13.280Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -743,7 +738,7 @@
     "scope": "global"
   },
   {
-    "id": "co-224",
+    "id": "co-242",
     "name": "Orca Bio",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -751,7 +746,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-08T22:13:16.571Z",
+    "lastVerifiedAt": "2026-10-09T21:49:14.395Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -780,7 +775,7 @@
     "scope": "global"
   },
   {
-    "id": "co-225",
+    "id": "co-243",
     "name": "Kruger NearShore LLC - Rekluti",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -788,7 +783,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-08T22:13:17.660Z",
+    "lastVerifiedAt": "2026-10-09T21:49:15.514Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -865,7 +860,7 @@
     "scope": "global"
   },
   {
-    "id": "co-226",
+    "id": "co-244",
     "name": "MultiplyMii",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -873,7 +868,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-08T22:13:18.777Z",
+    "lastVerifiedAt": "2026-10-09T21:49:16.649Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -905,7 +900,7 @@
     "scope": "global"
   },
   {
-    "id": "co-227",
+    "id": "co-245",
     "name": "Adaptive Teams",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -913,7 +908,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-08T22:13:19.865Z",
+    "lastVerifiedAt": "2026-10-09T21:49:17.775Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1013,7 +1008,7 @@
     "scope": "global"
   },
   {
-    "id": "co-221",
+    "id": "co-239",
     "name": "Copenhagen Optimization",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -1021,7 +1016,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-08T22:13:12.987Z",
+    "lastVerifiedAt": "2026-10-09T21:49:10.701Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1057,7 +1052,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-08T21:57:38.260Z",
+    "lastVerifiedAt": "2026-10-09T21:33:37.842Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1081,7 +1076,7 @@
     "scope": "global"
   },
   {
-    "id": "co-220",
+    "id": "co-238",
     "name": "Law Offices of Sabrina Li",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -1089,7 +1084,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-08T22:13:11.859Z",
+    "lastVerifiedAt": "2026-10-09T21:49:09.556Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1119,7 +1114,7 @@
     "scope": "global"
   },
   {
-    "id": "co-219",
+    "id": "co-237",
     "name": "Sleek",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -1127,7 +1122,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-08T22:13:10.546Z",
+    "lastVerifiedAt": "2026-10-09T21:49:08.280Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1162,7 +1157,7 @@
     "scope": "global"
   },
   {
-    "id": "co-217",
+    "id": "co-235",
     "name": "Arango",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -1170,7 +1165,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-08T22:13:08.153Z",
+    "lastVerifiedAt": "2026-10-09T21:49:05.871Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1191,7 +1186,7 @@
     "scope": "global"
   },
   {
-    "id": "co-218",
+    "id": "co-236",
     "name": "Sticker Mule",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -1199,7 +1194,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-08T22:13:09.249Z",
+    "lastVerifiedAt": "2026-10-09T21:49:06.997Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1229,7 +1224,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-08T21:57:43.262Z",
+    "lastVerifiedAt": "2026-10-09T21:33:43.005Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1294,7 +1289,7 @@
     "scope": "global"
   },
   {
-    "id": "co-216",
+    "id": "co-234",
     "name": "OkWhen",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -1302,7 +1297,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-08T22:13:07.035Z",
+    "lastVerifiedAt": "2026-10-09T21:49:04.775Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1431,7 +1426,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-08T21:57:45.836Z",
+    "lastVerifiedAt": "2026-10-09T21:33:45.728Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1467,7 +1462,7 @@
     "scope": "global"
   },
   {
-    "id": "co-215",
+    "id": "co-233",
     "name": "Mindrift - Data annotation",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -1475,7 +1470,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-08T22:13:05.901Z",
+    "lastVerifiedAt": "2026-10-09T21:49:03.682Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1526,7 +1521,7 @@
     "scope": "global"
   },
   {
-    "id": "co-213",
+    "id": "co-231",
     "name": "Mercier Consultancy Group",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -1534,7 +1529,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-08T22:13:03.270Z",
+    "lastVerifiedAt": "2026-10-09T21:49:01.181Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1569,7 +1564,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-08T21:57:51.638Z",
+    "lastVerifiedAt": "2026-10-09T21:33:51.617Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1596,7 +1591,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-08T21:57:58.967Z",
+    "lastVerifiedAt": "2026-10-09T21:33:59.027Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1625,7 +1620,7 @@
     "verifiedAt": "2026-10-01T22:00:44.943Z"
   },
   {
-    "id": "co-228",
+    "id": "co-246",
     "name": "Lyric",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -1633,7 +1628,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-08T22:13:21.097Z",
+    "lastVerifiedAt": "2026-10-09T21:49:19.106Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1675,7 +1670,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-08T21:58:05.708Z",
+    "lastVerifiedAt": "2026-10-09T21:34:05.421Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1707,7 +1702,7 @@
     "verifiedAt": "2026-10-05T23:23:21.622Z"
   },
   {
-    "id": "co-212",
+    "id": "co-230",
     "name": "Leverage Live Local",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -1715,7 +1710,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-08T22:13:02.175Z",
+    "lastVerifiedAt": "2026-10-09T21:49:00.089Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1736,7 +1731,7 @@
     "scope": "global"
   },
   {
-    "id": "co-211",
+    "id": "co-229",
     "name": "Spiralyze",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -1744,7 +1739,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-08T22:13:00.697Z",
+    "lastVerifiedAt": "2026-10-09T21:48:58.674Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1768,7 +1763,7 @@
     "scope": "global"
   },
   {
-    "id": "co-214",
+    "id": "co-232",
     "name": "iMerit Technology",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -1776,7 +1771,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-08T22:13:04.627Z",
+    "lastVerifiedAt": "2026-10-09T21:49:02.435Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
