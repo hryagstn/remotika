@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-10-09T21:32:33.746Z",
+    "lastVerifiedAt": "2026-10-10T20:32:02.919Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -157,7 +157,7 @@
     "industry": "PT Rekayasa Solverindo (REKSOLINDO) has provided practical material engineering solutions for industries across Indonesia since 2005.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-09T21:32:37.648Z",
+    "lastVerifiedAt": "2026-10-10T20:32:06.986Z",
     "verifiedAt": "2026-09-30T11:39:29.952Z",
     "hasActiveJobs": false,
     "activeJobs": [],
@@ -181,7 +181,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-09T21:32:52.788Z",
+    "lastVerifiedAt": "2026-10-10T20:32:22.321Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -216,7 +216,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-09T21:33:07.834Z",
+    "lastVerifiedAt": "2026-10-10T20:32:38.040Z",
     "hasActiveJobs": false,
     "headquarters": "Worldwide",
     "foundationYear": "2005",
@@ -251,7 +251,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-09T21:33:12.812Z",
+    "lastVerifiedAt": "2026-10-10T20:32:43.094Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -286,7 +286,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-09T21:33:18.721Z",
+    "lastVerifiedAt": "2026-10-10T20:32:49.239Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -313,6 +313,25 @@
     "lastVerifiedAt": "2026-06-25T19:24:38.317Z",
     "hasActiveJobs": true,
     "activeJobs": [
+      {
+        "title": "Senior React Full stack Developer",
+        "url": "https://remoteOK.com/remote-jobs/remote-senior-react-full-stack-developer-lemon-io-1137475",
+        "tags": [
+          "dev",
+          "engineer",
+          "remote",
+          "python",
+          "aws",
+          "gcp",
+          "javascript",
+          "react",
+          "node",
+          "ruby",
+          "typescript",
+          "full time",
+          "full stack"
+        ]
+      },
       {
         "title": "Senior React Full-stack Developer",
         "url": "https://remotive.com/remote-jobs/software-development/senior-react-full-stack-developer-2091133",
@@ -532,7 +551,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-09T21:33:23.928Z",
+    "lastVerifiedAt": "2026-10-10T20:32:54.308Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -638,7 +657,7 @@
     "scope": "global"
   },
   {
-    "id": "co-240",
+    "id": "co-259",
     "name": "The AI Whistleblower Initiative",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -646,7 +665,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-09T21:49:11.972Z",
+    "lastVerifiedAt": "2026-10-10T20:48:44.020Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -674,7 +693,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-09T21:33:26.513Z",
+    "lastVerifiedAt": "2026-10-10T20:32:56.894Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -707,7 +726,7 @@
     "scope": "global"
   },
   {
-    "id": "co-241",
+    "id": "co-260",
     "name": "Salesforge",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -715,7 +734,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-09T21:49:13.280Z",
+    "lastVerifiedAt": "2026-10-10T20:48:45.296Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -738,7 +757,7 @@
     "scope": "global"
   },
   {
-    "id": "co-242",
+    "id": "co-261",
     "name": "Orca Bio",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -746,7 +765,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-09T21:49:14.395Z",
+    "lastVerifiedAt": "2026-10-10T20:48:46.433Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -775,7 +794,7 @@
     "scope": "global"
   },
   {
-    "id": "co-243",
+    "id": "co-262",
     "name": "Kruger NearShore LLC - Rekluti",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -783,7 +802,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-09T21:49:15.514Z",
+    "lastVerifiedAt": "2026-10-10T20:48:47.546Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -860,7 +879,7 @@
     "scope": "global"
   },
   {
-    "id": "co-244",
+    "id": "co-263",
     "name": "MultiplyMii",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -868,7 +887,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-09T21:49:16.649Z",
+    "lastVerifiedAt": "2026-10-10T20:48:48.660Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -900,7 +919,7 @@
     "scope": "global"
   },
   {
-    "id": "co-245",
+    "id": "co-264",
     "name": "Adaptive Teams",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -908,7 +927,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-09T21:49:17.775Z",
+    "lastVerifiedAt": "2026-10-10T20:48:49.759Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1008,7 +1027,7 @@
     "scope": "global"
   },
   {
-    "id": "co-239",
+    "id": "co-258",
     "name": "Copenhagen Optimization",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -1016,7 +1035,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-09T21:49:10.701Z",
+    "lastVerifiedAt": "2026-10-10T20:48:42.734Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1052,7 +1071,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-09T21:33:37.842Z",
+    "lastVerifiedAt": "2026-10-10T20:33:08.541Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1076,7 +1095,7 @@
     "scope": "global"
   },
   {
-    "id": "co-238",
+    "id": "co-257",
     "name": "Law Offices of Sabrina Li",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -1084,7 +1103,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-09T21:49:09.556Z",
+    "lastVerifiedAt": "2026-10-10T20:48:41.582Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1114,7 +1133,7 @@
     "scope": "global"
   },
   {
-    "id": "co-237",
+    "id": "co-256",
     "name": "Sleek",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -1122,7 +1141,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-09T21:49:08.280Z",
+    "lastVerifiedAt": "2026-10-10T20:48:40.291Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1157,7 +1176,7 @@
     "scope": "global"
   },
   {
-    "id": "co-235",
+    "id": "co-254",
     "name": "Arango",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -1165,7 +1184,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-09T21:49:05.871Z",
+    "lastVerifiedAt": "2026-10-10T20:48:37.859Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1186,7 +1205,7 @@
     "scope": "global"
   },
   {
-    "id": "co-236",
+    "id": "co-255",
     "name": "Sticker Mule",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -1194,7 +1213,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-09T21:49:06.997Z",
+    "lastVerifiedAt": "2026-10-10T20:48:39.003Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1224,7 +1243,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-09T21:33:43.005Z",
+    "lastVerifiedAt": "2026-10-10T20:33:13.508Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1289,7 +1308,7 @@
     "scope": "global"
   },
   {
-    "id": "co-234",
+    "id": "co-253",
     "name": "OkWhen",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -1297,7 +1316,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-09T21:49:04.775Z",
+    "lastVerifiedAt": "2026-10-10T20:48:36.753Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1426,7 +1445,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-09T21:33:45.728Z",
+    "lastVerifiedAt": "2026-10-10T20:33:16.234Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1462,7 +1481,7 @@
     "scope": "global"
   },
   {
-    "id": "co-233",
+    "id": "co-252",
     "name": "Mindrift - Data annotation",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -1470,7 +1489,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-09T21:49:03.682Z",
+    "lastVerifiedAt": "2026-10-10T20:48:35.641Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1521,7 +1540,7 @@
     "scope": "global"
   },
   {
-    "id": "co-231",
+    "id": "co-250",
     "name": "Mercier Consultancy Group",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -1529,7 +1548,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-09T21:49:01.181Z",
+    "lastVerifiedAt": "2026-10-10T20:48:32.883Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1564,7 +1583,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-09T21:33:51.617Z",
+    "lastVerifiedAt": "2026-10-10T20:33:22.151Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1591,7 +1610,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-09T21:33:59.027Z",
+    "lastVerifiedAt": "2026-10-10T20:33:29.670Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1620,48 +1639,6 @@
     "verifiedAt": "2026-10-01T22:00:44.943Z"
   },
   {
-    "id": "co-246",
-    "name": "Lyric",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "growth-strategist-lyric-1135681",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-09T21:49:19.106Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Growth Strategist",
-        "url": "https://remoteOK.com/remote-jobs/remote-growth-strategist-lyric-1135681",
-        "tags": [
-          "marketing",
-          "design",
-          "embedded",
-          "technical",
-          "strategy",
-          "customer support",
-          "dev",
-          "travel",
-          "finance",
-          "exec",
-          "content writing",
-          "senior",
-          "ops",
-          "sales",
-          "golang",
-          "digital nomad"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "scope": "global"
-  },
-  {
     "id": "co-191",
     "name": "Fortanix",
     "githubOrg": "fortanix",
@@ -1670,7 +1647,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-09T21:34:05.421Z",
+    "lastVerifiedAt": "2026-10-10T20:33:36.400Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1702,7 +1679,7 @@
     "verifiedAt": "2026-10-05T23:23:21.622Z"
   },
   {
-    "id": "co-230",
+    "id": "co-249",
     "name": "Leverage Live Local",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -1710,7 +1687,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-09T21:49:00.089Z",
+    "lastVerifiedAt": "2026-10-10T20:48:31.766Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1731,7 +1708,7 @@
     "scope": "global"
   },
   {
-    "id": "co-229",
+    "id": "co-248",
     "name": "Spiralyze",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -1739,7 +1716,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-09T21:48:58.674Z",
+    "lastVerifiedAt": "2026-10-10T20:48:30.226Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1763,7 +1740,7 @@
     "scope": "global"
   },
   {
-    "id": "co-232",
+    "id": "co-251",
     "name": "iMerit Technology",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -1771,7 +1748,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-09T21:49:02.435Z",
+    "lastVerifiedAt": "2026-10-10T20:48:34.303Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1798,6 +1775,49 @@
     "status": "watchlist",
     "source": "remoteok",
     "watchlistReason": "no-org-found",
+    "scope": "global"
+  },
+  {
+    "id": "co-247",
+    "name": "Fuel50",
+    "githubOrg": "fuel50",
+    "githubOrgUrl": "https://github.com/fuel50",
+    "remoteokSlug": "product-design-lead-fuel50-1137474",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-10-10T20:48:29.117Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Product Design Lead",
+        "url": "https://remoteOK.com/remote-jobs/remote-product-design-lead-fuel50-1137474",
+        "tags": [
+          "design",
+          "saas",
+          "sys admin",
+          "front end",
+          "technical",
+          "marketing",
+          "dev",
+          "virtual assistant",
+          "javascript",
+          "css",
+          "html",
+          "microsoft",
+          "exec",
+          "senior",
+          "medical",
+          "engineer",
+          "digital nomad"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
     "scope": "global"
   }
 ]
