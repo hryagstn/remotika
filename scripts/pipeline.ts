@@ -1064,6 +1064,30 @@ function saveFlaggedForReview(flagged: Record<string, any>) {
   }
 }
 
+// ─── Posted Job URLs Cache ──────────────────────────────────────────────────────
+const POSTED_JOBS_CACHE_PATH = path.join(process.cwd(), "src/data/posted-jobs-cache.json");
+
+function loadPostedJobsCache(): Record<string, string[]> {
+  try {
+    if (fs.existsSync(POSTED_JOBS_CACHE_PATH)) {
+      const data = fs.readFileSync(POSTED_JOBS_CACHE_PATH, "utf-8");
+      return JSON.parse(data);
+    }
+  } catch (error: any) {
+    console.error(`⚠️ Failed to read posted-jobs-cache.json: ${error.message}`);
+  }
+  return {};
+}
+
+function savePostedJobsCache(cache: Record<string, string[]>): void {
+  try {
+    fs.writeFileSync(POSTED_JOBS_CACHE_PATH, JSON.stringify(cache, null, 2), "utf-8");
+    console.log(`💾 Saved posted jobs cache (${Object.keys(cache).length} companies)`);
+  } catch (error: any) {
+    console.error(`❌ Failed to write posted-jobs-cache.json: ${error.message}`);
+  }
+}
+
 
 async function processOrg(orgLogin: string, existingCompanies: CompanyData[]): Promise<CompanyData | null> {
   const orgLoginLower = orgLogin.toLowerCase().trim();
@@ -1808,6 +1832,9 @@ async function notifyNewVerifiedCompanies(initialCompanies: CompanyData[], final
     return;
   }
 
+  // Load posted jobs cache (tracks which job URLs already posted per company)
+  const postedJobsCache = loadPostedJobsCache();
+
   // Build lookup map of initial companies by githubOrg and id
   const initialCompanyMap = new Map<string, CompanyData>();
   initialCompanies.forEach(c => {
@@ -1839,6 +1866,12 @@ async function notifyNewVerifiedCompanies(initialCompanies: CompanyData[], final
     const isNowVerified = c.verifiedIndonesianCount > 0 && c.status !== "watchlist";
     if (wasUnverified && isNowVerified) return true;
 
+    // 4. Company has NEW job URLs not yet posted -> notify!
+    const currentJobUrls = new Set((c.activeJobs || []).map(j => j.url));
+    const postedUrls = new Set(postedJobsCache[c.id] || []);
+    const hasNewJobs = [...currentJobUrls].some(url => !postedUrls.has(url));
+    if (hasNewJobs) return true;
+
     return false;
   });
 
@@ -1847,12 +1880,28 @@ async function notifyNewVerifiedCompanies(initialCompanies: CompanyData[], final
     return;
   }
 
-  console.log(`\n[Notifications] Found ${newActiveJobCompanies.length} new company/companies with active jobs. Sending notifications...`);
+  console.log(`\n[Notifications] Found ${newActiveJobCompanies.length} company/companies with NEW job URLs. Sending notifications...`);
+
+  let cacheUpdated = false;
 
   for (const company of newActiveJobCompanies) {
     const slug = getCompanySlug(company);
     const isVerified = company.verifiedIndonesianCount > 0 && company.status !== "watchlist";
-    const jobsSection = formatJobsSection(company.activeJobs, 3);
+
+    // Determine which jobs are NEW (not in cache)
+    const currentJobUrls = new Set((company.activeJobs || []).map(j => j.url));
+    const postedUrls = new Set(postedJobsCache[company.id] || []);
+    const newJobs = (company.activeJobs || []).filter(j => !postedUrls.has(j.url));
+    const alreadyPostedJobs = (company.activeJobs || []).filter(j => postedUrls.has(j.url));
+
+    if (newJobs.length === 0) {
+      console.log(`  ⏭️  ${company.name}: No new job URLs to post (${alreadyPostedJobs.length} already posted).`);
+      continue;
+    }
+
+    console.log(`  📢 ${company.name}: ${newJobs.length} new job(s) to post, ${alreadyPostedJobs.length} already posted.`);
+
+    const jobsSection = formatJobsSection(newJobs, 3);
 
     let messageText = "";
     if (isVerified) {
@@ -1861,10 +1910,12 @@ async function notifyNewVerifiedCompanies(initialCompanies: CompanyData[], final
       messageText = `💼 *Lowongan Remote Baru di Remotika*\n\n*${escapeMarkdown(company.name)}* sedang membuka lowongan kerja remote aktif! Saat ini belum ada anggota tim asal Indonesia yang terverifikasi via GitHub — jadilah developer Indonesia pertama di tim mereka!${jobsSection}\n\nLihat selengkapnya di sini: https://remotika.my.id/company/${slug}`;
     }
 
+    let notificationSent = false;
+
     // 1. Dispatch Telegram notification
     if (TELEGRAM_BOT_TOKEN && TELEGRAM_CHANNEL_ID) {
       try {
-        console.log(`  [Telegram] Sending notification for ${company.name} (Slug: ${slug}, Verified: ${isVerified})...`);
+        console.log(`    [Telegram] Sending notification for ${company.name} (Slug: ${slug}, Verified: ${isVerified})...`);
         const res = await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
           method: "POST",
           headers: {
@@ -1879,19 +1930,20 @@ async function notifyNewVerifiedCompanies(initialCompanies: CompanyData[], final
 
         if (!res.ok) {
           const errorText = await res.text();
-          console.error(`  ❌ [Telegram] Failed to send notification for ${company.name}: ${res.statusText} - ${errorText}`);
+          console.error(`    ❌ [Telegram] Failed to send notification for ${company.name}: ${res.statusText} - ${errorText}`);
         } else {
-          console.log(`  ✅ [Telegram] Notification sent successfully for ${company.name}.`);
+          console.log(`    ✅ [Telegram] Notification sent successfully for ${company.name}.`);
+          notificationSent = true;
         }
       } catch (err: any) {
-        console.error(`  ❌ [Telegram] Error sending message for ${company.name}:`, err.message);
+        console.error(`    ❌ [Telegram] Error sending message for ${company.name}:`, err.message);
       }
     }
 
     // 2. Dispatch Social Webhook notification (Make.com / Zapier / etc)
     if (SOCIAL_WEBHOOK_URL) {
       try {
-        console.log(`  [Social Webhook] Sending payload for ${company.name} to Make.com...`);
+        console.log(`    [Social Webhook] Sending payload for ${company.name} to Make.com...`);
         const twitterText = generateTwitterText(company, slug, isVerified);
         const linkedinText = generateLinkedInText(company, slug, isVerified);
 
@@ -1904,8 +1956,8 @@ async function notifyNewVerifiedCompanies(initialCompanies: CompanyData[], final
             url: `https://remotika.my.id/company/${slug}`,
             isVerified,
             verifiedCount: company.verifiedIndonesianCount,
-            activeJobsCount: company.activeJobs?.length || 0,
-            activeJobs: (company.activeJobs || []).map(j => ({ title: j.title, url: j.url }))
+            activeJobsCount: newJobs.length,
+            activeJobs: newJobs.map(j => ({ title: j.title, url: j.url }))
           },
           telegramText: messageText,
           twitterText,
@@ -1922,14 +1974,27 @@ async function notifyNewVerifiedCompanies(initialCompanies: CompanyData[], final
 
         if (!hookRes.ok) {
           const errBody = await hookRes.text();
-          console.error(`  ❌ [Social Webhook] Failed for ${company.name}: ${hookRes.statusText} - ${errBody}`);
+          console.error(`    ❌ [Social Webhook] Failed for ${company.name}: ${hookRes.statusText} - ${errBody}`);
         } else {
-          console.log(`  ✅ [Social Webhook] Notification sent successfully for ${company.name}.`);
+          console.log(`    ✅ [Social Webhook] Notification sent successfully for ${company.name}.`);
+          notificationSent = true;
         }
       } catch (err: any) {
-        console.error(`  ❌ [Social Webhook] Error sending webhook payload for ${company.name}:`, err.message);
+        console.error(`    ❌ [Social Webhook] Error sending webhook payload for ${company.name}:`, err.message);
       }
     }
+
+    // Update cache only if notification was sent successfully
+    if (notificationSent) {
+      const updatedUrls = [...postedUrls, ...newJobs.map(j => j.url)];
+      // Keep only unique URLs
+      postedJobsCache[company.id] = [...new Set(updatedUrls)];
+      cacheUpdated = true;
+    }
+  }
+
+  if (cacheUpdated) {
+    savePostedJobsCache(postedJobsCache);
   }
 }
 
