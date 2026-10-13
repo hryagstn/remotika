@@ -8,17 +8,12 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-10-12T23:33:44.007Z",
+    "lastVerifiedAt": "2026-10-13T21:46:43.918Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
         "title": "FinOps Recons Associate",
         "url": "https://job-boards.greenhouse.io/xendit/jobs/7813420003",
-        "tags": []
-      },
-      {
-        "title": "Global Head of Communications",
-        "url": "https://job-boards.greenhouse.io/xendit/jobs/7806554003",
         "tags": []
       },
       {
@@ -48,7 +43,7 @@
       },
       {
         "title": "RevOps Systems Administrator (Salesforce)",
-        "url": "https://job-boards.greenhouse.io/xendit/jobs/7992220003",
+        "url": "https://job-boards.greenhouse.io/xendit/jobs/7992262003",
         "tags": []
       },
       {
@@ -162,7 +157,7 @@
     "industry": "PT Rekayasa Solverindo (REKSOLINDO) has provided practical material engineering solutions for industries across Indonesia since 2005.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-12T23:33:48.322Z",
+    "lastVerifiedAt": "2026-10-13T21:46:48.299Z",
     "verifiedAt": "2026-09-30T11:39:29.952Z",
     "hasActiveJobs": false,
     "activeJobs": [],
@@ -186,7 +181,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-12T23:34:03.996Z",
+    "lastVerifiedAt": "2026-10-13T21:47:05.052Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -221,7 +216,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-12T23:34:19.575Z",
+    "lastVerifiedAt": "2026-10-13T21:47:22.001Z",
     "hasActiveJobs": false,
     "headquarters": "Worldwide",
     "foundationYear": "2005",
@@ -256,7 +251,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-12T23:34:24.651Z",
+    "lastVerifiedAt": "2026-10-13T21:47:27.403Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -556,7 +551,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-12T23:34:34.575Z",
+    "lastVerifiedAt": "2026-10-13T21:47:37.890Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -662,7 +657,7 @@
     "scope": "global"
   },
   {
-    "id": "co-300",
+    "id": "co-321",
     "name": "The AI Whistleblower Initiative",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -670,7 +665,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-12T23:50:54.782Z",
+    "lastVerifiedAt": "2026-10-13T22:04:55.273Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -698,7 +693,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-12T23:34:37.384Z",
+    "lastVerifiedAt": "2026-10-13T21:47:40.755Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -731,7 +726,7 @@
     "scope": "global"
   },
   {
-    "id": "co-301",
+    "id": "co-322",
     "name": "Salesforge",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -739,7 +734,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-12T23:50:56.055Z",
+    "lastVerifiedAt": "2026-10-13T22:04:56.598Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -762,7 +757,7 @@
     "scope": "global"
   },
   {
-    "id": "co-302",
+    "id": "co-323",
     "name": "Orca Bio",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -770,7 +765,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-12T23:50:57.197Z",
+    "lastVerifiedAt": "2026-10-13T22:04:57.751Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -799,7 +794,7 @@
     "scope": "global"
   },
   {
-    "id": "co-303",
+    "id": "co-324",
     "name": "Kruger NearShore LLC - Rekluti",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -807,7 +802,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-12T23:50:58.342Z",
+    "lastVerifiedAt": "2026-10-13T22:04:58.932Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -884,7 +879,7 @@
     "scope": "global"
   },
   {
-    "id": "co-304",
+    "id": "co-325",
     "name": "MultiplyMii",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -892,7 +887,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-12T23:50:59.463Z",
+    "lastVerifiedAt": "2026-10-13T22:05:00.086Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -913,41 +908,6 @@
           "sales",
           "ecommerce",
           "full time"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "scope": "global"
-  },
-  {
-    "id": "co-305",
-    "name": "Adaptive Teams",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "customer-service-representative-adaptive-teams-1136566",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-12T23:51:00.618Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Customer Service Representative",
-        "url": "https://remoteOK.com/remote-jobs/remote-customer-service-representative-adaptive-teams-1136566",
-        "tags": [
-          "hr",
-          "sys admin",
-          "education",
-          "customer support",
-          "video",
-          "finance",
-          "legal",
-          "part time",
-          "non tech"
         ]
       }
     ],
@@ -1032,7 +992,7 @@
     "scope": "global"
   },
   {
-    "id": "co-299",
+    "id": "co-320",
     "name": "Copenhagen Optimization",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -1040,7 +1000,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-12T23:50:53.501Z",
+    "lastVerifiedAt": "2026-10-13T22:04:53.964Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1076,7 +1036,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-12T23:34:49.517Z",
+    "lastVerifiedAt": "2026-10-13T21:47:54.406Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1100,45 +1060,7 @@
     "scope": "global"
   },
   {
-    "id": "co-298",
-    "name": "Law Offices of Sabrina Li",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "hr-operations-specialist-law-offices-of-sabrina-li-1137386",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-12T23:50:52.389Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "HR Operations Specialist",
-        "url": "https://remoteOK.com/remote-jobs/remote-hr-operations-specialist-law-offices-of-sabrina-li-1137386",
-        "tags": [
-          "hr",
-          "education",
-          "customer support",
-          "marketing",
-          "finance",
-          "c",
-          "exec",
-          "content writing",
-          "ops",
-          "legal",
-          "recruiter",
-          "full time"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "scope": "global"
-  },
-  {
-    "id": "co-297",
+    "id": "co-319",
     "name": "Sleek",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -1146,7 +1068,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-12T23:50:51.037Z",
+    "lastVerifiedAt": "2026-10-13T22:04:52.612Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1181,7 +1103,7 @@
     "scope": "global"
   },
   {
-    "id": "co-295",
+    "id": "co-317",
     "name": "Arango",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -1189,7 +1111,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-12T23:50:48.463Z",
+    "lastVerifiedAt": "2026-10-13T22:04:50.068Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1222,11 +1144,11 @@
     "hasActiveJobs": true,
     "activeJobs": [
       {
-        "title": "AI agent engineer",
-        "url": "https://remoteOK.com/remote-jobs/remote-ai-agent-engineer-sticker-mule-1137399",
+        "title": "SI agent engineer",
+        "url": "https://remoteOK.com/remote-jobs/remote-si-agent-engineer-sticker-mule-1137399",
         "tags": [
-          "ai",
           "golang",
+          "ai",
           "javascript",
           "typescript"
         ]
@@ -1248,7 +1170,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-12T23:34:54.699Z",
+    "lastVerifiedAt": "2026-10-13T21:48:00.221Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1313,7 +1235,7 @@
     "scope": "global"
   },
   {
-    "id": "co-294",
+    "id": "co-316",
     "name": "OkWhen",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -1321,7 +1243,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-12T23:50:47.330Z",
+    "lastVerifiedAt": "2026-10-13T22:04:48.908Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1450,7 +1372,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-12T23:34:57.466Z",
+    "lastVerifiedAt": "2026-10-13T21:48:03.120Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1461,18 +1383,6 @@
           "infosec",
           "engineer",
           "part time"
-        ]
-      },
-      {
-        "title": "Software Developer Security Analytics",
-        "url": "https://remoteOK.com/remote-jobs/remote-software-developer-security-analytics-redmimicry-1137417",
-        "tags": [
-          "golang",
-          "infosec",
-          "dev",
-          "stats",
-          "full time",
-          "digital nomad"
         ]
       }
     ],
@@ -1486,7 +1396,7 @@
     "scope": "global"
   },
   {
-    "id": "co-293",
+    "id": "co-315",
     "name": "Mindrift - Data annotation",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -1494,7 +1404,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-12T23:50:46.205Z",
+    "lastVerifiedAt": "2026-10-13T22:04:47.751Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1545,7 +1455,7 @@
     "scope": "global"
   },
   {
-    "id": "co-291",
+    "id": "co-313",
     "name": "Mercier Consultancy Group",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -1553,7 +1463,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-12T23:50:43.599Z",
+    "lastVerifiedAt": "2026-10-13T22:04:44.935Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1588,7 +1498,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-12T23:35:03.701Z",
+    "lastVerifiedAt": "2026-10-13T21:48:09.239Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1615,7 +1525,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-12T23:35:11.587Z",
+    "lastVerifiedAt": "2026-10-13T21:48:16.929Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1652,7 +1562,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-12T23:35:18.442Z",
+    "lastVerifiedAt": "2026-10-13T21:48:24.487Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1684,7 +1594,7 @@
     "verifiedAt": "2026-10-05T23:23:21.622Z"
   },
   {
-    "id": "co-290",
+    "id": "co-312",
     "name": "Leverage Live Local",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -1692,7 +1602,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-12T23:50:42.463Z",
+    "lastVerifiedAt": "2026-10-13T22:04:43.815Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1713,7 +1623,7 @@
     "scope": "global"
   },
   {
-    "id": "co-289",
+    "id": "co-311",
     "name": "Spiralyze",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -1721,7 +1631,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-12T23:50:41.051Z",
+    "lastVerifiedAt": "2026-10-13T22:04:42.300Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1745,7 +1655,7 @@
     "scope": "global"
   },
   {
-    "id": "co-292",
+    "id": "co-314",
     "name": "iMerit Technology",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -1753,7 +1663,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-12T23:50:44.908Z",
+    "lastVerifiedAt": "2026-10-13T22:04:46.337Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1826,7 +1736,7 @@
     "scope": "global"
   },
   {
-    "id": "co-287",
+    "id": "co-309",
     "name": "EDETEK",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -1834,7 +1744,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-12T23:50:38.514Z",
+    "lastVerifiedAt": "2026-10-13T22:04:39.747Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1865,7 +1775,7 @@
     "scope": "global"
   },
   {
-    "id": "co-288",
+    "id": "co-310",
     "name": "Huzzle",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -1873,7 +1783,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-12T23:50:39.705Z",
+    "lastVerifiedAt": "2026-10-13T22:04:40.919Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1912,7 +1822,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-12T23:35:25.636Z",
+    "lastVerifiedAt": "2026-10-13T21:48:32.073Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1996,7 +1906,7 @@
     "scope": "global"
   },
   {
-    "id": "co-286",
+    "id": "co-308",
     "name": "Hunt St",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -2004,7 +1914,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-12T23:50:37.398Z",
+    "lastVerifiedAt": "2026-10-13T22:04:38.590Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -2018,6 +1928,107 @@
           "exec",
           "content writing",
           "sales"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "scope": "global"
+  },
+  {
+    "id": "co-306",
+    "name": "QuickMail",
+    "githubOrg": "QuickMail",
+    "githubOrgUrl": "https://github.com/QuickMail",
+    "remoteokSlug": "technical-customer-support-quickmail-1137506",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-10-13T22:04:36.287Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Technical Customer Support",
+        "url": "https://remoteOK.com/remote-jobs/remote-technical-customer-support-quickmail-1137506",
+        "tags": [
+          "customer support"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "scope": "global"
+  },
+  {
+    "id": "co-307",
+    "name": "SimSpace Corporation",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "senior-sales-executive-central-region-simspace-corporation-1137498",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-10-13T22:04:37.416Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Senior Sales Executive Central Region",
+        "url": "https://remoteOK.com/remote-jobs/remote-senior-sales-executive-central-region-simspace-corporation-1137498",
+        "tags": [
+          "saas",
+          "embedded",
+          "sys admin",
+          "infosec",
+          "education",
+          "customer support",
+          "testing",
+          "marketing",
+          "finance",
+          "cloud",
+          "exec",
+          "content writing",
+          "senior",
+          "stats",
+          "legal",
+          "sales",
+          "medical",
+          "engineer"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "scope": "global"
+  },
+  {
+    "id": "co-318",
+    "name": "Sticker Mule",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "si-agent-engineer-sticker-mule-1137399",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-10-13T22:04:51.221Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "SI agent engineer",
+        "url": "https://remoteOK.com/remote-jobs/remote-si-agent-engineer-sticker-mule-1137399",
+        "tags": [
+          "golang",
+          "ai",
+          "javascript",
+          "typescript"
         ]
       }
     ],
