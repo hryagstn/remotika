@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-10-13T21:46:43.918Z",
+    "lastVerifiedAt": "2026-10-14T20:32:37.355Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -37,13 +37,8 @@
         "tags": []
       },
       {
-        "title": "Product Manager – Risk Products",
-        "url": "https://job-boards.greenhouse.io/xendit/jobs/7784608003",
-        "tags": []
-      },
-      {
         "title": "RevOps Systems Administrator (Salesforce)",
-        "url": "https://job-boards.greenhouse.io/xendit/jobs/7992262003",
+        "url": "https://job-boards.greenhouse.io/xendit/jobs/7992220003",
         "tags": []
       },
       {
@@ -54,6 +49,11 @@
       {
         "title": "Senior Implementations Manager",
         "url": "https://job-boards.greenhouse.io/xendit/jobs/7731774003",
+        "tags": []
+      },
+      {
+        "title": "Senior Product Manager - XenPlatform",
+        "url": "https://job-boards.greenhouse.io/xendit/jobs/8032565003",
         "tags": []
       },
       {
@@ -157,7 +157,7 @@
     "industry": "PT Rekayasa Solverindo (REKSOLINDO) has provided practical material engineering solutions for industries across Indonesia since 2005.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-13T21:46:48.299Z",
+    "lastVerifiedAt": "2026-10-14T20:32:41.447Z",
     "verifiedAt": "2026-09-30T11:39:29.952Z",
     "hasActiveJobs": false,
     "activeJobs": [],
@@ -181,7 +181,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-13T21:47:05.052Z",
+    "lastVerifiedAt": "2026-10-14T20:32:57.121Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -216,7 +216,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-13T21:47:22.001Z",
+    "lastVerifiedAt": "2026-10-14T20:33:12.249Z",
     "hasActiveJobs": false,
     "headquarters": "Worldwide",
     "foundationYear": "2005",
@@ -251,7 +251,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-13T21:47:27.403Z",
+    "lastVerifiedAt": "2026-10-14T20:33:17.515Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -286,7 +286,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-11T20:52:41.540Z",
+    "lastVerifiedAt": "2026-10-14T20:33:26.294Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -551,7 +551,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-13T21:47:37.890Z",
+    "lastVerifiedAt": "2026-10-14T20:33:31.663Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -657,7 +657,7 @@
     "scope": "global"
   },
   {
-    "id": "co-321",
+    "id": "co-341",
     "name": "The AI Whistleblower Initiative",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -665,7 +665,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-13T22:04:55.273Z",
+    "lastVerifiedAt": "2026-10-14T20:50:18.168Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -693,7 +693,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-13T21:47:40.755Z",
+    "lastVerifiedAt": "2026-10-14T20:33:34.340Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -726,7 +726,7 @@
     "scope": "global"
   },
   {
-    "id": "co-322",
+    "id": "co-342",
     "name": "Salesforge",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -734,7 +734,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-13T22:04:56.598Z",
+    "lastVerifiedAt": "2026-10-14T20:50:19.540Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -757,7 +757,7 @@
     "scope": "global"
   },
   {
-    "id": "co-323",
+    "id": "co-343",
     "name": "Orca Bio",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -765,7 +765,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-13T22:04:57.751Z",
+    "lastVerifiedAt": "2026-10-14T20:50:20.683Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -794,7 +794,7 @@
     "scope": "global"
   },
   {
-    "id": "co-324",
+    "id": "co-344",
     "name": "Kruger NearShore LLC - Rekluti",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -802,7 +802,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-13T22:04:58.932Z",
+    "lastVerifiedAt": "2026-10-14T20:50:21.823Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -879,7 +879,7 @@
     "scope": "global"
   },
   {
-    "id": "co-325",
+    "id": "co-345",
     "name": "MultiplyMii",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -887,7 +887,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-13T22:05:00.086Z",
+    "lastVerifiedAt": "2026-10-14T20:50:22.969Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -919,80 +919,7 @@
     "scope": "global"
   },
   {
-    "id": "co-164",
-    "name": "Grapefruit Health",
-    "githubOrg": "Grapefruit-Health",
-    "githubOrgUrl": "https://github.com/Grapefruit-Health",
-    "remoteokSlug": "patient-outreach-specialist-grapefruit-health-1135789",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-09-10T19:47:42.587Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Patient Outreach Specialist",
-        "url": "https://remoteOK.com/remote-jobs/remote-patient-outreach-specialist-grapefruit-health-1135789",
-        "tags": [
-          "hr",
-          "teaching",
-          "education",
-          "recruiter",
-          "supervisor",
-          "customer support",
-          "dev",
-          "virtual assistant",
-          "video",
-          "medical",
-          "part time",
-          "non tech",
-          "digital nomad"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "org-found-zero-match",
-    "scope": "global"
-  },
-  {
-    "id": "co-165",
-    "name": "Liberty Mutual Insurance",
-    "githubOrg": "Liberty-Mutual-Insurance",
-    "githubOrgUrl": "https://github.com/Liberty-Mutual-Insurance",
-    "remoteokSlug": "licensed-customer-service-representative-liberty-mutual-insurance-1135788",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-09-10T19:47:43.907Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Licensed Customer Service Representative",
-        "url": "https://remoteOK.com/remote-jobs/remote-licensed-customer-service-representative-liberty-mutual-insurance-1135788",
-        "tags": [
-          "embedded",
-          "education",
-          "customer support",
-          "marketing",
-          "c",
-          "golang",
-          "non tech"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "org-found-zero-match",
-    "website": "libertymutualgroup.com",
-    "scope": "global"
-  },
-  {
-    "id": "co-320",
+    "id": "co-340",
     "name": "Copenhagen Optimization",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -1000,7 +927,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-13T22:04:53.964Z",
+    "lastVerifiedAt": "2026-10-14T20:50:16.854Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1036,7 +963,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-13T21:47:54.406Z",
+    "lastVerifiedAt": "2026-10-14T20:33:46.973Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1060,7 +987,7 @@
     "scope": "global"
   },
   {
-    "id": "co-319",
+    "id": "co-339",
     "name": "Sleek",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -1068,7 +995,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-13T22:04:52.612Z",
+    "lastVerifiedAt": "2026-10-14T20:50:15.530Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1103,7 +1030,7 @@
     "scope": "global"
   },
   {
-    "id": "co-317",
+    "id": "co-337",
     "name": "Arango",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -1111,7 +1038,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-13T22:04:50.068Z",
+    "lastVerifiedAt": "2026-10-14T20:50:13.142Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1170,7 +1097,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-13T21:48:00.221Z",
+    "lastVerifiedAt": "2026-10-14T20:33:53.197Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1235,7 +1162,7 @@
     "scope": "global"
   },
   {
-    "id": "co-316",
+    "id": "co-336",
     "name": "OkWhen",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -1243,7 +1170,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-13T22:04:48.908Z",
+    "lastVerifiedAt": "2026-10-14T20:50:12.018Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1372,7 +1299,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-13T21:48:03.120Z",
+    "lastVerifiedAt": "2026-10-14T20:33:56.091Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1396,7 +1323,7 @@
     "scope": "global"
   },
   {
-    "id": "co-315",
+    "id": "co-335",
     "name": "Mindrift - Data annotation",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -1404,7 +1331,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-13T22:04:47.751Z",
+    "lastVerifiedAt": "2026-10-14T20:50:10.859Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1455,7 +1382,7 @@
     "scope": "global"
   },
   {
-    "id": "co-313",
+    "id": "co-333",
     "name": "Mercier Consultancy Group",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -1463,7 +1390,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-13T22:04:44.935Z",
+    "lastVerifiedAt": "2026-10-14T20:50:08.208Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1498,7 +1425,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-13T21:48:09.239Z",
+    "lastVerifiedAt": "2026-10-14T20:34:02.116Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1525,7 +1452,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-13T21:48:16.929Z",
+    "lastVerifiedAt": "2026-10-14T20:34:10.141Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1562,7 +1489,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-13T21:48:24.487Z",
+    "lastVerifiedAt": "2026-10-14T20:34:18.185Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1594,7 +1521,7 @@
     "verifiedAt": "2026-10-05T23:23:21.622Z"
   },
   {
-    "id": "co-312",
+    "id": "co-332",
     "name": "Leverage Live Local",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -1602,7 +1529,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-13T22:04:43.815Z",
+    "lastVerifiedAt": "2026-10-14T20:50:07.044Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1623,7 +1550,7 @@
     "scope": "global"
   },
   {
-    "id": "co-311",
+    "id": "co-331",
     "name": "Spiralyze",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -1631,7 +1558,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-13T22:04:42.300Z",
+    "lastVerifiedAt": "2026-10-14T20:50:05.625Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1655,7 +1582,7 @@
     "scope": "global"
   },
   {
-    "id": "co-314",
+    "id": "co-334",
     "name": "iMerit Technology",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -1663,7 +1590,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-13T22:04:46.337Z",
+    "lastVerifiedAt": "2026-10-14T20:50:09.595Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1736,7 +1663,7 @@
     "scope": "global"
   },
   {
-    "id": "co-309",
+    "id": "co-329",
     "name": "EDETEK",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -1744,7 +1671,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-13T22:04:39.747Z",
+    "lastVerifiedAt": "2026-10-14T20:50:03.219Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1775,7 +1702,7 @@
     "scope": "global"
   },
   {
-    "id": "co-310",
+    "id": "co-330",
     "name": "Huzzle",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -1783,7 +1710,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-13T22:04:40.919Z",
+    "lastVerifiedAt": "2026-10-14T20:50:04.323Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1822,7 +1749,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-13T21:48:32.073Z",
+    "lastVerifiedAt": "2026-10-14T20:34:25.611Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1906,7 +1833,7 @@
     "scope": "global"
   },
   {
-    "id": "co-308",
+    "id": "co-328",
     "name": "Hunt St",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -1914,7 +1841,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-13T22:04:38.590Z",
+    "lastVerifiedAt": "2026-10-14T20:50:02.104Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1966,7 +1893,7 @@
     "scope": "global"
   },
   {
-    "id": "co-307",
+    "id": "co-327",
     "name": "SimSpace Corporation",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -1974,7 +1901,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-13T22:04:37.416Z",
+    "lastVerifiedAt": "2026-10-14T20:50:00.926Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -2010,7 +1937,7 @@
     "scope": "global"
   },
   {
-    "id": "co-318",
+    "id": "co-338",
     "name": "Sticker Mule",
     "githubOrg": "",
     "githubOrgUrl": "",
@@ -2018,7 +1945,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-13T22:04:51.221Z",
+    "lastVerifiedAt": "2026-10-14T20:50:14.249Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -2029,6 +1956,48 @@
           "ai",
           "javascript",
           "typescript"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "scope": "global"
+  },
+  {
+    "id": "co-326",
+    "name": "BlueTuskr",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "graphic-designer-video-editor-bluetuskr-1137507",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-10-14T20:49:59.651Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Graphic Designer & Video Editor",
+        "url": "https://remoteOK.com/remote-jobs/remote-graphic-designer-video-editor-bluetuskr-1137507",
+        "tags": [
+          "design",
+          "designer",
+          "customer support",
+          "testing",
+          "marketing",
+          "web dev",
+          "video",
+          "mobile",
+          "photoshop",
+          "stats",
+          "sales",
+          "illustrator",
+          "ecommerce",
+          "shopify",
+          "part time",
+          "digital nomad"
         ]
       }
     ],
