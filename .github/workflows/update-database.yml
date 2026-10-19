@@ -35,6 +35,6 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add src/data/companies.json
-          # Melakukan commit hanya jika ada perubahan pada database companies.json
+          git add src/data/companies.json src/data/posted-jobs-cache.json
+          # Melakukan commit hanya jika ada perubahan pada database atau cache lowongan
           git diff-index --quiet HEAD || (git commit -m "chore: auto-update verified companies data" && git push)

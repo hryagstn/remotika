@@ -501,7 +501,7 @@
     "remoteokSlug": "ai-engineer-data-apis-benzinga-1137224",
     "industry": null,
     "verifiedIndonesianCount": 0,
-    "label": "Confirmed",
+    "label": "Watchlist",
     "lastVerifiedAt": "2026-10-18T19:22:14.104Z",
     "hasActiveJobs": true,
     "activeJobs": [
@@ -590,7 +590,7 @@
     "remoteokSlug": "oracle-fusion-cloud-lead-logistics-supply-chain-management-tessera-labs-1137155",
     "industry": null,
     "verifiedIndonesianCount": 0,
-    "label": "Confirmed",
+    "label": "Watchlist",
     "lastVerifiedAt": "2026-10-18T19:22:16.792Z",
     "hasActiveJobs": true,
     "activeJobs": [
@@ -860,7 +860,7 @@
     "remoteokSlug": "software-engineer-mirantis-1137387",
     "industry": null,
     "verifiedIndonesianCount": 0,
-    "label": "Confirmed",
+    "label": "Watchlist",
     "lastVerifiedAt": "2026-10-18T19:22:27.498Z",
     "hasActiveJobs": true,
     "activeJobs": [
@@ -1093,7 +1093,7 @@
     "remoteokSlug": "software-developer-security-analytics-redmimicry-1137417",
     "industry": null,
     "verifiedIndonesianCount": 0,
-    "label": "Confirmed",
+    "label": "Watchlist",
     "lastVerifiedAt": "2026-10-18T19:22:30.394Z",
     "hasActiveJobs": true,
     "activeJobs": [
@@ -1219,7 +1219,7 @@
     "remoteokSlug": "mecanico-automotriz-diagnostico-y-presupuestos-workana-1137429",
     "industry": null,
     "verifiedIndonesianCount": 0,
-    "label": "Confirmed",
+    "label": "Watchlist",
     "lastVerifiedAt": "2026-10-18T19:22:36.636Z",
     "hasActiveJobs": true,
     "activeJobs": [
@@ -1246,7 +1246,7 @@
     "remoteokSlug": "enterprise-sales-development-representative-toptal-1137451",
     "industry": null,
     "verifiedIndonesianCount": 0,
-    "label": "Confirmed",
+    "label": "Watchlist",
     "lastVerifiedAt": "2026-10-18T19:22:43.680Z",
     "hasActiveJobs": true,
     "activeJobs": [
@@ -1283,7 +1283,7 @@
     "remoteokSlug": "federal-business-development-director-fortanix-1137463",
     "industry": null,
     "verifiedIndonesianCount": 0,
-    "label": "Confirmed",
+    "label": "Watchlist",
     "lastVerifiedAt": "2026-10-18T19:22:50.682Z",
     "hasActiveJobs": true,
     "activeJobs": [
@@ -1367,35 +1367,6 @@
           "cro"
         ],
         "location": "Worldwide"
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "scope": "global"
-  },
-  {
-    "id": "co-427",
-    "name": "iMerit Technology",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "video-data-annotator-imerit-technology-1137428",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-18T19:39:06.376Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Video Data Annotator",
-        "url": "https://remoteOK.com/remote-jobs/remote-video-data-annotator-imerit-technology-1137428",
-        "tags": [
-          "quality assurance",
-          "ai",
-          "data annotation"
-        ]
       }
     ],
     "verifiedMembers": [],
@@ -1534,7 +1505,7 @@
     "remoteokSlug": "academic-dean-for-miaprep-online-academy-of-ohio-miaplaza-1137479",
     "industry": null,
     "verifiedIndonesianCount": 0,
-    "label": "Confirmed",
+    "label": "Watchlist",
     "lastVerifiedAt": "2026-10-18T19:22:57.816Z",
     "hasActiveJobs": true,
     "activeJobs": [
@@ -1772,7 +1743,7 @@
     "remoteokSlug": "payment-operations-specialist-utopia-1137514",
     "industry": null,
     "verifiedIndonesianCount": 0,
-    "label": "Confirmed",
+    "label": "Watchlist",
     "lastVerifiedAt": "2026-10-18T19:23:04.199Z",
     "hasActiveJobs": true,
     "activeJobs": [
@@ -1834,7 +1805,7 @@
     "remoteokSlug": "senior-software-engineer-ii-applied-ai-wrapbook-1137527",
     "industry": null,
     "verifiedIndonesianCount": 0,
-    "label": "Confirmed",
+    "label": "Watchlist",
     "lastVerifiedAt": "2026-10-18T19:23:10.339Z",
     "hasActiveJobs": true,
     "activeJobs": [
@@ -1966,7 +1937,7 @@
     "remoteokSlug": "sr-react-native-somnio-software-1137523",
     "industry": null,
     "verifiedIndonesianCount": 0,
-    "label": "Confirmed",
+    "label": "Watchlist",
     "lastVerifiedAt": "2026-10-18T19:23:15.575Z",
     "hasActiveJobs": true,
     "activeJobs": [

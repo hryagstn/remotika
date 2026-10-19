@@ -37,6 +37,6 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore(data): auto-update verified companies database [skip ci]"
-          file_pattern: "src/data/companies.json"
+          file_pattern: "src/data/companies.json src/data/posted-jobs-cache.json"
           commit_user_name: "GitHub Actions Bot"
           commit_user_email: "actions@github.com"

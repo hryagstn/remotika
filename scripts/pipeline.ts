@@ -618,9 +618,21 @@ async function harvestRemoteOkCandidates(existingCompanies: CompanyData[]): Prom
 
     const jobs = data.slice(1); // skip legal header
     
-    // Build set of existing domains for deduping
+    // Build sets of existing domains, names, and slugs for deduping
     const existingDomains = new Set<string>();
+    const existingNames = new Set<string>();
     existingCompanies.forEach(c => {
+      if (c.name) {
+        existingNames.add(c.name.toLowerCase().trim());
+        const nameSlug = c.name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+        if (nameSlug) existingNames.add(nameSlug);
+      }
+      if (c.githubOrg) {
+        existingNames.add(c.githubOrg.toLowerCase().trim());
+      }
+      if (c.remoteokSlug) {
+        existingNames.add(c.remoteokSlug.toLowerCase().trim());
+      }
       if (c.website) {
         const dom = parseDomain(c.website) || c.website.toLowerCase().trim();
         existingDomains.add(dom);
@@ -636,7 +648,8 @@ async function harvestRemoteOkCandidates(existingCompanies: CompanyData[]): Prom
 
       let companyName = fixMojibake(job.company.trim());
       companyName = await translateText(companyName);
-      const companyKey = companyName.toLowerCase();
+      const companyKey = companyName.toLowerCase().trim();
+      const companySlug = companyKey.replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 
       // Skip if company name contains "test" (case-insensitive)
       if (companyKey.includes("test")) {
@@ -698,8 +711,12 @@ async function harvestRemoteOkCandidates(existingCompanies: CompanyData[]): Prom
       }
       companyJobsMap.get(companyKey)!.push(activeJob);
 
-      // Dedup against existing domains for candidate discovery
-      if (domain && existingDomains.has(domain)) {
+      // Dedup against existing companies (by domain, name, or slug) for candidate discovery
+      if (
+        (domain && existingDomains.has(domain)) ||
+        existingNames.has(companyKey) ||
+        (companySlug && existingNames.has(companySlug))
+      ) {
         continue;
       }
 
@@ -713,7 +730,7 @@ async function harvestRemoteOkCandidates(existingCompanies: CompanyData[]): Prom
         candidatesMap.set(companyKey, {
           name: companyName,
           website: website || undefined,
-          remoteokSlug: job.slug ? fixMojibake(job.slug.split("-").slice(1).join("-")) : companyKey,
+          remoteokSlug: companySlug || companyKey,
           jobs: [activeJob]
         });
       }
@@ -1337,7 +1354,7 @@ async function processOrg(orgLogin: string, existingCompanies: CompanyData[]): P
         const updated: CompanyData = {
           ...existingCompany,
           verifiedIndonesianCount: 0,
-          label: "Confirmed",
+          label: existingCompany.status === "watchlist" ? "Watchlist" : "Confirmed",
           lastVerifiedAt: new Date().toISOString(),
           verifiedAt: existingCompany.verifiedAt || existingCompany.lastVerifiedAt || undefined,
           verifiedMembers: []
@@ -1458,12 +1475,13 @@ async function main() {
 
   const updatedCompaniesMap = new Map<string, CompanyData>();
   
-  // Populate map with existing companies
+  // Populate map with existing companies (keyed by githubOrg or normalized company name slug)
   companies.forEach(c => {
     if (c.githubOrg) {
-      updatedCompaniesMap.set(c.githubOrg.toLowerCase(), c);
+      updatedCompaniesMap.set(c.githubOrg.toLowerCase().trim(), c);
     } else {
-      const key = c.remoteokSlug ? `wl-${c.remoteokSlug.toLowerCase()}` : `wl-${c.name.toLowerCase()}`;
+      const cleanSlug = slugify(c.name) || c.name.toLowerCase().trim();
+      const key = `wl-${cleanSlug}`;
       updatedCompaniesMap.set(key, c);
     }
   });
@@ -1557,17 +1575,24 @@ async function main() {
   console.log("\n[Pipeline] Processing harvested RemoteOK candidates...");
   for (const candidate of remoteokCandidates) {
     const candidateDomain = parseDomain(candidate.website || null);
+    const candidateNameLower = candidate.name.toLowerCase().trim();
+    const candidateSlug = slugify(candidate.name) || candidateNameLower;
     
-    // Check if domain is already in updatedCompaniesMap values
+    // Check if company or domain is already in updatedCompaniesMap values
     const currentCompanies = Array.from(updatedCompaniesMap.values());
-    const domainExists = candidateDomain ? currentCompanies.some(c => {
-      if (c.website && parseDomain(c.website) === candidateDomain) return true;
-      const parsedDom = parseDomain(c.githubOrgUrl) || parseDomain(c.jobSources?.careerPageUrl || null);
-      return parsedDom === candidateDomain;
-    }) : false;
+    const alreadyExists = currentCompanies.some(c => {
+      if (c.name.toLowerCase().trim() === candidateNameLower) return true;
+      if (slugify(c.name) === candidateSlug) return true;
+      if (candidateDomain) {
+        if (c.website && parseDomain(c.website) === candidateDomain) return true;
+        const parsedDom = parseDomain(c.githubOrgUrl) || parseDomain(c.jobSources?.careerPageUrl || null);
+        if (parsedDom === candidateDomain) return true;
+      }
+      return false;
+    });
 
-    if (domainExists) {
-      console.log(`  ⏭️ Candidate "${candidate.name}" domain (${candidateDomain}) already exists. Skipping.`);
+    if (alreadyExists) {
+      console.log(`  ⏭️ Candidate "${candidate.name}" already exists in database. Skipping new entry creation.`);
       continue;
     }
 
@@ -1606,7 +1631,7 @@ async function main() {
           candidate.name,
           resolvedOrg,
           candidate.website,
-          candidate.remoteokSlug,
+          candidateSlug,
           "org-found-zero-match",
           candidate.jobs,
           currentCompanies
@@ -1620,13 +1645,12 @@ async function main() {
         candidate.name,
         null,
         candidate.website,
-        candidate.remoteokSlug,
+        candidateSlug,
         "no-org-found",
         candidate.jobs,
         currentCompanies
       );
-      // Use remoteokSlug/companyKey as key in map
-      const dummyKey = `wl-${candidate.remoteokSlug.toLowerCase()}`;
+      const dummyKey = `wl-${candidateSlug}`;
       updatedCompaniesMap.set(dummyKey, watchlistEntry);
     }
 
@@ -1752,10 +1776,10 @@ function formatJobsSection(jobs?: ActiveJob[], maxDisplay: number = 3): string {
   return section;
 }
 
-function generateTwitterText(company: CompanyData, slug: string, isVerified: boolean): string {
+function generateTwitterText(company: CompanyData, slug: string, isVerified: boolean, jobsToDisplay?: ActiveJob[]): string {
   const url = `https://remotika.my.id/company/${slug}`;
   const hashtags = "#KerjaRemote #RemoteJobs #Remotika";
-  const jobs = company.activeJobs || [];
+  const jobs = jobsToDisplay || company.activeJobs || [];
 
   if (isVerified) {
     const header = `🆕 Perusahaan Terverifikasi di Remotika!\n\n${company.name} terkonfirmasi memiliki ${company.verifiedIndonesianCount} anggota tim asal Indonesia via GitHub & sedang buka lowongan remote:`;
@@ -1796,9 +1820,9 @@ function generateTwitterText(company: CompanyData, slug: string, isVerified: boo
   }
 }
 
-function generateLinkedInText(company: CompanyData, slug: string, isVerified: boolean): string {
+function generateLinkedInText(company: CompanyData, slug: string, isVerified: boolean, jobsToDisplay?: ActiveJob[]): string {
   const url = `https://remotika.my.id/company/${slug}`;
-  const jobs = company.activeJobs || [];
+  const jobs = jobsToDisplay || company.activeJobs || [];
   const hashtags = "#RemoteWork #KerjaRemote #IndonesiaDeveloper #TechJobs #Remotika";
 
   let jobsSection = "";
@@ -1832,70 +1856,123 @@ async function notifyNewVerifiedCompanies(initialCompanies: CompanyData[], final
     return;
   }
 
-  // Load posted jobs cache (tracks which job URLs already posted per company)
+  // Load posted jobs cache (tracks which job URLs & titles already posted per company)
   const postedJobsCache = loadPostedJobsCache();
+  let cacheUpdated = false;
 
-  // Build lookup map of initial companies by githubOrg and id
+  // Build lookup map of initial companies by githubOrg, id, slug, and name
   const initialCompanyMap = new Map<string, CompanyData>();
   initialCompanies.forEach(c => {
     if (c.githubOrg && c.githubOrg.trim() !== "") {
-      initialCompanyMap.set(c.githubOrg.toLowerCase().trim(), c);
+      initialCompanyMap.set(`org:${c.githubOrg.toLowerCase().trim()}`, c);
     }
     if (c.id) {
-      initialCompanyMap.set(c.id.toLowerCase().trim(), c);
+      initialCompanyMap.set(`id:${c.id.toLowerCase().trim()}`, c);
+    }
+    const cSlug = getCompanySlug(c);
+    if (cSlug) {
+      initialCompanyMap.set(`slug:${cSlug}`, c);
+    }
+    if (c.name) {
+      initialCompanyMap.set(`name:${c.name.toLowerCase().trim()}`, c);
+    }
+
+    // Backfill postedJobsCache from initialCompanies so pre-existing jobs are always recorded in cache
+    if (c.activeJobs && c.activeJobs.length > 0) {
+      const existingCacheKeys = [c.id, cSlug].filter(Boolean);
+      const jobMarkers = c.activeJobs.flatMap(j => [
+        j.url.trim(),
+        `title:${j.title.toLowerCase().trim()}`
+      ]);
+      for (const k of existingCacheKeys) {
+        const currentList = postedJobsCache[k] || [];
+        const merged = [...new Set([...currentList, ...jobMarkers])];
+        if (merged.length !== currentList.length) {
+          postedJobsCache[k] = merged;
+          cacheUpdated = true;
+        }
+      }
     }
   });
 
-  const newActiveJobCompanies = finalCompanies.filter(c => {
-    if (!c.hasActiveJobs) return false;
-
+  const findInitialCompany = (c: CompanyData): CompanyData | undefined => {
     const orgKey = c.githubOrg ? c.githubOrg.toLowerCase().trim() : "";
     const idKey = c.id ? c.id.toLowerCase().trim() : "";
+    const slugKey = getCompanySlug(c);
+    const nameKey = c.name ? c.name.toLowerCase().trim() : "";
 
-    const initialComp = (orgKey !== "" ? initialCompanyMap.get(orgKey) : undefined) ||
-                        (idKey !== "" ? initialCompanyMap.get(idKey) : undefined);
+    return (
+      (orgKey ? initialCompanyMap.get(`org:${orgKey}`) : undefined) ||
+      (idKey ? initialCompanyMap.get(`id:${idKey}`) : undefined) ||
+      (slugKey ? initialCompanyMap.get(`slug:${slugKey}`) : undefined) ||
+      (nameKey ? initialCompanyMap.get(`name:${nameKey}`) : undefined)
+    );
+  };
 
-    // 1. Brand new company with active jobs -> notify!
-    if (!initialComp) return true;
+  const getPostedMarkersForCompany = (c: CompanyData, initialComp?: CompanyData): Set<string> => {
+    const slug = getCompanySlug(c);
+    const markers = new Set<string>([
+      ...(postedJobsCache[c.id] || []),
+      ...(postedJobsCache[slug] || [])
+    ]);
 
-    // 2. Company previously had NO active jobs, but now HAS active jobs -> notify!
-    if (!initialComp.hasActiveJobs && c.hasActiveJobs) return true;
+    // If company was already in the database and didn't just upgrade from watchlist to verified,
+    // any job that was already in initialComp.activeJobs is also considered already posted.
+    if (initialComp) {
+      const wasUnverified = initialComp.verifiedIndonesianCount <= 0 || initialComp.status === "watchlist";
+      const isNowVerified = c.verifiedIndonesianCount > 0 && c.status !== "watchlist";
+      if (!(wasUnverified && isNowVerified)) {
+        for (const j of initialComp.activeJobs || []) {
+          markers.add(j.url.trim());
+          markers.add(`title:${j.title.toLowerCase().trim()}`);
+        }
+      } else {
+        // Upgraded from watchlist to verified -> allow re-announcing as newly verified company!
+        markers.clear();
+      }
+    }
 
-    // 3. Company was previously unverified (0 members/watchlist), but now IS verified (>0 members) -> notify!
-    const wasUnverified = initialComp.verifiedIndonesianCount <= 0 || initialComp.status === "watchlist";
-    const isNowVerified = c.verifiedIndonesianCount > 0 && c.status !== "watchlist";
-    if (wasUnverified && isNowVerified) return true;
+    return markers;
+  };
 
-    // 4. Company has NEW job URLs not yet posted -> notify!
-    const currentJobUrls = new Set((c.activeJobs || []).map(j => j.url));
-    const postedUrls = new Set(postedJobsCache[c.id] || []);
-    const hasNewJobs = [...currentJobUrls].some(url => !postedUrls.has(url));
-    if (hasNewJobs) return true;
+  const isJobAlreadyPosted = (job: ActiveJob, postedMarkers: Set<string>): boolean => {
+    const urlTrimmed = job.url.trim();
+    const titleKey = `title:${job.title.toLowerCase().trim()}`;
+    return postedMarkers.has(urlTrimmed) || postedMarkers.has(titleKey);
+  };
 
-    return false;
+  const newActiveJobCompanies = finalCompanies.filter(c => {
+    if (!c.hasActiveJobs || !c.activeJobs || c.activeJobs.length === 0) return false;
+
+    const initialComp = findInitialCompany(c);
+    const postedMarkers = getPostedMarkersForCompany(c, initialComp);
+    const hasNewJobs = c.activeJobs.some(j => !isJobAlreadyPosted(j, postedMarkers));
+
+    return hasNewJobs;
   });
 
   if (newActiveJobCompanies.length === 0) {
     console.log("\n[Notifications] No new active job companies found in this run. No notifications to send.");
+    if (cacheUpdated) {
+      savePostedJobsCache(postedJobsCache);
+    }
     return;
   }
 
-  console.log(`\n[Notifications] Found ${newActiveJobCompanies.length} company/companies with NEW job URLs. Sending notifications...`);
-
-  let cacheUpdated = false;
+  console.log(`\n[Notifications] Found ${newActiveJobCompanies.length} company/companies with NEW job(s). Sending notifications...`);
 
   for (const company of newActiveJobCompanies) {
     const slug = getCompanySlug(company);
     const isVerified = company.verifiedIndonesianCount > 0 && company.status !== "watchlist";
+    const initialComp = findInitialCompany(company);
+    const postedMarkers = getPostedMarkersForCompany(company, initialComp);
 
-    // Determine which jobs are NEW (not in cache)
-    const currentJobUrls = new Set((company.activeJobs || []).map(j => j.url));
-    const postedUrls = new Set(postedJobsCache[company.id] || []);
-    const newJobs = (company.activeJobs || []).filter(j => !postedUrls.has(j.url));
-    const alreadyPostedJobs = (company.activeJobs || []).filter(j => postedUrls.has(j.url));
+    // Determine which jobs are NEW (not in cache / previous snapshot)
+    const newJobs = (company.activeJobs || []).filter(j => !isJobAlreadyPosted(j, postedMarkers));
+    const alreadyPostedJobs = (company.activeJobs || []).filter(j => isJobAlreadyPosted(j, postedMarkers));
 
     if (newJobs.length === 0) {
-      console.log(`  ⏭️  ${company.name}: No new job URLs to post (${alreadyPostedJobs.length} already posted).`);
+      console.log(`  ⏭️  ${company.name}: No new jobs to post (${alreadyPostedJobs.length} already posted).`);
       continue;
     }
 
@@ -1940,12 +2017,12 @@ async function notifyNewVerifiedCompanies(initialCompanies: CompanyData[], final
       }
     }
 
-    // 2. Dispatch Social Webhook notification (Make.com / Zapier / etc)
+    // 2. Dispatch Social Webhook notification (Make.com / Buffer / Zapier / etc)
     if (SOCIAL_WEBHOOK_URL) {
       try {
         console.log(`    [Social Webhook] Sending payload for ${company.name} to Make.com...`);
-        const twitterText = generateTwitterText(company, slug, isVerified);
-        const linkedinText = generateLinkedInText(company, slug, isVerified);
+        const twitterText = generateTwitterText(company, slug, isVerified, newJobs);
+        const linkedinText = generateLinkedInText(company, slug, isVerified, newJobs);
 
         const webhookPayload = {
           event: isVerified ? "new_verified_company" : "new_remote_hiring_company",
@@ -1986,9 +2063,13 @@ async function notifyNewVerifiedCompanies(initialCompanies: CompanyData[], final
 
     // Update cache only if notification was sent successfully
     if (notificationSent) {
-      const updatedUrls = [...postedUrls, ...newJobs.map(j => j.url)];
-      // Keep only unique URLs
-      postedJobsCache[company.id] = [...new Set(updatedUrls)];
+      const newMarkers = newJobs.flatMap(j => [
+        j.url.trim(),
+        `title:${j.title.toLowerCase().trim()}`
+      ]);
+      const updatedMarkers = [...new Set([...postedMarkers, ...newMarkers])];
+      postedJobsCache[company.id] = updatedMarkers;
+      postedJobsCache[slug] = updatedMarkers;
       cacheUpdated = true;
     }
   }
