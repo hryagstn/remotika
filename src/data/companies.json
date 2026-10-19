@@ -8,9 +8,14 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-10-18T19:21:21.049Z",
+    "lastVerifiedAt": "2026-10-19T21:23:56.144Z",
     "hasActiveJobs": true,
     "activeJobs": [
+      {
+        "title": "Financial Partnerships Lead - Market Expansion Lead, Singapore/Hong Kong/Malaysia   ",
+        "url": "https://job-boards.greenhouse.io/xendit/jobs/7984045003",
+        "tags": []
+      },
       {
         "title": "FinOps Recons Associate",
         "url": "https://job-boards.greenhouse.io/xendit/jobs/7813420003",
@@ -19,11 +24,6 @@
       {
         "title": "IT GRC Analyst",
         "url": "https://job-boards.greenhouse.io/xendit/jobs/7731687003",
-        "tags": []
-      },
-      {
-        "title": "Market Expansion Lead - Financial Partnerships",
-        "url": "https://job-boards.greenhouse.io/xendit/jobs/7984045003",
         "tags": []
       },
       {
@@ -38,7 +38,7 @@
       },
       {
         "title": "RevOps Systems Administrator (Salesforce)",
-        "url": "https://job-boards.greenhouse.io/xendit/jobs/7992220003",
+        "url": "https://job-boards.greenhouse.io/xendit/jobs/7992262003",
         "tags": []
       },
       {
@@ -157,7 +157,7 @@
     "industry": "PT Rekayasa Solverindo (REKSOLINDO) has provided practical material engineering solutions for industries across Indonesia since 2005.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-18T19:21:25.314Z",
+    "lastVerifiedAt": "2026-10-19T21:24:00.240Z",
     "verifiedAt": "2026-09-30T11:39:29.952Z",
     "hasActiveJobs": false,
     "activeJobs": [],
@@ -181,7 +181,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-18T19:21:41.315Z",
+    "lastVerifiedAt": "2026-10-19T21:24:16.244Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -216,7 +216,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-18T19:21:56.754Z",
+    "lastVerifiedAt": "2026-10-19T21:24:32.272Z",
     "hasActiveJobs": false,
     "headquarters": "Worldwide",
     "foundationYear": "2005",
@@ -251,7 +251,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-18T19:22:01.836Z",
+    "lastVerifiedAt": "2026-10-19T21:24:37.657Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -286,7 +286,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-18T19:22:08.246Z",
+    "lastVerifiedAt": "2026-10-19T21:24:44.206Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -434,55 +434,6 @@
           "next.js",
           "flutter"
         ]
-      },
-      {
-        "title": "Senior .NET Full-stack Developer",
-        "url": "https://remotive.com/remote-jobs/software-development/senior-net-full-stack-developer-2091130",
-        "tags": [
-          ".Net",
-          "android",
-          "C",
-          "C#",
-          "C++",
-          "data science",
-          "fullstack",
-          "golang",
-          "ios",
-          "java",
-          "javascript",
-          "node.js",
-          "php",
-          "python",
-          "react",
-          "ruby/rails",
-          "scala",
-          "shopify",
-          "swift",
-          "UI/UX",
-          "wordpress",
-          "blockchain",
-          "AI/ML",
-          "automation",
-          "project management",
-          "react native",
-          "rust",
-          "unity",
-          "electron",
-          "spring",
-          "laravel",
-          "Ethereum",
-          "graphic design",
-          "Typescript ",
-          "angular ",
-          "firebase",
-          "data engineering",
-          "Site Reliability",
-          "Symfony",
-          "startup",
-          "marketplace",
-          "next.js",
-          "flutter"
-        ]
       }
     ],
     "verifiedMembers": [],
@@ -502,7 +453,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-18T19:22:14.104Z",
+    "lastVerifiedAt": "2026-10-19T21:24:49.782Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -591,7 +542,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-18T19:22:16.792Z",
+    "lastVerifiedAt": "2026-10-19T21:24:52.364Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -861,7 +812,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-18T19:22:27.498Z",
+    "lastVerifiedAt": "2026-10-19T21:25:02.264Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -934,17 +885,6 @@
           "senior",
           "full stack",
           "front end"
-        ]
-      },
-      {
-        "title": "Senior Shopify Developer",
-        "url": "https://remoteOK.com/remote-jobs/remote-senior-shopify-developer-sanctuary-computer-1137405",
-        "tags": [
-          "dev",
-          "engineer",
-          "senior",
-          "front end",
-          "shopify"
         ]
       }
     ],
@@ -1094,7 +1034,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-18T19:22:30.394Z",
+    "lastVerifiedAt": "2026-10-19T21:25:05.164Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1220,7 +1160,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-18T19:22:36.636Z",
+    "lastVerifiedAt": "2026-10-19T21:25:11.787Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1247,7 +1187,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-18T19:22:43.680Z",
+    "lastVerifiedAt": "2026-10-19T21:25:19.903Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1284,7 +1224,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-18T19:22:50.682Z",
+    "lastVerifiedAt": "2026-10-19T21:25:26.895Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1506,7 +1446,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-18T19:22:57.816Z",
+    "lastVerifiedAt": "2026-10-19T21:25:34.415Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1744,7 +1684,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-18T19:23:04.199Z",
+    "lastVerifiedAt": "2026-10-19T21:25:40.787Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1806,7 +1746,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-18T19:23:10.339Z",
+    "lastVerifiedAt": "2026-10-19T21:25:46.929Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1938,7 +1878,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-18T19:23:15.575Z",
+    "lastVerifiedAt": "2026-10-19T21:25:52.223Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -2132,6 +2072,28 @@
           "java",
           "c plus plus"
         ]
+      },
+      {
+        "title": "Software Engineer, AI Coding Tasks",
+        "url": "https://remotive.com/remote-jobs/software-development/software-engineer-ai-coding-tasks-2091158",
+        "tags": [
+          "C++",
+          "docker",
+          "git",
+          "go",
+          "java",
+          "python",
+          "security",
+          "AI/ML",
+          "rust",
+          "Typescript ",
+          "distributed systems",
+          "SOLID",
+          "Linux/Unix",
+          "testing",
+          "infrastructure"
+        ],
+        "salary": "$1000 per task"
       }
     ],
     "verifiedMembers": [],
@@ -2140,6 +2102,71 @@
     "source": "remoteok",
     "watchlistReason": "no-org-found",
     "website": "askable.com",
+    "scope": "global"
+  },
+  {
+    "id": "co-437",
+    "name": "Sotheby’s",
+    "githubOrg": "sothebys",
+    "githubOrgUrl": "https://github.com/sothebys",
+    "remoteokSlug": "sotheby-s",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-10-19T21:41:53.761Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Senior Software Engineer",
+        "url": "https://remoteOK.com/remote-jobs/remote-senior-software-engineer-sothebys-1137545",
+        "tags": [
+          "golang",
+          "dev",
+          "senior",
+          "sales",
+          "engineer",
+          "digital nomad"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "scope": "global"
+  },
+  {
+    "id": "co-438",
+    "name": "Rain",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "rain",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-10-19T21:41:54.871Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Senior Backend Engineer",
+        "url": "https://remoteOK.com/remote-jobs/remote-senior-backend-engineer-rain-1137544",
+        "tags": [
+          "golang",
+          "finance",
+          "mobile",
+          "senior",
+          "medical",
+          "engineer",
+          "backend"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
     "scope": "global"
   }
 ]
