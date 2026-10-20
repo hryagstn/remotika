@@ -8,9 +8,14 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-10-19T21:23:56.144Z",
+    "lastVerifiedAt": "2026-10-20T20:23:09.435Z",
     "hasActiveJobs": true,
     "activeJobs": [
+      {
+        "title": "Chinese Merchant Support",
+        "url": "https://job-boards.greenhouse.io/xendit/jobs/7780726003",
+        "tags": []
+      },
       {
         "title": "Financial Partnerships Lead - Market Expansion Lead, Singapore/Hong Kong/Malaysia   ",
         "url": "https://job-boards.greenhouse.io/xendit/jobs/7984045003",
@@ -18,7 +23,7 @@
       },
       {
         "title": "FinOps Recons Associate",
-        "url": "https://job-boards.greenhouse.io/xendit/jobs/7813420003",
+        "url": "https://job-boards.greenhouse.io/xendit/jobs/8034310003",
         "tags": []
       },
       {
@@ -38,7 +43,7 @@
       },
       {
         "title": "RevOps Systems Administrator (Salesforce)",
-        "url": "https://job-boards.greenhouse.io/xendit/jobs/7992262003",
+        "url": "https://job-boards.greenhouse.io/xendit/jobs/7992220003",
         "tags": []
       },
       {
@@ -59,6 +64,11 @@
       {
         "title": "Senior Solutions Engineer",
         "url": "https://job-boards.greenhouse.io/xendit/jobs/7719174003",
+        "tags": []
+      },
+      {
+        "title": "Solutions Engineer",
+        "url": "https://job-boards.greenhouse.io/xendit/jobs/8021808003",
         "tags": []
       },
       {
@@ -157,7 +167,7 @@
     "industry": "PT Rekayasa Solverindo (REKSOLINDO) has provided practical material engineering solutions for industries across Indonesia since 2005.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-19T21:24:00.240Z",
+    "lastVerifiedAt": "2026-10-20T20:23:13.484Z",
     "verifiedAt": "2026-09-30T11:39:29.952Z",
     "hasActiveJobs": false,
     "activeJobs": [],
@@ -181,7 +191,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-19T21:24:16.244Z",
+    "lastVerifiedAt": "2026-10-20T20:23:29.157Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -216,7 +226,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-19T21:24:32.272Z",
+    "lastVerifiedAt": "2026-10-20T20:23:44.748Z",
     "hasActiveJobs": false,
     "headquarters": "Worldwide",
     "foundationYear": "2005",
@@ -251,7 +261,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-19T21:24:37.657Z",
+    "lastVerifiedAt": "2026-10-20T20:23:49.668Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -286,7 +296,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-19T21:24:44.206Z",
+    "lastVerifiedAt": "2026-10-20T20:23:56.000Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -385,55 +395,6 @@
           "next.js",
           "flutter"
         ]
-      },
-      {
-        "title": "Senior AI Engineer",
-        "url": "https://remotive.com/remote-jobs/artificial-intelligence/senior-ai-engineer-2091131",
-        "tags": [
-          ".Net",
-          "android",
-          "C",
-          "C#",
-          "C++",
-          "data science",
-          "golang",
-          "ios",
-          "java",
-          "javascript",
-          "node.js",
-          "php",
-          "python",
-          "react",
-          "ruby/rails",
-          "scala",
-          "shopify",
-          "swift",
-          "UI/UX",
-          "wordpress",
-          "blockchain",
-          "AI/ML",
-          "automation",
-          "project management",
-          "react native",
-          "rust",
-          "unity",
-          "electron",
-          "spring",
-          "laravel",
-          "Ethereum",
-          "graphic design",
-          "Typescript ",
-          "angular ",
-          "firebase",
-          "data engineering",
-          "Site Reliability",
-          "SOLID",
-          "Symfony",
-          "startup",
-          "marketplace",
-          "next.js",
-          "flutter"
-        ]
       }
     ],
     "verifiedMembers": [],
@@ -453,7 +414,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-19T21:24:49.782Z",
+    "lastVerifiedAt": "2026-10-20T20:24:01.065Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -542,7 +503,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-19T21:24:52.364Z",
+    "lastVerifiedAt": "2026-10-20T20:24:03.520Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -812,7 +773,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-19T21:25:02.264Z",
+    "lastVerifiedAt": "2026-10-20T20:24:13.193Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1034,7 +995,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-19T21:25:05.164Z",
+    "lastVerifiedAt": "2026-10-20T20:24:15.845Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1160,7 +1121,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-19T21:25:11.787Z",
+    "lastVerifiedAt": "2026-10-20T20:24:21.996Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1187,7 +1148,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-19T21:25:19.903Z",
+    "lastVerifiedAt": "2026-10-20T20:24:29.955Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1224,7 +1185,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-19T21:25:26.895Z",
+    "lastVerifiedAt": "2026-10-20T20:24:36.537Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1446,7 +1407,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-19T21:25:34.415Z",
+    "lastVerifiedAt": "2026-10-20T20:24:43.877Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1684,7 +1645,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-19T21:25:40.787Z",
+    "lastVerifiedAt": "2026-10-20T20:24:49.955Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1746,7 +1707,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-19T21:25:46.929Z",
+    "lastVerifiedAt": "2026-10-20T20:24:55.645Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1878,7 +1839,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-19T21:25:52.223Z",
+    "lastVerifiedAt": "2026-10-20T20:25:00.548Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -2113,7 +2074,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-19T21:41:53.761Z",
+    "lastVerifiedAt": "2026-10-20T20:25:18.123Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -2134,7 +2095,8 @@
     "status": "watchlist",
     "source": "remoteok",
     "watchlistReason": "org-found-zero-match",
-    "scope": "global"
+    "scope": "global",
+    "verifiedAt": "2026-10-19T21:41:53.761Z"
   },
   {
     "id": "co-438",
@@ -2167,6 +2129,42 @@
     "status": "watchlist",
     "source": "remoteok",
     "watchlistReason": "no-org-found",
+    "scope": "global"
+  },
+  {
+    "id": "co-439",
+    "name": "SupportYourApp",
+    "githubOrg": "supportyourapp",
+    "githubOrgUrl": "https://github.com/supportyourapp",
+    "remoteokSlug": "supportyourapp",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-10-20T20:40:22.186Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Customer Support Consultant hospitality",
+        "url": "https://remoteOK.com/remote-jobs/remote-customer-support-consultant-hospitality-supportyourapp-1137547",
+        "tags": [
+          "consulting",
+          "customer support",
+          "saas",
+          "infosec",
+          "technical",
+          "dev",
+          "travel",
+          "exec",
+          "medical",
+          "digital nomad"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
     "scope": "global"
   }
 ]
