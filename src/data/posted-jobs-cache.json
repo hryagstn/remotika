@@ -33,7 +33,8 @@
     "https://job-boards.greenhouse.io/xendit/jobs/7780726003",
     "title:chinese merchant support",
     "https://job-boards.greenhouse.io/xendit/jobs/8021808003",
-    "title:solutions engineer"
+    "title:solutions engineer",
+    "https://job-boards.greenhouse.io/xendit/jobs/8034310003"
   ],
   "xendit": [
     "https://job-boards.greenhouse.io/xendit/jobs/7813420003",
@@ -69,7 +70,8 @@
     "https://job-boards.greenhouse.io/xendit/jobs/7780726003",
     "title:chinese merchant support",
     "https://job-boards.greenhouse.io/xendit/jobs/8021808003",
-    "title:solutions engineer"
+    "title:solutions engineer",
+    "https://job-boards.greenhouse.io/xendit/jobs/8034310003"
   ],
   "co-123": [
     "https://remoteOK.com/remote-jobs/remote-senior-react-full-stack-developer-lemon-io-1137475",
@@ -141,11 +143,13 @@
   ],
   "co-435": [
     "https://remoteOK.com/remote-jobs/remote-desarrollador-full-stack-kruger-nearshore-llc-rekluti-1137062",
-    "title:desarrollador full stack"
+    "title:desarrollador full stack",
+    "title:full stack developer"
   ],
   "kruger-nearshore-llc-rekluti": [
     "https://remoteOK.com/remote-jobs/remote-desarrollador-full-stack-kruger-nearshore-llc-rekluti-1137062",
-    "title:desarrollador full stack"
+    "title:desarrollador full stack",
+    "title:full stack developer"
   ],
   "co-157": [
     "https://remoteOK.com/remote-jobs/remote-team-lead-education-chaos-1136949",
@@ -233,11 +237,13 @@
   ],
   "co-428": [
     "https://remoteOK.com/remote-jobs/remote-freelance-grabacion-de-tareas-cotidianas-para-proyecto-de-ia-mindrift-data-annotation-1137415",
-    "title:freelance grabación de tareas cotidianas para proyecto de ia"
+    "title:freelance grabación de tareas cotidianas para proyecto de ia",
+    "title:freelance recording daily tasks for ai project"
   ],
   "mindrift-data-annotation": [
     "https://remoteOK.com/remote-jobs/remote-freelance-grabacion-de-tareas-cotidianas-para-proyecto-de-ia-mindrift-data-annotation-1137415",
-    "title:freelance grabación de tareas cotidianas para proyecto de ia"
+    "title:freelance grabación de tareas cotidianas para proyecto de ia",
+    "title:freelance recording daily tasks for ai project"
   ],
   "co-183": [
     "https://remoteOK.com/remote-jobs/remote-software-engineer-prenosis-1137427",
@@ -486,5 +492,13 @@
   "supportyourapp": [
     "https://remoteOK.com/remote-jobs/remote-customer-support-consultant-hospitality-supportyourapp-1137547",
     "title:customer support consultant hospitality"
+  ],
+  "co-440": [
+    "https://remoteOK.com/remote-jobs/remote-risk-analyst-pavago-1137548",
+    "title:risk analyst"
+  ],
+  "pavago": [
+    "https://remoteOK.com/remote-jobs/remote-risk-analyst-pavago-1137548",
+    "title:risk analyst"
   ]
 }
