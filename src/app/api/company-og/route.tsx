@@ -4,6 +4,14 @@ import companies from "@/data/companies.json";
 
 export const runtime = "edge";
 
+interface ActiveJob {
+  title: string;
+  url: string;
+  tags?: string[];
+  salary?: string;
+  location?: string;
+}
+
 interface Company {
   id: string;
   name: string;
@@ -15,10 +23,13 @@ interface Company {
   label: string;
   lastVerifiedAt: string | null;
   hasActiveJobs: boolean;
+  activeJobs?: ActiveJob[];
   headquarters?: string;
+  status?: string;
 }
 
-const getTierColor = (label: string): string => {
+const getTierColor = (label: string, isVerified: boolean): string => {
+  if (!isVerified) return "#0284c7"; // Sky 600
   switch (label) {
     case "Top Pick":
       return "#d97706"; // Amber 600
@@ -37,26 +48,52 @@ export async function GET(request: NextRequest) {
   try {
     const { searchParams } = new URL(request.url);
     const slug = searchParams.get("slug") || "";
-    const decodedSlug = decodeURIComponent(slug).toLowerCase();
+    const decodedSlug = decodeURIComponent(slug).toLowerCase().trim();
 
     // Find the company by ID, GitHub Org Slug, or slugified name
     const company = (companies as Company[]).find(
       (c) =>
         c.id.toLowerCase() === decodedSlug ||
-        c.githubOrg.toLowerCase() === decodedSlug ||
-        (c.githubOrg === "" && slugify(c.name) === decodedSlug)
+        (c.githubOrg && c.githubOrg.toLowerCase() === decodedSlug) ||
+        slugify(c.name) === decodedSlug
     );
 
-    if (!company) {
+    // Fallback to query params if company was just discovered by pipeline before redeploy
+    const fallbackName = searchParams.get("name")?.trim();
+    if (!company && !fallbackName) {
       return new Response("Company not found", { status: 404 });
     }
 
-    const companyName = company.name;
+    const companyName = company?.name || fallbackName || "Remote Company";
     const initial = companyName.substring(0, 1).toUpperCase();
-    const tierColor = getTierColor(company.label);
-    const verifiedCount = company.verifiedIndonesianCount;
-    const headquarters = company.headquarters || "Global Remote";
-    const industry = company.industry || "Technology";
+    const verifiedCount = company
+      ? company.verifiedIndonesianCount
+      : parseInt(searchParams.get("count") || "0", 10) || 0;
+    const isVerified = company
+      ? company.verifiedIndonesianCount > 0 && company.status !== "watchlist"
+      : verifiedCount > 0;
+    const tierColor = getTierColor(company?.label || "", isVerified);
+    const headquarters = company?.headquarters || searchParams.get("hq") || "Global Remote";
+    const industry = company?.industry || searchParams.get("industry") || "Remote Work";
+
+    // Resolve primary job title & additional jobs count
+    const activeJobs = company?.activeJobs || [];
+    const queryJobTitle = searchParams.get("job")?.trim();
+    const primaryJobTitle = queryJobTitle || activeJobs[0]?.title || "Lowongan Kerja Remote Terbuka";
+    const totalJobsCount = parseInt(searchParams.get("jobsCount") || "", 10) || activeJobs.length || 1;
+    const extraJobsCount = Math.max(0, totalJobsCount - 1);
+
+    // Resolve tags (up to 3 clean tags)
+    const queryTags = searchParams.get("tags")
+      ? searchParams.get("tags")!.split(",").map((t) => t.trim()).filter(Boolean)
+      : [];
+    const rawTags = queryTags.length > 0 ? queryTags : activeJobs[0]?.tags || [];
+    const cleanTags = rawTags
+      .filter((t) => !["remote", "full time", "full-time", "worldwide", "global"].includes(t.toLowerCase().trim()))
+      .slice(0, 3);
+
+    const resolvedSlug =
+      company?.githubOrg?.toLowerCase() || slugify(companyName) || company?.id || decodedSlug;
 
     return new ImageResponse(
       (
@@ -68,46 +105,31 @@ export async function GET(request: NextRequest) {
             flexDirection: "column",
             alignItems: "stretch",
             justifyContent: "space-between",
-            background: "radial-gradient(circle at 10% 10%, #080d24, #020410)",
-            color: "#f3f4f6",
+            background: "radial-gradient(circle at 15% 15%, #0f172a, #020617)",
+            color: "#f8fafc",
             fontFamily: "system-ui, -apple-system, sans-serif",
-            padding: "60px 80px",
+            padding: "52px 72px",
             boxSizing: "border-box",
-            border: "12px solid #1e293b",
+            border: "10px solid #1e293b",
             position: "relative",
           }}
         >
-          {/* Subtle grid/ambient lights */}
-          <div
-            style={{
-              position: "absolute",
-              top: 0,
-              left: 0,
-              right: 0,
-              bottom: 0,
-              opacity: 0.05,
-              backgroundImage: "radial-gradient(circle, #2dd4bf 1px, transparent 1px)",
-              backgroundSize: "24px 24px",
-            }}
-          />
-
-          {/* Header (Branding & Status) */}
+          {/* Header (Branding & Status Badge) */}
           <div
             style={{
               display: "flex",
               justifyContent: "space-between",
               alignItems: "center",
               width: "100%",
-              zIndex: 10,
             }}
           >
             <div style={{ display: "flex", alignItems: "center" }}>
               <span
                 style={{
                   color: "#2dd4bf",
-                  fontWeight: "bold",
-                  fontSize: "22px",
-                  letterSpacing: "2.5px",
+                  fontWeight: 800,
+                  fontSize: "24px",
+                  letterSpacing: "2px",
                 }}
               >
                 REMOTIKA
@@ -118,161 +140,198 @@ export async function GET(request: NextRequest) {
                   height: "10px",
                   borderRadius: "50%",
                   backgroundColor: "#10b981",
-                  marginLeft: "10px",
-                  boxShadow: "0 0 12px #10b981",
+                  marginLeft: "12px",
                 }}
               />
             </div>
+
             <div
               style={{
                 display: "flex",
                 alignItems: "center",
-                backgroundColor: "rgba(16, 185, 129, 0.1)",
-                border: "1px solid rgba(16, 185, 129, 0.2)",
-                padding: "8px 16px",
+                backgroundColor: isVerified ? "rgba(16, 185, 129, 0.14)" : "rgba(56, 189, 248, 0.14)",
+                border: isVerified
+                  ? "1px solid rgba(16, 185, 129, 0.35)"
+                  : "1px solid rgba(56, 189, 248, 0.35)",
+                padding: "10px 20px",
                 borderRadius: "99px",
               }}
             >
               <span
                 style={{
-                  color: "#10b981",
-                  fontSize: "13px",
+                  color: isVerified ? "#34d399" : "#38bdf8",
+                  fontSize: "14px",
                   fontWeight: 700,
                   letterSpacing: "0.5px",
                   textTransform: "uppercase",
                 }}
               >
-                ✓ VERIFIED REMOTE HIRING
+                {isVerified
+                  ? `✓ ${verifiedCount} ANGGOTA TIM INDONESIA TERVERIFIKASI`
+                  : "🌏 LOWONGAN REMOTE GLOBAL AKTIF"}
               </span>
             </div>
           </div>
 
-          {/* Main Body (Company Details & Card) */}
+          {/* Company Identity Row */}
           <div
             style={{
               display: "flex",
               alignItems: "center",
-              gap: "48px",
+              gap: "28px",
               width: "100%",
-              margin: "40px 0",
-              zIndex: 10,
+              marginTop: "12px",
             }}
           >
-            {/* Left: Huge Initial Circle (Mock Logo) */}
             <div
               style={{
-                width: "150px",
-                height: "150px",
-                borderRadius: "40px",
+                width: "88px",
+                height: "88px",
+                borderRadius: "24px",
                 backgroundColor: tierColor,
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                boxShadow: `0 20px 40px -15px ${tierColor}`,
-                border: "4px solid rgba(255, 255, 255, 0.1)",
+                border: "3px solid rgba(255, 255, 255, 0.15)",
               }}
             >
               <span
                 style={{
                   color: "#ffffff",
-                  fontSize: "76px",
+                  fontSize: "44px",
                   fontWeight: 800,
-                  lineHeight: 1,
                 }}
               >
                 {initial}
               </span>
             </div>
 
-            {/* Right: Company Name & Headline */}
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                flex: 1,
-              }}
-            >
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "8px" }}>
-                <span
-                  style={{
-                    fontSize: "48px",
-                    fontWeight: 900,
-                    color: "#ffffff",
-                    lineHeight: 1.1,
-                  }}
-                >
-                  {companyName}
-                </span>
-              </div>
-              
+            <div style={{ display: "flex", flexDirection: "column" }}>
               <span
                 style={{
-                  fontSize: "24px",
-                  fontWeight: 500,
-                  color: "#cbd5e1",
-                  lineHeight: 1.4,
+                  fontSize: "40px",
+                  fontWeight: 900,
+                  color: "#ffffff",
+                  lineHeight: 1.1,
                 }}
               >
-                {verifiedCount > 0 ? (
-                  <>
-                    Is remote hiring — and they have{" "}
-                    <span style={{ color: "#2dd4bf", fontWeight: 700 }}>
-                      {verifiedCount} verified Indonesian
-                    </span>{" "}
-                    team member{verifiedCount > 1 ? "s" : ""}!
-                  </>
-                ) : (
-                  <>
-                    Is remote hiring — want to be their{" "}
-                    <span style={{ color: "#2dd4bf", fontWeight: 700 }}>
-                      first verified Indonesian
-                    </span>{" "}
-                    team member?
-                  </>
-                )}
+                {companyName}
+              </span>
+              <span
+                style={{
+                  fontSize: "18px",
+                  fontWeight: 500,
+                  color: "#94a3b8",
+                  marginTop: "6px",
+                }}
+              >
+                { `${headquarters}  •  ${industry}` }
               </span>
             </div>
           </div>
 
-          {/* Footer (Metadata & CTA) */}
+          {/* Featured Job Card Box */}
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              backgroundColor: "rgba(30, 41, 59, 0.65)",
+              border: "1px solid rgba(148, 163, 184, 0.22)",
+              borderRadius: "24px",
+              padding: "28px 36px",
+              width: "100%",
+              boxSizing: "border-box",
+            }}
+          >
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                alignItems: "center",
+                marginBottom: "10px",
+              }}
+            >
+              <span
+                style={{
+                  fontSize: "13px",
+                  fontWeight: 700,
+                  color: "#2dd4bf",
+                  letterSpacing: "1.2px",
+                  textTransform: "uppercase",
+                }}
+              >
+                POSISI REMOTE TERBUKA
+              </span>
+              {extraJobsCount > 0 && (
+                <span
+                  style={{
+                    fontSize: "13px",
+                    fontWeight: 700,
+                    color: "#f8fafc",
+                    backgroundColor: "rgba(45, 212, 191, 0.18)",
+                    padding: "4px 12px",
+                    borderRadius: "99px",
+                  }}
+                >
+                  {`+${extraJobsCount} posisi lainnya`}
+                </span>
+              )}
+            </div>
+
+            <span
+              style={{
+                fontSize: primaryJobTitle.length > 42 ? "30px" : "36px",
+                fontWeight: 800,
+                color: "#ffffff",
+                lineHeight: 1.2,
+              }}
+            >
+              {primaryJobTitle.length > 65 ? `${primaryJobTitle.slice(0, 62)}...` : primaryJobTitle}
+            </span>
+
+            {cleanTags.length > 0 && (
+              <div style={{ display: "flex", gap: "10px", marginTop: "16px" }}>
+                {cleanTags.map((tag, idx) => (
+                  <span
+                    key={idx}
+                    style={{
+                      fontSize: "14px",
+                      fontWeight: 600,
+                      color: "#cbd5e1",
+                      backgroundColor: "rgba(15, 23, 42, 0.75)",
+                      border: "1px solid rgba(148, 163, 184, 0.2)",
+                      padding: "6px 14px",
+                      borderRadius: "8px",
+                    }}
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            )}
+          </div>
+
+          {/* Footer (CTA & URL) */}
           <div
             style={{
               display: "flex",
               justifyContent: "space-between",
-              alignItems: "flex-end",
+              alignItems: "center",
               width: "100%",
               borderTop: "1px solid rgba(255, 255, 255, 0.08)",
-              paddingTop: "24px",
-              zIndex: 10,
+              paddingTop: "20px",
             }}
           >
-            <div style={{ display: "flex", gap: "24px" }}>
-              <div style={{ display: "flex", flexDirection: "column" }}>
-                <span style={{ fontSize: "11px", color: "#64748b", fontWeight: 700, letterSpacing: "1px", textTransform: "uppercase" }}>
-                  Headquarters
-                </span>
-                <span style={{ fontSize: "15px", color: "#cbd5e1", fontWeight: 600, marginTop: "4px" }}>
-                  {headquarters}
-                </span>
-              </div>
-              <div style={{ display: "flex", flexDirection: "column" }}>
-                <span style={{ fontSize: "11px", color: "#64748b", fontWeight: 700, letterSpacing: "1px", textTransform: "uppercase" }}>
-                  Industry
-                </span>
-                <span style={{ fontSize: "15px", color: "#cbd5e1", fontWeight: 600, marginTop: "4px" }}>
-                  {industry}
-                </span>
-              </div>
-            </div>
+            <span style={{ fontSize: "15px", color: "#94a3b8", fontWeight: 500 }}>
+              {isVerified
+                ? "Terverifikasi melalui jejak organisasi publik GitHub/GitLab"
+                : "Direktori lowongan kerja remote global untuk talenta Indonesia"}
+            </span>
 
-            <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-end" }}>
-              <span style={{ fontSize: "12px", color: "#64748b", fontWeight: 600 }}>
-                See open roles and proof of verification at:
-              </span>
-              <span style={{ fontSize: "18px", color: "#2dd4bf", fontWeight: 700, marginTop: "4px" }}>
-                remotika.my.id/company/{company.githubOrg.toLowerCase() || slugify(company.name) || company.id}
-              </span>
-            </div>
+            <span style={{ fontSize: "20px", color: "#2dd4bf", fontWeight: 700 }}>
+              {`remotika.my.id/company/${resolvedSlug}`}
+            </span>
           </div>
         </div>
       ),

@@ -1776,54 +1776,237 @@ function formatJobsSection(jobs?: ActiveJob[], maxDisplay: number = 3): string {
   return section;
 }
 
+interface JobRoleContext {
+  primaryTitle: string;
+  focusLine: string;
+  suitabilityLine: string;
+  roleHashtag: string;
+  talentTerm: string;
+  hqBadge: string;
+  cleanTags: string[];
+}
+
+function analyzeJobContext(company: CompanyData, jobs: ActiveJob[]): JobRoleContext {
+  const primaryJob = jobs[0];
+  const primaryTitle = primaryJob?.title?.trim() || "Posisi Remote";
+  const allTitlesAndTags = [
+    ...jobs.map(j => j.title),
+    ...jobs.flatMap(j => j.tags || [])
+  ]
+    .join(" ")
+    .toLowerCase();
+
+  const genericTags = new Set([
+    "remote", "full time", "full-time", "worldwide", "global", "anywhere",
+    "dev", "engineer", "engineering", "startup", "tech", "software"
+  ]);
+
+  const rawTags = jobs.flatMap(j => j.tags || []);
+  const cleanTags: string[] = [];
+  const seenTagLower = new Set<string>();
+  for (const t of rawTags) {
+    const trimmed = t.trim();
+    const lower = trimmed.toLowerCase();
+    if (!trimmed || genericTags.has(lower) || seenTagLower.has(lower)) continue;
+    seenTagLower.add(lower);
+    cleanTags.push(trimmed);
+  }
+
+  let focusDefault = "Software Engineering & Tech";
+  let suitabilityLine = "software engineering / pengembangan produk digital";
+  let roleHashtag = "#SoftwareEngineer";
+  let talentTerm = "developer";
+
+  if (/\b(risk|compliance|grc|audit|legal|fraud|governance|aml|kyc)\b/.test(allTitlesAndTags)) {
+    focusDefault = "Enterprise Risk, Compliance, GRC";
+    suitabilityLine = "risk management / audit / data analysis";
+    roleHashtag = "#RiskAnalyst";
+    talentTerm = "talenta";
+  } else if (/\b(finance|finops|accounting|accountant|tax|treasury|controller|revops|billing)\b/.test(allTitlesAndTags)) {
+    focusDefault = "Financial Operations, Accounting, RevOps";
+    suitabilityLine = "finance / accounting / business operations";
+    roleHashtag = "#FinanceJobs";
+    talentTerm = "talenta";
+  } else if (/\b(design|designer|ui\/ux|ux|ui|illustrator|creative|brand|graphic)\b/.test(allTitlesAndTags)) {
+    focusDefault = "Product Design, UI/UX, Design System";
+    suitabilityLine = "UI/UX design / product design / research";
+    roleHashtag = "#UIUXDesigner";
+    talentTerm = "desainer";
+  } else if (/\b(product manager|project manager|program manager|scrum|agile|product owner)\b/.test(allTitlesAndTags)) {
+    focusDefault = "Product Strategy, Roadmap, Delivery";
+    suitabilityLine = "product management / project delivery";
+    roleHashtag = "#ProductManager";
+    talentTerm = "talenta";
+  } else if (/\b(marketing|growth|seo|content|copywriter|social media|community|communications|pr)\b/.test(allTitlesAndTags)) {
+    focusDefault = "Growth Marketing, Content, Digital Strategy";
+    suitabilityLine = "digital marketing / growth / content strategy";
+    roleHashtag = "#MarketingJobs";
+    talentTerm = "talenta";
+  } else if (/\b(sales|account executive|account manager|customer success|customer support|support|bdr|sdr|partnership)\b/.test(allTitlesAndTags)) {
+    focusDefault = "Customer Success, Partnerships, B2B";
+    suitabilityLine = "customer success / account management / B2B";
+    roleHashtag = "#CustomerSuccess";
+    talentTerm = "talenta";
+  } else if (/\b(hr|recruiter|recruiting|talent acquisition|people ops|human resources)\b/.test(allTitlesAndTags)) {
+    focusDefault = "People Operations & Talent Acquisition";
+    suitabilityLine = "HR / talent acquisition / people operations";
+    roleHashtag = "#HRJobs";
+    talentTerm = "talenta";
+  } else if (/\b(data analyst|data scientist|analytics|business intelligence|bi |machine learning|ai |ml )\b/.test(allTitlesAndTags)) {
+    focusDefault = "Data Analytics, AI/ML, Data Engineering";
+    suitabilityLine = "data analysis / AI-ML / data engineering";
+    roleHashtag = "#DataJobs";
+    talentTerm = "talenta data";
+  } else if (/\b(devops|sre|site reliability|cloud|kubernetes|platform engineer|infra|security|cyber)\b/.test(allTitlesAndTags)) {
+    focusDefault = "Cloud Infrastructure, CI/CD, Reliability";
+    suitabilityLine = "DevOps / cloud infrastructure / security";
+    roleHashtag = "#DevOps";
+    talentTerm = "engineer";
+  }
+
+  // Build focusLine from actual job tags if clean & concise, otherwise use focusDefault
+  const focusLine =
+    cleanTags.length >= 2
+      ? cleanTags.slice(0, 3).join(", ")
+      : company.industry || focusDefault;
+
+  // Build dynamic hashtag from primary job title if clean (1-3 words)
+  const titleWords = primaryTitle
+    .replace(/[^a-zA-Z0-9\s]/g, " ")
+    .split(/\s+/)
+    .filter(w => w.length > 1 && !["senior", "junior", "lead", "staff", "principal", "remote", "global", "and", "for", "the"].includes(w.toLowerCase()));
+  if (titleWords.length >= 1 && titleWords.length <= 3) {
+    const pascalTag = titleWords
+      .map(w => w.charAt(0).toUpperCase() + w.slice(1))
+      .join("");
+    if (pascalTag.length >= 3 && pascalTag.length <= 20) {
+      roleHashtag = `#${pascalTag}`;
+    }
+  }
+
+  // Build HQ / Location badge
+  const hqRaw = (company.headquarters || "").trim();
+  let hqBadge = "Full remote • Global";
+  if (hqRaw && hqRaw.toLowerCase() !== "global remote") {
+    if (/\b(us|usa|united states|san francisco|new york|california|texas|seattle|austin|boston)\b/i.test(hqRaw)) {
+      hqBadge = "Full remote • Klien/Tim US";
+    } else {
+      hqBadge = `Full remote • Tim ${hqRaw.split(",")[0].trim()}`;
+    }
+  }
+
+  return {
+    primaryTitle,
+    focusLine,
+    suitabilityLine,
+    roleHashtag,
+    talentTerm,
+    hqBadge,
+    cleanTags
+  };
+}
+
+function buildCompanyOgImageUrl(company: CompanyData, slug: string, jobs: ActiveJob[], ctx: JobRoleContext): string {
+  const params = new URLSearchParams({
+    slug,
+    name: company.name,
+    job: ctx.primaryTitle,
+    jobsCount: String(jobs.length || 1),
+    hq: company.headquarters || "Global Remote",
+    count: String(company.verifiedIndonesianCount || 0)
+  });
+  if (ctx.cleanTags.length > 0) {
+    params.set("tags", ctx.cleanTags.slice(0, 3).join(","));
+  }
+  return `https://remotika.my.id/api/company-og?${params.toString()}`;
+}
+
+function pickTemplateVariant(seedStr: string, modulo: number): number {
+  let hash = 0;
+  for (let i = 0; i < seedStr.length; i++) {
+    hash = (hash * 31 + seedStr.charCodeAt(i)) >>> 0;
+  }
+  return hash % modulo;
+}
+
 function generateTwitterText(company: CompanyData, slug: string, isVerified: boolean, jobsToDisplay?: ActiveJob[]): string {
   const url = `https://remotika.my.id/company/${slug}`;
-  const hashtags = "#KerjaRemote #RemoteJobs #Remotika";
   const jobs = jobsToDisplay || company.activeJobs || [];
+  const ctx = analyzeJobContext(company, jobs);
+  const hashtags = `#KerjaRemote #RemoteJobs ${ctx.roleHashtag}`;
+  const variant = pickTemplateVariant(`${company.name}:${ctx.primaryTitle}:${jobs.length}`, 4);
+
+  let tweet = "";
 
   if (isVerified) {
-    const header = `🆕 Perusahaan Terverifikasi di Remotika!\n\n${company.name} terkonfirmasi memiliki ${company.verifiedIndonesianCount} anggota tim asal Indonesia via GitHub & sedang buka lowongan remote:`;
-    const cta = `\n\nCek detail: ${url}\n\n${hashtags}`;
-
-    let jobsList = "";
-    if (jobs.length > 0) {
+    if (jobs.length === 1) {
+      const templates = [
+        `✅ Lowongan Remote Terverifikasi: ${ctx.primaryTitle} di ${company.name}\n\n${ctx.hqBadge}\nSudah ada ${company.verifiedIndonesianCount} anggota tim asal Indonesia terkonfirmasi via GitHub 🇮🇩\n\nCek detail & apply:\n${url}\n\n${hashtags}`,
+        `🔥 ${company.name} lagi buka posisi remote: ${ctx.primaryTitle}\n\nMenariknya, sudah ada ${company.verifiedIndonesianCount} talenta asal Indonesia yang terverifikasi di tim mereka via GitHub!\n\nDetail & cara daftar:\n${url}\n\n${hashtags}`,
+        `Lagi cari kerjaan remote di perusahaan yang terbukti rekrut orang Indonesia? 🇮🇩\n\n${company.name} (${company.verifiedIndonesianCount} member RI via GitHub) sedang buka posisi ${ctx.primaryTitle}.\n\nApply di sini:\n${url}\n\n${hashtags}`,
+        `📌 Loker Remote Terverifikasi: ${ctx.primaryTitle} — ${company.name}\n\n• ${ctx.hqBadge}\n• Fokus: ${ctx.focusLine}\n• Bukti publik: ${company.verifiedIndonesianCount} anggota RI\n\nCek detail:\n${url}\n\n${hashtags}`
+      ];
+      tweet = templates[variant % templates.length];
+    } else {
       const topJobs = jobs.slice(0, 2).map(j => `• ${j.title.trim()}`).join("\n");
-      jobsList = `\n${topJobs}`;
-      if (jobs.length > 2) {
-        jobsList += `\n(+${jobs.length - 2} lowongan lainnya)`;
-      }
+      const extra = jobs.length > 2 ? `\n(+${jobs.length - 2} posisi lainnya)` : "";
+      tweet = `✅ ${company.name} membuka ${jobs.length} lowongan remote baru!\n\n${topJobs}${extra}\n\nSudah ada ${company.verifiedIndonesianCount} anggota tim asal Indonesia terverifikasi via GitHub 🇮🇩\n\nCek detail & apply:\n${url}\n\n${hashtags}`;
     }
-
-    let tweet = `${header}${jobsList}${cta}`;
-    if (tweet.length > 275) {
-      tweet = `${header}\n\nCek detail: ${url}\n\n${hashtags}`;
-    }
-    return tweet;
   } else {
-    const header = `💼 Lowongan Remote Baru di Remotika!\n\n${company.name} membuka lowongan kerja remote aktif:`;
-    const cta = `\n\nJadilah developer Indonesia pertama!\n👉 ${url}\n\n${hashtags}`;
-
-    let jobsList = "";
-    if (jobs.length > 0) {
+    if (jobs.length === 1) {
+      const templates = [
+        `🔥 Lowongan Remote Baru: ${ctx.primaryTitle} di ${company.name}\n\n${ctx.hqBadge}\nFokus: ${ctx.focusLine}\n\nCocok buat yang punya background ${ctx.suitabilityLine}\n\nCek detail & apply:\n${url}\n\n${hashtags}`,
+        `Lowongan remote ${ctx.primaryTitle} lagi buka di ${company.name} nih 👀\n\n${ctx.hqBadge} • Fokus: ${ctx.focusLine}\n\nSiapa yang lagi cari posisi di bidang ${ctx.suitabilityLine}?\n\nCek detail & apply:\n${url}\n\n${hashtags}`,
+        `Lagi cari peluang kerja remote sebagai ${ctx.primaryTitle}? 🌍\n\n${company.name} sedang buka posisi ini (${ctx.hqBadge}). Cocok buat yang berpengalaman di ${ctx.suitabilityLine}.\n\nCek kualifikasi & daftar:\n${url}\n\n${hashtags}`,
+        `📌 Info Loker Remote: ${ctx.primaryTitle} — ${company.name}\n\n• Sistem: ${ctx.hqBadge}\n• Fokus: ${ctx.focusLine}\n\nBuat yang tertarik atau mau share ke teman yang cocok:\n${url}\n\n${hashtags}`
+      ];
+      tweet = templates[variant % templates.length];
+    } else {
       const topJobs = jobs.slice(0, 2).map(j => `• ${j.title.trim()}`).join("\n");
-      jobsList = `\n${topJobs}`;
-      if (jobs.length > 2) {
-        jobsList += `\n(+${jobs.length - 2} lowongan lainnya)`;
-      }
+      const extra = jobs.length > 2 ? `\n(+${jobs.length - 2} posisi lainnya)` : "";
+      const multiTemplates = [
+        `🔥 ${jobs.length} Lowongan Remote Baru di ${company.name}!\n\n${topJobs}${extra}\n\n${ctx.hqBadge} • Cocok buat yang punya background ${ctx.suitabilityLine}\n\nCek detail & apply:\n${url}\n\n${hashtags}`,
+        `${company.name} lagi buka ${jobs.length} posisi remote aktif nih 👀\n\n${topJobs}${extra}\n\n${ctx.hqBadge}. Siapa yang lagi cari peluang kerja remote global?\n\nDetail & apply:\n${url}\n\n${hashtags}`
+      ];
+      tweet = multiTemplates[variant % multiTemplates.length];
     }
-
-    let tweet = `${header}${jobsList}${cta}`;
-    if (tweet.length > 275) {
-      tweet = `${header}\n\n👉 ${url}\n\n${hashtags}`;
-    }
-    return tweet;
   }
+
+  // Fallback length guard to strictly stay within X's 280-char limit
+  if (tweet.length > 275) {
+    tweet = `🔥 Lowongan Remote: ${ctx.primaryTitle} di ${company.name}\n\n${ctx.hqBadge}\nFokus: ${ctx.focusLine}\n\nCek detail & apply:\n${url}\n\n${hashtags}`;
+  }
+  if (tweet.length > 275) {
+    tweet = `🔥 Lowongan Remote: ${ctx.primaryTitle.slice(0, 60)} di ${company.name}\n\nCek detail & apply:\n${url}\n\n#KerjaRemote #RemoteJobs`;
+  }
+
+  return tweet;
+}
+
+function generateTwitterThread(company: CompanyData, slug: string, isVerified: boolean, jobsToDisplay?: ActiveJob[]): { hook: string; reply: string } {
+  const url = `https://remotika.my.id/company/${slug}`;
+  const jobs = jobsToDisplay || company.activeJobs || [];
+  const ctx = analyzeJobContext(company, jobs);
+
+  const hook =
+    jobs.length === 1
+      ? `Lowongan remote ${ctx.primaryTitle} lagi buka di ${company.name} nih 👀\n\n${ctx.hqBadge}\nFokus: ${ctx.focusLine}\n\nCocok buat yang punya background ${ctx.suitabilityLine}. Siapa yang lagi cari? 🧵👇`
+      : `${company.name} lagi buka ${jobs.length} posisi kerja remote aktif nih 👀\n\n${jobs.slice(0, 3).map(j => `• ${j.title.trim()}`).join("\n")}\n\n${ctx.hqBadge}. Siapa yang lagi cari? 🧵👇`;
+
+  const verificationNote = isVerified
+    ? `Sudah terkonfirmasi ada ${company.verifiedIndonesianCount} anggota tim asal Indonesia via jejak publik GitHub di ${company.name}.`
+    : `Bantu share atau tag teman kamu yang cocok dengan posisi ini!`;
+
+  const reply = `${verificationNote}\n\nCek detail posisi, syarat lokasi, dan link pendaftaran resminya di Remotika:\n👉 ${url}\n\n#KerjaRemote #RemoteJobs ${ctx.roleHashtag}`;
+
+  return { hook, reply };
 }
 
 function generateLinkedInText(company: CompanyData, slug: string, isVerified: boolean, jobsToDisplay?: ActiveJob[]): string {
   const url = `https://remotika.my.id/company/${slug}`;
   const jobs = jobsToDisplay || company.activeJobs || [];
-  const hashtags = "#RemoteWork #KerjaRemote #IndonesiaDeveloper #TechJobs #Remotika";
+  const ctx = analyzeJobContext(company, jobs);
+  const hashtags = `#RemoteWork #KerjaRemote ${ctx.roleHashtag} #IndonesiaTalent #Remotika`;
 
   let jobsSection = "";
   if (jobs.length > 0) {
@@ -1833,16 +2016,16 @@ function generateLinkedInText(company: CompanyData, slug: string, isVerified: bo
     const remainingCount = jobs.length - displayedJobs.length;
 
     const list = displayedJobs.map(j => `• ${j.title.trim()}`).join("\n");
-    jobsSection = `\n\n📌 Lowongan aktif yang tersedia:\n${list}`;
+    jobsSection = `\n\n📌 Posisi remote yang sedang dibuka:\n${list}`;
     if (remainingCount > 0) {
       jobsSection += `\n(...dan ${remainingCount} lowongan lainnya)`;
     }
   }
 
   if (isVerified) {
-    return `🆕 Perusahaan Terverifikasi Baru di Remotika!\n\n${company.name} baru saja terverifikasi di Remotika. Terkonfirmasi memiliki ${company.verifiedIndonesianCount} anggota tim asal Indonesia via GitHub, dan saat ini mereka sedang membuka lowongan kerja remote aktif!${jobsSection}\n\nCek detail profil perusahaan dan pembuktian verifikasinya di Remotika:\n👉 ${url}\n\n${hashtags}`;
+    return `🆕 Lowongan Remote Terverifikasi: ${ctx.primaryTitle} di ${company.name}\n\n${company.name} terkonfirmasi memiliki ${company.verifiedIndonesianCount} anggota tim asal Indonesia via GitHub, dan saat ini sedang membuka rekrutmen remote aktif (${ctx.hqBadge}).\n\n🎯 Fokus bidang: ${ctx.focusLine}${jobsSection}\n\nCocok bagi rekan-rekan yang memiliki pengalaman di bidang ${ctx.suitabilityLine}.\n\nCek detail posisi dan pembuktian verifikasinya di Remotika:\n👉 ${url}\n\n${hashtags}`;
   } else {
-    return `💼 Lowongan Remote Baru di Remotika!\n\n${company.name} sedang membuka lowongan kerja remote global aktif!\n\nSaat ini belum ada anggota tim asal Indonesia yang terverifikasi via keanggotaan publik GitHub di perusahaan ini. Apakah kamu yang akan menjadi developer Indonesia pertama di tim mereka?${jobsSection}\n\nCek detail lowongan dan cara apply di:\n👉 ${url}\n\n${hashtags}`;
+    return `🔥 Lowongan Remote Baru: ${ctx.primaryTitle} di ${company.name}\n\n${company.name} sedang membuka lowongan kerja remote (${ctx.hqBadge})!\n\n🎯 Fokus bidang: ${ctx.focusLine}\nCocok untuk profesional dengan latar belakang ${ctx.suitabilityLine}.${jobsSection}\n\nSaat ini belum ada jejak publik anggota asal Indonesia yang tercatat di organisasi GitHub mereka — peluang bagus untuk menjadi ${ctx.talentTerm} Indonesia pertama di tim mereka!\n\nCek detail kualifikasi dan cara melamar di:\n👉 ${url}\n\n${hashtags}`;
   }
 }
 
@@ -1941,15 +2124,22 @@ async function notifyNewVerifiedCompanies(initialCompanies: CompanyData[], final
     return postedMarkers.has(urlTrimmed) || postedMarkers.has(titleKey);
   };
 
-  const newActiveJobCompanies = finalCompanies.filter(c => {
-    if (!c.hasActiveJobs || !c.activeJobs || c.activeJobs.length === 0) return false;
+  const newActiveJobCompanies = finalCompanies
+    .filter(c => {
+      if (!c.hasActiveJobs || !c.activeJobs || c.activeJobs.length === 0) return false;
 
-    const initialComp = findInitialCompany(c);
-    const postedMarkers = getPostedMarkersForCompany(c, initialComp);
-    const hasNewJobs = c.activeJobs.some(j => !isJobAlreadyPosted(j, postedMarkers));
+      const initialComp = findInitialCompany(c);
+      const postedMarkers = getPostedMarkersForCompany(c, initialComp);
+      const hasNewJobs = c.activeJobs.some(j => !isJobAlreadyPosted(j, postedMarkers));
 
-    return hasNewJobs;
-  });
+      return hasNewJobs;
+    })
+    .sort((a, b) => {
+      const aVerified = a.verifiedIndonesianCount > 0 && a.status !== "watchlist" ? 1 : 0;
+      const bVerified = b.verifiedIndonesianCount > 0 && b.status !== "watchlist" ? 1 : 0;
+      if (bVerified !== aVerified) return bVerified - aVerified;
+      return b.verifiedIndonesianCount - a.verifiedIndonesianCount;
+    });
 
   if (newActiveJobCompanies.length === 0) {
     console.log("\n[Notifications] No new active job companies found in this run. No notifications to send.");
@@ -1960,6 +2150,9 @@ async function notifyNewVerifiedCompanies(initialCompanies: CompanyData[], final
   }
 
   console.log(`\n[Notifications] Found ${newActiveJobCompanies.length} company/companies with NEW job(s). Sending notifications...`);
+
+  const MAX_SOCIAL_WEBHOOK_PER_RUN = 2;
+  let socialWebhookSentCount = 0;
 
   for (const company of newActiveJobCompanies) {
     const slug = getCompanySlug(company);
@@ -1978,13 +2171,14 @@ async function notifyNewVerifiedCompanies(initialCompanies: CompanyData[], final
 
     console.log(`  📢 ${company.name}: ${newJobs.length} new job(s) to post, ${alreadyPostedJobs.length} already posted.`);
 
+    const ctx = analyzeJobContext(company, newJobs);
     const jobsSection = formatJobsSection(newJobs, 3);
 
     let messageText = "";
     if (isVerified) {
       messageText = `🆕 *Perusahaan Terverifikasi Baru di Remotika*\n\n*${escapeMarkdown(company.name)}* baru saja terverifikasi! Terkonfirmasi ${company.verifiedIndonesianCount} anggota tim asal Indonesia via GitHub, dan mereka sedang membuka lowongan kerja remote aktif.${jobsSection}\n\nLihat selengkapnya di sini: https://remotika.my.id/company/${slug}`;
     } else {
-      messageText = `💼 *Lowongan Remote Baru di Remotika*\n\n*${escapeMarkdown(company.name)}* sedang membuka lowongan kerja remote aktif! Saat ini belum ada anggota tim asal Indonesia yang terverifikasi via GitHub — jadilah developer Indonesia pertama di tim mereka!${jobsSection}\n\nLihat selengkapnya di sini: https://remotika.my.id/company/${slug}`;
+      messageText = `💼 *Lowongan Remote Baru di Remotika*\n\n*${escapeMarkdown(company.name)}* sedang membuka lowongan kerja remote aktif (${escapeMarkdown(ctx.hqBadge)})! Saat ini belum ada anggota tim asal Indonesia yang terverifikasi via GitHub — jadilah ${ctx.talentTerm} Indonesia pertama di tim mereka!${jobsSection}\n\nLihat selengkapnya di sini: https://remotika.my.id/company/${slug}`;
     }
 
     let notificationSent = false;
@@ -2018,11 +2212,18 @@ async function notifyNewVerifiedCompanies(initialCompanies: CompanyData[], final
     }
 
     // 2. Dispatch Social Webhook notification (Make.com / Buffer / Zapier / etc)
-    if (SOCIAL_WEBHOOK_URL) {
+    // Capped at MAX_SOCIAL_WEBHOOK_PER_RUN per run to avoid burst-posting on X/LinkedIn
+    if (SOCIAL_WEBHOOK_URL && socialWebhookSentCount < MAX_SOCIAL_WEBHOOK_PER_RUN) {
       try {
-        console.log(`    [Social Webhook] Sending payload for ${company.name} to Make.com...`);
+        if (socialWebhookSentCount > 0) {
+          // Polite delay between social webhook dispatches
+          await new Promise(r => setTimeout(r, 4000));
+        }
+        console.log(`    [Social Webhook] Sending payload for ${company.name} to Make.com (${socialWebhookSentCount + 1}/${MAX_SOCIAL_WEBHOOK_PER_RUN})...`);
         const twitterText = generateTwitterText(company, slug, isVerified, newJobs);
+        const twitterThread = generateTwitterThread(company, slug, isVerified, newJobs);
         const linkedinText = generateLinkedInText(company, slug, isVerified, newJobs);
+        const imageUrl = buildCompanyOgImageUrl(company, slug, newJobs, ctx);
 
         const webhookPayload = {
           event: isVerified ? "new_verified_company" : "new_remote_hiring_company",
@@ -2031,13 +2232,17 @@ async function notifyNewVerifiedCompanies(initialCompanies: CompanyData[], final
             name: company.name,
             slug,
             url: `https://remotika.my.id/company/${slug}`,
+            imageUrl,
             isVerified,
             verifiedCount: company.verifiedIndonesianCount,
             activeJobsCount: newJobs.length,
             activeJobs: newJobs.map(j => ({ title: j.title, url: j.url }))
           },
+          imageUrl,
           telegramText: messageText,
           twitterText,
+          twitterHookText: twitterThread.hook,
+          twitterReplyText: twitterThread.reply,
           linkedinText
         };
 
@@ -2054,11 +2259,14 @@ async function notifyNewVerifiedCompanies(initialCompanies: CompanyData[], final
           console.error(`    ❌ [Social Webhook] Failed for ${company.name}: ${hookRes.statusText} - ${errBody}`);
         } else {
           console.log(`    ✅ [Social Webhook] Notification sent successfully for ${company.name}.`);
+          socialWebhookSentCount++;
           notificationSent = true;
         }
       } catch (err: any) {
         console.error(`    ❌ [Social Webhook] Error sending webhook payload for ${company.name}:`, err.message);
       }
+    } else if (SOCIAL_WEBHOOK_URL && socialWebhookSentCount >= MAX_SOCIAL_WEBHOOK_PER_RUN) {
+      console.log(`    ⏭️  [Social Webhook] Skipping ${company.name} for X/LinkedIn (reached max ${MAX_SOCIAL_WEBHOOK_PER_RUN} social posts per run).`);
     }
 
     // Update cache only if notification was sent successfully

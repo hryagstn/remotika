@@ -50,14 +50,39 @@ export async function generateMetadata({ params }: PageProps) {
     };
   }
 
+  const companySlug = company.githubOrg?.toLowerCase() || slugify(company.name) || company.id;
+  const ogImageUrl = `/api/company-og?slug=${encodeURIComponent(companySlug)}`;
+  const primaryJob = company.activeJobs?.[0]?.title;
+  const ogTitle = primaryJob
+    ? `Lowongan Remote: ${primaryJob} di ${company.name} | Remotika`
+    : `${company.name} - Profil & Lowongan Remote | Remotika`;
+  const ogDescription =
+    company.verifiedIndonesianCount > 0
+      ? `${company.name} memiliki ${company.verifiedIndonesianCount} anggota tim asal Indonesia terverifikasi dan sedang membuka lowongan remote.`
+      : `Cek rincian lowongan kerja remote aktif di ${company.name} pada direktori Remotika.`;
+
   return {
     title: `${company.name} | Profil Perusahaan Remotika`,
-    description: `Verifikasi talenta remote Indonesia dan lowongan aktif di ${company.name} pada Remotika. ${company.industry || ""}`,
+    description: ogDescription,
     openGraph: {
-      title: `${company.name} - Lowongan Remote Terverifikasi untuk Talenta Indonesia`,
-      description: `Lihat anggota GitHub publik dari Indonesia yang bekerja di ${company.name}.`,
-      type: "website"
-    }
+      title: ogTitle,
+      description: ogDescription,
+      type: "website",
+      images: [
+        {
+          url: ogImageUrl,
+          width: 1200,
+          height: 627,
+          alt: ogTitle,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: ogTitle,
+      description: ogDescription,
+      images: [ogImageUrl],
+    },
   };
 }
 
