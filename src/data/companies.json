@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-10-21T20:30:08.196Z",
+    "lastVerifiedAt": "2026-10-23T06:01:13.511Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -47,7 +47,7 @@
         "tags": []
       },
       {
-        "title": "Senior Design System and Product Designer - Operational Journey",
+        "title": " Senior Design System and Product Designer - Operational Journey",
         "url": "https://job-boards.greenhouse.io/xendit/jobs/7846781003",
         "tags": []
       },
@@ -167,7 +167,7 @@
     "industry": "PT Rekayasa Solverindo (REKSOLINDO) has provided practical material engineering solutions for industries across Indonesia since 2005.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-21T20:30:13.084Z",
+    "lastVerifiedAt": "2026-10-23T06:01:17.762Z",
     "verifiedAt": "2026-09-30T11:39:29.952Z",
     "hasActiveJobs": false,
     "activeJobs": [],
@@ -191,7 +191,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-21T20:30:29.237Z",
+    "lastVerifiedAt": "2026-10-23T06:01:33.401Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -226,7 +226,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-21T20:30:45.681Z",
+    "lastVerifiedAt": "2026-10-23T06:01:49.603Z",
     "hasActiveJobs": false,
     "headquarters": "Worldwide",
     "foundationYear": "2005",
@@ -261,7 +261,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-21T20:30:51.599Z",
+    "lastVerifiedAt": "2026-10-23T06:01:54.360Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -296,7 +296,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-21T20:30:59.228Z",
+    "lastVerifiedAt": "2026-10-23T06:02:00.468Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -414,7 +414,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-21T20:31:05.734Z",
+    "lastVerifiedAt": "2026-10-23T06:02:05.868Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -503,7 +503,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-21T20:31:08.818Z",
+    "lastVerifiedAt": "2026-10-23T06:02:08.455Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -616,7 +616,7 @@
     "hasActiveJobs": true,
     "activeJobs": [
       {
-        "title": "FULL STACK DEVELOPER",
+        "title": "DESARROLLADOR FULL STACK",
         "url": "https://remoteOK.com/remote-jobs/remote-desarrollador-full-stack-kruger-nearshore-llc-rekluti-1137062",
         "tags": [
           "full stack",
@@ -773,7 +773,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-21T20:31:20.769Z",
+    "lastVerifiedAt": "2026-10-23T06:02:18.542Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -895,47 +895,6 @@
     "scope": "global"
   },
   {
-    "id": "co-180",
-    "name": "Omega Enterprises",
-    "githubOrg": "omega-enterprises",
-    "githubOrgUrl": "https://github.com/omega-enterprises",
-    "remoteokSlug": "junior-digital-assets-operations-analyst-omega-enterprises-1137418",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-09-23T20:23:48.151Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Junior Digital Assets Operations Analyst",
-        "url": "https://remoteOK.com/remote-jobs/remote-junior-digital-assets-operations-analyst-omega-enterprises-1137418",
-        "tags": [
-          "other",
-          "crypto",
-          "remote",
-          "education",
-          "web3",
-          "bitcoin",
-          "ethereum",
-          "part time",
-          "finance",
-          "blockchain",
-          "defi",
-          "junior",
-          "analyst",
-          "ops"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "org-found-zero-match",
-    "website": "omegadg.com",
-    "scope": "global"
-  },
-  {
     "id": "co-181",
     "name": "RedMimicry",
     "githubOrg": "RedMimicry",
@@ -944,7 +903,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-21T20:31:23.751Z",
+    "lastVerifiedAt": "2026-10-23T06:02:21.280Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -965,34 +924,6 @@
     "watchlistReason": "org-found-zero-match",
     "website": "redmimicry.com",
     "verifiedAt": "2026-09-23T20:23:50.073Z",
-    "scope": "global"
-  },
-  {
-    "id": "co-428",
-    "name": "Mindrift - Data annotation",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "freelance-grabacion-de-tareas-cotidianas-para-proyecto-de-ia-mindrift-data-annotation-1137415",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-18T19:39:07.717Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Freelance recording daily tasks for AI project",
-        "url": "https://remoteOK.com/remote-jobs/remote-freelance-grabacion-de-tareas-cotidianas-para-proyecto-de-ia-mindrift-data-annotation-1137415",
-        "tags": [
-          "data annotation",
-          "c"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
     "scope": "global"
   },
   {
@@ -1070,7 +1001,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-21T20:31:31.032Z",
+    "lastVerifiedAt": "2026-10-23T06:02:27.268Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1097,7 +1028,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-21T20:31:38.756Z",
+    "lastVerifiedAt": "2026-10-23T06:02:33.829Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1134,7 +1065,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-21T20:31:49.505Z",
+    "lastVerifiedAt": "2026-10-23T06:02:40.666Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1356,7 +1287,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-21T20:31:58.196Z",
+    "lastVerifiedAt": "2026-10-23T06:02:48.053Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1594,7 +1525,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-21T20:32:05.653Z",
+    "lastVerifiedAt": "2026-10-23T06:02:54.584Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1660,7 +1591,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-21T20:32:13.292Z",
+    "lastVerifiedAt": "2026-10-23T06:03:00.840Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1792,7 +1723,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-21T20:32:19.747Z",
+    "lastVerifiedAt": "2026-10-23T06:03:06.410Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -2027,7 +1958,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-21T20:32:43.973Z",
+    "lastVerifiedAt": "2026-10-23T06:03:25.010Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -2165,6 +2096,152 @@
     "status": "watchlist",
     "source": "remoteok",
     "watchlistReason": "no-org-found",
+    "scope": "global"
+  },
+  {
+    "id": "co-441",
+    "name": "Political Asylum Lawyers",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "political-asylum-lawyers",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-10-23T06:19:17.401Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Accounting & Finance Manager",
+        "url": "https://remoteOK.com/remote-jobs/remote-accounting-finance-manager-political-asylum-lawyers-1137555",
+        "tags": [
+          "exec",
+          "accounting",
+          "design",
+          "sys admin",
+          "infosec",
+          "education",
+          "technical",
+          "customer support",
+          "dev",
+          "testing",
+          "marketing",
+          "controller",
+          "payroll",
+          "finance",
+          "microsoft",
+          "content writing",
+          "senior",
+          "ops",
+          "excel",
+          "legal",
+          "medical",
+          "digital nomad"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "scope": "global"
+  },
+  {
+    "id": "co-442",
+    "name": "Plaid",
+    "githubOrg": "plaid",
+    "githubOrgUrl": "https://github.com/plaid",
+    "remoteokSlug": "plaid",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-10-23T06:19:22.593Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Accounting Operations",
+        "url": "https://remoteOK.com/remote-jobs/remote-accounting-operations-plaid-1137554",
+        "tags": [
+          "accounting",
+          "technical",
+          "customer support",
+          "marketing",
+          "finance",
+          "c",
+          "exec",
+          "ops",
+          "legal",
+          "recruiter"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "plaid.com",
+    "scope": "global"
+  },
+  {
+    "id": "co-443",
+    "name": "scvsdv",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "scvsdv",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-10-23T06:19:23.784Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "lkjlkjxcv",
+        "url": "https://remoteOK.com/remote-jobs/remote-lkjlkjxcv-scvsdv-1137553",
+        "tags": [
+          "marketing",
+          "medical",
+          "engineer"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "scope": "global"
+  },
+  {
+    "id": "co-444",
+    "name": "DuckDuckGo",
+    "githubOrg": "duckduckgo",
+    "githubOrgUrl": "https://github.com/duckduckgo",
+    "remoteokSlug": "duckduckgo",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-10-23T06:19:30.544Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Senior Backend Engineer",
+        "url": "https://remoteOK.com/remote-jobs/remote-senior-backend-engineer-duckduckgo-1137551",
+        "tags": [
+          "backend",
+          "perl",
+          "golang",
+          "javascript",
+          "node"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "spreadprivacy.com",
     "scope": "global"
   }
 ]

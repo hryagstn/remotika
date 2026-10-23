@@ -34,7 +34,8 @@
     "title:chinese merchant support",
     "https://job-boards.greenhouse.io/xendit/jobs/8021808003",
     "title:solutions engineer",
-    "https://job-boards.greenhouse.io/xendit/jobs/8034310003"
+    "https://job-boards.greenhouse.io/xendit/jobs/8034310003",
+    "title:financial partnerships lead - market expansion, singapore/hong kong/malaysia"
   ],
   "xendit": [
     "https://job-boards.greenhouse.io/xendit/jobs/7813420003",
@@ -71,7 +72,8 @@
     "title:chinese merchant support",
     "https://job-boards.greenhouse.io/xendit/jobs/8021808003",
     "title:solutions engineer",
-    "https://job-boards.greenhouse.io/xendit/jobs/8034310003"
+    "https://job-boards.greenhouse.io/xendit/jobs/8034310003",
+    "title:financial partnerships lead - market expansion, singapore/hong kong/malaysia"
   ],
   "co-123": [
     "https://remoteOK.com/remote-jobs/remote-senior-react-full-stack-developer-lemon-io-1137475",
@@ -500,5 +502,37 @@
   "pavago": [
     "https://remoteOK.com/remote-jobs/remote-risk-analyst-pavago-1137548",
     "title:risk analyst"
+  ],
+  "co-441": [
+    "https://remoteOK.com/remote-jobs/remote-accounting-finance-manager-political-asylum-lawyers-1137555",
+    "title:accounting & finance manager"
+  ],
+  "political-asylum-lawyers": [
+    "https://remoteOK.com/remote-jobs/remote-accounting-finance-manager-political-asylum-lawyers-1137555",
+    "title:accounting & finance manager"
+  ],
+  "co-442": [
+    "https://remoteOK.com/remote-jobs/remote-accounting-operations-plaid-1137554",
+    "title:accounting operations"
+  ],
+  "plaid": [
+    "https://remoteOK.com/remote-jobs/remote-accounting-operations-plaid-1137554",
+    "title:accounting operations"
+  ],
+  "co-443": [
+    "https://remoteOK.com/remote-jobs/remote-lkjlkjxcv-scvsdv-1137553",
+    "title:lkjlkjxcv"
+  ],
+  "scvsdv": [
+    "https://remoteOK.com/remote-jobs/remote-lkjlkjxcv-scvsdv-1137553",
+    "title:lkjlkjxcv"
+  ],
+  "co-444": [
+    "https://remoteOK.com/remote-jobs/remote-senior-backend-engineer-duckduckgo-1137551",
+    "title:senior backend engineer"
+  ],
+  "duckduckgo": [
+    "https://remoteOK.com/remote-jobs/remote-senior-backend-engineer-duckduckgo-1137551",
+    "title:senior backend engineer"
   ]
 }
