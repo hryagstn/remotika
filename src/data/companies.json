@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-10-23T06:01:13.511Z",
+    "lastVerifiedAt": "2026-10-24T05:46:56.945Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -167,7 +167,7 @@
     "industry": "PT Rekayasa Solverindo (REKSOLINDO) has provided practical material engineering solutions for industries across Indonesia since 2005.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-23T06:01:17.762Z",
+    "lastVerifiedAt": "2026-10-24T05:47:01.003Z",
     "verifiedAt": "2026-09-30T11:39:29.952Z",
     "hasActiveJobs": false,
     "activeJobs": [],
@@ -191,7 +191,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-23T06:01:33.401Z",
+    "lastVerifiedAt": "2026-10-24T05:47:17.246Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -226,7 +226,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-23T06:01:49.603Z",
+    "lastVerifiedAt": "2026-10-24T05:47:33.015Z",
     "hasActiveJobs": false,
     "headquarters": "Worldwide",
     "foundationYear": "2005",
@@ -261,7 +261,7 @@
     "industry": "Driving South-east Asia forward!",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-23T06:01:54.360Z",
+    "lastVerifiedAt": "2026-10-24T05:47:38.033Z",
     "hasActiveJobs": false,
     "headquarters": "Singapore",
     "foundationYear": "2012",
@@ -296,7 +296,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-23T06:02:00.468Z",
+    "lastVerifiedAt": "2026-10-24T05:47:43.966Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -323,6 +323,28 @@
     "lastVerifiedAt": "2026-06-25T19:24:38.317Z",
     "hasActiveJobs": true,
     "activeJobs": [
+      {
+        "title": "Senior DevOps Engineer",
+        "url": "https://remoteOK.com/remote-jobs/remote-senior-devops-engineer-lemon-io-1137557",
+        "tags": [
+          "devops",
+          "engineer",
+          "dev",
+          "python",
+          "golang",
+          "aws",
+          "gcp",
+          "kubernetes",
+          "sql",
+          "linux",
+          "ansible",
+          "ai",
+          "full time",
+          "full stack",
+          "remote",
+          "remote work"
+        ]
+      },
       {
         "title": "Senior React Full stack Developer",
         "url": "https://remoteOK.com/remote-jobs/remote-senior-react-full-stack-developer-lemon-io-1137475",
@@ -414,7 +436,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-23T06:02:05.868Z",
+    "lastVerifiedAt": "2026-10-24T05:47:49.489Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -503,7 +525,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-23T06:02:08.455Z",
+    "lastVerifiedAt": "2026-10-24T05:47:52.063Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -773,7 +795,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-23T06:02:18.542Z",
+    "lastVerifiedAt": "2026-10-24T05:48:01.919Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -903,7 +925,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-23T06:02:21.280Z",
+    "lastVerifiedAt": "2026-10-24T05:48:03.522Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1001,7 +1023,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-23T06:02:27.268Z",
+    "lastVerifiedAt": "2026-10-24T05:48:09.691Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1028,7 +1050,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-23T06:02:33.829Z",
+    "lastVerifiedAt": "2026-10-24T05:48:16.099Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1065,7 +1087,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-23T06:02:40.666Z",
+    "lastVerifiedAt": "2026-10-24T05:48:23.106Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1287,7 +1309,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-23T06:02:48.053Z",
+    "lastVerifiedAt": "2026-10-24T05:48:30.150Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1525,7 +1547,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-23T06:02:54.584Z",
+    "lastVerifiedAt": "2026-10-24T05:48:36.872Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1591,7 +1613,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-23T06:03:00.840Z",
+    "lastVerifiedAt": "2026-10-24T05:48:42.800Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1723,7 +1745,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-23T06:03:06.410Z",
+    "lastVerifiedAt": "2026-10-24T05:48:48.190Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1958,7 +1980,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-23T06:03:25.010Z",
+    "lastVerifiedAt": "2026-10-24T05:49:06.874Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -2155,7 +2177,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-23T06:19:22.593Z",
+    "lastVerifiedAt": "2026-10-24T05:49:14.010Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -2181,36 +2203,8 @@
     "source": "remoteok",
     "watchlistReason": "org-found-zero-match",
     "website": "plaid.com",
-    "scope": "global"
-  },
-  {
-    "id": "co-443",
-    "name": "scvsdv",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "scvsdv",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-23T06:19:23.784Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "lkjlkjxcv",
-        "url": "https://remoteOK.com/remote-jobs/remote-lkjlkjxcv-scvsdv-1137553",
-        "tags": [
-          "marketing",
-          "medical",
-          "engineer"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "scope": "global"
+    "scope": "global",
+    "verifiedAt": "2026-10-23T06:19:22.593Z"
   },
   {
     "id": "co-444",
@@ -2221,7 +2215,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-23T06:19:30.544Z",
+    "lastVerifiedAt": "2026-10-24T05:49:21.945Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -2242,6 +2236,49 @@
     "source": "remoteok",
     "watchlistReason": "org-found-zero-match",
     "website": "spreadprivacy.com",
+    "scope": "global",
+    "verifiedAt": "2026-10-23T06:19:30.544Z"
+  },
+  {
+    "id": "co-445",
+    "name": "D2B",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "d2b",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-10-24T06:04:39.951Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Senior Finance Manager Management Accountant",
+        "url": "https://remoteOK.com/remote-jobs/remote-senior-finance-manager-management-accountant-d2b-1137556",
+        "tags": [
+          "exec",
+          "accounting",
+          "saas",
+          "technical",
+          "customer support",
+          "dev",
+          "marketing",
+          "controller",
+          "payroll",
+          "finance",
+          "education",
+          "php",
+          "senior",
+          "ops",
+          "excel",
+          "digital nomad"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
     "scope": "global"
   }
 ]
