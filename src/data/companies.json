@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-10-24T05:46:56.945Z",
+    "lastVerifiedAt": "2026-10-25T06:02:28.748Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -167,7 +167,7 @@
     "industry": "PT Rekayasa Solverindo (REKSOLINDO) has provided practical material engineering solutions for industries across Indonesia since 2005.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-24T05:47:01.003Z",
+    "lastVerifiedAt": "2026-10-25T06:02:32.893Z",
     "verifiedAt": "2026-09-30T11:39:29.952Z",
     "hasActiveJobs": false,
     "activeJobs": [],
@@ -191,7 +191,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-24T05:47:17.246Z",
+    "lastVerifiedAt": "2026-10-25T06:02:48.383Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -226,7 +226,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-24T05:47:33.015Z",
+    "lastVerifiedAt": "2026-10-25T06:03:03.612Z",
     "hasActiveJobs": false,
     "headquarters": "Worldwide",
     "foundationYear": "2005",
@@ -253,41 +253,6 @@
     "scope": "global"
   },
   {
-    "id": "co-7",
-    "name": "Grab",
-    "githubOrg": "grab",
-    "githubOrgUrl": "https://github.com/grab",
-    "remoteokSlug": "grab",
-    "industry": "Driving South-east Asia forward!",
-    "verifiedIndonesianCount": 1,
-    "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-24T05:47:38.033Z",
-    "hasActiveJobs": false,
-    "headquarters": "Singapore",
-    "foundationYear": "2012",
-    "activeJobs": [],
-    "verifiedMembers": [
-      {
-        "id": "m-jacksonfernando",
-        "githubLogin": "jacksonfernando",
-        "githubProfileUrl": "https://github.com/jacksonfernando",
-        "locationRaw": "Jakarta. Indonesia"
-      }
-    ],
-    "testimonials": [
-      {
-        "name": "Jackson F.",
-        "role": "Lead Systems Engineer",
-        "text": "Grab offers an amazing scale of operations. The hybrid culture is highly collaborative."
-      }
-    ],
-    "jobSources": {
-      "careerPageUrl": "https://grab.careers/"
-    },
-    "verifiedAt": "2026-06-21T09:23:07.503Z",
-    "scope": "global"
-  },
-  {
     "id": "co-8",
     "name": "LottieFiles",
     "githubOrg": "lottiefiles",
@@ -296,7 +261,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-24T05:47:43.966Z",
+    "lastVerifiedAt": "2026-10-25T06:03:13.846Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -436,7 +401,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-24T05:47:49.489Z",
+    "lastVerifiedAt": "2026-10-25T06:03:19.034Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -471,13 +436,14 @@
     "hasActiveJobs": true,
     "activeJobs": [
       {
-        "title": "Video Data Annotator",
-        "url": "https://remoteOK.com/remote-jobs/remote-video-data-annotator-imerit-technology-1137428",
+        "title": "AI Trainer - Video Annotation",
+        "url": "https://remotive.com/remote-jobs/artificial-intelligence/ai-trainer-video-annotation-2091161",
         "tags": [
-          "quality assurance",
-          "ai",
-          "data annotation"
-        ]
+          "video",
+          "AI/ML",
+          "robotics"
+        ],
+        "salary": "70K-80K"
       }
     ],
     "verifiedMembers": [],
@@ -525,7 +491,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-24T05:47:52.063Z",
+    "lastVerifiedAt": "2026-10-25T06:03:21.545Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -638,7 +604,7 @@
     "hasActiveJobs": true,
     "activeJobs": [
       {
-        "title": "DESARROLLADOR FULL STACK",
+        "title": "FULL STACK DEVELOPER",
         "url": "https://remoteOK.com/remote-jobs/remote-desarrollador-full-stack-kruger-nearshore-llc-rekluti-1137062",
         "tags": [
           "full stack",
@@ -795,7 +761,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-24T05:48:01.919Z",
+    "lastVerifiedAt": "2026-10-25T06:03:31.356Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -925,7 +891,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-24T05:48:03.522Z",
+    "lastVerifiedAt": "2026-10-25T06:03:32.864Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -980,68 +946,6 @@
     "scope": "global"
   },
   {
-    "id": "co-426",
-    "name": "Mercier Consultancy Group",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "danish-speaking-solutions-consultant-work-sofia-bulgaria-mercier-consultancy-group-1137431",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-18T19:39:05.043Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Danish Speaking Solutions Consultant Work Sofia Bulgaria",
-        "url": "https://remoteOK.com/remote-jobs/remote-danish-speaking-solutions-consultant-work-sofia-bulgaria-mercier-consultancy-group-1137431",
-        "tags": [
-          "consulting",
-          "education",
-          "technical",
-          "customer support",
-          "marketing",
-          "travel",
-          "excel",
-          "medical",
-          "recruiter"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "scope": "global"
-  },
-  {
-    "id": "co-185",
-    "name": "Workana",
-    "githubOrg": "Workana",
-    "githubOrgUrl": "https://github.com/Workana",
-    "remoteokSlug": "mecanico-automotriz-diagnostico-y-presupuestos-workana-1137429",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-24T05:48:09.691Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Mecánico Automotriz Diagnóstico y Presupuestos",
-        "url": "https://remoteOK.com/remote-jobs/remote-mecanico-automotriz-diagnostico-y-presupuestos-workana-1137429",
-        "tags": []
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "org-found-zero-match",
-    "website": "workana.com",
-    "verifiedAt": "2026-09-25T20:38:03.521Z",
-    "scope": "global"
-  },
-  {
     "id": "co-188",
     "name": "Toptal",
     "githubOrg": "toptal",
@@ -1050,7 +954,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-24T05:48:16.099Z",
+    "lastVerifiedAt": "2026-10-25T06:03:45.038Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1087,7 +991,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-24T05:48:23.106Z",
+    "lastVerifiedAt": "2026-10-25T06:03:51.470Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1274,6 +1178,38 @@
     "hasActiveJobs": true,
     "activeJobs": [
       {
+        "title": "Sales Development Representative German Speaking",
+        "url": "https://remoteOK.com/remote-jobs/remote-sales-development-representative-german-speaking-huzzle-1137563",
+        "tags": [
+          "saas",
+          "sys admin",
+          "dev",
+          "marketing",
+          "finance",
+          "c",
+          "exec",
+          "sales",
+          "medical",
+          "ecommerce",
+          "digital nomad"
+        ]
+      },
+      {
+        "title": "Sales Development Representative B2B",
+        "url": "https://remoteOK.com/remote-jobs/remote-sales-development-representative-b2b-huzzle-1137561",
+        "tags": [
+          "saas",
+          "salesforce",
+          "education",
+          "customer support",
+          "marketing",
+          "finance",
+          "exec",
+          "sales",
+          "full time"
+        ]
+      },
+      {
         "title": "Junior Sales Development Representative IT Industry",
         "url": "https://remoteOK.com/remote-jobs/remote-junior-sales-development-representative-it-industry-huzzle-1137480",
         "tags": [
@@ -1309,7 +1245,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-24T05:48:30.150Z",
+    "lastVerifiedAt": "2026-10-25T06:03:58.345Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1547,7 +1483,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-24T05:48:36.872Z",
+    "lastVerifiedAt": "2026-10-25T06:04:04.305Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1613,7 +1549,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-24T05:48:42.800Z",
+    "lastVerifiedAt": "2026-10-25T06:04:10.037Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1745,7 +1681,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-24T05:48:48.190Z",
+    "lastVerifiedAt": "2026-10-25T06:04:14.875Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1980,7 +1916,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-24T05:49:06.874Z",
+    "lastVerifiedAt": "2026-10-25T06:04:31.963Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -2177,7 +2113,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-24T05:49:14.010Z",
+    "lastVerifiedAt": "2026-10-25T06:04:38.585Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -2215,7 +2151,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-24T05:49:21.945Z",
+    "lastVerifiedAt": "2026-10-25T06:04:46.109Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -2270,6 +2206,147 @@
           "senior",
           "ops",
           "excel",
+          "digital nomad"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "scope": "global"
+  },
+  {
+    "id": "co-446",
+    "name": "Onebrief",
+    "githubOrg": "Onebrief",
+    "githubOrgUrl": "https://github.com/Onebrief",
+    "remoteokSlug": "onebrief",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-10-25T06:19:10.962Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Solutions Engineer",
+        "url": "https://remoteOK.com/remote-jobs/remote-solutions-engineer-onebrief-1137568",
+        "tags": [
+          "design",
+          "ansible",
+          "grafana",
+          "sys admin",
+          "infosec",
+          "python",
+          "docker",
+          "technical",
+          "recruiter",
+          "customer support",
+          "dev",
+          "testing",
+          "marketing",
+          "travel",
+          "finance",
+          "cloud",
+          "exec",
+          "senior",
+          "ops",
+          "sales",
+          "golang",
+          "engineer",
+          "digital nomad"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "scope": "global"
+  },
+  {
+    "id": "co-447",
+    "name": "B2spin",
+    "githubOrg": "B2Spin",
+    "githubOrgUrl": "https://github.com/B2Spin",
+    "remoteokSlug": "b2spin",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-10-25T06:19:12.574Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Senior Frontend Engineer",
+        "url": "https://remoteOK.com/remote-jobs/remote-senior-frontend-engineer-b2spin-1137562",
+        "tags": [
+          "front end",
+          "design",
+          "react",
+          "embedded",
+          "sys admin",
+          "game dev",
+          "technical",
+          "dev",
+          "testing",
+          "marketing",
+          "web dev",
+          "javascript",
+          "finance",
+          "css",
+          "html",
+          "typescript",
+          "seo",
+          "mobile",
+          "senior",
+          "stats",
+          "engineer",
+          "backend",
+          "digital nomad"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "scope": "global"
+  },
+  {
+    "id": "co-448",
+    "name": "Aprio",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "aprio",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-10-25T06:19:13.695Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Accounting and Implementation Manager",
+        "url": "https://remoteOK.com/remote-jobs/remote-accounting-and-implementation-manager-aprio-1137560",
+        "tags": [
+          "exec",
+          "accounting",
+          "design",
+          "sys admin",
+          "education",
+          "consulting",
+          "customer support",
+          "testing",
+          "marketing",
+          "payroll",
+          "finance",
+          "ops",
+          "stats",
+          "sales",
+          "golang",
+          "full time",
           "digital nomad"
         ]
       }
