@@ -8,14 +8,9 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-10-27T06:14:25.326Z",
+    "lastVerifiedAt": "2026-10-28T06:49:58.470Z",
     "hasActiveJobs": true,
     "activeJobs": [
-      {
-        "title": "Chinese Merchant Support",
-        "url": "https://job-boards.greenhouse.io/xendit/jobs/7780726003",
-        "tags": []
-      },
       {
         "title": "Financial Partnerships Lead - Market Expansion, Singapore/Hong Kong/Malaysia   ",
         "url": "https://job-boards.greenhouse.io/xendit/jobs/7984045003",
@@ -32,18 +27,13 @@
         "tags": []
       },
       {
-        "title": "Merchant Technical Support  - Jr Manager",
-        "url": "https://job-boards.greenhouse.io/xendit/jobs/7983136003",
-        "tags": []
-      },
-      {
         "title": "Product Manager - Developer Experience",
         "url": "https://job-boards.greenhouse.io/xendit/jobs/7992374003",
         "tags": []
       },
       {
         "title": "RevOps Systems Administrator (Salesforce)",
-        "url": "https://job-boards.greenhouse.io/xendit/jobs/7992220003",
+        "url": "https://job-boards.greenhouse.io/xendit/jobs/7992262003",
         "tags": []
       },
       {
@@ -162,7 +152,7 @@
     "industry": "PT Rekayasa Solverindo (REKSOLINDO) has provided practical material engineering solutions for industries across Indonesia since 2005.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-27T06:14:29.921Z",
+    "lastVerifiedAt": "2026-10-28T06:50:02.785Z",
     "verifiedAt": "2026-09-30T11:39:29.952Z",
     "hasActiveJobs": false,
     "activeJobs": [],
@@ -186,7 +176,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-27T06:14:46.257Z",
+    "lastVerifiedAt": "2026-10-28T06:50:19.319Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -221,7 +211,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-27T06:15:02.735Z",
+    "lastVerifiedAt": "2026-10-28T06:50:36.475Z",
     "hasActiveJobs": false,
     "headquarters": "Worldwide",
     "foundationYear": "2005",
@@ -256,7 +246,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-27T06:15:09.241Z",
+    "lastVerifiedAt": "2026-10-28T06:50:42.946Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -396,7 +386,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-27T06:15:14.949Z",
+    "lastVerifiedAt": "2026-10-28T06:50:48.683Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -486,7 +476,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-27T06:15:17.776Z",
+    "lastVerifiedAt": "2026-10-28T06:50:51.390Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -599,7 +589,7 @@
     "hasActiveJobs": true,
     "activeJobs": [
       {
-        "title": "DESARROLLADOR FULL STACK",
+        "title": "FULL STACK DEVELOPER",
         "url": "https://remoteOK.com/remote-jobs/remote-desarrollador-full-stack-kruger-nearshore-llc-rekluti-1137062",
         "tags": [
           "full stack",
@@ -672,46 +662,6 @@
     "scope": "global"
   },
   {
-    "id": "co-436",
-    "name": "MultiplyMii",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "brand-protection-marketplace-compliance-analyst-multiplymii-1136687",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-18T19:39:17.501Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Brand Protection & Marketplace Compliance Analyst",
-        "url": "https://remoteOK.com/remote-jobs/remote-brand-protection-marketplace-compliance-analyst-multiplymii-1136687",
-        "tags": [
-          "analyst",
-          "amazon",
-          "salesforce",
-          "technical",
-          "recruiter",
-          "customer support",
-          "marketing",
-          "speech",
-          "exec",
-          "content writing",
-          "excel",
-          "sales",
-          "ecommerce",
-          "full time"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "scope": "global"
-  },
-  {
     "id": "co-431",
     "name": "Copenhagen Optimization",
     "githubOrg": "",
@@ -756,7 +706,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-27T06:15:27.993Z",
+    "lastVerifiedAt": "2026-10-28T06:51:01.284Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -886,7 +836,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-27T06:15:29.676Z",
+    "lastVerifiedAt": "2026-10-28T06:51:03.213Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -949,7 +899,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-27T06:15:38.366Z",
+    "lastVerifiedAt": "2026-10-28T06:51:11.859Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -986,7 +936,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-27T06:15:46.300Z",
+    "lastVerifiedAt": "2026-10-28T06:51:19.371Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1173,6 +1123,21 @@
     "hasActiveJobs": true,
     "activeJobs": [
       {
+        "title": "Account Executive",
+        "url": "https://remoteOK.com/remote-jobs/remote-account-executive-huzzle-1137573",
+        "tags": [
+          "saas",
+          "dev",
+          "video",
+          "finance",
+          "exec",
+          "senior",
+          "marketing",
+          "sales",
+          "digital nomad"
+        ]
+      },
+      {
         "title": "Sales Development Representative German Speaking",
         "url": "https://remoteOK.com/remote-jobs/remote-sales-development-representative-german-speaking-huzzle-1137563",
         "tags": [
@@ -1225,7 +1190,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-27T06:15:53.880Z",
+    "lastVerifiedAt": "2026-10-28T06:51:27.763Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1463,7 +1428,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-27T06:16:00.330Z",
+    "lastVerifiedAt": "2026-10-28T06:51:34.360Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1529,7 +1494,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-27T06:16:06.655Z",
+    "lastVerifiedAt": "2026-10-28T06:51:40.831Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1661,7 +1626,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-27T06:16:12.034Z",
+    "lastVerifiedAt": "2026-10-28T06:51:46.536Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1896,7 +1861,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-27T06:16:31.913Z",
+    "lastVerifiedAt": "2026-10-28T06:52:06.904Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -2093,7 +2058,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-27T06:16:39.199Z",
+    "lastVerifiedAt": "2026-10-28T06:52:14.401Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -2131,7 +2096,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-27T06:16:46.803Z",
+    "lastVerifiedAt": "2026-10-28T06:52:22.025Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -2206,7 +2171,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-27T06:16:52.604Z",
+    "lastVerifiedAt": "2026-10-28T06:52:29.686Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -2256,7 +2221,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-27T06:16:54.269Z",
+    "lastVerifiedAt": "2026-10-28T06:52:31.378Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -2349,7 +2314,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-27T06:32:40.381Z",
+    "lastVerifiedAt": "2026-10-28T06:52:35.413Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -2370,6 +2335,44 @@
     "status": "watchlist",
     "source": "remoteok",
     "watchlistReason": "org-found-zero-match",
+    "scope": "global",
+    "verifiedAt": "2026-10-27T06:32:40.381Z"
+  },
+  {
+    "id": "co-450",
+    "name": "Wagmo",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "wagmo",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-10-28T07:08:29.584Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Senior Software Engineer LATAM",
+        "url": "https://remoteOK.com/remote-jobs/remote-senior-software-engineer-latam-wagmo-1137572",
+        "tags": [
+          "dev",
+          "design",
+          "react",
+          "sys admin",
+          "python",
+          "django",
+          "typescript",
+          "senior",
+          "medical",
+          "engineer",
+          "digital nomad"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
     "scope": "global"
   }
 ]
