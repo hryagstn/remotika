@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-10-29T07:00:38.986Z",
+    "lastVerifiedAt": "2026-10-30T07:03:44.385Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -19,11 +19,6 @@
       {
         "title": "FinOps Recons Associate",
         "url": "https://job-boards.greenhouse.io/xendit/jobs/8034310003",
-        "tags": []
-      },
-      {
-        "title": "IT GRC Analyst",
-        "url": "https://job-boards.greenhouse.io/xendit/jobs/7731687003",
         "tags": []
       },
       {
@@ -152,7 +147,7 @@
     "industry": "PT Rekayasa Solverindo (REKSOLINDO) has provided practical material engineering solutions for industries across Indonesia since 2005.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-29T07:00:43.398Z",
+    "lastVerifiedAt": "2026-10-30T07:03:48.584Z",
     "verifiedAt": "2026-09-30T11:39:29.952Z",
     "hasActiveJobs": false,
     "activeJobs": [],
@@ -176,7 +171,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-29T07:00:59.850Z",
+    "lastVerifiedAt": "2026-10-30T07:04:04.844Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -211,7 +206,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-29T07:01:17.342Z",
+    "lastVerifiedAt": "2026-10-30T07:04:23.725Z",
     "hasActiveJobs": false,
     "headquarters": "Worldwide",
     "foundationYear": "2005",
@@ -246,7 +241,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-10-29T07:01:23.741Z",
+    "lastVerifiedAt": "2026-10-30T07:04:30.952Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -396,7 +391,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-29T07:01:29.679Z",
+    "lastVerifiedAt": "2026-10-30T07:04:38.441Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -486,7 +481,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-29T07:01:32.532Z",
+    "lastVerifiedAt": "2026-10-30T07:04:41.410Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -716,7 +711,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-29T07:01:43.016Z",
+    "lastVerifiedAt": "2026-10-30T07:04:53.771Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -846,7 +841,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-29T07:01:44.750Z",
+    "lastVerifiedAt": "2026-10-30T07:04:55.705Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -901,43 +896,6 @@
     "scope": "global"
   },
   {
-    "id": "co-188",
-    "name": "Toptal",
-    "githubOrg": "toptal",
-    "githubOrgUrl": "https://github.com/toptal",
-    "remoteokSlug": "enterprise-sales-development-representative-toptal-1137451",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-29T07:01:54.303Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Enterprise Sales Development Representative",
-        "url": "https://remoteOK.com/remote-jobs/remote-enterprise-sales-development-representative-toptal-1137451",
-        "tags": [
-          "customer support",
-          "sales"
-        ]
-      },
-      {
-        "title": "Client Advisor",
-        "url": "https://remoteOK.com/remote-jobs/remote-client-advisor-toptal-1137439",
-        "tags": [
-          "customer support"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "org-found-zero-match",
-    "website": "toptal.com",
-    "scope": "global",
-    "verifiedAt": "2026-10-01T22:00:44.943Z"
-  },
-  {
     "id": "co-191",
     "name": "Fortanix",
     "githubOrg": "fortanix",
@@ -946,7 +904,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-29T07:02:02.041Z",
+    "lastVerifiedAt": "2026-10-30T07:05:14.177Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1200,7 +1158,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-29T07:02:08.948Z",
+    "lastVerifiedAt": "2026-10-30T07:05:22.079Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1504,7 +1462,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-29T07:02:22.945Z",
+    "lastVerifiedAt": "2026-10-30T07:05:35.447Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1636,7 +1594,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-29T07:02:28.585Z",
+    "lastVerifiedAt": "2026-10-30T07:05:41.151Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1871,7 +1829,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-29T07:02:50.391Z",
+    "lastVerifiedAt": "2026-10-30T07:06:00.521Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -2068,7 +2026,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-29T07:02:57.660Z",
+    "lastVerifiedAt": "2026-10-30T07:06:08.290Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -2106,7 +2064,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-29T07:03:06.685Z",
+    "lastVerifiedAt": "2026-10-30T07:06:16.336Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -2181,7 +2139,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-29T07:03:12.624Z",
+    "lastVerifiedAt": "2026-10-30T07:06:22.403Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -2231,7 +2189,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-29T07:03:14.326Z",
+    "lastVerifiedAt": "2026-10-30T07:06:24.012Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -2324,7 +2282,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-29T07:03:18.397Z",
+    "lastVerifiedAt": "2026-10-30T07:06:27.890Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -2383,6 +2341,35 @@
     "status": "watchlist",
     "source": "remoteok",
     "watchlistReason": "no-org-found",
+    "scope": "global"
+  },
+  {
+    "id": "co-451",
+    "name": "Edconic",
+    "githubOrg": "Edconic",
+    "githubOrgUrl": "https://github.com/Edconic",
+    "remoteokSlug": "edconic",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-10-30T07:22:07.256Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Front End Developer",
+        "url": "https://remoteOK.com/remote-jobs/remote-front-end-developer-edconic-1137597",
+        "tags": [
+          "other",
+          "front end"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "click2apply.net",
     "scope": "global"
   }
 ]
