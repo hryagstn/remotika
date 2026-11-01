@@ -35,7 +35,9 @@
     "https://job-boards.greenhouse.io/xendit/jobs/8021808003",
     "title:solutions engineer",
     "https://job-boards.greenhouse.io/xendit/jobs/8034310003",
-    "title:financial partnerships lead - market expansion, singapore/hong kong/malaysia"
+    "title:financial partnerships lead - market expansion, singapore/hong kong/malaysia",
+    "https://job-boards.greenhouse.io/xendit/jobs/7737035003",
+    "title:regulatory & aml compliance manager, singapore"
   ],
   "xendit": [
     "https://job-boards.greenhouse.io/xendit/jobs/7813420003",
@@ -73,7 +75,9 @@
     "https://job-boards.greenhouse.io/xendit/jobs/8021808003",
     "title:solutions engineer",
     "https://job-boards.greenhouse.io/xendit/jobs/8034310003",
-    "title:financial partnerships lead - market expansion, singapore/hong kong/malaysia"
+    "title:financial partnerships lead - market expansion, singapore/hong kong/malaysia",
+    "https://job-boards.greenhouse.io/xendit/jobs/7737035003",
+    "title:regulatory & aml compliance manager, singapore"
   ],
   "co-123": [
     "https://remoteOK.com/remote-jobs/remote-senior-react-full-stack-developer-lemon-io-1137475",
@@ -630,5 +634,13 @@
   "polaroid": [
     "https://remoteOK.com/remote-jobs/remote-country-manager-canada-polaroid-1137602",
     "title:country manager canada"
+  ],
+  "co-454": [
+    "https://remoteOK.com/remote-jobs/remote-aws-cloud-solutions-architect-cloudary-sas-1137606",
+    "title:aws cloud solutions architect"
+  ],
+  "cloudary-sas": [
+    "https://remoteOK.com/remote-jobs/remote-aws-cloud-solutions-architect-cloudary-sas-1137606",
+    "title:aws cloud solutions architect"
   ]
 }
