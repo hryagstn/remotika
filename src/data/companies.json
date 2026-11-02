@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-11-01T07:29:17.657Z",
+    "lastVerifiedAt": "2026-11-02T07:38:29.577Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -152,7 +152,7 @@
     "industry": "PT Rekayasa Solverindo (REKSOLINDO) has provided practical material engineering solutions for industries across Indonesia since 2005.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-11-01T07:29:21.561Z",
+    "lastVerifiedAt": "2026-11-02T07:38:33.456Z",
     "verifiedAt": "2026-09-30T11:39:29.952Z",
     "hasActiveJobs": false,
     "activeJobs": [],
@@ -176,7 +176,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-11-01T07:29:36.924Z",
+    "lastVerifiedAt": "2026-11-02T07:38:49.121Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -211,7 +211,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-11-01T07:29:53.115Z",
+    "lastVerifiedAt": "2026-11-02T07:39:04.710Z",
     "hasActiveJobs": false,
     "headquarters": "Worldwide",
     "foundationYear": "2005",
@@ -246,7 +246,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-11-01T07:29:59.116Z",
+    "lastVerifiedAt": "2026-11-02T07:39:10.704Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -396,7 +396,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-01T07:30:04.246Z",
+    "lastVerifiedAt": "2026-11-02T07:39:16.102Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -486,7 +486,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-01T07:30:06.718Z",
+    "lastVerifiedAt": "2026-11-02T07:39:18.815Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -716,7 +716,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-01T07:30:16.347Z",
+    "lastVerifiedAt": "2026-11-02T07:39:28.087Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -846,7 +846,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-01T07:30:17.820Z",
+    "lastVerifiedAt": "2026-11-02T07:39:29.571Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -909,7 +909,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-01T07:30:25.473Z",
+    "lastVerifiedAt": "2026-11-02T07:39:37.607Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -939,35 +939,6 @@
     "website": "fortanix.com",
     "scope": "global",
     "verifiedAt": "2026-10-05T23:23:21.622Z"
-  },
-  {
-    "id": "co-425",
-    "name": "Leverage Live Local",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "head-of-operations-leverage-live-local-1137461",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-18T19:39:03.878Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Head of Operations",
-        "url": "https://remoteOK.com/remote-jobs/remote-head-of-operations-leverage-live-local-1137461",
-        "tags": [
-          "non tech",
-          "ops",
-          "exec"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "scope": "global"
   },
   {
     "id": "co-424",
@@ -1163,7 +1134,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-01T07:30:31.841Z",
+    "lastVerifiedAt": "2026-11-02T07:39:44.984Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1401,7 +1372,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-01T07:30:37.626Z",
+    "lastVerifiedAt": "2026-11-02T07:39:51.193Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1467,7 +1438,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-01T07:30:43.389Z",
+    "lastVerifiedAt": "2026-11-02T07:39:56.798Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1599,7 +1570,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-01T07:30:48.260Z",
+    "lastVerifiedAt": "2026-11-02T07:40:02.016Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1834,7 +1805,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-01T07:31:05.422Z",
+    "lastVerifiedAt": "2026-11-02T07:40:20.576Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -2031,7 +2002,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-01T07:31:11.515Z",
+    "lastVerifiedAt": "2026-11-02T07:40:27.180Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -2069,7 +2040,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-01T07:31:18.428Z",
+    "lastVerifiedAt": "2026-11-02T07:40:34.900Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -2144,7 +2115,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-01T07:31:23.454Z",
+    "lastVerifiedAt": "2026-11-02T07:40:40.449Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -2194,7 +2165,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-01T07:31:24.946Z",
+    "lastVerifiedAt": "2026-11-02T07:40:42.003Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -2287,7 +2258,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-01T07:31:28.576Z",
+    "lastVerifiedAt": "2026-11-02T07:40:45.569Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -2357,7 +2328,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-01T07:31:30.301Z",
+    "lastVerifiedAt": "2026-11-02T07:40:47.295Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -2420,7 +2391,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-01T07:31:35.083Z",
+    "lastVerifiedAt": "2026-11-02T07:40:52.125Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -2483,6 +2454,44 @@
           "ops",
           "sales",
           "golang",
+          "engineer",
+          "digital nomad"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "scope": "global"
+  },
+  {
+    "id": "co-455",
+    "name": "Mecka",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "mecka",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-11-02T07:55:50.860Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Partner Operations Manager",
+        "url": "https://remoteOK.com/remote-jobs/remote-partner-operations-manager-mecka-1137609",
+        "tags": [
+          "exec",
+          "design",
+          "education",
+          "customer support",
+          "marketing",
+          "quality assurance",
+          "finance",
+          "robotics",
+          "ops",
+          "recruiter",
           "engineer",
           "digital nomad"
         ]
