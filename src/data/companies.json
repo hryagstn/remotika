@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-11-02T07:38:29.577Z",
+    "lastVerifiedAt": "2026-11-03T07:53:02.131Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -152,7 +152,7 @@
     "industry": "PT Rekayasa Solverindo (REKSOLINDO) has provided practical material engineering solutions for industries across Indonesia since 2005.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-11-02T07:38:33.456Z",
+    "lastVerifiedAt": "2026-11-03T07:53:06.719Z",
     "verifiedAt": "2026-09-30T11:39:29.952Z",
     "hasActiveJobs": false,
     "activeJobs": [],
@@ -176,7 +176,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-11-02T07:38:49.121Z",
+    "lastVerifiedAt": "2026-11-03T07:53:22.892Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -211,7 +211,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-11-02T07:39:04.710Z",
+    "lastVerifiedAt": "2026-11-03T07:53:39.877Z",
     "hasActiveJobs": false,
     "headquarters": "Worldwide",
     "foundationYear": "2005",
@@ -246,7 +246,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-11-02T07:39:10.704Z",
+    "lastVerifiedAt": "2026-11-03T07:53:46.410Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -396,7 +396,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-02T07:39:16.102Z",
+    "lastVerifiedAt": "2026-11-03T07:53:51.950Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -486,7 +486,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-02T07:39:18.815Z",
+    "lastVerifiedAt": "2026-11-03T07:53:54.799Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -716,7 +716,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-02T07:39:28.087Z",
+    "lastVerifiedAt": "2026-11-03T07:54:05.934Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -846,7 +846,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-02T07:39:29.571Z",
+    "lastVerifiedAt": "2026-11-03T07:54:07.634Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -909,7 +909,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-02T07:39:37.607Z",
+    "lastVerifiedAt": "2026-11-03T07:54:16.059Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1016,45 +1016,6 @@
     "scope": "global"
   },
   {
-    "id": "co-422",
-    "name": "EDETEK",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "manager-clinical-data-management-edetek-1137481",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-18T19:38:59.872Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Manager Clinical Data Management",
-        "url": "https://remoteOK.com/remote-jobs/remote-manager-clinical-data-management-edetek-1137481",
-        "tags": [
-          "exec",
-          "design",
-          "sys admin",
-          "education",
-          "customer support",
-          "dev",
-          "testing",
-          "travel",
-          "junior",
-          "ops",
-          "medical",
-          "recruiter",
-          "digital nomad"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "scope": "global"
-  },
-  {
     "id": "co-423",
     "name": "Huzzle",
     "githubOrg": "",
@@ -1134,7 +1095,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-02T07:39:44.984Z",
+    "lastVerifiedAt": "2026-11-03T07:54:23.775Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1372,7 +1333,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-02T07:39:51.193Z",
+    "lastVerifiedAt": "2026-11-03T07:54:30.409Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1438,7 +1399,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-02T07:39:56.798Z",
+    "lastVerifiedAt": "2026-11-03T07:54:36.852Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1570,7 +1531,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-02T07:40:02.016Z",
+    "lastVerifiedAt": "2026-11-03T07:54:42.418Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1805,7 +1766,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-02T07:40:20.576Z",
+    "lastVerifiedAt": "2026-11-03T07:55:02.334Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -2002,7 +1963,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-02T07:40:27.180Z",
+    "lastVerifiedAt": "2026-11-03T07:55:10.005Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -2040,7 +2001,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-02T07:40:34.900Z",
+    "lastVerifiedAt": "2026-11-03T07:55:19.204Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -2115,7 +2076,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-02T07:40:40.449Z",
+    "lastVerifiedAt": "2026-11-03T07:55:24.859Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -2165,7 +2126,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-02T07:40:42.003Z",
+    "lastVerifiedAt": "2026-11-03T07:55:26.600Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -2258,7 +2219,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-02T07:40:45.569Z",
+    "lastVerifiedAt": "2026-11-03T07:55:30.495Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -2328,15 +2289,15 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-02T07:40:47.295Z",
+    "lastVerifiedAt": "2026-11-03T07:55:32.288Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
         "title": "Front End Developer",
         "url": "https://remoteOK.com/remote-jobs/remote-front-end-developer-edconic-1137597",
         "tags": [
-          "other",
-          "front end"
+          "front end",
+          "other"
         ]
       }
     ],
@@ -2391,7 +2352,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-02T07:40:52.125Z",
+    "lastVerifiedAt": "2026-11-03T07:55:37.581Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -2502,6 +2463,37 @@
     "status": "watchlist",
     "source": "remoteok",
     "watchlistReason": "no-org-found",
+    "scope": "global"
+  },
+  {
+    "id": "co-456",
+    "name": "Capmo",
+    "githubOrg": "capmo",
+    "githubOrgUrl": "https://github.com/capmo",
+    "remoteokSlug": "capmo",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-11-03T08:11:44.459Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Team Lead Account Executive",
+        "url": "https://remoteOK.com/remote-jobs/remote-team-lead-account-executive-capmo-1137613",
+        "tags": [
+          "saas",
+          "exec",
+          "junior",
+          "marketing",
+          "sales"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
     "scope": "global"
   }
 ]
