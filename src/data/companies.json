@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 5,
     "label": "Established",
-    "lastVerifiedAt": "2026-11-04T07:29:28.077Z",
+    "lastVerifiedAt": "2026-11-05T07:54:11.453Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -24,11 +24,6 @@
       {
         "title": "Regulatory & AML Compliance Manager, Singapore",
         "url": "https://job-boards.greenhouse.io/xendit/jobs/7737035003",
-        "tags": []
-      },
-      {
-        "title": "RevOps Systems Administrator (Salesforce)",
-        "url": "https://job-boards.greenhouse.io/xendit/jobs/7992262003",
         "tags": []
       },
       {
@@ -98,10 +93,10 @@
         "locationRaw": "Indonesia"
       },
       {
-        "id": "m-ndyhrdy",
-        "githubLogin": "ndyhrdy",
-        "githubProfileUrl": "https://github.com/ndyhrdy",
-        "locationRaw": "Makassar, Indonesia"
+        "id": "m-azaky",
+        "githubLogin": "azaky",
+        "githubProfileUrl": "https://github.com/azaky",
+        "locationRaw": "Jakarta, Indonesia"
       }
     ],
     "jobSources": {
@@ -147,7 +142,7 @@
     "industry": "PT Rekayasa Solverindo (REKSOLINDO) has provided practical material engineering solutions for industries across Indonesia since 2005.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-11-04T07:29:32.155Z",
+    "lastVerifiedAt": "2026-11-05T07:54:15.600Z",
     "verifiedAt": "2026-09-30T11:39:29.952Z",
     "hasActiveJobs": false,
     "activeJobs": [],
@@ -171,7 +166,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-11-04T07:29:47.541Z",
+    "lastVerifiedAt": "2026-11-05T07:54:31.871Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -206,7 +201,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-11-04T07:30:03.482Z",
+    "lastVerifiedAt": "2026-11-05T07:54:48.879Z",
     "hasActiveJobs": false,
     "headquarters": "Worldwide",
     "foundationYear": "2005",
@@ -241,7 +236,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-11-04T07:30:09.972Z",
+    "lastVerifiedAt": "2026-11-05T07:54:55.352Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -337,7 +332,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-04T07:30:15.729Z",
+    "lastVerifiedAt": "2026-11-05T07:55:01.006Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -427,7 +422,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-04T07:30:18.331Z",
+    "lastVerifiedAt": "2026-11-05T07:55:03.702Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -657,7 +652,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-04T07:30:28.972Z",
+    "lastVerifiedAt": "2026-11-05T07:55:14.766Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -758,7 +753,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-04T07:30:30.543Z",
+    "lastVerifiedAt": "2026-11-05T07:55:16.356Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -845,120 +840,6 @@
     "scope": "global"
   },
   {
-    "id": "co-247",
-    "name": "Fuel50",
-    "githubOrg": "fuel50",
-    "githubOrgUrl": "https://github.com/fuel50",
-    "remoteokSlug": "product-design-lead-fuel50-1137474",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-10T20:48:29.117Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Product Design Lead",
-        "url": "https://remoteOK.com/remote-jobs/remote-product-design-lead-fuel50-1137474",
-        "tags": [
-          "design",
-          "saas",
-          "sys admin",
-          "front end",
-          "technical",
-          "marketing",
-          "dev",
-          "virtual assistant",
-          "javascript",
-          "css",
-          "html",
-          "microsoft",
-          "exec",
-          "senior",
-          "medical",
-          "engineer",
-          "digital nomad"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "org-found-zero-match",
-    "scope": "global"
-  },
-  {
-    "id": "co-423",
-    "name": "Huzzle",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "junior-sales-development-representative-it-industry-huzzle-1137480",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-18T19:39:01.019Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Account Executive",
-        "url": "https://remoteOK.com/remote-jobs/remote-account-executive-huzzle-1137573",
-        "tags": [
-          "saas",
-          "dev",
-          "video",
-          "finance",
-          "exec",
-          "senior",
-          "marketing",
-          "sales",
-          "digital nomad"
-        ]
-      },
-      {
-        "title": "Sales Development Representative German Speaking",
-        "url": "https://remoteOK.com/remote-jobs/remote-sales-development-representative-german-speaking-huzzle-1137563",
-        "tags": [
-          "saas",
-          "sys admin",
-          "dev",
-          "marketing",
-          "finance",
-          "c",
-          "exec",
-          "sales",
-          "medical",
-          "ecommerce",
-          "digital nomad"
-        ]
-      },
-      {
-        "title": "Junior Sales Development Representative IT Industry",
-        "url": "https://remoteOK.com/remote-jobs/remote-junior-sales-development-representative-it-industry-huzzle-1137480",
-        "tags": [
-          "saas",
-          "technical",
-          "marketing",
-          "finance",
-          "c",
-          "cloud",
-          "microsoft",
-          "senior",
-          "junior",
-          "ops",
-          "sales",
-          "ecommerce",
-          "full time"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "scope": "global"
-  },
-  {
     "id": "co-267",
     "name": "Miaplaza",
     "githubOrg": "Miaplaza",
@@ -967,7 +848,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-04T07:30:46.167Z",
+    "lastVerifiedAt": "2026-11-05T07:55:25.556Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1051,39 +932,6 @@
     "scope": "global"
   },
   {
-    "id": "co-421",
-    "name": "Hunt St",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "marketing-and-sales-administrator-hunt-st-1137488",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-18T19:38:58.709Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Marketing and Sales Administrator",
-        "url": "https://remoteOK.com/remote-jobs/remote-marketing-and-sales-administrator-hunt-st-1137488",
-        "tags": [
-          "customer support",
-          "marketing",
-          "finance",
-          "admin",
-          "exec",
-          "content writing",
-          "sales"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "scope": "global"
-  },
-  {
     "id": "co-306",
     "name": "QuickMail",
     "githubOrg": "QuickMail",
@@ -1109,82 +957,6 @@
     "source": "remoteok",
     "watchlistReason": "org-found-zero-match",
     "scope": "global"
-  },
-  {
-    "id": "co-419",
-    "name": "BlueTuskr",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "graphic-designer-video-editor-bluetuskr-1137507",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-18T19:38:56.241Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Graphic Designer & Video Editor",
-        "url": "https://remoteOK.com/remote-jobs/remote-graphic-designer-video-editor-bluetuskr-1137507",
-        "tags": [
-          "design",
-          "designer",
-          "customer support",
-          "testing",
-          "marketing",
-          "web dev",
-          "video",
-          "mobile",
-          "photoshop",
-          "stats",
-          "sales",
-          "illustrator",
-          "ecommerce",
-          "shopify",
-          "part time",
-          "digital nomad"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "scope": "global"
-  },
-  {
-    "id": "co-346",
-    "name": "Utopia",
-    "githubOrg": "utopia",
-    "githubOrgUrl": "https://github.com/utopia",
-    "remoteokSlug": "payment-operations-specialist-utopia-1137514",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-04T07:30:52.669Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Payment Operations Specialist",
-        "url": "https://remoteOK.com/remote-jobs/remote-payment-operations-specialist-utopia-1137514",
-        "tags": [
-          "design",
-          "customer support",
-          "marketing",
-          "accounting",
-          "finance",
-          "ops",
-          "digital nomad"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "org-found-zero-match",
-    "scope": "global",
-    "verifiedAt": "2026-10-15T20:32:12.479Z"
   },
   {
     "id": "co-347",
@@ -1227,7 +999,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-04T07:30:59.007Z",
+    "lastVerifiedAt": "2026-11-05T07:55:38.379Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1272,80 +1044,6 @@
     "verifiedAt": "2026-10-16T20:08:24.166Z"
   },
   {
-    "id": "co-418",
-    "name": "Twoconnect",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "project-and-quality-administrator-work-from-home-dayshift-twoconnect-1137524",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-18T19:38:54.884Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Project and Quality Administrator Work From Home Dayshift",
-        "url": "https://remoteOK.com/remote-jobs/remote-project-and-quality-administrator-work-from-home-dayshift-twoconnect-1137524",
-        "tags": [
-          "work from home",
-          "jira",
-          "sys admin",
-          "education",
-          "customer support",
-          "marketing",
-          "admin",
-          "microsoft",
-          "exec",
-          "excel"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "scope": "global"
-  },
-  {
-    "id": "co-370",
-    "name": "Somnio Software",
-    "githubOrg": "somnio-software",
-    "githubOrgUrl": "https://github.com/somnio-software",
-    "remoteokSlug": "sr-react-native-somnio-software-1137523",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-04T07:31:04.363Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Sr REACT NATIVE",
-        "url": "https://remoteOK.com/remote-jobs/remote-sr-react-native-somnio-software-1137523",
-        "tags": [
-          "react native",
-          "react",
-          "dev",
-          "python",
-          "javascript",
-          "c",
-          "flutter",
-          "node",
-          "node.js",
-          "digital nomad"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "org-found-zero-match",
-    "website": "node.js",
-    "scope": "global",
-    "verifiedAt": "2026-10-16T20:08:31.365Z"
-  },
-  {
     "id": "co-414",
     "name": "Self Bill Pro",
     "githubOrg": "",
@@ -1369,42 +1067,6 @@
           "dev",
           "testing",
           "ops",
-          "digital nomad"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "scope": "global"
-  },
-  {
-    "id": "co-415",
-    "name": "Yopeso Romania SRL",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "sap-re-fx-consultant-yopeso-romania-srl-1137535",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-18T19:38:51.068Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "SAP RE FX Consultant",
-        "url": "https://remoteOK.com/remote-jobs/remote-sap-re-fx-consultant-yopeso-romania-srl-1137535",
-        "tags": [
-          "consulting",
-          "design",
-          "technical",
-          "customer support",
-          "dev",
-          "testing",
-          "marketing",
-          "exec",
-          "part time",
           "digital nomad"
         ]
       }
@@ -1551,7 +1213,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-04T07:31:22.664Z",
+    "lastVerifiedAt": "2026-11-05T07:56:03.048Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1609,101 +1271,6 @@
     "scope": "global"
   },
   {
-    "id": "co-440",
-    "name": "Pavago",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "pavago",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-21T20:49:24.384Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Risk Analyst",
-        "url": "https://remoteOK.com/remote-jobs/remote-risk-analyst-pavago-1137548",
-        "tags": [
-          "analyst",
-          "saas",
-          "sys admin",
-          "infosec",
-          "python",
-          "technical",
-          "recruiter",
-          "customer support",
-          "testing",
-          "marketing",
-          "exec",
-          "finance",
-          "video",
-          "microsoft",
-          "senior",
-          "ops",
-          "excel",
-          "stats",
-          "legal",
-          "medical",
-          "full time"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "scope": "global"
-  },
-  {
-    "id": "co-441",
-    "name": "Political Asylum Lawyers",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "political-asylum-lawyers",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-23T06:19:17.401Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Accounting & Finance Manager",
-        "url": "https://remoteOK.com/remote-jobs/remote-accounting-finance-manager-political-asylum-lawyers-1137555",
-        "tags": [
-          "exec",
-          "accounting",
-          "design",
-          "sys admin",
-          "infosec",
-          "education",
-          "technical",
-          "customer support",
-          "dev",
-          "testing",
-          "marketing",
-          "controller",
-          "payroll",
-          "finance",
-          "microsoft",
-          "content writing",
-          "senior",
-          "ops",
-          "excel",
-          "legal",
-          "medical",
-          "digital nomad"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "scope": "global"
-  },
-  {
     "id": "co-442",
     "name": "Plaid",
     "githubOrg": "plaid",
@@ -1712,7 +1279,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-04T07:31:29.764Z",
+    "lastVerifiedAt": "2026-11-05T07:56:09.032Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1750,7 +1317,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-04T07:31:37.606Z",
+    "lastVerifiedAt": "2026-11-05T07:56:17.059Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1775,48 +1342,6 @@
     "verifiedAt": "2026-10-23T06:19:30.544Z"
   },
   {
-    "id": "co-445",
-    "name": "D2B",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "d2b",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-24T06:04:39.951Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Senior Finance Manager Management Accountant",
-        "url": "https://remoteOK.com/remote-jobs/remote-senior-finance-manager-management-accountant-d2b-1137556",
-        "tags": [
-          "exec",
-          "accounting",
-          "saas",
-          "technical",
-          "customer support",
-          "dev",
-          "marketing",
-          "controller",
-          "payroll",
-          "finance",
-          "education",
-          "php",
-          "senior",
-          "ops",
-          "excel",
-          "digital nomad"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "scope": "global"
-  },
-  {
     "id": "co-446",
     "name": "Onebrief",
     "githubOrg": "Onebrief",
@@ -1825,7 +1350,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-04T07:31:43.070Z",
+    "lastVerifiedAt": "2026-11-05T07:56:22.667Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1867,49 +1392,6 @@
     "verifiedAt": "2026-10-25T06:19:10.962Z"
   },
   {
-    "id": "co-448",
-    "name": "Aprio",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "aprio",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-25T06:19:13.695Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Accounting and Implementation Manager",
-        "url": "https://remoteOK.com/remote-jobs/remote-accounting-and-implementation-manager-aprio-1137560",
-        "tags": [
-          "exec",
-          "accounting",
-          "design",
-          "sys admin",
-          "education",
-          "consulting",
-          "customer support",
-          "testing",
-          "marketing",
-          "payroll",
-          "finance",
-          "ops",
-          "stats",
-          "sales",
-          "golang",
-          "full time",
-          "digital nomad"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "scope": "global"
-  },
-  {
     "id": "co-449",
     "name": "Klardaten",
     "githubOrg": "Klardaten",
@@ -1918,7 +1400,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-04T07:31:48.189Z",
+    "lastVerifiedAt": "2026-11-05T07:56:26.641Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1988,7 +1470,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-04T07:31:49.955Z",
+    "lastVerifiedAt": "2026-11-05T07:56:28.580Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -2018,7 +1500,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-04T07:31:54.798Z",
+    "lastVerifiedAt": "2026-11-05T07:56:33.881Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -2140,7 +1622,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-04T07:32:00.151Z",
+    "lastVerifiedAt": "2026-11-05T07:56:39.564Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -2218,7 +1700,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-04T07:47:32.485Z",
+    "lastVerifiedAt": "2026-11-05T07:56:45.148Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -2243,7 +1725,8 @@
     "status": "watchlist",
     "source": "remoteok",
     "watchlistReason": "org-found-zero-match",
-    "scope": "global"
+    "scope": "global",
+    "verifiedAt": "2026-11-04T07:47:32.485Z"
   },
   {
     "id": "co-459",
@@ -2275,6 +1758,119 @@
           "sales",
           "ecommerce",
           "full time"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "scope": "global"
+  },
+  {
+    "id": "co-460",
+    "name": "Calabrio",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "calabrio",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-11-05T08:13:23.455Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Sales Operations Analyst",
+        "url": "https://remoteOK.com/remote-jobs/remote-sales-operations-analyst-calabrio-1137674",
+        "tags": [
+          "analyst",
+          "saas",
+          "salesforce",
+          "education",
+          "customer support",
+          "dev",
+          "marketing",
+          "accounting",
+          "finance",
+          "exec",
+          "ops",
+          "excel",
+          "stats",
+          "sales",
+          "digital nomad"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "scope": "global"
+  },
+  {
+    "id": "co-461",
+    "name": "Ringbook Limited",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "ringbook-limited",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-11-05T08:13:24.632Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Tech lead",
+        "url": "https://remoteOK.com/remote-jobs/remote-tech-lead-ringbook-limited-1137673",
+        "tags": [
+          "dev",
+          "exec",
+          "accounting",
+          "saas"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "scope": "global"
+  },
+  {
+    "id": "co-462",
+    "name": "StaffRight",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "staffright",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-11-05T08:13:25.790Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Senior Property Manager ENG",
+        "url": "https://remoteOK.com/remote-jobs/remote-senior-property-manager-eng-staffright-1137624",
+        "tags": [
+          "exec",
+          "hr",
+          "technical",
+          "customer support",
+          "dev",
+          "travel",
+          "finance",
+          "php",
+          "microsoft",
+          "senior",
+          "junior",
+          "ops",
+          "marketing",
+          "medical",
+          "full time",
+          "digital nomad"
         ]
       }
     ],
