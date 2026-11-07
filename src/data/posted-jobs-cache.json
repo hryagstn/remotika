@@ -91,7 +91,9 @@
     "https://remoteOK.com/remote-jobs/remote-senior-devops-engineer-lemon-io-1137557",
     "title:senior devops engineer",
     "https://remotive.com/remote-jobs/software-development/head-of-engineering-2091134",
-    "title:head of engineering"
+    "title:head of engineering",
+    "https://remoteOK.com/remote-jobs/remote-senior-vue-developer-lemon-io-1137688",
+    "title:senior vue developer"
   ],
   "lemon-io": [
     "https://remoteOK.com/remote-jobs/remote-senior-react-full-stack-developer-lemon-io-1137475",
@@ -105,7 +107,9 @@
     "https://remoteOK.com/remote-jobs/remote-senior-devops-engineer-lemon-io-1137557",
     "title:senior devops engineer",
     "https://remotive.com/remote-jobs/software-development/head-of-engineering-2091134",
-    "title:head of engineering"
+    "title:head of engineering",
+    "https://remoteOK.com/remote-jobs/remote-senior-vue-developer-lemon-io-1137688",
+    "title:senior vue developer"
   ],
   "co-139": [
     "https://remoteOK.com/remote-jobs/remote-ai-engineer-data-apis-benzinga-1137224",
@@ -297,7 +301,13 @@
     "https://remoteOK.com/remote-jobs/remote-enterprise-sales-development-representative-toptal-1137451",
     "title:enterprise sales development representative",
     "https://remoteOK.com/remote-jobs/remote-client-advisor-toptal-1137439",
-    "title:client advisor"
+    "title:client advisor",
+    "https://remoteOK.com/remote-jobs/remote-agile-program-manager-toptal-1137692",
+    "title:agile program manager",
+    "https://remoteOK.com/remote-jobs/remote-operations-expert-with-python-for-ai-supply-chain-task-design-toptal-1137690",
+    "title:operations expert with python for ai supply chain task design",
+    "https://remoteOK.com/remote-jobs/remote-ml-inference-engineer-terminal-bench-task-designer-vllm-sglang-tensorrt-llm-toptal-1137689",
+    "title:ml inference engineer – terminal-bench task designer (vllm / sglang / tensorrt-llm)"
   ],
   "co-191": [
     "https://remoteOK.com/remote-jobs/remote-federal-business-development-director-fortanix-1137463",
@@ -718,5 +728,25 @@
   "claims": [
     "https://remoteOK.com/remote-jobs/remote-software-engineer-claims-1137685",
     "title:software engineer"
+  ],
+  "co-465": [
+    "https://remoteOK.com/remote-jobs/remote-enterprise-sales-development-representative-toptal-1137451",
+    "title:enterprise sales development representative",
+    "https://remoteOK.com/remote-jobs/remote-client-advisor-toptal-1137439",
+    "title:client advisor",
+    "https://remoteOK.com/remote-jobs/remote-agile-program-manager-toptal-1137692",
+    "title:agile program manager",
+    "https://remoteOK.com/remote-jobs/remote-operations-expert-with-python-for-ai-supply-chain-task-design-toptal-1137690",
+    "title:operations expert with python for ai supply chain task design",
+    "https://remoteOK.com/remote-jobs/remote-ml-inference-engineer-terminal-bench-task-designer-vllm-sglang-tensorrt-llm-toptal-1137689",
+    "title:ml inference engineer – terminal-bench task designer (vllm / sglang / tensorrt-llm)"
+  ],
+  "co-466": [
+    "https://remoteOK.com/remote-jobs/remote-feltsense-ai-engineer-silver-dev-1137691",
+    "title:feltsense ai engineer"
+  ],
+  "silver-dev": [
+    "https://remoteOK.com/remote-jobs/remote-feltsense-ai-engineer-silver-dev-1137691",
+    "title:feltsense ai engineer"
   ]
 }

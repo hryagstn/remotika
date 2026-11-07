@@ -6,9 +6,9 @@
     "githubOrgUrl": "https://github.com/xendit",
     "remoteokSlug": "xendit",
     "industry": null,
-    "verifiedIndonesianCount": 5,
+    "verifiedIndonesianCount": 6,
     "label": "Established",
-    "lastVerifiedAt": "2026-11-06T07:54:05.133Z",
+    "lastVerifiedAt": "2026-11-07T07:04:56.787Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -93,6 +93,12 @@
         "locationRaw": "Indonesia"
       },
       {
+        "id": "m-ndyhrdy",
+        "githubLogin": "ndyhrdy",
+        "githubProfileUrl": "https://github.com/ndyhrdy",
+        "locationRaw": "Makassar, Indonesia"
+      },
+      {
         "id": "m-azaky",
         "githubLogin": "azaky",
         "githubProfileUrl": "https://github.com/azaky",
@@ -142,7 +148,7 @@
     "industry": "PT Rekayasa Solverindo (REKSOLINDO) has provided practical material engineering solutions for industries across Indonesia since 2005.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-11-06T07:54:10.151Z",
+    "lastVerifiedAt": "2026-11-07T07:05:01.217Z",
     "verifiedAt": "2026-09-30T11:39:29.952Z",
     "hasActiveJobs": false,
     "activeJobs": [],
@@ -166,7 +172,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-11-06T07:54:27.172Z",
+    "lastVerifiedAt": "2026-11-07T07:05:17.658Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -201,7 +207,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-11-06T07:54:44.291Z",
+    "lastVerifiedAt": "2026-11-07T07:05:33.791Z",
     "hasActiveJobs": false,
     "headquarters": "Worldwide",
     "foundationYear": "2005",
@@ -236,7 +242,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-11-06T07:54:50.786Z",
+    "lastVerifiedAt": "2026-11-07T07:05:40.097Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -263,6 +269,26 @@
     "lastVerifiedAt": "2026-06-25T19:24:38.317Z",
     "hasActiveJobs": true,
     "activeJobs": [
+      {
+        "title": "Senior Vue Developer",
+        "url": "https://remoteOK.com/remote-jobs/remote-senior-vue-developer-lemon-io-1137688",
+        "tags": [
+          "engineer",
+          "dev",
+          "full time",
+          "full stack",
+          "remote",
+          "remote work",
+          "javascript",
+          "typescript",
+          "php",
+          "laravel",
+          "node",
+          "dot net",
+          "python",
+          "front end"
+        ]
+      },
       {
         "title": "Senior DevOps Engineer",
         "url": "https://remoteOK.com/remote-jobs/remote-senior-devops-engineer-lemon-io-1137557",
@@ -332,7 +358,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-06T07:54:56.181Z",
+    "lastVerifiedAt": "2026-11-07T07:05:45.540Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -422,7 +448,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-06T07:54:58.897Z",
+    "lastVerifiedAt": "2026-11-07T07:05:48.293Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -652,7 +678,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-06T07:55:08.525Z",
+    "lastVerifiedAt": "2026-11-07T07:05:58.115Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -753,7 +779,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-06T07:55:10.245Z",
+    "lastVerifiedAt": "2026-11-07T07:05:59.809Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -808,38 +834,6 @@
     "scope": "global"
   },
   {
-    "id": "co-424",
-    "name": "Spiralyze",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "project-manager-spiralyze-1137466",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-18T19:39:02.336Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Project Manager",
-        "url": "https://remoteOK.com/remote-jobs/remote-project-manager-spiralyze-1137466",
-        "tags": [
-          "project manager",
-          "exec",
-          "ops",
-          "marketing",
-          "cro"
-        ],
-        "location": "Worldwide"
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "scope": "global"
-  },
-  {
     "id": "co-267",
     "name": "Miaplaza",
     "githubOrg": "Miaplaza",
@@ -848,7 +842,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-06T07:55:17.764Z",
+    "lastVerifiedAt": "2026-11-07T07:06:07.274Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -999,7 +993,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-06T07:55:25.240Z",
+    "lastVerifiedAt": "2026-11-07T07:06:14.778Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1213,7 +1207,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-06T07:55:44.772Z",
+    "lastVerifiedAt": "2026-11-07T07:06:34.222Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1279,7 +1273,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-06T07:55:50.575Z",
+    "lastVerifiedAt": "2026-11-07T07:06:40.006Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1317,7 +1311,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-06T07:55:58.530Z",
+    "lastVerifiedAt": "2026-11-07T07:06:47.951Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1350,7 +1344,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-06T07:56:04.258Z",
+    "lastVerifiedAt": "2026-11-07T07:06:53.237Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1400,7 +1394,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-06T07:56:09.806Z",
+    "lastVerifiedAt": "2026-11-07T07:06:57.073Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1462,36 +1456,6 @@
     "scope": "global"
   },
   {
-    "id": "co-451",
-    "name": "Edconic",
-    "githubOrg": "Edconic",
-    "githubOrgUrl": "https://github.com/Edconic",
-    "remoteokSlug": "edconic",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-06T07:56:11.686Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Front End Developer",
-        "url": "https://remoteOK.com/remote-jobs/remote-front-end-developer-edconic-1137597",
-        "tags": [
-          "front end",
-          "other"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "org-found-zero-match",
-    "website": "click2apply.net",
-    "scope": "global",
-    "verifiedAt": "2026-10-30T07:22:07.256Z"
-  },
-  {
     "id": "co-453",
     "name": "Polaroid",
     "githubOrg": "polaroid",
@@ -1500,7 +1464,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-06T07:56:17.159Z",
+    "lastVerifiedAt": "2026-11-07T07:07:03.905Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1622,7 +1586,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-06T07:56:22.980Z",
+    "lastVerifiedAt": "2026-11-07T07:07:09.611Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1700,7 +1664,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-06T07:56:28.580Z",
+    "lastVerifiedAt": "2026-11-07T07:07:15.044Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1938,6 +1902,107 @@
     "source": "remoteok",
     "watchlistReason": "no-org-found",
     "website": "philipp-koellinger.com",
+    "scope": "global"
+  },
+  {
+    "id": "co-465",
+    "name": "Toptal",
+    "githubOrg": "toptal",
+    "githubOrgUrl": "https://github.com/toptal",
+    "remoteokSlug": "toptal",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-11-07T07:22:47.103Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Agile Program Manager",
+        "url": "https://remoteOK.com/remote-jobs/remote-agile-program-manager-toptal-1137692",
+        "tags": [
+          "program management",
+          "Agile",
+          "Scrum"
+        ],
+        "location": "Anywhere in the World"
+      },
+      {
+        "title": "Operations Expert with Python for AI Supply Chain Task Design",
+        "url": "https://remoteOK.com/remote-jobs/remote-operations-expert-with-python-for-ai-supply-chain-task-design-toptal-1137690",
+        "tags": [
+          "Docker",
+          "Git",
+          "Inventory Management",
+          "Supply Chain",
+          "Microsoft Excel",
+          "Python",
+          "SAP",
+          "SAP Production Planning",
+          "SQL",
+          "Supply Chain Operations"
+        ],
+        "location": "Anywhere in the World"
+      },
+      {
+        "title": "ML Inference Engineer – Terminal-Bench Task Designer (vLLM / SGLang / TensorRT-LLM)",
+        "url": "https://remoteOK.com/remote-jobs/remote-ml-inference-engineer-terminal-bench-task-designer-vllm-sglang-tensorrt-llm-toptal-1137689",
+        "tags": [
+          "Artificial Intelligence",
+          "Docker",
+          "Git",
+          "Graphics Processing Unit",
+          "LLM"
+        ],
+        "location": "Anywhere in the World"
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "scope": "global"
+  },
+  {
+    "id": "co-466",
+    "name": "Silver.dev",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "silver-dev",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-11-07T07:22:48.233Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Feltsense AI Engineer",
+        "url": "https://remoteOK.com/remote-jobs/remote-feltsense-ai-engineer-silver-dev-1137691",
+        "tags": [
+          "design",
+          "sys admin",
+          "exec",
+          "technical",
+          "customer support",
+          "dev",
+          "testing",
+          "javascript",
+          "cloud",
+          "postgres",
+          "typescript",
+          "node",
+          "node.js",
+          "engineer",
+          "backend",
+          "digital nomad"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
     "scope": "global"
   }
 ]
