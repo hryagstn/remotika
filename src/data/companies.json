@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 6,
     "label": "Established",
-    "lastVerifiedAt": "2026-11-07T07:04:56.787Z",
+    "lastVerifiedAt": "2026-11-08T07:17:15.276Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -148,7 +148,7 @@
     "industry": "PT Rekayasa Solverindo (REKSOLINDO) has provided practical material engineering solutions for industries across Indonesia since 2005.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-11-07T07:05:01.217Z",
+    "lastVerifiedAt": "2026-11-08T07:17:19.818Z",
     "verifiedAt": "2026-09-30T11:39:29.952Z",
     "hasActiveJobs": false,
     "activeJobs": [],
@@ -172,7 +172,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-11-07T07:05:17.658Z",
+    "lastVerifiedAt": "2026-11-08T07:17:35.521Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -207,7 +207,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-11-07T07:05:33.791Z",
+    "lastVerifiedAt": "2026-11-08T07:17:50.558Z",
     "hasActiveJobs": false,
     "headquarters": "Worldwide",
     "foundationYear": "2005",
@@ -242,7 +242,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-11-07T07:05:40.097Z",
+    "lastVerifiedAt": "2026-11-08T07:17:56.305Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -358,7 +358,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-07T07:05:45.540Z",
+    "lastVerifiedAt": "2026-11-08T07:18:01.349Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -448,7 +448,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-07T07:05:48.293Z",
+    "lastVerifiedAt": "2026-11-08T07:18:03.820Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -678,7 +678,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-07T07:05:58.115Z",
+    "lastVerifiedAt": "2026-11-08T07:18:12.495Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -779,7 +779,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-07T07:05:59.809Z",
+    "lastVerifiedAt": "2026-11-08T07:18:13.977Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -842,7 +842,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-07T07:06:07.274Z",
+    "lastVerifiedAt": "2026-11-08T07:18:20.814Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -953,38 +953,6 @@
     "scope": "global"
   },
   {
-    "id": "co-347",
-    "name": "Ultimate Marketing",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "customer-support-specialist-ultimate-marketing-1137512",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-15T20:32:13.612Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Customer Support Specialist",
-        "url": "https://remoteOK.com/remote-jobs/remote-customer-support-specialist-ultimate-marketing-1137512",
-        "tags": [
-          "customer support",
-          "Remote Work",
-          "Social Media",
-          "Communication",
-          "Worldwide"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "direct-acquisitions.com",
-    "scope": "global"
-  },
-  {
     "id": "co-367",
     "name": "Wrapbook",
     "githubOrg": "wrapbook",
@@ -993,7 +961,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-07T07:06:14.778Z",
+    "lastVerifiedAt": "2026-11-08T07:18:27.421Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1207,7 +1175,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-07T07:06:34.222Z",
+    "lastVerifiedAt": "2026-11-08T07:18:44.770Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1273,7 +1241,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-07T07:06:40.006Z",
+    "lastVerifiedAt": "2026-11-08T07:18:50.038Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1311,7 +1279,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-07T07:06:47.951Z",
+    "lastVerifiedAt": "2026-11-08T07:18:57.370Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1344,7 +1312,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-07T07:06:53.237Z",
+    "lastVerifiedAt": "2026-11-08T07:19:02.293Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1394,7 +1362,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-07T07:06:57.073Z",
+    "lastVerifiedAt": "2026-11-08T07:19:05.817Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1464,7 +1432,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-07T07:07:03.905Z",
+    "lastVerifiedAt": "2026-11-08T07:19:10.444Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1586,7 +1554,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-07T07:07:09.611Z",
+    "lastVerifiedAt": "2026-11-08T07:19:15.718Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1610,52 +1578,6 @@
     "verifiedAt": "2026-11-03T08:11:44.459Z"
   },
   {
-    "id": "co-457",
-    "name": "Burkland Associates",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "burkland-associates",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-04T07:47:27.670Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Client Accounting Division Manager",
-        "url": "https://remoteOK.com/remote-jobs/remote-client-accounting-division-manager-burkland-associates-1137621",
-        "tags": [
-          "exec",
-          "accounting",
-          "amazon",
-          "hr",
-          "sys admin",
-          "technical",
-          "customer support",
-          "dev",
-          "marketing",
-          "finance",
-          "video",
-          "content writing",
-          "ops",
-          "medical",
-          "ecommerce",
-          "shopify",
-          "full time",
-          "part time",
-          "digital nomad"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "burklandassociates.com",
-    "scope": "global"
-  },
-  {
     "id": "co-458",
     "name": "Docusketch",
     "githubOrg": "docusketch",
@@ -1664,7 +1586,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-07T07:07:15.044Z",
+    "lastVerifiedAt": "2026-11-08T07:19:20.430Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1913,7 +1835,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-07T07:22:47.103Z",
+    "lastVerifiedAt": "2026-11-08T07:19:27.381Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1961,7 +1883,8 @@
     "status": "watchlist",
     "source": "remoteok",
     "watchlistReason": "org-found-zero-match",
-    "scope": "global"
+    "scope": "global",
+    "verifiedAt": "2026-11-07T07:22:47.103Z"
   },
   {
     "id": "co-466",
@@ -2003,6 +1926,150 @@
     "status": "watchlist",
     "source": "remoteok",
     "watchlistReason": "no-org-found",
+    "scope": "global"
+  },
+  {
+    "id": "co-467",
+    "name": "Salvo Software",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "salvo-software",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-11-08T07:33:35.383Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "AI Developer",
+        "url": "https://remoteOK.com/remote-jobs/remote-ai-developer-salvo-software-1137701",
+        "tags": [
+          "dev",
+          "grafana",
+          "infosec",
+          "python",
+          "docker",
+          "technical",
+          "customer support",
+          "devops",
+          "c",
+          "c plus plus",
+          "cloud",
+          "git",
+          "admin",
+          "microsoft",
+          "ops",
+          "golang",
+          "engineer",
+          "apache",
+          "linux",
+          "backend",
+          "digital nomad"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "scope": "global"
+  },
+  {
+    "id": "co-468",
+    "name": "MEYA HOLDINGS",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "meya-holdings",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-11-08T07:33:36.475Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Junior Market Analyst",
+        "url": "https://remoteOK.com/remote-jobs/remote-junior-market-analyst-meya-holdings-1137700",
+        "tags": [
+          "other",
+          "crypto",
+          "finance",
+          "remote work",
+          "remote",
+          "junior",
+          "part time",
+          "analyst"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "meyameta.com",
+    "scope": "global"
+  },
+  {
+    "id": "co-469",
+    "name": "Caringhand Home Health Solutions, Inc.",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "caringhand-home-health-solutions-inc",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-11-08T07:33:37.567Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Registered Nurse",
+        "url": "https://remoteOK.com/remote-jobs/remote-registered-nurse-caringhand-home-health-solutions-inc-1137695",
+        "tags": [
+          "education",
+          "supervisor",
+          "customer support",
+          "travel",
+          "exec",
+          "medical",
+          "full time"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "scope": "global"
+  },
+  {
+    "id": "co-470",
+    "name": "Cambridge Information Group",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "cambridge-information-group",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-11-08T07:33:38.656Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Front End Developer",
+        "url": "https://remoteOK.com/remote-jobs/remote-front-end-developer-cambridge-information-group-1137597",
+        "tags": [
+          "front end",
+          "other"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "click2apply.net",
     "scope": "global"
   }
 ]
