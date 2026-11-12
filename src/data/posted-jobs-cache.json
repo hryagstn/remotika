@@ -93,7 +93,8 @@
     "https://remotive.com/remote-jobs/software-development/head-of-engineering-2091134",
     "title:head of engineering",
     "https://remoteOK.com/remote-jobs/remote-senior-vue-developer-lemon-io-1137688",
-    "title:senior vue developer"
+    "title:senior vue developer",
+    "https://remotive.com/remote-jobs/software-development/senior-react-full-stack-developer-2091136"
   ],
   "lemon-io": [
     "https://remoteOK.com/remote-jobs/remote-senior-react-full-stack-developer-lemon-io-1137475",
@@ -109,7 +110,8 @@
     "https://remotive.com/remote-jobs/software-development/head-of-engineering-2091134",
     "title:head of engineering",
     "https://remoteOK.com/remote-jobs/remote-senior-vue-developer-lemon-io-1137688",
-    "title:senior vue developer"
+    "title:senior vue developer",
+    "https://remotive.com/remote-jobs/software-development/senior-react-full-stack-developer-2091136"
   ],
   "co-139": [
     "https://remoteOK.com/remote-jobs/remote-ai-engineer-data-apis-benzinga-1137224",
@@ -828,5 +830,29 @@
   "allara": [
     "https://remoteOK.com/remote-jobs/remote-telehealth-endocrinologist-evenings-fridays-and-or-weekends-allara-1137709",
     "title:telehealth endocrinologist evenings fridays and or weekends"
+  ],
+  "co-477": [
+    "https://remoteOK.com/remote-jobs/remote-patient-care-specialist-i-boston-scientific-1137719",
+    "title:patient care specialist i"
+  ],
+  "boston-scientific": [
+    "https://remoteOK.com/remote-jobs/remote-patient-care-specialist-i-boston-scientific-1137719",
+    "title:patient care specialist i"
+  ],
+  "co-478": [
+    "https://remoteOK.com/remote-jobs/remote-strategy-operations-coach-apac-mento-1137717",
+    "title:strategy & operations coach apac"
+  ],
+  "mento": [
+    "https://remoteOK.com/remote-jobs/remote-strategy-operations-coach-apac-mento-1137717",
+    "title:strategy & operations coach apac"
+  ],
+  "co-479": [
+    "https://remoteOK.com/remote-jobs/remote-data-engineer-addepto-1137714",
+    "title:data engineer"
+  ],
+  "addepto": [
+    "https://remoteOK.com/remote-jobs/remote-data-engineer-addepto-1137714",
+    "title:data engineer"
   ]
 }

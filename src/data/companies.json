@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 6,
     "label": "Established",
-    "lastVerifiedAt": "2026-11-11T07:44:10.332Z",
+    "lastVerifiedAt": "2026-11-12T08:15:48.968Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -39,11 +39,6 @@
       {
         "title": "Senior Solutions Engineer",
         "url": "https://job-boards.greenhouse.io/xendit/jobs/7719174003",
-        "tags": []
-      },
-      {
-        "title": "Solutions Engineer",
-        "url": "https://job-boards.greenhouse.io/xendit/jobs/8021808003",
         "tags": []
       },
       {
@@ -148,7 +143,7 @@
     "industry": "PT Rekayasa Solverindo (REKSOLINDO) has provided practical material engineering solutions for industries across Indonesia since 2005.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-11-11T07:44:14.719Z",
+    "lastVerifiedAt": "2026-11-12T08:15:53.176Z",
     "verifiedAt": "2026-09-30T11:39:29.952Z",
     "hasActiveJobs": false,
     "activeJobs": [],
@@ -172,7 +167,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-11-11T07:44:31.013Z",
+    "lastVerifiedAt": "2026-11-12T08:16:09.103Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -207,7 +202,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-11-11T07:44:48.060Z",
+    "lastVerifiedAt": "2026-11-12T08:16:25.472Z",
     "hasActiveJobs": false,
     "headquarters": "Worldwide",
     "foundationYear": "2005",
@@ -242,7 +237,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-11-11T07:44:54.633Z",
+    "lastVerifiedAt": "2026-11-12T08:16:31.599Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -312,6 +307,58 @@
         ]
       },
       {
+        "title": "Senior React Full-stack Developer",
+        "url": "https://remotive.com/remote-jobs/software-development/senior-react-full-stack-developer-2091136",
+        "tags": [
+          ".Net",
+          "android",
+          "AWS",
+          "azure",
+          "C",
+          "C#",
+          "C++",
+          "data science",
+          "fullstack",
+          "golang",
+          "ios",
+          "java",
+          "javascript",
+          "magento",
+          "node.js",
+          "php",
+          "python",
+          "react",
+          "react js",
+          "ruby/rails",
+          "scala",
+          "shopify",
+          "swift",
+          "UI/UX",
+          "wordpress",
+          "blockchain",
+          "AI/ML",
+          "automation",
+          "project management",
+          "react native",
+          "rust",
+          "unity",
+          "electron",
+          "spring",
+          "laravel",
+          "Ethereum",
+          "graphic design",
+          "Typescript ",
+          "angular ",
+          "GCP",
+          "firebase",
+          "data engineering",
+          "Site Reliability",
+          "Symfony",
+          "next.js",
+          "flutter"
+        ]
+      },
+      {
         "title": "Head of Engineering",
         "url": "https://remotive.com/remote-jobs/software-development/head-of-engineering-2091134",
         "tags": [
@@ -339,7 +386,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-11T07:45:00.342Z",
+    "lastVerifiedAt": "2026-11-12T08:16:37.619Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -429,7 +476,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-11T07:45:03.297Z",
+    "lastVerifiedAt": "2026-11-12T08:16:40.299Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -659,7 +706,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-11T07:45:13.894Z",
+    "lastVerifiedAt": "2026-11-12T08:16:50.271Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -760,7 +807,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-11T07:45:15.611Z",
+    "lastVerifiedAt": "2026-11-12T08:16:51.864Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -823,7 +870,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-11T07:45:23.580Z",
+    "lastVerifiedAt": "2026-11-12T08:16:59.646Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -942,7 +989,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-11T07:45:31.550Z",
+    "lastVerifiedAt": "2026-11-12T08:17:07.461Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1143,7 +1190,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-11T07:45:52.495Z",
+    "lastVerifiedAt": "2026-11-12T08:17:26.986Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1209,7 +1256,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-11T07:45:58.646Z",
+    "lastVerifiedAt": "2026-11-12T08:17:32.871Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1239,39 +1286,6 @@
     "verifiedAt": "2026-10-23T06:19:22.593Z"
   },
   {
-    "id": "co-444",
-    "name": "DuckDuckGo",
-    "githubOrg": "duckduckgo",
-    "githubOrgUrl": "https://github.com/duckduckgo",
-    "remoteokSlug": "duckduckgo",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-11T07:46:07.730Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Senior Backend Engineer",
-        "url": "https://remoteOK.com/remote-jobs/remote-senior-backend-engineer-duckduckgo-1137551",
-        "tags": [
-          "backend",
-          "perl",
-          "golang",
-          "javascript",
-          "node"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "org-found-zero-match",
-    "website": "spreadprivacy.com",
-    "scope": "global",
-    "verifiedAt": "2026-10-23T06:19:30.544Z"
-  },
-  {
     "id": "co-446",
     "name": "Onebrief",
     "githubOrg": "Onebrief",
@@ -1280,7 +1294,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-11T07:46:13.710Z",
+    "lastVerifiedAt": "2026-11-12T08:17:46.672Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1330,7 +1344,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-11T07:46:17.734Z",
+    "lastVerifiedAt": "2026-11-12T08:17:50.762Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1400,7 +1414,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-11T07:46:22.785Z",
+    "lastVerifiedAt": "2026-11-12T08:17:55.855Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1522,7 +1536,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-11T07:46:28.810Z",
+    "lastVerifiedAt": "2026-11-12T08:18:01.829Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1554,7 +1568,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-11T07:46:34.732Z",
+    "lastVerifiedAt": "2026-11-12T08:18:07.622Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1581,46 +1595,6 @@
     "watchlistReason": "org-found-zero-match",
     "scope": "global",
     "verifiedAt": "2026-11-04T07:47:32.485Z"
-  },
-  {
-    "id": "co-459",
-    "name": "MultiplyMii",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "multiplymii",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-04T07:47:33.656Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Brand Protection & Marketplace Compliance Analyst",
-        "url": "https://remoteOK.com/remote-jobs/remote-brand-protection-marketplace-compliance-analyst-multiplymii-1136687",
-        "tags": [
-          "analyst",
-          "amazon",
-          "salesforce",
-          "technical",
-          "recruiter",
-          "customer support",
-          "marketing",
-          "speech",
-          "exec",
-          "content writing",
-          "excel",
-          "sales",
-          "ecommerce",
-          "full time"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "scope": "global"
   },
   {
     "id": "co-461",
@@ -1720,7 +1694,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-11T07:46:42.669Z",
+    "lastVerifiedAt": "2026-11-12T08:18:18.895Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -2175,6 +2149,121 @@
     "source": "remoteok",
     "watchlistReason": "no-org-found",
     "website": "allarahealth.com",
+    "scope": "global"
+  },
+  {
+    "id": "co-477",
+    "name": "Boston Scientific",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "boston-scientific",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-11-12T08:34:26.020Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Patient Care Specialist I",
+        "url": "https://remoteOK.com/remote-jobs/remote-patient-care-specialist-i-boston-scientific-1137719",
+        "tags": [
+          "design",
+          "sys admin",
+          "education",
+          "technical",
+          "customer support",
+          "testing",
+          "telecommuting",
+          "exec",
+          "sales",
+          "medical",
+          "recruiter",
+          "digital nomad"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "scope": "global"
+  },
+  {
+    "id": "co-478",
+    "name": "Mento",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "mento",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-11-12T08:34:27.150Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Strategy & Operations Coach APAC",
+        "url": "https://remoteOK.com/remote-jobs/remote-strategy-operations-coach-apac-mento-1137717",
+        "tags": [
+          "education",
+          "marketing",
+          "exec",
+          "senior",
+          "ops",
+          "part time"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "scope": "global"
+  },
+  {
+    "id": "co-479",
+    "name": "Addepto",
+    "githubOrg": "Addepto",
+    "githubOrgUrl": "https://github.com/Addepto",
+    "remoteokSlug": "addepto",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-11-12T08:34:31.998Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Data Engineer",
+        "url": "https://remoteOK.com/remote-jobs/remote-data-engineer-addepto-1137714",
+        "tags": [
+          "design",
+          "saas",
+          "salesforce",
+          "python",
+          "education",
+          "consulting",
+          "customer support",
+          "testing",
+          "marketing",
+          "dev",
+          "finance",
+          "cloud",
+          "git",
+          "stats",
+          "sys admin",
+          "engineer",
+          "apache",
+          "digital nomad"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "addepto.com",
     "scope": "global"
   }
 ]
