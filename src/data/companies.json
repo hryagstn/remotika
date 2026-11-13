@@ -8,9 +8,14 @@
     "industry": null,
     "verifiedIndonesianCount": 6,
     "label": "Established",
-    "lastVerifiedAt": "2026-11-12T08:15:48.968Z",
+    "lastVerifiedAt": "2026-11-13T07:53:10.925Z",
     "hasActiveJobs": true,
     "activeJobs": [
+      {
+        "title": "Customer Success Manager (ID/MY)",
+        "url": "https://job-boards.greenhouse.io/xendit/jobs/8201138003",
+        "tags": []
+      },
       {
         "title": "FinOps Recons Associate",
         "url": "https://job-boards.greenhouse.io/xendit/jobs/8034310003",
@@ -143,7 +148,7 @@
     "industry": "PT Rekayasa Solverindo (REKSOLINDO) has provided practical material engineering solutions for industries across Indonesia since 2005.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-11-12T08:15:53.176Z",
+    "lastVerifiedAt": "2026-11-13T07:53:15.517Z",
     "verifiedAt": "2026-09-30T11:39:29.952Z",
     "hasActiveJobs": false,
     "activeJobs": [],
@@ -167,7 +172,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-11-12T08:16:09.103Z",
+    "lastVerifiedAt": "2026-11-13T07:53:31.907Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -202,7 +207,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-11-12T08:16:25.472Z",
+    "lastVerifiedAt": "2026-11-13T07:53:49.089Z",
     "hasActiveJobs": false,
     "headquarters": "Worldwide",
     "foundationYear": "2005",
@@ -237,7 +242,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-11-12T08:16:31.599Z",
+    "lastVerifiedAt": "2026-11-13T07:53:55.787Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -386,7 +391,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-12T08:16:37.619Z",
+    "lastVerifiedAt": "2026-11-13T07:54:01.656Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -476,7 +481,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-12T08:16:40.299Z",
+    "lastVerifiedAt": "2026-11-13T07:54:04.477Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -706,7 +711,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-12T08:16:50.271Z",
+    "lastVerifiedAt": "2026-11-13T07:54:14.524Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -807,7 +812,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-12T08:16:51.864Z",
+    "lastVerifiedAt": "2026-11-13T07:54:16.124Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -870,7 +875,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-12T08:16:59.646Z",
+    "lastVerifiedAt": "2026-11-13T07:54:24.095Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -954,33 +959,6 @@
     "scope": "global"
   },
   {
-    "id": "co-306",
-    "name": "QuickMail",
-    "githubOrg": "QuickMail",
-    "githubOrgUrl": "https://github.com/QuickMail",
-    "remoteokSlug": "technical-customer-support-quickmail-1137506",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-13T22:04:36.287Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Technical Customer Support",
-        "url": "https://remoteOK.com/remote-jobs/remote-technical-customer-support-quickmail-1137506",
-        "tags": [
-          "customer support"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "org-found-zero-match",
-    "scope": "global"
-  },
-  {
     "id": "co-367",
     "name": "Wrapbook",
     "githubOrg": "wrapbook",
@@ -989,7 +967,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-12T08:17:07.461Z",
+    "lastVerifiedAt": "2026-11-13T07:54:31.606Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1190,7 +1168,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-12T08:17:26.986Z",
+    "lastVerifiedAt": "2026-11-13T07:54:51.282Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1256,7 +1234,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-12T08:17:32.871Z",
+    "lastVerifiedAt": "2026-11-13T07:54:57.447Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1294,7 +1272,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-12T08:17:46.672Z",
+    "lastVerifiedAt": "2026-11-13T07:55:05.615Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1344,7 +1322,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-12T08:17:50.762Z",
+    "lastVerifiedAt": "2026-11-13T07:55:09.677Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1414,7 +1392,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-12T08:17:55.855Z",
+    "lastVerifiedAt": "2026-11-13T07:55:15.149Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1536,7 +1514,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-12T08:18:01.829Z",
+    "lastVerifiedAt": "2026-11-13T07:55:21.010Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1568,7 +1546,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-12T08:18:07.622Z",
+    "lastVerifiedAt": "2026-11-13T07:55:26.708Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1694,7 +1672,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-12T08:18:18.895Z",
+    "lastVerifiedAt": "2026-11-13T07:55:38.028Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -2230,7 +2208,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-12T08:34:31.998Z",
+    "lastVerifiedAt": "2026-11-13T07:55:45.292Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -2264,6 +2242,47 @@
     "source": "remoteok",
     "watchlistReason": "org-found-zero-match",
     "website": "addepto.com",
+    "scope": "global",
+    "verifiedAt": "2026-11-12T08:34:31.998Z"
+  },
+  {
+    "id": "co-480",
+    "name": "MultiplyMii",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "multiplymii",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-11-13T08:12:24.490Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Brand Protection & Marketplace Compliance Analyst",
+        "url": "https://remoteOK.com/remote-jobs/remote-brand-protection-marketplace-compliance-analyst-multiplymii-1136687",
+        "tags": [
+          "analyst",
+          "amazon",
+          "salesforce",
+          "technical",
+          "recruiter",
+          "customer support",
+          "marketing",
+          "speech",
+          "exec",
+          "content writing",
+          "excel",
+          "sales",
+          "ecommerce",
+          "full time"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
     "scope": "global"
   }
 ]
