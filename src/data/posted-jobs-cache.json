@@ -98,7 +98,9 @@
     "title:head of engineering",
     "https://remoteOK.com/remote-jobs/remote-senior-vue-developer-lemon-io-1137688",
     "title:senior vue developer",
-    "https://remotive.com/remote-jobs/software-development/senior-react-full-stack-developer-2091136"
+    "https://remotive.com/remote-jobs/software-development/senior-react-full-stack-developer-2091136",
+    "https://remotive.com/remote-jobs/data/senior-data-engineer-2091137",
+    "title:senior data engineer"
   ],
   "lemon-io": [
     "https://remoteOK.com/remote-jobs/remote-senior-react-full-stack-developer-lemon-io-1137475",
@@ -115,7 +117,9 @@
     "title:head of engineering",
     "https://remoteOK.com/remote-jobs/remote-senior-vue-developer-lemon-io-1137688",
     "title:senior vue developer",
-    "https://remotive.com/remote-jobs/software-development/senior-react-full-stack-developer-2091136"
+    "https://remotive.com/remote-jobs/software-development/senior-react-full-stack-developer-2091136",
+    "https://remotive.com/remote-jobs/data/senior-data-engineer-2091137",
+    "title:senior data engineer"
   ],
   "co-139": [
     "https://remoteOK.com/remote-jobs/remote-ai-engineer-data-apis-benzinga-1137224",
@@ -858,5 +862,21 @@
   "addepto": [
     "https://remoteOK.com/remote-jobs/remote-data-engineer-addepto-1137714",
     "title:data engineer"
+  ],
+  "co-481": [
+    "https://remoteOK.com/remote-jobs/remote-software-engineer-ai-tooling-supabase-1137793",
+    "title:software engineer ai tooling"
+  ],
+  "supabase": [
+    "https://remoteOK.com/remote-jobs/remote-software-engineer-ai-tooling-supabase-1137793",
+    "title:software engineer ai tooling"
+  ],
+  "co-482": [
+    "https://remoteOK.com/remote-jobs/remote-research-engineer-privacy-and-anonymization-pragmatike-1137792",
+    "title:research engineer privacy and anonymization"
+  ],
+  "pragmatike": [
+    "https://remoteOK.com/remote-jobs/remote-research-engineer-privacy-and-anonymization-pragmatike-1137792",
+    "title:research engineer privacy and anonymization"
   ]
 }

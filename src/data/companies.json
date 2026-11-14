@@ -6,9 +6,9 @@
     "githubOrgUrl": "https://github.com/xendit",
     "remoteokSlug": "xendit",
     "industry": null,
-    "verifiedIndonesianCount": 6,
+    "verifiedIndonesianCount": 7,
     "label": "Established",
-    "lastVerifiedAt": "2026-11-13T07:53:10.925Z",
+    "lastVerifiedAt": "2026-11-14T07:35:14.492Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -93,6 +93,12 @@
         "locationRaw": "Indonesia"
       },
       {
+        "id": "m-galihputera",
+        "githubLogin": "galihputera",
+        "githubProfileUrl": "https://github.com/galihputera",
+        "locationRaw": "Jakarta"
+      },
+      {
         "id": "m-ndyhrdy",
         "githubLogin": "ndyhrdy",
         "githubProfileUrl": "https://github.com/ndyhrdy",
@@ -148,7 +154,7 @@
     "industry": "PT Rekayasa Solverindo (REKSOLINDO) has provided practical material engineering solutions for industries across Indonesia since 2005.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-11-13T07:53:15.517Z",
+    "lastVerifiedAt": "2026-11-14T07:35:18.761Z",
     "verifiedAt": "2026-09-30T11:39:29.952Z",
     "hasActiveJobs": false,
     "activeJobs": [],
@@ -172,7 +178,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-11-13T07:53:31.907Z",
+    "lastVerifiedAt": "2026-11-14T07:35:35.217Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -207,7 +213,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-11-13T07:53:49.089Z",
+    "lastVerifiedAt": "2026-11-14T07:35:52.068Z",
     "hasActiveJobs": false,
     "headquarters": "Worldwide",
     "foundationYear": "2005",
@@ -242,7 +248,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-11-13T07:53:55.787Z",
+    "lastVerifiedAt": "2026-11-14T07:35:59.215Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -309,6 +315,61 @@
           "full stack",
           "remote",
           "remote work"
+        ]
+      },
+      {
+        "title": "Senior Data Engineer",
+        "url": "https://remotive.com/remote-jobs/data/senior-data-engineer-2091137",
+        "tags": [
+          ".Net",
+          "android",
+          "apache",
+          "AWS",
+          "azure",
+          "C",
+          "C#",
+          "C++",
+          "data science",
+          "fullstack",
+          "golang",
+          "ios",
+          "java",
+          "javascript",
+          "magento",
+          "node.js",
+          "php",
+          "python",
+          "react",
+          "ruby/rails",
+          "scala",
+          "shopify",
+          "sql",
+          "swift",
+          "UI/UX",
+          "wordpress",
+          "blockchain",
+          "AI/ML",
+          "automation",
+          "project management",
+          "react native",
+          "rust",
+          "unity",
+          "electron",
+          "spring",
+          "data analysis",
+          "laravel",
+          "Ethereum",
+          "graphic design",
+          "Typescript ",
+          "angular ",
+          "GCP",
+          "firebase",
+          "Snowflake",
+          "Site Reliability",
+          "Symfony",
+          "next.js",
+          "infrastructure",
+          "flutter"
         ]
       },
       {
@@ -391,7 +452,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-13T07:54:01.656Z",
+    "lastVerifiedAt": "2026-11-14T07:36:05.217Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -481,7 +542,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-13T07:54:04.477Z",
+    "lastVerifiedAt": "2026-11-14T07:36:07.985Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -711,7 +772,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-13T07:54:14.524Z",
+    "lastVerifiedAt": "2026-11-14T07:36:18.032Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -812,7 +873,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-13T07:54:16.124Z",
+    "lastVerifiedAt": "2026-11-14T07:36:19.693Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -875,7 +936,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-13T07:54:24.095Z",
+    "lastVerifiedAt": "2026-11-14T07:36:27.143Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -967,7 +1028,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-13T07:54:31.606Z",
+    "lastVerifiedAt": "2026-11-14T07:36:33.069Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1168,7 +1229,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-13T07:54:51.282Z",
+    "lastVerifiedAt": "2026-11-14T07:36:51.782Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1234,7 +1295,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-13T07:54:57.447Z",
+    "lastVerifiedAt": "2026-11-14T07:36:57.875Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1272,7 +1333,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-13T07:55:05.615Z",
+    "lastVerifiedAt": "2026-11-14T07:37:03.560Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1322,7 +1383,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-13T07:55:09.677Z",
+    "lastVerifiedAt": "2026-11-14T07:37:07.827Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1392,7 +1453,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-13T07:55:15.149Z",
+    "lastVerifiedAt": "2026-11-14T07:37:13.454Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1514,7 +1575,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-13T07:55:21.010Z",
+    "lastVerifiedAt": "2026-11-14T07:37:19.425Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1546,7 +1607,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-13T07:55:26.708Z",
+    "lastVerifiedAt": "2026-11-14T07:37:24.931Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1672,7 +1733,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-13T07:55:38.028Z",
+    "lastVerifiedAt": "2026-11-14T07:37:32.500Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1845,39 +1906,6 @@
     "source": "remoteok",
     "watchlistReason": "no-org-found",
     "website": "meyameta.com",
-    "scope": "global"
-  },
-  {
-    "id": "co-469",
-    "name": "Caringhand Home Health Solutions, Inc.",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "caringhand-home-health-solutions-inc",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-08T07:33:37.567Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Registered Nurse",
-        "url": "https://remoteOK.com/remote-jobs/remote-registered-nurse-caringhand-home-health-solutions-inc-1137695",
-        "tags": [
-          "education",
-          "supervisor",
-          "customer support",
-          "travel",
-          "exec",
-          "medical",
-          "full time"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
     "scope": "global"
   },
   {
@@ -2208,7 +2236,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-13T07:55:45.292Z",
+    "lastVerifiedAt": "2026-11-14T07:37:39.305Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -2246,35 +2274,76 @@
     "verifiedAt": "2026-11-12T08:34:31.998Z"
   },
   {
-    "id": "co-480",
-    "name": "MultiplyMii",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "multiplymii",
+    "id": "co-481",
+    "name": "Supabase",
+    "githubOrg": "supabase",
+    "githubOrgUrl": "https://github.com/supabase",
+    "remoteokSlug": "supabase",
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-13T08:12:24.490Z",
+    "lastVerifiedAt": "2026-11-14T07:53:32.384Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
-        "title": "Brand Protection & Marketplace Compliance Analyst",
-        "url": "https://remoteOK.com/remote-jobs/remote-brand-protection-marketplace-compliance-analyst-multiplymii-1136687",
+        "title": "Software Engineer AI Tooling",
+        "url": "https://remoteOK.com/remote-jobs/remote-software-engineer-ai-tooling-supabase-1137793",
         "tags": [
-          "analyst",
-          "amazon",
-          "salesforce",
-          "technical",
-          "recruiter",
+          "dev",
+          "design",
+          "front end",
           "customer support",
+          "testing",
           "marketing",
-          "speech",
-          "exec",
+          "virtual assistant",
+          "javascript",
+          "education",
+          "typescript",
+          "sys admin",
+          "medical",
+          "engineer",
+          "backend",
+          "digital nomad"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "scope": "global"
+  },
+  {
+    "id": "co-482",
+    "name": "Pragmatike",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "pragmatike",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-11-14T07:53:33.560Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Research Engineer Privacy and Anonymization",
+        "url": "https://remoteOK.com/remote-jobs/remote-research-engineer-privacy-and-anonymization-pragmatike-1137792",
+        "tags": [
+          "design",
+          "embedded",
+          "infosec",
+          "python",
+          "education",
+          "technical",
+          "finance",
           "content writing",
-          "excel",
-          "sales",
-          "ecommerce",
-          "full time"
+          "ops",
+          "medical",
+          "recruiter",
+          "engineer",
+          "full time",
+          "digital nomad"
         ]
       }
     ],
