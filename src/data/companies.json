@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 7,
     "label": "Established",
-    "lastVerifiedAt": "2026-11-15T07:49:00.386Z",
+    "lastVerifiedAt": "2026-11-16T07:57:03.052Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -22,8 +22,18 @@
         "tags": []
       },
       {
+        "title": "Product Manager - Cards",
+        "url": "https://job-boards.greenhouse.io/xendit/jobs/8204620003",
+        "tags": []
+      },
+      {
         "title": "Product Manager - Developer Experience",
         "url": "https://job-boards.greenhouse.io/xendit/jobs/7992374003",
+        "tags": []
+      },
+      {
+        "title": "Product Manager - Payments Acceptance (Merchant of Record)",
+        "url": "https://job-boards.greenhouse.io/xendit/jobs/8204621003",
         "tags": []
       },
       {
@@ -154,7 +164,7 @@
     "industry": "PT Rekayasa Solverindo (REKSOLINDO) has provided practical material engineering solutions for industries across Indonesia since 2005.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-11-15T07:49:04.427Z",
+    "lastVerifiedAt": "2026-11-16T07:57:07.272Z",
     "verifiedAt": "2026-09-30T11:39:29.952Z",
     "hasActiveJobs": false,
     "activeJobs": [],
@@ -178,7 +188,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-11-15T07:49:20.112Z",
+    "lastVerifiedAt": "2026-11-16T07:57:23.426Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -213,7 +223,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-11-15T07:49:36.181Z",
+    "lastVerifiedAt": "2026-11-16T07:57:40.371Z",
     "hasActiveJobs": false,
     "headquarters": "Worldwide",
     "foundationYear": "2005",
@@ -248,7 +258,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-11-15T07:49:42.561Z",
+    "lastVerifiedAt": "2026-11-16T07:57:47.008Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -452,7 +462,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-15T07:49:48.225Z",
+    "lastVerifiedAt": "2026-11-16T07:57:52.600Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -542,7 +552,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-15T07:49:50.789Z",
+    "lastVerifiedAt": "2026-11-16T07:57:55.203Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -772,7 +782,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-15T07:50:00.280Z",
+    "lastVerifiedAt": "2026-11-16T07:58:05.260Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -873,7 +883,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-15T07:50:01.896Z",
+    "lastVerifiedAt": "2026-11-16T07:58:06.792Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -936,7 +946,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-15T07:50:09.366Z",
+    "lastVerifiedAt": "2026-11-16T07:58:14.981Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1028,7 +1038,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-15T07:50:15.124Z",
+    "lastVerifiedAt": "2026-11-16T07:58:22.564Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1229,7 +1239,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-15T07:50:33.164Z",
+    "lastVerifiedAt": "2026-11-16T07:58:41.082Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1295,7 +1305,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-15T07:50:39.296Z",
+    "lastVerifiedAt": "2026-11-16T07:58:47.355Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1333,7 +1343,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-15T07:50:44.724Z",
+    "lastVerifiedAt": "2026-11-16T07:58:53.143Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1383,7 +1393,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-15T07:50:49.444Z",
+    "lastVerifiedAt": "2026-11-16T07:58:57.059Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1453,7 +1463,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-15T07:50:54.488Z",
+    "lastVerifiedAt": "2026-11-16T07:59:03.193Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1575,7 +1585,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-15T07:51:00.235Z",
+    "lastVerifiedAt": "2026-11-16T07:59:08.994Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1607,7 +1617,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-15T07:51:05.491Z",
+    "lastVerifiedAt": "2026-11-16T07:59:14.422Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1733,7 +1743,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-15T07:51:12.782Z",
+    "lastVerifiedAt": "2026-11-16T07:59:25.147Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1888,45 +1898,6 @@
     "source": "remoteok",
     "watchlistReason": "no-org-found",
     "website": "click2apply.net",
-    "scope": "global"
-  },
-  {
-    "id": "co-471",
-    "name": "Harvey",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "harvey",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-09T08:13:36.852Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Account Executive Enterprise",
-        "url": "https://remoteOK.com/remote-jobs/remote-account-executive-enterprise-harvey-1137703",
-        "tags": [
-          "saas",
-          "technical",
-          "customer support",
-          "dev",
-          "marketing",
-          "finance",
-          "exec",
-          "legal",
-          "sales",
-          "engineer",
-          "recruiter",
-          "digital nomad"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "harveyai.notion.site",
     "scope": "global"
   },
   {
@@ -2189,7 +2160,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-15T07:51:19.287Z",
+    "lastVerifiedAt": "2026-11-16T07:59:31.700Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -2235,7 +2206,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-15T07:51:30.249Z",
+    "lastVerifiedAt": "2026-11-16T07:59:42.683Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
