@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 7,
     "label": "Established",
-    "lastVerifiedAt": "2026-11-16T07:57:03.052Z",
+    "lastVerifiedAt": "2026-11-17T09:11:00.862Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -22,18 +22,18 @@
         "tags": []
       },
       {
-        "title": "Product Manager - Cards",
-        "url": "https://job-boards.greenhouse.io/xendit/jobs/8204620003",
+        "title": "Principal Solutions Engineer",
+        "url": "https://job-boards.greenhouse.io/xendit/jobs/7719174003",
+        "tags": []
+      },
+      {
+        "title": "Product Director",
+        "url": "https://job-boards.greenhouse.io/xendit/jobs/8204645003",
         "tags": []
       },
       {
         "title": "Product Manager - Developer Experience",
         "url": "https://job-boards.greenhouse.io/xendit/jobs/7992374003",
-        "tags": []
-      },
-      {
-        "title": "Product Manager - Payments Acceptance (Merchant of Record)",
-        "url": "https://job-boards.greenhouse.io/xendit/jobs/8204621003",
         "tags": []
       },
       {
@@ -47,13 +47,18 @@
         "tags": []
       },
       {
-        "title": "Senior Product Manager - XenPlatform",
-        "url": "https://job-boards.greenhouse.io/xendit/jobs/8032565003",
+        "title": "Senior Product Manager - Cards",
+        "url": "https://job-boards.greenhouse.io/xendit/jobs/8204620003",
         "tags": []
       },
       {
-        "title": "Senior Solutions Engineer",
-        "url": "https://job-boards.greenhouse.io/xendit/jobs/7719174003",
+        "title": "Senior Product Manager - Payments Acceptance (Merchant of Record)",
+        "url": "https://job-boards.greenhouse.io/xendit/jobs/8204621003",
+        "tags": []
+      },
+      {
+        "title": "Senior Product Manager - XenPlatform",
+        "url": "https://job-boards.greenhouse.io/xendit/jobs/8032565003",
         "tags": []
       },
       {
@@ -164,7 +169,7 @@
     "industry": "PT Rekayasa Solverindo (REKSOLINDO) has provided practical material engineering solutions for industries across Indonesia since 2005.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-11-16T07:57:07.272Z",
+    "lastVerifiedAt": "2026-11-17T09:11:05.252Z",
     "verifiedAt": "2026-09-30T11:39:29.952Z",
     "hasActiveJobs": false,
     "activeJobs": [],
@@ -188,7 +193,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-11-16T07:57:23.426Z",
+    "lastVerifiedAt": "2026-11-17T09:11:21.386Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -223,7 +228,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-11-16T07:57:40.371Z",
+    "lastVerifiedAt": "2026-11-17T09:11:38.536Z",
     "hasActiveJobs": false,
     "headquarters": "Worldwide",
     "foundationYear": "2005",
@@ -258,7 +263,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-11-16T07:57:47.008Z",
+    "lastVerifiedAt": "2026-11-17T09:11:45.036Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -462,7 +467,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-16T07:57:52.600Z",
+    "lastVerifiedAt": "2026-11-17T09:11:50.648Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -552,7 +557,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-16T07:57:55.203Z",
+    "lastVerifiedAt": "2026-11-17T09:11:53.300Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -782,7 +787,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-16T07:58:05.260Z",
+    "lastVerifiedAt": "2026-11-17T09:12:03.643Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -803,38 +808,6 @@
     "watchlistReason": "org-found-zero-match",
     "website": "mirantis.com",
     "verifiedAt": "2026-09-13T19:31:34.703Z",
-    "scope": "global"
-  },
-  {
-    "id": "co-176",
-    "name": "Sanctuary Computer",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "senior-shopify-developer-sanctuary-computer-1137405",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-09-19T19:30:42.440Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Head of Technology",
-        "url": "https://remoteOK.com/remote-jobs/remote-head-of-technology-sanctuary-computer-1137537",
-        "tags": [
-          "dev",
-          "engineer",
-          "senior",
-          "full stack",
-          "front end"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "garden3d.notion.site",
     "scope": "global"
   },
   {
@@ -883,7 +856,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-16T07:58:06.792Z",
+    "lastVerifiedAt": "2026-11-17T09:12:05.353Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -946,7 +919,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-16T07:58:14.981Z",
+    "lastVerifiedAt": "2026-11-17T09:12:13.460Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1038,7 +1011,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-16T07:58:22.564Z",
+    "lastVerifiedAt": "2026-11-17T09:12:19.727Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1239,7 +1212,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-16T07:58:41.082Z",
+    "lastVerifiedAt": "2026-11-17T09:12:39.115Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1305,7 +1278,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-16T07:58:47.355Z",
+    "lastVerifiedAt": "2026-11-17T09:12:45.306Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1343,7 +1316,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-16T07:58:53.143Z",
+    "lastVerifiedAt": "2026-11-17T09:12:51.372Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1393,7 +1366,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-16T07:58:57.059Z",
+    "lastVerifiedAt": "2026-11-17T09:12:55.232Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1463,7 +1436,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-16T07:59:03.193Z",
+    "lastVerifiedAt": "2026-11-17T09:13:00.541Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1585,7 +1558,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-16T07:59:08.994Z",
+    "lastVerifiedAt": "2026-11-17T09:13:06.478Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1617,7 +1590,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-16T07:59:14.422Z",
+    "lastVerifiedAt": "2026-11-17T09:13:12.600Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1644,36 +1617,6 @@
     "watchlistReason": "org-found-zero-match",
     "scope": "global",
     "verifiedAt": "2026-11-04T07:47:32.485Z"
-  },
-  {
-    "id": "co-461",
-    "name": "Ringbook Limited",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "ringbook-limited",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-05T08:13:24.632Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Tech lead",
-        "url": "https://remoteOK.com/remote-jobs/remote-tech-lead-ringbook-limited-1137673",
-        "tags": [
-          "dev",
-          "exec",
-          "accounting",
-          "saas"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "scope": "global"
   },
   {
     "id": "co-463",
@@ -1743,7 +1686,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-16T07:59:25.147Z",
+    "lastVerifiedAt": "2026-11-17T09:13:20.610Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -2160,7 +2103,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-16T07:59:31.700Z",
+    "lastVerifiedAt": "2026-11-17T09:13:27.540Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -2206,7 +2149,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-16T07:59:42.683Z",
+    "lastVerifiedAt": "2026-11-17T09:13:38.873Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -2269,6 +2212,46 @@
           "engineer",
           "full time",
           "digital nomad"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "scope": "global"
+  },
+  {
+    "id": "co-483",
+    "name": "MultiplyMii",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "multiplymii",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-11-17T09:29:55.430Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Brand Protection & Marketplace Compliance Analyst",
+        "url": "https://remoteOK.com/remote-jobs/remote-brand-protection-marketplace-compliance-analyst-multiplymii-1136687",
+        "tags": [
+          "analyst",
+          "amazon",
+          "salesforce",
+          "technical",
+          "recruiter",
+          "customer support",
+          "marketing",
+          "speech",
+          "exec",
+          "content writing",
+          "excel",
+          "sales",
+          "ecommerce",
+          "full time"
         ]
       }
     ],
