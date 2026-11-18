@@ -45,7 +45,10 @@
     "https://job-boards.greenhouse.io/xendit/jobs/8204621003",
     "title:product manager - payments acceptance (merchant of record)",
     "https://job-boards.greenhouse.io/xendit/jobs/8204645003",
-    "title:product director"
+    "title:product director",
+    "title:principal solutions engineer",
+    "title:senior product manager - cards",
+    "title:senior product manager - payments acceptance (merchant of record)"
   ],
   "xendit": [
     "https://job-boards.greenhouse.io/xendit/jobs/7813420003",
@@ -93,7 +96,10 @@
     "https://job-boards.greenhouse.io/xendit/jobs/8204621003",
     "title:product manager - payments acceptance (merchant of record)",
     "https://job-boards.greenhouse.io/xendit/jobs/8204645003",
-    "title:product director"
+    "title:product director",
+    "title:principal solutions engineer",
+    "title:senior product manager - cards",
+    "title:senior product manager - payments acceptance (merchant of record)"
   ],
   "co-123": [
     "https://remoteOK.com/remote-jobs/remote-senior-react-full-stack-developer-lemon-io-1137475",
@@ -890,5 +896,17 @@
   "pragmatike": [
     "https://remoteOK.com/remote-jobs/remote-research-engineer-privacy-and-anonymization-pragmatike-1137792",
     "title:research engineer privacy and anonymization"
+  ],
+  "co-484": [
+    "https://remoteOK.com/remote-jobs/remote-expert-talent-pool-physical-ai-clera-1137799",
+    "title:expert talent pool physical ai",
+    "https://remoteOK.com/remote-jobs/remote-expert-talent-pool-feedback-and-alignment-clera-1137798",
+    "title:expert talent pool feedback and alignment"
+  ],
+  "clera": [
+    "https://remoteOK.com/remote-jobs/remote-expert-talent-pool-physical-ai-clera-1137799",
+    "title:expert talent pool physical ai",
+    "https://remoteOK.com/remote-jobs/remote-expert-talent-pool-feedback-and-alignment-clera-1137798",
+    "title:expert talent pool feedback and alignment"
   ]
 }

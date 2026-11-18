@@ -6,9 +6,9 @@
     "githubOrgUrl": "https://github.com/xendit",
     "remoteokSlug": "xendit",
     "industry": null,
-    "verifiedIndonesianCount": 7,
+    "verifiedIndonesianCount": 6,
     "label": "Established",
-    "lastVerifiedAt": "2026-11-17T09:11:00.862Z",
+    "lastVerifiedAt": "2026-11-18T08:31:21.902Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -118,12 +118,6 @@
         "githubLogin": "ndyhrdy",
         "githubProfileUrl": "https://github.com/ndyhrdy",
         "locationRaw": "Makassar, Indonesia"
-      },
-      {
-        "id": "m-azaky",
-        "githubLogin": "azaky",
-        "githubProfileUrl": "https://github.com/azaky",
-        "locationRaw": "Jakarta, Indonesia"
       }
     ],
     "jobSources": {
@@ -169,7 +163,7 @@
     "industry": "PT Rekayasa Solverindo (REKSOLINDO) has provided practical material engineering solutions for industries across Indonesia since 2005.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-11-17T09:11:05.252Z",
+    "lastVerifiedAt": "2026-11-18T08:31:25.895Z",
     "verifiedAt": "2026-09-30T11:39:29.952Z",
     "hasActiveJobs": false,
     "activeJobs": [],
@@ -193,7 +187,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-11-17T09:11:21.386Z",
+    "lastVerifiedAt": "2026-11-18T08:31:42.243Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -228,7 +222,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-11-17T09:11:38.536Z",
+    "lastVerifiedAt": "2026-11-18T08:31:58.997Z",
     "hasActiveJobs": false,
     "headquarters": "Worldwide",
     "foundationYear": "2005",
@@ -263,7 +257,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-11-17T09:11:45.036Z",
+    "lastVerifiedAt": "2026-11-18T08:32:05.476Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -467,7 +461,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-17T09:11:50.648Z",
+    "lastVerifiedAt": "2026-11-18T08:32:11.156Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -557,7 +551,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-17T09:11:53.300Z",
+    "lastVerifiedAt": "2026-11-18T08:32:13.849Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -787,7 +781,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-17T09:12:03.643Z",
+    "lastVerifiedAt": "2026-11-18T08:32:23.674Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -856,7 +850,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-17T09:12:05.353Z",
+    "lastVerifiedAt": "2026-11-18T08:32:25.289Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -919,7 +913,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-17T09:12:13.460Z",
+    "lastVerifiedAt": "2026-11-18T08:32:33.374Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1011,7 +1005,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-17T09:12:19.727Z",
+    "lastVerifiedAt": "2026-11-18T08:32:39.875Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1161,49 +1155,6 @@
     "scope": "global"
   },
   {
-    "id": "co-413",
-    "name": "Askable",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "software-engineer-ai-coding-tasks-askable-1137538",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-10-18T19:38:48.714Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Software Engineer, AI Coding Tasks",
-        "url": "https://remotive.com/remote-jobs/software-development/software-engineer-ai-coding-tasks-2091158",
-        "tags": [
-          "C++",
-          "docker",
-          "git",
-          "go",
-          "java",
-          "python",
-          "security",
-          "AI/ML",
-          "rust",
-          "Typescript ",
-          "distributed systems",
-          "SOLID",
-          "Linux/Unix",
-          "testing",
-          "infrastructure"
-        ],
-        "salary": "$1000 per task"
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "askable.com",
-    "scope": "global"
-  },
-  {
     "id": "co-437",
     "name": "Sotheby’s",
     "githubOrg": "sothebys",
@@ -1212,7 +1163,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-17T09:12:39.115Z",
+    "lastVerifiedAt": "2026-11-18T08:32:58.792Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1278,7 +1229,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-17T09:12:45.306Z",
+    "lastVerifiedAt": "2026-11-18T08:33:05.270Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1316,7 +1267,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-17T09:12:51.372Z",
+    "lastVerifiedAt": "2026-11-18T08:33:11.023Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1366,7 +1317,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-17T09:12:55.232Z",
+    "lastVerifiedAt": "2026-11-18T08:33:14.856Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1376,9 +1327,9 @@
           "dev",
           "senior",
           "javascript",
+          "api",
           "typescript",
-          "full stack",
-          "api"
+          "full stack"
         ]
       }
     ],
@@ -1436,7 +1387,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-17T09:13:00.541Z",
+    "lastVerifiedAt": "2026-11-18T08:33:20.100Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1558,7 +1509,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-17T09:13:06.478Z",
+    "lastVerifiedAt": "2026-11-18T08:33:25.821Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1590,7 +1541,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-17T09:13:12.600Z",
+    "lastVerifiedAt": "2026-11-18T08:33:31.324Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1686,7 +1637,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-17T09:13:20.610Z",
+    "lastVerifiedAt": "2026-11-18T08:33:39.247Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -2103,7 +2054,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-17T09:13:27.540Z",
+    "lastVerifiedAt": "2026-11-18T08:33:46.062Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -2149,7 +2100,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-17T09:13:38.873Z",
+    "lastVerifiedAt": "2026-11-18T08:33:57.377Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -2223,35 +2174,41 @@
     "scope": "global"
   },
   {
-    "id": "co-483",
-    "name": "MultiplyMii",
+    "id": "co-484",
+    "name": "Clera",
     "githubOrg": "",
     "githubOrgUrl": "",
-    "remoteokSlug": "multiplymii",
+    "remoteokSlug": "clera",
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-17T09:29:55.430Z",
+    "lastVerifiedAt": "2026-11-18T08:50:12.899Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
-        "title": "Brand Protection & Marketplace Compliance Analyst",
-        "url": "https://remoteOK.com/remote-jobs/remote-brand-protection-marketplace-compliance-analyst-multiplymii-1136687",
+        "title": "Expert Talent Pool Physical AI",
+        "url": "https://remoteOK.com/remote-jobs/remote-expert-talent-pool-physical-ai-clera-1137799",
         "tags": [
-          "analyst",
-          "amazon",
-          "salesforce",
-          "technical",
-          "recruiter",
-          "customer support",
-          "marketing",
-          "speech",
+          "design",
+          "education",
+          "testing",
+          "travel",
+          "robotics",
+          "exec",
+          "ops",
+          "digital nomad"
+        ]
+      },
+      {
+        "title": "Expert Talent Pool Feedback and Alignment",
+        "url": "https://remoteOK.com/remote-jobs/remote-expert-talent-pool-feedback-and-alignment-clera-1137798",
+        "tags": [
+          "quality assurance",
+          "finance",
+          "math",
           "exec",
           "content writing",
-          "excel",
-          "sales",
-          "ecommerce",
-          "full time"
+          "senior"
         ]
       }
     ],
