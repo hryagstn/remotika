@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 6,
     "label": "Established",
-    "lastVerifiedAt": "2026-11-18T08:31:21.902Z",
+    "lastVerifiedAt": "2026-11-19T08:43:57.288Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -64,11 +64,6 @@
       {
         "title": "Strategic Account Manager",
         "url": "https://job-boards.greenhouse.io/xendit/jobs/7997856003",
-        "tags": []
-      },
-      {
-        "title": "UX Designer - Developer Experience (DevEx)",
-        "url": "https://job-boards.greenhouse.io/xendit/jobs/7847359003",
         "tags": []
       },
       {
@@ -163,7 +158,7 @@
     "industry": "PT Rekayasa Solverindo (REKSOLINDO) has provided practical material engineering solutions for industries across Indonesia since 2005.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-11-18T08:31:25.895Z",
+    "lastVerifiedAt": "2026-11-19T08:44:01.740Z",
     "verifiedAt": "2026-09-30T11:39:29.952Z",
     "hasActiveJobs": false,
     "activeJobs": [],
@@ -187,7 +182,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-11-18T08:31:42.243Z",
+    "lastVerifiedAt": "2026-11-19T08:44:18.092Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -222,7 +217,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-11-18T08:31:58.997Z",
+    "lastVerifiedAt": "2026-11-19T08:44:35.083Z",
     "hasActiveJobs": false,
     "headquarters": "Worldwide",
     "foundationYear": "2005",
@@ -257,7 +252,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-11-18T08:32:05.476Z",
+    "lastVerifiedAt": "2026-11-19T08:44:42.102Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -461,7 +456,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-18T08:32:11.156Z",
+    "lastVerifiedAt": "2026-11-19T08:44:47.993Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -551,7 +546,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-18T08:32:13.849Z",
+    "lastVerifiedAt": "2026-11-19T08:44:50.853Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -696,47 +691,6 @@
     "scope": "global"
   },
   {
-    "id": "co-157",
-    "name": "Chaos",
-    "githubOrg": "chaos",
-    "githubOrgUrl": "https://github.com/chaos",
-    "remoteokSlug": "team-lead-education-chaos-1136949",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-09-10T19:47:28.747Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Team Lead Education",
-        "url": "https://remoteOK.com/remote-jobs/remote-team-lead-education-chaos-1136949",
-        "tags": [
-          "design",
-          "saas",
-          "vfx",
-          "customer support",
-          "dev",
-          "marketing",
-          "exec",
-          "education",
-          "content writing",
-          "senior",
-          "sales",
-          "golang",
-          "ecommerce",
-          "digital nomad"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "org-found-zero-match",
-    "website": "chaos.com",
-    "scope": "global"
-  },
-  {
     "id": "co-431",
     "name": "Copenhagen Optimization",
     "githubOrg": "",
@@ -781,7 +735,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-18T08:32:23.674Z",
+    "lastVerifiedAt": "2026-11-19T08:45:01.005Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -850,7 +804,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-18T08:32:25.289Z",
+    "lastVerifiedAt": "2026-11-19T08:45:02.748Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -913,7 +867,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-18T08:32:33.374Z",
+    "lastVerifiedAt": "2026-11-19T08:45:10.715Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1005,7 +959,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-18T08:32:39.875Z",
+    "lastVerifiedAt": "2026-11-19T08:45:17.293Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1163,7 +1117,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-18T08:32:58.792Z",
+    "lastVerifiedAt": "2026-11-19T08:45:38.163Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1229,7 +1183,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-18T08:33:05.270Z",
+    "lastVerifiedAt": "2026-11-19T08:45:44.400Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1267,7 +1221,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-18T08:33:11.023Z",
+    "lastVerifiedAt": "2026-11-19T08:45:50.099Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1317,7 +1271,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-18T08:33:14.856Z",
+    "lastVerifiedAt": "2026-11-19T08:45:54.262Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1387,7 +1341,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-18T08:33:20.100Z",
+    "lastVerifiedAt": "2026-11-19T08:46:00.030Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1509,7 +1463,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-18T08:33:25.821Z",
+    "lastVerifiedAt": "2026-11-19T08:46:06.104Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1541,7 +1495,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-18T08:33:31.324Z",
+    "lastVerifiedAt": "2026-11-19T08:46:12.081Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -1637,7 +1591,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-18T08:33:39.247Z",
+    "lastVerifiedAt": "2026-11-19T08:46:19.757Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -2054,7 +2008,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-18T08:33:46.062Z",
+    "lastVerifiedAt": "2026-11-19T08:46:26.725Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -2100,7 +2054,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-18T08:33:57.377Z",
+    "lastVerifiedAt": "2026-11-19T08:46:38.559Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -2209,6 +2163,46 @@
           "exec",
           "content writing",
           "senior"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "scope": "global"
+  },
+  {
+    "id": "co-485",
+    "name": "MultiplyMii",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "multiplymii",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-11-19T09:03:04.085Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Brand Protection & Marketplace Compliance Analyst",
+        "url": "https://remoteOK.com/remote-jobs/remote-brand-protection-marketplace-compliance-analyst-multiplymii-1136687",
+        "tags": [
+          "analyst",
+          "amazon",
+          "salesforce",
+          "technical",
+          "recruiter",
+          "customer support",
+          "marketing",
+          "speech",
+          "exec",
+          "content writing",
+          "excel",
+          "sales",
+          "ecommerce",
+          "full time"
         ]
       }
     ],
