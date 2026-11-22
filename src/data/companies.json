@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 6,
     "label": "Established",
-    "lastVerifiedAt": "2026-11-21T08:15:37.868Z",
+    "lastVerifiedAt": "2026-11-22T07:58:43.426Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -158,7 +158,7 @@
     "industry": "PT Rekayasa Solverindo (REKSOLINDO) has provided practical material engineering solutions for industries across Indonesia since 2005.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-11-21T08:15:41.952Z",
+    "lastVerifiedAt": "2026-11-22T07:58:47.587Z",
     "verifiedAt": "2026-09-30T11:39:29.952Z",
     "hasActiveJobs": false,
     "activeJobs": [],
@@ -182,7 +182,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-11-21T08:15:57.649Z",
+    "lastVerifiedAt": "2026-11-22T07:59:03.384Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -217,7 +217,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-11-21T08:16:14.072Z",
+    "lastVerifiedAt": "2026-11-22T07:59:19.852Z",
     "hasActiveJobs": false,
     "headquarters": "Worldwide",
     "foundationYear": "2005",
@@ -252,7 +252,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-11-21T08:16:20.792Z",
+    "lastVerifiedAt": "2026-11-22T07:59:26.244Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -457,306 +457,6 @@
     "scope": "global"
   },
   {
-    "id": "co-481",
-    "name": "Supabase",
-    "githubOrg": "supabase",
-    "githubOrgUrl": "https://github.com/supabase",
-    "remoteokSlug": "supabase",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-21T08:18:06.075Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Software Engineer AI Tooling",
-        "url": "https://remoteOK.com/remote-jobs/remote-software-engineer-ai-tooling-supabase-1137793",
-        "tags": [
-          "dev",
-          "design",
-          "front end",
-          "customer support",
-          "testing",
-          "marketing",
-          "virtual assistant",
-          "javascript",
-          "education",
-          "typescript",
-          "sys admin",
-          "medical",
-          "engineer",
-          "backend",
-          "digital nomad"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "org-found-zero-match",
-    "scope": "global",
-    "verifiedAt": "2026-11-14T07:53:32.384Z"
-  },
-  {
-    "id": "co-484",
-    "name": "Clera",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "clera",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-18T08:50:12.899Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Expert Talent Pool Physical AI",
-        "url": "https://remoteOK.com/remote-jobs/remote-expert-talent-pool-physical-ai-clera-1137799",
-        "tags": [
-          "design",
-          "education",
-          "testing",
-          "travel",
-          "robotics",
-          "exec",
-          "ops",
-          "digital nomad"
-        ]
-      },
-      {
-        "title": "Expert Talent Pool Feedback and Alignment",
-        "url": "https://remoteOK.com/remote-jobs/remote-expert-talent-pool-feedback-and-alignment-clera-1137798",
-        "tags": [
-          "quality assurance",
-          "finance",
-          "math",
-          "exec",
-          "content writing",
-          "senior"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "scope": "global"
-  },
-  {
-    "id": "co-486",
-    "name": "Askable",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "askable",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-20T08:49:15.460Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Software Engineer AI Coding Tasks",
-        "url": "https://remoteOK.com/remote-jobs/remote-software-engineer-ai-coding-tasks-askable-1137808",
-        "tags": [
-          "dev",
-          "golang",
-          "python",
-          "javascript",
-          "typescript",
-          "java",
-          "c plus plus"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "askable.com",
-    "scope": "global"
-  },
-  {
-    "id": "co-487",
-    "name": "Treatwell",
-    "githubOrg": "treatwell",
-    "githubOrgUrl": "https://github.com/treatwell",
-    "remoteokSlug": "treatwell",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-20T08:49:16.869Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "SEO Full Stack Engineer",
-        "url": "https://remoteOK.com/remote-jobs/remote-seo-full-stack-engineer-treatwell-1137805",
-        "tags": [
-          "full stack",
-          "react",
-          "rabbitmq",
-          "front end",
-          "technical",
-          "customer support",
-          "dev",
-          "testing",
-          "marketing",
-          "design",
-          "web dev",
-          "exec",
-          "devops",
-          "finance",
-          "java",
-          "postgres",
-          "typescript",
-          "seo",
-          "senior",
-          "stats",
-          "engineer",
-          "recruiter",
-          "backend",
-          "digital nomad"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "org-found-zero-match",
-    "scope": "global"
-  },
-  {
-    "id": "co-488",
-    "name": "Gravie",
-    "githubOrg": "gravie",
-    "githubOrgUrl": "https://github.com/gravie",
-    "remoteokSlug": "gravie",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-20T08:49:18.289Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Manager EDI",
-        "url": "https://remoteOK.com/remote-jobs/remote-manager-edi-gravie-1137804",
-        "tags": [
-          "exec",
-          "sys admin",
-          "infosec",
-          "education",
-          "technical",
-          "testing",
-          "marketing",
-          "quality assurance",
-          "finance",
-          "api",
-          "ops",
-          "golang",
-          "medical"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "org-found-zero-match",
-    "scope": "global"
-  },
-  {
-    "id": "co-489",
-    "name": "Stedi",
-    "githubOrg": "Stedi",
-    "githubOrgUrl": "https://github.com/Stedi",
-    "remoteokSlug": "stedi",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-21T08:18:14.653Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Legal Engineering Counsel",
-        "url": "https://remoteOK.com/remote-jobs/remote-legal-engineering-counsel-stedi-1137803",
-        "tags": [
-          "design",
-          "saas",
-          "education",
-          "exec",
-          "legal",
-          "technical",
-          "customer support",
-          "testing",
-          "dev",
-          "finance",
-          "c",
-          "api",
-          "sales",
-          "medical",
-          "recruiter",
-          "engineer",
-          "digital nomad"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "org-found-zero-match",
-    "website": "ramp.com",
-    "scope": "global",
-    "verifiedAt": "2026-11-20T08:49:24.021Z"
-  },
-  {
-    "id": "co-490",
-    "name": "Maya HTT",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "maya-htt",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-20T08:49:25.183Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Business Development Manager",
-        "url": "https://remoteOK.com/remote-jobs/remote-business-development-manager-maya-htt-1137802",
-        "tags": [
-          "product manager",
-          "exec",
-          "salesforce",
-          "hr",
-          "education",
-          "consulting",
-          "technical",
-          "customer support",
-          "dev",
-          "testing",
-          "marketing",
-          "finance",
-          "microsoft",
-          "ops",
-          "bus dev",
-          "sales",
-          "engineer",
-          "digital nomad"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "scope": "global"
-  },
-  {
     "id": "co-491",
     "name": "Storyblok",
     "githubOrg": "storyblok",
@@ -765,7 +465,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-21T08:34:05.936Z",
+    "lastVerifiedAt": "2026-11-22T07:59:55.566Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -791,7 +491,8 @@
     "source": "remoteok",
     "watchlistReason": "org-found-zero-match",
     "website": "storyblok.com",
-    "scope": "global"
+    "scope": "global",
+    "verifiedAt": "2026-11-21T08:34:05.936Z"
   },
   {
     "id": "co-492",
@@ -838,7 +539,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-21T08:34:12.321Z",
+    "lastVerifiedAt": "2026-11-22T08:00:02.314Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -874,7 +575,8 @@
     "status": "watchlist",
     "source": "remoteok",
     "watchlistReason": "org-found-zero-match",
-    "scope": "global"
+    "scope": "global",
+    "verifiedAt": "2026-11-21T08:34:12.321Z"
   },
   {
     "id": "co-494",
@@ -921,7 +623,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-21T08:34:19.839Z",
+    "lastVerifiedAt": "2026-11-22T08:00:10.974Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -938,25 +640,79 @@
     "status": "watchlist",
     "source": "remoteok",
     "watchlistReason": "org-found-zero-match",
-    "scope": "global"
+    "scope": "global",
+    "verifiedAt": "2026-11-21T08:34:19.839Z"
   },
   {
-    "id": "co-496",
-    "name": "Bitwarden",
-    "githubOrg": "bitwarden",
-    "githubOrgUrl": "https://github.com/bitwarden",
-    "remoteokSlug": "bitwarden",
+    "id": "co-499",
+    "name": "Oscar Health",
+    "githubOrg": "",
+    "githubOrgUrl": "",
+    "remoteokSlug": "oscar-health",
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-21T08:34:27.896Z",
+    "lastVerifiedAt": "2026-11-22T08:16:34.600Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
-        "title": "Vice President, Public Sector",
-        "url": "https://remoteOK.com/remote-jobs/remote-vice-president-public-sector-bitwarden-1137843",
+        "title": "Physician Assistant - Virtual Health Assessment",
+        "url": "https://remoteOK.com/remote-jobs/remote-physician-assistant-virtual-health-assessment-oscar-health-1137938",
         "tags": [
-          "sales"
+          "other"
+        ],
+        "location": "Worldwide"
+      },
+      {
+        "title": "Physician - Virtual Urgent Care (Part-Time)",
+        "url": "https://remoteOK.com/remote-jobs/remote-physician-virtual-urgent-care-part-time-oscar-health-1137937",
+        "tags": [
+          "other"
+        ],
+        "location": "Worldwide"
+      },
+      {
+        "title": "Manager, Network Contracting (Southeast Region)",
+        "url": "https://remoteOK.com/remote-jobs/remote-manager-network-contracting-southeast-region-oscar-health-1137925",
+        "tags": [
+          "programming"
+        ],
+        "location": "Worldwide"
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "no-org-found",
+    "website": "oscarhealth.com",
+    "scope": "global"
+  },
+  {
+    "id": "co-500",
+    "name": "Carrot",
+    "githubOrg": "carrot",
+    "githubOrgUrl": "https://github.com/carrot",
+    "remoteokSlug": "carrot",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-11-22T08:16:39.377Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Sr. Security Operations Manager",
+        "url": "https://remoteOK.com/remote-jobs/remote-sr-security-operations-manager-carrot-1137930",
+        "tags": [
+          "exec"
+        ],
+        "location": "Worldwide"
+      },
+      {
+        "title": "Manager, Product Design",
+        "url": "https://remoteOK.com/remote-jobs/remote-manager-product-design-carrot-1137927",
+        "tags": [
+          "design"
         ],
         "location": "Worldwide"
       }
@@ -966,123 +722,35 @@
     "status": "watchlist",
     "source": "remoteok",
     "watchlistReason": "org-found-zero-match",
+    "website": "c212.net",
     "scope": "global"
   },
   {
-    "id": "co-497",
-    "name": "NIKI Digital Engineering",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "niki-digital-engineering",
+    "id": "co-501",
+    "name": "iFIT",
+    "githubOrg": "ifit",
+    "githubOrgUrl": "https://github.com/ifit",
+    "remoteokSlug": "ifit",
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-21T08:34:29.058Z",
+    "lastVerifiedAt": "2026-11-22T08:16:44.549Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
-        "title": "Engineer Software Defined Vehicle Simulation and Development",
-        "url": "https://remoteOK.com/remote-jobs/remote-engineer-software-defined-vehicle-simulation-and-development-niki-digital-engineering-1137839",
+        "title": "Senior Manager, Product Analytics (Growth)",
+        "url": "https://remoteOK.com/remote-jobs/remote-senior-manager-product-analytics-growth-ifit-1137912",
         "tags": [
-          "dev",
-          "design",
-          "embedded",
-          "sys admin",
-          "infosec",
-          "python",
-          "consulting",
-          "technical",
-          "customer support",
-          "testing",
-          "exec",
-          "java",
-          "matlab",
-          "medical",
-          "engineer",
-          "digital nomad"
-        ]
-      },
-      {
-        "title": "Marketing and Communications Officer",
-        "url": "https://remoteOK.com/remote-jobs/remote-marketing-and-communications-officer-niki-digital-engineering-1137838",
-        "tags": [
-          "design",
-          "consulting",
-          "technical",
-          "customer support",
-          "exec",
-          "marketing",
-          "medical",
-          "engineer",
-          "digital nomad"
-        ]
-      },
-      {
-        "title": "Postdoc PhD PhD cand. Physics Computer Science",
-        "url": "https://remoteOK.com/remote-jobs/remote-postdoc-phd-phd-cand-physics-computer-science-niki-digital-engineering-1137837",
-        "tags": [
-          "design",
-          "python",
-          "consulting",
-          "technical",
-          "exec",
-          "c",
-          "c plus plus",
-          "matlab",
-          "medical",
-          "engineer",
-          "digital nomad"
-        ]
+          "marketing"
+        ],
+        "location": "Worldwide"
       }
     ],
     "verifiedMembers": [],
     "headquarters": "Global Remote",
     "status": "watchlist",
     "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "scope": "global"
-  },
-  {
-    "id": "co-498",
-    "name": "Norm",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "norm",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-21T08:34:30.205Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Technical Lead Norm Compliance",
-        "url": "https://remoteOK.com/remote-jobs/remote-technical-lead-norm-compliance-norm-1137835",
-        "tags": [
-          "design",
-          "python",
-          "education",
-          "technical",
-          "customer support",
-          "dev",
-          "marketing",
-          "exec",
-          "finance",
-          "typescript",
-          "content writing",
-          "senior",
-          "legal",
-          "medical",
-          "engineer",
-          "digital nomad"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "norm.ai",
+    "watchlistReason": "org-found-zero-match",
     "scope": "global"
   }
 ]

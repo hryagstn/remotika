@@ -1029,5 +1029,41 @@
   "norm": [
     "https://remoteOK.com/remote-jobs/remote-technical-lead-norm-compliance-norm-1137835",
     "title:technical lead norm compliance"
+  ],
+  "co-499": [
+    "https://remoteOK.com/remote-jobs/remote-physician-assistant-virtual-health-assessment-oscar-health-1137938",
+    "title:physician assistant - virtual health assessment",
+    "https://remoteOK.com/remote-jobs/remote-physician-virtual-urgent-care-part-time-oscar-health-1137937",
+    "title:physician - virtual urgent care (part-time)",
+    "https://remoteOK.com/remote-jobs/remote-manager-network-contracting-southeast-region-oscar-health-1137925",
+    "title:manager, network contracting (southeast region)"
+  ],
+  "oscar-health": [
+    "https://remoteOK.com/remote-jobs/remote-physician-assistant-virtual-health-assessment-oscar-health-1137938",
+    "title:physician assistant - virtual health assessment",
+    "https://remoteOK.com/remote-jobs/remote-physician-virtual-urgent-care-part-time-oscar-health-1137937",
+    "title:physician - virtual urgent care (part-time)",
+    "https://remoteOK.com/remote-jobs/remote-manager-network-contracting-southeast-region-oscar-health-1137925",
+    "title:manager, network contracting (southeast region)"
+  ],
+  "co-500": [
+    "https://remoteOK.com/remote-jobs/remote-sr-security-operations-manager-carrot-1137930",
+    "title:sr. security operations manager",
+    "https://remoteOK.com/remote-jobs/remote-manager-product-design-carrot-1137927",
+    "title:manager, product design"
+  ],
+  "carrot": [
+    "https://remoteOK.com/remote-jobs/remote-sr-security-operations-manager-carrot-1137930",
+    "title:sr. security operations manager",
+    "https://remoteOK.com/remote-jobs/remote-manager-product-design-carrot-1137927",
+    "title:manager, product design"
+  ],
+  "co-501": [
+    "https://remoteOK.com/remote-jobs/remote-senior-manager-product-analytics-growth-ifit-1137912",
+    "title:senior manager, product analytics (growth)"
+  ],
+  "ifit": [
+    "https://remoteOK.com/remote-jobs/remote-senior-manager-product-analytics-growth-ifit-1137912",
+    "title:senior manager, product analytics (growth)"
   ]
 }
