@@ -1036,7 +1036,11 @@
     "https://remoteOK.com/remote-jobs/remote-physician-virtual-urgent-care-part-time-oscar-health-1137937",
     "title:physician - virtual urgent care (part-time)",
     "https://remoteOK.com/remote-jobs/remote-manager-network-contracting-southeast-region-oscar-health-1137925",
-    "title:manager, network contracting (southeast region)"
+    "title:manager, network contracting (southeast region)",
+    "https://remoteOK.com/remote-jobs/remote-1099-bilingual-np-pa-virtual-urgent-care-oscar-health-1137969",
+    "title:1099 bilingual np/pa - virtual urgent care",
+    "https://remoteOK.com/remote-jobs/remote-advanced-practice-provider-virtual-urgent-care-oscar-health-1137968",
+    "title:advanced practice provider - virtual urgent care"
   ],
   "oscar-health": [
     "https://remoteOK.com/remote-jobs/remote-physician-assistant-virtual-health-assessment-oscar-health-1137938",
@@ -1044,19 +1048,27 @@
     "https://remoteOK.com/remote-jobs/remote-physician-virtual-urgent-care-part-time-oscar-health-1137937",
     "title:physician - virtual urgent care (part-time)",
     "https://remoteOK.com/remote-jobs/remote-manager-network-contracting-southeast-region-oscar-health-1137925",
-    "title:manager, network contracting (southeast region)"
+    "title:manager, network contracting (southeast region)",
+    "https://remoteOK.com/remote-jobs/remote-1099-bilingual-np-pa-virtual-urgent-care-oscar-health-1137969",
+    "title:1099 bilingual np/pa - virtual urgent care",
+    "https://remoteOK.com/remote-jobs/remote-advanced-practice-provider-virtual-urgent-care-oscar-health-1137968",
+    "title:advanced practice provider - virtual urgent care"
   ],
   "co-500": [
     "https://remoteOK.com/remote-jobs/remote-sr-security-operations-manager-carrot-1137930",
     "title:sr. security operations manager",
     "https://remoteOK.com/remote-jobs/remote-manager-product-design-carrot-1137927",
-    "title:manager, product design"
+    "title:manager, product design",
+    "https://remoteOK.com/remote-jobs/remote-corporate-counsel-commercial-carrot-1137959",
+    "title:corporate counsel, commercial"
   ],
   "carrot": [
     "https://remoteOK.com/remote-jobs/remote-sr-security-operations-manager-carrot-1137930",
     "title:sr. security operations manager",
     "https://remoteOK.com/remote-jobs/remote-manager-product-design-carrot-1137927",
-    "title:manager, product design"
+    "title:manager, product design",
+    "https://remoteOK.com/remote-jobs/remote-corporate-counsel-commercial-carrot-1137959",
+    "title:corporate counsel, commercial"
   ],
   "co-501": [
     "https://remoteOK.com/remote-jobs/remote-senior-manager-product-analytics-growth-ifit-1137912",
@@ -1065,5 +1077,13 @@
   "ifit": [
     "https://remoteOK.com/remote-jobs/remote-senior-manager-product-analytics-growth-ifit-1137912",
     "title:senior manager, product analytics (growth)"
+  ],
+  "co-502": [
+    "https://remoteOK.com/remote-jobs/remote-private-practice-enablement-specialist-pst-healthie-1137952",
+    "title:private practice enablement specialist (pst)"
+  ],
+  "healthie": [
+    "https://remoteOK.com/remote-jobs/remote-private-practice-enablement-specialist-pst-healthie-1137952",
+    "title:private practice enablement specialist (pst)"
   ]
 }
