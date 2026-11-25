@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 6,
     "label": "Established",
-    "lastVerifiedAt": "2026-11-24T10:53:14.647Z",
+    "lastVerifiedAt": "2026-11-25T09:48:26.553Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -158,7 +158,7 @@
     "industry": "PT Rekayasa Solverindo (REKSOLINDO) has provided practical material engineering solutions for industries across Indonesia since 2005.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-11-24T10:53:18.969Z",
+    "lastVerifiedAt": "2026-11-25T09:48:31.143Z",
     "verifiedAt": "2026-09-30T11:39:29.952Z",
     "hasActiveJobs": false,
     "activeJobs": [],
@@ -182,7 +182,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-11-24T10:53:35.084Z",
+    "lastVerifiedAt": "2026-11-25T09:48:47.872Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -217,7 +217,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-11-24T10:53:51.601Z",
+    "lastVerifiedAt": "2026-11-25T09:49:06.022Z",
     "hasActiveJobs": false,
     "headquarters": "Worldwide",
     "foundationYear": "2005",
@@ -252,7 +252,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-11-24T10:53:58.171Z",
+    "lastVerifiedAt": "2026-11-25T09:49:14.019Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -404,7 +404,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-24T10:54:08.444Z",
+    "lastVerifiedAt": "2026-11-25T09:49:25.986Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -463,7 +463,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-24T10:54:13.876Z",
+    "lastVerifiedAt": "2026-11-25T09:49:31.818Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -509,7 +509,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-24T10:54:19.952Z",
+    "lastVerifiedAt": "2026-11-25T09:49:38.529Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -538,7 +538,7 @@
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-24T10:54:24.870Z",
+    "lastVerifiedAt": "2026-11-25T09:49:43.935Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -560,42 +560,70 @@
     "verifiedAt": "2026-11-23T09:17:55.681Z"
   },
   {
-    "id": "co-503",
-    "name": "Arbor Education",
-    "githubOrg": "arbor-education",
-    "githubOrgUrl": "https://github.com/arbor-education",
-    "remoteokSlug": "arbor-education",
+    "id": "co-504",
+    "name": "Augment",
+    "githubOrg": "Augment",
+    "githubOrgUrl": "https://github.com/Augment",
+    "remoteokSlug": "augment",
     "industry": null,
     "verifiedIndonesianCount": 0,
     "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-24T11:11:40.913Z",
+    "lastVerifiedAt": "2026-11-25T10:08:04.554Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
-        "title": "Senior Product Engineer",
-        "url": "https://remoteOK.com/remote-jobs/remote-senior-product-engineer-arbor-education-1137865",
+        "title": "Revenue Operations Analyst",
+        "url": "https://remoteOK.com/remote-jobs/remote-revenue-operations-analyst-augment-1138081",
         "tags": [
-          "design",
-          "react",
-          "backend",
-          "education",
-          "consulting",
-          "docker",
+          "analyst",
+          "saas",
+          "recruiter",
           "customer support",
-          "dev",
-          "testing",
-          "scrum",
+          "marketing",
           "exec",
-          "quality assurance",
+          "finance",
+          "admin",
+          "ops",
+          "excel",
+          "legal",
+          "sales",
+          "medical"
+        ]
+      }
+    ],
+    "verifiedMembers": [],
+    "headquarters": "Global Remote",
+    "status": "watchlist",
+    "source": "remoteok",
+    "watchlistReason": "org-found-zero-match",
+    "website": "seamless.ai",
+    "scope": "global"
+  },
+  {
+    "id": "co-505",
+    "name": "Thrive",
+    "githubOrg": "Thrive",
+    "githubOrgUrl": "https://github.com/Thrive",
+    "remoteokSlug": "thrive",
+    "industry": null,
+    "verifiedIndonesianCount": 0,
+    "label": "Watchlist",
+    "lastVerifiedAt": "2026-11-25T10:08:06.048Z",
+    "hasActiveJobs": true,
+    "activeJobs": [
+      {
+        "title": "Strategic Technical Advisor",
+        "url": "https://remoteOK.com/remote-jobs/remote-strategic-technical-advisor-thrive-1138074",
+        "tags": [
+          "infosec",
+          "education",
+          "technical",
+          "customer support",
           "finance",
           "cloud",
-          "php",
-          "senior",
-          "sys admin",
-          "medical",
-          "engineer",
-          "recruiter",
-          "digital nomad"
+          "exec",
+          "ops",
+          "engineer"
         ]
       }
     ],
