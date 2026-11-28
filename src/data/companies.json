@@ -8,7 +8,7 @@
     "industry": null,
     "verifiedIndonesianCount": 6,
     "label": "Established",
-    "lastVerifiedAt": "2026-11-27T09:39:28.188Z",
+    "lastVerifiedAt": "2026-11-28T08:53:57.870Z",
     "hasActiveJobs": true,
     "activeJobs": [
       {
@@ -158,7 +158,7 @@
     "industry": "PT Rekayasa Solverindo (REKSOLINDO) has provided practical material engineering solutions for industries across Indonesia since 2005.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-11-27T09:39:32.713Z",
+    "lastVerifiedAt": "2026-11-28T08:54:02.058Z",
     "verifiedAt": "2026-09-30T11:39:29.952Z",
     "hasActiveJobs": false,
     "activeJobs": [],
@@ -182,7 +182,7 @@
     "industry": "NVIDIA Technologies for game and application developers",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-11-27T09:39:48.965Z",
+    "lastVerifiedAt": "2026-11-28T08:54:17.808Z",
     "hasActiveJobs": false,
     "headquarters": "Santa Clara, CA",
     "foundationYear": "1993",
@@ -217,7 +217,7 @@
     "industry": "We are passionate about making the web a better place.",
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-11-27T09:40:06.188Z",
+    "lastVerifiedAt": "2026-11-28T08:54:34.068Z",
     "hasActiveJobs": false,
     "headquarters": "Worldwide",
     "foundationYear": "2005",
@@ -252,7 +252,7 @@
     "industry": null,
     "verifiedIndonesianCount": 1,
     "label": "Confirmed",
-    "lastVerifiedAt": "2026-11-27T09:40:13.027Z",
+    "lastVerifiedAt": "2026-11-28T08:54:40.038Z",
     "hasActiveJobs": false,
     "activeJobs": [],
     "verifiedMembers": [
@@ -393,111 +393,6 @@
     "source": "remoteok",
     "watchlistReason": "no-org-found",
     "website": "lemon.io",
-    "scope": "global"
-  },
-  {
-    "id": "co-499",
-    "name": "Oscar Health",
-    "githubOrg": "",
-    "githubOrgUrl": "",
-    "remoteokSlug": "oscar-health",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-22T08:16:34.600Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Associate, Payment Integrity",
-        "url": "https://remoteOK.com/remote-jobs/remote-associate-payment-integrity-oscar-health-1138090",
-        "tags": [
-          "programming"
-        ],
-        "location": "Worldwide"
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "no-org-found",
-    "website": "oscarhealth.com",
-    "scope": "global"
-  },
-  {
-    "id": "co-504",
-    "name": "Augment",
-    "githubOrg": "Augment",
-    "githubOrgUrl": "https://github.com/Augment",
-    "remoteokSlug": "augment",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-27T09:40:36.668Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Revenue Operations Analyst",
-        "url": "https://remoteOK.com/remote-jobs/remote-revenue-operations-analyst-augment-1138081",
-        "tags": [
-          "analyst",
-          "saas",
-          "recruiter",
-          "customer support",
-          "marketing",
-          "exec",
-          "finance",
-          "admin",
-          "ops",
-          "excel",
-          "legal",
-          "sales",
-          "medical"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "org-found-zero-match",
-    "website": "seamless.ai",
-    "scope": "global",
-    "verifiedAt": "2026-11-25T10:08:04.554Z"
-  },
-  {
-    "id": "co-505",
-    "name": "Thrive",
-    "githubOrg": "Thrive",
-    "githubOrgUrl": "https://github.com/Thrive",
-    "remoteokSlug": "thrive",
-    "industry": null,
-    "verifiedIndonesianCount": 0,
-    "label": "Watchlist",
-    "lastVerifiedAt": "2026-11-25T10:08:06.048Z",
-    "hasActiveJobs": true,
-    "activeJobs": [
-      {
-        "title": "Strategic Technical Advisor",
-        "url": "https://remoteOK.com/remote-jobs/remote-strategic-technical-advisor-thrive-1138074",
-        "tags": [
-          "infosec",
-          "education",
-          "technical",
-          "customer support",
-          "finance",
-          "cloud",
-          "exec",
-          "ops",
-          "engineer"
-        ]
-      }
-    ],
-    "verifiedMembers": [],
-    "headquarters": "Global Remote",
-    "status": "watchlist",
-    "source": "remoteok",
-    "watchlistReason": "org-found-zero-match",
     "scope": "global"
   }
 ]
